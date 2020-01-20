@@ -27,11 +27,11 @@ There must be some skin-stabbing winds, familiar sound of a bus engine, and the 
 
 そんな中でも、ふと気がつけば手を伸ばすもの。貴方のポケットに忍ぶ”小さな”魔法は、人の本能と理性を培う脳の外側に位置しながらも、その持ち主にひっそりと最適化し続けている。それはおろか、写真や動画によって半永久的に持ち主の記憶能力を拡張し、5000マイル離れた場所にいる人との連絡を可能にし、はたまた知識の所有者を変えつつある。その百科事典はもう頭の中でなく、その海に存在するのだ。つまり、知識の所有者を隔てた境界線は、以前より遥かにぼんやりとしている。
 
-Amid of them, there’s a thing that you reach your hand to, unconsciously. The pocket small magic sits outside of your rationality and instincts, though it keeps optimizing itself to the owner in its very sleek manner.  Well, it rather enhances your capability; in semi-eternally remembering scenes and memories through crisp pictures and videos ; in enabling you to contact with someone 5,000 miles away; or even in obscuring the owner of knowledge. Your encyclopaedia is, in some case, no longer in your head but in the sea. Therefore, the owner over knowledge has a less clear boundary with his outside than before.
+Amid of them, there’s a thing that you reach your hand to, unconsciously. The pocket small magic sits outside of your rationality and instinct, though it keeps optimizing itself to the owner in its very sleek manner.  Well, it rather enhances your capability; in semi-eternally remembering scenes and memories through crisp pictures and videos ; in enabling you to contact with someone 5,000 miles away; or even in obscuring the owner of knowledge. Your encyclopaedia is, in some case, no longer in your head but in the sea. Therefore, the owner over knowledge has a less clear boundary with his outside than before.
 
 人には元々、本能と理性も同時に共在する。このうちどちらかを取り除きたいと言う人は、おそらくいないだろう。今、自分の手足となった魔法を解きたいと思う人も、おそらくいないのだろう。
 
-Originally, rationality and instincts co-exist each other inside of you. Perhaps there’s no one who wants to get rid of either of them. Now, there wouldn’t be anyone who wants to get rid of your magic, which has become like your limbs and arms.
+Originally, rationality and instinct co-exist each other inside of you. Perhaps there’s no one who wants to get rid of either of them. Now, there wouldn’t be anyone who wants to get rid of your magic, which has become like your limbs and arms.
 
 そしてその逆戻りは、きっとないのだ。
 And, there may be not any going-back. 
