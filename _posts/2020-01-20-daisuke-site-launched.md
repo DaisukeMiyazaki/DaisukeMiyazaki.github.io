@@ -23,7 +23,7 @@ Hang on, take a moment and look away from the screen. Then I want to ask you; ho
 
 そこには肌に刺すような冷たい風や、慣れ親しんだバスのエンジンの音、湿った雨の匂いが広がるはず。0と1が踊る世界にない、階段を降りるときに足を伝う重力、乱立する建物や広大な土地の遠近感を、感じはしないか。
 
-There must be some skin-stabbing winds, familiar sound of a bus engine, and the humid scent of rain that spreads over. Unlike the world of musical with 0 and 1, you must feel the gravity bypassing your thighs,  or experience the perspective from aggressive buildings or vast wild fields.
+There must be some skin-stabbing winds, the familiar sound of a bus engine, and the humid scent of rain that spreads over. Unlike the world of musical with 0 and 1, you must feel the gravity bypassing your thighs,  or experience the perspective from aggressive buildings or vast wild fields.
 
 そんな中でも、ふと気がつけば手を伸ばすもの。貴方のポケットに忍ぶ”小さな”魔法は、人の本能と理性を培う脳の外側に位置しながらも、その持ち主にひっそりと最適化し続けている。それはおろか、写真や動画によって半永久的に持ち主の記憶能力を拡張し、5000マイル離れた場所にいる人との連絡を可能にし、はたまた知識の所有者を変えつつある。その百科事典はもう頭の中でなく、その海に存在するのだ。つまり、知識の所有者を隔てた境界線は、以前より遥かにぼんやりとしている。
 
