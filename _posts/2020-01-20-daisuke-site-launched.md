@@ -34,7 +34,7 @@ Amid of them, there’s a thing that you reach your hand to, unconsciously. The 
 Originally, rationality and instinct co-exist each other inside of you. Perhaps there’s no one who wants to get rid of either of them. Now, there wouldn’t be anyone who wants to get rid of your magic, which has become like your limbs and arms.
 
 そしてその逆戻りは、きっとないのだ。
-And, there may be not any going-back. 
+And, there may be no going-back. 
 
 僕は、世界中の皆んなが魔法使いになったと観ている。でもみんな、その魔法の使い道を探している最中、そんな風にも見える。僕だってその1人に違いない。これを革命以外の、何と呼ぶのであろうか。
 
