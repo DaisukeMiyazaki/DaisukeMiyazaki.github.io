@@ -13,7 +13,7 @@ Hello world. This website is powered by [Jekyll](http://jekyllrb.com)
 
 In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.
 
-その海には嘘が隠れているかも知れないし、それと対照的に、包み隠さない真実も埋もれているかもしれない。その海はあまりに身近で、そして広く深く、際限なく続くのである。人はその地平線はどこまでいっても続く。
+その海には嘘が隠れているかも知れないし、それと対照的に、包み隠さない真実も埋もれているかもしれない。その海はあまりに身近で、そして広く深く、際限なく続くのである。その果てを、１人として見切ることはできないのかもしれない。
 
 Maybe there’d be some total nonsense, or some unhindered truth that remain untouched by mainstream. This sea wides open here and there, and is too vast and deep. It continues limitlessly and one may not be even able to see its horizon.
 
@@ -25,7 +25,7 @@ Hang on, take a moment and look away from the screen. Then I want to ask you; ho
 
 There must be some skin-stabbing winds, the familiar sound of a bus engine, and the humid scent of rain that spreads over. Unlike the world of musical with 0 and 1, you must feel the gravity bypassing your thighs,  or experience the perspective from aggressive buildings or vast wild fields.
 
-そんな中でも、ふと気がつけば手を伸ばすもの。貴方のポケットに忍ぶ”小さな”魔法は、人の本能と理性を培う脳の外側に位置しながらも、その持ち主にひっそりと最適化し続けている。それはおろか、写真や動画によって半永久的に持ち主の記憶能力を拡張し、5000マイル離れた場所にいる人との連絡を可能にし、はたまた知識の所有者を変えつつある。その百科事典はもう頭の中でなく、その海に存在するのだ。つまり、知識の所有者を隔てた境界線は、以前より遥かにぼんやりとしている。
+そんな中でも、ふと気がつけば手を伸ばすもの。貴方のポケットに忍ぶ”小さな”魔法は、人の本能と理性を培う脳の外側に位置しながらも、その持ち主にひっそりと最適化し続けている。それはおろか、写真や動画によって半永久的に持ち主の記憶能力を拡張し、5,000マイル離れた場所にいる人との連絡を可能にし、はたまた知識の所有者を変えつつある。その百科事典はもう頭の中でなく、その海に存在するのだ。つまり、知識の所有者を隔てた境界線は、以前より遥かにぼんやりとしている。
 
 Amid of them, there’s a thing that you reach your hand to, unconsciously. The pocket small magic sits outside of your rationality and instinct, though it keeps optimizing itself to the owner in its very sleek manner.  Well, it rather enhances your capability; in semi-eternally remembering scenes and memories through crisp pictures and videos ; in enabling you to contact with someone 5,000 miles away; or even in obscuring the owner of knowledge. Your encyclopaedia is, in some case, no longer in your head but in the sea. Therefore, the owner over knowledge has a less clear boundary with his outside than before.
 
@@ -40,7 +40,7 @@ And, there may be no going-back.
 
 I find everyone as one that has become a wizard. Meanwhile, they also seem like discovering how to use the magic. Certainly, I’m also one of them. Did I sound strange in the beginning, or did I not?
 
-その中で、私たちになくてはならないもの、それってなんだろう、そんな思いや考えにふけて、道草を食いたくなる。きっとこれも、なくてはならないものの一つだったりして。
+その中で、私たちになくてはならないもの、それってなんだろう、そんな思いや考えにふけて、道草を食いたくなる。きっとこれも、なくてはならないものの1つだったりして。
 
 So what now? Among this, I wonder “ what‘s priceless for us? ". Time to time, I get tempted to stop by and ponder it. Perhaps “this” is also something priceless for us.
 
