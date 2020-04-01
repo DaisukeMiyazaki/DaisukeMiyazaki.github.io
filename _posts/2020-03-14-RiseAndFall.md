@@ -23,7 +23,7 @@ Latter measurement appears in formalizing an update of one's belief. An observer
 https://youtu.be/HZGCoVF3YvM
 
 
-それが心理学的に正しいかどうか是非はこのポストの外にある。ただ、「観測」によって「彼の知の木」がアップデートされる、というのは当たり前といえば当たり前であるが、知の変更を刻む時間の単位として大切な区切り目だと思う。
+それが心理学的に正しいかどうか是非はこのポストの外にある。ただ、「観測」によって「彼の知の木」が更新される、というのは当たり前といえば当たり前であるが、知の変更を刻む時間の単位として大切な区切り目だと思う。
 Whether that phycollogically holds true or not, is out of scope of this post. Although measurement updates one's intelligence tree sounds obvious, it's a vital time line that ticks a change in the tree.
 
 教育を重ね、学びを通して、個人はそれぞれ知という木を少しずつ形成してきた。幹は太くなり、少しずつ枝分かれしては葉をつけ、大きく育っていく。
@@ -37,46 +37,70 @@ And now, one repeats a measurement on imformation that doesn't have a physical b
 
 As a smartphone and a pc keeps optimizing itself to its user, the tree may have changed its adress from its owner's head. That is, the data the he stored, the footsteps such as history, and the websites as marked 'your favorite and like' on platform, meaning part of the tree is now getting stored in the optimized smartphone and pc. In this sense, you could even say that intelligence is now knowing where information sits.
 
-しかしその知は、あなたのものだけでない。足跡（閲覧履歴、キャッシュ、クッキーなども含む）を残してウェブを消費することで、その木の一部を受け取った「あちら側」-- 人とAIが一体となった「ある目的を達成する」集団叡智は、あなたが閲覧するデジタルな世界を「おすすめ」や「妥当性」に固めながら、提供するコンテンツを形作っていく。知として一体化した「自分の作り出したウェブ」に、自らアクセスする速度は加速する様にインセンティブは働いている様に見える。
+しかしその知は、あなたのものだけでない。足跡（閲覧履歴、キャッシュ、クッキーなども含む）を残してウェブを消費することで、その木の一部を受け取った「あちら側」-- 人とAIが一体となった「ある目的を達成する」集団叡智は、あなたが閲覧するデジタルな世界を「おすすめ」や「妥当性」で固めた中身と共に形作っていく。知として一体化した「自分の作り出したウェブ」に、自らアクセスする速度は加速する様に意欲刺激が働いている様に見える。
 
 Although, the tree is _not only_ yours. Consuming the web while leaving your footsteps(including browsing history, cache and cookies), _the other side_ -- cybernetic collectives among humans and machines that seek to achieve their particular objectives --, who recieves your part of the tree, shapes your digital-sphere with _reccomendation_ and _relavance_, providing content. The incentive aligning in both of them seems to accerelate the speed at which the user accesses to a partially unified intelligence with _the other side_, _the web created by yourself_.
 
-SNSを含め、メディアのビジネスモデルは広告収入によるものが多い。ユーザーは「金銭的無料」の代償に自らのデータとクリックによる「興味」を提供する。そのデータを元に、「あちら側」は広告を打つ。
+SNSを含め、メディアのビジネスモデルは広告収入によるものが多い。利用者は「金銭的無料」の代償に自らのデータとクリックによる「興味」を提供する。そのデータを元に、「あちら側」は広告を打つ。
 
 Including SNS, business models in media tend to be on advertisement income. User provides their own interest through one's data and clicks at the expense of monetary free of charge.
 
-データを集められれば集められるほど広告の精度は向上するため、より多くのデータを集めるインセンティブが働く。文字よりも画像よりも、動画のほうが情報量が多い。それらをアップロードすることは、より多くの情報量を提供するということである。より高い画質の写真が取れるようになるということは、つまりそれだけ大量の情報を提供できるということになる。より多くのエンゲージメントが生まれる中、さらにアップロードする、クリックするというインセンティブは上昇する。「あちら側」の「サービス向上のため」とは、「クリック率」「パーソナライゼーション」「エンゲージメント」の最大化を指す。ユーザーとの活動的な消費と「あちら側」のサービス改善のより密で加速化したフィードバックループの構築に、インセンティブが働いている。
+データを集められれば集められるほど広告の精度は向上するため、より多くのデータを集める意欲刺激が湧く。文字よりも、そして画像よりも、動画のほうが情報量が多い。それらをアップロードすることは、より多くの情報量を提供するということである。より高い画質の写真が撮れるようになるということは、つまりそれだけ大量の情報を提供できるということになる。より多くの結びつきが生まれる中、さらにアップロードする、クリックするという意欲刺激は増す。「あちら側」の「サービス向上のため」とは、「クリック率」「顧客への最適化」「結びつき」の最大化を指す。利用者の積極的な消費と「あちら側」のサービス改善のより密で加速化した循環機関の構築に、意欲刺激は増すばかり。
 
 The more data _the other side_ can collect, the better accuracy advertisement becomes. Therefore, incentive aligns with collecting more and more data. More than texts and pictures, videos contain more data. Updating them means providing more information. The capacity of photographing with better resolution means to be able to provide more information. In the birth of more engagement, incentive to uploading more, or to maximizing click-rates improves even more. _To better service_ from _the other side_ aims to maximize click rates, personalization and engagement. There incentivies creating a more dense and accelarating feedback loop between active comsumptions from users and services from _the other side_.
 
-時間が有限であるからこそ、例えば見出しに注意を引くようなタイトルをつけたり、印象的なサムネイルをつけたりするーこうした情報の伝達方法は洗練され続けている。各メディアの激しい競争を考慮にいれれば、嘘やセンシティブな表現で注意を引くことだって予想できる。その中にももちろん、ジャーナリズムや科学からきたありのままの真実を届ける正義（なぜなら情報とはそもそも、時に人命よりも大切になりうるし、いち早く知ってもらわなければならないこともあり得る）や、利他的な行動からきた善意的な情報も含まれるが。
+時間が有限であるからこそ、例えば見出しに注意を引くようなタイトルをつけたり、印象的なサムネイルをつけたりするーこうした情報の宣伝方法は洗練され続けている。各メディアの激しい競争を考慮にいれれば、嘘や感傷的な表現で注意を引くことだって予想できる。その中にももちろん、ジャーナリズムや科学からきたありのままの事実を届ける正義（なぜなら情報とはそもそも、時に人命よりも大切になりうるし、いち早く人に知ってもらわなければならないこともあり得る）や、利他的な行動からきた善意的な情報も含まれるが。
+
+As time is finite, they use catchy titles that draw your attention in headlines, or impressive thumbnails - and those methods of propagating information keep advancing. Considering hard competition between media, manupilating flat lies and sensitive expressions to get your attention is easily expected. For sure, there are justice to deliver unmodified facts coming from journalism and science(as imformation sometimes can be more important than life, and some must to be reached to everyone), and well-intentioned information coming from altrustic behavoirs.
 
 
-「あちら側」は名門大学を出て、優秀な人材が集まったエリート集団だ。「あなたの注意を引き、エンゲージメントを最大化する」という目的はユーザーが簡単には気づけないレベルで達成される。（強化学習と呼ばれる人工知能の応用例として、損失関数の最小化に方策は設定され、環境を変え、その持ち主に最適化を繰り返しながら最大の報酬を得るようになる。）
+「あちら側」は名門大学を出て、優秀な人材が集まったエリート集団だ。「あなたの注意を引き、結びつきを最大化する」という目的はユーザーが簡単には気づけない水準で達成されうる。（強化学習と呼ばれる人工知能の応用例として、損失関数の最小化に方策は設定され、環境を変え、その持ち主に最適化を繰り返しながら最大の報酬を得るようになる。）
+
+_The other side_ is an intellectual elite from all the pristige univiersities. The aim, drawing your attention and maximazing engagement, would be able to accomplish at an undetectable to users. (Reinforcement learning as an applied example of Artificial Intelligence, sets a policy to minimize loss function, changing its environment and optimizing to its user, and would be able to obtain a maximum reward from the objective)
 
 そうして形成した木はーゆえに信条、知見、嗜好もーかつてない速度と精度で更新され続けているように思える。
+This tree formed in this way -- therefore belifs, knowledge and preferences - seems like getting updated at an unprecedented rate and accurary.
 
-インターネットが「魅力的でたまらない」「目線が行ってしまう」ということは、それだけ最適化がうまく言っている証拠であると考えることもできる。
+インターネットが「魅力的でたまらない」「目線が行ってしまう」ということは、それだけ最適化がうまく行っている証拠であると考えることもできる。
 
-この行き着く先は、フィルターバブル（自分の消費しているコンテンツが正当化され続ける世界）である。他の人と同じ単語をグーグルを用いて検索しても、もちろん異なる検索結果に当たることになる。「おすすめ」を提示する、というアルゴリズムから、自分の趣味嗜好がより予測しやすい中で提供されたデジタルな空間には、より多くのエンゲージメントが生まれる。
+If the internet is 'irresiversiblly attractive' and 'impossible to control eyesights', that can be said to be a testament to state-of-the-art optimization.
+
+この行き着く先は、フィルターバブル（自分の消費しているコンテンツが正当化され続ける世界）である。他の人と同じ単語をグーグルを用いて検索しても、もちろん異なる検索結果に当たることになる。「おすすめ」を提示する、というアルゴリズムから、自分の趣味嗜好がより予測しやすい中で提供されたデジタルな空間には、より多くの結びつきが生まれる。
+
+Where this ends up is a filter-bubble(a world that keeps validating the content you're consuming). Even if you search a same word in Google in someone else, of course you will see a different result to his. An algorhyism providing recommendations creates more engagement in the digital-sphere provided where your interests and preferences are more predictable.
+
 
 To get just an inkling of the fire we’re playing with, consider how content-selection algorithms function on social media. They aren’t particularly intelligent, but they are in a position to affect the entire world because they directly influence billions of people. Typically, such algorithms are designed to maximize click-through, that is, the probability that the user clicks on presented items. The solution is simply to present items that the user likes to click on, right? Wrong. The solution is to change the user’s preferences so that they become more predictable. A more predictable user can be fed items that they are likely to click on, thereby generating more revenue. People with more extreme political views tend to be more predictable in which items they will click on. (Possibly there is a category of articles that die-hard centrists are likely to click on, but it’s not easy to imagine what this category consists of.) Like any rational entity, the algorithm learns how to modify the state of its environment—in this case, the user’s mind—in order to maximize its own reward. The consequences include the resurgence of fascism, the dissolution of the social contract that underpins democracies around the world, and potentially the end of the European Union and NATO. Not bad for a few lines of code, even if it had a helping hand from some humans.
 
 Russell, Stuart. Human Compatible (pp. 8-9). Penguin Publishing Group. Kindle Edition. 
 
-果たしてでは、一刻毎に浮かび上がり、インターネット上に生じる知の観察範囲となり得る「情報量」と、自身の知識を象徴した教科書の情報量は、どれほど同じだろうか。もし、前者と後者の比率をとったら、それは地球とリンゴほどの比率になってしまうかもしれない（それでは効かないことも十分ありえる）。それくらい、世界は広い。しかしその事実は、一見して嘘であるかのようにも思える。
+果たしてでは、一刻毎に浮かび上がり、「インターネット上の知の観察範囲となり得る」情報量と、「自身の知を象徴した木の」情報量は、どれほど同じだろうか。もし、前者と後者の比率をとったら、それは地球とリンゴほどの比率になってしまうかもしれない（それでは効かないことも十分ありえる）。それくらい、世界は広い。しかしその事実は、一見して嘘であるかのようにも思える。
+
+Then I wonder; how much same is the amount of information that can be a range of measurment on the internet and the amount of information of the tree representing yourself ? If I take a ratio in the two, then it may be the size of earth and an apple(very unlikely). The world is big. But this fact seems like a lie at a sight.
 
 自分の見る世界は世の中を「本当に」ありのままに見た姿ではなく、「お勧め」でくり抜いたバブルであるほうが近しい。それが重篤化すれば、地球は平たい、環境問題は起きていないとなりうる。そこまで極端でなくても、例えば「妊娠中絶」などの言葉の解釈ですら、信条の異なる立場の人には変わってしまうこともありえる。
 
+The world I view isn't a real shape that's seen as it is in the _true_ sense, but is rather closer to be a bubble scraped by _recommendations_.
+
 その一方で書店で物理的な本を買ってもその情報を元に、本屋さんはあなた一人のためだけに置いてある本を変更したりしない。
 
-歴史を見てもおかしくないように、互いに排他的な意見が現れるようなトピックが社会にあっても、嗜好が違う人、反対の意見を指示する人はこの星に暮らしている、という事実はまるでおかしくはない。自分の信条や知見、嗜好が食い違っていても、本来はそれが当たり前であるのだ。
+On the other hand, if you buy a physical book at a bookshot, they won't change the display just for you alone based your purchasing information.
 
-いま各々の木の違いは、多様性とも呼べる「かもしれない」。また、それぞれの木とその人個人も深く結びついている。その境界線がどこにあるのか、という議論はどうあっても、お互いは切っても切れない関係にあるし、またどちらかを切り取りたいという人もいない。
+歴史を見ても、互いに排他的な意見が現れるようなトピックが社会にあっても、嗜好が違う人、反対の意見を指示する人はこの星に暮らしている、という事実は普通である。そして他人がいるという事実は、「他の木を同じくらい好む人がいる」ということの紛れもない証明ではないのか。
 
-多様性は善とされる。各々の木は集まって一つ大きな森を作る。あるいは、各々の木が幹となる部分を共有していて、枝先が異なる場合もある。人知はここで、限られた資源である光や養分と言ったリソースを奪いあったり傷つけあったりし続けるだろうか。
+As history shows, even if there's a topic that induces mutually exclusive opinions, the fact that people with different preferences and oppoising views to yours living on this planet, is normal. And the fact that there _are_ strangers is a testament to that there _are_ people who like the _other_ tree as much as you do.
 
-共存には「お互いを理解しあう」にはつながっていた幹を探り、枝分かれした木の枝先や葉をお互いに認めあう必要がある。それぞれのリアリティーが枝分かれしていけばいくほどに、分かち合った根元までを辿る作業に時間がかかるのは、当然のことかもしれない。そしてそれは、自分からは決して成長の軌跡に足を踏み入れ、枝先を辿っていく必要があるのかもしれない。そうすれば、好き、嫌いという感性が生じたとしても、理解は生まれるかもしれないから。そして他人がいるという事実は、「他の木を同じくらい好む人がいる」、ということの紛れもない証明であるからだ。異なる木でも、一本の木は幹から枝まで、きっとしっかりと構築されているのだから。
+それぞれの木とその人個人も深く結びついている。いま各々の木の違いも含め、この有り様を多様性とも呼べる「かもしれない」。その境界線がどこにあるのか、という議論はどうあっても、お互いは切っても切れない関係にあるし、またどちらかを切り取りたいという人もいないだろう。
+
+Each tree and its owner as an individual is deeply connected. Now including the difference of the trees, this dynamic _may_ be called as diversity. Regardless of where the bound between the tree and the person holds, both of them are mutually dependent on each other, and there'd be no one who wants to get rid of either of them.
+
+多様性は良とされる。各々の木は集まって一つ大きな森を作る。あるいは、各々の木が幹となる部分を共有していて、枝先が異なる場合もある。多種多様な木が織りなす森も、地にしっかりと根を張り空に枝を一杯に広げる木も美しい。四季を通して花を咲かせ、緑緑と茂り、がらりと変わった彩を魅せては葉を枯らしては枝を残して地に積もる。それが他の木にも養分となり、また枝先に芽吹きをもたらす。そうして少しずつ循環を繰り返しては、森も木も大きく育っていく。
+
+人知はここで、限られた資源である光や養分と言ったリソースを奪いあったり傷つけあったりし続けるだろうか。
+
+Diversity is posed as good. Each tree gathers and forms a big forest as a whole. Or, each tree shares its stem and branches out differently. A forest interwoven with a  various types of trees; a tree streching its roots to the deep ground and branches to the high sky; both of them are beautiful. Through seasons; flower blooms; greenery grows; specturm of autum leaves show; they wither and leave the branches, piling up on the ground. They become nutrition for other trees, and bring a new life to the branches. Over this circulation, forests and trees grow larger and larger.
+
+共存には「お互いを理解しあう」にはつながっていた幹を探り、枝分かれした木の枝先や葉をお互いに認めあう必要がある。それぞれのリアリティーが枝分かれしていけばいくほどに、分かち合った根元までを辿る作業に時間がかかるのは、当然のことかもしれない。そしてそれは、自分からは決して成長の軌跡に足を踏み入れ、枝先を辿っていく必要があるのかもしれない。そうすれば、好き、嫌いという感性が生じたとしても、理解は生まれるかもしれないから。異なる木でも、一本の木は幹から枝まで、きっとしっかりと構築されているのだから。
 
 だから他人と話したとき、多くの「自分にはわからない」「不確かさ」「嫌い」が残って、当たり前なのである。「フィルターバブル」中でのみ、観測を繰り返し続けることも可能である。そして観測を無限に思えるまで繰り返すことすら完全に可能なほど、情報の海の境界線は縁を見せない。
 
