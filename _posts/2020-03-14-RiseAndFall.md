@@ -33,9 +33,9 @@ Going through education, indivisuals have been forming the tree of intelligence.
 
 And now, one repeats a measurement on imformation that doesn't have a physical barrier, and the tree keeps updated at an unprecedented speed. Yes, the imformation is driven by the magic -- namly the internet--, and it extensively piles up at a place with an enourmous number of users, such as social media.
 
-スマートフォンやパソコンが持ち主への最適化を繰り返していくたびに、その木は当人の頭の中からその所在さえを変えていくことになりうる。つまりそれは、自分が保存したデータであり、閲覧履歴等の足跡であり、プラットフォーム上でお気に入りやいいねとと印をつけたサイトでもある。つまり、最適化されたスマートフォンやパソコンに木の一部は集積されていく。そういう意味で、人の知とは、今や情報の住所を知っていることーとすら言えるかもしれない。
+スマートフォンやパソコンが持ち主への最適化を繰り返していくたびに、その木は当人の頭の中からその所在さえを変えていくことになりうる。つまりそれは、自分が保存したデータであり、閲覧履歴等の足跡であり、プラットフォーム上でお気に入りやいいねとと印をつけたサイトでもある。つまり、最適化されたスマートフォンやパソコンに木の一部は集積されていく。そういう意味で、人の知とは、今や情報の住所を知っていることーとすら言えるかもしれない。スマートフォンやパソコンをなくしたとき、体の一部がなくなったように思うのはそのためだろう。
 
-As a smartphone and a pc keeps optimizing itself to its user, the tree may have changed its adress from its owner's head. That is, the data the he stored, the footsteps such as history, and the websites as marked 'your favorite and like' on platform, meaning part of the tree is now getting stored in the optimized smartphone and pc. In this sense, you could even say that intelligence is now knowing where information sits.
+As a smartphone and a pc keeps optimizing itself to its user, the tree may have changed its adress from its owner's head. That is, the data the he stored, the footsteps such as history, and the websites as marked 'your favorite and like' on platform, meaning part of the tree is now getting stored in the optimized smartphone and pc. In this sense, you could even say that intelligence is now knowing where information sits. When you lose your phone or pc, you may feel like you're losing part of your body, and that is because of this.
 
 しかしその知は、あなたのものだけでない。足跡（閲覧履歴、キャッシュ、クッキーなども含む）を残してウェブを消費することで、その木の一部を受け取った「あちら側」-- 人とAIが一体となった「ある目的を達成する」集団叡智は、あなたが閲覧するデジタルな世界を「おすすめ」や「妥当性」で固めた中身と共に形作っていく。知として一体化した「自分の作り出したウェブ」に、自らアクセスする速度は加速する様に意欲刺激が働いている様に見える。
 
@@ -100,11 +100,17 @@ Each tree and its owner as an individual is deeply connected. Now including the 
 
 Diversity is posed as good. Each tree gathers and forms a big forest as a whole. Or, each tree shares its stem and branches out differently. A forest interwoven with a  various types of trees; a tree streching its roots to the deep ground and branches to the high sky; both of them are beautiful. Through seasons; flower blooms; greenery grows; specturm of autum leaves show; they wither and leave the branches, piling up on the ground. They become nutrition for other trees, and bring a new life to the branches. Over this circulation, forests and trees grow larger and larger.
 
-共存には「お互いを理解しあう」にはつながっていた幹を探り、枝分かれした木の枝先や葉をお互いに認めあう必要がある。それぞれのリアリティーが枝分かれしていけばいくほどに、分かち合った根元までを辿る作業に時間がかかるのは、当然のことかもしれない。そしてそれは、自分からは決して成長の軌跡に足を踏み入れ、枝先を辿っていく必要があるのかもしれない。そうすれば、好き、嫌いという感性が生じたとしても、理解は生まれるかもしれないから。異なる木でも、一本の木は幹から枝まで、きっとしっかりと構築されているのだから。
+「お互いを理解しあう」にはつながっていた幹を探り、枝分かれした木の枝先や葉をお互いに認めあう必要がある。それぞれのリアリティーが枝分かれしていけばいくほどに、分かち合った根元までを辿る作業に時間がかかるのは、当然のことかもしれない。そしてそれは、自分からは決して成長の軌跡に足を踏み入れ、枝先を辿っていく必要があるのかもしれない。そうすれば、好き、嫌いという感性が生じたとしても、理解は生まれるかもしれないから。異なる木でも、一本の木は根から枝まで、きっとしっかりと構築されているのだから。
 
-だから他人と話したとき、多くの「自分にはわからない」「不確かさ」「嫌い」が残って、当たり前なのである。「フィルターバブル」中でのみ、観測を繰り返し続けることも可能である。そして観測を無限に思えるまで繰り返すことすら完全に可能なほど、情報の海の境界線は縁を見せない。
+To understand each other, it's necessary to seek the shared stem with yours, and to admit split branches and leaves from there on. As each reality branches out, the more time it would take to trace the original root that started to split, branching away from your own one. This may be pretty normal. If succeeded, you may end up with understandings with each other, though liking or disliking feeling may arise. A different tree must be rigidly structured, from its root to branches.
 
-これを回避するために、完全とは言えないものの、技術的な対応策はいくつかあるはずだ。他の検索エンジンの使用（競争上の観点から消費者の「あちら側」の独占を防ぐ）、プライベートブラウジングの使用（履歴やクッキーの足跡を残さない、おすすめデジタル空間の作成の妨害）やSNSやニュースからの適度な離脱（速度にインセンティブが働いた情報の偏り）、主体的ファクトチェック（ウェブサイトを活用する方法もある、フェイクニュース対策）、文脈の加算（フェイクニュース対策）、ブラウザの拡張機能による消費する政治的嗜好の認知（政治的ニュースの左右解釈のメタ認知）、など。
+だから他人と意思疎通を交わしたとき、多くの「自分にはわからない」「不確かさ」「好きじゃない」が残って、当たり前なのである。一方で「フィルターバブル」中でのみ、観測を繰り返し続けることも可能である。そして観測を無限に思えるまで繰り返すことすら完全に可能なほど、情報の海はその境界線を見せないかもしれない。
+
+So when you communicate with other, many of 'I don't get it', 'I'm uncertain', and 'I dont like it' will remain, and that is normal. Meanwhile, it's possible to keep measurments over and over in the filter bubble. And the sea of information would not show its horizon, as if it's entirely possible to keep measurements there forever. 
+
+これを回避するために、完全とは言えないものの、技術的な対応策はいくつかあるはずだ。他の検索エンジンの使用（競争上の観点から消費者の「あちら側」の独占を防ぐ）、プライベートブラウジングの使用（履歴やクッキーの足跡を残さない、おすすめデジタル空間の作成の妨害）やSNSやニュースからの適度な離脱（速度に意欲刺激が働いた情報の偏りからの離脱）、主体的ファクトチェック（ウェブサイトを活用する方法もある、フェイクニュース対策）、文脈の加算（フェイクニュース対策）、ブラウザの拡張機能による消費する政治的嗜好の認知（政治的ニュースの左右解釈のメタ認知）、など。
+
+To avoid it, there must be some technical preparedness although they may not be perfect. Using another search engine(this comes from a competition standpoint and prevents an monoply of users from _the other side_); Using private browsing(not leaving footsteps of history and cookies, preventing a creation of _reccomendation digital sphere_) and occational leave from SNS and news(retbias toward )
 
 同時に意識的な話にでも、いくつか列挙できる。「自分は持っている世界は自分が作り上げたもの」というメタ認知や、また入り込んだ分だけ長く厄介で、根気の必要な「コミュニケーション」なくして相互理解は得られくなっていくという認知、反対側のスペクトラムにいる立場の認知、正確な語彙の把握、疑わしきは罰せずという心構え、否定的な情報のほうが肯定的な情報よりも目をひき、注意を集めるというメタ認知を持つこと、など。
 
