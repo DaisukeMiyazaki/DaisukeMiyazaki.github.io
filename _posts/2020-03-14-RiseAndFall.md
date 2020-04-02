@@ -6,40 +6,38 @@ date: 2020-3-14
 Reading Human compatible: Artificial intelligence and the problem of control.
 
 知、とはなんだろう。僕は、それを木に例えられると思う。
-人の知の木には、宇宙の摂理を解いた科学と言った、人間の嗜好の外側に存在する学問に関して客観性が保証された事実や、他人と互いに排他的になり得る意見が混在している。
+人の知の木には、宇宙の摂理を解いた科学と言った、人間の嗜好の外側に佇む客観性が保証された事実や、他人と互いに排他的になり得る意見が混在している。
 
-what is intelligence? I think, I can examplify it as trees.
-Among the tree within humans, there mix science which seeks the truth of universe; objectivly guranteed facts that sit ouside of human's preferences; and opinions that can be mutually exlusive with other people.
+What is intelligence? I think, I can examplify it as trees.
+Among the tree within humans, there mix science which seeks the truth of universe; objectivly guranteed facts that sit ouside of human's preferences; and opinions that can be mutually exlusive and contradicting with other people.
 
 物理学、そして数学のベイズ推定に「観測」という概念がある。
-Physics and Bayes' theorem in Mathmatics have a nortion of measurement.
+Physics and Bayes' theorem in Mathmatics have a nortion of _measurement_.
 
-前者の観測とは、いわゆる量子力学に登場する。二重スリット問題と定義されることもあるが、光子を二本のスリットに向かって発車してスリットの後ろのスクリーンを見ると、そこには干渉縞が発生する。しかし、スリットを通り過ぎる瞬間に光子を観測すると、干渉縞でなく、スリットの様子が現れるのだ。これはミクロな世界の話である。
-Former measurement appears in quontum physics. In double slit problem, an photon shot at the slits and observing the screen behind it, then interference appears. However, when you measure the photon right when it passes the slit, you see the shape of the one slit, not ihe interference. This occurs in micro world.
+前者の観測とは、いわゆる量子力学に登場する。[二重スリット問題](https://www.youtube.com/watch?v=vnJre6NzlOQ)と定義されることもあるが、電子を二本のスリットに向かって発車してスリットの後ろのスクリーンを見ると、そこには干渉縞が発生する。しかし、スリットを通り過ぎる瞬間に電子を観測すると、干渉縞でなく、スリットの様子が現れるのだ。これはミクロな世界の話である。
+Former measurement appears in quontum physics. In double slit problem, an electron shot at the slits and observing the screen behind it, then interference appears. However, when you measure the electron right when it passes the slit, you see the shape of the one slit, not ihe interference. This occurs in micro world.
 
-後者の観測は、「信念の更新」を数学的に公式化する際に登場する。観測者は元々ある信念を持っていて、観測を通してその信念はアップデートされることを形式化したものである。これはマクロな世界の話である。（以下の動画が、これを極めて明快に解説している。）
-Latter measurement appears in formalizing an update of one's belief. An observer originally has a belief, and a new evidence on it will update it. This occurs in macro world. (The linked video below explains this clearly)
-
-https://youtu.be/HZGCoVF3YvM
+後者の観測は、「信念の更新」を数学的に公式化する際に「証拠」という文脈で登場する。ミソとなるのは以下：観測者は元々ある信念を持っていたとき、新しい証拠を観測することでその信念は更新される。これはマクロな世界の話である。（明快な解説は[こちら](https://youtu.be/HZGCoVF3YvM)）
+Latter measurement appears as an _evidence_ in formalizing an update of _one's belief_. This in nutshell goes as follow; when an observer originally has a belief, and measuring a new evidence updates the belif. This occurs in macro world. ([This video](https://youtu.be/HZGCoVF3YvM) explains this very clearly)
 
 
-それが心理学的に正しいかどうか是非はこのポストの外にある。ただ、「観測」によって「彼の知の木」が更新される、というのは当たり前といえば当たり前であるが、知の変更を刻む時間の単位として大切な区切り目だと思う。
-Whether that phycollogically holds true or not, is out of scope of this post. Although measurement updates one's intelligence tree sounds obvious, it's a vital time line that ticks a change in the tree.
+ミクロにもマクロにも、観測は影響を与えるようだ。おそらく「観測」が「知の木」を更新するのだろうし、これは当たり前といえば当たり前。だけれど、木の成長を刻む時間軸として、大切な区切り目だと思う。
+Measurement seems to have influence in micro and macro world. So maybe measurement updates one's intelligence tree, and that sounds obvious; however, it's a vital time line that ticks growth of the tree, isn't it?
 
-教育を重ね、学びを通して、個人はそれぞれ知という木を少しずつ形成してきた。幹は太くなり、少しずつ枝分かれしては葉をつけ、大きく育っていく。
-Going through education, indivisuals have been forming the tree of intelligence. The stem has gotten thicker, branches out and cultivats leaves, and grows bigger.
+学びを通して、個人はそれぞれ知という木を少しずつ形成する。幹は太くなり、少しずつ枝分かれしては葉をつけ育っていく。
+Going through learning, each indivisual forms the tree of intelligence. The stem thickens, and the tree branches out, leafs, and grows.
 
-そして今、物理的に垣根のない情報の観測を繰り返し、その木はかつてない速度で更新されていく。そう、垣根のない情報とは、「インターネット」という魔法によるものであり、ソーシャルメディアなど巨大なユーザーが集まる場所に集積している。そして、オフライン：オンラインで、後者に占める割合が増加していく一方であるように思える。
+そして今、あなたは物理的に垣根のない情報の観測を繰り返し、あなたの木はかつてない速度で更新されていく。そう、垣根のない情報とは、「インターネット」という魔法によるものであり、ソーシャルメディアなど巨大なユーザーが集まる場所に集積している。そして、オフライン：オンラインで、後者に占める割合が増加していく一方であるように思える。
 
-And now, one repeats a measurement on imformation that doesn't have a physical barrier, and the tree keeps updated at an unprecedented speed. Yes, the imformation is driven by the magic -- namly the internet--, and it extensively piles up at a place with an enourmous number of users, such as social media.
+And now, you repeat a measurement of information without a physical bound, and your tree keeps updated at an unprecedented speed. Yes, the information is driven by the magic -- namly the internet --, and it extensively piles up at a place that holds an enourmous number of users, such as social media.
 
 スマートフォンやパソコンが持ち主への最適化を繰り返していくたびに、その木は当人の頭の中からその所在さえを変えていくことになりうる。つまりそれは、自分が保存したデータであり、閲覧履歴等の足跡であり、プラットフォーム上でお気に入りやいいねとと印をつけたサイトでもある。つまり、最適化されたスマートフォンやパソコンに木の一部は集積されていく。そういう意味で、人の知とは、今や情報の住所を知っていることーとすら言えるかもしれない。スマートフォンやパソコンをなくしたとき、体の一部がなくなったように思うのはそのためだろう。
 
-As a smartphone and a pc keeps optimizing itself to its user, the tree may have changed its adress from its owner's head. That is, the data the he stored, the footsteps such as history, and the websites as marked 'your favorite and like' on platform, meaning part of the tree is now getting stored in the optimized smartphone and pc. In this sense, you could even say that intelligence is now knowing where information sits. When you lose your phone or pc, you may feel like you're losing part of your body, and that is because of this.
+As a smartphone or pc keep optimizing itself to its user, the user's tree may have changed its adress from its owner's head. That is, the data the you stored, your footsteps such as history, and the websites as marked 'your favorite and like' on platform; meaning part of the tree is now getting stored in the optimized smartphone and pc. In this sense, you could even say that intelligence is now to knowing where information sits. When you lose your phone or pc, you may feel like you're losing part of your body, and that is probably because of this.
 
-しかしその知は、あなたのものだけでない。足跡（閲覧履歴、キャッシュ、クッキーなども含む）を残してウェブを消費することで、その木の一部を受け取った「あちら側」-- 人とAIが一体となった「ある目的を達成する」集団叡智は、あなたが閲覧するデジタルな世界を「おすすめ」や「妥当性」で固めた中身と共に形作っていく。知として一体化した「自分の作り出したウェブ」に、自らアクセスする速度は加速する様に意欲刺激が働いている様に見える。
+しかしその知は、あなたのものだけでない。足跡（閲覧履歴、キャッシュ、クッキーなども含む）を残してウェブを消費することで、その木の一部を受け取った「あちら側」-- 人とAIが一体となった「ある目的を達成する」集団叡智は、あなたが閲覧するデジタルな世界を「おすすめ」や「妥当性」で固めた中身と共に迅速に形作っていく。「自分の作り出したウェブ」に自らアクセスする速度が加速する様に、意欲刺激が働いている様に見える。
 
-Although, the tree is _not only_ yours. Consuming the web while leaving your footsteps(including browsing history, cache and cookies), _the other side_ -- cybernetic collectives among humans and machines that seek to achieve their particular objectives --, who recieves your part of the tree, shapes your digital-sphere with _reccomendation_ and _relavance_, providing content. The incentive aligning in both of them seems to accerelate the speed at which the user accesses to a partially unified intelligence with _the other side_, _the web created by yourself_.
+Although, the tree is _not only_ yours. Consuming the web while leaving your footsteps(including browsing history, cache and cookies), _the other side_ -- cybernetic collectives among humans and machines that seek to achieve their particular objectives --, who recieve part of your tree and promptly shapes your digital-sphere with _recommendations_ and _relavance_, providing content. The incentive seems to accerelate the speed at which the user accesses to _the web created by yourself_.
 
 SNSを含め、メディアのビジネスモデルは広告収入によるものが多い。利用者は「金銭的無料」の代償に自らのデータとクリックによる「興味」を提供する。そのデータを元に、「あちら側」は広告を打つ。
 
@@ -108,12 +106,18 @@ To understand each other, it's necessary to seek the shared stem with yours, and
 
 So when you communicate with other, many of 'I don't get it', 'I'm uncertain', and 'I dont like it' will remain, and that is normal. Meanwhile, it's possible to keep measurments over and over in the filter bubble. And the sea of information would not show its horizon, as if it's entirely possible to keep measurements there forever. 
 
-これを回避するために、完全とは言えないものの、技術的な対応策はいくつかあるはずだ。他の検索エンジンの使用（競争上の観点から消費者の「あちら側」の独占を防ぐ）、プライベートブラウジングの使用（履歴やクッキーの足跡を残さない、おすすめデジタル空間の作成の妨害）やSNSやニュースからの適度な離脱（速度に意欲刺激が働いた情報の偏りからの離脱）、主体的ファクトチェック（ウェブサイトを活用する方法もある、フェイクニュース対策）、文脈の加算（フェイクニュース対策）、ブラウザの拡張機能による消費する政治的嗜好の認知（政治的ニュースの左右解釈のメタ認知）、など。
+これを回避するために、完全とは言えないものの、技術的な対応策はいくつかあるはずだ。検索エンジンの使用（競争上の観点から消費者の「あちら側」の独占を防ぐ。）、プライベートブラウジングの使用（履歴やクッキーの足跡を残さない、おすすめデジタル空間の作成の妨害）やSNSやニュースからの適度な離脱（速度に意欲刺激が働いた偏った情報からの離脱）、主体的ファクトチェック（ウェブサイトを活用する方法もある、フェイクニュース対策。例、[snope.com](https://www.snopes.com/)）、文脈の加算（フェイクニュース対策）、政治的嗜好を明示したメディアの消費（政治的に反対側の意見への接触、例、[alide.com](https://www.allsides.com/unbiased-balanced-news)）、など。
 
-To avoid it, there must be some technical preparedness although they may not be perfect. Using another search engine(this comes from a competition standpoint and prevents an monoply of users from _the other side_); Using private browsing(not leaving footsteps of history and cookies, preventing a creation of _reccomendation digital sphere_) and occational leave from SNS and news(retbias toward )
+To avoid it, there must be some technical preparedness although they may not be perfect. Using another search engine(this comes from a competition standpoint and prevents an monoply of users from _the other side_); Using private browsing(not leaving footsteps of history and cookies, preventing a creation of _reccomendation digital sphere_) and occational leave from SNS and news(avoiding imformation incentivised with speed alone); delibrate fact check(using particular websites designed for this, as for fake news, e.g. [snope.com](https://www.snopes.com/)); adding more context(as for fake news); consuming media that shows political charactaristic of their content(Exposure to opinions from the politically oppsite side to yours, e.g.[alide.com](https://www.allsides.com/unbiased-balanced-news),and so on.
 
-同時に意識的な話にでも、いくつか列挙できる。「自分は持っている世界は自分が作り上げたもの」というメタ認知や、また入り込んだ分だけ長く厄介で、根気の必要な「コミュニケーション」なくして相互理解は得られくなっていくという認知、反対側のスペクトラムにいる立場の認知、正確な語彙の把握、疑わしきは罰せずという心構え、否定的な情報のほうが肯定的な情報よりも目をひき、注意を集めるというメタ認知を持つこと、など。
+同時に意識的な案も、いくつか列挙できるのではないか。「自分は見ている世界は自分が作り上げたもの」というメタ認知や、また入り込んだ分だけ長く厄介で、根気の必要な「コミュニケーション」なくして相互理解は得られくなっていくという認知、反対側のスペクトラムにいる立場の認知、正確な語彙の把握、疑わしきは罰せずという心構え、否定的な情報のほうが肯定的な情報よりも目をひき、注意を集めるというメタ認知を持つこと、など。
 
-もっともちろん、できることはあるのだろうけれど。僕だって、全部がわからない。
+At the same time, there would be concious ideas there as well. Meta-awareness such as 'This world I'm viewing is what I created'; awareness that it'd be not possible to end up in mutual understanding without troublesome, contradicting, and endurance-needed communication as much as it being more and more involved; awareness of a perspective from the opposite side; having accurate vocaburary; giving the benefit of the doubt; meta-awareness of that negative information draws more attention than positive one, and so on.
 
-十人十色、諸行無常とあって、それぞれ、違っていて当たり前である。多様性を尊重していく中でも、何が良いか否か、なんていうことは流動的なものである。時代や環境が変われば価値観や倫理観も変わっていく。それでも、相互理解、そして「共存」は欠かせないものではなかろうか。
+もっともちろん、できることはあるのだろうけれど。僕だって、全てを認知し切れていないの一人。それがもしかしたら、普通のことかもしれないけれど。
+
+And I'm sure, that there's a lot more that can be done. But I'm not aware of everything either.
+
+十人十色、諸行無常とあって、それぞれ、違っていて当たり前である。多様性を尊重していく中でも、何が良いか否か、なんていうことは流動的なものかもしれない。時代や環境が変われば価値観や倫理観も変わっていく。それでも、相互理解、そして「共存」は欠かせないものではなかろうか。
+
+As many heads, as many wits. Everything changes. It's normal to being different to each other. What's good and bad may be fluid in respecting diversity. As era and environment changes, perspectives and ethics would change as well. Still given that; however, mutual understanding, and living together in peace is priceless, isn't it?
