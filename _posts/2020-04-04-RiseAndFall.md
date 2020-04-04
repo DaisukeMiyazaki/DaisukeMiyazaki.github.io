@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RiseAndFall"
-date: 2020-4-06
+date: 2020-4-04
 ---
 After reading _Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart._
 Russell Stuart著のHuman compatible : Artificial intelligence and the problem of controlを読んで想ったこと。
