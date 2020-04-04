@@ -119,7 +119,7 @@ To counter act against it, there must be some technical preparedness although th
 
 同時に意識的な案も、いくつか列挙できるのではないか。「自分は見ている世界は自分が作り上げたもの」というメタ認知や、また入り込んだ分だけ長く厄介で、根気の必要な「コミュニケーション」なくして相互理解は得られくなっていくという認知、反対側のスペクトラムにいる立場の認知、正確な語彙の把握、疑わしきは罰せずという心構え、否定的な情報のほうが肯定的な情報よりも目をひき、注意を集めるという認知を持つこと、など。
 
-At the same time, there would be conscious preparedness there as well: having a  meta-awareness such as 'This world I'm viewing is what I created'; having an awareness that it'd be not possible to end up in mutual understanding without troublesome, contradicting, and patient communication, as their trees differ greater and greater; having awareness of perspectives from the opposite side of spectrum; having accurate vocabulary; giving the benefit of the doubt; having an awareness of that negative information draws more attention than positive one, and so on.
+At the same time, there would be conscious preparedness there as well: having a  meta-awareness such as "This world I'm viewing is what I created"; having an awareness that it'd be not possible to end up in mutual understanding without troublesome, contradicting, and patient communication, as their trees differ greater and greater; having an awareness of perspectives from the opposite side of spectrum; having accurate vocabulary; giving the benefit of the doubt; having an awareness of that negative information draws more attention than positive one, and so on.
 
 もっともちろん、できることはあるのだろうけれど。僕だって、全てを認知し切れていないの一人。これももしかしたら、普通のことかもしれないけれど。
 
