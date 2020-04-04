@@ -6,27 +6,33 @@ date: 2020-4-06
 After reading _Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart._
 Russell Stuart著のHuman compatible : Artificial intelligence and the problem of controlを読んで想ったこと。
 
+.
 
-知、とはなんだろう。僕は、それを木に例えられると思う。
-人の知の木には、宇宙の摂理を解いた科学と言った、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識など、いろいろと混在している。
+**知**、とはなんだろう。僕は、それを木に例えられると思う。
+人の知の木には、宇宙の摂理を解いた科学と言った、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識などが様々に混在している。
 
 What is intelligence? I think, I can exemplify it as trees.
 Among the tree within humans, there mix science which seeks the truth of universe; objectively guaranteed facts that sit outside of human's preferences; opinions that can be mutually exclusive and contradicting with other people; and ingrained common sense in the culture one raised with.
 
 物理学、そして数学のベイズ推定に「観測」という概念がある。
+
 Physics and Bayes' theorem in Mathematics have a notion of _measurement_.
 
 前者の観測とは、いわゆる量子力学に登場する。[二重スリット問題](https://www.youtube.com/watch?v=vnJre6NzlOQ)と定義されることもあるが、電子を二本のスリットに向かって発射してスリットの後ろのスクリーンを見ると、そこには干渉縞が発生するというものだ。しかし、スリットを通り過ぎる瞬間に電子を観測すると、干渉縞でなく、スリットの様子が現れるのだ。つまり観測をもとに、電子のとりうる状態が変化する。これはミクロな世界の話である。
+
 Former measurement is found in quantum physics. In double slit problem, you shoot an electron at the slits and interference appears behind the slits. However, when you measure the electron right before it passes either of the slits, you see the shape of one slit ; not interference. So, the state of an electron changes with measurement. This occurs in micro world.
 
 後者の観測は、「信念の更新」を数学的に公式化する際に「証拠」という文脈で登場する。ミソとなるのは以下：観測者は元々ある信念を持っていたとき、新しい証拠を観測することでその信念は更新される。これはマクロな世界の話である。（明快な解説は[こちら](https://youtu.be/HZGCoVF3YvM)）
+
 Latter measurement is found as an _evidence_ in formalizing an update of _one's belief_ in probability. This in nutshell goes as follow; when an observer originally has a belief, measuring a new evidence updates the belief. This occurs in macro world. ([This video](https://youtu.be/HZGCoVF3YvM) explains this very clearly)
 
 
 我々の住むミクロにもマクロな世界にも、観測は影響を与えるようだ。おそらく「観測」が「知の木」をも更新するのだろう。これは当たり前といえば当たり前だけれど、木の成長を刻む時間軸として扱うことにする。
+
 Measurement seems to have influence in micro and macro world that we live in. Measurement maybe updates one's intelligence tree as well. This sounds obvious; however, I’m going to address this as a time axis that ticks growth of the tree. 
 
 学びを通して、個人はそれぞれ知という自分自身の木を少しずつ形成する。幹は太くなり、少しずつ枝分かれしては葉をつけ育っていく。
+
 Going through learning, each individual forms the tree of intelligence of their own. The stem gradually thickens, branches out, leafs, and grows.
 
 そして今、あなたは物理的に垣根のない情報の観測を繰り返し、あなたの木はかつてない速度で更新されていく。そう、垣根のない情報とは、「インターネット」という魔法によるものであり、ソーシャルメディアや主要な検索エンジンなど、巨大な数の利用者が集まる場所に集積している。そして、オフライン：オンラインで、観測が後者で起きる割合が増加していく一方であるように思える。
@@ -53,13 +59,12 @@ The more data _the other side_ can collect, the more accurate advertisement beco
 
 As time is finite, they’re using catchy titles that draw your attention in headlines, or impressive thumbnails : therefore, those methods of propagating information keep advancing. Considering hard competition between medias, manipulating flat lies and sensitive expressions to get your attention isn’t hard for us to imagine happening. For sure, there exist justice to deliver unmodified facts coming from journalism and science(as information sometimes can be more important than life, and some must to be reached to everyone), and well-intentioned information coming from altruistic behaviour.
 
-
 「あちら側」は名門大学を出て、優秀な人材が集まったエリート集団だ。「あなたの注意を引き、結びつきを最大化する」という目的は利用者が簡単には気づけない水準で達成されうる(作品より後々、一例を引用する）
-)
 
 _The other side_ is an intellectual elite from all the prestige universities. The aim, drawing your attention and maximising engagement, could be accomplished at a fairly undetectable level to the users(I'll quote an example from the book later).
 
 そうして形成した木はーゆえに信条、知見、嗜好もーかつてない速度と精度で更新され続けているように思える。
+
 This tree formed in this way -- therefore beliefs, knowledge and preferences - seem like getting updated at an unprecedented rate.
 
 インターネットが「魅力的でたまらない」「目線が行ってしまう」ということは、それだけ最適化がうまく行っている証拠であると考えることもできる。
