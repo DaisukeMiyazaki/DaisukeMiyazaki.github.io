@@ -43,7 +43,7 @@ And now, you repeat a measurement of information without a physical bound, and y
 
 As a smartphone or pc keep optimizing itself to its user, the user's tree may have changed its address from its owner's head. The data you stored, your footsteps(such as your browsing history), and the websites marked as 'your favorite and like' on platform, are all yours but they exist outside of your head. This means part of the tree is now getting stored in the optimized smartphone and pc. In this sense, you could even say that intelligence is now to knowing where information sits; not to exactly remembering it. When you lose your phone or pc, you may feel like you're losing part of your body, and that is probably because of this.
 
-しかしその知は、あなただけのものではない。足跡（閲覧履歴、キャッシュ、クッキーなども含む）を残してウェブを消費することで、その木の一部を受け取った「あちら側」、人とAIが一体となった「ある目的を達成する」集団叡智は、あなたが閲覧するデジタルな世界を「おすすめ」や「妥当性」で固めた中身と共に迅速に形作っていく。そうしてできたある意味で「自分の作り出したウェブ」に自らアクセスする速度が加速する様に、意欲刺激が働いている様に見える。
+しかしあなたの木は、あなただけのものではない。足跡（閲覧履歴、キャッシュ、クッキーなども含む）を残してウェブを消費することで、その木の一部を受け取った「あちら側」、人とAIが一体となった「ある目的を達成する」集団叡智は、あなたが閲覧するデジタルな世界を「おすすめ」や「妥当性」で固めた中身と共に迅速に形作っていく。そうしてできたある意味で「自分の作り出したウェブ」に自らアクセスする速度が加速する様に、意欲刺激が働いている様に見える。
 
 Although, the tree is _not only_ yours. Consuming the web while leaving your footsteps(including browsing history, cache and cookies), _the other side_ -- cybernetic collectives among humans and machines that seek to achieve their particular objectives --, who receive part of your tree and promptly shapes your digital-sphere with _recommendations_ and _relevance_, providing content. The incentive seems to accelerate the speed at which the user accesses to _the web created by yourself_ in a sense.
 
