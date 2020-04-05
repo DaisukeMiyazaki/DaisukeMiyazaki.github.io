@@ -9,10 +9,10 @@ Russell Stuart著のHuman compatible: Artificial intelligence and the problem of
 .
 
 **知**、とはなんだろう。僕は、それを木に例えられると思う。
-人の知の木には、宇宙の摂理を解き明かす科学のような、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識などが様々に混在している。
+人の知の木には、様々なものが混在している。宇宙の摂理を解き明かす科学のような、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識など。
 
 What is intelligence? I think, I can exemplify it as trees.
-Among the tree within humans, there mix objectively guaranteed facts that sit outside of human's preferences, such as science that seeks the truth of universe; opinions that can be mutually exclusive and contradicting with other people; and ingrained common sense in the culture one raised with.
+In the tree of a human, there exist a quite bit of things; objectively guaranteed facts that sit outside of human's preferences, such as science that seeks the truth of universe; opinions that can be mutually exclusive and contradicting with other people; and ingrained common sense in the culture one raised with.
 
 物理学、そして数学のベイズ推定に「観測」という概念がある。
 
