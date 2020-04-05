@@ -123,7 +123,7 @@ At the same time, there would be conscious preparedness as well: having a  meta-
 
 もちろん、もっとできることはあるのだろうけれど。悔しいけれど僕も、全てを認知し切れていないの一人。もしかしたら、認知し切れないことが普通のことなのかもしれないけれど。わからない。
 
-And I'm sure, that there's a lot more that can be done. It's shame that I'm one of them not being aware of everything, either. Or parhaps it's pretty normal not to being able to aware of everything. I don't know.
+And I'm sure, that there's a lot more that can be done. It's shame that I'm one of them not being aware of everything, either. Or perhaps it's pretty normal not to being able to aware of everything. I don't know.
 
 それでも十人十色、諸行無常とあって、それぞれ、違っていて当たり前である。多様性を尊重していく中でも、何が良いか否か、なんていうことは流動的なものかもしれない。時代や環境が変われば価値観や倫理観も変わっていく。それでも、相互理解、そして「共存」は欠かせないものではなかろうか。
 
