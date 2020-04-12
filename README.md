@@ -1,3 +1,3 @@
-# DaisukeMiyazaki.github.io
+I write posts at times, both in English and Japanese. Often topics are related to technologies.
 
-For now, I use this place to write my own personal blog. From times to times, I'll be uploading projects that I worked on. 
+ふと言葉のつぶてを綴り、投稿します。日本語と英語の両方で投稿します。しばし、技術的なネタを織り込んでいます。
