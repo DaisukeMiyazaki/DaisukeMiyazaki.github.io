@@ -11,25 +11,25 @@ Russell Stuart著のHuman compatible: Artificial intelligence and the problem of
 **知**、とはなんだろう。僕は、それを木に例えられると思う。
 人の知の木には、様々なものが混在している。宇宙の摂理を解き明かす科学のような、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識など。
 
-What is intelligence? I think, I can exemplify it as trees.
-In the tree of a human, there exist a quite bit of things; objectively guaranteed facts that sit outside of human's preferences, such as science that seeks the truth of universe; opinions that can be mutually exclusive and contradicting with other people; and ingrained common sense in the culture one raised with.
+What is intelligence? I think, this can be represtented by a tree.
+In the tree of a human, there exists quite a few of things; objectively guaranteed facts that sit outside of the preferences of humanity, such as science that seeks the truth of the universe; opinions that can be mutually exclusive and contradictory with those of other people; and ingrained common sense in the culture one was raised in.
 
 物理学、そして数学のベイズ推定に「観測」という概念がある。
 
-Physics and Bayes' theorem in Mathematics have a notion of _measurement_.
+Physics and Bayes' theorem in Mathematics both contain the notion of _measurement_.
 
 前者の観測とは、いわゆる量子力学に登場する。[二重スリット問題](https://www.youtube.com/watch?v=vnJre6NzlOQ)と定義されるこの問題では、スリットが二つ空いた壁を用意し、その後ろにスクリーンを用意する。そして電子を二本のスリットに向かって発射し、スリットの後ろのスクリーンを見ると、そこには干渉縞が発生するというものだ。しかし、スリットを通り過ぎる瞬間に電子を観測すると、干渉縞でなく、スリットの様子が現れるのだ。つまり観測をもとに、電子のとりうる状態が変化する。これはミクロな世界の話である。
 
-Former measurement is found in quantum physics. In [double slit problem](https://www.youtube.com/watch?v=vnJre6NzlOQ) you set a wall with two slits, and a screen behind it. When you shoot an electron at the slits, interference pattern appears behind the slits. However, when you measure the electron right before it passes either of the slits, you see the shape of one slit; not interference pattern. So, the state of an electron changes with measurement. This occurs in micro world.
+The former type of measurement is found in quantum physics. In [the double slit problem](https://www.youtube.com/watch?v=vnJre6NzlOQ) you prepare a wall with two slits and a screen behind it. When you shoot an electron at the slits, an interference pattern appears behind the slits. However, when you measure the electron right before it passes either of the slits, you see the shape of one slit; not the interference pattern. So, the state of an electron changes with measurement. This occurs in the micro world.
 
 後者の観測は、「信念の更新」を数学的に公式化する際に「証拠」という文脈で登場する。ミソとなるのは以下：観測者が元々ある信念を持っていたとき、新しい証拠を観測することでその信念が更新される。これはマクロな世界の話である。（明快な解説は[こちら](https://youtu.be/HZGCoVF3YvM)）
 
-Latter measurement is found as an _evidence_ in formalizing an update of _one's belief_ in probability. This in nutshell goes as follow; when an observer originally has a belief, measuring a new evidence updates the belief. This occurs in macro world. ([This video](https://youtu.be/HZGCoVF3YvM) explains this very clearly)
+The latter type of measurement is found as a form of _evidence_ for formalizing an update of _one's belief_ in probability. This in a nutshell goes as follows; when an observer originally has a belief, measuring a new piece of evidence updates the belief. This occurs in the macro world. ([This video](https://youtu.be/HZGCoVF3YvM) explains this very clearly)
 
 
 我々の住むミクロにもマクロな世界にも、観測は影響を与えるようだ。おそらく「観測」が「知の木」をも更新するのだろう。これは当たり前といえば当たり前だけれど、木の成長を刻む時間軸として扱うことにする。
 
-Measurement seems to have influence in the micro and macro world that we live in. Measurement maybe updates one's intelligence tree as well. This sounds obvious; however, I’m going to address this as a time axis that ticks growth of the tree. 
+Measurement seems to have influence on the micro and macro world that we live in. Measurement may update one's intelligence tree as well. This sounds obvious; however, I’m going to address this as a time axis that divises the growth of the tree into the section. 
 
 学びを通して、個人はそれぞれ知という自分自身の木を少しずつ形成する。幹は太くなり、少しずつ枝分かれしては葉をつけ育っていく。
 
