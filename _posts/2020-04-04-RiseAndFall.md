@@ -2,13 +2,14 @@
 layout: post
 title: "RiseAndFall"
 date: 2020-4-04
+comments: true
 ---
-After reading _Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart._
+After reading [_Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart._](https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-ebook/dp/B07N5J5FTS)
 Russell Stuart著のHuman compatible: Artificial intelligence and the problem of controlを読んで想ったこと。
 
 .
 
-**知**、とはなんだろう。僕は、それを木に例えられると思う。
+**知**とはなんだろう。僕は、それを木に例えられると思う。
 人の知の木には、様々なものが混在している。宇宙の摂理を解き明かす科学のような、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識など。
 
 What is intelligence? I think, this can be represtented by a tree.

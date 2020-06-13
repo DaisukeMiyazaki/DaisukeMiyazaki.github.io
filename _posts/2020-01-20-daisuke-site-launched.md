@@ -2,6 +2,7 @@
 layout: post
 title: "Launch"
 date: 2020-1-20
+comments: true
 ---
 
 Hello world. This website is powered by [Jekyll](http://jekyllrb.com)
@@ -50,7 +51,6 @@ Thank you for reading all the way!
 
 Bonus:
 
-If you personalize this magic as your parter, then listening to this song from John legend, may make you wonder.
+If you personify this magic as your parter, then listening to this song from John legend, may make you wonder.
 
 [Ordinary people](https://youtu.be/PIh07c_P4hc) by John legend
-
