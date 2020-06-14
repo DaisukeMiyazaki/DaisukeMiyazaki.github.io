@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
+		{% include header.html %}
 		<body>
 			<!--<nav>
 	    		<ul>
@@ -16,12 +12,7 @@
 			{{ content }}
 			
 			</div><!-- /.container -->
-			<footer>
-				<ul>
-					<li><a href="mailto:daisuke.miyazaki012@gmail.com">email</a></li>
-					<li><a href="https://github.com/DaisukeMiyazaki">github.com/DaisukeMiyazaki</a></li>
-					<li><a href="https://twitter.com/aubozumom">twitter</a></li>
-				</ul>
-			</footer>
+			
 		</body>
+		{% include footer.html %}
 	</html>
