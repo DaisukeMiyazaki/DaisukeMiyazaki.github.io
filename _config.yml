@@ -4,7 +4,7 @@ name: Daisuke Miyazaki
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 email: daisuke.miyazaki012@gmail.com
-url: "http://daisukemiyazaki.github.io/"
+url: "https://daisukemiyazaki.github.io/"
 baseurl: ""
 
 #description:
