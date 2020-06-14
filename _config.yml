@@ -1,3 +1,13 @@
+# site setting
+title: Daisuke Miyazaki's Blog
 name: Daisuke Miyazaki
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+email: daisuke.miyazaki012@gmail.com
+url: "http://daisukemiyazaki.github.io/"
+baseurl: ""
+
+#description:
+
+twitter_username: Daisuke
+github_username: Daisuke
