@@ -18,6 +18,15 @@ h1 {
     font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+.imgcap img {
+  border: 1px solid #999;
+  max-width: 50%;
+}
+.imgcap {
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
 /*
 p {
     font-size: 1.5em;
