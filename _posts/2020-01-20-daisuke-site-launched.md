@@ -37,17 +37,19 @@ Amid of them, there’s a thing that you reach your hand to, unconsciously. The 
 Originally, rationality and instinct co-exist each other inside of you. Perhaps there’s no one who wants to get rid of either of them. Now, there wouldn’t be anyone who wants to get rid of your magic, which has become like your limbs and arms.
 
 そしてその逆戻りは、きっとないのだ。
+
 And, there may be no going-back. 
 
 僕は、世界中の皆んなが魔法使いになったと観ている。でもみんな、その魔法の使い道を探している最中、そんな風にも見える。僕だってその1人に違いない。これを革命以外の、何と呼ぶのであろうか。
 
 I find everyone as one that has become a wizard. Meanwhile, they also seem like discovering how to use the magic. Certainly, I’m also one of them. Did I sound strange in the beginning, or did I not?
 
-その中で、私たちになくてはならないもの、それってなんだろう、そんな思いや考えにふけて、道草を食いたくなる。きっとこれも、なくてはならないものの1つだったりして。
+その中で、私たちになくてはならないもの、それってなんだろう?そんな思いや考えにふけて、道草を食いたくなる。きっとこれも、なくてはならないものの1つだったりして。
 
 So what now? Among this, I wonder “ what‘s priceless for us? ". Time to time, I get tempted to stop by and ponder it. Perhaps “this” is also something priceless for us.
 
 どうも、最後まで読んでくれてありがとうございます。
+
 Thank you for reading all the way!
 
 
