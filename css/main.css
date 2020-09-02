@@ -94,12 +94,6 @@ p.meta {
     font-size: 1.2em;
 }
 
-/* gumroad style */
-
-iframe.gumroad-embed-iframe {
-    width: 50%;
-}
-
 /* Page style */
 /* ----------------------------------- */
 
@@ -113,13 +107,20 @@ iframe.gumroad-embed-iframe {
     color: #333;
 }
 
+/* Instagram style */
+/* ----------------------------------- */
+
+div.instagram{
+    padding: 2px;
+    border-bottom-width 1px;
+}
 
 /* Footer style */
 /* ----------------------------------- */
 
 .site-footer {
     border-top: 1px solid #d5d5d5;
-    padding:  15px 0;
+    padding:  5px;
     font-size: .8em;
     list-style: none;
 }
