@@ -5,6 +5,7 @@ date: 2020-4-04
 comments: true
 excerpt: "知とは、なんだろう。僕は、それを木に例えられると思う。人の知の木には、様々なものが混在している。宇宙の摂理を解き明かす科学のような、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識など。
 What is intelligence? I think, this can be represtented by a tree. In the tree of a human, there exists quite a few of things; objectively guaranteed facts that sit outside of the preferences of humanity, such as science that seeks the truth of the universe; opinions that can be mutually exclusive and contradictory with those of other people; and ingrained common sense in the culture one was raised in."
+tag: art
 ---
 
 After reading [_Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart._](https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-ebook/dp/B07N5J5FTS)

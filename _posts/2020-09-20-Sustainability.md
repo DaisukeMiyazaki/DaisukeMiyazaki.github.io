@@ -5,7 +5,7 @@ date: 2020-9-20
 title: Sustainability
 excerpt: サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。Sustainability, being light and fuzzy like feathers, is a shapeless object. I've been trying to catch it with my own hands with certain special feelings. At times it forms a tangible shape, leaving me spark-joy; other times it goes through my fingers deceptively. 
 comments: true
-
+tag: art
 ---
 
 　サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。
