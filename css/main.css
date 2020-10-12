@@ -97,6 +97,24 @@ p.meta {
 /* Page style */
 /* ----------------------------------- */
 
+/* About style */
+
+.about p {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.8em;
+    line-break: strict;
+}
+article.about-content{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1em;
+    line-break: strict;
+    white-space: pre;
+}
+
+/* ----------------------------------- */
+
 
 /* Home style */
 /* ----------------------------------- */
