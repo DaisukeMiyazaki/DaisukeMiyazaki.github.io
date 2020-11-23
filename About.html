@@ -110,3 +110,24 @@ includelink: true
     いや、待てよ。それは、カレーパンになってしまうぞ？
 
 </article>
+<div id="instagram-feed1"　class="instagram"></div>
+				<script src="/javascript/InstagramFeed.min.js"></script>
+					<script>
+						let feed = new InstagramFeed({
+							'tag': 'あんぱん',
+							'container': document.getElementById("instagram-feed1"),
+							'display_profile': true,
+                            'display_gallery': true,
+							'display_caption': true,
+							'styling': true,
+							'items': 20,
+							'items_per_row': 4,
+							'margin': 1,
+							'on_error': console.error
+						});
+					</script>
+    <p>&nbsp</p>
+    
+<article class="about-content">
+    
+</article>
