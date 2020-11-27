@@ -110,13 +110,13 @@ article.about-content{
     font-weight: 300;
     line-height: 1em;
     line-break: strict;
-    white-space: pre;
+    white-space: pre-wrap;
 }
 article.about-content-trick{
     font-size: 1em;
     font-weight: 300;
     line-height: 1.9em;
-    white-space: pre;
+    white-space: pre-wrap;
     word-wrap: normal;
 }
 
