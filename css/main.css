@@ -2,8 +2,6 @@
 /* ---------------------------------- */
 
 body {
-    margin: 60px auto;
-    /*width: 80%;*/
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
@@ -52,6 +50,11 @@ a.page-link {
 
 .site-header {
     border-bottom: 1px solid #e8e8e8;
+    margin-top: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    padding: 1em 1em 1em;
 }
 
 .site-nav {
@@ -164,11 +167,6 @@ div.container {
 /* Instagram style */
 /* ----------------------------------- */
 
-div.instagram{
-    padding: 20px;
-    border-bottom-width: 1px;
-    border-bottom: auto;
-}
 
 /* Footer style */
 /* ----------------------------------- */
@@ -197,7 +195,7 @@ footer{
     letter-spacing: -.5px;
     margin-bottom: 15px;*/
     max-width: 800px;
-    padding: 0 30px;
+    padding: 10px;
     margin: 0 auto;
 }
 
