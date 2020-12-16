@@ -1,16 +1,16 @@
 <footer class="site-footer">
 
-    <dev class="footer-heading">
+    <div class="wrap">
 
-        <dev class="footer-col-1 column" >
+        <div class="footer-col-1 column" >
             <li>
                 <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url}}">
                 {{site.title}}
                 </a>
             </li>
-        </dev>
+        </div>
         
-        <dev class="footer-col-2 column">
+        <div class="footer-col-2 column">
             {% if site.github_username %}
             <li>
                 <a href="https://github.com/DaisukeMiyazaki">
@@ -49,8 +49,8 @@
                 <span class="username">{{ site.twitter_username }}</span>
                 </a>
             </li>{% endif %}
-        </dev>
-        <dev class="footer-col-3 column">
+        </div>
+        <div class="footer-col-3 column">
             <li>
                 <a href="mailto:daisuke.miyazaki012@gmail.com">
                     <span class="email icon">
@@ -61,6 +61,6 @@
                     <span class="username">email</span>
                 </a>
             </li>
-        </dev>
-    </dev>
+        </div>
+    </div>
 </footer>
