@@ -11,7 +11,7 @@ layout: feed
 	<id>http://DaisukeMiyazaki.github.io/blog</id>
 	<author>
 		<name>Daisuke Miyazaki</name>
-		<email>hankquinlanhub@gmail.com</email>
+		<email>daisuke.miyazaki012@gmail.com</email>
 	</author>
 
 	{% for post in site.posts %}

@@ -2,43 +2,39 @@
 layout: default
 ---
 <div class="home">
-	<div>
-		<p>Welcome. ようこそ。</p>
-		<ul class="post">
-			{% for tag in site.tags  %}
-				{% if tag[0] == "art" %}
-					{% for post in tag[1] %}
-					<li class="home_post_intro">
-						<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-						<br>
-						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-						<br>
-						{{ post.excerpt }}
-					</li>
-					{% endfor %}
-				{% endif %}
-			{% endfor %}
-		</ul>
-	</div>
-	<div id="instagram-feed1"　class="instagram">
-		<script src="/javascript/InstagramFeed.min.js"></script>
-			<script>
-				let feed = new InstagramFeed({
-					'username': 'm.daisuke_2020',
-					'container': document.getElementById("instagram-feed1"),
-					'display_profile': true,
-					'display_biography': true,
-					'display_gallery': true,
-					'display_caption': true,
-					'callback': null,
-					'styling': true,
-					'items': 12,
-					'items_per_row': 4,
-					'margin': 1,
-					'lazy_load': true,
-					'on_error': console.error
-				});
-			</script>
-	</div>
-	<p>&nbsp</p>
-</div><!-- /.home -->
+	<ul class="home">
+		<!--p>Welcome. ようこそ。</p-->
+		{% for tag in site.tags  %}
+			{% if tag[0] == "art" %}
+				{% for post in tag[1] %}
+				<li class="home_post_intro">
+					<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+					<!--br-->
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					<br>
+					{{ post.excerpt }}
+				</li>
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</ul>
+</div>
+<div id="instagram-feed1"　class="instagram"></div>
+	<script src="/javascript/InstagramFeed.min.js"></script>
+		<script>
+			let feed = new InstagramFeed({
+				'username': 'm.daisuke_2020',
+				'container': document.getElementById("instagram-feed1"),
+				'display_profile': true,
+				'display_biography': true,
+				'display_gallery': true,
+				'display_caption': true,
+				'callback': null,
+				'styling': true,
+				'items': 12,
+				'items_per_row': 4,
+				'margin': 1,
+				'lazy_load': true,
+				'on_error': console.error
+			});
+		</script>

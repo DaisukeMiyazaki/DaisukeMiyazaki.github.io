@@ -6,20 +6,19 @@ includelink: true
 ---
 
 <div class="home">
-	<p>Welcome. ようこそ。</p>
-		<ul class="post">
-			{% for tag in site.tags  %}
-				{% if tag[0] == "engineering" %}
-					{% for post in tag[1] %}
-					<li class="home_post_intro">
-						<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-						<br>
-						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-						<br>
-						{{ post.excerpt }}
-					</li>
-					{% endfor %}
-				{% endif %}
-			{% endfor %}
-		</ul>
+	<!--p>Welcome. ようこそ。</p-->
+	<ul class="home">
+		{% for tag in site.tags  %}
+			{% if tag[0] == "engineering" %}
+				{% for post in tag[1] %}
+				<li class="home_post_intro">
+					<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					<br>
+					{{ post.excerpt }}
+				</li>
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</ul>
 </div>
