@@ -6,13 +6,12 @@
     padding: 0;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 html, body { height: 100%; }
-.body {
-    /*font-family: Helvetica,"Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";*/
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+body, body * {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 a { text-decoration: none; color: #999; }
