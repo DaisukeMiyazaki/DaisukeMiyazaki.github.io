@@ -201,6 +201,12 @@ li.home_post_intro{
   text-align: center;
 }
 
+img {
+  max-width:100%;
+  height:auto;
+  max-height:100%;
+  }
+
 /* Footer style */
 /* ----------------------------------- */
 
@@ -302,6 +308,15 @@ div.container{
     width: 800px;
     min-height: 600px;
     margin: 0 auto;
+}
+#instafeed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  max-width: 64rem;
+  margin: auto;
 }
 
 /* Youtube */
