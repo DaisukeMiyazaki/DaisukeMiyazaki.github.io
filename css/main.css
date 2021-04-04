@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5,h6 {font-size: 100%; font-weight: 400;}
 .site-nav .page-link {
     margin-left: 20px;
     color: #727272;
-    letter-spacing: -.5px;
+    font-size: large;
   }
 
 /* Home styles */
@@ -223,29 +223,28 @@ img {
   }
   
   .site-footer .column { float: left; margin-bottom: 15px; }
+  .site-footer a { font-size: 18px;}
   
   .footer-col-1 {
     width: 270px; /*fallback*/
     width: -webkit-calc(35% - 10px);
     width: -moz-calc(35% - 10px);
     width: -o-calc(35% - 10px);
-    width: calc(35% - 10px);
-    margin-right: 10px
+    width: 33.3%;
   }
   .footer-col-2 {
     width: 175px; /*fallback*/
     width: -webkit-calc(23.125% - 10px);
     width: -moz-calc(23.125% - 10px);
     width: -o-calc(23.125% - 10px);
-    width: calc(23.125% - 10px);
-    margin-right: 10px
+    width: 33.3%;
   }
   .footer-col-3 {
     width: 335px; /*fallback*/
     width: -webkit-calc(41.875%);
     width: -moz-calc(41.875%);
     width: -o-calc(41.875%);
-    width: calc(41.875%);
+    width: 33.3%
   }
   
   .site-footer ul { list-style: none; }
@@ -255,13 +254,15 @@ img {
     font-size: 15px;
     letter-spacing: -.3px;
     color: #828282;
+    text-align: center
   }
   
   .github-icon-svg,
-  .twitter-icon-svg {
+  .twitter-icon-svg,
+  .bi-envelope-fill {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     position: relative;
     top: 3px;
   }
@@ -342,15 +343,14 @@ iframe.yt {
 
 @media screen and (max-width: 750px) {
 
-    .footer-col-1 { width: 50%; }
+    .footer-col-1 { width: 33.3%; }
   
     .footer-col-2 {
       width: 45%; /*fallback*/
       width: -webkit-calc(50% - 10px);
       width: -moz-calc(50% - 10px);
       width: -o-calc(50% - 10px);
-      width: calc(50% - 10px);
-      margin-right: 0;
+      width: 33.3%;
     }
   
     .site-footer .column.footer-col-3 {
