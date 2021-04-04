@@ -251,7 +251,6 @@ img {
   
   .site-footer li,
   .site-footer p {
-    font-size: 15px;
     letter-spacing: -.3px;
     color: #828282;
     text-align: center
@@ -281,22 +280,12 @@ h1.about-header {
 }
 
 p.about-content {
-    /*font-size: 2vw;*/
     line-height: 1.8em;
     line-break: strict;
     white-space: pre-wrap;
-    font-size: 15px;
+    font-size: 16px;
     color: #131212;
-    margin-top: 5px;
 }
-
-/* for welcome/ ようこそ
-.home p { 
-    font-size: 1.8em;
-    /*line-height: 1.4em;
-    color: #546;
-}
-*/
 
 /* Instagram style */
 /* ----------------------------------- */
