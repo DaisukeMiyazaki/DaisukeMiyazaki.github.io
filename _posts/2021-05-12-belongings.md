@@ -93,7 +93,7 @@ Since long time ago, grabbing attention has been beneficial for people. Now the 
 
 Because the world is going to change, this awareness that it's an active act of discovering the balance will bring you a priceless mindset. Because the world is going to change, I want to recognize the changes of my mind with this mindset. I want to build a habit of listening to what my heart says and take care of my belongings with heart.
 
-　なぜなら、「もの」以前に「心」こそ、あなたのものだから。その機微に耳を傾ける癖をつけなければ、余白は、心は、あっというまに埋め尽くされてしまう。忙しいとは、心が無くなると書くのだから。ものと大切に向き合うことは、その大きな道しるべになるに違いない。
+　なぜなら、「もの」以前に「心」こそ、あなたのものだから。その機微に耳を傾ける癖をつけなければ、余白は、心は、あっというまに埋め尽くされてしまうだろう。忙しいとは、心が無くなると書くのだから。ものと大切に向き合うことは、その大きな道しるべになるに違いない。
 
-Because before belongings, your heart is yours. If you're not mindful, the peace of mind -- your heart --  will probably be occupied immediately. Coincidentally in Japanese Chinese characters, being busy is written as 'loosing heart'. Taking care of your belongings with heart will be your excellent guidance.
+Because before any other of your belongings, it is the heart that is yours. If you don't recognize its change, the peace of your mind -- your heart -- will probably be occupied immediately. Coincidentally in Japanese Chinese characters, being busy is written as 'loosing heart'. Taking care of your belongings with heart will be your excellent guidance.
 
