@@ -8,12 +8,6 @@ tag: art
 comments: true
 ---
 
-Hello world. This website is powered by [Jekyll](http://jekyllrb.com).
-
-このウェブサイトは、Jekyll によってホストされています。
-
-.
-
 　私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。
 
 In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.
