@@ -1,0 +1,14 @@
+author:
+  - name: Daisuke Miyazaki
+  - email: daisuke.miyazaki012@gmail.com
+markdown: kramdown
+permalink: pretty
+url: "https://mdaisuke.net/"
+baseurl:  ""
+sass_dir: _sass
+sass:
+  style: nested
+
+plugins:
+ - jekyll-feed
+title: Daisuke Miyazaki's Blog

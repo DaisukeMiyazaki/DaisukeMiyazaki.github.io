@@ -1,0 +1,39 @@
+///
+/// Tool Tip, from https://www.w3schools.com/css/css_tooltip.asp
+///
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dashed #ccc; /* dots under the anchor text */
+}
+
+/* Tooltip content */
+.tooltip .tooltipcontent {
+  visibility: hidden;
+  width: 600px;
+  background-color: grey;
+  text-align: left;
+  padding: 10px;
+  border-radius: 8px;
+  /* Position the tooltip content */
+  position: absolute;
+  z-index: 5;
+  bottom: 100%;
+  margin-left: -300px;
+  color: white;
+  left: 50%;
+}
+
+/* Show the tooltip content when you mouse over the tooltip anchor text */
+.tooltip:hover .tooltipcontent {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+  .tooltip .tooltipcontent {
+    width: 250px;
+    min-height: 2500px;
+    top: 100%;
+    margin-left: -200px;
+  }
+}

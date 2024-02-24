@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="subscribe">
+      {% assign obj = site.data.signup %}
+      {% if page.lang == "en" %}
+      {% include signup_form.html param=obj.en %}
+      <a href="/">Back to home</a>
+      {% else %}
+      {% include signup_form.html param=obj.jp %}
+      <a href="/">ホームへ戻る</a>
+      {% endif %}
+    </div>
+  </div>
+</footer>

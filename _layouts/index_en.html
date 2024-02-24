@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% assign posts = site.posts | where:"lang", page.lang %}
+  {% for post in posts %}
+  <div class="post at-index">
+    <span class="post-date at-index">{{ post.date | date_to_string }}</span>
+    <span class="post-genre">
+      #{{ post.genre }}
+    </span>
+    <h2 class="post-title">
+      <a href="{{ post.url }}" class="post-title">
+        {{ post.title }}
+      </a>
+    </h2>
+    {{ post.excerpt }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="works">
+  {% for work in site.data.works %}
+  <div class="post at-index">
+    <span class="post-date at-index">{{ work.en.start_at }} ~ {{ work.en.end_at }}</span>
+    <span class="post-genre">
+      # work
+    </span>
+    <h2 class="work-title">
+      <a href="{{ work.en.site_link }}" class="work-title" target="_blank">
+        {{ work.en.title }}
+      </a>
+    </h2>
+    {{ work.en.short }}
+  </div>
+  {% endfor %}
+</div>

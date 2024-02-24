@@ -1,0 +1,8 @@
+jp:
+  open_modal: ニュースレターに登録
+  description: 最新ポストをお届けします。
+  submit: 登録
+en:
+  open_modal: Subscribe
+  description: Join the newsletter for free
+  submit: Submit
