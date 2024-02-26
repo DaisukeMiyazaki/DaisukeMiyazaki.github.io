@@ -6,6 +6,8 @@ lang: jp
 lang-ref: site
 ---
 
+※ ソースコードは[こちら](https://github.com/DaisukeMiyazaki/DaisukeMiyazaki.github.io)
+
 このサイトはjekyllという静的ジェネレーターを使ってホストされています。
 
 - 軽量。indexページは1.2MBでロードは200ms以下
