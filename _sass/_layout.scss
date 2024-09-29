@@ -7,7 +7,7 @@
 }
 
 
-html#new_top {
+html {
   display: flex;
   min-height: 100vh;
 
@@ -48,11 +48,12 @@ html#new_top {
     width: 300vh;
     height: 300vh;
     z-index: -1;
-    background: radial-gradient(circle at center, #000 0.9px, transparent 1px) center left, #fff;
+    background: radial-gradient(circle at center, #999 0.6px, transparent 1px) center left, #fff;
     background-size: 20px 20px;
     transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg) rotate3d(0, 1, 0, -10deg);
     animation: background 10s ease-in-out 1s infinite alternate;
   }
+
 
   @media (orientation: portrait) {
     div#background {
@@ -180,6 +181,7 @@ html#new_top {
     width: 1.5rem;
     vertical-align: middle;
   }
+
 
   footer nav:last-child p {
     line-height: 2;
@@ -621,4 +623,46 @@ iframe.yt {
     width: auto;
     margin: 0 0 15px;
   }
+}
+
+
+.scroll-container {
+  height: 90vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 30vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+}
+
+.profile-section {
+  // profile section
+  height: 100vh;
+}
+
+.section {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#profile {
+  width: 10em;
+  border-radius: 50%;
+  border: 2px #fff;
+  position: relative;
+}
+
+
+.social-icon {
+  height: 50px;
+  width: 50px;
 }

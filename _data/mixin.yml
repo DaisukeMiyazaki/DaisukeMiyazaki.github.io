@@ -5,8 +5,10 @@ markdown: kramdown
 # permalink: /blog/:year/:month/:day/:title
 permalink: pretty
 email: daisuke.miyazaki012@gmail.com
-en:
-  description: ふと言葉のつぶてを綴り、投稿します。日本語と英語の両方で投稿します。しばし、技術的なネタを織り込んでいます。
-
 jp:
+  description: ふと言葉のつぶてを綴り、投稿します。日本語と英語の両方で投稿します。しばし、技術的なネタを織り込んでいます。
+  intro: ものづくりが好きです。エンジニア@
+
+en:
   description: I write posts at times, both in English and Japanese. Often topics are related to technologies.
+  intro: I like to build stuff. Engineer @
