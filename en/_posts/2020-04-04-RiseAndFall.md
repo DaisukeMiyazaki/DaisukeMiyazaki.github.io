@@ -2,8 +2,8 @@
 layout: post
 title: "RiseAndFall"
 date: 2020-4-04
-excerpt: "
-What is intelligence? I think, this can be represtented by a tree. In the tree of a human, there exists quite a few of things; objectively guaranteed facts that sit outside of the preferences of humanity, such as science that seeks the truth of the universe; opinions that can be mutually exclusive and contradictory with those of other people; and ingrained common sense in the culture one was raised in."
+excerpt: "What is intelligence? I believe it can be represented by a tree.
+In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one's cultural upbringing.
 comments: true
 lang: en
 lang-ref: RiseAndFall
@@ -13,8 +13,8 @@ genre: essay
 After reading [_Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart._](https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-ebook/dp/B07N5J5FTS)
 .
 
-What is intelligence? I think, this can be represtented by a tree.
-In the tree of a human, there exists quite a few of things; objectively guaranteed facts that sit outside of the preferences of humanity, such as science that seeks the truth of the universe; opinions that can be mutually exclusive and contradictory with those of other people; and ingrained common sense in the culture one was raised in.
+What is intelligence? I believe it can be represented by a tree.
+In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one's cultural upbringing.
 
 Physics and Bayes' theorem in Mathematics both contain the notion of _measurement_.
 
