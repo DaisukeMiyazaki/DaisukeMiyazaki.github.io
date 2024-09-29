@@ -21,15 +21,15 @@
             <aside>
               <h1>Daisuke</h1>
               <h4>@Tokyo</h4>
-              <p>
+              <p class="intro">
                 {{ site.data.mixin.en.intro }}
                 <a target="blank" href="https://www.source-maker.co.jp/"
-                  >Source Maker</a
+                  >@Source Maker</a
                 >.
               </p>
             </aside>
           </section>
-          <footer>
+          <div class="profile-nav">
             <nav>
               <br />
               <a
@@ -77,12 +77,12 @@
                   class="social-icon"
               /></a>
             </nav>
-            <nav>
-              <div class="linksmess">
-                Blog <a href="/en/">/En</a>- <a href="/jp/">/Jp</a>
-              </div>
-            </nav>
-          </footer>
+          </div>
+          <div class="profile-tech">
+            <a class="link" href="{{ site.data.mixin.en.linkmess_link }}" target="_blank">
+              {{ site.data.mixin.en.linkmess_text }}
+            </a>
+          </div>
         </div>
 
         <div class="posts">
