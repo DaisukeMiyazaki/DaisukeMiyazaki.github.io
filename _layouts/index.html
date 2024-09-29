@@ -92,7 +92,9 @@
               <h2 class="post-title">
                 <a href="{{ post.url }}" class="post-title"> {{ post.title }} </a>
               </h2>
-              {{ post.excerpt }}
+              <p class="excerpt">
+                {{ post.excerpt }}
+              </p>
             </div>
           </div>
           {% endfor %}
@@ -115,7 +117,9 @@
                   {{ work.jp.title }}
                 </a>
               </h2>
-              {{ work.jp.short }}
+              <p class="excerpt">
+                {{ work.jp.short }}
+              </p>
             </div>
           </div>
           {% endfor %}

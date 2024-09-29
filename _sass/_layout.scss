@@ -6,15 +6,15 @@
   box-sizing: border-box;
 }
 
-
 html {
   display: flex;
   min-height: 100vh;
 
-
   body {
     margin: auto;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+      sans-serif;
     background: white;
     color: black;
   }
@@ -22,22 +22,26 @@ html {
   @keyframes background {
     0% {
       background-size: 20px 20px;
-      transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg) rotate3d(0, 1, 0, -10deg) rotateY(0deg);
+      transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg)
+        rotate3d(0, 1, 0, -10deg) rotateY(0deg);
     }
 
     20% {
       background-size: 20px 20px;
-      transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg) rotate3d(0, 1, 0, -10deg) rotateY(0deg);
+      transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg)
+        rotate3d(0, 1, 0, -10deg) rotateY(0deg);
     }
 
     80% {
       background-size: 10px 10px;
-      transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg) rotate3d(0, 1, 0, -10deg) rotateY(70deg) rotateZ(45deg);
+      transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg)
+        rotate3d(0, 1, 0, -10deg) rotateY(70deg) rotateZ(45deg);
     }
 
     100% {
       background-size: 10px 10px;
-      transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg) rotate3d(0, 1, 0, -10deg) rotateY(70deg) rotateZ(45deg);
+      transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg)
+        rotate3d(0, 1, 0, -10deg) rotateY(70deg) rotateZ(45deg);
     }
   }
 
@@ -48,12 +52,14 @@ html {
     width: 300vh;
     height: 300vh;
     z-index: -1;
-    background: radial-gradient(circle at center, #999 0.6px, transparent 1px) center left, #fff;
+    background: radial-gradient(circle at center, #999 0.6px, transparent 1px)
+        center left,
+      #fff;
     background-size: 20px 20px;
-    transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg) rotate3d(0, 1, 0, -10deg);
+    transform: rotate3d(1, 0, 0, 45deg) rotate3d(0, 0, 1, 60deg)
+      rotate3d(0, 1, 0, -10deg);
     animation: background 10s ease-in-out 1s infinite alternate;
   }
-
 
   @media (orientation: portrait) {
     div#background {
@@ -132,7 +138,6 @@ html {
         color: #22e39e;
       }
     }
-
   }
 
   footer {
@@ -151,7 +156,8 @@ html {
 
   footer nav:last-child p {
     display: grid;
-    grid-template: "heading heading" auto
+    grid-template:
+      "heading heading" auto
       "content content" auto / auto auto;
     align-items: center;
     justify-items: start;
@@ -181,7 +187,6 @@ html {
     width: 1.5rem;
     vertical-align: middle;
   }
-
 
   footer nav:last-child p {
     line-height: 2;
@@ -271,13 +276,13 @@ html {
   }
 }
 
-
 html,
 body {
   // height: 100%;
   max-width: 800px;
   margin: 0 auto;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -333,7 +338,6 @@ ul.languages {
   position: relative;
   z-index: 1;
 }
-
 
 .site-nav {
   float: right;
@@ -421,7 +425,7 @@ li.home_post_intro {
     display: flex;
     align-items: center;
 
-    >div {
+    > div {
       padding: 10px;
     }
   }
@@ -454,6 +458,18 @@ p.about-content {
   white-space: pre-wrap;
   font-size: 16px;
   color: #131212;
+}
+
+.scroll-container {
+  height: 90vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 30vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 /* Instagram style */
@@ -534,9 +550,12 @@ iframe.yt {
 
     p.meta {
       margin: 5px;
-      // font-size: 1rem;
       padding: 0 25px;
     }
+  }
+
+  .section {
+    height: 40vh;
   }
 
   .site-header {
@@ -602,11 +621,10 @@ iframe.yt {
     }
   }
 
-
   .related {
-    margin: 0 30px
+    margin: 0 30px;
   }
-  
+
   .site-footer {
     border-top: 1px solid #e8e8e8;
     padding: 30px 30px;
@@ -623,20 +641,6 @@ iframe.yt {
     width: auto;
     margin: 0 0 15px;
   }
-}
-
-
-.scroll-container {
-  height: 90vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.section {
-  height: 30vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-
 }
 
 .profile-section {
@@ -661,8 +665,15 @@ body {
   position: relative;
 }
 
-
 .social-icon {
   height: 50px;
   width: 50px;
+}
+
+.excerpt {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0 0 1.2em;
+  opacity: 0.6;
+  font-weight: 500;
 }
