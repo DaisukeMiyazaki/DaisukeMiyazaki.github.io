@@ -2,8 +2,7 @@
 layout: post
 title: "RiseAndFall"
 date: 2020-4-04
-excerpt: "What is intelligence? I believe it can be represented by a tree.
-In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one's cultural upbringing.
+excerpt: "What is intelligence? I believe it can be represented by a tree. In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one's cultural upbringing."
 comments: true
 lang: en
 lang-ref: RiseAndFall
