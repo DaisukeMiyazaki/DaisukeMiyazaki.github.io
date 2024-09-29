@@ -1,5 +1,7 @@
 <!-- 英語と日本語を出し分けるheader内のスイッチャー -->
-{% for lang in site.data.languages %} {% assign language = lang[1] %} {% if
-page.lang != lang[0] %}
-<a href="/{{lang[0]}}" class="page-link sidebar-nav-item">{{ lang[0] }}</a>
-{% endif %} {% endfor %}
+{% if page.lang != jp %}
+<a href="/en" class="page-link sidebar-nav-item">EN</a>
+{% endif %}
+{% if page.lang != en %}
+<a href="/" class="page-link sidebar-nav-item">JP</a>
+{% endif %}

@@ -1,38 +1,139 @@
----
-layout: default
----
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html lang="{{ page.lang }}">
+  {% include head.html %}
 
-<div class="posts">
-  {% assign posts = site.posts | where:"lang", page.lang %}
-  {% for post in posts %}
-  <div class="post at-index">
-    <span class="post-date at-index">{{ post.date | date_to_string }}</span>
-    <span class="post-genre">
-      #{{ post.genre }}
-    </span>
-    <h2 class="post-title">
-      <a href="{{ post.url }}" class="post-title">
-        {{ post.title }}
-      </a>
-    </h2>
-    {{ post.excerpt }}
-  </div>
-  {% endfor %}
-</div>
+  <body>
+    {% include header.html %}
+    <div class="page-content">
+      <div class="scroll-container">
+        <div class="section profile-section">
+          <div id="background"></div>
 
-<div class="works">
-  {% for work in site.data.works %}
-  <div class="post at-index">
-    <span class="post-date at-index">{{ work.en.start_at }} ~ {{ work.en.end_at }}</span>
-    <span class="post-genre">
-      # work
-    </span>
-    <h2 class="work-title">
-      <a href="{{ work.en.site_link }}" class="work-title" target="_blank">
-        {{ work.en.title }}
-      </a>
-    </h2>
-    {{ work.en.short }}
-  </div>
-  {% endfor %}
-</div>
+          <section id="card">
+            <article>
+              <img
+                id="profile"
+                src="/assets/images/me_face.jpg"
+                alt="A picture of me."
+              />
+            </article>
+            <aside>
+              <h1>Daisuke</h1>
+              <h4>@Tokyo</h4>
+              <p class="intro">
+                {{ site.data.mixin.en.intro }}
+                <a target="blank" href="https://www.source-maker.co.jp/"
+                  >@Source Maker</a
+                >.
+              </p>
+            </aside>
+          </section>
+          <div class="profile-nav">
+            <nav>
+              <br />
+              <a
+                class="social-icons-links"
+                href="https://twitter.com/aubozumom"
+                target="_blank"
+                ><img
+                  class="social-icon"
+                  src="/assets/images/twitter.svg"
+                  alt="Twitter"
+                  title="Twitter"
+              /></a>
+              -
+              <a
+                class="social-icons-links"
+                href="https://github.com/DaisukeMiyazaki"
+                target="_blank"
+                ><img
+                  class="social-icon"
+                  src="/assets/images/github.svg"
+                  alt="GitHub"
+                  title="GitHub"
+              /></a>
+              <br />
+              <a
+                class="social-icons-links"
+                href="https://www.linkedin.com/in/daisuke-miyazaki/"
+                target="_blank"
+              >
+                <img
+                  class="social-icon"
+                  src="/assets/images/linkedlin.svg"
+                  alt="LinkedIn"
+                  title="LinkedIn"
+              /></a>
+              -
+              <a
+                class="social-icons-links"
+                href="mailto:contact@mdaisuke.net"
+                target="_blank"
+                ><img
+                  src="/assets/images/email.svg"
+                  alt="Email"
+                  title="Email"
+                  class="social-icon"
+              /></a>
+            </nav>
+          </div>
+          <div class="profile-tech">
+            <a class="link" href="{{ site.data.mixin.en.linkmess_link }}" target="_blank">
+              {{ site.data.mixin.en.linkmess_text }}
+            </a>
+          </div>
+        </div>
+
+        <div class="posts">
+          {% assign posts = site.posts | where:"lang", page.lang %}
+          {% for post in posts %}
+          <div class="section">
+            <div class="post">
+              <span class="post-date at-index"
+              >{{ post.date | date_to_string }}</span
+              >
+              <span class="post-genre"> #{{ post.genre }} </span>
+              <h2 class="post-title">
+                <a href="{{ post.url }}" class="post-title"> {{ post.title }} </a>
+              </h2>
+              <p class="excerpt">
+                {{ post.excerpt }}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="works">
+          {% for work in site.data.works %}
+          <div class="section">
+            <div class="post at-index">
+              <span class="post-date at-index"
+                >{{ work.en.start_at }} ~ {{ work.en.end_at }}</span
+              >
+              <span class="post-genre"> # work </span>
+              <h2 class="work-title">
+                <a
+                  href="{{ work.en.site_link }}"
+                  class="work-title"
+                  target="_blank"
+                >
+                  {{ work.en.title }}
+                </a>
+              </h2>
+              <p class="excerpt">
+                {{ work.en.short }}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+       
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>
