@@ -144,13 +144,23 @@
               "icon": "lucide-list",
               "title": "1995-09-02-自己紹介のアウトライン"
             }
+          },
+          {
+            "id": "1ba73f82487063d3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,10 +169,11 @@
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
-      "command-palette:コマンドパレットを開く": false
+      "command-palette:コマンドパレットを開く": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b7b50fa8b623b4d",
+  "active": "02d5a8fa95f6711a",
   "lastOpenFiles": [
     "jp/site.md",
     "en/site.md",
