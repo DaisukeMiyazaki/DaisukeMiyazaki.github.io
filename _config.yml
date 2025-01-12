@@ -3,7 +3,7 @@ author:
   - email: daisuke.miyazaki012@gmail.com
 markdown: kramdown
 permalink: pretty
-url: "https://mdaisuke.net/"
+url: "https://mdaisuke.net"
 baseurl:  ""
 sass_dir: _sass
 sass:
