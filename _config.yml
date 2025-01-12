@@ -11,4 +11,8 @@ sass:
 
 plugins:
  - jekyll-feed
+ - jekyll-postcss
+
+postcss:
+  cache: false
 title: Daisuke Miyazaki's Blog

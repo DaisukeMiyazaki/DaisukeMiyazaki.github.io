@@ -1,93 +1,61 @@
 <!DOCTYPE html>
-<meta charset="utf-8" />
 <html lang="{{ page.lang }}">
-  {% include head.html %}
-
-  <body>
+  <head>
+    <meta charset="utf-8" />
+    {% include head.html %}
+  </head>
+  <body class="bg-gray-100 text-gray-900">
     {% include header.html %}
-    <div class="page-content">
-      <div class="scroll-container">
-        <div class="section profile-section">
+    <div class="container mx-auto p-4">
+        <div class="bg-white shadow-md rounded-lg p-6">
           <div id="background"></div>
 
-          <section id="card">
-            <article>
+          <section class="flex flex-col md:flex-row items-center">
+            <article class="mb-4 md:mb-0 md:mr-4">
               <img
                 id="profile"
                 src="/assets/images/me_face.jpg"
                 alt="A picture of me."
+                class="rounded-full w-32 h-32"
               />
             </article>
-            <aside>
-              <h1>Daisuke</h1>
-              <h4>@Tokyo</h4>
-                {{ site.data.mixin.jp.intro }}
-                <a target="blank" href="https://www.source-maker.co.jp/"
-                  >@Source Maker</a
-                >
-                <a class="link" href="{{ site.data.mixin.jp.linkmess_link }}" target="_blank">
-                  {{ site.data.mixin.jp.linkmess_text }}
-                </a>
+            <aside class="text-center md:text-left">
+              <h1 class="text-2xl font-bold">Daisuke</h1>
+              <h4 class="text-lg text-gray-600">@Tokyo</h4>
+              <p>{{ site.data.mixin.jp.intro }}</p>
+              <a target="blank" href="https://www.source-maker.co.jp/" class="text-blue-500 hover:underline">@Source Maker</a>
+              <a class="link text-blue-500 hover:underline" href="{{ site.data.mixin.jp.linkmess_link }}" target="_blank">
+                {{ site.data.mixin.jp.linkmess_text }}
+              </a>
             </aside>
           </section>
-          <div class="profile-nav">
-              <a
-                class="social-icons-links"
-                href="https://twitter.com/aubozumom"
-                target="_blank"
-                ><img
-                  class="social-icon"
-                  src="/assets/images/twitter.svg"
-                  alt="Twitter"
-                  title="Twitter"
-              /></a>
-              <a
-                class="social-icons-links"
-                href="https://github.com/DaisukeMiyazaki"
-                target="_blank"
-                ><img
-                  class="social-icon"
-                  src="/assets/images/github.svg"
-                  alt="GitHub"
-                  title="GitHub"
-              /></a>
-              <a
-                class="social-icons-links"
-                href="https://www.linkedin.com/in/daisuke-miyazaki/"
-                target="_blank"
-              >
-                <img
-                  class="social-icon"
-                  src="/assets/images/linkedlin.svg"
-                  alt="LinkedIn"
-                  title="LinkedIn"
-              /></a>
-              <a
-                class="social-icons-links"
-                href="mailto:contact@mdaisuke.net"
-                target="_blank"
-                ><img
-                  src="/assets/images/email.svg"
-                  alt="Email"
-                  title="Email"
-                  class="social-icon"
-              /></a>
+          <div class="flex justify-center mt-4 space-x-4">
+            <a href="https://twitter.com/aubozumom" target="_blank">
+              <img class=" w-6 h-6" src="/assets/images/twitter.svg" alt="Twitter" title="Twitter" />
+            </a>
+            <a href="https://github.com/DaisukeMiyazaki" target="_blank">
+              <img class=" w-6 h-6" src="/assets/images/github.svg" alt="GitHub" title="GitHub" />
+            </a>
+            <a  href="https://www.linkedin.com/in/daisuke-miyazaki/" target="_blank">
+              <img class=" w-6 h-6" src="/assets/images/linkedlin.svg" alt="LinkedIn" title="LinkedIn" />
+            </a>
+            <a  href="mailto:contact@mdaisuke.net" target="_blank">
+              <img src="/assets/images/email.svg" alt="Email" title="Email" class=" w-6 h-6" />
+            </a>
           </div>
         </div>
 
-        <div class="posts">
+        <div class="mt-8">
           {% assign posts = site.posts | where:"lang", page.lang %}
           {% for post in posts %}
-          <div class="section">
-            <div class="post">
-              <span class="post-date at-index"
-              >{{ post.date | date_to_string }}</span
-              >
-              <span class="post-genre"> #{{ post.genre }} </span>
-              <h2 class="post-title">
-                <a href="{{ post.url }}" class="post-title"> {{ post.title }} </a>
+          <div class=" mb-6">
+            <div class=" bg-white shadow-md rounded-lg p-6">
+              <span class="at-index text-gray-600">{{ post.date | date_to_string }}</span>
+              <span class="text-blue-500"> #{{ post.genre }} </span>
+              <h2 class="text-xl font-bold">
+                <a href="{{ post.url }}" class="text-blue-500 hover:underline"> {{ post.title }} </a>
               </h2>
-              <p class="excerpt">
+              <p class="text-gray-700">
                 {{ post.excerpt }}
               </p>
             </div>
@@ -95,32 +63,24 @@
           {% endfor %}
         </div>
 
-        <div class="works">
+        <div class="mt-8">
           {% for work in site.data.works %}
-          <div class="section">
-            <div class="post at-index">
-              <span class="post-date at-index"
-                >{{ work.jp.start_at }} ~ {{ work.jp.end_at }}</span
-              >
-              <span class="post-genre"> # work </span>
-              <h2 class="work-title">
-                <a
-                  href="{{ work.jp.site_link }}"
-                  class="work-title"
-                  target="_blank"
-                >
+          <div class=" mb-6">
+            <div class="at-index bg-white shadow-md rounded-lg p-6">
+              <span class="at-index text-gray-600">{{ work.jp.start_at }} ~ {{ work.jp.end_at }}</span>
+              <span class=" text-blue-500"> # work </span>
+              <h2 class="text-xl font-bold">
+                <a href="{{ work.jp.site_link }}" class=" text-blue-500 hover:underline" target="_blank">
                   {{ work.jp.title }}
                 </a>
               </h2>
-              <p class="excerpt">
+              <p class="text-gray-700">
                 {{ work.jp.short }}
               </p>
             </div>
           </div>
           {% endfor %}
         </div>
-
-       
       </div>
     </div>
 

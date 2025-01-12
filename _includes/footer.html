@@ -1,13 +1,13 @@
-<footer class="site-footer">
-  <div class="wrap site-footer__inner">
-    <div class="subscribe">
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
       {% assign obj = site.data.signup %}
       {% if page.lang == "en" %}
       {% include signup_form.html param=obj.en %}
-      <a href="/">Back to home</a>
+      <a href="/" class="text-blue-500 hover:underline">Back to home</a>
       {% else %}
       {% include signup_form.html param=obj.jp %}
-      <a href="/">ホームへ戻る</a>
+      <a href="/" class="text-blue-500 hover:underline">ホームへ戻る</a>
       {% endif %}
     </div>
   </div>

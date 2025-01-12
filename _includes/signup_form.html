@@ -1,105 +1,21 @@
 <div>
-    <button class="open-button" onclick="openModal()">
+    <button class="text-blue-500 border-none cursor-pointer text-medium hover:bg-blue-600 hover:underline" onclick="openModal()">
         {{ include.param.open_modal }}
     </button>
-    <div id="modal" class="form-container">
-        <div class="form-content">
-            <div class="modal-box">
-                <span class="close-button" onclick="closeModal()">×</span>
+    <div id="modal" class="form-container fixed z-10 inset-0 overflow-auto bg-black bg-opacity-50 hidden">
+        <div class="form-content flex flex-col justify-center items-center w-full h-full">
+            <div class="modal-box bg-white p-4 rounded shadow-lg">
+                <span class="close-button float-right text-gray-400 text-2xl cursor-pointer" onclick="closeModal()">×</span>
                 <p>{{ include.param.description }}</p>
-                <form class="newsletter-form" action="https://mDaisukeNet.pythonanywhere.com/signup" method="POST">
-                    <input type="email" placeholder="xxx@gmail.com" required name="email_address">
+                <form class="flex mt-2" action="https://mDaisukeNet.pythonanywhere.com/signup" method="POST">
+                    <input type="email" placeholder="xxx@gmail.com" name="email_address" class="p-2 border border-gray-300 rounded-l outline-none">
                     <input type="hidden" name="signup_page" value="{{ page.url }}" />
-                    <button type="submit" value="sign up">{{ include.param.submit }}</button>
+                    <button type="submit" class="p-2 border border-gray-300 rounded-r bg-blue-500 text-white cursor-pointer hover:bg-blue-600 outline-none">{{ include.param.submit }}</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-
-<style>
-    .form-container {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .form-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .modal-box {
-        background-color: white;
-        padding: 10px;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .newsletter-form {
-        display: flex;
-        margin-top: 5px;
-    }
-
-    .newsletter-form input[type="email"] {
-        padding: 5px;
-        border: 1px solid #ccc;
-        width: 250px;
-        border-right: none;
-        border-radius: 4px 0 0 4px;
-        outline: none;
-    }
-
-    .newsletter-form button {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-left: none;
-        border-radius: 0 4px 4px 0;
-        background-color: cornflowerblue;
-        color: white;
-        cursor: pointer;
-        outline: none;
-    }
-
-    .newsletter-form button:hover {
-        background-color: cornflowerblue;
-    }
-
-    .open-button {
-        display: flex;
-        text-decoration: none;
-        background-color: white;
-        color: #999;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        font-size: medium;
-    }
-
-    .open-button:hover {
-        color: black;
-        text-decoration: underline;
-    }
-
-    .close-button {
-        float: right;
-        top: 10px;
-        right: 20px;
-        color: #aaa;
-        font-size: 20px;
-        cursor: pointer;
-    }
-</style>
 
 <script>
     function openModal() {
