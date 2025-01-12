@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="canonical" href="https://mdaisuke.net/jp/site/">
+
+    <link rel="alternate" type="application/atom+xml" title="Daisuke Miyazaki's Blog" href="/feed.xml">
+
+    <title>
+        
+        このサイトについて &middot; Daisuke Miyazaki's Blog
+        
+    </title>
+
+    <!--costom CSS-->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+
+
+
+    <!-- seo -->
+    <meta name="author" content="Daisuke Miyazaki" />
+    <meta
+        name="description"
+        content="Daisuke is an engineer based in Tokyo. This is his personal website."
+    />
+
+    <!-- open graph -->
+    <meta property="og:title" content="Daisuke (Daisuke Miyazaki)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
+    <meta
+        property="og:description"
+        content="Daisuke is an engineer based in Tokyo. This is his personal website."
+    />
+    <meta property="og:url" content="https://mdaisuke.net" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Daisuke Miyazaki" />
+    
+
+    
+    
+    
+    
+    <link rel="alternate" hreflang="en" href="/en/site/" />
+    
+    <link rel="alternate" hreflang="jp" href="/jp/site/" />
+    
+    
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LRV9J804ME"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-LRV9J804ME');
+</script>
+
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-gray-100 py-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a class="text-2xl font-bold text-gray-800" href="/">
+      <h1>Daisuke Miyazaki's Blog</h1>
+    </a>
+    <nav class="flex items-center">
+      <a href="#" class="mr-4">
+        <svg class="w-6 h-6 text-gray-600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
+          <path fill="currentColor" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
+          <path fill="currentColor" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
+          <path fill="currentColor" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
+        </svg>
+      </a>
+      <div class="flex space-x-4">
+        <!-- 英語と日本語を出し分けるheader内のスイッチャー -->
+
+<a href="/en" class="text-blue-500 hover:text-blue-700">EN</a>
+
+
+<a href="/" class="text-blue-500 hover:text-blue-700">JP</a>
+
+ 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <div class="container mx-auto p-4 prose lg:prose-xl"><div class="container mx-auto px-4 py-8">
+
+  <header class="mb-8">
+    <p class="meta text-gray-600 text-sm"></p>
+    <h1 class="title text-3xl font-bold">このサイトについて</h1>
+  </header>
+  
+  <article class="lg:prose-xl">
+    <p>※ ソースコードは<a href="https://github.com/DaisukeMiyazaki/DaisukeMiyazaki.github.io">こちら</a></p>
+
+<p>このサイトはjekyllという静的ジェネレーターを使ってホストされています。</p>
+
+<ul>
+  <li>軽量。indexページは1.2MBでロードは200ms以下</li>
+  <li>レスポンシブ: pcやモバイルそれぞれの画面幅に対応</li>
+  <li>
+    <p>i18対応: 日本語、英語による切り替えをサポート</p>
+  </li>
+  <li>コンテンツの追加: markdownファイルの追加のみ</li>
+  <li>
+    <p>デプロイ: ブランチへのpushのみ</p>
+  </li>
+  <li>google analytics対応</li>
+</ul>
+
+<p>モダンな開発体験では、多くの「やりすぎ」が散見されます。動的に処理しなければいけないデータ量が多く認証などが必要な場合はモダンなフレームワークを使いつつサイトを構築することは問題ありませんが、バナーを出す、ボタンが切り替わる等だけに大量のjsファイルをロードする開発的な「やりすぎ」から、必要以上の広告で肝心の読者としての体験が「汚染」された「やりすぎ」など。</p>
+
+<p>シンプルなhtml, cssを使ってレスポンシブ、軽量で高パフォーマンスな挙動を実現することは完全に「可能」です。これに加え、自分好みの場所を作り上げることも技術者としての醍醐味とも言えると思います。</p>
+
+<h1 id="技術的な内容について">技術的な内容について</h1>
+<p>このサイトは大きく分けて2つに分かれます。もう一つが<a href="https://publish.obsidian.md/mdaisuke/">obsidianからホストされているサイト</a>です。主に日本語で技術的な内容を中心に発信しており、こちらのほうが更新頻度が高いです。</p>
+
+<p>発信は仕事上もそうですが、知識を整理し共有する上で大切な過程です。エンジニアという仕事が3Kと呼ばれていた時代から、少しずつ改善されてきた一つの理由でもあると思います。ただし日進月歩が早いこの業界では、学ぶペースも早く、内省化し書き留めてから反映するまでの執筆体験は重要視されます。</p>
+
+<p>また、専門性が高く深い洞察を必要とする分野は、フォルダー階層によるものではなく、ノートそれぞれが概念的につなげることによって関係性がわかりやすくなります。</p>
+
+<p>詳細は省きますが、普段からノートとしても使っているobsidianはこのほかにもさまざまな点で気に入っています。一方でレイアウトなどに制約はありますが、デザインもモダンで遜色がありません。</p>
+
+  </article>
+
+  <!-- Disqus -->
+  
+
+  
+  
+
+</div>
+</div>
+  <footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      
+      
+      <div>
+    <button class="text-blue-500 border-none cursor-pointer text-medium hover:bg-blue-600 hover:underline" onclick="openModal()">
+        ニュースレターに登録
+    </button>
+    <div id="modal" class="form-container fixed z-10 inset-0 overflow-auto bg-black bg-opacity-50 hidden">
+        <div class="form-content flex flex-col justify-center items-center w-full h-full">
+            <div class="modal-box bg-white p-4 rounded shadow-lg">
+                <span class="close-button float-right text-gray-400 text-2xl cursor-pointer" onclick="closeModal()">×</span>
+                <p>最新ポストをお届けします。</p>
+                <form class="flex mt-2" action="https://mDaisukeNet.pythonanywhere.com/signup" method="POST">
+                    <input type="email" placeholder="xxx@gmail.com" name="email_address" class="p-2 border border-gray-300 rounded-l outline-none">
+                    <input type="hidden" name="signup_page" value="/jp/site/" />
+                    <button type="submit" class="p-2 border border-gray-300 rounded-r bg-blue-500 text-white cursor-pointer hover:bg-blue-600 outline-none">登録</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById('modal').style.display = 'block';
+    }
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+
+    window.onclick = function (event) {
+        const modal = document.getElementById('modal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+
+      <a href="/" class="text-blue-500 hover:underline">ホームへ戻る</a>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
