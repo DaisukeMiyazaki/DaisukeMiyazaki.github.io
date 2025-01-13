@@ -1,9 +1,25 @@
 {
+  "name": "mdaisuke",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "postcss src/styles.css -o public/styles.css",
+    "dev:esbuild": "NODE_ENV=development node entrypoint.cjs",
+    "prod:esbuild": "NODE_ENV=production node entrypoint.cjs",
+    "tailwind": "tailwindcss --config tailwind.config.js --postcss postcss.config.js -o ./assets/css/index.css --watch"
+  },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-flow": "^7.25.9",
+    "@babel/preset-react": "^7.26.3",
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
+    "esbuild": "0.24.2",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }

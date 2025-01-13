@@ -4,13 +4,24 @@
 	<title>Daisuke Miyazaki's Blog</title>
 	<link href="http://mdaisuke.net/blog/atom.xml" rel="self"/>
 	<link href="http://mdaisuke.net/blog"/>
-	<updated>2025-01-12T01:29:05+00:00</updated>
+	<updated>2025-01-13T12:36:19+00:00</updated>
 	<id>https://mdaisuke.net</id>
 	<author>
 		<name></name>
 		<email></email>
 	</author>
 
+	
+		<entry>
+			<title>ワークベンチv2</title>
+			<link href="http://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"/>
+			<updated>2025-01-13T00:00:00+00:00</updated>
+			<id>http://mdaisuke.net/jp/2025/01/13/ワークベンチ</id>
+			<content type="html">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/photoScroll/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>雫</title>
@@ -357,7 +368,9 @@
 			<link href="http://mdaisuke.net/jp/2023/08/21/%E3%83%99%E3%83%B3%E3%83%81/"/>
 			<updated>2023-08-21T00:00:00+00:00</updated>
 			<id>http://mdaisuke.net/jp/2023/08/21/ベンチ</id>
-			<content type="html">&lt;p&gt;DIYやってみた！アート愛好者の妻へ特製ワークベンチをプレゼント。&lt;/p&gt;
+			<content type="html">&lt;div id=&quot;hihi&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;DIYやってみた！アート愛好者の妻へ特製ワークベンチをプレゼント。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
 
