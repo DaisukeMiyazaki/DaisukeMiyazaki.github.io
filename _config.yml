@@ -1,7 +1,6 @@
 author:
   - name: Daisuke Miyazaki
   - email: daisuke.miyazaki012@gmail.com
-markdown: kramdown
 permalink: pretty
 url: "https://mdaisuke.net"
 baseurl:  ""
@@ -16,3 +15,6 @@ plugins:
 postcss:
   cache: false
 title: Daisuke Miyazaki's Blog
+
+markdown: kramdown
+exclude: ['node_modules']
