@@ -4,6 +4,7 @@
   "scripts": {
     "build": "postcss src/styles.css -o public/styles.css",
     "dev:esbuild": "NODE_ENV=development node entrypoint.cjs",
+    "prod:esbuild": "NODE_ENV=production node entrypoint.cjs",
     "tailwind": "tailwindcss --config tailwind.config.js --postcss postcss.config.js -o ./assets/css/index.css --watch"
   },
   "devDependencies": {
