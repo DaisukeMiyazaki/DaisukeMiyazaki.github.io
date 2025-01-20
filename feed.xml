@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-01-13T12:36:19+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">ワークベンチv2</title><link href="https://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/" rel="alternate" type="text/html" title="ワークベンチv2" /><published>2025-01-13T00:00:00+00:00</published><updated>2025-01-13T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-01-20T04:41:25+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">ワークベンチv2</title><link href="https://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/" rel="alternate" type="text/html" title="ワークベンチv2" /><published>2025-01-13T00:00:00+00:00</published><updated>2025-01-13T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/photoScroll/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。</summary></entry><entry xml:lang="en"><title type="html">The Droplet</title><link href="https://mdaisuke.net/en/2023/09/02/droplet/" rel="alternate" type="text/html" title="The Droplet" /><published>2023-09-02T00:00:00+00:00</published><updated>2023-09-02T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2023/09/02/droplet</id><content type="html" xml:base="https://mdaisuke.net/en/2023/09/02/droplet/">&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;In the year 15 of the solar calendar (2065 AD).&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -15,6 +15,7 @@
 
 &lt;!-- Work with colleagues --&gt;
 &lt;!-- Spend a day feeling negative due to customer trouble --&gt;
+
 &lt;p&gt;“Why is it that even in this day and age, emails are still such a pain? Why haven’t we introduced a chat app?”&lt;br /&gt;
 “Well, there are a lot of old-fashioned clients we deal with, you know. The sales department and the managers have apparently explained it to them many times, but they’re used to doing everything by email, so they don’t listen to anything else.”&lt;br /&gt;
 “I see… So it’s what they call precedent-based thinking?”&lt;br /&gt;
@@ -35,6 +36,7 @@
 &lt;p&gt;The only thing that seems to have changed is the futuristic production vibes that show seems to wrap itself with. This country really hasn’t changed.&lt;/p&gt;
 
 &lt;!-- AI caster says there will be an event using battery storage due to the expected shortfall in the country&apos;s power supply, and a solar panel satellite will fly. --&gt;
+
 &lt;p&gt;“A panda was born at Urashima Kindergarten and is attracting attention.”&lt;br /&gt;
 “Up Everybody Technology Co., Ltd., a drone startup, has been listed on the first section of the Tokyo Stock Exchange.”&lt;br /&gt;
 “Due to the expected shortfall in power supply again today, the droplet is expected to be observed in Toyosu, Chofu, and Tama River. Please cooperate in conserving electricity.”&lt;/p&gt;
@@ -166,8 +168,9 @@
 
 &lt;p&gt;地球温暖化予想2050年シナリオは最悪のケースをたどったため、2047年中旬、国連総本部は迅速かつこれまでにない世界的な協力が必要と声明を表示した。日本はその一環として新しい年号を定め、2050年より年号を改める方針を打ち出し、世界中の共通年号として共有された。&lt;/p&gt;
 
-&lt;p&gt;ぼくは、なにも変わらない半蔵門線から出勤していた。若干寝不足気味であったが、もう10月中旬である。最寄り駅に着くまでは快晴の中を歩いた。降りた大手町駅では地下つながりになっているので、一度駅についたら最後、オフィスに着くまでは外の様子はわからない。変わらぬ人の群。前の人をただ体が追っていくだけ。気づいたときには、会社のデスクに座っていた。
-&lt;!-- 変わらない日常を描く --&gt;&lt;/p&gt;
+&lt;p&gt;ぼくは、なにも変わらない半蔵門線から出勤していた。若干寝不足気味であったが、もう10月中旬である。最寄り駅に着くまでは快晴の中を歩いた。降りた大手町駅では地下つながりになっているので、一度駅についたら最後、オフィスに着くまでは外の様子はわからない。変わらぬ人の群。前の人をただ体が追っていくだけ。気づいたときには、会社のデスクに座っていた。&lt;/p&gt;
+
+&lt;!-- 変わらない日常を描く --&gt;
 
 &lt;p&gt;自分のデスクはたまたま、このビルの窓際にある。28階立ての高層ビルであるがうちの企業は4階なので、とりわけいい景色が見えるわけでもない。ログインしたパソコンには客先からのメールが溜まっていたので、一つずつ捌いていく。&lt;/p&gt;
 
@@ -177,6 +180,7 @@
 
 &lt;!-- 同僚との仕事 --&gt;
 &lt;!-- 顧客トラブルがあって後ろ向きな日を過ごす --&gt;
+
 &lt;p&gt;「この時代になってもまだメールなんて骨が折れるよ、チャットアプリをなんでうちは導入していないわけ？」&lt;br /&gt;
 「どこまでいってもうちのお客さんには古いところが多いからさ。営業部門や責任者も何度も説明しにいったらしいんだけれど、うちはずっとメールでやってきたから問題なかったんだの一点貼りで聞かないところが多いんだってさ」&lt;br /&gt;
 「はあ。。。。いわゆる前例主義ってやつ？」&lt;br /&gt;
@@ -200,6 +204,7 @@
 
 &lt;!-- 国としての電力残口が下回る予定で、電池蓄電池によるイベントがあるでしょうとAIキャスター --&gt;
 &lt;!-- 太陽光パネル衛星が飛ぶ --&gt;
+
 &lt;p&gt;「浦島幼稚園でパンダのこどもが生まれ、注目を集めています。」&lt;br /&gt;「東証一部へ、ドローンのスタートアップを展開しているアップエブリバディテクノロジー株式会社が上場しました。」&lt;br /&gt;「本日も電力残口が下回る予想のため、豊洲、調布、多摩川で雫の観測が予想されます。節電にご協力ください。」&lt;/p&gt;
 
 &lt;p&gt;相変わらずの様子である。もう慣れっこになってしまったが、残念ながらパンダも雫もこの地下鉄の中からは見ることはできない。&lt;/p&gt;
@@ -237,9 +242,11 @@
 
 &lt;p&gt;「ふーん。。。。ママ、あれはなに？」&lt;/p&gt;
 
-&lt;p&gt;質問ぜめにするこどもの指に、お母さんは顔を上げる。少し時間がたってから、お母さんは言った。
+&lt;p&gt;質問ぜめにするこどもの指に、お母さんは顔を上げる。少し時間がたってから、お母さんは言った。&lt;/p&gt;
+
 &lt;!-- 湧く様子をもう少し具体的に書く --&gt;
-「あれは雫っていうの。私たちがつかう電気を運んでいるのよ」&lt;/p&gt;
+
+&lt;p&gt;「あれは雫っていうの。私たちがつかう電気を運んでいるのよ」&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
 
@@ -260,6 +267,7 @@
 &lt;!-- ある日、雫が届かないトラブルが発生する --&gt;
 
 &lt;hr /&gt;
+
 &lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_signal.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;今日は、信号機の横にもあるサインのインジゲーターは3本のうち1つのみしか点灯していない。普及が始まってインジゲーターが点灯し始めた当時は、ゲージが少なくなると人は不安感に苛まれていた。政府はこの焦燥感を利用して、電力消費を抑えようとするという陰謀説も流れたりした。また、実際にはインジゲーターが切れても電力は枯渇しないというニュースも話題となった。&lt;/p&gt;
@@ -417,6 +425,7 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 &lt;h3 id=&quot;completion&quot;&gt;Completion&lt;/h3&gt;
 
 &lt;p&gt;Finally, it’s done!&lt;/p&gt;
+
 &lt;div class=&quot;image-container_triple&quot;&gt;
   &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
   &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front2.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
@@ -437,8 +446,9 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The tabletop also doubles as a door, hiding cables and providing a cleaner look.
-&lt;!-- insert image from builds.yml --&gt;&lt;/p&gt;
+&lt;p&gt;The tabletop also doubles as a door, hiding cables and providing a cleaner look.&lt;/p&gt;
+
+&lt;!-- insert image from builds.yml --&gt;
 &lt;div class=&quot;image-container_triple&quot;&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/foldedTableTop.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/mount.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
@@ -447,8 +457,9 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 
 &lt;p&gt;So, what do you think? Why not use the resources and services around you to DIY something special as a gift?&lt;/p&gt;
 
-&lt;p&gt;Happy Building!
-&lt;script src=&quot;/assets/js/popup_build.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Happy Building!&lt;/p&gt;
+
+&lt;script src=&quot;/assets/js/popup_build.js&quot;&gt;&lt;/script&gt;
 
 &lt;div id=&quot;myModal&quot; class=&quot;modal&quot;&gt;
   &lt;span class=&quot;close&quot;&gt;&amp;times;&lt;/span&gt;
@@ -495,18 +506,18 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 &lt;h4 id=&quot;大きな収納&quot;&gt;大きな収納&lt;/h4&gt;
 
 &lt;p&gt;⁃ アートも作品よりも道具のほうが数が多くなる。十分な収納がないと散らかってしまうので、大容量が必要&lt;br /&gt;
- ⁃ ツールや作業中のものなどはごちゃるので扉を取り付け。&lt;br /&gt;&lt;/p&gt;
+⁃ ツールや作業中のものなどはごちゃるので扉を取り付け。&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;インスピレーションを綺麗に魅せる&quot;&gt;インスピレーションを綺麗に魅せる&lt;/h4&gt;
 
 &lt;p&gt;⁃ 寄せ集めた書籍や雑誌、旅先で見つけたカードなどは常に見えるように飾っておきたいもの。扉が付く本棚では中身が見えないこともあるので、なるべく見せる収納をイメージ。&lt;br /&gt;
- ⁃ カードや小物なども、常に見えるように展示することでインスピレーションを得やすくなる。&lt;br /&gt;&lt;/p&gt;
+⁃ カードや小物なども、常に見えるように展示することでインスピレーションを得やすくなる。&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;スペース&quot;&gt;スペース&lt;/h4&gt;
 
 &lt;p&gt;⁃ 幅があったほうが良いので壁いっぱいに広がる大きさに。天板は壁いっぱいの横幅 * ノートPCを広げて余裕があるように50cmに。部屋の大きさが限られているので、天板の手前20センチは折りたためるように。&lt;br /&gt;
- ⁃ 折り畳んだ際には最上段の扉になるように設計。ごちゃってしまうケーブル類はこの段にしまえるように。&lt;br /&gt;
- ⁃ 再下段にはお掃除ロボットが入ってこれるだけの高さを用意。&lt;br /&gt;&lt;/p&gt;
+⁃ 折り畳んだ際には最上段の扉になるように設計。ごちゃってしまうケーブル類はこの段にしまえるように。&lt;br /&gt;
+⁃ 再下段にはお掃除ロボットが入ってこれるだけの高さを用意。&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;資材の調達&quot;&gt;資材の調達&lt;/h3&gt;
 
@@ -527,6 +538,7 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 
 &lt;p&gt;扉は寸法もモデルで見ていた通りにならなかったので後付けにしました。買い出しに再度ホームセンターのコーナンへ、暑いので自転車でむかったものの巨大すぎるドアをどうも運べず。再度配送料を払うのもバカバカしい。。。
 そんなときなんと、コーナンでは軽トラを無料で借りれることが判明。ハンドルつき、普通免許で運転できることも初めて知りました。おかげ様でスムーズに運ぶことができました。&lt;/p&gt;
+
 &lt;div class=&quot;image-container_double&quot;&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck2.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
@@ -551,6 +563,7 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 &lt;h3 id=&quot;完成&quot;&gt;完成&lt;/h3&gt;
 
 &lt;p&gt;そしてついに完成！&lt;/p&gt;
+
 &lt;div class=&quot;image-container_triple&quot;&gt;
   &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
   &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front2.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
@@ -558,19 +571,22 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 &lt;/div&gt;
 
 &lt;p&gt;折りたたみ式の天板も180cm * 50cmと十分な広さがあります。&lt;/p&gt;
+
 &lt;div class=&quot;image-container_double&quot;&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/tableWidth.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/faceToCamera.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;立った時の姿勢も、測ったときの姿勢とほぼ一致しています。これで快適にアートに取り組めるはず！&lt;/p&gt;
+
 &lt;div class=&quot;image-container_double&quot;&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/positionCheck.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;天板が扉の役割も兼用し、コードなども隠して見た目もすっきりするように。
-&lt;!-- insert image from builds.yml --&gt;&lt;/p&gt;
+&lt;p&gt;天板が扉の役割も兼用し、コードなども隠して見た目もすっきりするように。&lt;/p&gt;
+
+&lt;!-- insert image from builds.yml --&gt;
 &lt;div class=&quot;image-container_triple&quot;&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/foldedTableTop.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
 &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/mount.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
@@ -579,38 +595,40 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 
 &lt;p&gt;いかがでしょうか？皆さんも、身近なものやサービスを利用しながら、特別なものをDIYで作って贈ってみてはみてはいかがでしょうか？&lt;/p&gt;
 
-&lt;p&gt;Happy Building!
-&lt;script src=&quot;/assets/js/popup_build.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Happy Building!&lt;/p&gt;
+
+&lt;script src=&quot;/assets/js/popup_build.js&quot;&gt;&lt;/script&gt;
 
 &lt;div id=&quot;myModal&quot; class=&quot;modal&quot;&gt;
   &lt;span class=&quot;close&quot;&gt;&amp;times;&lt;/span&gt;
   &lt;img class=&quot;modal-content&quot; id=&quot;img01&quot; /&gt;
   &lt;div id=&quot;caption&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。</summary></entry><entry xml:lang="en"><title type="html">Going-Meta-In-The-MetaVerse</title><link href="https://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse/" rel="alternate" type="text/html" title="Going-Meta-In-The-MetaVerse" /><published>2022-12-09T00:00:00+00:00</published><updated>2022-12-09T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse</id><content type="html" xml:base="https://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse/">&lt;style&gt;
-#profile {
-  right: 0;
-  float: right;
-  width: 30%;
-  height: 30%;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  position: relative;
-}
-#profile:hover {
-  border: 2px solid #000;
-}
-.profile__wrapper {
-  height: 30%;
-  position: relative;
-  padding-left: 20px;
-  margin: 0 auto;
-}
+  #profile {
+    right: 0;
+    float: right;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  #profile:hover {
+    border: 2px solid #000;
+  }
+  .profile__wrapper {
+    height: 30%;
+    position: relative;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
 &lt;/style&gt;
 
 &lt;div class=&quot;profile__wrapper&quot;&gt;
-    &lt;img id=&quot;profile&quot; src=&quot;/assets/images/me.JPG&quot; /&gt;
+  &lt;img id=&quot;profile&quot; src=&quot;/assets/images/me.JPG&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;Hello world!&lt;/p&gt;
 
 &lt;p&gt;I saw a new step in the revolution so I’m writing it down. &lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;I got a new face&lt;/a&gt;.&lt;/p&gt;
@@ -618,30 +636,31 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 &lt;p&gt;You’re what you are seen is the same perspective in the computational world and in the non-computational world. However, the difference is that in the former world we can go beyond of our appearance that is tied to the non-computational world. In reality, ML and traditional computation are merged with the non-computational world, and the definition of “What am I in this world? keeps changing. Rethinking how to be in this world, it is surely more of the state of fusion than ever. The data used to create the new face is the mugshots of the non-computational world, but let us not forget that it was predominantly the gift of the visual arts of collective wisdom.&lt;/p&gt;
 
 &lt;p&gt;Visual information is an important part of life, and I felt that this face fits well into my way of being. It is the flip side of the fact that even in the computational world, the individual from non-computational world is still connected. But what’s surprising is that the creation of the face took &lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;only 20 minutes and a few dollars&lt;/a&gt;. The level of fitness in this ever-changing dynamic of reality and its accessibility is truly astonishing and unprecedented, and today is a day that marked a new step in &lt;a href=&quot;https://mdaisuke.net/en/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/&quot;&gt;the revolution&lt;/a&gt;.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">I saw a new step in the revolution so I&apos;m writing it down. I got a new face.</summary></entry><entry xml:lang="jp"><title type="html">新しい一歩</title><link href="https://mdaisuke.net/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9/" rel="alternate" type="text/html" title="新しい一歩" /><published>2022-12-09T00:00:00+00:00</published><updated>2022-12-09T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9</id><content type="html" xml:base="https://mdaisuke.net/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9/">&lt;style&gt;
-#profile {
-  right: 0;
-  float: right;
-  width: 30%;
-  height: 30%;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  position: relative;
-}
-#profile:hover {
-  border: 2px solid #000;
-}
-.profile__wrapper {
-  height: 30%;
-  position: relative;
-  padding-left: 20px;
-  margin: 0 auto;
-}
+  #profile {
+    right: 0;
+    float: right;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  #profile:hover {
+    border: 2px solid #000;
+  }
+  .profile__wrapper {
+    height: 30%;
+    position: relative;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
 &lt;/style&gt;
 
 &lt;div class=&quot;profile__wrapper&quot;&gt;
-    &lt;img id=&quot;profile&quot; src=&quot;/assets/images/me.JPG&quot; /&gt;
+  &lt;img id=&quot;profile&quot; src=&quot;/assets/images/me.JPG&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;Hello world!&lt;/p&gt;
 
 &lt;p&gt;革命の新しい一歩を見たので、書き留めておく。&lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;新しい顔ができた&lt;/a&gt;のだ。&lt;/p&gt;
@@ -882,7 +901,7 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 
 &lt;p&gt;The motivation to create stuff lies in to embody a more convenient, easier, and richer lifestyle. Under this situation, our heart and passion comes ahead of materialistic objects. Probably since then, people started to grow a sense of attachment to or being drowned in the belongings as a result of the creation. Humans and items must have been living together since the born of the first civilization, so it can be said that we see citizens as bare humans and items combined.&lt;/p&gt;
 
-&lt;p&gt;When you can handle materialistic object like your limbs freely, humans can do a lot more. Originally, humans have evolved by using them –  from the time with stones and furs, we’ve been accumulating and sophisticating items and eventually, we invented something that can do our work on behalf of us. As the beginning of computation era ends, its power distributed to individuals; as a result, &lt;a href=&quot;https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched&quot;&gt;we live as  cyborgs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When you can handle materialistic object like your limbs freely, humans can do a lot more. Originally, humans have evolved by using them – from the time with stones and furs, we’ve been accumulating and sophisticating items and eventually, we invented something that can do our work on behalf of us. As the beginning of computation era ends, its power distributed to individuals; as a result, &lt;a href=&quot;https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched&quot;&gt;we live as cyborgs&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;As I started taking care of my items and listening to how my heart drives, I’ve gotten to find the balance more at which the mental space and the wealth with items and services co-exist; that is, it’s a state of neither extreme minimalism nor extreme materialism. How to discover it is not something you’ll be told; instead, it may be something that each person needs to find on their own.&lt;/p&gt;
 

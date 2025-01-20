@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@libs/*": ["./ts/libs/*"],
+      "@utils/*": ["./ts/utils/*"]
+    }
+  },
+  "include": ["./ts", "./ts/types/global.d.ts"],
+  "exclude": ["node_modules"]
+}
