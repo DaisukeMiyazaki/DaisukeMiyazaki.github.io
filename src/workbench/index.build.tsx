@@ -1,7 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import ImageGallery from "./photoScroll";
+import ImageGallery from "../components/photoScroll/photoScroll";
+import data from "../workbench/workbench";
 
 const container = document.getElementById("photo-scroll");
 const root = createRoot(container);
-root.render(<ImageGallery />);
+root.render(<ImageGallery images={data()} />);

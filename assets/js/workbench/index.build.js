@@ -32164,10 +32164,10 @@
     },
   });
 
-  // src/photoScroll/index.build.tsx
+  // src/workbench/index.build.tsx
   var import_client = __toESM(require_client());
 
-  // src/photoScroll/photoScroll.tsx
+  // src/components/photoScroll/photoScroll.tsx
   var import_react = __toESM(require_react());
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var ImageGallery = ({ images }) => {
@@ -32206,7 +32206,7 @@
   };
   var photoScroll_default = ImageGallery;
 
-  // src/photoScroll/workbench.ts
+  // src/workbench/workbench.ts
   function data() {
     return [
       {
@@ -32337,7 +32337,7 @@
     ];
   }
 
-  // src/photoScroll/index.build.tsx
+  // src/workbench/index.build.tsx
   var import_jsx_runtime2 = __toESM(require_jsx_runtime());
   var container = document.getElementById("photo-scroll");
   var root = (0, import_client.createRoot)(container);
