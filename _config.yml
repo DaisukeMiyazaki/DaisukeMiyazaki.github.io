@@ -3,18 +3,18 @@ author:
   - email: daisuke.miyazaki012@gmail.com
 permalink: pretty
 url: "https://mdaisuke.net"
-baseurl:  ""
+baseurl: ""
 sass_dir: _sass
 sass:
   style: nested
 
 plugins:
- - jekyll-feed
- - jekyll-postcss
+  - jekyll-feed
+  - jekyll-postcss
 
 postcss:
   cache: false
 title: Daisuke Miyazaki's Blog
 
 markdown: kramdown
-exclude: ['node_modules']
+exclude: ["node_modules"]

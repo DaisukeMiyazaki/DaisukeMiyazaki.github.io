@@ -15,9 +15,9 @@ Maybe there’d be some total nonsense, or some unhindered truth that remain unt
 
 Hang on, take a moment and look away from the screen. Then I want to ask you; how the world at the front of you appears?
 
-There must be some skin-stabbing winds, the familiar sound of a bus engine, and the humid scent of rain that spreads over. Unlike the world of musical with 0 and 1, you must feel the gravity bypassing your thighs,  or experience the perspective from aggressive buildings or vast wild fields.
+There must be some skin-stabbing winds, the familiar sound of a bus engine, and the humid scent of rain that spreads over. Unlike the world of musical with 0 and 1, you must feel the gravity bypassing your thighs, or experience the perspective from aggressive buildings or vast wild fields.
 
-Amid of them, there’s a thing that you reach your hand to, unconsciously. The pocket small magic sits outside of your rationality and instinct, though it keeps optimizing itself to the owner in its very sleek manner.  Well, it rather enhances your capability; in semi-eternally remembering scenes and memories through crisp pictures and videos ; in enabling you to contact with someone 5,000 miles away; or even in obscuring the owner of knowledge. Your encyclopedia is, in some case, no longer in your head but in the sea. Therefore, the owner over knowledge has a less clear boundary with his outside than before.
+Amid of them, there’s a thing that you reach your hand to, unconsciously. The pocket small magic sits outside of your rationality and instinct, though it keeps optimizing itself to the owner in its very sleek manner. Well, it rather enhances your capability; in semi-eternally remembering scenes and memories through crisp pictures and videos ; in enabling you to contact with someone 5,000 miles away; or even in obscuring the owner of knowledge. Your encyclopedia is, in some case, no longer in your head but in the sea. Therefore, the owner over knowledge has a less clear boundary with his outside than before.
 
 Originally, rationality and instinct co-exist each other inside of you. Perhaps there’s no one who wants to get rid of either of them. Now, there wouldn’t be anyone who wants to get rid of your magic, which has become like your limbs and arms.
 

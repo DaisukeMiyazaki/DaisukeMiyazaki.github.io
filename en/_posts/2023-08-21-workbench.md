@@ -9,7 +9,6 @@ lang-ref: workbench
 genre: practical
 ---
 
-
 Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife
 
 <img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
@@ -106,6 +105,7 @@ Also, I added a back panel to eliminate lateral shaking.
 ### Completion
 
 Finally, it's done!
+
 <div class="image-container_triple">
   <img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
   <img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/front2.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
@@ -127,6 +127,7 @@ The posture when standing is almost identical to our measurements, promising a c
 </div>
 
 The tabletop also doubles as a door, hiding cables and providing a cleaner look.
+
 <!-- insert image from builds.yml -->
 <div class="image-container_triple">
 <img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/foldedTableTop.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
@@ -137,6 +138,7 @@ The tabletop also doubles as a door, hiding cables and providing a cleaner look.
 So, what do you think? Why not use the resources and services around you to DIY something special as a gift?
 
 Happy Building!
+
 <script src="/assets/js/popup_build.js"></script>
 
 <div id="myModal" class="modal">

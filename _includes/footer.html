@@ -1,12 +1,10 @@
-<footer class="bg-gray-800 text-white py-8">
+<footer class="bg-gray-800 py-8 text-white">
   <div class="container mx-auto px-4">
     <div class="text-center">
-      {% assign obj = site.data.signup %}
-      {% if page.lang == "en" %}
-      {% include signup_form.html param=obj.en %}
+      {% assign obj = site.data.signup %} {% if page.lang == "en" %} {% include
+      signup_form.html param=obj.en %}
       <a href="/" class="text-blue-500 hover:underline">Back to home</a>
-      {% else %}
-      {% include signup_form.html param=obj.jp %}
+      {% else %} {% include signup_form.html param=obj.jp %}
       <a href="/" class="text-blue-500 hover:underline">ホームへ戻る</a>
       {% endif %}
     </div>
