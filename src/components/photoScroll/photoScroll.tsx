@@ -35,7 +35,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
               className="h-screen w-full object-cover"
             />
 
-            <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform whitespace-pre-wrap rounded bg-white bg-opacity-50 p-2 text-lg text-black transition-opacity duration-300">
+            <div className="pointer-events-none absolute bottom-2 right-2 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-2 text-lg text-white transition-opacity duration-300">
               {image.description}
             </div>
           </div>
