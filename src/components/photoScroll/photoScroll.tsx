@@ -4,6 +4,7 @@ type ImageData = {
   id: number;
   src: string;
   description: string;
+  link?: string;
 };
 
 type ImageGalleryProps = {
@@ -11,6 +12,7 @@ type ImageGalleryProps = {
 };
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
+  const baseURL = useRef(window.location.origin);
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [showSlider, setShowSlider] = useState(false);
   const [sliderValue, setSliderValue] = useState(images.length);
@@ -123,7 +125,18 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             />
 
             <div className="pointer-events-none absolute bottom-2 right-2 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-2 text-lg text-white transition-opacity duration-300">
-              {image.description}
+              {image.link ? (
+                <a
+                  href={`${baseURL.current}${image.link}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pointer-events-auto"
+                >
+                  {image.description}
+                </a>
+              ) : (
+                image.description
+              )}
             </div>
           </div>
         ))}

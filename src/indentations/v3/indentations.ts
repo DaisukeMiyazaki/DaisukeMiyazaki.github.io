@@ -39,6 +39,7 @@ export default function data() {
       id: 7,
       src: "/assets/images/indentation/IMG_2154.jpeg",
       description: "ver4へ進む。",
+      link: "/jp/2025/01/20/例の凸凹-ver4/",
     },
   ];
 }

@@ -32171,6 +32171,7 @@
   var import_react = __toESM(require_react());
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var ImageGallery = ({ images }) => {
+    const baseURL = (0, import_react.useRef)(window.location.origin);
     const imageRefs = (0, import_react.useRef)([]);
     const [showSlider, setShowSlider] = (0, import_react.useState)(false);
     const [sliderValue, setSliderValue] = (0, import_react.useState)(
@@ -32191,7 +32192,7 @@
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
             onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
             className:
-              "fixed top-4 left-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
+              "fixed left-4 top-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
             title: "\u30DA\u30FC\u30B8\u30C8\u30C3\u30D7\u306B\u623B\u308B",
             children: "\u2191",
           }),
@@ -32291,7 +32292,15 @@
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
                       className:
                         "pointer-events-none absolute bottom-2 right-2 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-2 text-lg text-white transition-opacity duration-300",
-                      children: image.description,
+                      children: image.link
+                        ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+                            href: `${baseURL.current}${image.link}`,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "pointer-events-auto",
+                            children: image.description,
+                          })
+                        : image.description,
                     }),
                   ],
                 },

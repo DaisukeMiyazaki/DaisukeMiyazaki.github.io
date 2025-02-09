@@ -110,6 +110,7 @@ export default function data() {
       id: 18,
       src: "/assets/images/indentation/IMG_1857.jpg",
       description: "ここからver2に進む。",
+      link: "/jp/2025/01/20/例の凸凹-ver2/",
     },
   ];
 }
