@@ -124,13 +124,13 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
               className="h-screen w-full object-cover"
             />
 
-            <div className="pointer-events-none absolute bottom-2 right-2 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-2 text-lg text-white transition-opacity duration-300">
+            <div className="pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300">
               {image.link ? (
                 <a
                   href={`${baseURL.current}${image.link}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="pointer-events-auto"
+                  className="pointer-events-auto text-yellow-300 hover:text-yellow-400"
                 >
                   {image.description}
                 </a>
