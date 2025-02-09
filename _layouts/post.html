@@ -2,16 +2,16 @@
 layout: default
 ---
 
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto px-4 py-8 dark:bg-gray-900 dark:text-gray-100">
   <header class="mb-8">
-    <p class="meta text-sm text-gray-600">
+    <p class="meta text-sm text-gray-600 dark:text-gray-400">
       {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author
       }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
-    <h1 class="title text-3xl font-bold">{{ page.title }}</h1>
+    <h1 class="title text-3xl font-bold dark:text-white">{{ page.title }}</h1>
   </header>
 
-  <article class="lg:prose-xl">{{ content }}</article>
+  <article class="dark:prose-invert lg:prose-xl">{{ content }}</article>
 
   <!-- Disqus -->
   {% if page.comments %}
@@ -48,9 +48,12 @@ layout: default
       {% for post in related limit:3 %}
       <li>
         <h3 class="text-xl">
-          <a href="{{ post.url }}" class="text-blue-600 hover:underline">
+          <a
+            href="{{ post.url }}"
+            class="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          >
             {{ post.title }}
-            <small class="block text-gray-500"
+            <small class="block text-gray-500 dark:text-gray-400"
               >{{ post.date | date_to_string }}</small
             >
           </a>

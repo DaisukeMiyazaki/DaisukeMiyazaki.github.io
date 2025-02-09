@@ -1,6 +1,9 @@
-<header class="bg-gray-100 px-4 py-4">
+<header class="bg-gray-100 px-4 py-4 dark:bg-gray-800">
   <div class="container mx-auto flex items-center justify-between">
-    <a class="text-2xl font-bold text-gray-800" href="{{ site.baseurl }}/">
+    <a
+      class="text-2xl font-bold text-gray-800 dark:text-gray-100"
+      href="{{ site.baseurl }}/"
+    >
       <h1>{{ site.data.mixin.title }}</h1>
     </a>
     <nav class="flex items-center">
@@ -10,24 +13,73 @@
         in pages_list %} {% if node.title != null %} {% if node.tag != "misc" %}
         {% if node.layout == "page" %}
         <a
-          class="{% if page.url == node.url %} active{% endif %} text-gray-800 hover:text-gray-600"
+          class="{% if page.url == node.url %} active{% endif %} text-gray-800 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
           href="{{ node.url }}"
           >{{node.title}}</a
         >
         {% endif %} {% if node.layout == "builds" %}
         <a
-          class="{% if page.url == node.url %} active{% endif %} text-gray-800 hover:text-gray-600"
+          class="{% if page.url == node.url %} active{% endif %} text-gray-800 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
           href="{{ node.url }}"
           >{{node.title}}</a
         >
         {% endif %} {% if node.tag == "introduction" %}
         <a
-          class="{% if page.url == node.url %} active{% endif %} text-gray-800 hover:text-gray-600"
+          class="{% if page.url == node.url %} active{% endif %} text-gray-800 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
           href="{{ node.url }}"
           >{{node.title}}</a
         >
         {% endif %} {% endif %} {% endif %} {% endfor %}
       </div>
+      <!-- Dark Mode 切替ボタン -->
+      <button id="theme-toggle" class="ml-4 p-2 focus:outline-none">
+        <svg
+          id="theme-toggle-dark-icon"
+          class="hidden h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!-- 太陽アイコン (darkモード時は表示、light切替用) -->
+          <path
+            d="M12 4a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zm5.66 1.34a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm3.34 5.66a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-1.34 5.66a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm-5.66 3.34a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-5.66-1.34a1 1 0 010 2h0a1 1 0 010-2h0zm-3.34-5.66a1 1 0 011-1v0a1 1 0 110 2v0a1 1 0 01-1-1zm1.34-5.66a1 1 0 011.41-1.41h0a1 1 0 11-1.41 1.41zM12 8a4 4 0 100 8 4 4 0 000-8z"
+          />
+        </svg>
+        <svg
+          id="theme-toggle-light-icon"
+          class="h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!-- 月アイコン (lightモード時は表示、dark切替用) -->
+          <path d="M21 12.79A9 9 0 0112.21 3a7 7 0 100 14 9 9 0 008.79-4.21z" />
+        </svg>
+      </button>
     </nav>
   </div>
 </header>
+<script>
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const darkIcon = document.getElementById("theme-toggle-dark-icon");
+  const lightIcon = document.getElementById("theme-toggle-light-icon");
+  // ページ読み込み時、現在のテーマに応じてアイコンを切り替え
+  if (document.documentElement.classList.contains("dark")) {
+    darkIcon.classList.remove("hidden");
+    lightIcon.classList.add("hidden");
+  } else {
+    darkIcon.classList.add("hidden");
+    lightIcon.classList.remove("hidden");
+  }
+  themeToggleBtn.addEventListener("click", function () {
+    document.documentElement.classList.toggle("dark");
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      darkIcon.classList.remove("hidden");
+      lightIcon.classList.add("hidden");
+    } else {
+      localStorage.setItem("theme", "light");
+      darkIcon.classList.add("hidden");
+      lightIcon.classList.remove("hidden");
+    }
+  });
+</script>
+<!-- End Dark Mode -->
