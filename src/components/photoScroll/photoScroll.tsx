@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 type ImageData = {
   id: number;
@@ -12,6 +12,16 @@ type ImageGalleryProps = {
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
   const imageRefs = useRef([]);
+  const [showSlider, setShowSlider] = useState(false);
+  const [sliderValue, setSliderValue] = useState(images.length);
+  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = parseInt(e.target.value, 10);
+    setSliderValue(newValue);
+    const index = images.length - newValue;
+    if (index >= 0 && index < images.length) {
+      imageRefs.current[index]?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   // show an image one by one streached to the screen, and scroll to the next image when the user scrolls
   // description is displayed on the image
@@ -21,6 +31,34 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
 
   return (
     <>
+      <div className="fixed right-4 top-1/2 z-20 -translate-y-1/2 transform">
+        {showSlider ? (
+          <div className="relative">
+            <input
+              type="range"
+              min="1"
+              max={images.length.toString()}
+              value={sliderValue}
+              onChange={handleSliderChange}
+              className="accent-blue-500"
+              style={{ transform: "rotate(-90deg)", width: "150px" }}
+            />
+            <button
+              onClick={() => setShowSlider(false)}
+              className="mt-2 rounded bg-red-500 p-1 text-xs text-white"
+            >
+              閉じる
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => setShowSlider(true)}
+            className="rounded bg-blue-500 p-2 text-white"
+          >
+            ページ移動
+          </button>
+        )}
+      </div>
       <div className="h-screen w-fit snap-y snap-mandatory overflow-y-scroll">
         {images.map((image, index) => (
           <div

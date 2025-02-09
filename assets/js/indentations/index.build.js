@@ -1391,7 +1391,7 @@
             }
             return dispatcher.useContext(Context);
           }
-          function useState(initialState) {
+          function useState2(initialState) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useState(initialState);
           }
@@ -2376,7 +2376,7 @@
           exports.useMemo = useMemo;
           exports.useReducer = useReducer;
           exports.useRef = useRef2;
-          exports.useState = useState;
+          exports.useState = useState2;
           exports.useSyncExternalStore = useSyncExternalStore;
           exports.useTransition = useTransition;
           exports.version = ReactVersion;
@@ -18551,7 +18551,7 @@
                 mountHookTypesDev();
                 return mountRef(initialValue);
               },
-              useState: function useState(initialState) {
+              useState: function useState2(initialState) {
                 currentHookNameInDev = "useState";
                 mountHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
@@ -18674,7 +18674,7 @@
                 updateHookTypesDev();
                 return mountRef(initialValue);
               },
-              useState: function useState(initialState) {
+              useState: function useState2(initialState) {
                 currentHookNameInDev = "useState";
                 updateHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
@@ -18797,7 +18797,7 @@
                 updateHookTypesDev();
                 return updateRef();
               },
-              useState: function useState(initialState) {
+              useState: function useState2(initialState) {
                 currentHookNameInDev = "useState";
                 updateHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
@@ -18916,7 +18916,7 @@
                 updateHookTypesDev();
                 return updateRef();
               },
-              useState: function useState(initialState) {
+              useState: function useState2(initialState) {
                 currentHookNameInDev = "useState";
                 updateHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
@@ -19045,7 +19045,7 @@
                 mountHookTypesDev();
                 return mountRef(initialValue);
               },
-              useState: function useState(initialState) {
+              useState: function useState2(initialState) {
                 currentHookNameInDev = "useState";
                 warnInvalidHookAccess();
                 mountHookTypesDev();
@@ -19185,7 +19185,7 @@
                 updateHookTypesDev();
                 return updateRef();
               },
-              useState: function useState(initialState) {
+              useState: function useState2(initialState) {
                 currentHookNameInDev = "useState";
                 warnInvalidHookAccess();
                 updateHookTypesDev();
@@ -19321,7 +19321,7 @@
                 updateHookTypesDev();
                 return updateRef();
               },
-              useState: function useState(initialState) {
+              useState: function useState2(initialState) {
                 currentHookNameInDev = "useState";
                 warnInvalidHookAccess();
                 updateHookTypesDev();
@@ -32172,35 +32172,78 @@
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var ImageGallery = ({ images }) => {
     const imageRefs = (0, import_react.useRef)([]);
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+    const [showSlider, setShowSlider] = (0, import_react.useState)(false);
+    const [sliderValue, setSliderValue] = (0, import_react.useState)(
+      images.length,
+    );
+    const handleSliderChange = (e) => {
+      const newValue = parseInt(e.target.value, 10);
+      setSliderValue(newValue);
+      const index = images.length - newValue;
+      if (index >= 0 && index < images.length) {
+        imageRefs.current[index]?.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
       import_jsx_runtime.Fragment,
       {
-        children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-          className: "h-screen w-fit snap-y snap-mandatory overflow-y-scroll",
-          children: images.map((image, index) =>
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
-              "div",
-              {
-                className: "relative snap-center snap-always",
-                ref: (el) => (imageRefs.current[index] = el),
-                "data-index": index,
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-                    src: image.src,
-                    alt: `Image ${image.id}`,
-                    className: "h-screen w-full object-cover",
-                  }),
-                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-                    className:
-                      "pointer-events-none absolute bottom-2 right-2 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-2 text-lg text-white transition-opacity duration-300",
-                    children: image.description,
-                  }),
-                ],
-              },
-              image.id,
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+            className: "fixed right-4 top-1/2 transform -translate-y-1/2 z-20",
+            children: showSlider
+              ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                  className: "relative",
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+                      type: "range",
+                      min: "1",
+                      max: images.length.toString(),
+                      value: sliderValue,
+                      onChange: handleSliderChange,
+                      className: "accent-blue-500",
+                      style: { transform: "rotate(-90deg)", width: "150px" },
+                    }),
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+                      onClick: () => setShowSlider(false),
+                      className:
+                        "mt-2 p-1 rounded bg-red-500 text-white text-xs",
+                      children: "\u9589\u3058\u308B",
+                    }),
+                  ],
+                })
+              : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+                  onClick: () => setShowSlider(true),
+                  className: "p-2 rounded bg-blue-500 text-white",
+                  children: "\u30DA\u30FC\u30B8\u79FB\u52D5",
+                }),
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+            className: "h-screen w-fit snap-y snap-mandatory overflow-y-scroll",
+            children: images.map((image, index) =>
+              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+                "div",
+                {
+                  className: "relative snap-center snap-always",
+                  ref: (el) => (imageRefs.current[index] = el),
+                  "data-index": index,
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+                      src: image.src,
+                      alt: `Image ${image.id}`,
+                      className: "h-screen w-full object-cover",
+                    }),
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+                      className:
+                        "pointer-events-none absolute bottom-2 right-2 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-2 text-lg text-white transition-opacity duration-300",
+                      children: image.description,
+                    }),
+                  ],
+                },
+                image.id,
+              ),
             ),
-          ),
-        }),
+          }),
+        ],
       },
     );
   };
