@@ -31,6 +31,25 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
 
   return (
     <>
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="fixed left-4 top-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
+        title="ページトップに戻る"
+      >
+        ↑
+      </button>
+      <button
+        onClick={() =>
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          })
+        }
+        className="fixed bottom-20 left-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
+        title="ページ下に移動"
+      >
+        ↓
+      </button>
       <div className="fixed right-4 top-1/2 z-20 -translate-y-1/2 transform">
         {showSlider ? (
           <div className="relative">
