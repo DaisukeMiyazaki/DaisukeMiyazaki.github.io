@@ -32171,6 +32171,7 @@
   var import_react = __toESM(require_react());
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var ImageGallery = ({ images }) => {
+    const baseURL = (0, import_react.useRef)(window.location.origin);
     const imageRefs = (0, import_react.useRef)([]);
     const [showSlider, setShowSlider] = (0, import_react.useState)(false);
     const [sliderValue, setSliderValue] = (0, import_react.useState)(
@@ -32188,6 +32189,24 @@
       import_jsx_runtime.Fragment,
       {
         children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+            onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
+            className:
+              "fixed left-4 top-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
+            title: "\u30DA\u30FC\u30B8\u30C8\u30C3\u30D7\u306B\u623B\u308B",
+            children: "\u2191",
+          }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+            onClick: () =>
+              window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth",
+              }),
+            className:
+              "fixed bottom-20 left-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
+            title: "\u30DA\u30FC\u30B8\u4E0B\u306B\u79FB\u52D5",
+            children: "\u2193",
+          }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
             className: "fixed right-4 top-1/2 z-20 -translate-y-1/2 transform",
             children: showSlider
@@ -32272,8 +32291,17 @@
                     }),
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
                       className:
-                        "pointer-events-none absolute bottom-2 right-2 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-2 text-lg text-white transition-opacity duration-300",
-                      children: image.description,
+                        "pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300",
+                      children: image.link
+                        ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+                            href: `${baseURL.current}${image.link}`,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className:
+                              "pointer-events-auto text-yellow-300 hover:text-yellow-400",
+                            children: image.description,
+                          })
+                        : image.description,
                     }),
                   ],
                 },
@@ -32400,6 +32428,7 @@
         id: 18,
         src: "/assets/images/indentation/IMG_1857.jpg",
         description: "\u3053\u3053\u304B\u3089ver2\u306B\u9032\u3080\u3002",
+        link: "/jp/2025/01/20/\u4F8B\u306E\u51F8\u51F9-ver2/",
       },
     ];
   }

@@ -4,6 +4,7 @@ type ImageData = {
   id: number;
   src: string;
   description: string;
+  link?: string;
 };
 
 type ImageGalleryProps = {
@@ -11,6 +12,7 @@ type ImageGalleryProps = {
 };
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
+  const baseURL = useRef(window.location.origin);
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [showSlider, setShowSlider] = useState(false);
   const [sliderValue, setSliderValue] = useState(images.length);
@@ -31,6 +33,25 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
 
   return (
     <>
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="fixed left-4 top-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
+        title="ページトップに戻る"
+      >
+        ↑
+      </button>
+      <button
+        onClick={() =>
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          })
+        }
+        className="fixed bottom-20 left-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
+        title="ページ下に移動"
+      >
+        ↓
+      </button>
       <div className="fixed right-4 top-1/2 z-20 -translate-y-1/2 transform">
         {showSlider ? (
           <div className="relative">
@@ -103,8 +124,19 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
               className="h-screen w-full object-cover"
             />
 
-            <div className="pointer-events-none absolute bottom-2 right-2 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-2 text-lg text-white transition-opacity duration-300">
-              {image.description}
+            <div className="pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300">
+              {image.link ? (
+                <a
+                  href={`${baseURL.current}${image.link}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pointer-events-auto text-yellow-300 hover:text-yellow-400"
+                >
+                  {image.description}
+                </a>
+              ) : (
+                image.description
+              )}
             </div>
           </div>
         ))}
