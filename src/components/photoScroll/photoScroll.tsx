@@ -11,7 +11,7 @@ type ImageGalleryProps = {
 };
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
-  const imageRefs = useRef([]);
+  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [showSlider, setShowSlider] = useState(false);
   const [sliderValue, setSliderValue] = useState(images.length);
   const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -92,7 +92,9 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
           <div
             key={image.id}
             className="relative snap-center snap-always"
-            ref={(el: HTMLDivElement | null) => (imageRefs.current[index] = el)}
+            ref={(el: HTMLDivElement | null) => {
+              imageRefs.current[index] = el;
+            }}
             data-index={index}
           >
             <img

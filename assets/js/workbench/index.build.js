@@ -32260,7 +32260,9 @@
                 "div",
                 {
                   className: "relative snap-center snap-always",
-                  ref: (el) => (imageRefs.current[index] = el),
+                  ref: (el) => {
+                    imageRefs.current[index] = el;
+                  },
                   "data-index": index,
                   children: [
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
