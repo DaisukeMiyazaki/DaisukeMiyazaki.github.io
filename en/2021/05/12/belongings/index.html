@@ -70,12 +70,26 @@
 
   gtag("config", "G-LRV9J804ME");
 </script>
+<script>
+  if (
+    localStorage.getItem("theme") === "dark" ||
+    (!localStorage.getItem("theme") &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
 
 
-  <body class="bg-gray-100 text-gray-900">
-    <header class="bg-gray-100 py-4">
-  <div class="container mx-4 flex items-center justify-between pr-4">
-    <a class="text-2xl font-bold text-gray-800" href="/">
+  <body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <header class="bg-gray-100 px-4 py-4 dark:bg-gray-800">
+  <div class="container mx-auto flex items-center justify-between">
+    <a
+      class="text-2xl font-bold text-gray-800 dark:text-gray-100"
+      href="/"
+    >
       <h1>Daisuke Miyazaki's Blog</h1>
     </a>
     <nav class="flex items-center">
@@ -91,19 +105,68 @@
        
              
       </div>
+      <!-- Dark Mode 切替ボタン -->
+      <button id="theme-toggle" class="ml-4 p-2 focus:outline-none">
+        <svg
+          id="theme-toggle-dark-icon"
+          class="hidden h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!-- 太陽アイコン (darkモード時は表示、light切替用) -->
+          <path
+            d="M12 4a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zm5.66 1.34a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm3.34 5.66a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-1.34 5.66a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm-5.66 3.34a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-5.66-1.34a1 1 0 010 2h0a1 1 0 010-2h0zm-3.34-5.66a1 1 0 011-1v0a1 1 0 110 2v0a1 1 0 01-1-1zm1.34-5.66a1 1 0 011.41-1.41h0a1 1 0 11-1.41 1.41zM12 8a4 4 0 100 8 4 4 0 000-8z"
+          />
+        </svg>
+        <svg
+          id="theme-toggle-light-icon"
+          class="h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!-- 月アイコン (lightモード時は表示、dark切替用) -->
+          <path d="M21 12.79A9 9 0 0112.21 3a7 7 0 100 14 9 9 0 008.79-4.21z" />
+        </svg>
+      </button>
     </nav>
   </div>
 </header>
+<script>
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const darkIcon = document.getElementById("theme-toggle-dark-icon");
+  const lightIcon = document.getElementById("theme-toggle-light-icon");
+  // ページ読み込み時、現在のテーマに応じてアイコンを切り替え
+  if (document.documentElement.classList.contains("dark")) {
+    darkIcon.classList.remove("hidden");
+    lightIcon.classList.add("hidden");
+  } else {
+    darkIcon.classList.add("hidden");
+    lightIcon.classList.remove("hidden");
+  }
+  themeToggleBtn.addEventListener("click", function () {
+    document.documentElement.classList.toggle("dark");
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      darkIcon.classList.remove("hidden");
+      lightIcon.classList.add("hidden");
+    } else {
+      localStorage.setItem("theme", "light");
+      darkIcon.classList.add("hidden");
+      lightIcon.classList.remove("hidden");
+    }
+  });
+</script>
+<!-- End Dark Mode -->
 
-    <div class="container prose mx-auto p-4 lg:prose-xl"><div class="container mx-auto px-4 py-8">
+    <div class="container prose mx-auto p-4 lg:prose-xl"><div class="container mx-auto px-4 py-8 dark:bg-gray-900 dark:text-gray-100">
   <header class="mb-8">
-    <p class="meta text-sm text-gray-600">
+    <p class="meta text-sm text-gray-600 dark:text-gray-400">
       May 12, 2021
     </p>
-    <h1 class="title text-3xl font-bold">Belongings</h1>
+    <h1 class="title text-3xl font-bold dark:text-white">Belongings</h1>
   </header>
 
-  <article class="lg:prose-xl"><p>After reading <a href="https://konmari.jp/">The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing</a> from Marie Kondo.</p>
+  <article class="dark:prose-invert lg:prose-xl"><p>After reading <a href="https://konmari.jp/">The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing</a> from Marie Kondo.</p>
 
 <p>.</p>
 
@@ -184,9 +247,12 @@
       
       <li>
         <h3 class="text-xl">
-          <a href="/en/2023/09/02/droplet/" class="text-blue-600 hover:underline">
+          <a
+            href="/en/2023/09/02/droplet/"
+            class="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          >
             The Droplet
-            <small class="block text-gray-500"
+            <small class="block text-gray-500 dark:text-gray-400"
               >02 Sep 2023</small
             >
           </a>
@@ -195,9 +261,12 @@
       
       <li>
         <h3 class="text-xl">
-          <a href="/en/2023/08/21/workbench/" class="text-blue-600 hover:underline">
+          <a
+            href="/en/2023/08/21/workbench/"
+            class="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          >
             Workbench
-            <small class="block text-gray-500"
+            <small class="block text-gray-500 dark:text-gray-400"
               >21 Aug 2023</small
             >
           </a>
@@ -206,9 +275,12 @@
       
       <li>
         <h3 class="text-xl">
-          <a href="/en/2022/12/09/Going-Meta-In-The-MetaVerse/" class="text-blue-600 hover:underline">
+          <a
+            href="/en/2022/12/09/Going-Meta-In-The-MetaVerse/"
+            class="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          >
             Going-Meta-In-The-MetaVerse
-            <small class="block text-gray-500"
+            <small class="block text-gray-500 dark:text-gray-400"
               >09 Dec 2022</small
             >
           </a>

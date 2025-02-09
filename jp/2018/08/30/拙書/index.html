@@ -70,12 +70,26 @@
 
   gtag("config", "G-LRV9J804ME");
 </script>
+<script>
+  if (
+    localStorage.getItem("theme") === "dark" ||
+    (!localStorage.getItem("theme") &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
 
 
-  <body class="bg-gray-100 text-gray-900">
-    <header class="bg-gray-100 py-4">
-  <div class="container mx-4 flex items-center justify-between pr-4">
-    <a class="text-2xl font-bold text-gray-800" href="/">
+  <body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <header class="bg-gray-100 px-4 py-4 dark:bg-gray-800">
+  <div class="container mx-auto flex items-center justify-between">
+    <a
+      class="text-2xl font-bold text-gray-800 dark:text-gray-100"
+      href="/"
+    >
       <h1>Daisuke Miyazaki's Blog</h1>
     </a>
     <nav class="flex items-center">
@@ -91,19 +105,68 @@
        
              
       </div>
+      <!-- Dark Mode 切替ボタン -->
+      <button id="theme-toggle" class="ml-4 p-2 focus:outline-none">
+        <svg
+          id="theme-toggle-dark-icon"
+          class="hidden h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!-- 太陽アイコン (darkモード時は表示、light切替用) -->
+          <path
+            d="M12 4a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zm5.66 1.34a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm3.34 5.66a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-1.34 5.66a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm-5.66 3.34a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-5.66-1.34a1 1 0 010 2h0a1 1 0 010-2h0zm-3.34-5.66a1 1 0 011-1v0a1 1 0 110 2v0a1 1 0 01-1-1zm1.34-5.66a1 1 0 011.41-1.41h0a1 1 0 11-1.41 1.41zM12 8a4 4 0 100 8 4 4 0 000-8z"
+          />
+        </svg>
+        <svg
+          id="theme-toggle-light-icon"
+          class="h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!-- 月アイコン (lightモード時は表示、dark切替用) -->
+          <path d="M21 12.79A9 9 0 0112.21 3a7 7 0 100 14 9 9 0 008.79-4.21z" />
+        </svg>
+      </button>
     </nav>
   </div>
 </header>
+<script>
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const darkIcon = document.getElementById("theme-toggle-dark-icon");
+  const lightIcon = document.getElementById("theme-toggle-light-icon");
+  // ページ読み込み時、現在のテーマに応じてアイコンを切り替え
+  if (document.documentElement.classList.contains("dark")) {
+    darkIcon.classList.remove("hidden");
+    lightIcon.classList.add("hidden");
+  } else {
+    darkIcon.classList.add("hidden");
+    lightIcon.classList.remove("hidden");
+  }
+  themeToggleBtn.addEventListener("click", function () {
+    document.documentElement.classList.toggle("dark");
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      darkIcon.classList.remove("hidden");
+      lightIcon.classList.add("hidden");
+    } else {
+      localStorage.setItem("theme", "light");
+      darkIcon.classList.add("hidden");
+      lightIcon.classList.remove("hidden");
+    }
+  });
+</script>
+<!-- End Dark Mode -->
 
-    <div class="container prose mx-auto p-4 lg:prose-xl"><div class="container mx-auto px-4 py-8">
+    <div class="container prose mx-auto p-4 lg:prose-xl"><div class="container mx-auto px-4 py-8 dark:bg-gray-900 dark:text-gray-100">
   <header class="mb-8">
-    <p class="meta text-sm text-gray-600">
+    <p class="meta text-sm text-gray-600 dark:text-gray-400">
       Aug 30, 2018
     </p>
-    <h1 class="title text-3xl font-bold">坊主がウェブに上手な英語の詩を書いた。</h1>
+    <h1 class="title text-3xl font-bold dark:text-white">坊主がウェブに上手な英語の詩を書いた。</h1>
   </header>
 
-  <article class="lg:prose-xl"><p>　英語は今や、我々日本語話者にとっては特に、未知の世界を見ることのできる色眼鏡となりました。その言葉一つが、見えなかった、知らなかった様々な世界を視覚化してくれます。英語は実世界のみならず、インターネットの上でも世界共通語のようです。世の中を行き来する情報の多くは英語で伝達されます。生活、ビジネス、政治、外交、教育、芸術。言葉という視点で万物を見ると、着地点はありとあらゆる現象に帰結するでしょう。</p>
+  <article class="dark:prose-invert lg:prose-xl"><p>　英語は今や、我々日本語話者にとっては特に、未知の世界を見ることのできる色眼鏡となりました。その言葉一つが、見えなかった、知らなかった様々な世界を視覚化してくれます。英語は実世界のみならず、インターネットの上でも世界共通語のようです。世の中を行き来する情報の多くは英語で伝達されます。生活、ビジネス、政治、外交、教育、芸術。言葉という視点で万物を見ると、着地点はありとあらゆる現象に帰結するでしょう。</p>
 
 <p>　経済大国日本で、日本語を操る人が英語を使える場合と使えない場合では、接触可能な人脈、情報、視座が大きく異なります。今や世界各地の先人の多大なる努力、功績の結果、僕たちの文明の礎は築かれたと思います。温故知新と人は言うように、これらを上手に正しく活用し、その恩恵を最大限に受けることは賢く生きる術ではないでしょうか。今を生きる人との共生、切磋琢磨し、種としての繁栄を築き上げるにも、そのもっとも基本となる「人と人の会話」は必須です。
 英語と日本語は全く異なる言語です。日本語が母国語の人にとって、第二か国語として英語を習得することは簡単ではないですが、不可能では全くありません。だからこそ、中学と高校で長い間英語を勉強する人が多い日本で、英語を習得せずに終わる現状は疑問を抱かざるをえません。これは間違った学習方法を選ぶ人が多くいる結果ではないでしょうか。そう思う理由を言及するにあたって、まず英語とは何かについて話す必要があるでしょう。</p>
@@ -170,10 +233,13 @@
       
       <li>
         <h3 class="text-xl">
-          <a href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/" class="text-blue-600 hover:underline">
-            ワークベンチv2
-            <small class="block text-gray-500"
-              >13 Jan 2025</small
+          <a
+            href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9/"
+            class="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          >
+            例の凸凹
+            <small class="block text-gray-500 dark:text-gray-400"
+              >20 Jan 2025</small
             >
           </a>
         </h3>
@@ -181,10 +247,13 @@
       
       <li>
         <h3 class="text-xl">
-          <a href="/jp/2023/09/02/%E9%9B%AB/" class="text-blue-600 hover:underline">
-            雫
-            <small class="block text-gray-500"
-              >02 Sep 2023</small
+          <a
+            href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
+            class="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          >
+            例の凸凹ver3
+            <small class="block text-gray-500 dark:text-gray-400"
+              >20 Jan 2025</small
             >
           </a>
         </h3>
@@ -192,10 +261,13 @@
       
       <li>
         <h3 class="text-xl">
-          <a href="/jp/2023/08/21/%E3%83%99%E3%83%B3%E3%83%81/" class="text-blue-600 hover:underline">
-            ワークベンチ
-            <small class="block text-gray-500"
-              >21 Aug 2023</small
+          <a
+            href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
+            class="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          >
+            例の凸凹ver2
+            <small class="block text-gray-500 dark:text-gray-400"
+              >20 Jan 2025</small
             >
           </a>
         </h3>

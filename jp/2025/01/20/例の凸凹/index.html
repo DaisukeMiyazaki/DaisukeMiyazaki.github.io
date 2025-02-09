@@ -1,0 +1,263 @@
+<!doctype html>
+<meta charset="utf-8" />
+<html lang="jp" class="scroll-auto">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link
+    rel="canonical"
+    href="https://mdaisuke.net/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9/"
+  />
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Daisuke Miyazaki's Blog"
+    href="/feed.xml"
+  />
+
+  <title>
+     例の凸凹 &middot; Daisuke Miyazaki's Blog 
+  </title>
+
+  <!--costom CSS-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+
+  <!-- seo -->
+  <meta name="author" content="Daisuke Miyazaki" />
+  <meta
+    name="description"
+    content="Daisuke is an engineer based in Tokyo. This is his personal website."
+  />
+
+  <!-- open graph -->
+  <meta property="og:title" content="Daisuke (Daisuke Miyazaki)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
+  <meta
+    property="og:description"
+    content="Daisuke is an engineer based in Tokyo. This is his personal website."
+  />
+  <meta property="og:url" content="https://mdaisuke.net" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Daisuke Miyazaki" />
+
+  
+    
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
+  />
+   
+</head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-LRV9J804ME"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-LRV9J804ME");
+</script>
+<script>
+  if (
+    localStorage.getItem("theme") === "dark" ||
+    (!localStorage.getItem("theme") &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
+
+
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-gray-100 px-4 py-4 dark:bg-gray-800">
+  <div class="container mx-auto flex items-center justify-between">
+    <a
+      class="text-2xl font-bold text-gray-800 dark:text-gray-100"
+      href="/"
+    >
+      <h1>Daisuke Miyazaki's Blog</h1>
+    </a>
+    <nav class="flex items-center">
+      <div class="flex space-x-4">
+        <!-- 英語と日本語を出し分けるheader内のスイッチャー -->
+<div class="mx-4">
+  
+  <a href="/en" class="text-blue-500 hover:text-blue-700">EN</a>
+   
+  <a href="/" class="text-blue-500 hover:text-blue-700">JP</a>
+  
+</div>
+       
+             
+      </div>
+      <!-- Dark Mode 切替ボタン -->
+      <button id="theme-toggle" class="ml-4 p-2 focus:outline-none">
+        <svg
+          id="theme-toggle-dark-icon"
+          class="hidden h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!-- 太陽アイコン (darkモード時は表示、light切替用) -->
+          <path
+            d="M12 4a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zm5.66 1.34a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm3.34 5.66a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-1.34 5.66a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm-5.66 3.34a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-5.66-1.34a1 1 0 010 2h0a1 1 0 010-2h0zm-3.34-5.66a1 1 0 011-1v0a1 1 0 110 2v0a1 1 0 01-1-1zm1.34-5.66a1 1 0 011.41-1.41h0a1 1 0 11-1.41 1.41zM12 8a4 4 0 100 8 4 4 0 000-8z"
+          />
+        </svg>
+        <svg
+          id="theme-toggle-light-icon"
+          class="h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <!-- 月アイコン (lightモード時は表示、dark切替用) -->
+          <path d="M21 12.79A9 9 0 0112.21 3a7 7 0 100 14 9 9 0 008.79-4.21z" />
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<script>
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const darkIcon = document.getElementById("theme-toggle-dark-icon");
+  const lightIcon = document.getElementById("theme-toggle-light-icon");
+  // ページ読み込み時、現在のテーマに応じてアイコンを切り替え
+  if (document.documentElement.classList.contains("dark")) {
+    darkIcon.classList.remove("hidden");
+    lightIcon.classList.add("hidden");
+  } else {
+    darkIcon.classList.add("hidden");
+    lightIcon.classList.remove("hidden");
+  }
+  themeToggleBtn.addEventListener("click", function () {
+    document.documentElement.classList.toggle("dark");
+    if (document.documentElement.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      darkIcon.classList.remove("hidden");
+      lightIcon.classList.add("hidden");
+    } else {
+      localStorage.setItem("theme", "light");
+      darkIcon.classList.add("hidden");
+      lightIcon.classList.remove("hidden");
+    }
+  });
+</script>
+<!-- End Dark Mode -->
+
+
+    <div class="container mx-auto py-4">
+      <div class="mb-4 text-center">
+        <p class="mx-auto text-sm text-gray-600">
+          Jan 20, 2025
+        </p>
+        <h1 class="mx-auto text-3xl font-bold">例の凸凹</h1>
+      </div>
+
+      <div class="prose mx-auto mb-8"><div id="photo-scroll"></div>
+<script type="text/javascript" src="/assets/js/indentations/index.build.js" charset="utf-8"></script>
+
+</div>
+
+      <!-- Disqus -->
+      
+      <div id="disqus_thread" class="mt-8"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = "https://mdaisuke.net/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9/"; // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = "/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function () {
+          // DON'T EDIT BELOW THIS LINE
+          var d = document,
+            s = d.createElement("script");
+          s.src = "https://daisukemiyazakis-blog.disqus.com/embed.js";
+          s.setAttribute("data-timestamp", +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript
+        >Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript"
+          >comments powered by Disqus.</a
+        ></noscript
+      >
+        
+      <div class="mt-12">
+        <h2 class="text-2xl font-semibold">
+          
+        </h2>
+
+        <ul class="mt-4 space-y-4">
+          
+          <li>
+            <h3 class="text-xl">
+              <a href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/" class="text-blue-600 hover:underline">
+                例の凸凹ver3
+                <small class="block text-gray-500"
+                  >20 Jan 2025</small
+                >
+              </a>
+            </h3>
+          </li>
+          
+          <li>
+            <h3 class="text-xl">
+              <a href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/" class="text-blue-600 hover:underline">
+                例の凸凹ver2
+                <small class="block text-gray-500"
+                  >20 Jan 2025</small
+                >
+              </a>
+            </h3>
+          </li>
+          
+          <li>
+            <h3 class="text-xl">
+              <a href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/" class="text-blue-600 hover:underline">
+                ワークベンチv2
+                <small class="block text-gray-500"
+                  >13 Jan 2025</small
+                >
+              </a>
+            </h3>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+  </body>
+</html>
