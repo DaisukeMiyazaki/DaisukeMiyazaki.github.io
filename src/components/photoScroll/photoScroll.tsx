@@ -46,16 +46,44 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             <button
               onClick={() => setShowSlider(false)}
               className="mt-2 rounded bg-red-500 p-1 text-xs text-white"
+              title="閉じる"
             >
-              閉じる
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
           </div>
         ) : (
           <button
             onClick={() => setShowSlider(true)}
-            className="rounded bg-blue-500 p-2 text-white"
+            className="rounded bg-gray-500 p-2 opacity-50 transition-colors duration-300 hover:bg-gray-600 hover:opacity-100"
+            title="ページ移動"
           >
-            ページ移動
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M7 11l5-5 5 5M7 13l5 5 5-5"
+              />
+            </svg>
           </button>
         )}
       </div>

@@ -32189,7 +32189,7 @@
       {
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-            className: "fixed right-4 top-1/2 transform -translate-y-1/2 z-20",
+            className: "fixed right-4 top-1/2 z-20 -translate-y-1/2 transform",
             children: showSlider
               ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
                   className: "relative",
@@ -32206,15 +32206,51 @@
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
                       onClick: () => setShowSlider(false),
                       className:
-                        "mt-2 p-1 rounded bg-red-500 text-white text-xs",
-                      children: "\u9589\u3058\u308B",
+                        "mt-2 rounded bg-red-500 p-1 text-xs text-white",
+                      title: "\u9589\u3058\u308B",
+                      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+                        "svg",
+                        {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          className: "h-4 w-4",
+                          fill: "none",
+                          viewBox: "0 0 24 24",
+                          stroke: "currentColor",
+                          children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+                            "path",
+                            {
+                              strokeLinecap: "round",
+                              strokeLinejoin: "round",
+                              strokeWidth: 2,
+                              d: "M6 18L18 6M6 6l12 12",
+                            },
+                          ),
+                        },
+                      ),
                     }),
                   ],
                 })
               : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
                   onClick: () => setShowSlider(true),
-                  className: "p-2 rounded bg-blue-500 text-white",
-                  children: "\u30DA\u30FC\u30B8\u79FB\u52D5",
+                  className:
+                    "rounded bg-gray-500 p-2 opacity-50 transition-colors duration-300 hover:bg-gray-600 hover:opacity-100",
+                  title: "\u30DA\u30FC\u30B8\u79FB\u52D5",
+                  children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    className: "h-6 w-6 text-gray-400",
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    stroke: "currentColor",
+                    children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+                      "path",
+                      {
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                        strokeWidth: 2,
+                        d: "M7 11l5-5 5 5M7 13l5 5 5-5",
+                      },
+                    ),
+                  }),
                 }),
           }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
