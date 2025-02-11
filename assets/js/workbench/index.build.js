@@ -32191,15 +32191,18 @@
         children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
             className:
-              "fixed right-4 top-1/2 z-20 -translate-y-1/2 transform flex flex-col items-center space-y-2",
+              "fixed right-4 top-1/2 z-20 flex -translate-y-1/2 transform flex-col items-center space-y-2",
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-                onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
-                className:
-                  "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
-                title: "\u30DA\u30FC\u30B8\u30C8\u30C3\u30D7\u306B\u623B\u308B",
-                children: "\u2191",
-              }),
+              !showSlider &&
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+                  onClick: () =>
+                    window.scrollTo({ top: 0, behavior: "smooth" }),
+                  className:
+                    "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
+                  title:
+                    "\u30DA\u30FC\u30B8\u30C8\u30C3\u30D7\u306B\u623B\u308B",
+                  children: "\u2191",
+                }),
               showSlider
                 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
                     className: "relative",
@@ -32263,17 +32266,18 @@
                       },
                     ),
                   }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-                onClick: () =>
-                  window.scrollTo({
-                    top: document.body.scrollHeight,
-                    behavior: "smooth",
-                  }),
-                className:
-                  "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
-                title: "\u30DA\u30FC\u30B8\u4E0B\u306B\u79FB\u52D5",
-                children: "\u2193",
-              }),
+              !showSlider &&
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+                  onClick: () =>
+                    window.scrollTo({
+                      top: document.body.scrollHeight,
+                      behavior: "smooth",
+                    }),
+                  className:
+                    "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
+                  title: "\u30DA\u30FC\u30B8\u4E0B\u306B\u79FB\u52D5",
+                  children: "\u2193",
+                }),
             ],
           }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {

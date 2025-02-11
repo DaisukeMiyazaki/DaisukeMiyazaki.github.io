@@ -34,13 +34,15 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
   return (
     <>
       <div className="fixed right-4 top-1/2 z-20 flex -translate-y-1/2 transform flex-col items-center space-y-2">
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
-          title="ページトップに戻る"
-        >
-          ↑
-        </button>
+        {!showSlider && (
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
+            title="ページトップに戻る"
+          >
+            ↑
+          </button>
+        )}
         {showSlider ? (
           <div className="relative">
             <input
@@ -95,18 +97,20 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             </svg>
           </button>
         )}
-        <button
-          onClick={() =>
-            window.scrollTo({
-              top: document.body.scrollHeight,
-              behavior: "smooth",
-            })
-          }
-          className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
-          title="ページ下に移動"
-        >
-          ↓
-        </button>
+        {!showSlider && (
+          <button
+            onClick={() =>
+              window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth",
+              })
+            }
+            className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
+            title="ページ下に移動"
+          >
+            ↓
+          </button>
+        )}
       </div>
       <div className="h-screen w-fit snap-y snap-mandatory overflow-y-scroll">
         {images.map((image, index) => (
