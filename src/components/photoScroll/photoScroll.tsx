@@ -113,6 +113,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
         )}
       </div>
       <div className="h-screen w-fit snap-y snap-mandatory overflow-y-scroll">
+        <div className="h-1/8 snap-none"></div>
         {images.map((image, index) => (
           <div
             key={image.id}
@@ -144,6 +145,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             </div>
           </div>
         ))}
+        <div className="h-1/8 snap-none"></div>
       </div>
     </>
   );
