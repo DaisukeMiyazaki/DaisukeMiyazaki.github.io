@@ -25,12 +25,6 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
     }
   };
 
-  // show an image one by one streached to the screen, and scroll to the next image when the user scrolls
-  // description is displayed on the image
-
-  // as the user scrolls, description changes
-  // when the user scrolls to the next image, the description of the next image is displayed
-
   return (
     <>
       <div className="fixed right-4 top-1/2 z-20 flex -translate-y-1/2 transform flex-col items-center space-y-2">
@@ -112,12 +106,11 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
           </button>
         )}
       </div>
-      <div className="h-screen w-fit snap-y snap-mandatory overflow-y-scroll">
-        <div className="h-1/8 snap-none"></div>
+      <div className="w-fit">
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="relative snap-center snap-always"
+            className="relative"
             ref={(el: HTMLDivElement | null) => {
               imageRefs.current[index] = el;
             }}
@@ -145,7 +138,6 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             </div>
           </div>
         ))}
-        <div className="h-1/8 snap-none"></div>
       </div>
     </>
   );

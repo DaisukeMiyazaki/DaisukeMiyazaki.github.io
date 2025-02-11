@@ -1,7 +1,7 @@
 export default function data() {
   return [
     {
-      id: 1,
+      id: 0,
       src: "/assets/images/indentation/IMG_4780.jpeg",
       description: "例の凸凹",
     },
