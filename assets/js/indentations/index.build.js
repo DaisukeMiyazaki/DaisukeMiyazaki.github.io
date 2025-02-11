@@ -32280,50 +32280,42 @@
                 }),
             ],
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-            className: "h-screen w-fit snap-y snap-mandatory overflow-y-scroll",
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-                className: "snap-none h-1/8",
-              }),
-              images.map((image, index) =>
-                /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
-                  "div",
-                  {
-                    className: "relative snap-center snap-always",
-                    ref: (el) => {
-                      imageRefs.current[index] = el;
-                    },
-                    "data-index": index,
-                    children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-                        src: image.src,
-                        alt: `Image ${image.id}`,
-                        className: "h-screen w-full object-cover",
-                      }),
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-                        className:
-                          "pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300",
-                        children: image.link
-                          ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-                              href: `${baseURL.current}${image.link}`,
-                              target: "_blank",
-                              rel: "noopener noreferrer",
-                              className:
-                                "pointer-events-auto text-yellow-300 hover:text-yellow-400",
-                              children: image.description,
-                            })
-                          : image.description,
-                      }),
-                    ],
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+            className: "w-fit",
+            children: images.map((image, index) =>
+              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+                "div",
+                {
+                  className: "relative",
+                  ref: (el) => {
+                    imageRefs.current[index] = el;
                   },
-                  image.id,
-                ),
+                  "data-index": index,
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+                      src: image.src,
+                      alt: `Image ${image.id}`,
+                      className: "h-screen w-full object-cover",
+                    }),
+                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+                      className:
+                        "pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300",
+                      children: image.link
+                        ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+                            href: `${baseURL.current}${image.link}`,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className:
+                              "pointer-events-auto text-yellow-300 hover:text-yellow-400",
+                            children: image.description,
+                          })
+                        : image.description,
+                    }),
+                  ],
+                },
+                image.id,
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-                className: "snap-none h-1/8",
-              }),
-            ],
+            ),
           }),
         ],
       },
@@ -32335,7 +32327,7 @@
   function data() {
     return [
       {
-        id: 1,
+        id: 0,
         src: "/assets/images/indentation/IMG_4780.jpeg",
         description: "\u4F8B\u306E\u51F8\u51F9",
       },
