@@ -32189,88 +32189,92 @@
       import_jsx_runtime.Fragment,
       {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-            onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
             className:
-              "fixed left-4 top-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
-            title: "\u30DA\u30FC\u30B8\u30C8\u30C3\u30D7\u306B\u623B\u308B",
-            children: "\u2191",
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-            onClick: () =>
-              window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: "smooth",
+              "fixed right-4 top-1/2 z-20 -translate-y-1/2 transform flex flex-col items-center space-y-2",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+                onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
+                className:
+                  "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
+                title: "\u30DA\u30FC\u30B8\u30C8\u30C3\u30D7\u306B\u623B\u308B",
+                children: "\u2191",
               }),
-            className:
-              "fixed bottom-20 left-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
-            title: "\u30DA\u30FC\u30B8\u4E0B\u306B\u79FB\u52D5",
-            children: "\u2193",
-          }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-            className: "fixed right-4 top-1/2 z-20 -translate-y-1/2 transform",
-            children: showSlider
-              ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-                  className: "relative",
-                  children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
-                      type: "range",
-                      min: "1",
-                      max: images.length.toString(),
-                      value: sliderValue,
-                      onChange: handleSliderChange,
-                      className: "accent-blue-500",
-                      style: { transform: "rotate(-90deg)", width: "150px" },
-                    }),
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-                      onClick: () => setShowSlider(false),
-                      className:
-                        "mt-2 rounded bg-red-500 p-1 text-xs text-white",
-                      title: "\u9589\u3058\u308B",
-                      children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-                        "svg",
-                        {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          className: "h-4 w-4",
-                          fill: "none",
-                          viewBox: "0 0 24 24",
-                          stroke: "currentColor",
-                          children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-                            "path",
-                            {
+              showSlider
+                ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+                    className: "relative",
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
+                        type: "range",
+                        min: "1",
+                        max: images.length.toString(),
+                        value: sliderValue,
+                        onChange: handleSliderChange,
+                        className: "accent-blue-500",
+                        style: { transform: "rotate(-90deg)", width: "150px" },
+                      }),
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+                        onClick: () => setShowSlider(false),
+                        className:
+                          "mt-2 rounded bg-red-500 p-1 text-xs text-white",
+                        title: "\u9589\u3058\u308B",
+                        children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+                          "svg",
+                          {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            className: "h-4 w-4",
+                            fill: "none",
+                            viewBox: "0 0 24 24",
+                            stroke: "currentColor",
+                            children: /* @__PURE__ */ (0,
+                            import_jsx_runtime.jsx)("path", {
                               strokeLinecap: "round",
                               strokeLinejoin: "round",
                               strokeWidth: 2,
                               d: "M6 18L18 6M6 6l12 12",
-                            },
-                          ),
-                        },
-                      ),
-                    }),
-                  ],
-                })
-              : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-                  onClick: () => setShowSlider(true),
-                  className:
-                    "rounded bg-gray-500 p-2 opacity-50 transition-colors duration-300 hover:bg-gray-600 hover:opacity-100",
-                  title: "\u30DA\u30FC\u30B8\u79FB\u52D5",
-                  children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    className: "h-6 w-6 text-gray-400",
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    stroke: "currentColor",
+                            }),
+                          },
+                        ),
+                      }),
+                    ],
+                  })
+                : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+                    onClick: () => setShowSlider(true),
+                    className:
+                      "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
+                    title: "\u30DA\u30FC\u30B8\u79FB\u52D5",
                     children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-                      "path",
+                      "svg",
                       {
-                        strokeLinecap: "round",
-                        strokeLinejoin: "round",
-                        strokeWidth: 2,
-                        d: "M7 11l5-5 5 5M7 13l5 5 5-5",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        className: "h-6 w-6 text-gray-700",
+                        fill: "none",
+                        viewBox: "0 0 24 24",
+                        stroke: "currentColor",
+                        children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+                          "path",
+                          {
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round",
+                            strokeWidth: 2,
+                            d: "M7 11l5-5 5 5M7 13l5 5 5-5",
+                          },
+                        ),
                       },
                     ),
                   }),
-                }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+                onClick: () =>
+                  window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: "smooth",
+                  }),
+                className:
+                  "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
+                title: "\u30DA\u30FC\u30B8\u4E0B\u306B\u79FB\u52D5",
+                children: "\u2193",
+              }),
+            ],
           }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
             className: "h-screen w-fit snap-y snap-mandatory overflow-y-scroll",
