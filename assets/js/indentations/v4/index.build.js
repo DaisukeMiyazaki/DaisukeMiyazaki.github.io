@@ -32280,42 +32280,50 @@
                 }),
             ],
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
             className: "h-screen w-fit snap-y snap-mandatory overflow-y-scroll",
-            children: images.map((image, index) =>
-              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
-                "div",
-                {
-                  className: "relative snap-center snap-always",
-                  ref: (el) => {
-                    imageRefs.current[index] = el;
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+                className: "snap-none h-1/8",
+              }),
+              images.map((image, index) =>
+                /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+                  "div",
+                  {
+                    className: "relative snap-center snap-always",
+                    ref: (el) => {
+                      imageRefs.current[index] = el;
+                    },
+                    "data-index": index,
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+                        src: image.src,
+                        alt: `Image ${image.id}`,
+                        className: "h-screen w-full object-cover",
+                      }),
+                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+                        className:
+                          "pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300",
+                        children: image.link
+                          ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+                              href: `${baseURL.current}${image.link}`,
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                              className:
+                                "pointer-events-auto text-yellow-300 hover:text-yellow-400",
+                              children: image.description,
+                            })
+                          : image.description,
+                      }),
+                    ],
                   },
-                  "data-index": index,
-                  children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-                      src: image.src,
-                      alt: `Image ${image.id}`,
-                      className: "h-screen w-full object-cover",
-                    }),
-                    /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-                      className:
-                        "pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300",
-                      children: image.link
-                        ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-                            href: `${baseURL.current}${image.link}`,
-                            target: "_blank",
-                            rel: "noopener noreferrer",
-                            className:
-                              "pointer-events-auto text-yellow-300 hover:text-yellow-400",
-                            children: image.description,
-                          })
-                        : image.description,
-                    }),
-                  ],
-                },
-                image.id,
+                  image.id,
+                ),
               ),
-            ),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+                className: "snap-none h-1/8",
+              }),
+            ],
           }),
         ],
       },
@@ -32350,13 +32358,13 @@
           "\u307E\u305A\u306F\u5DE6\u306B\u3064\u304F\u308B\u7279\u6CE8\u306E\u68DA\u304B\u3089\u3002\u672C\u4F53\u3068\u6BD4\u8F03\u3057\u3066\u3001\u5C0F\u3055\u306A\u4F8B\u306E\u51F8\u51F9\u3068\u540D\u4ED8\u3051\u3066\u307F\u305F\u3002\u5168\u4F53\u3068\u306E\u30D0\u30E9\u30F3\u30B9\u3092\u3068\u3063\u3066\u8003\u3048\u308B\u3068\u68DA\u3068\u3057\u3066\u4E2D\u8EAB\u304C\u898B\u3048\u308B\u3068\u3044\u3046\u3088\u308A\u3001\u666E\u6BB5\u304B\u3089\u306F\u3042\u307E\u308A\u4F7F\u308F\u306A\u3044\u3082\u306E\u3092\u53CE\u7D0D\u3057\u3064\u3064\u3082\u53D6\u308A\u51FA\u3057\u3084\u3059\u3044\u3088\u3046\u306B\u53EF\u52D5\u5F0F\u306B\u3059\u308B\u8A2D\u8A08\u3001\u610F\u5320\u304C\u826F\u3044\u3068\u601D\u308F\u308C\u308B\u3002",
       },
       {
-        id: 6,
+        id: 5,
         src: "/assets/images/indentation/IMG_4022.jpeg",
         description:
           "\u63A5\u7740\u306B\u306Fkreg\u3092\u4F7F\u3046\u305F\u3081\u306B\u3001\u7A74\u3092\u958B\u3051\u3066\u3044\u304F",
       },
       {
-        id: 7,
+        id: 6,
         src: "/assets/images/indentation/IMG_4025.jpeg",
         description:
           "\u63A5\u7740\u306B\u306Fkreg\u3092\u4F7F\u3046\u305F\u3081\u306B\u3001\u7A74\u3092\u958B\u3051\u3066\u3044\u304F",

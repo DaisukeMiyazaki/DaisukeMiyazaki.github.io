@@ -24,12 +24,12 @@ export default function data() {
         "まずは左につくる特注の棚から。本体と比較して、小さな例の凸凹と名付けてみた。全体とのバランスをとって考えると棚として中身が見えるというより、普段からはあまり使わないものを収納しつつも取り出しやすいように可動式にする設計、意匠が良いと思われる。",
     },
     {
-      id: 6,
+      id: 5,
       src: "/assets/images/indentation/IMG_4022.jpeg",
       description: "接着にはkregを使うために、穴を開けていく",
     },
     {
-      id: 7,
+      id: 6,
       src: "/assets/images/indentation/IMG_4025.jpeg",
       description: "接着にはkregを使うために、穴を開けていく",
     },
