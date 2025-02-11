@@ -33,26 +33,16 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
 
   return (
     <>
-      <button
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed left-4 top-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
-        title="ページトップに戻る"
-      >
-        ↑
-      </button>
-      <button
-        onClick={() =>
-          window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: "smooth",
-          })
-        }
-        className="fixed bottom-20 left-4 z-20 rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
-        title="ページ下に移動"
-      >
-        ↓
-      </button>
-      <div className="fixed right-4 top-1/2 z-20 -translate-y-1/2 transform">
+      <div className="fixed right-4 top-1/2 z-20 flex -translate-y-1/2 transform flex-col items-center space-y-2">
+        {!showSlider && (
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
+            title="ページトップに戻る"
+          >
+            ↑
+          </button>
+        )}
         {showSlider ? (
           <div className="relative">
             <input
@@ -88,12 +78,12 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
         ) : (
           <button
             onClick={() => setShowSlider(true)}
-            className="rounded bg-gray-500 p-2 opacity-50 transition-colors duration-300 hover:bg-gray-600 hover:opacity-100"
+            className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
             title="ページ移動"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-gray-400"
+              className="h-6 w-6 text-gray-700"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -105,6 +95,20 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                 d="M7 11l5-5 5 5M7 13l5 5 5-5"
               />
             </svg>
+          </button>
+        )}
+        {!showSlider && (
+          <button
+            onClick={() =>
+              window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth",
+              })
+            }
+            className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
+            title="ページ下に移動"
+          >
+            ↓
           </button>
         )}
       </div>
