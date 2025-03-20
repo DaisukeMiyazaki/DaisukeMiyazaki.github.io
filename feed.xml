@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-03-20T10:29:39+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">IPadを手放した</title><link href="https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/" rel="alternate" type="text/html" title="IPadを手放した" /><published>2025-03-17T00:00:00+00:00</published><updated>2025-03-17T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/">&lt;p&gt;iPadを手放した。出先でIPhoneをPCとして使う工夫をしている。結局ipadですらジャケットのポケットには入らない。端末自体の演算力やバッテリーの持ちは十分だ。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-03-20T13:21:59+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">obsidianを使い始めて1年レビュー</title><link href="https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/" rel="alternate" type="text/html" title="obsidianを使い始めて1年レビュー" /><published>2025-03-20T00:00:00+00:00</published><updated>2025-03-20T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/">&lt;p&gt;Obsidianは[[Evergreen notes]]の原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleの[[Notes]]をつかっていたが課題があり、乗り換えてみてからもう早一年以上経つので、レビューしてみる。&lt;/p&gt;
+
+&lt;p&gt;メモを増やしても自分の考え方が深まらない。どこか深まって整理がついても、ノートがうまくまとまらない。でもまとまる時間もない。&lt;/p&gt;
+
+&lt;p&gt;このアプリを使いかたを学びはじめてからいろんな発見があった。1年以上経ち、もっと自由に考えられるようになったと思う。&lt;/p&gt;
+
+&lt;p&gt;考えることは、今を知れば未来がわかるような線形的な形でないこと。振り返りと書き直しを重ねて考えを広げたり深めたりできること。そして知識の探索の幅はどれだけ広くても良いこと。まさに点と点を繋ぐような体験こそ考えを深めることなんだと、ノートが洗練されるたびに感じた。ノートに向き合う時間が習慣になった。&lt;/p&gt;
+
+&lt;p&gt;とっつきやすく、Notesでも続けていた日記を深掘りしてみる。日記は固有なノートの集まりとして使っている。obsidianの自由度が高さを活かして、自分にあった形に最適化できる。&lt;/p&gt;
+
+&lt;p&gt;いま日常のノートはこう組んでいる。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;朝/夜の気分&lt;/strong&gt;: 感覚で天気マークをつけている。幸せでいられているか。メタデータとして保存する。変化に気づくために、他のノートで一覧化したりできる。
+&lt;strong&gt;天気&lt;/strong&gt;: APIで自動で取得している、気分と強い相関があることも。
+&lt;strong&gt;タスク&lt;/strong&gt;: 保存庫中のノートでチェックボックスに変換+実施予定日をいれると、毎日ノートに表示される。
+&lt;strong&gt;固有ノート&lt;/strong&gt;: 日常を最も小さな単位で切り取った書き下ろし。素であり、RAWであり、まとまってないことがほとんど。書き下ろしてから、大体タイトルをつける。思いついたらとりあえず書く。ホットキーを設定して一コマンドで開けるようにするとなお便利。
+&lt;strong&gt;振り返り&lt;/strong&gt;: その日最後の固有ノート。あったこと、印象に残ったこと、仕事で寝かせたい考えの書き殴り、あった人などざっくばらんに書き留める。&lt;/p&gt;
+
+&lt;p&gt;Task、Templater、unique note creatorあたりのプラグインを使っている。&lt;/p&gt;
+
+&lt;p&gt;また活字を読んだら書き留める場所として、AIを使い倒すための書き溜める場所として、そしてプレゼンを作る場所として、、といろんな活用の方法があるが、これはまた次のポストで扱うとする。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっていたが課題があり、乗り換えてみてからもう早一年以上経つので、レビューしてみる。</summary></entry><entry xml:lang="jp"><title type="html">IPadを手放した</title><link href="https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/" rel="alternate" type="text/html" title="IPadを手放した" /><published>2025-03-17T00:00:00+00:00</published><updated>2025-03-17T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/">&lt;p&gt;iPadを手放した。出先でIPhoneをPCとして使う工夫をしている。結局ipadですらジャケットのポケットには入らない。端末自体の演算力やバッテリーの持ちは十分だ。&lt;/p&gt;
 
 &lt;p&gt;折りたたみキーボードがあれば手慣れた速度感でノートと向き合うことができる。ここではコーヒーを飲み切るくらいの時間を区切りの目安にするまとまれば成果物としても十分、まとまらないとそれは逆に煮詰まりすぎ、スコープが大きすぎる可能性がある。共有まで含めて、docmentでも大体のアプリがスマホ対応しているわけだし、web対応もしているので発信まで含めても終えられる。&lt;/p&gt;
 
@@ -475,142 +495,4 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
   &lt;span class=&quot;close&quot;&gt;&amp;times;&lt;/span&gt;
   &lt;img class=&quot;modal-content&quot; id=&quot;img01&quot; /&gt;
   &lt;div id=&quot;caption&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife</summary></entry><entry xml:lang="jp"><title type="html">ワークベンチ</title><link href="https://mdaisuke.net/jp/2023/08/21/%E3%83%99%E3%83%B3%E3%83%81/" rel="alternate" type="text/html" title="ワークベンチ" /><published>2023-08-21T00:00:00+00:00</published><updated>2023-08-21T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2023/08/21/%E3%83%99%E3%83%B3%E3%83%81</id><content type="html" xml:base="https://mdaisuke.net/jp/2023/08/21/%E3%83%99%E3%83%B3%E3%83%81/">&lt;div id=&quot;hihi&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;DIYやってみた！アート愛好者の妻へ特製ワークベンチをプレゼント。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;こんにちは、皆さん！先月頭、アート愛好者の妻のために、どこにも売っていない特別なワークベンチを作る挑戦をしてみました。こちらにその一部始終を書き下ろしてみました。&lt;/p&gt;
-
-&lt;p&gt;妻がアートを楽しんでいる様子を見るのは素晴らしいこと。でも5畳もないお部屋で散らかり具合…収納が足りない！そして、どうしても座って書いていると姿勢が…&lt;/p&gt;
-
-&lt;p&gt;そこで立ったままアートを楽しむことができるワークベンチがあれば、こんな悩みも解消されるんじゃないかと。そう思って作りはじめてみました。それでは、DIYの開始です！&lt;/p&gt;
-
-&lt;h3 id=&quot;作る前のuxデザイン&quot;&gt;作る前のUXデザイン&lt;/h3&gt;
-
-&lt;p&gt;まず、天板の高さを決めます。たまたま昇降式デスクを使っていたので、立った様子や座った様子を確認。なんとなく体の中心線を見てみて、立ったときに近いような高さを測りました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test0.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;座っている状態だとどうしても目線が下がってしまいます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test1.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;この高さだと、まだ顔が下を向いていて首が疲れてしまいそう。&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test2.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;この高さなら、全体的にまっすぐになっていて良さそう。
-立った時と比較しても、大体同じくらい中心線になっているのがわかります。こちらで高さは110センチくらいが良さそうだとわかりました。&lt;/p&gt;
-
-&lt;h3 id=&quot;uiデザイン&quot;&gt;UIデザイン&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/cad.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;次に3Dモデリングで設計します。全体のバランスや重心の計算、イメージのすり合わせなどを妻のフィードバックを得ながら作っていきます。こだわった点は…&lt;/p&gt;
-
-&lt;h4 id=&quot;大きな収納&quot;&gt;大きな収納&lt;/h4&gt;
-
-&lt;p&gt;⁃ アートも作品よりも道具のほうが数が多くなる。十分な収納がないと散らかってしまうので、大容量が必要&lt;br /&gt;
-⁃ ツールや作業中のものなどはごちゃるので扉を取り付け。&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;インスピレーションを綺麗に魅せる&quot;&gt;インスピレーションを綺麗に魅せる&lt;/h4&gt;
-
-&lt;p&gt;⁃ 寄せ集めた書籍や雑誌、旅先で見つけたカードなどは常に見えるように飾っておきたいもの。扉が付く本棚では中身が見えないこともあるので、なるべく見せる収納をイメージ。&lt;br /&gt;
-⁃ カードや小物なども、常に見えるように展示することでインスピレーションを得やすくなる。&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;スペース&quot;&gt;スペース&lt;/h4&gt;
-
-&lt;p&gt;⁃ 幅があったほうが良いので壁いっぱいに広がる大きさに。天板は壁いっぱいの横幅 * ノートPCを広げて余裕があるように50cmに。部屋の大きさが限られているので、天板の手前20センチは折りたためるように。&lt;br /&gt;
-⁃ 折り畳んだ際には最上段の扉になるように設計。ごちゃってしまうケーブル類はこの段にしまえるように。&lt;br /&gt;
-⁃ 再下段にはお掃除ロボットが入ってこれるだけの高さを用意。&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;資材の調達&quot;&gt;資材の調達&lt;/h3&gt;
-
-&lt;p&gt;次に設計図をもとに木材を購入します。近くのホームセンターへ。ここでちょっとしたトラブルが…&lt;/p&gt;
-
-&lt;p&gt;計画した幅よりも、実際の木材の幅が狭かったんです。大きいものを切ってもらうと端材が出てしまって勿体無い。。困った挙句、ではこの最大幅を活かして作って仕舞えば良いや！と思いきって決断。モデルで組んだものを、比率を保ったまま少し少し小さくするイメージでした。
-…&lt;/p&gt;
-
-&lt;p&gt;そして買ったはいいものの、その後の大問題。この木材、どうやって運ぶ？車は持っていないしタクシーにも入らない、、、真夏でとてもじゃないけれど外では運べない。困った。&lt;/p&gt;
-
-&lt;p&gt;思いきやここでなんとコーナンでは、当日配達サービスが店内で利用できるとのこと！この当日配送サービスに助けられました。配送料を追加で支払い、翌日にはすべてお家へ届くとのことで活用。&lt;/p&gt;
-
-&lt;h3 id=&quot;作成開始&quot;&gt;作成開始&lt;/h3&gt;
-
-&lt;p&gt;木材が届いたら、あとは作るのみ。イメージ通りに作っていきます。こちら途中経過…&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/inProgress.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;扉は寸法もモデルで見ていた通りにならなかったので後付けにしました。買い出しに再度ホームセンターのコーナンへ、暑いので自転車でむかったものの巨大すぎるドアをどうも運べず。再度配送料を払うのもバカバカしい。。。
-そんなときなんと、コーナンでは軽トラを無料で借りれることが判明。ハンドルつき、普通免許で運転できることも初めて知りました。おかげ様でスムーズに運ぶことができました。&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck2.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;…&lt;/p&gt;
-
-&lt;p&gt;再度作成開始。扉をつけるとき、蝶番をつけるのに思ったよりも苦戦しました、、&lt;a href=&quot;https://magazine.cainz.com/article/81662&quot;&gt;こちら&lt;/a&gt;を参照にしました。&lt;/p&gt;
-
-&lt;p&gt;仕上げにはニス塗りもしっかりと。あっつい部屋でもしっかりと換気をしつつ。真夏のクーラーの効かない部屋で二重マスク。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/hotMan.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;仕上げには転倒対策。大きなものなのでこちらも必須です。モデルでは足を強固にする予定だったけれど加工が手間で面倒くさい。。。色々考えてみた結果、ホームセンターで見つけたこいつ一枚で解決。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/legs.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;また、横揺れもしたので背板をつけることで解消しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/seita.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;完成&quot;&gt;完成&lt;/h3&gt;
-
-&lt;p&gt;そしてついに完成！&lt;/p&gt;
-
-&lt;div class=&quot;image-container_triple&quot;&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front2.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front3.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;折りたたみ式の天板も180cm * 50cmと十分な広さがあります。&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/tableWidth.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/faceToCamera.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;立った時の姿勢も、測ったときの姿勢とほぼ一致しています。これで快適にアートに取り組めるはず！&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/positionCheck.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;天板が扉の役割も兼用し、コードなども隠して見た目もすっきりするように。&lt;/p&gt;
-
-&lt;!-- insert image from builds.yml --&gt;
-&lt;div class=&quot;image-container_triple&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/foldedTableTop.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/mount.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/codes.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;いかがでしょうか？皆さんも、身近なものやサービスを利用しながら、特別なものをDIYで作って贈ってみてはみてはいかがでしょうか？&lt;/p&gt;
-
-&lt;p&gt;Happy Building!&lt;/p&gt;
-
-&lt;script src=&quot;/assets/js/popup_build.js&quot;&gt;&lt;/script&gt;
-
-&lt;div id=&quot;myModal&quot; class=&quot;modal&quot;&gt;
-  &lt;span class=&quot;close&quot;&gt;&amp;times;&lt;/span&gt;
-  &lt;img class=&quot;modal-content&quot; id=&quot;img01&quot; /&gt;
-  &lt;div id=&quot;caption&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。</summary></entry></feed>
+&lt;/div&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife</summary></entry></feed>

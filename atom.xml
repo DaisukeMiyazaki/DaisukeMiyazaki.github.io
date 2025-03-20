@@ -4,13 +4,42 @@
 	<title>Daisuke Miyazaki's Blog</title>
 	<link href="http://mdaisuke.net/blog/atom.xml" rel="self"/>
 	<link href="http://mdaisuke.net/blog"/>
-	<updated>2025-03-20T10:29:39+00:00</updated>
+	<updated>2025-03-20T13:21:59+00:00</updated>
 	<id>https://mdaisuke.net</id>
 	<author>
 		<name></name>
 		<email></email>
 	</author>
 
+	
+		<entry>
+			<title>obsidianを使い始めて1年レビュー</title>
+			<link href="http://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"/>
+			<updated>2025-03-20T00:00:00+00:00</updated>
+			<id>http://mdaisuke.net/jp/2025/03/20/obsidianを使い始めて1年レビュー</id>
+			<content type="html">&lt;p&gt;Obsidianは[[Evergreen notes]]の原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleの[[Notes]]をつかっていたが課題があり、乗り換えてみてからもう早一年以上経つので、レビューしてみる。&lt;/p&gt;
+
+&lt;p&gt;メモを増やしても自分の考え方が深まらない。どこか深まって整理がついても、ノートがうまくまとまらない。でもまとまる時間もない。&lt;/p&gt;
+
+&lt;p&gt;このアプリを使いかたを学びはじめてからいろんな発見があった。1年以上経ち、もっと自由に考えられるようになったと思う。&lt;/p&gt;
+
+&lt;p&gt;考えることは、今を知れば未来がわかるような線形的な形でないこと。振り返りと書き直しを重ねて考えを広げたり深めたりできること。そして知識の探索の幅はどれだけ広くても良いこと。まさに点と点を繋ぐような体験こそ考えを深めることなんだと、ノートが洗練されるたびに感じた。ノートに向き合う時間が習慣になった。&lt;/p&gt;
+
+&lt;p&gt;とっつきやすく、Notesでも続けていた日記を深掘りしてみる。日記は固有なノートの集まりとして使っている。obsidianの自由度が高さを活かして、自分にあった形に最適化できる。&lt;/p&gt;
+
+&lt;p&gt;いま日常のノートはこう組んでいる。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;朝/夜の気分&lt;/strong&gt;: 感覚で天気マークをつけている。幸せでいられているか。メタデータとして保存する。変化に気づくために、他のノートで一覧化したりできる。
+&lt;strong&gt;天気&lt;/strong&gt;: APIで自動で取得している、気分と強い相関があることも。
+&lt;strong&gt;タスク&lt;/strong&gt;: 保存庫中のノートでチェックボックスに変換+実施予定日をいれると、毎日ノートに表示される。
+&lt;strong&gt;固有ノート&lt;/strong&gt;: 日常を最も小さな単位で切り取った書き下ろし。素であり、RAWであり、まとまってないことがほとんど。書き下ろしてから、大体タイトルをつける。思いついたらとりあえず書く。ホットキーを設定して一コマンドで開けるようにするとなお便利。
+&lt;strong&gt;振り返り&lt;/strong&gt;: その日最後の固有ノート。あったこと、印象に残ったこと、仕事で寝かせたい考えの書き殴り、あった人などざっくばらんに書き留める。&lt;/p&gt;
+
+&lt;p&gt;Task、Templater、unique note creatorあたりのプラグインを使っている。&lt;/p&gt;
+
+&lt;p&gt;また活字を読んだら書き留める場所として、AIを使い倒すための書き溜める場所として、そしてプレゼンを作る場所として、、といろんな活用の方法があるが、これはまた次のポストで扱うとする。&lt;/p&gt;
+</content>
+		</entry>
 	
 		<entry>
 			<title>IPadを手放した</title>
