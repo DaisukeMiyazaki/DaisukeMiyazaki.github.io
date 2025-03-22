@@ -32281,7 +32281,7 @@
             ],
           }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-            className: "w-fit",
+            className: "w-fit mx-auto",
             children: images.map((image, index) =>
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
                 "div",

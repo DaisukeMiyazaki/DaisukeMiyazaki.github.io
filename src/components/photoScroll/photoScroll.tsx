@@ -106,7 +106,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
           </button>
         )}
       </div>
-      <div className="w-fit">
+      <div className="mx-auto w-fit">
         {images.map((image, index) => (
           <div
             key={image.id}
