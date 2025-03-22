@@ -8,8 +8,8 @@ email: daisuke.miyazaki012@gmail.com
 jp:
   description: ふと言葉のつぶてを綴り、投稿します。日本語と英語の両方で投稿します。しばし、技術的なネタを織り込んでいます。
   intro: ものづくりが好きです。エンジニア
-  linkmess_link: https://notes.mdaisuke.net/welcome_jp
+  another_intro: 杜の切り抜きはこちら
 en:
   description: I write posts at times, both in English and Japanese. Often topics are related to technologies.
   intro: I like to build stuff. Engineer
-  linkmess_link: https://notes.mdaisuke.net/Welcome
+  another_intro: Cutouts of DHP is here
