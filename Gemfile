@@ -31,3 +31,9 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "webrick", "~> 1.7"
 gem 'jekyll-postcss'
+
+# 標準ライブラリの依存関係を追加
+gem 'csv'
+gem 'logger'
+gem 'base64'
+gem 'bigdecimal'
