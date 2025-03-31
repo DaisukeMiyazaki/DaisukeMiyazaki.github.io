@@ -15,7 +15,7 @@ module.exports = {
       colors: {
         primary: {
           light: "#F5F6F8", // Obsidianライトテーマの背景色に近い色
-          dark: "#1F2937", // 既存のダークモード色
+          dark: "#1E2028", // Obsidianダークテーマの背景色（より深い濃紺がかった黒）
           link: "#3B82F6", // 既存のリンク色
           "link-dark": "#60A5FA", // 既存のダークモードリンク色
         },
