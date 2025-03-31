@@ -3,9 +3,13 @@
     <div class="text-center">
       {% assign obj = site.data.signup %} {% if page.lang == "en" %} {% include
       signup_form.html param=obj.en %}
-      <a href="/" class="text-blue-500 hover:underline">Back to home</a>
+      <a href="/" class="text-primary-link-dark hover:underline"
+        >Back to home</a
+      >
       {% else %} {% include signup_form.html param=obj.jp %}
-      <a href="/" class="text-blue-500 hover:underline">ホームへ戻る</a>
+      <a href="/" class="text-primary-link-dark hover:underline"
+        >ホームへ戻る</a
+      >
       {% endif %}
     </div>
   </div>
