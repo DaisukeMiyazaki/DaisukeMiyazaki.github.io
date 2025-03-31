@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     {% include head.html %}
   </head>
-  <body class="primary-light text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <body
+    class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
+  >
     {% include header.html %}
     <div class="container mx-auto max-w-3xl p-4">
       <div class="rounded-lg p-6 dark:bg-primary-dark dark:text-gray-100">
@@ -82,7 +84,7 @@
         {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
         posts %}
         <div class="mb-6">
-          <div class="rounded-lg p-6 dark:bg-gray-800 dark:text-white">
+          <div class="dark:bg-primary-dark dark:text-white">
             <span class="at-index text-gray-300"
               >{{ post.date | date_to_string }}</span
             >
@@ -101,10 +103,8 @@
       <div class="mt-8">
         {% for work in site.data.works %}
         <div class="mb-6">
-          <div
-            class="at-index rounded-lg p-6 dark:bg-gray-800 dark:text-gray-100"
-          >
-            <span class="at-index text-gray-600"
+          <div class="at-index dark:bg-primary-dark dark:text-white">
+            <span class="at-index"
               >{{ work.en.start_at }} ~ {{ work.en.end_at }}</span
             >
             <span class="text-blue-500"> # work </span>
@@ -117,7 +117,7 @@
                 {{ work.en.title }}
               </a>
             </h2>
-            <p class="text-gray-700">{{ work.en.short }}</p>
+            <p class="dark:text-white">{{ work.en.short }}</p>
           </div>
         </div>
         {% endfor %}
