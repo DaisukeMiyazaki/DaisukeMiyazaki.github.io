@@ -12,6 +12,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          light: "#FFFFFF", // bg-whiteと同じ
+          dark: "#1F2937", // bg-gray-800と同じ
+          link: "#3B82F6", // text-blue-500と同じ
+          "link-dark": "#60A5FA", // text-blue-400と同じ（ダークモード用）
+        },
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -27,7 +35,7 @@ module.exports = {
             '[class~="lead"]': {
               color: theme("colors.gray.400"),
             },
-            a: { color: theme("colors.blue.400") },
+            a: { color: theme("colors.primary.link-dark") },
             h1: { color: theme("colors.white") },
             h2: { color: theme("colors.white") },
             h3: { color: theme("colors.white") },
