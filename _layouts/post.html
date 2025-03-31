@@ -8,7 +8,9 @@ layout: default
       {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author
       }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
-    <h1 class="title text-3xl font-bold dark:text-white">{{ page.title }}</h1>
+    <h1 class="title text-3xl font-bold dark:text-primary-light">
+      {{ page.title }}
+    </h1>
   </header>
 
   <article class="dark:prose-invert lg:prose-xl">{{ content }}</article>
@@ -25,7 +27,7 @@ layout: default
       <li>
         <a
           href="{{ post.url }}"
-          class="text-blue-600 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+          class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
         >
           {{ post.title }}
           <small class="block text-gray-500 dark:text-gray-400"
