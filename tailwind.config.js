@@ -14,10 +14,10 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          light: "#FFFFFF", // bg-whiteと同じ
-          dark: "#1F2937", // bg-gray-800と同じ
-          link: "#3B82F6", // text-blue-500と同じ
-          "link-dark": "#60A5FA", // text-blue-400と同じ（ダークモード用）
+          light: "#F5F6F8", // Obsidianライトテーマの背景色に近い色
+          dark: "#1F2937", // 既存のダークモード色
+          link: "#3B82F6", // 既存のリンク色
+          "link-dark": "#60A5FA", // 既存のダークモードリンク色
         },
       },
       typography: (theme) => ({
