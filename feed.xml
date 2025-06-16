@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-06-02T13:13:04+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">obsidianを使い始めて1年レビュー</title><link href="https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/" rel="alternate" type="text/html" title="obsidianを使い始めて1年レビュー" /><published>2025-03-20T00:00:00+00:00</published><updated>2025-03-20T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/">&lt;p&gt;ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっており、乗り換えてみてからもう早一年以上経つので、レビューしてみる。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-06-16T01:29:59+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">夏が始まった</title><link href="https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/" rel="alternate" type="text/html" title="夏が始まった" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-16T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/">&lt;!-- ここに写真追加 --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2025-06-16 夏が始まった.jpeg&quot; alt=&quot;窓とソファの写真&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;暑いんだけれど晴れていて空梅雨&lt;br /&gt;
+エアコンをつけているとどうしても機械音ばかり&lt;br /&gt;
+耐えられなくはないくらいの温度なので全体的に窓を開けて風通りをよくしてみている&lt;br /&gt;
+気持ちがいいくらい緑が窓から見える。&lt;/p&gt;
+
+&lt;p&gt;自分で作ったpc cart&lt;br /&gt;
+窓越しでちょうどいい高さにあってpcをおいて作業できる&lt;br /&gt;
+自分の家の中で好きな場所があれば帰ってきたくなる&lt;br /&gt;
+清澄亭で庭の横で作業していたことを思い出す&lt;br /&gt;
+緑のカーテン&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;play-audio-on-hover&quot; style=&quot;cursor:pointer; text-decoration:underline;&quot;&gt;氷が揺れて器にあたる音&lt;/span&gt;&lt;br /&gt;
+ひんやりとしたグラス&lt;/p&gt;
+
+&lt;p&gt;夏が始まった&lt;/p&gt;
+
+&lt;audio id=&quot;hover-audio&quot; src=&quot;/assets/audio/2025-06-16 夏の音.webm&quot;&gt;&lt;/audio&gt;
+
+&lt;script&gt;
+document.addEventListener(&apos;DOMContentLoaded&apos;, function() {
+  const trigger = document.querySelector(&apos;.play-audio-on-hover&apos;);
+  const audio = document.getElementById(&apos;hover-audio&apos;);
+  if (trigger &amp;&amp; audio) {
+    trigger.addEventListener(&apos;mouseenter&apos;, () =&gt; {
+      audio.currentTime = 0;
+      audio.play();
+    });
+    trigger.addEventListener(&apos;mouseleave&apos;, () =&gt; {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  }
+});
+&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">氷が揺れて器にあたる音</summary></entry><entry xml:lang="jp"><title type="html">obsidianを使い始めて1年レビュー</title><link href="https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/" rel="alternate" type="text/html" title="obsidianを使い始めて1年レビュー" /><published>2025-03-20T00:00:00+00:00</published><updated>2025-03-20T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/">&lt;p&gt;ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっており、乗り換えてみてからもう早一年以上経つので、レビューしてみる。&lt;/p&gt;
 
 &lt;p&gt;メモを増やしても自分の考え方が深まらない。どこか深まって整理がついても、ノートがうまくまとまらない。でもまとまる時間もない。他にも細かい課題があった。&lt;/p&gt;
 
@@ -363,140 +400,4 @@
 
 &lt;p&gt;その時抱いた一抹の不安はどこかへ消えどれくらいの時間が立ったのか、もう思い出せない。思い出せるのは、誰かが叫んだ「雫だ！」と叫んだその感極まった声、そのあとにかすかにながらハッキリと聞こえた気がした、ビルの間で反響した不安から解放される小さな声。&lt;/p&gt;
 
-&lt;p&gt;あれから3年がたった今日も、このぼやっとした4階のデスクに座るとたまに思い出す。変わっているようで、それでも、何も変わっていないのだ。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">地球温暖化予想2050年シナリオは最悪のケースをたどったため、2047年中旬、国連総本部は迅速かつこれまでにない世界的な協力が必要と声明を表示した。日本はその一環として新しい年号を定め、2050年より年号を改める方針を打ち出し、世界中の共通年号として共有された。</summary></entry><entry xml:lang="en"><title type="html">Workbench</title><link href="https://mdaisuke.net/en/2023/08/21/workbench/" rel="alternate" type="text/html" title="Workbench" /><published>2023-08-21T00:00:00+00:00</published><updated>2023-08-21T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2023/08/21/workbench</id><content type="html" xml:base="https://mdaisuke.net/en/2023/08/21/workbench/">&lt;p&gt;Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hello, everyone! Last month, I took up the challenge of making a unique workbench that can’t be found in stores, just for my art-enthusiast wife. I’ve written down the entire process for you here.&lt;/p&gt;
-
-&lt;p&gt;It’s wonderful to see my wife enjoying her art, but the clutter in our small room—less than 5 tatami mats in size—is an issue. Storage space is insufficient! Also, the posture while sitting and working is not ideal.&lt;/p&gt;
-
-&lt;p&gt;So, I thought that a workbench that allows her to enjoy art while standing could solve these problems. And with that, let the DIY begin!&lt;/p&gt;
-
-&lt;h3 id=&quot;before-building-ux-design&quot;&gt;Before Building, UX Design&lt;/h3&gt;
-
-&lt;p&gt;First, I decided the height of the tabletop. I happened to have a height-adjustable desk, so we checked what would be comfortable both when standing and sitting. By roughly observing the centerline of the body, we measured a height that seemed appropriate for when standing.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test0.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When sitting down, the line of sight tends to lower.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test1.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;At this height, her face is still looking down and her neck would be in pain.&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test2.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;At this height, it seems to be mostly straight. Even compared to when standing, you can see that it is mostly centered. I found out that a height of around 110 centimeters is good.&lt;/p&gt;
-
-&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/cad.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, I used 3D modeling for the design, considering overall balance, center of gravity, and gathering my wife’s feedback. Key points included:&lt;/p&gt;
-
-&lt;h4 id=&quot;ample-storage&quot;&gt;Ample Storage&lt;/h4&gt;
-
-&lt;p&gt;Art often requires more tools than finished works. &lt;br /&gt;
-Large storage is essential to avoid clutter.&lt;br /&gt;
-Added doors for items that can become messy during work.&lt;/p&gt;
-
-&lt;h4 id=&quot;showcasing-inspiration&quot;&gt;Showcasing Inspiration&lt;/h4&gt;
-
-&lt;p&gt;Books, magazines, cards, and trinkets are items she wants to display.&lt;br /&gt;
-We envisioned open storage to keep them in sight.&lt;br /&gt;
-Having these items always visible aids in finding inspiration.&lt;/p&gt;
-
-&lt;h4 id=&quot;space&quot;&gt;Space&lt;/h4&gt;
-
-&lt;p&gt;A wider bench is better. I went for one that fills the wall. The tabletop is 50 cm deep, providing just enough space for a laptop.&lt;br /&gt;
-The front 20 cm of the tabletop can be folded down, making it more compact when not in use.&lt;/p&gt;
-
-&lt;h3 id=&quot;sourcing-materials&quot;&gt;Sourcing Materials&lt;/h3&gt;
-
-&lt;p&gt;Next, I bought wood based on the design. But here’s where I hit a snag: the wood was not as wide as I had planned. I decided to adjust the scale of the model instead of wasting materials.&lt;/p&gt;
-
-&lt;p&gt;…&lt;/p&gt;
-
-&lt;p&gt;And then, after buying it, came the big problem. How do I transport this wood? I don’t have a car and it won’t fit in a taxi… It’s too hot to carry it outside. I was in trouble.&lt;/p&gt;
-
-&lt;p&gt;But then, I found out that at the hardware store, they offer same-day delivery service that can be used in-store! I was saved by this same-day delivery service. I paid an additional delivery fee and everything was delivered to my house the next day&lt;/p&gt;
-
-&lt;h3 id=&quot;start-building&quot;&gt;Start Building&lt;/h3&gt;
-
-&lt;p&gt;Once the wood arrives, all that’s left is to build. I’ll continue building it just as I imagined. Here’s the progress so far…&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/inProgress.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Since the door did not turn out to be the size or model I had imagined, I had to retrofit it. I went back to the home center, Konan, for shopping, but it was too hot to carry the huge door on our bicycles. It would have been foolish to pay for shipping again…&lt;/p&gt;
-
-&lt;p&gt;At that moment, we found out that Konan offers a free rental of a light truck. It was the first time I learned that I could drive it with a regular license and a handle. Thanks to that, I was able to transport it smoothly.&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck2.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;…&lt;/p&gt;
-
-&lt;p&gt;I started building again. When I attached the door, I had more trouble than I expected with attaching the hinges. I referred to &lt;a href=&quot;https://magazine.cainz.com/article/81662&quot;&gt;this article&lt;/a&gt; for help.&lt;/p&gt;
-
-&lt;p&gt;For the finishing touch, I applied a coat of varnish. I made sure to ventilate the room properly even in the hot weather. I wore double masks in the room where there is no air conditioner in the room during the summer….&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/hotMan.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For finishing, I need measures against falling. It’s a big thing, so it’s essential. I planned to strengthen the legs in the model, but it was too much work to process… After thinking about it, I found this one piece at the home center and it solved the problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/legs.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Also, I added a back panel to eliminate lateral shaking.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/seita.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;completion&quot;&gt;Completion&lt;/h3&gt;
-
-&lt;p&gt;Finally, it’s done!&lt;/p&gt;
-
-&lt;div class=&quot;image-container_triple&quot;&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front2.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front3.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The foldable tabletop measures 180cm x 50cm, providing ample space.&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/tableWidth.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/faceToCamera.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The posture when standing is almost identical to our measurements, promising a comfortable art-making experience.&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/positionCheck.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The tabletop also doubles as a door, hiding cables and providing a cleaner look.&lt;/p&gt;
-
-&lt;!-- insert image from builds.yml --&gt;
-&lt;div class=&quot;image-container_triple&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/foldedTableTop.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/mount.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/codes.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So, what do you think? Why not use the resources and services around you to DIY something special as a gift?&lt;/p&gt;
-
-&lt;p&gt;Happy Building!&lt;/p&gt;
-
-&lt;script src=&quot;/assets/js/popup_build.js&quot;&gt;&lt;/script&gt;
-
-&lt;div id=&quot;myModal&quot; class=&quot;modal&quot;&gt;
-  &lt;span class=&quot;close&quot;&gt;&amp;times;&lt;/span&gt;
-  &lt;img class=&quot;modal-content&quot; id=&quot;img01&quot; /&gt;
-  &lt;div id=&quot;caption&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife</summary></entry></feed>
+&lt;p&gt;あれから3年がたった今日も、このぼやっとした4階のデスクに座るとたまに思い出す。変わっているようで、それでも、何も変わっていないのだ。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">地球温暖化予想2050年シナリオは最悪のケースをたどったため、2047年中旬、国連総本部は迅速かつこれまでにない世界的な協力が必要と声明を表示した。日本はその一環として新しい年号を定め、2050年より年号を改める方針を打ち出し、世界中の共通年号として共有された。</summary></entry></feed>

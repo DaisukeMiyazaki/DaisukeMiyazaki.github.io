@@ -4,13 +4,60 @@
 	<title>Daisuke Miyazaki's Blog</title>
 	<link href="http://mdaisuke.net/blog/atom.xml" rel="self"/>
 	<link href="http://mdaisuke.net/blog"/>
-	<updated>2025-06-02T13:13:04+00:00</updated>
+	<updated>2025-06-16T01:29:59+00:00</updated>
 	<id>https://mdaisuke.net</id>
 	<author>
 		<name></name>
 		<email></email>
 	</author>
 
+	
+		<entry>
+			<title>夏が始まった</title>
+			<link href="http://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"/>
+			<updated>2025-06-16T00:00:00+00:00</updated>
+			<id>http://mdaisuke.net/jp/2025/06/16/夏が始まった</id>
+			<content type="html">&lt;!-- ここに写真追加 --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2025-06-16 夏が始まった.jpeg&quot; alt=&quot;窓とソファの写真&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;暑いんだけれど晴れていて空梅雨&lt;br /&gt;
+エアコンをつけているとどうしても機械音ばかり&lt;br /&gt;
+耐えられなくはないくらいの温度なので全体的に窓を開けて風通りをよくしてみている&lt;br /&gt;
+気持ちがいいくらい緑が窓から見える。&lt;/p&gt;
+
+&lt;p&gt;自分で作ったpc cart&lt;br /&gt;
+窓越しでちょうどいい高さにあってpcをおいて作業できる&lt;br /&gt;
+自分の家の中で好きな場所があれば帰ってきたくなる&lt;br /&gt;
+清澄亭で庭の横で作業していたことを思い出す&lt;br /&gt;
+緑のカーテン&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;play-audio-on-hover&quot; style=&quot;cursor:pointer; text-decoration:underline;&quot;&gt;氷が揺れて器にあたる音&lt;/span&gt;&lt;br /&gt;
+ひんやりとしたグラス&lt;/p&gt;
+
+&lt;p&gt;夏が始まった&lt;/p&gt;
+
+&lt;audio id=&quot;hover-audio&quot; src=&quot;/assets/audio/2025-06-16 夏の音.webm&quot;&gt;&lt;/audio&gt;
+
+&lt;script&gt;
+document.addEventListener(&apos;DOMContentLoaded&apos;, function() {
+  const trigger = document.querySelector(&apos;.play-audio-on-hover&apos;);
+  const audio = document.getElementById(&apos;hover-audio&apos;);
+  if (trigger &amp;&amp; audio) {
+    trigger.addEventListener(&apos;mouseenter&apos;, () =&gt; {
+      audio.currentTime = 0;
+      audio.play();
+    });
+    trigger.addEventListener(&apos;mouseleave&apos;, () =&gt; {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  }
+});
+&lt;/script&gt;
+
+</content>
+		</entry>
 	
 		<entry>
 			<title>obsidianを使い始めて1年レビュー</title>
