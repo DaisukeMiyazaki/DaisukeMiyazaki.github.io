@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-06-16T01:29:59+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">夏が始まった</title><link href="https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/" rel="alternate" type="text/html" title="夏が始まった" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-16T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/">&lt;!-- ここに写真追加 --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-07-03T13:15:32+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">理解を委任してはいけない</title><link href="https://mdaisuke.net/jp/2025/07/02/understanding-delegation/" rel="alternate" type="text/html" title="理解を委任してはいけない" /><published>2025-07-02T15:00:00+00:00</published><updated>2025-07-02T15:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/07/02/understanding-delegation</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/07/02/understanding-delegation/">&lt;p&gt;生成AIが人間と見分けがつかないほど巧みな嘘をつけるようになった
+そんな時代だからこそ 僕たちは「理解」そのものをAIに委任してはいけない&lt;/p&gt;
+
+&lt;p&gt;情報を集め 自分なりに解釈し 言葉にする
+そしてバラバラに見える知識や経験をつなぎ合わせ 一つの線にしていく
+この「点と点を繋ぐ」作業こそ思考の本質であり
+決して他者に ましてやAIに委任してはならない領域だ&lt;/p&gt;
+
+&lt;p&gt;ではどうすればいいのか&lt;/p&gt;
+
+&lt;p&gt;まずは日記を書くこと
+日々の出来事や感じたことをありのまま自分の言葉で記録する
+そしてただ書きっぱなしにするのではなく 何度も過去のノートを振り返る
+そこに書かれたアイデアや記録が 別のノートのメモとふとした瞬間に結びつくことがある&lt;/p&gt;
+
+&lt;p&gt;ノートと向き合い更新し続けることで思考は深まっていく&lt;/p&gt;
+
+&lt;p&gt;こうした営みを日々のわずかな時間で見つけて続ける
+そうでなければ僕たちは思考停止に陥り 前へ進むことはできないだろう&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">生成AIが人間と見分けがつかないほど巧みな嘘をつけるようになった そんな時代だからこそ 僕たちは「理解」そのものをAIに委任してはいけない</summary></entry><entry xml:lang="jp"><title type="html">夏が始まった</title><link href="https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/" rel="alternate" type="text/html" title="夏が始まった" /><published>2025-06-16T00:00:00+00:00</published><updated>2025-06-16T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/">&lt;!-- ここに写真追加 --&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2025-06-16 夏が始まった.jpeg&quot; alt=&quot;窓とソファの写真&quot; /&gt;&lt;/p&gt;
 
@@ -233,171 +251,4 @@ document.addEventListener(&apos;DOMContentLoaded&apos;, function() {
 
 &lt;p&gt;The fleeting anxiety I felt at that moment has disappeared somewhere, and I can’t remember how much time has passed since then. What I do remember is the impassioned voice of someone who shouted, “It’s the droplets!” and the faint yet clearly audible sigh of relief that seemed to echo between the buildings afterward.&lt;/p&gt;
 
-&lt;p&gt;Now, three years later, I sometimes think back to that moment as I sit at my blurry fourth-floor desk. Things seem to have changed, and yet, nothing has actually changed.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Due to the worst-case scenario of the global warming prediction for 2050, in mid-2047, the United Nations headquarters issued a statement that swift and unprecedented global cooperation was necessary. As part of this effort, Japan adopted a new era name after in 2050, which was shared with the rest of the world.</summary></entry><entry xml:lang="jp"><title type="html">雫</title><link href="https://mdaisuke.net/jp/2023/09/02/%E9%9B%AB/" rel="alternate" type="text/html" title="雫" /><published>2023-09-02T00:00:00+00:00</published><updated>2023-09-02T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2023/09/02/%E9%9B%AB</id><content type="html" xml:base="https://mdaisuke.net/jp/2023/09/02/%E9%9B%AB/">&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;陽暦15年(西暦2065年)のこと。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;地球温暖化予想2050年シナリオは最悪のケースをたどったため、2047年中旬、国連総本部は迅速かつこれまでにない世界的な協力が必要と声明を表示した。日本はその一環として新しい年号を定め、2050年より年号を改める方針を打ち出し、世界中の共通年号として共有された。&lt;/p&gt;
-
-&lt;p&gt;ぼくは、なにも変わらない半蔵門線から出勤していた。若干寝不足気味であったが、もう10月中旬である。最寄り駅に着くまでは快晴の中を歩いた。降りた大手町駅では地下つながりになっているので、一度駅についたら最後、オフィスに着くまでは外の様子はわからない。変わらぬ人の群。前の人をただ体が追っていくだけ。気づいたときには、会社のデスクに座っていた。&lt;/p&gt;
-
-&lt;!-- 変わらない日常を描く --&gt;
-
-&lt;p&gt;自分のデスクはたまたま、このビルの窓際にある。28階立ての高層ビルであるがうちの企業は4階なので、とりわけいい景色が見えるわけでもない。ログインしたパソコンには客先からのメールが溜まっていたので、一つずつ捌いていく。&lt;/p&gt;
-
-&lt;p&gt;昼過ぎに、黒い稲妻が東京駅を襲った。やっとこさ捌き切ったメールと続いた会議から一息をついたときには時計の針は13時を刺していた。ふと窓の外を見ると、なんとなく外が薄暗く、ビルの隙間からみえる空が灰色がかっていた。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_man_in_the_building.JPG&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;!-- 同僚との仕事 --&gt;
-&lt;!-- 顧客トラブルがあって後ろ向きな日を過ごす --&gt;
-
-&lt;p&gt;「この時代になってもまだメールなんて骨が折れるよ、チャットアプリをなんでうちは導入していないわけ？」&lt;br /&gt;
-「どこまでいってもうちのお客さんには古いところが多いからさ。営業部門や責任者も何度も説明しにいったらしいんだけれど、うちはずっとメールでやってきたから問題なかったんだの一点貼りで聞かないところが多いんだってさ」&lt;br /&gt;
-「はあ。。。。いわゆる前例主義ってやつ？」&lt;br /&gt;
-「そうそう。もう世間ではだいぶ少なくなったって聞いてるけど、結局そういうところって多いんじゃないの？」&lt;br /&gt;
-「残念だねえ」&lt;/p&gt;
-
-&lt;p&gt;たしかにうちのお客様にはこのみち何十年、という古い会社が多い。年号が変わる前からの付き合いも多い。そうしてこうやって何か本質的でないものに今日も時間が割かれているのは嫌なものだ。&lt;/p&gt;
-
-&lt;p&gt;「まあしゃあないよ」&lt;br /&gt;
-「しゃあないね」&lt;/p&gt;
-
-&lt;p&gt;いつからだろうか、仕方ないがこんなに口癖になったのは。後ろ向きな姿勢にならざるをえないのであった。&lt;/p&gt;
-
-&lt;!-- その日の夜、 雲が上がって--&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_subway.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;帰りの電車では、人の波に揉まれる。相変わらずにして半蔵門線のピークタイムはこの4, 50年同じように何十万人という人を1日に捌いているのである。陽暦前に生まれた自分がこの電車にのっていたときから、ほとんど形が変わっていない車内の広告パネル。ぼーっとしていると目がパネルを捉える。今日も日々のニュースが流れていた、お決まりの天気予報である。&lt;/p&gt;
-
-&lt;p&gt;変わってしまったことといえば、なんとなく未来感のある演出くらいである。この国は本当に変わらない。&lt;/p&gt;
-
-&lt;!-- 国としての電力残口が下回る予定で、電池蓄電池によるイベントがあるでしょうとAIキャスター --&gt;
-&lt;!-- 太陽光パネル衛星が飛ぶ --&gt;
-
-&lt;p&gt;「浦島幼稚園でパンダのこどもが生まれ、注目を集めています。」&lt;br /&gt;「東証一部へ、ドローンのスタートアップを展開しているアップエブリバディテクノロジー株式会社が上場しました。」&lt;br /&gt;「本日も電力残口が下回る予想のため、豊洲、調布、多摩川で雫の観測が予想されます。節電にご協力ください。」&lt;/p&gt;
-
-&lt;p&gt;相変わらずの様子である。もう慣れっこになってしまったが、残念ながらパンダも雫もこの地下鉄の中からは見ることはできない。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;豊洲大橋では、ちらほらと雨に懲りた人が散見された。子連れのカップル、高校生と作業服をきたメガネをかけた男性。隣接する高層ビルは変わらなく煌々と輝きながら東京を照らしている。高校生と作業服の男性は、スマホに夢中になりながら体だけが意思を持って前に進んでいるようにもみえる。&lt;/p&gt;
-
-&lt;p&gt;道路の信号で、インジゲーターが残り中となっている。陽暦では世界的意向を反映すべく国際的に標準のプロトコルが反映され、各国のインフラに電力情報が可視化されるよう政策が推し進められた。日本では前政権からの名残の一つで、各信号にはこのインジゲーターが実装された。町のあらゆるところで都市全体残りの電力を見ることができる。&lt;/p&gt;
-
-&lt;!-- バッテリーパックがパラシュートで降りてくる --&gt;
-&lt;!-- 夜は流れ星に見えるイベント --&gt;
-&lt;!-- とくに見上げることなく慣れてしまう親子、たまにこどもが気づくくらい --&gt;
-&lt;!-- 気候変動で日照、エネルギー予測ができなくなった世界、応急処置としてバッテリーパックがピンポイントで届くようになった --&gt;
-
-&lt;p&gt;大きな橋の道脇を歩くこどもは、落ち着かない様子で四方八方を見ている。&lt;/p&gt;
-
-&lt;p&gt;「ママ、この川はなんて名前なの？」
-母親はこどもが指差す川を見て、答えた。
-「この川は隅田川だよ。この橋はその川を渡るために作られたんだよ。」&lt;/p&gt;
-
-&lt;p&gt;こどもは興味津々で、川を見下ろしながら何気なく続けた。&lt;/p&gt;
-
-&lt;p&gt;「ママ、ここから飛び降りたらどうなるの？」&lt;/p&gt;
-
-&lt;p&gt;母親はこどもが指差す欄干を見て、答えた。
-「それは危ないからやめておいた方がいいよ。橋の上から飛び降りると大怪我をするかもしれないからね。」&lt;/p&gt;
-
-&lt;p&gt;こどもは少し残念そうな表情を浮かべたが、母親の言葉を聞いて欄干から手を離した。&lt;/p&gt;
-
-&lt;p&gt;「ママ、あの建物は何？」&lt;/p&gt;
-
-&lt;p&gt;母親はこどもが指差す建物を見て、答えた。
-「あの建物にはではね、たくさんの人が働いているんだよ。」&lt;/p&gt;
-
-&lt;p&gt;「ふーん。。。。ママ、あれはなに？」&lt;/p&gt;
-
-&lt;p&gt;質問ぜめにするこどもの指に、お母さんは顔を上げる。少し時間がたってから、お母さんは言った。&lt;/p&gt;
-
-&lt;!-- 湧く様子をもう少し具体的に書く --&gt;
-
-&lt;p&gt;「あれは雫っていうの。私たちがつかう電気を運んでいるのよ」&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;小さく光り輝くものが少しずつこちらに降ってくるのが見える。充電技術の競争が激化し始めた2020年あたりから40年以上が経った今、超軽量カーボンで作った固形電池に多量の電力を貯蔵することが可能となった。流れ星にみえるこの物体は巨大な充電池で、迅速な供給を目指した空気抵抗を最小化するため、雫の形をしている。それに伴って名前がついたのだ。雫一つで、1万世帯分の電力を賄うことができる。&lt;/p&gt;
-
-&lt;p&gt;雫は急速に落下してからパラシュートを開き減速する。たんぽぽの綿毛の形を模倣して作られた先端部分は花と呼ばれ、減速しながら飛行距離を伸ばすためについているらしい。&lt;/p&gt;
-
-&lt;p&gt;雫は少しずつ花をさかせながら減速し、遠くで待機する船の上に降り立った。船は最も近くにある河岸に泊まり、雫は淡い赤色をまとっては点滅している。川に停まった雫は呼吸をする花のようだった。&lt;/p&gt;
-
-&lt;p&gt;こどもからしたら赤く点滅している様子は何か見慣れてるようで、外方を向いた。&lt;/p&gt;
-
-&lt;p&gt;「あら、もう飽きちゃったの？」&lt;br /&gt;
-「ぼく、お腹空いた」&lt;br /&gt;
-「もう遅いもんね。早くかえって美味しいものたべようね」&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;街の給電が始まり、はるかむこうの橋の終端にある信号機のインジゲーターにも稲妻のサインが表示された。街の様子は至って変わらず、いつもの東京が流れていた。&lt;/p&gt;
-
-&lt;!-- ある日、雫が届かないトラブルが発生する --&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_signal.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;今日は、信号機の横にもあるサインのインジゲーターは3本のうち1つのみしか点灯していない。普及が始まってインジゲーターが点灯し始めた当時は、ゲージが少なくなると人は不安感に苛まれていた。政府はこの焦燥感を利用して、電力消費を抑えようとするという陰謀説も流れたりした。また、実際にはインジゲーターが切れても電力は枯渇しないというニュースも話題となった。&lt;/p&gt;
-
-&lt;p&gt;実情としては、実際にはまた停電などは一度も起きなかったこともなかった。すでに日常に溶け込んだこの仕組みはわずか数年のうち世の中と当たり前に溶け込み、なんでもない空気のように話題にあがることもなくなった。&lt;/p&gt;
-
-&lt;p&gt;「本日の電力消費量は「厳しい」です。節電にご協力ください。」&lt;/p&gt;
-
-&lt;p&gt;もはや慣れすぎてしまったこの文言を、あいかわらず取り柄のない天気予報のアナウンサーが言う。なんでもなく流れる今日の半蔵門線のパネルは、20年前のそれと一向に変わっていない。&lt;!-- 気にしない主人公  --&gt;何を気にすることもなく、ぼくは最近元気になってきた邦楽を聞いている。なんとなく湿っぽいこもった感じが漂う車内には、傘をもつ人もちらほらいる。外は雨が降っていた。でも気がついたら、またビルの中に吸い込まれていくのだ。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;資料作りがやっと終わり、ふと気がつくと外は暗くなり、いつものなんてことのないビル外に灯りがともっている。遠目でぼやっと外を見やっていたそのとき、突然、目の前のPC以外が真っ暗になった。ビル群を敷き詰められた明かりは一瞬のうちに光を失った。奥の方に座る同僚のほうをハッと見やると、PCで彼の顔あたりがぼやっと照らされているのがわかる。&lt;/p&gt;
-
-&lt;p&gt;「え、ちょっと停電ですか？？？」&lt;br /&gt;
-「大丈夫？」&lt;br /&gt;
-「…ちょっとネットも繋がらないんだけれど。やばい」&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;静かすぎる。聞いたことのない静寂はどこか落ち着かない。&lt;/p&gt;
-
-&lt;p&gt;交差点の信号、小さな店舗の照明、ともすればきらめくネオン看板も、すべてが一瞬にして消え去った。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_blackout.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;どこを見ればいいのかわからない。
-「ちょっとドアも開かないんじゃないんですかね？…」&lt;/p&gt;
-
-&lt;p&gt;しかし、その静寂は長く続かなかった。ほどなくして、驚きの声や車のクラクションの音が一斉に鳴り響き、暗闇の中で慌てる人々の足音や囁きが聞こえてきた。ドアの向こうのほうから、何か忙しないような声や足音がするのに気づく。&lt;/p&gt;
-
-&lt;p&gt;外を見てみると、歩道では立ち止まった人々が携帯電話のライトを点け、細かく振りながら周囲を照らし始めた。ずっと端の方にみえる交差点では信号の灯りが消えている。少しさきに止まるタクシーは停止したまま、進む方向を見失っているようにもみえる。いつもならなんてことのない淡白な蛍光灯で光る向かいのビルは、真っ暗で形も見えない。&lt;/p&gt;
-
-&lt;p&gt;「ちょっと、外にでてみますか」&lt;/p&gt;
-
-&lt;p&gt;階段には何人か人が見える。非常灯がついているので階段ははっきりと見える。もっと上のほうで働いている人は気の毒だと思った。&lt;/p&gt;
-
-&lt;p&gt;外に出ると、少しだけスマホのライトをちらつかせてスーツで歩いてる人がみえる。向こう側の同僚をみたとき顔が照らされていたときと同じように、道を見渡す限り目がとまる明かりはすべてスマホを持つ人々だ。そこまで広くない一本道に沿った明かりは、ずーっと先のほうまで続いているのが見て取れる。四角く区切られたこの街が明かりを失ったとき、灯るのはスマホだけなのだろう。普段なら意識もしないビル外は、こんなに遠くまで広がっているのだと気づかなかった。&lt;/p&gt;
-
-&lt;p&gt;電気を待つしかない、そう思ったときはじめて見上げた空に驚いた。小さな光が空を一面に埋め尽くしている。五年以上も前に、雫を初めて東京の空でみたときに見たとき、はるか遠くから降ってくる光を見たのを思い出した。&lt;/p&gt;
-
-&lt;p&gt;しかしその光はよくみると、動いていない。どの光も、その場に止まったままだ。それが雫でなく、本物の恒星による光だと気づいたとき、はっと息を呑んだ。&lt;/p&gt;
-
-&lt;p&gt;「ちょっとこれ、もしかしなくても星…?」&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;「おーーーい！こりゃ大変だな」&lt;br /&gt;
-降りてきた同僚の声がする。振り返ってみると、他の光と同じように彼の顔も白く照らされている。&lt;/p&gt;
-
-&lt;p&gt;「…いや、ちょっとこれ見てくれ」&lt;br /&gt;
-「お、何かわかったか！？」&lt;br /&gt;
-「いや、そうじゃなくて..」&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;空のほうを指さして、スマホで照らされる彼の顔は困った顔をしている、
-「え…? うわあ、すごい量の雫だな….!って、、あれ..?」&lt;/p&gt;
-
-&lt;p&gt;一瞬、静けさが戻ってきた。先までを照らしていた道路を照らす光も消えた。ビルから降りてきた人の声も、周りのざわめきも。皆は顔をあげて空を見ているようだった。降ってくるはずの動く光を探しては、動かず空を埋めつくすその模様からしばらく、目が離せなかった。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_finale.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;その時抱いた一抹の不安はどこかへ消えどれくらいの時間が立ったのか、もう思い出せない。思い出せるのは、誰かが叫んだ「雫だ！」と叫んだその感極まった声、そのあとにかすかにながらハッキリと聞こえた気がした、ビルの間で反響した不安から解放される小さな声。&lt;/p&gt;
-
-&lt;p&gt;あれから3年がたった今日も、このぼやっとした4階のデスクに座るとたまに思い出す。変わっているようで、それでも、何も変わっていないのだ。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">地球温暖化予想2050年シナリオは最悪のケースをたどったため、2047年中旬、国連総本部は迅速かつこれまでにない世界的な協力が必要と声明を表示した。日本はその一環として新しい年号を定め、2050年より年号を改める方針を打ち出し、世界中の共通年号として共有された。</summary></entry></feed>
+&lt;p&gt;Now, three years later, I sometimes think back to that moment as I sit at my blurry fourth-floor desk. Things seem to have changed, and yet, nothing has actually changed.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Due to the worst-case scenario of the global warming prediction for 2050, in mid-2047, the United Nations headquarters issued a statement that swift and unprecedented global cooperation was necessary. As part of this effort, Japan adopted a new era name after in 2050, which was shared with the rest of the world.</summary></entry></feed>
