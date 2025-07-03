@@ -81,47 +81,122 @@
       </div>
 
       <div class="mt-8">
-        {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
-        posts %}
-        <div class="mb-6">
-          <div class="dark:bg-primary-dark dark:text-white">
-            <span class="at-index text-gray-300"
-              >{{ post.date | date_to_string }}</span
-            >
-            <span class="text-blue-500"> #{{ post.genre }} </span>
-            <h2 class="text-xl font-bold dark:text-gray-300">
-              <a href="{{ post.url }}" class="text-blue-500 hover:underline">
-                {{ post.title }}
-              </a>
-            </h2>
-            <p class="text-gray-700 dark:text-gray-300">{{ post.excerpt }}</p>
-          </div>
+        <div class="mb-4">
+          <button
+            class="sort-btn rounded-full bg-blue-500 px-3 py-1 text-sm text-white"
+            data-genre="all"
+          >
+            すべて
+          </button>
+          <button
+            class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
+            data-genre="実用"
+          >
+            実用
+          </button>
+          <button
+            class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
+            data-genre="短編小説"
+          >
+            短編小説
+          </button>
+          <button
+            class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
+            data-genre="エッセイ"
+          >
+            エッセイ
+          </button>
+          <button
+            class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
+            data-genre="work"
+          >
+            work
+          </button>
         </div>
-        {% endfor %}
+
+        <div id="posts-container">
+          {% assign posts = site.posts | where:"lang", page.lang %} {% for post
+          in posts %}
+          <div
+            class="post-item mb-6"
+            data-genre="{{ post.genre }}"
+            data-date="{{ post.date | date_to_xmlschema }}"
+          >
+            <div class="dark:bg-primary-dark dark:text-white">
+              <span class="at-index text-gray-300"
+                >{{ post.date | date_to_string }}</span
+              >
+              <span class="text-blue-500"> #{{ post.genre }} </span>
+              <h2 class="text-xl font-bold dark:text-gray-300">
+                <a href="{{ post.url }}" class="text-blue-500 hover:underline">
+                  {{ post.title }}
+                </a>
+              </h2>
+              <p class="text-gray-700 dark:text-gray-300">{{ post.excerpt }}</p>
+            </div>
+          </div>
+          {% endfor %} {% for work in site.data.works %}
+          <div
+            class="post-item mb-6"
+            data-genre="work"
+            data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}"
+          >
+            <div class="at-index dark:bg-primary-dark dark:text-white">
+              <span class="at-index text-gray-600"
+                >{{ work.jp.start_at }} ~ {{ work.jp.end_at }}</span
+              >
+              <span class="text-blue-500"> # work </span>
+              <h2 class="text-xl font-bold">
+                <a
+                  href="{{ work.jp.site_link }}"
+                  class="text-blue-500 hover:underline"
+                  target="_blank"
+                >
+                  {{ work.jp.title }}
+                </a>
+              </h2>
+              <p class="dark:text-white">{{ work.jp.short }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
       </div>
 
-      <div class="mt-8">
-        {% for work in site.data.works %}
-        <div class="mb-6">
-          <div class="at-index dark:bg-primary-dark dark:text-white">
-            <span class="at-index text-gray-600"
-              >{{ work.jp.start_at }} ~ {{ work.jp.end_at }}</span
-            >
-            <span class="text-blue-500"> # work </span>
-            <h2 class="text-xl font-bold">
-              <a
-                href="{{ work.jp.site_link }}"
-                class="text-blue-500 hover:underline"
-                target="_blank"
-              >
-                {{ work.jp.title }}
-              </a>
-            </h2>
-            <p class="dark:text-white">{{ work.jp.short }}</p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const sortButtons = document.querySelectorAll(".sort-btn");
+          const postsContainer = document.getElementById("posts-container");
+          const postItems = Array.from(postsContainer.children);
+
+          // Sort items by date
+          postItems.sort(
+            (a, b) => new Date(b.dataset.date) - new Date(a.dataset.date),
+          );
+          postsContainer.innerHTML = "";
+          postItems.forEach((item) => postsContainer.appendChild(item));
+
+          sortButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+              const genre = this.dataset.genre;
+
+              sortButtons.forEach((btn) => {
+                btn.classList.remove("bg-blue-500", "text-white");
+                btn.classList.add("bg-gray-300", "text-gray-700");
+              });
+              this.classList.add("bg-blue-500", "text-white");
+              this.classList.remove("bg-gray-300", "text-gray-700");
+
+              postItems.forEach((item) => {
+                if (genre === "all" || item.dataset.genre === genre) {
+                  item.style.display = "block";
+                } else {
+                  item.style.display = "none";
+                }
+              });
+            });
+          });
+        });
+      </script>
     </div>
     {% include footer.html %}
   </body>
