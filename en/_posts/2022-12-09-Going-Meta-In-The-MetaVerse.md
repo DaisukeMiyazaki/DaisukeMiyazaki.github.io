@@ -9,7 +9,6 @@ lang-ref: Going-Meta-In-The-MetaVerse
 genre: practical
 ---
 
-{% include me.html %}
 Hello world!
 
 I saw a new step in the revolution so I'm writing it down. [I got a new face](https://prisma-ai.com/lensa).
