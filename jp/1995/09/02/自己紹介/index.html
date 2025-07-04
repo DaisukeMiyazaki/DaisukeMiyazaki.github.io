@@ -87,7 +87,9 @@
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
     <header class="primary-light px-4 py-4 dark:bg-primary-dark">
-  <div class="container mx-auto flex max-w-3xl items-center justify-between">
+  <div
+    class="container mx-auto flex max-w-3xl items-center justify-between p-4"
+  >
     <a
       class="text-2xl font-bold text-gray-800 dark:text-gray-100"
       href="/"
@@ -180,32 +182,7 @@
     </h1>
   </header>
 
-  <article class="dark:prose-invert lg:prose-xl"><style>
-  #profile {
-    right: 0;
-    float: right;
-    width: 30%;
-    height: 30%;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-  }
-  #profile:hover {
-    border: 2px solid #000;
-  }
-  .profile__wrapper {
-    height: 30%;
-    position: relative;
-    padding-left: 20px;
-    margin: 0 auto;
-  }
-</style>
-
-<div class="profile__wrapper">
-  <img id="profile" src="/assets/images/me.JPG" />
-</div>
-
+  <article class="dark:prose-invert lg:prose-xl">
 <p>はじめまして！フリーランスのエンジニアをやっています。WebアプリケーションのBackend開発、エンジニアリングマネージメントが本業です。</p>
 
 <p>学生時代は日本の大学で物理学を専攻し、同時に一般的な留学を経験せずに、日本で英語を第二ヶ国語として習得。異文化交流や英語を教える経験、英語の本の上梓を通して幅広い視座を吸収しました。</p>
@@ -215,6 +192,10 @@
 <p>本業外では、ロボットから自転車、生活家具など幅広いハードウェアも作ります。詰まるところ、垣根をこえて、ものづくりを愛しています！良いものづくりには、多角的な視点を養うことが大切と考えています。</p>
 
 <p>お仕事の依頼は、お気軽に<a href="mailto:contact@mdaisuke.net">こちらへ</a>DMください。</p>
+
+<p>このサイトは<a href="http://jekyllrb.com">Jekyll</a>という静的サイトジェネレーターで動いています。<a href="/blog/2020/01/20/daisuke-site-launched">サイトを立ち上げる</a>にあたって、Wordpressから移行しました。3000ポンドもあるようなフレームワークを使わないことにしたのは、<a href="https://motherfuckingwebsite.com" target="_blank">そういうのが嫌い</a>だからです。</p>
+
+<p><a href="https://twitter.com/aubozumom" target="_blank">Twitter</a>, <a href="https://github.com/DaisukeMiyazaki" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/daisuke-miyazaki/" target="_blank">LinkedIn</a>で発信しています。</p>
 </article>
 
    
@@ -266,74 +247,23 @@
   
 </div>
 </div>
-    <footer class="primary-light pb-8">
-  <div class="container mx-auto max-w-3xl p-4">
-    <div class="text-left">
-        <div>
-  <button
-    class="text-medium cursor-pointer border-none text-blue-500 hover:bg-blue-600 hover:underline"
-    onclick="openModal()"
-  >
-    ニュースレターに登録
-  </button>
+    <footer class="primary-light">
   <div
-    id="modal"
-    class="form-container fixed inset-0 z-10 hidden overflow-auto bg-black bg-opacity-50"
+    class="container mx-auto max-w-3xl rounded-lg p-4 pb-16 pt-4 dark:bg-primary-dark dark:text-gray-100"
   >
-    <div
-      class="form-content flex h-full w-full flex-col items-center justify-center"
-    >
-      <div class="modal-box rounded bg-white p-4 shadow-lg">
-        <span
-          class="close-button float-right cursor-pointer text-2xl text-gray-400"
-          onclick="closeModal()"
-          >×</span
+    <div class="">
+      <section class="mb-4 mt-4 md:mb-0 md:mr-4">
+        <a
+          href="https://mdaisuke.net/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/"
+          target="_blank"
         >
-        <p>最新ポストをお届けします。</p>
-        <form
-          class="mt-2 flex"
-          action="https://mDaisukeNet.pythonanywhere.com/signup"
-          method="POST"
-        >
-          <input
-            type="email"
-            placeholder="xxx@gmail.com"
-            name="email_address"
-            class="rounded-l border border-gray-300 p-2 outline-none"
-          />
-          <input type="hidden" name="signup_page" value="/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/" />
-          <button
-            type="submit"
-            class="cursor-pointer rounded-r border border-gray-300 bg-blue-500 p-2 text-white outline-none hover:bg-blue-600"
-          >
-            登録
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  function openModal() {
-    document.getElementById("modal").style.display = "block";
-  }
-  function closeModal() {
-    document.getElementById("modal").style.display = "none";
-  }
-
-  window.onclick = function (event) {
-    const modal = document.getElementById("modal");
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  };
-</script>
-
-      <a href="/" class="text-primary-link-dark hover:underline"
-        >ホームへ戻る</a
-      >
-      
+          <img
+            id="profile"
+            src="/assets/images/me_face.jpg"
+            alt="A picture of me."
+            class="h-24 w-24 rounded-full"
+        /></a>
+      </section>
     </div>
   </div>
 </footer>

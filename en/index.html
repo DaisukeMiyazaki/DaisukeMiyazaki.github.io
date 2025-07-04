@@ -142,7 +142,9 @@
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
     <header class="primary-light px-4 py-4 dark:bg-primary-dark">
-  <div class="container mx-auto flex max-w-3xl items-center justify-between">
+  <div
+    class="container mx-auto flex max-w-3xl items-center justify-between p-4"
+  >
     <a
       class="text-2xl font-bold text-gray-800 dark:text-gray-100"
       href="/"
@@ -224,77 +226,6 @@
 <!-- End Dark Mode -->
 
     <div class="container mx-auto max-w-3xl p-4">
-      <div class="rounded-lg p-6 dark:bg-primary-dark dark:text-gray-100">
-        <div id="background"></div>
-
-        <section class="flex flex-col items-center md:flex-row">
-          <article class="mb-4 md:mb-0 md:mr-4">
-            <img
-              id="profile"
-              src="/assets/images/me_face.jpg"
-              alt="A picture of me."
-              class="h-32 w-32 rounded-full"
-            />
-          </article>
-          <aside class="text-center md:text-left">
-            <h1 class="text-2xl font-bold">Daisuke</h1>
-            <h4 class="text-lg text-gray-600">@Tokyo</h4>
-            <p>I like to build stuff. Engineer</p>
-            <a
-              target="blank"
-              href="https://www.source-maker.co.jp/"
-              class="text-primary-link hover:underline dark:text-primary-link-dark"
-              >@Source Maker</a
-            >
-            <p>Cutouts of DHP is here</p>
-            <a
-              class="text-primary-link hover:underline dark:text-primary-link-dark"
-              href="https://mdaisuke.net/dhp/"
-              target="_blank"
-            >
-              @DHP
-            </a>
-          </aside>
-        </section>
-        <div class="mt-4 flex justify-center space-x-4">
-          <a href="https://twitter.com/aubozumom" target="_blank">
-            <img
-              class="h-6 w-6"
-              src="/assets/images/twitter.svg"
-              alt="Twitter"
-              title="Twitter"
-            />
-          </a>
-          <a href="https://github.com/DaisukeMiyazaki" target="_blank">
-            <img
-              class="h-6 w-6"
-              src="/assets/images/github.svg"
-              alt="GitHub"
-              title="GitHub"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/daisuke-miyazaki/"
-            target="_blank"
-          >
-            <img
-              class="h-6 w-6"
-              src="/assets/images/linkedlin.svg"
-              alt="LinkedIn"
-              title="LinkedIn"
-            />
-          </a>
-          <a href="mailto:contact@mdaisuke.net" target="_blank">
-            <img
-              src="/assets/images/email.svg"
-              alt="Email"
-              title="Email"
-              class="h-6 w-6"
-            />
-          </a>
-        </div>
-      </div>
-
       <div class="mt-8">
         <div class="mb-4">
           <button
@@ -323,7 +254,7 @@
           </button>
           <button
             class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
-            data-genre="Work"
+            data-genre="work"
           >
             Work
           </button>
@@ -523,14 +454,14 @@
            
           <div
             class="post-item mb-6"
-            data-genre="Work"
+            data-genre="work"
             data-date="2021-09-01"
           >
             <div class="at-index dark:bg-primary-dark dark:text-white">
               <span class="at-index text-gray-600"
                 >Sep 2021 ~ present</span
               >
-              <span class="text-blue-500"> # Work </span>
+              <span class="text-blue-500"> #work </span>
               <h2 class="text-xl font-bold">
                 <a
                   href="https://www.source-maker.co.jp/en/"
@@ -546,14 +477,14 @@
           
           <div
             class="post-item mb-6"
-            data-genre="Work"
+            data-genre="work"
             data-date="2022-10-01"
           >
             <div class="at-index dark:bg-primary-dark dark:text-white">
               <span class="at-index text-gray-600"
                 >Oct 2022 ~ present</span
               >
-              <span class="text-blue-500"> # Work </span>
+              <span class="text-blue-500"> #work </span>
               <h2 class="text-xl font-bold">
                 <a
                   href="https://daisystoneart.vercel.app/"
@@ -569,14 +500,14 @@
           
           <div
             class="post-item mb-6"
-            data-genre="Work"
+            data-genre="work"
             data-date="2020-01-01"
           >
             <div class="at-index dark:bg-primary-dark dark:text-white">
               <span class="at-index text-gray-600"
                 >Jan 2020 ~ present</span
               >
-              <span class="text-blue-500"> # Work </span>
+              <span class="text-blue-500"> #work </span>
               <h2 class="text-xl font-bold">
                 <a
                   href="/en/site"
@@ -629,75 +560,23 @@
         });
       </script>
     </div>
-
-    <footer class="primary-light pb-8">
-  <div class="container mx-auto max-w-3xl p-4">
-    <div class="text-left">
-        <div>
-  <button
-    class="text-medium cursor-pointer border-none text-blue-500 hover:bg-blue-600 hover:underline"
-    onclick="openModal()"
-  >
-    Subscribe
-  </button>
+    <footer class="primary-light">
   <div
-    id="modal"
-    class="form-container fixed inset-0 z-10 hidden overflow-auto bg-black bg-opacity-50"
+    class="container mx-auto max-w-3xl rounded-lg p-4 pb-16 pt-4 dark:bg-primary-dark dark:text-gray-100"
   >
-    <div
-      class="form-content flex h-full w-full flex-col items-center justify-center"
-    >
-      <div class="modal-box rounded bg-white p-4 shadow-lg">
-        <span
-          class="close-button float-right cursor-pointer text-2xl text-gray-400"
-          onclick="closeModal()"
-          >×</span
+    <div class="">
+      <section class="mb-4 mt-4 md:mb-0 md:mr-4">
+        <a
+          href="https://mdaisuke.net/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/"
+          target="_blank"
         >
-        <p>Join the newsletter for free</p>
-        <form
-          class="mt-2 flex"
-          action="https://mDaisukeNet.pythonanywhere.com/signup"
-          method="POST"
-        >
-          <input
-            type="email"
-            placeholder="xxx@gmail.com"
-            name="email_address"
-            class="rounded-l border border-gray-300 p-2 outline-none"
-          />
-          <input type="hidden" name="signup_page" value="/en/" />
-          <button
-            type="submit"
-            class="cursor-pointer rounded-r border border-gray-300 bg-blue-500 p-2 text-white outline-none hover:bg-blue-600"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  function openModal() {
-    document.getElementById("modal").style.display = "block";
-  }
-  function closeModal() {
-    document.getElementById("modal").style.display = "none";
-  }
-
-  window.onclick = function (event) {
-    const modal = document.getElementById("modal");
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  };
-</script>
-
-      <a href="/" class="text-primary-link-dark hover:underline"
-        >Back to home</a
-      >
-      
+          <img
+            id="profile"
+            src="/assets/images/me_face.jpg"
+            alt="A picture of me."
+            class="h-24 w-24 rounded-full"
+        /></a>
+      </section>
     </div>
   </div>
 </footer>
