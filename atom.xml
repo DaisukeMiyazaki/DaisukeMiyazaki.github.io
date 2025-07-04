@@ -4,7 +4,7 @@
 	<title>Daisuke Miyazaki's Blog</title>
 	<link href="http://mdaisuke.net/blog/atom.xml" rel="self"/>
 	<link href="http://mdaisuke.net/blog"/>
-	<updated>2025-07-04T00:19:33+00:00</updated>
+	<updated>2025-07-04T00:38:18+00:00</updated>
 	<id>https://mdaisuke.net</id>
 	<author>
 		<name></name>
@@ -1648,7 +1648,7 @@ In the human tree, there are various elements: objectively guaranteed facts that
 
 &lt;p&gt;お仕事の依頼は、お気軽に&lt;a href=&quot;mailto:contact@mdaisuke.net&quot;&gt;こちらへ&lt;/a&gt;DMください。&lt;/p&gt;
 
-&lt;p&gt;このサイトは&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;という静的サイトジェネレーターで動いています。&lt;a href=&quot;/blog/2020/01/20/daisuke-site-launched&quot;&gt;サイトを立ち上げる&lt;/a&gt;にあたって、Wordpressから移行しました。3000ポンドもあるようなフレームワークを使わないことにしたのは、&lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;そういうのが嫌い&lt;/a&gt;だからです。&lt;/p&gt;
+&lt;p&gt;このサイトは&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;という静的サイトジェネレーターで動いています。&lt;a href=&quot;/jp/2020/01/20/サイト始動/&quot;&gt;サイトを立ち上げる&lt;/a&gt;にあたって、Wordpressから移行しました。3000ポンドもあるようなフレームワークを使わないことにしたのは、&lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;そういうのが嫌い&lt;/a&gt;だからです。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/aubozumom&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://github.com/DaisukeMiyazaki&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/daisuke-miyazaki/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;で発信しています。&lt;/p&gt;
 </content>
@@ -1669,7 +1669,7 @@ In the human tree, there are various elements: objectively guaranteed facts that
 
 &lt;p&gt;Please feel free to DM me to &lt;a href=&quot;mailto:contact@mdaisuke.net&quot;&gt;here&lt;/a&gt; for work requests.&lt;/p&gt;
 
-&lt;p&gt;This website is powered by &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, a powerful static website generator. When &lt;a href=&quot;/blog/2020/01/20/daisuke-site-launched&quot;&gt;launching this website&lt;/a&gt;, I decided to switch from Wordpress, and not using any 3000 pounds framework because I’ve been allergic to &lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;them&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This website is powered by &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, a powerful static website generator. When &lt;a href=&quot;/en/2020/01/20/daisuke-site-launched/&quot;&gt;launching this website&lt;/a&gt;, I decided to switch from Wordpress, and not using any 3000 pounds framework because I’ve been allergic to &lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;them&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can follow me on &lt;a href=&quot;https://twitter.com/aubozumom&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://github.com/DaisukeMiyazaki&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;, and &lt;a href=&quot;https://www.linkedin.com/in/daisuke-miyazaki/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
 </content>
