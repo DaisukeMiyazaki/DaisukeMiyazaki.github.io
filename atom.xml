@@ -4,77 +4,77 @@
 	<title>Daisuke Miyazaki's Blog</title>
 	<link href="http://mdaisuke.net/blog/atom.xml" rel="self"/>
 	<link href="http://mdaisuke.net/blog"/>
-	<updated>2025-07-04T12:18:13+00:00</updated>
+	<updated>2025-07-07T00:00:00+09:00</updated>
 	<id>https://mdaisuke.net</id>
 	<author>
-		<name></name>
-		<email></email>
+		<name>Daisuke Miyazaki</name>
+		<email>daisuke.miyazaki012@gmail.com</email>
 	</author>
 
 	
 		<entry>
-			<title>理解を委任してはいけない</title>
-			<link href="http://mdaisuke.net/jp/2025/07/02/understanding-delegation/"/>
-			<updated>2025-07-02T15:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/07/02/understanding-delegation</id>
-			<content type="html">&lt;p&gt;生成AIは、人間と見分けがつかないほど巧みな嘘をつけるようになった。
-そんな時代だからこそ僕たちは、「理解」そのものをAIに委任してはいけない。&lt;/p&gt;
-
-&lt;p&gt;情報を集め、自分なりに解釈し、言葉にする。
-そしてバラバラに見える知識や経験をつなぎ合わせ、一つの線にしていく
-この「点と点を繋ぐ」作業こそ思考の本質であり
-決して他者に、ましてやAIに委任してはならない領域だ。&lt;/p&gt;
-
-&lt;p&gt;ではどうすればいいのか。&lt;/p&gt;
-
-&lt;p&gt;簡単なことから始めるなら、まずは日記じゃないだろうか。
-日々の出来事や感じたことをありのまま自分の言葉で記録する。&lt;/p&gt;
-
-&lt;p&gt;次に、ただ書きっぱなしにするのではなく、何度も過去のノートを振り返ること。
-書かれたアイデアや記録が、別のノートのメモとふとした瞬間に結びつくことがある。&lt;/p&gt;
-
-&lt;p&gt;そうしてノートと向き合い更新し続けることで思考は深まっていく。&lt;/p&gt;
-
-&lt;p&gt;こうした営みを、日々のわずかな時間で見つけて続ける。
-そうでなければ僕たちは思考停止に陥り、前へ進むことはできないだろう。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
 			<title>We Must Not Delegate Understanding</title>
-			<link href="http://mdaisuke.net/en/2025/07/02/we-must-not-delegate-understanding/"/>
-			<updated>2025-07-02T15:00:00+00:00</updated>
-			<id>http://mdaisuke.net/en/2025/07/02/we-must-not-delegate-understanding</id>
-			<content type="html">&lt;p&gt;Generative AI has become capable of telling sophisticated lies indistinguishable from human ones
+			<link href="http://mdaisuke.net/en/2025/07/03/we-must-not-delegate-understanding.html"/>
+			<updated>2025-07-03T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/en/2025/07/03/we-must-not-delegate-understanding</id>
+			<content type="html">&lt;p&gt;Generative AI has become capable of telling sophisticated lies indistinguishable from human ones&lt;br /&gt;
 Precisely because of such an era we must not delegate “understanding” itself to AI&lt;/p&gt;
 
-&lt;p&gt;Gathering information interpreting it in our own way and putting it into words
-Then connecting disparate knowledge and experiences to form a single thread
-This act of “connecting the dots” is the essence of thought
+&lt;p&gt;Gathering information interpreting it in our own way and putting it into words&lt;br /&gt;
+Then connecting disparate knowledge and experiences to form a single thread&lt;br /&gt;
+This act of “connecting the dots” is the essence of thought&lt;br /&gt;
 A domain that must never be delegated to others let alone AI&lt;/p&gt;
 
 &lt;p&gt;So what should we do&lt;/p&gt;
 
-&lt;p&gt;First keep a diary
-Record daily events and feelings in your own words as they are
-And instead of just writing and forgetting repeatedly look back at past notes
+&lt;p&gt;First keep a diary&lt;br /&gt;
+Record daily events and feelings in your own words as they are&lt;br /&gt;
+And instead of just writing and forgetting repeatedly look back at past notes&lt;br /&gt;
 Ideas and records written there may connect with memos from other notes at unexpected moments&lt;/p&gt;
 
 &lt;p&gt;By facing your notes and continuously updating them your thoughts will deepen&lt;/p&gt;
 
-&lt;p&gt;We must find time in our daily lives to continue these activities
+&lt;p&gt;We must find time in our daily lives to continue these activities&lt;br /&gt;
 Otherwise we will fall into intellectual stagnation and be unable to move forward&lt;/p&gt;
 </content>
 		</entry>
 	
 		<entry>
-			<title>夏が始まった</title>
-			<link href="http://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"/>
-			<updated>2025-06-16T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/06/16/夏が始まった</id>
-			<content type="html">&lt;!-- ここに写真追加 --&gt;
+			<title>理解を委任してはいけない</title>
+			<link href="http://mdaisuke.net/jp/2025/07/03/understanding-delegation.html"/>
+			<updated>2025-07-03T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/jp/2025/07/03/understanding-delegation</id>
+			<content type="html">&lt;p&gt;生成AIは、人間と見分けがつかないほど巧みな嘘をつけるようになった。&lt;br /&gt;
+そんな時代だからこそ僕たちは、「理解」そのものをAIに委任してはいけない。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/2025-06-16 夏が始まった.jpeg&quot; alt=&quot;窓とソファの写真&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;情報を集め、自分なりに解釈し、言葉にする。&lt;br /&gt;
+そしてバラバラに見える知識や経験をつなぎ合わせ、一つの線にしていく&lt;br /&gt;
+この「点と点を繋ぐ」作業こそ思考の本質であり&lt;br /&gt;
+決して他者に、ましてやAIに委任してはならない領域だ。&lt;/p&gt;
+
+&lt;p&gt;ではどうすればいいのか。&lt;/p&gt;
+
+&lt;p&gt;簡単なことから始めるなら、まずは日記じゃないだろうか。&lt;br /&gt;
+日々の出来事や感じたことをありのまま自分の言葉で記録する。&lt;/p&gt;
+
+&lt;p&gt;次に、ただ書きっぱなしにするのではなく、何度も過去のノートを振り返ること。&lt;br /&gt;
+書かれたアイデアや記録が、別のノートのメモとふとした瞬間に結びつくことがある。&lt;/p&gt;
+
+&lt;p&gt;そうしてノートと向き合い更新し続けることで思考は深まっていく。&lt;/p&gt;
+
+&lt;p&gt;こうした営みを、日々のわずかな時間で見つけて続ける。&lt;br /&gt;
+そうでなければ僕たちは思考停止に陥り、前へ進むことはできないだろう。&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>夏が始まった</title>
+			<link href="http://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F.html"/>
+			<updated>2025-06-16T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/jp/2025/06/16/夏が始まった</id>
+			<content type="html">&lt;p&gt;&lt;!-- ここに写真追加 --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2025-06-16%20%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F.jpeg&quot; alt=&quot;窓とソファの写真&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;暑い、晴れていて空梅雨。&lt;br /&gt;
 エアコンをつけているとどうしても機械音ばかり。&lt;br /&gt;
@@ -92,775 +92,31 @@ Otherwise we will fall into intellectual stagnation and be unable to move forwar
 
 &lt;p&gt;夏が始まった。&lt;/p&gt;
 
-&lt;audio id=&quot;hover-audio&quot; src=&quot;/assets/audio/2025-06-16 夏の音.webm&quot;&gt;&lt;/audio&gt;
+&lt;p&gt;&lt;audio id=&quot;hover-audio&quot; src=&quot;/assets/audio/2025-06-16%20%E5%A4%8F%E3%81%AE%E9%9F%B3.webm&quot;&gt;&lt;/audio&gt;&lt;/p&gt;
 
-&lt;script&gt;
-document.addEventListener(&apos;DOMContentLoaded&apos;, function() {
-  const trigger = document.querySelector(&apos;.play-audio-on-hover&apos;);
-  const audio = document.getElementById(&apos;hover-audio&apos;);
-  if (trigger &amp;&amp; audio) {
-    trigger.addEventListener(&apos;mouseenter&apos;, () =&gt; {
+&lt;p&gt;&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+  const trigger = document.querySelector(&#39;.play-audio-on-hover&#39;);
+  const audio = document.getElementById(&#39;hover-audio&#39;);
+  if (trigger &amp;amp;&amp;amp; audio) {
+    trigger.addEventListener(&#39;mouseenter&#39;, () =&amp;gt; {
       audio.currentTime = 0;
       audio.play();
     });
-    trigger.addEventListener(&apos;mouseleave&apos;, () =&gt; {
+    trigger.addEventListener(&#39;mouseleave&#39;, () =&amp;gt; {
       audio.pause();
       audio.currentTime = 0;
     });
   }
 });
-&lt;/script&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>obsidianを使い始めて1年レビュー</title>
-			<link href="http://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"/>
-			<updated>2025-03-20T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/03/20/obsidianを使い始めて1年レビュー</id>
-			<content type="html">&lt;p&gt;ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっており、乗り換えてみてからもう早一年以上経つので、レビューしてみる。&lt;/p&gt;
-
-&lt;p&gt;メモを増やしても自分の考え方が深まらない。どこか深まって整理がついても、ノートがうまくまとまらない。でもまとまる時間もない。他にも細かい課題があった。&lt;/p&gt;
-
-&lt;p&gt;このアプリを使い方を学び始めてからいろんな発見があった。1年以上経ち、もっと自由に考えられるようになったと思う。&lt;/p&gt;
-
-&lt;p&gt;考えることは、今を知れば未来がわかるような線形的な形でないこと。振り返りと書き直しを重ねて考えを広げたり深めたりできること。そして知識の探索の幅はどれだけ広くても良いこと。まさに点と点を繋ぐような体験こそ考えを深めることなんだと、ノートが洗練されるたびに感じた。ノートに向き合う時間が習慣になったと思う。&lt;/p&gt;
-
-&lt;p&gt;ここではとっつきやすく、Notesでも続けていた日記を例にあげてみる。日記は固有なノートの集まりとして使っている。obsidianの自由度が高さを活かして、自分にあった形に最適化できる。&lt;/p&gt;
-
-&lt;p&gt;いま日常のノートは以下のように組んでいる。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;朝/夜の気分&lt;/strong&gt;: 感覚で天気マークをつけている。幸せでいられているか。メタデータとして保存する。変化に気づくために、他のノートで一覧化したりできる。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;天気&lt;/strong&gt;: APIで自動で取得している、気分と強い相関があることも。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;タスク&lt;/strong&gt;: 保存庫中のノートでチェックボックスに変換+実施予定日をいれると、毎日ノートに表示される。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;固有ノート&lt;/strong&gt;: 日常を最も小さな単位で切り取った書き下ろし。素であり、RAWであり、まとまってないことがほとんど。書き下ろしてから、大体タイトルをつける。思いついたらとりあえず書く。ホットキーを設定して一コマンドで開けるようにするとなお便利。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;振り返り&lt;/strong&gt;: その日最後の固有ノート。あったこと、印象に残ったこと、仕事で寝かせたい考えの書き殴り、あった人などざっくばらんに書き留める。&lt;/p&gt;
-
-&lt;p&gt;Task、Templater、unique note creatorあたりのプラグインを使っている。&lt;/p&gt;
-
-&lt;p&gt;また活字を読んだら書き留める場所として、AIを使い倒すための書き溜める場所として、そしてプレゼンを作る場所として、、といろんな活用の方法があるが、これはまた次のポストで扱うとする。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>IPadを手放した</title>
-			<link href="http://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"/>
-			<updated>2025-03-17T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/03/17/ipadを手放した</id>
-			<content type="html">&lt;p&gt;iPadを手放した。出先でIPhoneをPCとして使う工夫をしている。結局ipadですらジャケットのポケットには入らない。端末自体の演算力やバッテリーの持ちは十分だ。&lt;/p&gt;
-
-&lt;p&gt;折りたたみキーボードがあれば手慣れた速度感でノートと向き合うことができる。ここではコーヒーを飲み切るくらいの時間を区切りの目安にするまとまれば成果物としても十分、まとまらないとそれは逆に煮詰まりすぎ、スコープが大きすぎる可能性がある。共有まで含めて、docmentでも大体のアプリがスマホ対応しているわけだし、web対応もしているので発信まで含めても終えられる。&lt;/p&gt;
-
-&lt;p&gt;また、スタンド等も必要。iphone自体を傾けないと姿勢が保てずに体験が悪化するので。&lt;/p&gt;
-
-&lt;p&gt;一枚のノートを軽く、小さく区切りながら細かくまとめるには、道具の準備もすぐできる方が良い。ポケットに忍ばせられるくらいの大きさであれば手軽だし、折りたたみキーボードは開いただけで接続されるものもあり手短だ。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>例の凸凹ver4</title>
-			<link href="http://mdaisuke.net/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver4/"/>
-			<updated>2025-01-20T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/01/20/例の凸凹 ver4</id>
-			<content type="html">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/v4/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>例の凸凹ver3</title>
-			<link href="http://mdaisuke.net/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"/>
-			<updated>2025-01-20T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/01/20/例の凸凹 ver3</id>
-			<content type="html">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/v3/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>例の凸凹ver2</title>
-			<link href="http://mdaisuke.net/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"/>
-			<updated>2025-01-20T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/01/20/例の凸凹 ver2</id>
-			<content type="html">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/v2/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>例の凸凹 ver1</title>
-			<link href="http://mdaisuke.net/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver1/"/>
-			<updated>2025-01-20T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/01/20/例の凸凹 ver1</id>
-			<content type="html">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>ワークベンチv2</title>
-			<link href="http://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"/>
-			<updated>2025-01-13T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2025/01/13/ワークベンチ</id>
-			<content type="html">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/workbench/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-</content>
-		</entry>
-	
-		<entry>
-			<title>雫</title>
-			<link href="http://mdaisuke.net/jp/2023/09/02/%E9%9B%AB/"/>
-			<updated>2023-09-02T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2023/09/02/雫</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;陽暦15年(西暦2065年)のこと。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;地球温暖化予想2050年シナリオは最悪のケースをたどったため、2047年中旬、国連総本部は迅速かつこれまでにない世界的な協力が必要と声明を表示した。日本はその一環として新しい年号を定め、2050年より年号を改める方針を打ち出し、世界中の共通年号として共有された。&lt;/p&gt;
-
-&lt;p&gt;ぼくは、なにも変わらない半蔵門線から出勤していた。若干寝不足気味であったが、もう10月中旬である。最寄り駅に着くまでは快晴の中を歩いた。降りた大手町駅では地下つながりになっているので、一度駅についたら最後、オフィスに着くまでは外の様子はわからない。変わらぬ人の群。前の人をただ体が追っていくだけ。気づいたときには、会社のデスクに座っていた。&lt;/p&gt;
-
-&lt;!-- 変わらない日常を描く --&gt;
-
-&lt;p&gt;自分のデスクはたまたま、このビルの窓際にある。28階立ての高層ビルであるがうちの企業は4階なので、とりわけいい景色が見えるわけでもない。ログインしたパソコンには客先からのメールが溜まっていたので、一つずつ捌いていく。&lt;/p&gt;
-
-&lt;p&gt;昼過ぎに、黒い稲妻が東京駅を襲った。やっとこさ捌き切ったメールと続いた会議から一息をついたときには時計の針は13時を刺していた。ふと窓の外を見ると、なんとなく外が薄暗く、ビルの隙間からみえる空が灰色がかっていた。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_man_in_the_building.JPG&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;!-- 同僚との仕事 --&gt;
-&lt;!-- 顧客トラブルがあって後ろ向きな日を過ごす --&gt;
-
-&lt;p&gt;「この時代になってもまだメールなんて骨が折れるよ、チャットアプリをなんでうちは導入していないわけ？」&lt;br /&gt;
-「どこまでいってもうちのお客さんには古いところが多いからさ。営業部門や責任者も何度も説明しにいったらしいんだけれど、うちはずっとメールでやってきたから問題なかったんだの一点貼りで聞かないところが多いんだってさ」&lt;br /&gt;
-「はあ。。。。いわゆる前例主義ってやつ？」&lt;br /&gt;
-「そうそう。もう世間ではだいぶ少なくなったって聞いてるけど、結局そういうところって多いんじゃないの？」&lt;br /&gt;
-「残念だねえ」&lt;/p&gt;
-
-&lt;p&gt;たしかにうちのお客様にはこのみち何十年、という古い会社が多い。年号が変わる前からの付き合いも多い。そうしてこうやって何か本質的でないものに今日も時間が割かれているのは嫌なものだ。&lt;/p&gt;
-
-&lt;p&gt;「まあしゃあないよ」&lt;br /&gt;
-「しゃあないね」&lt;/p&gt;
-
-&lt;p&gt;いつからだろうか、仕方ないがこんなに口癖になったのは。後ろ向きな姿勢にならざるをえないのであった。&lt;/p&gt;
-
-&lt;!-- その日の夜、 雲が上がって--&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_subway.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;帰りの電車では、人の波に揉まれる。相変わらずにして半蔵門線のピークタイムはこの4, 50年同じように何十万人という人を1日に捌いているのである。陽暦前に生まれた自分がこの電車にのっていたときから、ほとんど形が変わっていない車内の広告パネル。ぼーっとしていると目がパネルを捉える。今日も日々のニュースが流れていた、お決まりの天気予報である。&lt;/p&gt;
-
-&lt;p&gt;変わってしまったことといえば、なんとなく未来感のある演出くらいである。この国は本当に変わらない。&lt;/p&gt;
-
-&lt;!-- 国としての電力残口が下回る予定で、電池蓄電池によるイベントがあるでしょうとAIキャスター --&gt;
-&lt;!-- 太陽光パネル衛星が飛ぶ --&gt;
-
-&lt;p&gt;「浦島幼稚園でパンダのこどもが生まれ、注目を集めています。」&lt;br /&gt;「東証一部へ、ドローンのスタートアップを展開しているアップエブリバディテクノロジー株式会社が上場しました。」&lt;br /&gt;「本日も電力残口が下回る予想のため、豊洲、調布、多摩川で雫の観測が予想されます。節電にご協力ください。」&lt;/p&gt;
-
-&lt;p&gt;相変わらずの様子である。もう慣れっこになってしまったが、残念ながらパンダも雫もこの地下鉄の中からは見ることはできない。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;豊洲大橋では、ちらほらと雨に懲りた人が散見された。子連れのカップル、高校生と作業服をきたメガネをかけた男性。隣接する高層ビルは変わらなく煌々と輝きながら東京を照らしている。高校生と作業服の男性は、スマホに夢中になりながら体だけが意思を持って前に進んでいるようにもみえる。&lt;/p&gt;
-
-&lt;p&gt;道路の信号で、インジゲーターが残り中となっている。陽暦では世界的意向を反映すべく国際的に標準のプロトコルが反映され、各国のインフラに電力情報が可視化されるよう政策が推し進められた。日本では前政権からの名残の一つで、各信号にはこのインジゲーターが実装された。町のあらゆるところで都市全体残りの電力を見ることができる。&lt;/p&gt;
-
-&lt;!-- バッテリーパックがパラシュートで降りてくる --&gt;
-&lt;!-- 夜は流れ星に見えるイベント --&gt;
-&lt;!-- とくに見上げることなく慣れてしまう親子、たまにこどもが気づくくらい --&gt;
-&lt;!-- 気候変動で日照、エネルギー予測ができなくなった世界、応急処置としてバッテリーパックがピンポイントで届くようになった --&gt;
-
-&lt;p&gt;大きな橋の道脇を歩くこどもは、落ち着かない様子で四方八方を見ている。&lt;/p&gt;
-
-&lt;p&gt;「ママ、この川はなんて名前なの？」
-母親はこどもが指差す川を見て、答えた。
-「この川は隅田川だよ。この橋はその川を渡るために作られたんだよ。」&lt;/p&gt;
-
-&lt;p&gt;こどもは興味津々で、川を見下ろしながら何気なく続けた。&lt;/p&gt;
-
-&lt;p&gt;「ママ、ここから飛び降りたらどうなるの？」&lt;/p&gt;
-
-&lt;p&gt;母親はこどもが指差す欄干を見て、答えた。
-「それは危ないからやめておいた方がいいよ。橋の上から飛び降りると大怪我をするかもしれないからね。」&lt;/p&gt;
-
-&lt;p&gt;こどもは少し残念そうな表情を浮かべたが、母親の言葉を聞いて欄干から手を離した。&lt;/p&gt;
-
-&lt;p&gt;「ママ、あの建物は何？」&lt;/p&gt;
-
-&lt;p&gt;母親はこどもが指差す建物を見て、答えた。
-「あの建物にはではね、たくさんの人が働いているんだよ。」&lt;/p&gt;
-
-&lt;p&gt;「ふーん。。。。ママ、あれはなに？」&lt;/p&gt;
-
-&lt;p&gt;質問ぜめにするこどもの指に、お母さんは顔を上げる。少し時間がたってから、お母さんは言った。&lt;/p&gt;
-
-&lt;!-- 湧く様子をもう少し具体的に書く --&gt;
-
-&lt;p&gt;「あれは雫っていうの。私たちがつかう電気を運んでいるのよ」&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;小さく光り輝くものが少しずつこちらに降ってくるのが見える。充電技術の競争が激化し始めた2020年あたりから40年以上が経った今、超軽量カーボンで作った固形電池に多量の電力を貯蔵することが可能となった。流れ星にみえるこの物体は巨大な充電池で、迅速な供給を目指した空気抵抗を最小化するため、雫の形をしている。それに伴って名前がついたのだ。雫一つで、1万世帯分の電力を賄うことができる。&lt;/p&gt;
-
-&lt;p&gt;雫は急速に落下してからパラシュートを開き減速する。たんぽぽの綿毛の形を模倣して作られた先端部分は花と呼ばれ、減速しながら飛行距離を伸ばすためについているらしい。&lt;/p&gt;
-
-&lt;p&gt;雫は少しずつ花をさかせながら減速し、遠くで待機する船の上に降り立った。船は最も近くにある河岸に泊まり、雫は淡い赤色をまとっては点滅している。川に停まった雫は呼吸をする花のようだった。&lt;/p&gt;
-
-&lt;p&gt;こどもからしたら赤く点滅している様子は何か見慣れてるようで、外方を向いた。&lt;/p&gt;
-
-&lt;p&gt;「あら、もう飽きちゃったの？」&lt;br /&gt;
-「ぼく、お腹空いた」&lt;br /&gt;
-「もう遅いもんね。早くかえって美味しいものたべようね」&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;街の給電が始まり、はるかむこうの橋の終端にある信号機のインジゲーターにも稲妻のサインが表示された。街の様子は至って変わらず、いつもの東京が流れていた。&lt;/p&gt;
-
-&lt;!-- ある日、雫が届かないトラブルが発生する --&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_signal.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;今日は、信号機の横にもあるサインのインジゲーターは3本のうち1つのみしか点灯していない。普及が始まってインジゲーターが点灯し始めた当時は、ゲージが少なくなると人は不安感に苛まれていた。政府はこの焦燥感を利用して、電力消費を抑えようとするという陰謀説も流れたりした。また、実際にはインジゲーターが切れても電力は枯渇しないというニュースも話題となった。&lt;/p&gt;
-
-&lt;p&gt;実情としては、実際にはまた停電などは一度も起きなかったこともなかった。すでに日常に溶け込んだこの仕組みはわずか数年のうち世の中と当たり前に溶け込み、なんでもない空気のように話題にあがることもなくなった。&lt;/p&gt;
-
-&lt;p&gt;「本日の電力消費量は「厳しい」です。節電にご協力ください。」&lt;/p&gt;
-
-&lt;p&gt;もはや慣れすぎてしまったこの文言を、あいかわらず取り柄のない天気予報のアナウンサーが言う。なんでもなく流れる今日の半蔵門線のパネルは、20年前のそれと一向に変わっていない。&lt;!-- 気にしない主人公  --&gt;何を気にすることもなく、ぼくは最近元気になってきた邦楽を聞いている。なんとなく湿っぽいこもった感じが漂う車内には、傘をもつ人もちらほらいる。外は雨が降っていた。でも気がついたら、またビルの中に吸い込まれていくのだ。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;資料作りがやっと終わり、ふと気がつくと外は暗くなり、いつものなんてことのないビル外に灯りがともっている。遠目でぼやっと外を見やっていたそのとき、突然、目の前のPC以外が真っ暗になった。ビル群を敷き詰められた明かりは一瞬のうちに光を失った。奥の方に座る同僚のほうをハッと見やると、PCで彼の顔あたりがぼやっと照らされているのがわかる。&lt;/p&gt;
-
-&lt;p&gt;「え、ちょっと停電ですか？？？」&lt;br /&gt;
-「大丈夫？」&lt;br /&gt;
-「…ちょっとネットも繋がらないんだけれど。やばい」&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;静かすぎる。聞いたことのない静寂はどこか落ち着かない。&lt;/p&gt;
-
-&lt;p&gt;交差点の信号、小さな店舗の照明、ともすればきらめくネオン看板も、すべてが一瞬にして消え去った。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_blackout.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;どこを見ればいいのかわからない。
-「ちょっとドアも開かないんじゃないんですかね？…」&lt;/p&gt;
-
-&lt;p&gt;しかし、その静寂は長く続かなかった。ほどなくして、驚きの声や車のクラクションの音が一斉に鳴り響き、暗闇の中で慌てる人々の足音や囁きが聞こえてきた。ドアの向こうのほうから、何か忙しないような声や足音がするのに気づく。&lt;/p&gt;
-
-&lt;p&gt;外を見てみると、歩道では立ち止まった人々が携帯電話のライトを点け、細かく振りながら周囲を照らし始めた。ずっと端の方にみえる交差点では信号の灯りが消えている。少しさきに止まるタクシーは停止したまま、進む方向を見失っているようにもみえる。いつもならなんてことのない淡白な蛍光灯で光る向かいのビルは、真っ暗で形も見えない。&lt;/p&gt;
-
-&lt;p&gt;「ちょっと、外にでてみますか」&lt;/p&gt;
-
-&lt;p&gt;階段には何人か人が見える。非常灯がついているので階段ははっきりと見える。もっと上のほうで働いている人は気の毒だと思った。&lt;/p&gt;
-
-&lt;p&gt;外に出ると、少しだけスマホのライトをちらつかせてスーツで歩いてる人がみえる。向こう側の同僚をみたとき顔が照らされていたときと同じように、道を見渡す限り目がとまる明かりはすべてスマホを持つ人々だ。そこまで広くない一本道に沿った明かりは、ずーっと先のほうまで続いているのが見て取れる。四角く区切られたこの街が明かりを失ったとき、灯るのはスマホだけなのだろう。普段なら意識もしないビル外は、こんなに遠くまで広がっているのだと気づかなかった。&lt;/p&gt;
-
-&lt;p&gt;電気を待つしかない、そう思ったときはじめて見上げた空に驚いた。小さな光が空を一面に埋め尽くしている。五年以上も前に、雫を初めて東京の空でみたときに見たとき、はるか遠くから降ってくる光を見たのを思い出した。&lt;/p&gt;
-
-&lt;p&gt;しかしその光はよくみると、動いていない。どの光も、その場に止まったままだ。それが雫でなく、本物の恒星による光だと気づいたとき、はっと息を呑んだ。&lt;/p&gt;
-
-&lt;p&gt;「ちょっとこれ、もしかしなくても星…?」&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;「おーーーい！こりゃ大変だな」&lt;br /&gt;
-降りてきた同僚の声がする。振り返ってみると、他の光と同じように彼の顔も白く照らされている。&lt;/p&gt;
-
-&lt;p&gt;「…いや、ちょっとこれ見てくれ」&lt;br /&gt;
-「お、何かわかったか！？」&lt;br /&gt;
-「いや、そうじゃなくて..」&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;空のほうを指さして、スマホで照らされる彼の顔は困った顔をしている、
-「え…? うわあ、すごい量の雫だな….!って、、あれ..?」&lt;/p&gt;
-
-&lt;p&gt;一瞬、静けさが戻ってきた。先までを照らしていた道路を照らす光も消えた。ビルから降りてきた人の声も、周りのざわめきも。皆は顔をあげて空を見ているようだった。降ってくるはずの動く光を探しては、動かず空を埋めつくすその模様からしばらく、目が離せなかった。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_finale.png&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;その時抱いた一抹の不安はどこかへ消えどれくらいの時間が立ったのか、もう思い出せない。思い出せるのは、誰かが叫んだ「雫だ！」と叫んだその感極まった声、そのあとにかすかにながらハッキリと聞こえた気がした、ビルの間で反響した不安から解放される小さな声。&lt;/p&gt;
-
-&lt;p&gt;あれから3年がたった今日も、このぼやっとした4階のデスクに座るとたまに思い出す。変わっているようで、それでも、何も変わっていないのだ。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>The Droplet</title>
-			<link href="http://mdaisuke.net/en/2023/09/02/droplet/"/>
-			<updated>2023-09-02T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/en/2023/09/02/droplet</id>
-			<content type="html">&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;In the year 15 of the solar calendar (2065 AD).&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Due to the worst-case scenario of the global warming prediction for 2050, in mid-2047, the United Nations headquarters issued a statement that swift and unprecedented global cooperation was necessary. As part of this effort, Japan adopted a new era name after in 2050, which was shared with the rest of the world.&lt;/p&gt;
-
-&lt;p&gt;I was commuting from the unchanged Hanzomon Line. Slightly sleep-deprived, but it was already mid-October. I walked in the clear weather until I reached the nearest station. At Otemachi Station where I got off, it was connected underground, so once I arrived at the station, I couldn’t see outside until reaching to the office. A crowd of unchanged people. Just following the person in front of me. Before I knew it, I was sitting at my desk at the company.&lt;/p&gt;
-
-&lt;p&gt;My desk happens to be by the window of this building. It’s a 28-story high-rise, but our company is on the 4th floor, so there’s not much of a view to speak of. My logged-in computer had accumulated emails from clients, so I started going through them one by one.&lt;/p&gt;
-
-&lt;p&gt;In the early afternoon, a black lightning bolt struck Tokyo Station. By the time I finished going through the emails and the subsequent meetings, the clock had struck 1:00. When I looked out the window, the outside seemed somewhat dim, and the sky visible through the gaps in the buildings was tinged with gray.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_man_in_the_building.JPG&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;!-- Work with colleagues --&gt;
-&lt;!-- Spend a day feeling negative due to customer trouble --&gt;
-
-&lt;p&gt;“Why is it that even in this day and age, emails are still such a pain? Why haven’t we introduced a chat app?”&lt;br /&gt;
-“Well, there are a lot of old-fashioned clients we deal with, you know. The sales department and the managers have apparently explained it to them many times, but they’re used to doing everything by email, so they don’t listen to anything else.”&lt;br /&gt;
-“I see… So it’s what they call precedent-based thinking?”&lt;br /&gt;
-“Exactly. I’ve heard that it’s becoming less common in the world, but there are still a lot of places like that, aren’t there?”&lt;br /&gt;
-“That’s too bad.”&lt;/p&gt;
-
-&lt;p&gt;It’s true that many of our clients are old companies that have been around for decades. We also have many long-standing relationships that date back to before the change of era. It’s frustrating to think that we’re still wasting time on something that’s not essential like this.&lt;/p&gt;
-
-&lt;p&gt;“Well, there’s nothing we can do about it.”&lt;br /&gt;
-“Yeah, I guess not.”&lt;/p&gt;
-
-&lt;p&gt;I wonder when it started, but it’s become such a common phrase. I can’t help but have a negative attitude when faced with situations like this.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_subway.png&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;On the train ride home, I was pushed around by a sea of people. As usual, during peak hours on the Hanzomon Line, hundreds of thousands of people pass through each day, and the interior of the train has hardly changed since I first rode it when I was born in the year of the sun calendar. When I’m spacing out, my eyes catch the advertising panel in the train car that hasn’t changed much either. Today, just like any other day, the usual weather forecast was playing.&lt;/p&gt;
-
-&lt;p&gt;The only thing that seems to have changed is the futuristic production vibes that show seems to wrap itself with. This country really hasn’t changed.&lt;/p&gt;
-
-&lt;!-- AI caster says there will be an event using battery storage due to the expected shortfall in the country&apos;s power supply, and a solar panel satellite will fly. --&gt;
-
-&lt;p&gt;“A panda was born at Urashima Kindergarten and is attracting attention.”&lt;br /&gt;
-“Up Everybody Technology Co., Ltd., a drone startup, has been listed on the first section of the Tokyo Stock Exchange.”&lt;br /&gt;
-“Due to the expected shortfall in power supply again today, the droplet is expected to be observed in Toyosu, Chofu, and Tama River. Please cooperate in conserving electricity.”&lt;/p&gt;
-
-&lt;p&gt;It’s the same old thing. I’ve gotten used to it, but unfortunately, I can’t see the panda or the droplet from inside this subway.&lt;/p&gt;
-
-&lt;p&gt;…
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;At the Toyosu Bridge, people who had been caught in the rain were seen here and there. A couple with a child, a high school student, and a man wearing work clothes and glasses. The adjacent high-rise buildings continue to shine brightly and illuminate Tokyo. The high school student and the man in work clothes seem to be moving forward with only their bodies while being absorbed in their smartphones.&lt;/p&gt;
-
-&lt;p&gt;At the traffic signal on the road, the indicator stays in the middle. In the solar calendar, a globally standardized protocol was implemented to reflect the world’s intentions to save energy. Policies were promoted to visualize city-wide power information in the infrastructure. In Japan, one of the remnants of the previous administration’s policy, are the indicators implemented inside each traffic signal. Because of this, people can see the remaining power of the entire city everywhere.&lt;/p&gt;
-
-&lt;p&gt;A child walking along the roadside of a large bridge looks uneasy and looks around in all directions.&lt;/p&gt;
-
-&lt;p&gt;“Mom, what’s the name of this river?” The mother looked at the river he was pointing to and answered, “This river is the Sumida River. This bridge was built to cross that river.”&lt;/p&gt;
-
-&lt;p&gt;He looked down at the river with keen interest and casually continued.&lt;/p&gt;
-
-&lt;p&gt;“Mom, what would happen if I jumped off from here?”&lt;/p&gt;
-
-&lt;p&gt;She looked at the railing he was pointing to and answered,
-“It’s dangerous, so you shouldn’t do it. You could get seriously hurt if you jump off the bridge.”&lt;/p&gt;
-
-&lt;p&gt;He looked slightly disappointed, but took their hand off the railing after hearing her words.&lt;/p&gt;
-
-&lt;p&gt;“Mom, what’s that building?”&lt;/p&gt;
-
-&lt;p&gt;She looked at the building he was pointing to and answered,
-“A lot of people work in that building.”&lt;/p&gt;
-
-&lt;p&gt;“Hmmm… Mom, what’s that?”&lt;/p&gt;
-
-&lt;p&gt;She looked up to where he was pointing. After a moment, she said,
-“That’s called a ‘droplet.’ It transports the electricity we use.”&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Something small and shining could be seen gradually descending towards them. More than 40 years have passed since the competition in battery technology heated up around the year 2020. It has become possible to store a large amount of power in solid-state batteries made of ultra-light carbon. These objects, resembling shooting stars, are massive batteries. To minimize air resistance for rapid delivery, they are shaped like droplets, hence the name was coined by the citizens. A single droplet can supply power to 10,000 households.&lt;/p&gt;
-
-&lt;p&gt;The droplet falls rapidly before opening a parachute to decelerate. The dandelion-fluff-like tip, known as the “Flower,” seems to be attached to extend the flight distance while slowing down.&lt;/p&gt;
-
-&lt;p&gt;The droplet slows down gradually while blooming its “Flower,” finally landing on a waiting ship far away. The ship anchors at the nearest riverbank, and the droplet is blinking in a faint red color. The anchored droplet looked like a breathing flower on the river.&lt;/p&gt;
-
-&lt;p&gt;To the child, the red blinking seemed somewhat familiar, and he turned their gaze away.&lt;/p&gt;
-
-&lt;p&gt;“Oh, you’re already bored?”&lt;br /&gt;
-“I’m hungry.”&lt;br /&gt;
-“Yes it’s getting late, let’s go home and eat something yummy.”&lt;/p&gt;
-
-&lt;p&gt;The city’s power supply began, and a lightning bolt sign was displayed on the signal indicator at the far end of the bridge. The city seemed no different; it was the same old Tokyo flowing along.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_signal.png&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Today, only one of the three indicators next to the traffic light is illuminated. When these indicators first began lighting up as the system was introduced to infrastructure, people felt anxious as the gauge lowered. There were even conspiracy theories suggesting that the government was using this sense of urgency to curb power consumption. There was also news making headlines that power wouldn’t actually run out even if the indicator went out.&lt;/p&gt;
-
-&lt;p&gt;In reality, there had never been a blackout or any such incidents. This system, which has already become a part of daily life, seamlessly integrated into society within just a few years, and it no longer becomes a topic of discussion, just like the air around us.&lt;/p&gt;
-
-&lt;p&gt;“Today’s power consumption level is ‘critical.’ Please cooperate in conserving energy.”&lt;/p&gt;
-
-&lt;p&gt;An unremarkable weather forecast announcer still delivers this now-familiar phrase. The display panel on today’s Hanzomon Line train hasn’t changed a bit from 20 years ago. Not paying any attention to the news, I was listening to Japanese music that has recently revitalized. There are a few people holding umbrellas in the car, where a sort of damp, musty feeling hangs in the air. It’s raining outside. But before I know it, I’m being drawn back into the building again.&lt;/p&gt;
-
-&lt;p&gt;…
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;I finally finished preparing the documents and, before I realized it, it had gotten dark outside. The lights were on outside the building as usual.&lt;/p&gt;
-
-&lt;p&gt;I was idly staring out the window. Suddenly, everything except the screen of my PC went pitch black. The lights that filled the buildings around me went out in an instant. Glancing hurriedly towards my colleague who sits at the back, I could vaguely see his face illuminated by his PC.&lt;/p&gt;
-
-&lt;p&gt;“Wait, is this a blackout??”&lt;br /&gt;
-“Are you okay?”&lt;br /&gt;
-“…I can’t connect to the internet either. This is bad.”&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;It was eerily quiet. An unsettling silence I had never experienced before.&lt;/p&gt;
-
-&lt;p&gt;The traffic lights at the intersection, the lighting in small stores, and even the sparkling neon signs—all vanished in an instant.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_blackout.png&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I had no idea where to look.&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;“Um, I think the door might not open, too?”&lt;/p&gt;
-
-&lt;p&gt;However, that silence didn’t last long. Soon after, cries of surprise and honking of car horns filled the air outside, and I could hear people scrambling and whispering in the darkness. I noticed that there seemed to be some sort of commotion going on behind the door.&lt;/p&gt;
-
-&lt;p&gt;Looking outside, I saw people on the sidewalk turning on their phone lights, shaking them gently to illuminate their surroundings. At the far-off intersection, the traffic lights were out. A taxi parked a little ahead seemed lost, unsure of which direction to proceed in. The building across the street, usually blandly lit by fluorescent lights, was now completely dark and unrecognizable.&lt;/p&gt;
-
-&lt;p&gt;“…Should we go outside?”&lt;/p&gt;
-
-&lt;p&gt;I recognized a few people afar going downstairs. I felt sorry for those who are working on higher floors.&lt;/p&gt;
-
-&lt;p&gt;When I went outside, I saw a few people walking around in suits, flicking their smartphone lights. Just like when my colleague’s face was illuminated earlier, the only source of light as far as I could see was from people holding smartphones. I realized how expansive the area outside the building, usually taken for granted, actually was.&lt;/p&gt;
-
-&lt;p&gt;I thought we could only wait for the electricity to come back on. Then I looked up at the sky and was astonished. Tiny lights filled the sky completely. It reminded me of the time when, over five years ago, I saw the droplets in Tokyo’s sky for the first time.&lt;/p&gt;
-
-&lt;p&gt;But on closer inspection, the lights were stationary. Each one was fixed in place. I was taken aback when I realized these weren’t the droplets, but the light of actual stars.&lt;/p&gt;
-
-&lt;p&gt;“Wait, could these be stars?”&lt;br /&gt;
-“Hey, this is really bad!”&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;I heard my colleague’s voice who had come down. Turning around, his face was also lit up just like the others.&lt;/p&gt;
-
-&lt;p&gt;“No, look at this.”&lt;br /&gt;
-“Oh, did you figure something out?”&lt;br /&gt;
-“No, not that…“&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;I pointed to the sky. His face, illuminated by the smartphone, looked puzzled,&lt;/p&gt;
-
-&lt;p&gt;“Huh? Wow, that’s a lot of droplets… wait, what?”&lt;/p&gt;
-
-&lt;p&gt;For a moment, the silence returned. The light that had been illuminating the road ahead was gone. The voices of the people who had come down from the building, the noise all around, everything went quiet. Everyone seemed to be looking up at the sky. They couldn’t take their eyes off of the stationary lights filling the sky, instead of the moving ones they all expected to see.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/story/droplet_finale.png&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;…
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;The fleeting anxiety I felt at that moment has disappeared somewhere, and I can’t remember how much time has passed since then. What I do remember is the impassioned voice of someone who shouted, “It’s the droplets!” and the faint yet clearly audible sigh of relief that seemed to echo between the buildings afterward.&lt;/p&gt;
-
-&lt;p&gt;Now, three years later, I sometimes think back to that moment as I sit at my blurry fourth-floor desk. Things seem to have changed, and yet, nothing has actually changed.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>ワークベンチ</title>
-			<link href="http://mdaisuke.net/jp/2023/08/21/%E3%83%99%E3%83%B3%E3%83%81/"/>
-			<updated>2023-08-21T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2023/08/21/ベンチ</id>
-			<content type="html">&lt;div id=&quot;hihi&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;DIYやってみた！アート愛好者の妻へ特製ワークベンチをプレゼント。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;こんにちは、皆さん！先月頭、アート愛好者の妻のために、どこにも売っていない特別なワークベンチを作る挑戦をしてみました。こちらにその一部始終を書き下ろしてみました。&lt;/p&gt;
-
-&lt;p&gt;妻がアートを楽しんでいる様子を見るのは素晴らしいこと。でも5畳もないお部屋で散らかり具合…収納が足りない！そして、どうしても座って書いていると姿勢が…&lt;/p&gt;
-
-&lt;p&gt;そこで立ったままアートを楽しむことができるワークベンチがあれば、こんな悩みも解消されるんじゃないかと。そう思って作りはじめてみました。それでは、DIYの開始です！&lt;/p&gt;
-
-&lt;h3 id=&quot;作る前のuxデザイン&quot;&gt;作る前のUXデザイン&lt;/h3&gt;
-
-&lt;p&gt;まず、天板の高さを決めます。たまたま昇降式デスクを使っていたので、立った様子や座った様子を確認。なんとなく体の中心線を見てみて、立ったときに近いような高さを測りました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test0.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;座っている状態だとどうしても目線が下がってしまいます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test1.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;この高さだと、まだ顔が下を向いていて首が疲れてしまいそう。&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test2.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;この高さなら、全体的にまっすぐになっていて良さそう。
-立った時と比較しても、大体同じくらい中心線になっているのがわかります。こちらで高さは110センチくらいが良さそうだとわかりました。&lt;/p&gt;
-
-&lt;h3 id=&quot;uiデザイン&quot;&gt;UIデザイン&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/cad.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;次に3Dモデリングで設計します。全体のバランスや重心の計算、イメージのすり合わせなどを妻のフィードバックを得ながら作っていきます。こだわった点は…&lt;/p&gt;
-
-&lt;h4 id=&quot;大きな収納&quot;&gt;大きな収納&lt;/h4&gt;
-
-&lt;p&gt;⁃ アートも作品よりも道具のほうが数が多くなる。十分な収納がないと散らかってしまうので、大容量が必要&lt;br /&gt;
-⁃ ツールや作業中のものなどはごちゃるので扉を取り付け。&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;インスピレーションを綺麗に魅せる&quot;&gt;インスピレーションを綺麗に魅せる&lt;/h4&gt;
-
-&lt;p&gt;⁃ 寄せ集めた書籍や雑誌、旅先で見つけたカードなどは常に見えるように飾っておきたいもの。扉が付く本棚では中身が見えないこともあるので、なるべく見せる収納をイメージ。&lt;br /&gt;
-⁃ カードや小物なども、常に見えるように展示することでインスピレーションを得やすくなる。&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;スペース&quot;&gt;スペース&lt;/h4&gt;
-
-&lt;p&gt;⁃ 幅があったほうが良いので壁いっぱいに広がる大きさに。天板は壁いっぱいの横幅 * ノートPCを広げて余裕があるように50cmに。部屋の大きさが限られているので、天板の手前20センチは折りたためるように。&lt;br /&gt;
-⁃ 折り畳んだ際には最上段の扉になるように設計。ごちゃってしまうケーブル類はこの段にしまえるように。&lt;br /&gt;
-⁃ 再下段にはお掃除ロボットが入ってこれるだけの高さを用意。&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;資材の調達&quot;&gt;資材の調達&lt;/h3&gt;
-
-&lt;p&gt;次に設計図をもとに木材を購入します。近くのホームセンターへ。ここでちょっとしたトラブルが…&lt;/p&gt;
-
-&lt;p&gt;計画した幅よりも、実際の木材の幅が狭かったんです。大きいものを切ってもらうと端材が出てしまって勿体無い。。困った挙句、ではこの最大幅を活かして作って仕舞えば良いや！と思いきって決断。モデルで組んだものを、比率を保ったまま少し少し小さくするイメージでした。
-…&lt;/p&gt;
-
-&lt;p&gt;そして買ったはいいものの、その後の大問題。この木材、どうやって運ぶ？車は持っていないしタクシーにも入らない、、、真夏でとてもじゃないけれど外では運べない。困った。&lt;/p&gt;
-
-&lt;p&gt;思いきやここでなんとコーナンでは、当日配達サービスが店内で利用できるとのこと！この当日配送サービスに助けられました。配送料を追加で支払い、翌日にはすべてお家へ届くとのことで活用。&lt;/p&gt;
-
-&lt;h3 id=&quot;作成開始&quot;&gt;作成開始&lt;/h3&gt;
-
-&lt;p&gt;木材が届いたら、あとは作るのみ。イメージ通りに作っていきます。こちら途中経過…&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/inProgress.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;扉は寸法もモデルで見ていた通りにならなかったので後付けにしました。買い出しに再度ホームセンターのコーナンへ、暑いので自転車でむかったものの巨大すぎるドアをどうも運べず。再度配送料を払うのもバカバカしい。。。
-そんなときなんと、コーナンでは軽トラを無料で借りれることが判明。ハンドルつき、普通免許で運転できることも初めて知りました。おかげ様でスムーズに運ぶことができました。&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck2.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;…&lt;/p&gt;
-
-&lt;p&gt;再度作成開始。扉をつけるとき、蝶番をつけるのに思ったよりも苦戦しました、、&lt;a href=&quot;https://magazine.cainz.com/article/81662&quot;&gt;こちら&lt;/a&gt;を参照にしました。&lt;/p&gt;
-
-&lt;p&gt;仕上げにはニス塗りもしっかりと。あっつい部屋でもしっかりと換気をしつつ。真夏のクーラーの効かない部屋で二重マスク。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/hotMan.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;仕上げには転倒対策。大きなものなのでこちらも必須です。モデルでは足を強固にする予定だったけれど加工が手間で面倒くさい。。。色々考えてみた結果、ホームセンターで見つけたこいつ一枚で解決。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/legs.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;また、横揺れもしたので背板をつけることで解消しました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/seita.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;完成&quot;&gt;完成&lt;/h3&gt;
-
-&lt;p&gt;そしてついに完成！&lt;/p&gt;
-
-&lt;div class=&quot;image-container_triple&quot;&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front2.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front3.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;折りたたみ式の天板も180cm * 50cmと十分な広さがあります。&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/tableWidth.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/faceToCamera.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;立った時の姿勢も、測ったときの姿勢とほぼ一致しています。これで快適にアートに取り組めるはず！&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/positionCheck.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;mx-auto my-4&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;天板が扉の役割も兼用し、コードなども隠して見た目もすっきりするように。&lt;/p&gt;
-
-&lt;!-- insert image from builds.yml --&gt;
-&lt;div class=&quot;image-container_triple&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/foldedTableTop.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/mount.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/codes.jpeg&quot; class=&quot;mx-auto my-4&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;いかがでしょうか？皆さんも、身近なものやサービスを利用しながら、特別なものをDIYで作って贈ってみてはみてはいかがでしょうか？&lt;/p&gt;
-
-&lt;p&gt;Happy Building!&lt;/p&gt;
-
-&lt;script src=&quot;/assets/js/popup_build.js&quot;&gt;&lt;/script&gt;
-
-&lt;div id=&quot;myModal&quot; class=&quot;modal&quot;&gt;
-  &lt;span class=&quot;close&quot;&gt;&amp;times;&lt;/span&gt;
-  &lt;img class=&quot;modal-content&quot; id=&quot;img01&quot; /&gt;
-  &lt;div id=&quot;caption&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Workbench</title>
-			<link href="http://mdaisuke.net/en/2023/08/21/workbench/"/>
-			<updated>2023-08-21T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/en/2023/08/21/workbench</id>
-			<content type="html">&lt;p&gt;Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hello, everyone! Last month, I took up the challenge of making a unique workbench that can’t be found in stores, just for my art-enthusiast wife. I’ve written down the entire process for you here.&lt;/p&gt;
-
-&lt;p&gt;It’s wonderful to see my wife enjoying her art, but the clutter in our small room—less than 5 tatami mats in size—is an issue. Storage space is insufficient! Also, the posture while sitting and working is not ideal.&lt;/p&gt;
-
-&lt;p&gt;So, I thought that a workbench that allows her to enjoy art while standing could solve these problems. And with that, let the DIY begin!&lt;/p&gt;
-
-&lt;h3 id=&quot;before-building-ux-design&quot;&gt;Before Building, UX Design&lt;/h3&gt;
-
-&lt;p&gt;First, I decided the height of the tabletop. I happened to have a height-adjustable desk, so we checked what would be comfortable both when standing and sitting. By roughly observing the centerline of the body, we measured a height that seemed appropriate for when standing.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test0.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When sitting down, the line of sight tends to lower.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test1.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;At this height, her face is still looking down and her neck would be in pain.&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test2.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;At this height, it seems to be mostly straight. Even compared to when standing, you can see that it is mostly centered. I found out that a height of around 110 centimeters is good.&lt;/p&gt;
-
-&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/cad.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, I used 3D modeling for the design, considering overall balance, center of gravity, and gathering my wife’s feedback. Key points included:&lt;/p&gt;
-
-&lt;h4 id=&quot;ample-storage&quot;&gt;Ample Storage&lt;/h4&gt;
-
-&lt;p&gt;Art often requires more tools than finished works. &lt;br /&gt;
-Large storage is essential to avoid clutter.&lt;br /&gt;
-Added doors for items that can become messy during work.&lt;/p&gt;
-
-&lt;h4 id=&quot;showcasing-inspiration&quot;&gt;Showcasing Inspiration&lt;/h4&gt;
-
-&lt;p&gt;Books, magazines, cards, and trinkets are items she wants to display.&lt;br /&gt;
-We envisioned open storage to keep them in sight.&lt;br /&gt;
-Having these items always visible aids in finding inspiration.&lt;/p&gt;
-
-&lt;h4 id=&quot;space&quot;&gt;Space&lt;/h4&gt;
-
-&lt;p&gt;A wider bench is better. I went for one that fills the wall. The tabletop is 50 cm deep, providing just enough space for a laptop.&lt;br /&gt;
-The front 20 cm of the tabletop can be folded down, making it more compact when not in use.&lt;/p&gt;
-
-&lt;h3 id=&quot;sourcing-materials&quot;&gt;Sourcing Materials&lt;/h3&gt;
-
-&lt;p&gt;Next, I bought wood based on the design. But here’s where I hit a snag: the wood was not as wide as I had planned. I decided to adjust the scale of the model instead of wasting materials.&lt;/p&gt;
-
-&lt;p&gt;…&lt;/p&gt;
-
-&lt;p&gt;And then, after buying it, came the big problem. How do I transport this wood? I don’t have a car and it won’t fit in a taxi… It’s too hot to carry it outside. I was in trouble.&lt;/p&gt;
-
-&lt;p&gt;But then, I found out that at the hardware store, they offer same-day delivery service that can be used in-store! I was saved by this same-day delivery service. I paid an additional delivery fee and everything was delivered to my house the next day&lt;/p&gt;
-
-&lt;h3 id=&quot;start-building&quot;&gt;Start Building&lt;/h3&gt;
-
-&lt;p&gt;Once the wood arrives, all that’s left is to build. I’ll continue building it just as I imagined. Here’s the progress so far…&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/inProgress.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Since the door did not turn out to be the size or model I had imagined, I had to retrofit it. I went back to the home center, Konan, for shopping, but it was too hot to carry the huge door on our bicycles. It would have been foolish to pay for shipping again…&lt;/p&gt;
-
-&lt;p&gt;At that moment, we found out that Konan offers a free rental of a light truck. It was the first time I learned that I could drive it with a regular license and a handle. Thanks to that, I was able to transport it smoothly.&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck2.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;…&lt;/p&gt;
-
-&lt;p&gt;I started building again. When I attached the door, I had more trouble than I expected with attaching the hinges. I referred to &lt;a href=&quot;https://magazine.cainz.com/article/81662&quot;&gt;this article&lt;/a&gt; for help.&lt;/p&gt;
-
-&lt;p&gt;For the finishing touch, I applied a coat of varnish. I made sure to ventilate the room properly even in the hot weather. I wore double masks in the room where there is no air conditioner in the room during the summer….&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/hotMan.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For finishing, I need measures against falling. It’s a big thing, so it’s essential. I planned to strengthen the legs in the model, but it was too much work to process… After thinking about it, I found this one piece at the home center and it solved the problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/legs.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Also, I added a back panel to eliminate lateral shaking.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/seita.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;completion&quot;&gt;Completion&lt;/h3&gt;
-
-&lt;p&gt;Finally, it’s done!&lt;/p&gt;
-
-&lt;div class=&quot;image-container_triple&quot;&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front2.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-  &lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/front3.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The foldable tabletop measures 180cm x 50cm, providing ample space.&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/tableWidth.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/faceToCamera.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The posture when standing is almost identical to our measurements, promising a comfortable art-making experience.&lt;/p&gt;
-
-&lt;div class=&quot;image-container_double&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/positionCheck.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg&quot; class=&quot;image_in_post_sm&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The tabletop also doubles as a door, hiding cables and providing a cleaner look.&lt;/p&gt;
-
-&lt;!-- insert image from builds.yml --&gt;
-&lt;div class=&quot;image-container_triple&quot;&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/foldedTableTop.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/mount.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;img src=&quot;https://storage.googleapis.com/daisukemiyazaki_website/builds/codes.jpeg&quot; class=&quot;image_in_post_sm&quot; onclick=&quot;openModalImage(this)&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So, what do you think? Why not use the resources and services around you to DIY something special as a gift?&lt;/p&gt;
-
-&lt;p&gt;Happy Building!&lt;/p&gt;
-
-&lt;script src=&quot;/assets/js/popup_build.js&quot;&gt;&lt;/script&gt;
-
-&lt;div id=&quot;myModal&quot; class=&quot;modal&quot;&gt;
-  &lt;span class=&quot;close&quot;&gt;&amp;times;&lt;/span&gt;
-  &lt;img class=&quot;modal-content&quot; id=&quot;img01&quot; /&gt;
-  &lt;div id=&quot;caption&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;/script&gt;&lt;/p&gt;
 </content>
 		</entry>
 	
 		<entry>
 			<title>新しい一歩</title>
-			<link href="http://mdaisuke.net/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9/"/>
-			<updated>2022-12-09T00:00:00+00:00</updated>
+			<link href="http://mdaisuke.net/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9.html"/>
+			<updated>2022-12-09T00:00:00+09:00</updated>
 			<id>http://mdaisuke.net/jp/2022/12/09/新しい一歩</id>
 			<content type="html">&lt;p&gt;Hello world!&lt;/p&gt;
 
@@ -874,8 +130,8 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 	
 		<entry>
 			<title>Going-Meta-In-The-MetaVerse</title>
-			<link href="http://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse/"/>
-			<updated>2022-12-09T00:00:00+00:00</updated>
+			<link href="http://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse.html"/>
+			<updated>2022-12-09T00:00:00+09:00</updated>
 			<id>http://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse</id>
 			<content type="html">&lt;p&gt;Hello world!&lt;/p&gt;
 
@@ -888,481 +144,9 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 		</entry>
 	
 		<entry>
-			<title>緑化のススメ</title>
-			<link href="http://mdaisuke.net/jp/2022/08/08/%E7%B7%91%E5%8C%96%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1/"/>
-			<updated>2022-08-08T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2022/08/08/緑化のススメ</id>
-			<content type="html">&lt;!-- an image of vegetables from the desk --&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/vegetable.JPG&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;div style=&quot;width:80%; margin:0 auto; text-align: center;&quot;&gt;書斎から&lt;/div&gt;
-
-&lt;h4 id=&quot;どうしてこれを書くのか&quot;&gt;どうしてこれを書くのか&lt;/h4&gt;
-
-&lt;p&gt;2020 年の末から、ベランダ園芸に身が入っている。「もう定年？」なんてジョークを言われたこともあるくらいである。はじめたきっかけは 2 つある。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;まず、緑が好きだから。たとえば緑豊かなレストランを通り過ぎるときや、野菜が並ぶホームセンターではどこか魅力を感じて、いつのまにか足を止めてしまう。ハイキングなどで森の中を歩くときも気持ちはいいもので、どこか気持ちが惹かれるのである。そこで手元で始めてみることにした、というわけである。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;かなり先の未来にこんなものがあったらいいな、と思いついたアイデアによるものである。その未来とは、多くの車が完全自立運転機能を搭載し実用化されたときのことを指す。一見まるで緑とは関係ないように思えるかもしれない。しかしそんな未来を想像すると、ある 1 つ決定的に変わると思われるものがある。&lt;br /&gt;&lt;br /&gt;それは、今ある駐車場のスペースは使われなくなることだ。なぜなら現在の車のうち、90%の時間は停車しているから。もし、停車しなくても他に使い道があれば(たとえば、ずっと車を回してタクシーとして使用するなど)、オーナーにとっても運転させ続けるほうが経済的に理にかなっているに違いない。そうするともちろん駐車場は使われなくなるので、余った土地を何かに有効活用したくなる。&lt;br /&gt;&lt;br /&gt;ではどのように使うのか？ここに、緑化に一票を入れたいという結論である。緑が増えた東京の街はもっと帰ってきたくなる都市になると思う。でも漠然と指す緑とは森林のような樹木を指すのか、庭園のようなものを指すのか、それとも農業用の畑を指すのか？活用の仕方もさまざまで、鑑賞するのか、それとも食用とするのか？まずは一緒に暮らすことで見えてくるのではないか、と考えた。&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;私は都心に住んでいるからこそ、どんな緑が欲しくなるのかというのは、自分で作って一緒に暮らすことによって初めて明らかになるものだと思う。所感をまとめ上げることで、他の人からも違う考えをもってもらったり、どんな緑と暮らしたくなるのかを想像する機会になってもらえればと思うのである。&lt;/p&gt;
-
-&lt;h4 id=&quot;1-年間くらい一緒に暮らしてみて気づいたこと&quot;&gt;1 年間くらい一緒に暮らしてみて気づいたこと&lt;/h4&gt;
-
-&lt;p&gt;というわけで何かと園芸を始めたのが去年の夏過ぎ、しばらく時間が経ったので、２つのきっかけを元に振り返りをしてみたい。1 つ目のきっかけ、ただ好きなのはそもそもどうしてなのか？いくつかそれらしい答えが見つかったので書き留めてみる。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;まず一緒に暮らしてみて大きく感じたこと、それは緑が目にもたらす優しい景色が家をさらに家らしくしてくれることであった。&lt;br /&gt;&lt;br /&gt;暑い夏、大きな樹木の木陰では涼をとれるし、喧騒の中に静けさをもたらしてくれる。窓越しに慣れ親しんだ緑にはどこか、戻ってきたくなるような気持ちを覚えるのだった。僕の部屋は西向きなので、昼過ぎになると日が差し込んでは影を作りだし、風に靡く様子もまた落ち着く。こうして緑は、自宅をより居心地の良いところにしてくれることに大きく役立っている。&lt;br /&gt;&lt;br /&gt;仕事柄よく在宅勤務をするようになり、自宅で過ごす時間もかなり増えている。カフェで仕事をしようと外に出向いてみても、結局は一番居心地が良いところを求めて家に戻ってくることが多い。また仕事でなくても、緑豊かなカフェに行くと自然と好感が湧くのも一層うなづけるし、モダンで大きな会社では緑が身近な場所にあることにも納得がいくのであった。&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;家にもたらしてくれる刺激の 1 つとしても、緑は大きな役に立っている。猫や犬と一緒に暮らすとわかるように、植物の習性も垣間見ることができるようになった。春先に公園に出向くと桜が満開になっていたり、秋の真っ只中に紅葉に色づいてく緑に気づくことに近しいと思う。&lt;br /&gt;&lt;br /&gt;一瞬止まっているように見える植物は、ただ人の時間軸で暮らしていない。毎日朝に水をあげるたびに、芽を出したり、色が変わったり、場所によって葉の先端が枯れ始めていたりする。いつのまにか大きくなって背を抜かしたり、茎に触れただけではっきりとわかるトマトや、鼻をくすぐるラベンダーやタイムの香り。五感に訴えるような体験は、デジタルなエンターテイメントに慣れた僕にとって新鮮だと感じる。&lt;br /&gt;&lt;br /&gt;また育て方にもよるが、新鮮な野菜を調達しては食べることしか味わえない体験でもある。ネギ、オレガノ、タイム、パセリ、ローズマリーといった香草系は虫もつかずよく育つ。また朝ごはんに欲しい、ちょっとした味噌汁の具材としても使えたりして、いちいち買い足さなくてもよくなる。必要な分だけを収穫して食べることができ、冷蔵庫のスペースも節約できる。&lt;br /&gt;&lt;br /&gt;さらにコンポスト用の苗を 1 つ作り、普段の食事で出た茶葉やコーヒーの殻やバナナの皮、野菜の皮などのゴミを土に住むシマミミズへ与えることで、肥沃な土に繋がる。普段はゴミとして捨てているものが、新しい命の始まりに回っている様子を見ることは楽しいものである。&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;最後に、僕 1 人でなく他の人からの意見ももらって気づいたことがあるので書き留めておく。僕はシェアハウスに住んでいて、いろんな仕事を持つ人と一緒に暮らしている。そのため皆の共通の話題というのは仕事の外にあり、多くの場合はイベントだったりこの地域の話だったり、食事だったりすることが多い。そんな中で園芸の話をしたり庭を見せたりすると、肯定的な意見を貰うことが多いのである。つまり職種の垣根を超えて、人は好感を覚えるんだなと肌感で思った。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;難しさ&quot;&gt;難しさ&lt;/h4&gt;
-
-&lt;p&gt;また一緒に暮らすことによって、気づいた難しさがあるのも事実であるから、これも一緒に書き留めておく。&lt;/p&gt;
-
-&lt;p&gt;以前、緑と本格的に住む前には「植物は苗に移して、あとは水をやるだけ」と思っていた。でも一緒に住んでみることでそれだけに収まらない難しさがあることに気づいたのでまとめてみる。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;日当たり&lt;/strong&gt;
-結局ほとんどの野菜は、室内の日当たりでは足りず直射日光が半日以上当たる環境にいる必要がある。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;十分な水やり&lt;/strong&gt;
-なんだかんだ毎日のように水をやるのは面倒になってしまうし、旅行などで長く家を外す時には友人に頼んだりする必要がある。体験としては水やりもいいけれど、保持には水やりの自動化を検討する必要があると思う。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;苗の大きさ選び&lt;/strong&gt;
-植物の大きさは苗の大きさによって決まる。高く成長することには強風が吹いたときに風を受け止める表面積が増加し、その結果倒されてしまうリスクが発生らしい。そのため、十分に大きい地面には相応の広さの根を張ってこれに備えるが、苗の大きさが頭打ちしているとその分高さも頭打ちする。結果、収穫量などに直結する。
-その反面で、ベランダで育てる苗の大きさにも限界があるし、移動させたり管理することが難しくなる。収穫量とメンテナンス、スペースの塩梅は探り探りである。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;収穫の絶対量&lt;/strong&gt;
-普段の食生活を支えるほどの野菜の収穫量には到底届かないことは、始めてから 3 か月も経てば明らかなことだった。だからこそ農家さんの作った農作物が、スーパーに行けば数百円で手に入る事実には、あらためて感謝を覚えるのであった。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;苗の中での多様性&lt;/strong&gt;
-例えばトマトとバジルは、お互いに過不足となる栄養素が補完関係にあるらしい。マメ科の植物は「根粒」という特殊な器官によって植物の五大栄養素のうち１つである窒素を、空気中から地下に固定する。キク科の植物は、たとえばセリ科に寄りやすい虫を退ける特性がある。異なる科目の植物を混植し、多様性を保つことで相互の成長を促進できる(ローズマリーなど、中には混植を避けた方がよい苗も存在するが)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;虫対策&lt;/strong&gt;
-アブラムシは大量に発生する。あっという間に増殖し植物を埋め尽くしては水分を取り除いてしまい、結果的に植物は枯れてしまう。農薬を使うか、地道にガムテープなどをつかってとっていくか。結果、飛ばないナミテントウという天敵生体を使う方法を実行した。結果アブラムシを駆除できた反面、高価であったり、一部ネットが必要になったりして場所の制約をうけてしまう。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;2-つめの観点について&quot;&gt;2 つめの観点について&lt;/h4&gt;
-
-&lt;p&gt;これまでの話から、緑と住むことのどんな側面に喜びや和みを覚えるのかがよりはっきりとしたし、またどんな課題が残るのかも明確になった。これらはこのような近未来のサービス実用化の考察にむけて、良い開始点になったと思う。これからも緑と暮らし続けることで視座を深め、夢のようなサービスに取り組むきっかけになればいいなあと思うのであった。&lt;/p&gt;
-
-&lt;h4 id=&quot;まとめ&quot;&gt;まとめ&lt;/h4&gt;
-
-&lt;p&gt;この投稿を読んで、少しでもベランダで菜園を始めてみようという気持ちに傾いてくれたら幸いである。まだまだ僕も初心者であるし、これからも知見を共有していきたいと思う。&lt;/p&gt;
-
-&lt;p&gt;東京はとても好きだけれど、今よりも緑が増えたこのまちはもっと良い街になると思う。自動運転が進んだ世の中で空いたスペースに緑が増え、また電動化が進むことで荒れ狂う内燃機関の音も少なくなり、より閑静化するであろう。東京をどんな街にしたいか？という質問はいわば真っ白のカンヴァスを手にするようなもの。緑はそのカンヴァスに、人の心の拠り所になるような色を与えてくれるに違いない。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;参考文献: &lt;a href=&quot;https://www.amazon.co.jp/gp/product/B07D4DD9K9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;amp;psc=1&quot;&gt;ベランダ菜園&lt;/a&gt;, &lt;a href=&quot;https://www.kinokuniya.co.jp/f/dsg-08-EK-0290191&quot;&gt;植物は＜知性＞をもっている ２０の感覚で思考する生命システム&lt;/a&gt;, &lt;a href=&quot;https://www.amazon.co.jp/dp/B07K13W24C/ref=dp-kindle-redirect?_encoding=UTF8&amp;amp;btkr=1&quot;&gt;樹木たちの知られざる生活 森林管理官が聴いた森の声 (ハヤカワ文庫 NF)&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Gapyear</title>
-			<link href="http://mdaisuke.net/jp/2022/05/06/%E3%82%AE%E3%83%A3%E3%83%83%E3%83%97%E3%82%A4%E3%83%A4%E3%83%BC/"/>
-			<updated>2022-05-06T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2022/05/06/ギャップイヤー</id>
-			<content type="html">&lt;h1 id=&quot;どうしてこれを書くのか&quot;&gt;どうしてこれを書くのか&lt;/h1&gt;
-
-&lt;p&gt;まず何よりも、私が初心に戻って振り返るため。また、当時(そしてきっと今も)前例が日本では少なかったし、当時ギャップイヤーを選択した人は周りに 1 人もいなかったため、キャリアの相談をすることできませんでした。そのためこの記事が、誰かの参考になればと思った次第です。&lt;/p&gt;
-
-&lt;p&gt;今は 2022 年 5 月。たった 4 年で時代は変わってしまったと肌感で思います。当時 2018 年、スーツを着て出社することが当たり前の時代だったけれど、今は(できる人は)在宅勤務が当たり前の時代。誰も話してなかったような脱炭素の話は、昨今では目新しい話ではなくなりました。例えば産業界では、米電気自動車のテスラ社はモデル 3 の量産地獄や空売り被害を受け数字的にも厳しかったけれど、今となってはトヨタの時価総額を超えるほどの会社へ成長しました。&lt;/p&gt;
-
-&lt;p&gt;当時私は物理の学位を取得したものの、今は web 開発を行なって生計を立てています。現職が少しずつ板につき、数年前と比べて見える景色も随分と変わりました。当時抱いていた疑問とそれに対する答えも、ある程度まとまったのでここに書き留めます。&lt;/p&gt;
-
-&lt;h1 id=&quot;そもそもギャップイヤーとは何か&quot;&gt;そもそもギャップイヤーとは何か&lt;/h1&gt;
-
-&lt;p&gt;学校を卒業してから 1 年間、自分の人生と向き合う時間をとることを指します。欧米では gap year と言葉は浸透しており、主に高校卒業あるいは大学卒業後に時間をとり、旅行をする人が多いです。例えば&lt;a href=&quot;https://www.youtube.com/watch?v=rR0v6UKbQPc&quot;&gt;こちら&lt;/a&gt;。特に政府などが決めているものではないのでどんな方法でも良いのが特徴です。行政上の立場はフリーターとなります。ざっと振り返ってみて、私にとっては将来にむけてスキルを構築する、という方針が主軸にあったと思います。&lt;/p&gt;
-
-&lt;h1 id=&quot;当時のモチベーション&quot;&gt;当時のモチベーション&lt;/h1&gt;
-
-&lt;p&gt;どうしてこの選択をしたのか、当時のモチベーションを箇条書きにしてみます。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;立ち止まって考えてごらん？&lt;/strong&gt;学校を卒業するまで、ずっと教育を受けることに専念します。それから働き始めてからの一生は定年を 60 歳とすると 40 年弱、そして老後。その間一度たりとして、働くことを世間から要求されても、「立ち止まって考えてみてごらん？」ということは誰からも言われません。人生のステージって 3 つしか用意されてないんでしょうか？&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;見極めてから仕事を探すべきでは？&lt;/strong&gt;日本の新卒採用では、大学の 4 年生のうち最も重要である最後の年に就職活動を行います。卒業するとすぐに新卒として、内定をもらった会社に入社します。特徴的なのは、会社がある程度候補者のポテンシャルを見て、社員を育ててくれることです。極端な話、例えば文学を勉強してから社会人になって IT エンジニアをやることだってできるのです。これは素晴らしい制度であり、「大学や大学院の専門が職務に必要となる」といった欧米では珍しい制度です。あまりしかしそもそも理系の場合は、就職活動をするタイミングが卒業論文を書くタイミングとぶつかります。3 年生までに積み上げてきた基礎的な学問をもってして、専門家の社会的な役割である「研究成果を出す」一番初めのトライアルに 100%時間を捧げられないことになります。&lt;/p&gt;
-
-    &lt;p&gt;高校生を卒業するタイミングで専門家として進みたい道が決まっているなら話は別ですが、そもそも学科で学んでいること自体が自分の興味と外れていく可能性だって十分にあり得えます。&lt;/p&gt;
-
-    &lt;p&gt;さらに大学に行くには理系の私立大学の場合、4 年間で 600 万円ほどかかります。そんな中で、学業をしながらも就職活動をするというのは教育というサービスを「支払って受けている」理に適っていないのではないでしょうか？&lt;/p&gt;
-
-    &lt;p&gt;まとめ直すと、こうなります。つまり大学の 4 年間は学業に専念し、卒業してから本当にその道が自分にあっていたかを見つめ直し、それから就職活動をすべきではないでしょうか。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;専門分野外で、勉強したいことや成果物として形に残したいものがあったから。&lt;/strong&gt; 2 の見極るにあたって、まとまった時間があるからこそできるところだと思います。私の場合は例として、本の上梓やプログラミングの勉強、気候変動問題への取り組みなど&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;ギャップイヤー終了時に経済的に独立していること。&lt;/strong&gt;尊敬する母親からの教えです。やりたいことをやるなら、親の脛をかじらずに自立してから。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;もちろんこれらは成功する保証はなかったけれども、以上の質問に答えてみたかったのです。両親にも説得をし、大学を卒業したら家から出て行け、というポリシーでしたが 1 年だけ家に留まれることに。&lt;/p&gt;
-
-&lt;p&gt;ではギャップイヤーが終わり社会人として丸 3 年間働いた今から見て、答え合わせをしてみましょう。&lt;/p&gt;
-
-&lt;h1 id=&quot;答え合わせ&quot;&gt;答え合わせ&lt;/h1&gt;
-
-&lt;h2 id=&quot;1-q-立ち止まってごらん&quot;&gt;1. Q. 立ち止まってごらん？&lt;/h2&gt;
-
-&lt;p&gt;A. 立ち止まって正解でした。私の場合この 1 年は、2 の「仕事の見極め」につながるように、うまく社会人生活を過ごせるような準備期間としての色が強かったです。「うまく社会人生活」一つ定義するだけで千差万別ですが、給与、私生活とのバランス、仕事内容、会社内の文化にハマるか否か、性格との一致、俯瞰してみた時の仕事の社会的な役割、名声、キャリアの伸びしろ、市場での需要など、図る物差しには順不同で枚挙にいとまがありません。特にミレニアル世代に生まれたからなのか、「俯瞰してみた時の社会的な役割」や「世界へのインパクト」などといった大義名分に駆られやすい私にとって、立ち止まって向き合う時間があったからこそ、それ以外で自分に合うものさしを発見できたのだと思います。&lt;/p&gt;
-
-&lt;p&gt;その後 3 年間働いたことで得られることもたくさんありました。ギャップイヤーの経験があったからこそ、いずれまとまった時間を取ったときにもまた勝手がわかると思います。「学生」「社会人」「老後」に限らず選択があることは間違いないと自負できます。&lt;/p&gt;
-
-&lt;h2 id=&quot;2q-見極めてから仕事を探すべきでは&quot;&gt;2.Q. 見極めてから仕事を探すべきでは？&lt;/h2&gt;
-
-&lt;p&gt;A. 半分正解で半分間違っていました。
-正しかったのは物理学を生かしたキャリアを選択するのではなく、「エンジニアリング」をキャリアとして選択したことです。これは研究職などの理論物理学から一般的に進んだ人キャリアとは異なります。(理由は範囲外になるので、本記事では割愛します)&lt;/p&gt;
-
-&lt;p&gt;間違っていたのは、エンジニアリングという仕事を選択肢として、ある目標を叶えようとした期待値の設定でした。これは「ある問題を解決するため」に「xx をやる」という考え方によります。現実的には思っていた通りには行かなかなかったのです。具体的に「気候変動問題を解決する」ために「エンジニアとして電気自動車を作る」でしたが、職についたものの 1 年半で転職することとなりました。目指したかった方向性と仕事でこなす日々の TODO が乖離していたことが原因でした。読み飛ばしてもらっても構いません。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;電動化を推し進めるべく電気自動車の開発に携わりたかったものの、当時派遣の立場だったのが理由なのか、仕事に就くには求められるのは数年をこなした技術者で、ジュニアのポジションにチャンスはありませんでした。あったのは体制が整った内燃機関関連の仕事のみでした。つまり自社製品の開発となってもリソースとして最先端を割きたい分、新卒にはチャンスは回ってこないのでしょうか。経験がなければ、若い闘志を燃やせる、ほどの環境が揃っていなかったとも言えます。2. 石油や石炭、天然ガスを回すインフラ（ガソリンスタンドやロジスティックス、企業間の付き合い）、内燃機関輸送物（車、トラックなど）を作る工場や雇用（とくに技術職）によって何十億以上という規模で経済が循環していることが理由なのかもしれません。3. 新人につくメンターなどを整えながら教育していく体制も、同じように整っていないのかもしれません。4. 工場勤務や R＆D センターは郊外に位置することが多く、勤務地に居住区が縛られることによって都会での生活を犠牲にせざるを得ません。一部の自動車会社は都内に拠点もありますが、エンジニアリングに携わるとなると郊外に飛ぶ可能性が高いです。多様な人材を採用したい企業にとっては都心部にオフィスを構えたり、在宅ワークなどを徹底して誘致すべきだと思います。気候変動についてもっと柔軟に考えるきっかけになりましたが、それ以降の話は別記事で扱います。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;この方向性で仕事を通してかかわっていくならば、大学(そしておそらく大学院などを修了して)でまたモーターやバッテリー工学を専門に勉強しなおしたりする必要があったのかもしれません。しかし経済的独立という観点と当たってしまったので断念せざるを得ませんでした。しかし方向性は違えど、現職も「エンジニア」としてのキャリアがあるのは、この時の決断があったからだと思います。&lt;/p&gt;
-
-&lt;h2 id=&quot;3-専門分野外で勉強したいことや成果物として形に残したいものがあったから&quot;&gt;3. 専門分野外で、勉強したいことや成果物として形に残したいものがあったから&lt;/h2&gt;
-
-&lt;p&gt;まず物理を学修した時には、この道の専門家としての仕事には関心がない、と気づいていました。&lt;/p&gt;
-
-&lt;p&gt;学生時代は物理の他に英語の勉強に夢中になっており、海外から来た人との異文化交流などの時間も徐々に増え、卒業する頃にはいつの間にか英語が生活の中に溶け込んでいました。(そして今年、アメリカ人の女性と結婚してしまったまでです)&lt;/p&gt;
-
-&lt;p&gt;「日本人は英語が話せない」とよく言われる中で、上達するにつれて、ひとりでも多くの人が英語が話せるようにできることはないかと少しずつ考えるようになりました。「どうして英語が話せるの？」とか「英語を教えてほしい」と聞かれることが多くなったからです。こんな本があるからぜひ読んでみて、と一冊に全てを詰められてたらどうかと大学を卒業する前くらいから考え始めていました。そして 3 月の卒業からまるまる 5 ヶ月後の 8 月下旬までに原稿を書き上げ、このレベルまで至ったイロハを全て詰めた&lt;a href=&quot;https://mdaisuke.net/jp/2018/08/30/%E6%8B%99%E6%9B%B8/&quot;&gt;本を amazon 上で上梓しました&lt;/a&gt;。まだ学校を卒業したばかりでスキルは少なかったので、まずは形にすることが先決しました。(必要だったのは時間と体力のみで、Amazon では出版にお金がかからないため。)&lt;/p&gt;
-
-&lt;p&gt;書いたら売れて経済的に独立できる世界線だと安直に思っていましたが。けれど大間違いで、例えば本は書いてから数を売り切ることもまた苦労すると学びました。もちろん、ギャップイヤー中に行った就職活動では他の人との差別化に大きく関与しましたし、とりあえず形にすることで得られる視座があったのは間違いないですが。&lt;/p&gt;
-
-&lt;p&gt;また、ギャップイヤーがはじまったときから英語を教える前線に立ってみたく塾講師のアルバイトもしてみました。熱意とは別に、実際に続けれるのか、向き不向きなどを試してみたかったからです。振り返ってみれば、アルバイトの中でこの仕事は 1 番自分に合っていて、この道で進み続ける世界線も十分にあったと思います。&lt;/p&gt;
-
-&lt;p&gt;英語とは別ですが、学生 1 年生のときから関心があった気候変動問題にも動きがありました。4 月下旬ごろ、たまたま電気自動車の会社 Tesla の日本法人で営業職インターンのポジションに応募がかかっていたのです。これは舞い降りてきたチャンスだと思って「業種は選ばず仕事さえできれば」と熱意だけで応募しましたが、最後まで辿り着けず落ちてしまいました。&lt;/p&gt;
-
-&lt;p&gt;こうしていくつか挑戦していても、どれも芳しい結果がついてくるわけでもなければ、経済的独立や「うまい社会人生活」を考慮して挑戦し続けられるだけの勢いがあったわけではありませんでした。語学以外にも、結果何かしらスキルがないとやって行けないのだろうと考えました。そこで&lt;a href=&quot;https://www.amazon.co.jp/dp/B07BKVP9QY/ref=dp-kindle-redirect?_encoding=UTF8&amp;amp;btkr=1&quot;&gt;「独学プログラマー」&lt;/a&gt;という本を手に取ってプログラミングを学び始めつつ、wordpress などでブログを作ってみたりしました(興味関心のあったサステイナブル系のネタを扱ってみたり)。結果、ギャップイヤー後ですがサイトは自分でソースコードを書いて移行し、偶然なのかこれが前職のきっかけになったりしています。&lt;/p&gt;
-
-&lt;p&gt;英語の話や気候変動に対する熱、プログラミングには共通項があまりないですが、1 つだけ言えることがあります。それは将来にむけてスキルを構築する、という方針がギャップイヤーの主軸にあったからこそ、後々の人生まで読めない中で勢いよく、後先考えず思い切って試行錯誤を繰り返すことができたこと。これは学生をやった後にとるギャップイヤーの強みの一つでしょう。&lt;/p&gt;
-
-&lt;p&gt;1 つ受けよりですが、スキルを伸ばすにあたって大きく参考になる引用があります。Tesla のオートパイロットチームで有名な Andrej Karpathy さんの言葉です。一部の界隈では有名なエンジニアであり機械学習をアカデミック界のみならず産業界でも強く牽引しています。以下&lt;a href=&quot;https://twitter.com/karpathy/status/1325154823856033793?s=20&amp;amp;t=JKgd9wNeGDhcqK6RQyLbJQ&quot;&gt;引用&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;How to become expert at thing:
-1 iteratively take on concrete projects and accomplish them depth wise, learning “on demand” (ie don’t learn bottom up breadth wise)
-2 teach/summarize everything you learn in your own words
-3 only compare yourself to younger you, never to others&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;訳すと以下のようになります。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;物事の専門家になるには
-1 具体的なプロジェクトを繰り返し行い「オンデマンド」で学びながら、深さ方向に進める（つまり幅方向にボトムアップで学ばない）。
-2 学んだことはすべて自分の言葉で教える／要約する。
-3 自分と比較するのは若いうちだけで、決して他人と比較してはならない&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;上で述べた試行錯誤をしている中でメンターがいないので、こういった指針は大きく参考になります。また 3 つのステップまでやってみてから振り返ることで、ある程度の見切りをつけることにも役立つと思います。&lt;/p&gt;
-
-&lt;p&gt;仕事も英語と同じように技術職なので、同じ手順を踏むことでより深いスキルが身につくことでしょう。これからは技術的な話題も、このサイトで取り扱っていきたいと思います。&lt;/p&gt;
-
-&lt;h2 id=&quot;4-経済的自立&quot;&gt;4. 経済的自立&lt;/h2&gt;
-
-&lt;p&gt;これは達成されました。経済的独立を最優先順位の目標として置いておいてよかったと思います。自立なしに二の次を言うな、という考え方は適切であったし、事業をする立場でもの、サービスの経済的側面を忘れざるべからずと自分への戒めになります。テスラへの応募を除き、本格的な就職活動は本の執筆が終わってから売れ行きや自分の動機、また塾講師での仕事などを吟味してから始めました。運が良かったことに、1 ヶ月強後の 10 月末には新卒としての内定を取得しました。企業は五万とあり、必ず採用口は見つかると思います。ポテンシャル採用の素晴らしいところとして、社会人 1 年目からその業界で仕事(または教育を受けながら)することができますので、これは活用しない手はありません。&lt;/p&gt;
-
-&lt;h1 id=&quot;振り返ってみてやっておいたらよかったと思ったこと&quot;&gt;振り返ってみて、やっておいたらよかったと思ったこと&lt;/h1&gt;
-
-&lt;p&gt;もし当時の自分と話せたら何をいうか、振り返っておきます。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;業界に関係なく、github の使い方を学んでおくべきでした。さまざまな使い道があるので、今後他の記事で取り扱おうと思います。&lt;/li&gt;
-  &lt;li&gt;もっと技術書に頼って理論などを勉強するのではなく、作ってみて手を動かすこと。仕事でも結局インターネットでぶつ切りの情報を取って活用できるようになるまでに、体系立った基礎知識(仕事で使えるようになるまでの)を身につけなければいけませんが、これには本が 1 番良いと思います。&lt;/li&gt;
-  &lt;li&gt;google 検索して質問の答えを探す練習。万事ものの効率が違いますし、検索もある種のスキルとして練習しておくと良いです。&lt;/li&gt;
-  &lt;li&gt;公私共に、技術やスキルなどよりも人との巡り合わせほど支配的な要素はないと、リマインドしておきたいです。&lt;/li&gt;
-  &lt;li&gt;石の上に三年いても石のまま、環境を変えることは悪いことではありません。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;総じてギャップイヤーを通してやっておいて良かったこと&quot;&gt;総じて、ギャップイヤーを通してやっておいて良かったこと&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;特に執筆した経験。自分の言葉で噛み砕くことでより深く使える知識が身につき、公私共にいろんなものに通じる基礎訓練になったと思います。&lt;/li&gt;
-  &lt;li&gt;日々思っていることを書いて整理し、向き合うこと。自分を成長の比較対象にする時に大きく役立ちます。私は日記を活用してうまくいっていること、ないことを振り返っていました。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;これから&quot;&gt;これから&lt;/h1&gt;
-
-&lt;p&gt;長くまで読んでいただきありがとうございました。ギャップイヤーを通して、一見世間からは必要とされないような小さな試行錯誤から、専門性の磨き方、失敗との向き合い方、自分にあったキャリアの考え方、公私双方で大切なことの発見、世間の大筋から外れることで起きた発見など、幅広く経験できたと思います。ギャップイヤーを取ることがもっと当たり前になってほしいし、他の経歴を辿った人がどのようなギャップイヤーを送るのか、ぜひともみてみたいと願ってやみません。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Belongings</title>
-			<link href="http://mdaisuke.net/jp/2021/05/12/%E6%8C%81%E3%81%A1%E7%89%A9/"/>
-			<updated>2021-05-12T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2021/05/12/持ち物</id>
-			<content type="html">&lt;p&gt;&lt;a href=&quot;https://konmari.jp/&quot;&gt;近藤麻理恵さんの、ときめく片付けの魔法&lt;/a&gt;を読んで。&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;　&lt;strong&gt;旅&lt;/strong&gt;に出掛けるとき、人は何を想うのだろうか。未知なる場所へ足を運び、食べたことのない食材を口にして、その土地の歴史や文化に触れ合う。新しい発見が待っているかもしれないし、今までの自分の足跡を振り返ったりできるかもしれない。&lt;/p&gt;
-
-&lt;p&gt;　遠出するときには、着たいものや趣味で用いる道具を選び、スーツケースに想像力や心が赴くままにものを詰めるだろう。近くに出かける時も、そう。最低限のものでも、お出かけをより快適なものにするために支度する。&lt;/p&gt;
-
-&lt;p&gt;　そんなあなたの持ち物は生身のあなたを最も側で手助けしてくれる。ずっと側で、旅のお供として。そう、持ち物はあなたの役に立ちたいと思っている。&lt;/p&gt;
-
-&lt;p&gt;　こだわり抜いた、楽しみが詰まった持ち物を横に添えて、旅路を堪能する。これには何にも変えがたいワクワクがあり、心が踊るのを感じるのではなかろうか。旅路に出かける朝は、起きることが楽しみで仕方がない、そんな経験を幾度となくしたことはないだろうか。&lt;/p&gt;
-
-&lt;p&gt;　さあふと、あなたの身の回りのものを見渡してほしい。出先なら、今自分が着ている服、スマホのカバーケース、また持ち歩いているバッグ。家にいるなら、今住んでいる場所、大切な人からもらったTシャツ、お気に入りのキーホルダーや思い出の詰まったペンケース。&lt;/p&gt;
-
-&lt;p&gt;　これらと全ての持ち物とあなたの間には、何かしらの形で交わるこれまでの物語や逸話があるのではないか。そう、今まさに紛れもなくそのものがあるという事実は、今までの物語だったり、これまでのあなたの足跡を映し出している。&lt;/p&gt;
-
-&lt;p&gt;　ものは、あなたと一緒に生きている。部屋を整えて、時めくものと向き合い、丁寧に手入れをしてあげよう。ものは多ければ多いほど、一つ一つのものと向き合う時間は減ってしまう。今そこにあるものがある以上、それらが埃をかぶらないように手入れをするということは、自分に大切に向き合うことと同じだ。&lt;/p&gt;
-
-&lt;p&gt;　そしてこの瞬間にも、持ち物の一つ一つはあなたの役に立ちたいと思っていることは変わらない。あなたがボロボロになれているときも、幸せに眠れるときも、いつ何時だってものはあなたの側にいる。&lt;/p&gt;
-
-&lt;p&gt;　人は流動的なもので、あなたの趣味嗜好や人間関係は、あなた自身の変化や外の環境の変化（仕事や住む場所など）で常に変わりゆくものである。これに応じて持ち物も変わるし、ときめくものも変わって当然だ。時たまに振り返って自分を見つめ直すように、定期的に持ち物に向き合ってはその様子を伺い、手入れをしてあげよう。&lt;/p&gt;
-
-&lt;p&gt;　形から入ると言葉があるように、気分を一新するために、新しいものを買うこともある。同じように、すでに必要無くなったものや心のときめかないものがあれば、それを手放すこともできる。&lt;/p&gt;
-
-&lt;p&gt;　ものを手放したとき、心に余白が生まれ、開放感や寂寥感が募るはずだ。心地よかったり、心が軽くなることもあれば、何か足りないと感じたり落ち着かない、物惜しいと思うこともある。どちらにせよ、その気持ちを気づき、観察することには意味がある。なぜならその心の機微を認知できること、認知していることは、心でもって行動するために大切な過程であるから。&lt;/p&gt;
-
-&lt;p&gt;　余白が生まれたら、そこから何ができるか、先を考えることができる。そのまま余白に浸ることが心地良いのであれば余白を残したままにしても良いし、なにか新しいことにうつっても良い。&lt;/p&gt;
-
-&lt;p&gt;　街の中に溢れるほどある中で選び抜かれ手元に残った、表現となる洋服。電気エネルギーを瞬時に温水にするケトル。プロの音楽家に演奏してもらう代わりに、いつでもどこでも耳元へ音楽を届けるスマートフォン。尽きることなくあなたの興味をそそる動画配信サービス。これらは全て、あなたの生活を豊かにする。&lt;/p&gt;
-
-&lt;p&gt;　私たちは、高度に発達した技術が大衆化した文明に生きている。より安く、早く、便利なものやサービスが手に入る時代の中で、ものやサービスは日常に溢れかえっている。ものやサービスに囲まれる豊さとも言っても良く、昔よりもはるかに豊かになった。&lt;/p&gt;
-
-&lt;p&gt;　その反面で、心の余白は消されつつもある。まちを埋める陳列した商品や電車で何気なく目にとまる広告から、ポケットに潜む無限に洗練された電脳世界の誘惑まで。身の回りのもの全てが、常に僕たちを魅惑して離さない。それでは果たして、心の余白は、ものやサービスに囲まれる豊かさに消しさられてしまうのだろうか？それとも、物やサービスに囲まれる豊かさと共存するのだろうか？&lt;/p&gt;
-
-&lt;p&gt;　ものを生み出す動機は、より便利で、より暮らしやすく、より豊かな生活を送ることにあった。そんなとき心は先にあり、ものは後にあった。きっとそのころからすでに、ものに心を寄せたり奪われることもあったのだろう。ものと人々は付かず離れずな生活を送ってきたに違いない。最初の文明から、ものと生身の人を合わせて文明人をみるようになったと言ってもいいだろう。&lt;/p&gt;
-
-&lt;p&gt;　ものを手足のように動かし、操ることができるとき、生身の人間1人は正味で幅広く、多くをこなせるようになる。本来、ものを使うことで人は進化した。石や毛皮を使うころからものを積み上げては進化を続け、いつしか人間は自身の労働を置き換えることのできるものすらを生み出した。計算機の黎明期は終わり、その力が個人一人一人の手に分散された世の中では今、&lt;a href=&quot;https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched&quot;&gt;私たちは1人1人がサイボーグとしてすら生きている。&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;　ものに大切に向き合い、心で動くこと覚えてから、昔よりも余白と、ものやサービスが囲む豊かさが共存するところをもっと見つけられるようになったと思う。それは行き過ぎたミニマリズムでも、常に消費購買欲に駆られるような状態でもない。その塩梅は誰かが答えを教えてくれるものでもなく、長い目でみて自分1人で見つけるものであると思う。&lt;/p&gt;
-
-&lt;p&gt;　昔から、心を掴むこと、あるいは奪うことは誰かの利益になった。今は昔よりも、その利益を追いかける競争力は一方方向に加速し続けることをやめない。今、スマートフォンをはじめとしたIoTは少しずつ人の心を知るようになっている。魔法の一部となったスマートフォンやサービスはむしろ、すでにあなたの無意識にまで入り込み、あなたの心を奪う。&lt;/p&gt;
-
-&lt;p&gt;　世の中がそう変わっていくからこそ、この塩梅は自分1人で見つけるものなんだと認知することはかけがえのない心構えを生むと思う。世の中がそう変わっていくからこそ、自分の心に敏感に気づき、自らで心の変化を認知したいと思う。自分の心がなんというのか、心に耳を傾ける癖をつけてたいと思う。そして心でもって、持ち物に向き合う癖をつけたいと思う。&lt;/p&gt;
-
-&lt;p&gt;　なぜなら、「もの」以前に「心」こそ、あなたのものだから。その機微に耳を傾ける癖をつけなければ、余白は、心は、あっというまに埋め尽くされてしまうだろう。忙しいとは、心が無くなると書くのだから。ものと大切に向き合うことは、その大きな道しるべになるに違いない。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Belongings</title>
-			<link href="http://mdaisuke.net/en/2021/05/12/belongings/"/>
-			<updated>2021-05-12T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/en/2021/05/12/belongings</id>
-			<content type="html">&lt;p&gt;After reading &lt;a href=&quot;https://konmari.jp/&quot;&gt;The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing&lt;/a&gt; from Marie Kondo.&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;When embarking on a journey, what do people think about? Visiting unknown places, eating cuisines that they have never tasted, and getting in touch with histories and cultures of the place. They may discover something new, or be able to reflect on their footsteps in their life.&lt;/p&gt;
-
-&lt;p&gt;When outing afar, you would get ready as your imagination and heart guide: choosing what to wear and what to use for your hobby, and putting them in your suitcase. For just a small stroll alone, it’s the same. You prepare well to make the trip comfortable.&lt;/p&gt;
-
-&lt;p&gt;Such items help you right by your side, all along with your journey as your company. Yes, your items want to be helpful to you.&lt;/p&gt;
-
-&lt;p&gt;Savoring the journey with the items selected with care and joy, excites you. You must feel your heart dancing. In the morning of a journey, you can’t help but to feel excited to wake up – you must have experienced something like this over and over again.&lt;/p&gt;
-
-&lt;p&gt;Now, have a look around. If outside, it’s your clothes, cover case of the smart phone, and bag. If at home, it’s your decor, important T-shirt that your significant other gave to you, and favorite key holder and pen case with fond memories.&lt;/p&gt;
-
-&lt;p&gt;You must have unique stories and anecdotes that are interwoven between you and them. The fact that they exist there right by your side prove that you have such relationship with them.&lt;/p&gt;
-
-&lt;p&gt;Your items and you live together. Why not sorting out your room, facing with items that bring you spark-joy, and taking care of them? The more items you have, the time you can spend with each shortens. As long as they are there, taking care of them from dusts is same as treating yourself right.&lt;/p&gt;
-
-&lt;p&gt;And this moment, your items – each one of them – wants to be helpful to you. Whenever you are feeling from stressed out to tired after a long day, your items always stay by your side.&lt;/p&gt;
-
-&lt;p&gt;People are dynamic; your preferences and relationships would always change as your jobs, environment, and even yourself change. As this happens, naturally, what brings you spark-joy also changes. As people occasionally reflect on themselves, sometimes let yourself scrutinize and take care of your belongings.&lt;/p&gt;
-
-&lt;p&gt;To start over with the outlook as Japanese says, one may buy new items to completely refresh the mind. Likewise, it’s possible to let go unnecessary items that don’t bring you any spark joy.&lt;/p&gt;
-
-&lt;p&gt;When releasing your items, it should create some mental space and make you feel refreshed or reminiscent. You may feel comfortable, mentally uncluttered, or missing out, agitated. Either way, it’s meaningful to be aware of your emotions and to observe them. Because that is an important process that guides you to behave as your heart drives.&lt;/p&gt;
-
-&lt;p&gt;Once you have the mental space, you can start planing what to do from there on. If leaving yourself in the mental space is comfortable, it’s alright to do so. Or, you could get on to something new too.&lt;/p&gt;
-
-&lt;p&gt;Clothings that were chosen to be yours in the ocean of items out there, express you. Kettles that change electric energy to hot water in a couple of minutes; Smart phones that deliver music to your ear anytime and anywhere, instead of having professional musicians play; Video services that interest you restlessly; they all enrich your life.&lt;/p&gt;
-
-&lt;p&gt;We live in the civilization where advanced technologies are democratized. The cheaper, faster, and more convenient products and services are ever available to everybody than before; our day-to-day is filled with them and itself is the wealth that we all share.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, mental spaces are disappearing from everybody. From advertisements that catch your eyes here and there, to the magical Internet temptation that sits in your pocket; everything around you does not stop drawing you to temptation at any time. So the question I’d like to pose is; does the mental space get to be erased by the wealth of items and services, or does it co-exist?&lt;/p&gt;
-
-&lt;p&gt;The motivation to create stuff lies in to embody a more convenient, easier, and richer lifestyle. Under this situation, our heart and passion comes ahead of materialistic objects. Probably since then, people started to grow a sense of attachment to or being drowned in the belongings as a result of the creation. Humans and items must have been living together since the born of the first civilization, so it can be said that we see citizens as bare humans and items combined.&lt;/p&gt;
-
-&lt;p&gt;When you can handle materialistic object like your limbs freely, humans can do a lot more. Originally, humans have evolved by using them – from the time with stones and furs, we’ve been accumulating and sophisticating items and eventually, we invented something that can do our work on behalf of us. As the beginning of computation era ends, its power distributed to individuals; as a result, &lt;a href=&quot;https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched&quot;&gt;we live as cyborgs&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;As I started taking care of my items and listening to how my heart drives, I’ve gotten to find the balance more at which the mental space and the wealth with items and services co-exist; that is, it’s a state of neither extreme minimalism nor extreme materialism. How to discover it is not something you’ll be told; instead, it may be something that each person needs to find on their own.&lt;/p&gt;
-
-&lt;p&gt;Since long time ago, grabbing attention has been beneficial for people. Now the driving force of competition to seek the benefit keeps accelerating. IoT devices like smart phones started to get to know your minds, and part of smart phones and services that have become magic have dissolved in your unconsciousness, sometimes nudging your mind.&lt;/p&gt;
-
-&lt;p&gt;Because the world is going to change, this awareness that it’s an active act of discovering the balance will bring you a priceless mindset. Because the world is going to change, I want to recognize the changes of my mind with this mindset. I want to build a habit of listening to what my heart says and take care of my belongings with heart.&lt;/p&gt;
-
-&lt;p&gt;Because before any other of your belongings, it is the heart that is yours. If you don’t recognize its change, the peace of your mind – your heart – will probably be occupied immediately. Coincidentally in Japanese Chinese characters, being busy is written as ‘loosing heart’. Taking care of your belongings with heart will be your excellent guidance.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Tokyo</title>
-			<link href="http://mdaisuke.net/jp/2020/11/23/%E6%9D%B1%E4%BA%AC/"/>
-			<updated>2020-11-23T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2020/11/23/東京</id>
-			<content type="html">&lt;p&gt;　東京には色がない。冷凍都市と、名付けた人の声を聞いたことがある。黒や灰、白に囲まれている、そう、冷たく、色がないことに気づくのだ。目の前や足下をみてみれば、自分もその色気のなさに紛れているような気がしなくもない。近頃、&lt;a href=&quot;https://mdaisuke.net/blog/2020/09/20/Sustainability&quot;&gt;レンズ越し&lt;/a&gt;の僕の日常は、黒や灰、白に囲まれていた。&lt;/p&gt;
-
-&lt;p&gt;　しかし少し距離をとってみて気づいた。地図を少し高いところからみてみれば、どれだけの緑や青がこの町を囲んでいるかに。ひとまず夕焼け雲を見上げれば、どれだけ空が暖色に包まれているのかに。&lt;/p&gt;
-
-&lt;p&gt;　そして彩色豊かな食文化。現物、原材料は小さな形に姿を変えて、遥か向こうの島から旅をしてきた。ここは美食の街でもある。&lt;/p&gt;
-
-&lt;p&gt;　訪れる四季は、これらの源になっているような気がする。街の至るところに色を散りばめ、緑を養っては色付け、人を纏う丈や色を変える。季節が呼吸するとき、街と人は一緒に呼吸するのだ。&lt;/p&gt;
-
-&lt;p&gt;　多様性があり、賑やかで、心躍るようなイベントの数々を作り出す。十人十色の息吹は、吹き止むことを知らない。&lt;/p&gt;
-
-&lt;p&gt;.
-.
-.&lt;/p&gt;
-
-&lt;p&gt;　さあ、夜がきた。月が朧げに雲に隠れ、赤く光る高層ビルの先端が脈を打つ。昼夜と時が変わった時、至る所に散りばめられた色は静かに姿を消す。押し返す、黒い人の波。&lt;/p&gt;
-
-&lt;p&gt;　ひっそりとした静けさと、景色が変わる有り様は四季や太陽にだけ支えられているのではない。&lt;a href=&quot;https://mdaisuke.net/blog/2020/04/04/RiseAndFall&quot;&gt;集団叡智と歴史の最新技術の集まったサイバーコネクティブ&lt;/a&gt;は、日々の業務に勤しんでいる。1千万を超える人による労力の結晶が、今ある東京の姿を映し出すのだ。&lt;/p&gt;
-
-&lt;p&gt;　乱立する大きな建物に宿る光は何でできている？あかりを灯している源は、何なのか？はたして遠くに見える綺麗な光は、宿で一息をつく柔らかな光なのか。はたまた、明朝まで終わりのこないため息に混じった、途方もない苦労の光か。&lt;/p&gt;
-
-&lt;p&gt;　目の前の静けさはその、数えきれない人の動きによって生み出された見せかけの静けさなのかもしれない。つまり平衡状態である。水の入ったグラスは、液相の表面で小さな水分子が表面から飛び出しては気体に変わり、気体の水分子は液体へと変わる。それでいて、僕たちには液体は静かに止まって見える、そうこれも、分子の状態が平衡しているからだ。&lt;/p&gt;
-
-&lt;p&gt;　一人一人は、この分子のように動き回り、時に激しく摩耗し尽くす。そして一人が一度脚を止めても、全体の様子は変わるわけではない。&lt;/p&gt;
-
-&lt;p&gt;　しかしもしも一人ではなく多くが脚を止めても、全体の平衡は変わらないのだろうか。いやきっと変わるに違いないのだ、そう今年、パンデミックを経験した街はその一片を垣間見たことを、僕たちはよく知ってる。&lt;/p&gt;
-
-&lt;p&gt;.
-.
-.&lt;/p&gt;
-
-&lt;p&gt;　僕はそんな中で、ひとと暮らしが重なる場所にきた。少し前までしていた1人暮らしは、今の僕には向かなかった。ここでは、もはや今では古典的となってしまった付き合いー隣人との交友ーがある。一つ屋根の下、同じ窯の飯を食う。暮らしは人との中にある。人がいてはじめて、暮らしは何倍にもその色の濃さを増すことに気付く。&lt;/p&gt;
-
-&lt;p&gt;　小さな画面に目を向ける人の有り様は、もう当たり前の光景になった。&lt;a href=&quot;https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched&quot;&gt;革命を迎えた世界&lt;/a&gt;に住む僕たちの新しい日常。ビッグバンから今までの137億年の歴史を1年間に収めたら、この暮らしは12月31日23時59分59.9秒後の世界でしかないのにもかかわらず。&lt;/p&gt;
-
-&lt;p&gt;　御時世的に、家で画面を見つめ仕事に励む人もよく見る。魔法の世界に住む代償に、いつのまにか画面の中にある世界を見過ぎるようになった。自国の国政よりも気づけば海の向こうで分断の進む有り様を、万人がこぞってしきりに注目する世の中になった。&lt;/p&gt;
-
-&lt;p&gt;　しかし僕は越してきて、画面の世界よりも、ありのままの目の前の日常に目を向けることが増えたような気がする。&lt;/p&gt;
-
-&lt;p&gt;.
-.
-.&lt;/p&gt;
-
-&lt;p&gt;　ある夜、住人と星を見ることになった。&lt;a href=&quot;https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched&quot;&gt;魔法使い&lt;/a&gt;の1人が言ったのだ、今夜は獅子座流星が見えると。寒い中で屋外で横に並び、みなで夜空を見つめはじめた。静寂と共に目が慣れてくると、大きな漆黒の中に無数の点が現れた。&lt;/p&gt;
-
-&lt;p&gt;　流れ星が、僕たちの視界を横切った。瞬く間に。高揚が皆を包んだ。一体となって見る流れ星には、人をつなげる特別な力があると感じた。一度流れ星を見つけるとそのまま、「もう一度！もう一度見たい！」と言わんばかりに、僕たちは星空から目を離さなかった。その時初めてスクリーン以外の何かを、心を込めてじっと見つめたような気がした。&lt;/p&gt;
-
-&lt;p&gt;　ふと思った。もしビルの天井も電車の天井も何もかも透明なら、都市の人は皆、空を見上げるのだろうか？魔法の世界や平衡の世界に踊らされるのではなく、その一瞬を共有したい、そんな気持ちになるのだろうか？&lt;/p&gt;
-
-&lt;p&gt;.
-.
-.&lt;/p&gt;
-
-&lt;p&gt;　公園から聞こえる子供の声で、眠りが覚めた。またこの街に、朝がやってきた。今日は今日の風が吹く。
-こんな僕たちも、ただ静かな平衡の中にあるだけ。そう、ただそんな暮らしがあるだけだ。でもここには、そんな暮らしがある。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Tokyo</title>
-			<link href="http://mdaisuke.net/en/2020/11/23/tokyo/"/>
-			<updated>2020-11-23T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/en/2020/11/23/tokyo</id>
-			<content type="html">&lt;p&gt;Tokyo is colorless: A frozen city, said one that named after this city as I have heard of. Black, grey and white cover the city: yes, I’ve come to find it cold and colorless. Looking around the city and upon my foot, I have probably become part of the crowd as well. Recently my days over &lt;a href=&quot;https://mdaisuke.net/blog/2020/09/20/Sustainability&quot;&gt;the lenses&lt;/a&gt; have been covered by black, grey and white.&lt;/p&gt;
-
-&lt;p&gt;But once looking at this afar, I come to notice something. Once looking at the map from high up, how much the green and the blue surround this city. Once looking upon the afterglow over the cloud, how much of the sky is being filled with the comforting orange.&lt;/p&gt;
-
-&lt;p&gt;And the colorful and beautiful food culture lies place to place. The ingredients transform themselves into smaller pieces, traveling miles and miles from an island afar. Here is also a town of gastronomy.&lt;/p&gt;
-
-&lt;p&gt;The advent of 4 Seasons would be the oasis of all of this. They spray color all over the places; cultivating and altering greenary, and transforming the outlooks that blanket people. When the seasons breath, so do people and the city at the same time.&lt;/p&gt;
-
-&lt;p&gt;Diversity dances here, thriving and creating a variety of events that amuse audiences. Winds that driven by such momentum don’t stop traveling through the city.&lt;/p&gt;
-
-&lt;p&gt;.
-.
-.&lt;/p&gt;
-
-&lt;p&gt;Here comes another night again. With the cloud hiding the moon partly, the tip of skyscrapers heatbeats their red dots. When a day turns into night, ubiquitously spread color disappears quietly. The wave of people in black suits washs over the street like tide.&lt;/p&gt;
-
-&lt;p&gt;The tranquility and the dynamical scenes wouldn’t only be driven by the seasons and the sun. &lt;a href=&quot;https://mdaisuke.net/blog/2020/04/04/RiseAndFall&quot;&gt;The cyber connectives&lt;/a&gt;, the combination of the smart heads and cutting edge technology, work hard on their daily tasks. The net result of this workforce over 10 million people presents what Tokyo appears to be today.&lt;/p&gt;
-
-&lt;p&gt;What’s the light staying upon these skyscrapers made out of? What is the origin of the torch? Does the beautiful light afar come from a long cozy breathe at home? Or does it come from an exhausted sigh which is forcefully backed by the flouresent light?&lt;/p&gt;
-
-&lt;p&gt;The tranquility that lies ahead, may be just a fake one that is presented by countless activities of people. That is, it is a state of equilibrium: In case of water in the glass, small particles pop out of the surface and others dive into the surface, though it still looks stationary to us. This is because the state of water is at its equilibrium.&lt;/p&gt;
-
-&lt;p&gt;Individuals stay active, sometimes wearing out like a water particle. Even once one halts a step, the whole picture won’t look different.&lt;/p&gt;
-
-&lt;p&gt;But if a large number of individuals halt their footsteps, then wouldn’t the total equilibrium change? Yes, it probably will. This year, our city that experienced the pandemic has seen the tip of the iceberg, and now we’re all well aware of it.&lt;/p&gt;
-
-&lt;p&gt;.
-.
-.&lt;/p&gt;
-
-&lt;p&gt;Amid of this, I moved to a place where my lifestlye would overlap with others. I lived alone a little while ago, but that wasn’t suitable to me. Here the neighbors interact with each other which have become somewhat old-fashioned now: a lifestyle that resides within the individual and its neighbors. Living under the same roof with neighbors, we gather and share meals. Once I have people around, then I came to realize that my lifestyle has become more diverse.&lt;/p&gt;
-
-&lt;p&gt;The lifestyle where eyeballs are often sticked to screens has become a new normal: a new lifestyle under &lt;a href=&quot;https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched&quot;&gt;post evolution&lt;/a&gt;. If you squeeze the 13.7 billion years old history of the universe into a year-long calender; however, this lifestyle consists only after 23:59:59.9 on the 31st of December.&lt;/p&gt;
-
-&lt;p&gt;In the pandemic age, I often get to find people looking at the screen, working from home. At the expense of living in this magical world, I often had come to view the world that lives in the screen. It has become an era where everybody pays attention to the balkanization over the pacific ocean instead of the politics within their own home.&lt;/p&gt;
-
-&lt;p&gt;However after I moved, I came to see what the world looks like as it is afront, rather than the one that resides in the screen.&lt;/p&gt;
-
-&lt;p&gt;.
-.
-.&lt;/p&gt;
-
-&lt;p&gt;At one night, I had an opportunity of stargazing with the neighbors. One &lt;a href=&quot;https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched&quot;&gt;magician&lt;/a&gt; said that we can see Leonids. Lying down pararelly out there at the rooftop in the cold, we started gazing upon the sky. As our eyes got used to the darkness with the tranquility, a numerous number of dots appeared.&lt;/p&gt;
-
-&lt;p&gt;A shooting star flew across our eyesight in the blink of an eye. Excitement blancked everybody. Looking at the shooting star together, it felt like it has some super power that unites each of us. After spotting it, we kept our eyes on the sky eagerly, longing with the silient voice inside that yells “I want to see it again, again!”. For the first time in a while, I came to realize that we gazed something with heart other than screens.&lt;/p&gt;
-
-&lt;p&gt;Then, I wondered. If all the ceilings of the buildings, trains and everything are transparent, would the people in the city look upon the sky together? Would people come to feel that they want to share the moment with others, and to leave the magical world and the equilibrium?&lt;/p&gt;
-
-&lt;p&gt;.
-.
-.&lt;/p&gt;
-
-&lt;p&gt;I woke up with the voice of kids from the park. Another morning visits this town. Every day is a new day. People like us, are only living in this equilibrium. Yes, it’s just a life here like this. But, there’s a life like this here.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
 			<title>Sustainability</title>
-			<link href="http://mdaisuke.net/jp/2020/09/20/%E3%82%B5%E3%82%B9%E3%83%86%E3%83%8A%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3/"/>
-			<updated>2020-09-20T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2020/09/20/サステナビリティ</id>
-			<content type="html">&lt;p&gt;　サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。&lt;/p&gt;
-
-&lt;p&gt;　物心をついた時からずっと、何度も見返せずには居られなくなった。だって、美しいものは時折、眺めてみたくなるんだもの。ずっと放っておいて、どこか他の場所へ道草を食っていけなくなる。&lt;/p&gt;
-
-&lt;p&gt;　不思議なことに、それが何だって、一つに定義することはできない。でも、掴み取ることのできた例をいくらか列挙できる。燃料の爆発を抑えんきれんばかりに走る、獰猛な内燃機関車の横で、静かな三相交流で加速し瞬く間に走り抜ける電気自動車を見た時。無機質で人工的な色を帯びたプラスチックの歯ブラシに代えて、木の香りと共に柔らかく歯肉を撫でる竹の歯ブラシを使った時。一度形作ると消えないしわを寄せる使い捨ての包装紙に代えて、何度も使える強さとユニークな顔を持ちあわせた風呂敷で贈り物を包む時。&lt;/p&gt;
-
-&lt;p&gt;　それはまるで水が重力で自然落下するとき、雫と成すような自然な丸みを帯びるような感じ。そのありように、美しいと心が囁くこともある。&lt;/p&gt;
-
-&lt;p&gt;　一方で、きっとこう感じることはある意味で、行き過ぎているのだと思う。つまり観測を繰り返した後の感性と見るのか、それとも行き過ぎた執念と見るのか。斜向かいのあの人とは、同じものを観ても馳せる想いも違うのだろう。&lt;/p&gt;
-
-&lt;p&gt;　歴史を観て想う。技術を礎として人は信念を具現化し、積み重ねてきた文明のもとに今、僕たちは手元に有り余る「豊かさ」を享受した。広い宇宙の中での、生存という文明単位の欲求と平行線を辿るように、愛をもって他の人へ襷を渡すことは「回り回す」ことの具現化でもあると想う。そして決して少なくない数の人が、その命の回る有り様に特別な想いを馳せたに違いない。&lt;/p&gt;
-
-&lt;p&gt;　しかしその一方で、環境や資源、他の命を虫喰いし、破壊し、強奪を繰り返すのもまた事実である。ここに、人1人単位で観てもすでに、存続を維持しようと働く傲慢さや野蛮さを見てとれる。&lt;/p&gt;
-
-&lt;p&gt;　そう、だからこの想いは表裏一体であるような気もする。だからこそ、美しさを覚えることの反面で、それは絶対的でないんだということを律し、戒めることも時に必要では無かろうか。この獰猛さと隣り合わせにある矛盾に気づけば、どうして絶対美を保障できよう。&lt;/p&gt;
-
-&lt;p&gt;　これをもってもなお、ただ私1人だけの選り好みで、道のりの中でくり抜いた景色を観る。「美しい」「素敵」「綺麗」と想いを馳せる。この形の無いオブジェクトを目の前に写像したとき、たしかに残る「ときめき」を捉えずには居られないのだ。まるで、3次元空間内のベクトルを2次元平面へ写像するときのように、僕はこの形のないオブジェクトに光を当ててしまうのであり、その影を目の前に留めようとする感覚。&lt;/p&gt;
-
-&lt;p&gt;　そしてきっと、同じことを想う人もいると思える。思うようになってきたとも、肌感で言える。影をこぼしては、人の目に留まるように確かな場所に刻む。刻みたいと、心が言うのだ。そうやってまた、ふと見惚れてしまうことの繰り返し。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Sustainability</title>
-			<link href="http://mdaisuke.net/en/2020/09/20/Sustainability/"/>
-			<updated>2020-09-20T00:00:00+00:00</updated>
+			<link href="http://mdaisuke.net/en/2020/09/20/Sustainability.html"/>
+			<updated>2020-09-20T00:00:00+09:00</updated>
 			<id>http://mdaisuke.net/en/2020/09/20/Sustainability</id>
 			<content type="html">&lt;p&gt;Sustainability, being light and fuzzy like feathers, is a shapeless object. I’ve been trying to catch it with my own hands with certain special feelings. At times it forms a tangible shape, leaving me spark-joy; other times it goes through my fingers deceptively.&lt;/p&gt;
 
@@ -1388,87 +172,13 @@ The front 20 cm of the tabletop can be folded down, making it more compact when 
 	
 		<entry>
 			<title>RiseAndFall</title>
-			<link href="http://mdaisuke.net/jp/2020/04/04/%E5%B3%A0%E9%81%93/"/>
-			<updated>2020-04-04T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2020/04/04/峠道</id>
-			<content type="html">&lt;p&gt;Russell Stuart著の&lt;a href=&quot;https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-ebook/dp/B07N5J5FTS&quot;&gt;Human compatible: Artificial intelligence and the problem of control&lt;/a&gt;を読んで想ったこと。&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;　&lt;strong&gt;知&lt;/strong&gt;とはなんだろう。僕は、それを木に例えられると思う。
-人の知の木には、様々なものが混在している。宇宙の摂理を解き明かす科学のような、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識など。&lt;/p&gt;
-
-&lt;p&gt;　物理学、そして数学のベイズ推定に「観測」という概念がある。&lt;/p&gt;
-
-&lt;p&gt;　前者の観測とは、いわゆる量子力学に登場する。&lt;a href=&quot;https://www.youtube.com/watch?v=vnJre6NzlOQ&quot;&gt;二重スリット問題&lt;/a&gt;と定義されるこの問題では、スリットが二つ空いた壁を用意し、その後ろにスクリーンを用意する。そして電子を二本のスリットに向かって発射し、スリットの後ろのスクリーンを見ると、そこには干渉縞が発生するというものだ。しかし、スリットを通り過ぎる瞬間に電子を観測すると、干渉縞でなく、スリットの様子が現れるのだ。つまり観測をもとに、電子のとりうる状態が変化する。これはミクロな世界の話である。&lt;/p&gt;
-
-&lt;p&gt;　後者の観測は、「信念の更新」を数学的に公式化する際に「証拠」という文脈で登場する。ミソとなるのは以下：観測者が元々ある信念を持っていたとき、新しい証拠を観測することでその信念が更新される。これはマクロな世界の話である。（明快な解説は&lt;a href=&quot;https://youtu.be/HZGCoVF3YvM&quot;&gt;こちら&lt;/a&gt;）&lt;/p&gt;
-
-&lt;p&gt;　我々の住むミクロにもマクロな世界にも、観測は影響を与えるようだ。おそらく「観測」が「知の木」をも更新するのだろう。これは当たり前といえば当たり前だけれど、木の成長を刻む時間軸として扱うことにする。&lt;/p&gt;
-
-&lt;p&gt;　学びを通して、個人はそれぞれ知という自分自身の木を少しずつ形成する。幹は太くなり、少しずつ枝分かれしては葉をつけ育っていく。&lt;/p&gt;
-
-&lt;p&gt;　そして今、あなたは物理的に垣根のない情報の観測を繰り返し、あなたの木はかつてない速度で更新されていく。そう、垣根のない情報とは「インターネット」という魔法によるものであり、ソーシャルメディアや主要な検索エンジンなど、巨大な数の利用者が集まる場所に集積している。そして、オフライン：オンラインで、観測が後者で起きる割合が増加していく一方であるように思える。&lt;/p&gt;
-
-&lt;p&gt;　スマートフォンやパソコンが持ち主への最適化を繰り返していくたびに、その木は当人の頭の中からその所在さえを変えていくことになりうる。あなたが保存したデータ、閲覧履歴等の足跡、プラットフォーム上でお気に入りやいいねと印をつけたサイトはあなたのものだけれど、住所はあなたの頭の外にある。つまり、最適化されたスマートフォンやパソコンに木の一部は集積されていく。そういう意味で今は人の知とは、それをそのまま覚えていることでなく、「情報の住所を知っていること」とすら言えるかもしれない。スマートフォンやパソコンをなくしたとき、体の一部がなくなったように思うのはそのためだろう。&lt;/p&gt;
-
-&lt;p&gt;　しかしあなたの木は、あなただけのものではない。足跡（閲覧履歴、キャッシュ、クッキーなども含む）を残してウェブを消費することで、その木の一部を受け取った「あちら側」、人とAIが一体となった「ある目的を達成する」集団叡智は、あなたが閲覧するデジタルな世界を「おすすめ」や「妥当性」で固めた中身と共に迅速に形作っていく。そうしてできたある意味で「自分の作り出したウェブ」に自らアクセスする速度が加速する様に、意欲刺激が働いている様に見える。&lt;/p&gt;
-
-&lt;p&gt;　SNSを含め、メディアのビジネスモデルは広告収入によるものが多い。利用者は「金銭的無料」の代償に自らのデータとクリックによる「興味」を提供する。そのデータを元に、「あちら側」は広告を打つ。&lt;/p&gt;
-
-&lt;p&gt;　データを集められれば集められるほど広告の精度は向上するため、より多くのデータを集める意欲刺激が湧く。文字よりも、そして画像よりも、動画のほうが情報量が多い。それらをアップロードすることは、より多くの情報量を提供するということである。より高い画質の写真が撮れるようになるということは、つまりそれだけ大量の情報を提供できるということになる。利用者とプラットホーム間でより多く強い結びつきが生まれる中「さらにアップロードする」「クリックする」という意欲刺激は増す。「あちら側」の「サービス向上のため」とは、「クリック率」「顧客への最適化」「結びつき」の最大化を指す。利用者と「あちら側」の間で、より密でより早い循環構造の構築に意欲刺激は増すばかり。&lt;/p&gt;
-
-&lt;p&gt;　時間が有限であるからこそ例えば、見出しに注意を引くようなタイトルをつけたり、印象的なサムネイルをつけたりする。つまり、こうした情報の宣伝方法は洗練され続けている。各メディアの激しい競争を考慮にいれれば、嘘や感傷的な表現で注意を引くことだって起きていると想像することも難しくない。その中にももちろん、ジャーナリズムや科学からきたありのままの事実を届ける正義（なぜなら情報とは時に、人命よりも大切になりうるし、いち早く多くの人に知ってもらわなければならないこともあり得るからだ）や、利他的な行動からきた善意的な情報も含まれるが。&lt;/p&gt;
-
-&lt;p&gt;　「あちら側」は名門大学を出て、優秀な人材が集まったエリート集団だ。「あなたの注意を引き、結びつきを最大化する」という目的は利用者が簡単には気づけない水準で達成されうる(後々、一例を該当書より引用する）&lt;/p&gt;
-
-&lt;p&gt;　そうして形成した木は（ゆえに信条、知見、嗜好も）かつてない速度と精度で更新され続けているように思える。&lt;/p&gt;
-
-&lt;p&gt;　インターネットが「魅力的でたまらない」「目線が行ってしまう」ということは、それだけ最適化がうまく行っている証拠であると考えることもできる。&lt;/p&gt;
-
-&lt;p&gt;　この行き着く先は、フィルターバブル（自分の消費しているコンテンツが正当化され続ける世界）である。他の人と同じ単語をグーグルを用いて検索しても、もちろん異なる検索結果に当たることになる。「おすすめ」を提示するというアルゴリズムから、自分の趣味嗜好がより予測しやすい中で提供されたデジタルな空間には、より多くの結びつきが生まれる。&lt;/p&gt;
-
-&lt;p&gt;　普段私たちが遊んでいる火種で薄々明らかになっているもの、の種明かしとして、ソーシャルメディアにおけるコンテンツ選びアルゴリズムを考えてください。アルゴリズムはさほど知的でなくとも、何十億という人に直接影響するため、全世界に影響する立場にあります。典型的にこうしたアルゴリズムは、クリック率ー利用者が提供されたアイテムをクリックする確率ーを最大化するように設計されています。解決策は単純に、利用者がクリックしそうなアイテムを提供することでしょうね？違います。解決策は利用者の好みを変えること、そうすれば利用者はもっと予測可能になります。より予測可能な利用者は、クリックしそうなアイテムを食わせられ、もっと多くの収入を作ります。より極端な政治的な見方をもった人は、より予想しやすく、どのアイテムをクリックするか、もっと予測可能です（おそらく記事の分類に、もっと頑な中立派の人がクリックしそうなものもあるでしょうが、そのカテゴリーが何によってできているか想像するの簡単ではありません）。どんな合理的な実物に対しても、アルゴリズムはどうやってとりまく環境の状態を修正するかを学習しますーこのときは、状態は利用者の精神を指しますーそうしてアルゴリズムの報酬を最大化するために。その結果は、極右政党の再起、世界の民主主義を支える社会的接触の消失、そして可能性としてはEUとNATOの終わりを含みます。何行かのコードそのものには悪くはない、たとえそれが何人かの人間から手を借りていたとしても。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Russell, Stuart. Human Compatible (pp. 8-9). Penguin Publishing Group. Kindle Edition.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;　果たしてでは、一刻毎に浮かび上がる「インターネット上の知の観察範囲となり得る」情報量と、「自身の知を象徴した木の」情報量は、どれほど同じだろうか。もし、前者と後者の比率をとったら、それは地球とリンゴほどの比率になってしまうかもしれない（それでは効かないことも十分ありえる）。それくらい、世界は広い。しかしその事実は、一見して嘘であるかのようにも見える。&lt;/p&gt;
-
-&lt;p&gt;　自分の見る世界は世の中を「本当に」ありのままに見た姿ではなく、今や「お勧め」でくり抜いたバブルであるほうが近しい。それが重篤化すれば、地球は平たい、環境問題は起きていないとなりうる。そこまで極端でなくても、例えば「妊娠中絶」などの言葉の解釈ですら、信条の異なる立場の人には変わってしまうこともありえる。&lt;/p&gt;
-
-&lt;p&gt;　その一方で書店で物理的な本を買っても、本屋さんはその情報を元に、あなた一人のためだけに置いてある本を変更したりしない。&lt;/p&gt;
-
-&lt;p&gt;　互いに排他的な意見が現れるようなトピックが社会にあっても、「嗜好が違う人」「反対の意見を指示する人」がこの星に暮らしている、という事実はおかしくない。そして他人がいるという事実は、「あなたが自分の木を愛でるように、あなたが他の木を同じくらい愛でる人がいる」ということの紛れもない証明ではないのか。&lt;/p&gt;
-
-&lt;p&gt;　それぞれの木とその人個人も深く結びついている。いま各々の木の違いや生まれもったものも含め、この有りやうを多様性とも呼べる「かもしれない」。その境界線がどこにあるのかはどうあっても、お互いは切っても切れない関係にあるし、またどちらかを切り取りたいという人もいないだろう。&lt;/p&gt;
-
-&lt;p&gt;　多様性は良とされる。各々の木は集まって一つ大きな森を作る。あるいは、各々の木が幹となる部分を共有していて、枝先が異なる場合もある。多種多様な木が織りなす森も、地にしっかりと根を張り空に枝を一杯に広げる木も美しい。四季を通して花を咲かせ、緑緑と茂り、がらりと変わった彩を魅せては葉を枯らしては枝を残して地に積もる。それが他の木にも養分となり、また枝先に芽吹きをもたらす。そうして少しずつ循環を繰り返しては、森も木も大きく育っていく。&lt;/p&gt;
-
-&lt;p&gt;　「お互いを理解しあう」にはつながっていた幹を探り、枝分かれした木の枝先や葉をお互いに認めあう必要がある。それぞれのリアリティーが枝分かれしていけばいくほどに、分かち合った根元までを辿る作業に時間がかかるのは、当然のことかもしれない。そしてそれは、自分からは決して成長の軌跡に足を踏み入れ、枝先を辿っていく必要があるのかもしれない。そうすれば、好き、嫌いという感性が生じたとしても、理解は生まれるかもしれないから。異なる木でも、一本の木は根から枝まで、きっとしっかりと構築されているのだから。&lt;/p&gt;
-
-&lt;p&gt;　だから他人と意思疎通を交わしたとき、多くの「自分にはわからない」「不確かさ」「好きじゃない」が残って、当たり前なのである。一方で「フィルターバブル」中でのみ、観測を繰り返し続けることも可能である。そして観測を無限に思えるまで繰り返すことすら完全に可能なほど、情報の海はその境界線を見せないかもしれない。&lt;/p&gt;
-
-&lt;p&gt;　これに対抗するために、完全とは言えないものの、技術的な対応策はいくつかあるはずだ。検索エンジンの使用（競争上の観点から消費者の「あちら側」の独占を防ぐ）、プライベートブラウジングの使用（履歴やクッキーの足跡を残さない、おすすめデジタル空間の作成の妨害）やSNSやニュースからの適度な離脱（速度に意欲刺激が働いた偏った情報からの離脱）、主体的ファクトチェック（ウェブサイトを活用する方法もある、フェイクニュース対策。例:&lt;a href=&quot;https://www.snopes.com/&quot;&gt;snope.com&lt;/a&gt;）、文脈の加算（フェイクニュース対策）、政治的嗜好を明示したメディアの消費（政治的に反対側の意見への接触、例:&lt;a href=&quot;https://www.allsides.com/unbiased-balanced-news&quot;&gt;alide.com&lt;/a&gt;）、など。&lt;/p&gt;
-
-&lt;p&gt;　同時に意識的な案も、いくつか列挙できるのではないか。「自分は見ている世界は自分が作り上げたもの」というメタ認知や、また入り込んだ分だけ長く厄介で、根気の必要な「コミュニケーション」なくして相互理解は得られくなっていくという認知、反対側のスペクトラムにいる立場の認知、正確な語彙の把握、疑わしきは罰せずという心構え、否定的な情報のほうが肯定的な情報よりも目をひき、注意を集めるという認知を持つこと、など。&lt;/p&gt;
-
-&lt;p&gt;　もちろん、もっとできることはあるのだろうけれど。悔しいけれど僕も、全てを認知し切れていないの一人。もしかしたら、認知し切れないことが普通のことなのかもしれないけれど。わからない。&lt;/p&gt;
-
-&lt;p&gt;　それでも十人十色、諸行無常とあって、それぞれ、違っていて当たり前である。多様性を尊重していく中でも、何が良いか否か、なんていうことは流動的なものかもしれない。時代や環境が変われば価値観や倫理観も変わっていく。それでも、相互理解、そして「共存」は欠かせないものではなかろうか。&lt;/p&gt;
-
-&lt;p&gt;　最後まで読んでくださり、有り難うございます。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>RiseAndFall</title>
-			<link href="http://mdaisuke.net/en/2020/04/04/RiseAndFall/"/>
-			<updated>2020-04-04T00:00:00+00:00</updated>
+			<link href="http://mdaisuke.net/en/2020/04/04/RiseAndFall.html"/>
+			<updated>2020-04-04T00:00:00+09:00</updated>
 			<id>http://mdaisuke.net/en/2020/04/04/RiseAndFall</id>
 			<content type="html">&lt;p&gt;After reading &lt;a href=&quot;https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-ebook/dp/B07N5J5FTS&quot;&gt;&lt;em&gt;Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart.&lt;/em&gt;&lt;/a&gt;
 .&lt;/p&gt;
 
-&lt;p&gt;What is intelligence? I believe it can be represented by a tree.
+&lt;p&gt;What is intelligence? I believe it can be represented by a tree.&lt;br /&gt;
 In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one’s cultural upbringing.&lt;/p&gt;
 
 &lt;p&gt;Physics and Bayes’ theorem in Mathematics both contain the notion of &lt;em&gt;measurement&lt;/em&gt;.&lt;/p&gt;
@@ -1535,35 +245,8 @@ In the human tree, there are various elements: objectively guaranteed facts that
 	
 		<entry>
 			<title>Launch</title>
-			<link href="http://mdaisuke.net/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/"/>
-			<updated>2020-01-20T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2020/01/20/サイト始動</id>
-			<content type="html">&lt;p&gt;　私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。&lt;/p&gt;
-
-&lt;p&gt;　その海には嘘が隠れているかも知れないし、それと対照的に、包み隠さない真実も埋もれているかもしれない。その海はあまりに身近で、そして広く深く、際限なく続くのである。その果てを、１人として見切ることはできないのかもしれない。&lt;/p&gt;
-
-&lt;p&gt;　さて、今すぐそのスクリーンから目を離して、すぐ目の前の世界はどう見えるだろうか。&lt;/p&gt;
-
-&lt;p&gt;　そこには肌に刺すような冷たい風や、慣れ親しんだバスのエンジンの音、湿った雨の匂いが広がるはず。0と1が踊る世界にない、階段を降りるときに足を伝う重力、乱立する建物や広大な土地の遠近感を、感じはしないか。&lt;/p&gt;
-
-&lt;p&gt;　そんな中でも、ふと気がつけば手を伸ばすもの。貴方のポケットに忍ぶ”小さな”魔法は、人の本能と理性を培う脳の外側に位置しながらも、その持ち主にひっそりと最適化し続けている。それはおろか、写真や動画によって半永久的に持ち主の記憶能力を拡張し、5,000マイル離れた場所にいる人との連絡を可能にし、はたまた知識の所有者を変えつつある。その百科事典はもう頭の中でなく、その海に存在するのだ。つまり、知識の所有者を隔てた境界線は、以前より遥かにぼんやりとしている。&lt;/p&gt;
-
-&lt;p&gt;　人には元々、本能と理性も同時に共在する。このうちどちらかを取り除きたいと言う人は、おそらくいないだろう。今、自分の手足となった魔法を解きたいと思う人も、おそらくいないのだろう。&lt;/p&gt;
-
-&lt;p&gt;　そしてその逆戻りは、きっとないのだ。&lt;/p&gt;
-
-&lt;p&gt;　僕は、世界中の皆んなが魔法使いになったと観ている。でもみんな、その魔法の使い道を探している最中、そんな風にも見える。僕だってその1人に違いない。これを革命以外の、何と呼ぶのであろうか。&lt;/p&gt;
-
-&lt;p&gt;　その中で、私たちになくてはならないもの、それってなんだろう?そんな思いや考えにふけて、道草を食いたくなる。きっとこれも、なくてはならないものの1つだったりして。&lt;/p&gt;
-
-&lt;p&gt;どうも、最後まで読んでくれてありがとうございます。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Launch</title>
-			<link href="http://mdaisuke.net/en/2020/01/20/daisuke-site-launched/"/>
-			<updated>2020-01-20T00:00:00+00:00</updated>
+			<link href="http://mdaisuke.net/en/2020/01/20/daisuke-site-launched.html"/>
+			<updated>2020-01-20T00:00:00+09:00</updated>
 			<id>http://mdaisuke.net/en/2020/01/20/daisuke-site-launched</id>
 			<content type="html">&lt;p&gt;In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.&lt;/p&gt;
 
@@ -1594,70 +277,9 @@ In the human tree, there are various elements: objectively guaranteed facts that
 		</entry>
 	
 		<entry>
-			<title>坊主がウェブに上手な英語の詩を書いた。</title>
-			<link href="http://mdaisuke.net/jp/2018/08/30/%E6%8B%99%E6%9B%B8/"/>
-			<updated>2018-08-30T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/2018/08/30/拙書</id>
-			<content type="html">&lt;p&gt;　英語は今や、我々日本語話者にとっては特に、未知の世界を見ることのできる色眼鏡となりました。その言葉一つが、見えなかった、知らなかった様々な世界を視覚化してくれます。英語は実世界のみならず、インターネットの上でも世界共通語のようです。世の中を行き来する情報の多くは英語で伝達されます。生活、ビジネス、政治、外交、教育、芸術。言葉という視点で万物を見ると、着地点はありとあらゆる現象に帰結するでしょう。&lt;/p&gt;
-
-&lt;p&gt;　経済大国日本で、日本語を操る人が英語を使える場合と使えない場合では、接触可能な人脈、情報、視座が大きく異なります。今や世界各地の先人の多大なる努力、功績の結果、僕たちの文明の礎は築かれたと思います。温故知新と人は言うように、これらを上手に正しく活用し、その恩恵を最大限に受けることは賢く生きる術ではないでしょうか。今を生きる人との共生、切磋琢磨し、種としての繁栄を築き上げるにも、そのもっとも基本となる「人と人の会話」は必須です。
-英語と日本語は全く異なる言語です。日本語が母国語の人にとって、第二か国語として英語を習得することは簡単ではないですが、不可能では全くありません。だからこそ、中学と高校で長い間英語を勉強する人が多い日本で、英語を習得せずに終わる現状は疑問を抱かざるをえません。これは間違った学習方法を選ぶ人が多くいる結果ではないでしょうか。そう思う理由を言及するにあたって、まず英語とは何かについて話す必要があるでしょう。&lt;/p&gt;
-
-&lt;p&gt;会話における非常に基本的な概念に、「出力」と「入力」があります。会話とは、「話し手」と「聞き手」がいて成り立ちます。言葉は会話の手段であり、この両側を繋ぐものです。これが今回は、英語です。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/graph1.png&quot; style=&quot;border:none;&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;　このどちらかが欠けたら、会話は成立しません。例えば、今の僕は書き手(話し手にあたる)の「出力側」で、読者の皆様は読み手(聞き手にあたる)「入力側」です。言葉は「日本語」です。読者の皆さんは日本語を操る人として、普段の会話において何気なく出力側と入力側を行ったり来たりして言葉を交わしています。これは皆さんにとって今に限った話ではなく、生まれて赤ん坊の時からずっとそうでしょう。あまり意識しないかもしれませんが、今の今までそれを長いこと繰り返した結果、今のように日本語を操れるようになったとも言えるでしょう。
-　ここで、その母国語の日本語を習得した仕組みを下の模式図にしてみたいと思います。これは多くの人があまり意識しないことだと思います。しかし英語という他の言語を習得するならば、道しるべとして役立つことでしょう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/graph2.png&quot; style=&quot;border:none;&quot; class=&quot;image_in_post&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;　言葉の実力を形作るのは、エッセンス(予備知識、必要不可欠な要素)と、相応の努力です。大事なのは、①と②が相伴う必要があることです。エッセンスなしの努力は身になりませんが、エッセンスだけでも身になるわけではありません。この本では①エッセンスに該当するところを「それぞれの分野の伸ばし方」とまとめました。これらは読んだらすぐに皆さんが実践できるように、方法論として書き上げました。難易度、長所、短所と一緒に説明してあるの で、自分に合いそうな方法を選んで実践していただければと思います。&lt;/p&gt;
-
-&lt;p&gt;　あとはこれにそって努力を重ねれば実力がつくはずです。「それでは、後は読者の方の努力次第です、後は各自努力してください。」と言うのはとても簡単です。しかし、ここが一番難しいのではないかと思います。頭でわかっていても、行動が伴わなかったりするのです。この努力を重ねられるかどうかには様々な要因があります。僕は、自らの動機づけと環境が密接に関わっていると思います。&lt;/p&gt;
-
-&lt;p&gt;この本の特徴は、筆者が「トイレに行きたい」すら言えなかった高校二年生のときから、英語を二か国語目として習得し、この本を上梓するに至った現在十八年八月までの経緯、環境の変化を記したことにあります。まだ短い人生の中、最も変化に富んだ時期でした。&lt;/p&gt;
-
-&lt;p&gt;　動機も環境もとても流動的なものです。突発的に変化するわけでもなく、その変化は微々たるものです。僕がはじめにいた状況は、英語を使うような環境とはかけ離れた場所でした。しかし面白いもので、人の環境というのは日々変化していくものです。それがたとえ、日本という英語が母国語ではない国だったとしても。僕が英語を使っていくにあたって、自分を取り巻く環境も変化していったのです。&lt;/p&gt;
-
-&lt;p&gt;　その結果、僕の価値観、感性、美意識、知識、交友関係もはたまた取り巻く環境も変わり、自分色の個性や視座が生まれ、人生は豊かになりました。そしてこの目まぐるしく変わる時勢に、著者として、英語の必要性を少しでも、僕なりの視点から訴えられるようになりました。&lt;/p&gt;
-
-&lt;p&gt;　この本を通して伝えたいことは、一つに限りません。僕が大事だと思ったことも、読み手のあなたには大事でないことももちろんあるでしょう。しかし理論や体験を通して得たこの道のりに、他の人にとっても役に立つことが散りばめられていると思ったのです。例えば、留学に行かなければ、帰国子女でなければ「英語は身につかない」などと言った概念も少なからずあると思います。しかし僕はそうとは思いませんし、結果から「他の方法もある」と今では思います。&lt;/p&gt;
-
-&lt;p&gt;　ですから、これまでの道のりをありのままを綴ることにしました。喜びも、悔しさも、赤裸々に。そして英語が連れて行ってくれた場所はどこなのか。この道を記すことで、英語を学ぶ立場の人に、そして英語を教える立場の人に、きっかけ作りになるかもしれない、何か役に立つかもしれないと、そう思いました。
-この本を手に取ってくださったあなたの人生に、英語という観点から少しでも貢献できたらと、願ってやみません。&lt;/p&gt;
-
-&lt;p&gt;…本編へ続く。
-&lt;a href=&quot;https://www.amazon.co.jp/dp/B07GXWN196&quot;&gt;坊主がウェブに上手な英語の詩を書いた。&lt;/a&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>自己紹介</title>
-			<link href="http://mdaisuke.net/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/"/>
-			<updated>1995-09-02T00:00:00+00:00</updated>
-			<id>http://mdaisuke.net/jp/1995/09/02/自己紹介</id>
-			<content type="html">
-&lt;p&gt;はじめまして！フリーランスのエンジニアをやっています。WebアプリケーションのBackend開発、エンジニアリングマネージメントが本業です。&lt;/p&gt;
-
-&lt;p&gt;学生時代は日本の大学で物理学を専攻し、同時に一般的な留学を経験せずに、日本で英語を第二ヶ国語として習得。異文化交流や英語を教える経験、英語の本の上梓を通して幅広い視座を吸収しました。&lt;/p&gt;
-
-&lt;p&gt;ソフトウェア開発にあたって保守、改修のしやすい綺麗なコードを書くだけではなく、さまざまな背景を持つ人と協力し、追い求める価値を最大化するようチームとして働くことが大切だと考えます。&lt;/p&gt;
-
-&lt;p&gt;本業外では、ロボットから自転車、生活家具など幅広いハードウェアも作ります。詰まるところ、垣根をこえて、ものづくりを愛しています！良いものづくりには、多角的な視点を養うことが大切と考えています。&lt;/p&gt;
-
-&lt;p&gt;お仕事の依頼は、お気軽に&lt;a href=&quot;mailto:contact@mdaisuke.net&quot;&gt;こちらへ&lt;/a&gt;DMください。&lt;/p&gt;
-
-&lt;p&gt;このサイトは&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;という静的サイトジェネレーターで動いています。&lt;a href=&quot;/jp/2020/01/20/サイト始動/&quot;&gt;サイトを立ち上げる&lt;/a&gt;にあたって、Wordpressから移行しました。3000ポンドもあるようなフレームワークを使わないことにしたのは、&lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;そういうのが嫌い&lt;/a&gt;だからです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/aubozumom&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://github.com/DaisukeMiyazaki&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/daisuke-miyazaki/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;で発信しています。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
 			<title>About me</title>
-			<link href="http://mdaisuke.net/en/1995/09/02/about/"/>
-			<updated>1995-09-02T00:00:00+00:00</updated>
+			<link href="http://mdaisuke.net/en/1995/09/02/about.html"/>
+			<updated>1995-09-02T00:00:00+09:00</updated>
 			<id>http://mdaisuke.net/en/1995/09/02/about</id>
 			<content type="html">&lt;p&gt;Nice to meet you! I’m Daisuke and a freelance engineer based in Tokyo. My main job is backend development and engineering management of web applications.&lt;/p&gt;
 
@@ -1675,6 +297,26 @@ In the human tree, there are various elements: objectively guaranteed facts that
 </content>
 		</entry>
 	
+		<entry>
+			<title>自己紹介</title>
+			<link href="http://mdaisuke.net/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B.html"/>
+			<updated>1995-09-02T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/jp/1995/09/02/自己紹介</id>
+			<content type="html">&lt;p&gt;はじめまして！フリーランスのエンジニアをやっています。WebアプリケーションのBackend開発、エンジニアリングマネージメントが本業です。&lt;/p&gt;
+
+&lt;p&gt;学生時代は日本の大学で物理学を専攻し、同時に一般的な留学を経験せずに、日本で英語を第二ヶ国語として習得。異文化交流や英語を教える経験、英語の本の上梓を通して幅広い視座を吸収しました。&lt;/p&gt;
+
+&lt;p&gt;ソフトウェア開発にあたって保守、改修のしやすい綺麗なコードを書くだけではなく、さまざまな背景を持つ人と協力し、追い求める価値を最大化するようチームとして働くことが大切だと考えます。&lt;/p&gt;
+
+&lt;p&gt;本業外では、ロボットから自転車、生活家具など幅広いハードウェアも作ります。詰まるところ、垣根をこえて、ものづくりを愛しています！良いものづくりには、多角的な視点を養うことが大切と考えています。&lt;/p&gt;
+
+&lt;p&gt;お仕事の依頼は、お気軽に&lt;a href=&quot;mailto:contact@mdaisuke.net&quot;&gt;こちらへ&lt;/a&gt;DMください。&lt;/p&gt;
+
+&lt;p&gt;このサイトは&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;という静的サイトジェネレーターで動いています。&lt;a href=&quot;/jp/2020/01/20/サイト始動/&quot;&gt;サイトを立ち上げる&lt;/a&gt;にあたって、Wordpressから移行しました。3000ポンドもあるようなフレームワークを使わないことにしたのは、&lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;そういうのが嫌い&lt;/a&gt;だからです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/aubozumom&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://github.com/DaisukeMiyazaki&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/daisuke-miyazaki/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;で発信しています。&lt;/p&gt;
+</content>
+		</entry>
+	
 
 </feed>
-
