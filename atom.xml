@@ -1,28 +1,322 @@
----
-layout: null
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>{{ site.title }}</title>
+	<title>Daisuke Miyazaki's Blog</title>
 	<link href="http://mdaisuke.net/blog/atom.xml" rel="self"/>
 	<link href="http://mdaisuke.net/blog"/>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>{{ site.url }}</id>
+	<updated>2025-07-07T00:00:00+09:00</updated>
+	<id>https://mdaisuke.net</id>
 	<author>
-		<name>{{ site.author.name }}</name>
-		<email>{{ site.author.email }}</email>
+		<name>Daisuke Miyazaki</name>
+		<email>daisuke.miyazaki012@gmail.com</email>
 	</author>
 
-	{% for post in site.posts %}
+	
 		<entry>
-			<title>{{ post.title }}</title>
-			<link href="http://mdaisuke.net{{ post.url }}"/>
-			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>http://mdaisuke.net{{ post.id }}</id>
-			<content type="html">{{ post.content | xml_escape }}</content>
+			<title>We Must Not Delegate Understanding</title>
+			<link href="http://mdaisuke.net/en/2025/07/03/we-must-not-delegate-understanding.html"/>
+			<updated>2025-07-03T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/en/2025/07/03/we-must-not-delegate-understanding</id>
+			<content type="html">&lt;p&gt;Generative AI has become capable of telling sophisticated lies indistinguishable from human ones&lt;br /&gt;
+Precisely because of such an era we must not delegate “understanding” itself to AI&lt;/p&gt;
+
+&lt;p&gt;Gathering information interpreting it in our own way and putting it into words&lt;br /&gt;
+Then connecting disparate knowledge and experiences to form a single thread&lt;br /&gt;
+This act of “connecting the dots” is the essence of thought&lt;br /&gt;
+A domain that must never be delegated to others let alone AI&lt;/p&gt;
+
+&lt;p&gt;So what should we do&lt;/p&gt;
+
+&lt;p&gt;First keep a diary&lt;br /&gt;
+Record daily events and feelings in your own words as they are&lt;br /&gt;
+And instead of just writing and forgetting repeatedly look back at past notes&lt;br /&gt;
+Ideas and records written there may connect with memos from other notes at unexpected moments&lt;/p&gt;
+
+&lt;p&gt;By facing your notes and continuously updating them your thoughts will deepen&lt;/p&gt;
+
+&lt;p&gt;We must find time in our daily lives to continue these activities&lt;br /&gt;
+Otherwise we will fall into intellectual stagnation and be unable to move forward&lt;/p&gt;
+</content>
 		</entry>
-	{% endfor %}
+	
+		<entry>
+			<title>理解を委任してはいけない</title>
+			<link href="http://mdaisuke.net/jp/2025/07/03/understanding-delegation.html"/>
+			<updated>2025-07-03T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/jp/2025/07/03/understanding-delegation</id>
+			<content type="html">&lt;p&gt;生成AIは、人間と見分けがつかないほど巧みな嘘をつけるようになった。&lt;br /&gt;
+そんな時代だからこそ僕たちは、「理解」そのものをAIに委任してはいけない。&lt;/p&gt;
+
+&lt;p&gt;情報を集め、自分なりに解釈し、言葉にする。&lt;br /&gt;
+そしてバラバラに見える知識や経験をつなぎ合わせ、一つの線にしていく&lt;br /&gt;
+この「点と点を繋ぐ」作業こそ思考の本質であり&lt;br /&gt;
+決して他者に、ましてやAIに委任してはならない領域だ。&lt;/p&gt;
+
+&lt;p&gt;ではどうすればいいのか。&lt;/p&gt;
+
+&lt;p&gt;簡単なことから始めるなら、まずは日記じゃないだろうか。&lt;br /&gt;
+日々の出来事や感じたことをありのまま自分の言葉で記録する。&lt;/p&gt;
+
+&lt;p&gt;次に、ただ書きっぱなしにするのではなく、何度も過去のノートを振り返ること。&lt;br /&gt;
+書かれたアイデアや記録が、別のノートのメモとふとした瞬間に結びつくことがある。&lt;/p&gt;
+
+&lt;p&gt;そうしてノートと向き合い更新し続けることで思考は深まっていく。&lt;/p&gt;
+
+&lt;p&gt;こうした営みを、日々のわずかな時間で見つけて続ける。&lt;br /&gt;
+そうでなければ僕たちは思考停止に陥り、前へ進むことはできないだろう。&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>夏が始まった</title>
+			<link href="http://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F.html"/>
+			<updated>2025-06-16T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/jp/2025/06/16/夏が始まった</id>
+			<content type="html">&lt;p&gt;&lt;!-- ここに写真追加 --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2025-06-16%20%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F.jpeg&quot; alt=&quot;窓とソファの写真&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;暑い、晴れていて空梅雨。&lt;br /&gt;
+エアコンをつけているとどうしても機械音ばかり。&lt;br /&gt;
+耐えられなくはないくらいの温度なので全体的に窓を開けて風通りをよくしてみている。&lt;br /&gt;
+気持ちがいいくらい緑が窓から見える。&lt;/p&gt;
+
+&lt;p&gt;自分で作った机の上&lt;br /&gt;
+窓越しでちょうどいい高さにあってpcをおいて作業できる。&lt;br /&gt;
+自分の家の中で好きな場所があれば帰ってきたくなる。&lt;br /&gt;
+清澄亭で庭の横で作業していたことを思い出す。&lt;br /&gt;
+緑のカーテン。&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;play-audio-on-hover&quot; style=&quot;cursor:pointer; text-decoration:underline;&quot;&gt;氷が揺れて器にあたる音&lt;/span&gt;&lt;br /&gt;
+ひんやりとしたグラス。&lt;/p&gt;
+
+&lt;p&gt;夏が始まった。&lt;/p&gt;
+
+&lt;p&gt;&lt;audio id=&quot;hover-audio&quot; src=&quot;/assets/audio/2025-06-16%20%E5%A4%8F%E3%81%AE%E9%9F%B3.webm&quot;&gt;&lt;/audio&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+  const trigger = document.querySelector(&#39;.play-audio-on-hover&#39;);
+  const audio = document.getElementById(&#39;hover-audio&#39;);
+  if (trigger &amp;amp;&amp;amp; audio) {
+    trigger.addEventListener(&#39;mouseenter&#39;, () =&amp;gt; {
+      audio.currentTime = 0;
+      audio.play();
+    });
+    trigger.addEventListener(&#39;mouseleave&#39;, () =&amp;gt; {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  }
+});
+&lt;/script&gt;&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>新しい一歩</title>
+			<link href="http://mdaisuke.net/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9.html"/>
+			<updated>2022-12-09T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/jp/2022/12/09/新しい一歩</id>
+			<content type="html">&lt;p&gt;Hello world!&lt;/p&gt;
+
+&lt;p&gt;革命の新しい一歩を見たので、書き留めておく。&lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;新しい顔ができた&lt;/a&gt;のだ。&lt;/p&gt;
+
+&lt;p&gt;計算機上世界の自己は周りから見られるものである、という観点は非計算機世界でも同じことが言える。しかし前者の世界では容姿を大きく創造することができる点が異なる。どのみちこの世界ではMLや計算機は非計算機世界と融合しており、「この世界で自分とは何か？」と在り方を見つめ直しても、それも融合状態にあることに変わりはない。新しい顔を創るのに使用したデータは非計算機世界の顔写真であるが、支配的だったのは集団叡智による視覚的芸術の賜物であったことを忘れないようにしたい。&lt;/p&gt;
+
+&lt;p&gt;視覚的情報とは生物にとって生活の重要な一部である中で、この顔はそんな自分の在り方にうまくハマったと感じた。拡張世界においても個が紐づいていることの裏返しでもあるが、顔の創造にかかったのは&lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;僅か20分と数百円&lt;/a&gt;。&lt;a href=&quot;https://mdaisuke.net/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/&quot;&gt;高度に大衆化した革命&lt;/a&gt;の新しい一歩を記録した日と言えるだろう。&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Going-Meta-In-The-MetaVerse</title>
+			<link href="http://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse.html"/>
+			<updated>2022-12-09T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse</id>
+			<content type="html">&lt;p&gt;Hello world!&lt;/p&gt;
+
+&lt;p&gt;I saw a new step in the revolution so I’m writing it down. &lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;I got a new face&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You’re what you are seen is the same perspective in the computational world and in the non-computational world. However, the difference is that in the former world we can go beyond of our appearance that is tied to the non-computational world. In reality, ML and traditional computation are merged with the non-computational world, and the definition of “What am I in this world? keeps changing. Rethinking how to be in this world, it is surely more of the state of fusion than ever. The data used to create the new face is the mugshots of the non-computational world, but let us not forget that it was predominantly the gift of the visual arts of collective wisdom.&lt;/p&gt;
+
+&lt;p&gt;Visual information is an important part of life, and I felt that this face fits well into my way of being. It is the flip side of the fact that even in the computational world, the individual from non-computational world is still connected. But what’s surprising is that the creation of the face took &lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;only 20 minutes and a few dollars&lt;/a&gt;. The level of fitness in this ever-changing dynamic of reality and its accessibility is truly astonishing and unprecedented, and today is a day that marked a new step in &lt;a href=&quot;https://mdaisuke.net/en/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/&quot;&gt;the revolution&lt;/a&gt;.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Sustainability</title>
+			<link href="http://mdaisuke.net/en/2020/09/20/Sustainability.html"/>
+			<updated>2020-09-20T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/en/2020/09/20/Sustainability</id>
+			<content type="html">&lt;p&gt;Sustainability, being light and fuzzy like feathers, is a shapeless object. I’ve been trying to catch it with my own hands with certain special feelings. At times it forms a tangible shape, leaving me spark-joy; other times it goes through my fingers deceptively.&lt;/p&gt;
+
+&lt;p&gt;As far as I can remember it, I couldn’t help but come to view it again and again. Because that is what something beautiful makes you want to do. I just cannot leave it and look for something else for a long time.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, I cannot define it as one particular thing. However, I can bring some successful examples which I was able to grab as something tangible. It’s when seeing an electric vehicle accelerating in the blink of an eye with its quiet three-phase alternative current, right next to a fierce petro one that cannot hold its fuel exploding inside. It’s when using a soft bamboo tooth-brush with its wood scent, instead of one with inorganic, artificial and colorful plastic. It’s when wrapping a gift with a &lt;em&gt;furoshiki&lt;/em&gt; that is reusable, robust and uniquely patterned, instead of disposable wrapping paper that cannot erase its own past wrinkles.&lt;/p&gt;
+
+&lt;p&gt;The feeling is as if a droplet of water shapes natural roundness when falling with gravity. Sometimes my heart even dances, whispering how beautiful it is.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, this may be myself being obsessed with “it” excessively. That is, it can be viewed as a perspective after many observations, or as persistence that grew too much. A man in the eyesight, may have different feelings on the same thing.&lt;/p&gt;
+
+&lt;p&gt;I think of this after seeing the history of people. People kept embodying beliefs with technology as stepping stones, and now with our civilization being cumulated over and over, we’ve received affluent wealth at our hands. Striving parallelly with an appetite for survival of our own civilization in this vast universe, passing us on with our love embodies sustainability in and of itself. And I’m sure, that not just a few people had a sense of attachment to or special feelings on the circulating lives.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, it’s indeed true that we keep undermining, destroying and stealing the environment, resources, and other lives. Here, it’s easy to find, even in the individual scale, a sense of arrogance and fierce trying to survive.&lt;/p&gt;
+
+&lt;p&gt;Yes, so these feelings upon sustainability is like a double-sided sword. And that’s why it sometimes may be necessary to discipline and remind ourselves that, while finding it beautiful, that is not absolute. If you realize this contradiction of it being right next to its fierceness, how can you gurantee its absolute sense of beauty?&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, I observe snipped scenes along my journey with my own preference. It’s beautiful: It’s wonderful: It’s mesmerizing. There’re times that I ponder with those feelings. I cannot help but feel the spark-joy that remains at heart, when shaping this shapeless object at hand. It’s as if I’m casting light on the shapeless object and leaving the shadow at the front of me, like mapping a vector to a 2 dimensional plane from a 3 dimensional space.&lt;/p&gt;
+
+&lt;p&gt;And I believe that people like me contemplating the same may be out there too. Well rather, I’ve come to feel like this over times. Dropping the shadows, I certainly carve them on places that catch many eyes. “I want to carve ‘em!”, says my heart. Then I pose and wonder, over and over again.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>RiseAndFall</title>
+			<link href="http://mdaisuke.net/en/2020/04/04/RiseAndFall.html"/>
+			<updated>2020-04-04T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/en/2020/04/04/RiseAndFall</id>
+			<content type="html">&lt;p&gt;After reading &lt;a href=&quot;https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-ebook/dp/B07N5J5FTS&quot;&gt;&lt;em&gt;Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart.&lt;/em&gt;&lt;/a&gt;
+.&lt;/p&gt;
+
+&lt;p&gt;What is intelligence? I believe it can be represented by a tree.&lt;br /&gt;
+In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one’s cultural upbringing.&lt;/p&gt;
+
+&lt;p&gt;Physics and Bayes’ theorem in Mathematics both contain the notion of &lt;em&gt;measurement&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The former type of measurement is found in quantum physics. In &lt;a href=&quot;https://www.youtube.com/watch?v=vnJre6NzlOQ&quot;&gt;the double slit problem&lt;/a&gt; you prepare a wall with two slits and a screen behind it. When you shoot an electron at the slits, an interference pattern appears behind the slits. However, when you measure the electron right before it passes either of the slits, you see the shape of one slit; not the interference pattern. So, the state of an electron changes with measurement. This occurs in the micro world.&lt;/p&gt;
+
+&lt;p&gt;The latter type of measurement is found as a form of &lt;em&gt;evidence&lt;/em&gt; for formalizing an update of &lt;em&gt;one’s belief&lt;/em&gt; in probability. This in a nutshell goes as follows; when an observer originally has a belief, measuring a new piece of evidence updates the belief. This occurs in the macro world. (&lt;a href=&quot;https://youtu.be/HZGCoVF3YvM&quot;&gt;This video&lt;/a&gt; explains this very clearly)&lt;/p&gt;
+
+&lt;p&gt;Measurement seems to have influence on the micro and macro world that we live in. Measurement may update one’s intelligence tree as well. This sounds obvious; however, I’m going to address this as a time axis that divises the growth of the tree into the section.&lt;/p&gt;
+
+&lt;p&gt;Going through learning, each individual forms the tree of intelligence of their own. The stem gradually thickens, branches out, leafs, and grows.&lt;/p&gt;
+
+&lt;p&gt;And now, you repeat a measurement of information without a physical bound, and your tree keeps updated at an unprecedented speed. Yes, the information is driven by the magic – namely the internet –, and extensively piles up at a place that holds an enormous number of users, such as social media or major search engines. And the rate at which measurement occurs online seems to be only increasing.&lt;/p&gt;
+
+&lt;p&gt;As a smartphone or pc keep optimizing itself to its user, the user’s tree may have changed its address from its owner’s head. The data you stored, your footsteps(such as your browsing history), and the websites marked as ‘your favorite and like’ on platform, are all yours but they exist outside of your head. This means part of the tree is now getting stored in the optimized smartphone and pc. In this sense, you could even say that intelligence is now to knowing where information sits; not to exactly remembering it. When you lose your phone or pc, you may feel like you’re losing part of your body, and that is probably because of this.&lt;/p&gt;
+
+&lt;p&gt;Although, the tree is &lt;em&gt;not only&lt;/em&gt; yours. Consuming the web while leaving your footsteps(including browsing history, cache and cookies), &lt;em&gt;the other side&lt;/em&gt; – cybernetic collectives among humans and machines that seek to achieve their particular objectives –, who receive part of your tree and promptly shapes your digital-sphere with &lt;em&gt;recommendations&lt;/em&gt; and &lt;em&gt;relevance&lt;/em&gt;, providing content. The incentive seems to accelerate the speed at which the user accesses to &lt;em&gt;the web created by yourself&lt;/em&gt; in a sense.&lt;/p&gt;
+
+&lt;p&gt;Including SNS, business models in media tend to run on advertisement income. User provides their own interest through one’s data and clicks at the expense of monetary free of charge. Based on this, &lt;em&gt;the other side&lt;/em&gt; shoots advertisement at you.&lt;/p&gt;
+
+&lt;p&gt;The more data &lt;em&gt;the other side&lt;/em&gt; can collect, the more accurate advertisement becomes. Therefore, incentive aligns with collecting more and more data. Rather than texts and pictures, videos contain more data. Uploading them therefore means providing more information. The capacity of photographing with better resolution means being able to provide more information. In the birth of more and stronger engagement between users and &lt;em&gt;the other side&lt;/em&gt;, incentive to uploading more or to maximizing click-rates increases even more. &lt;em&gt;To serve better&lt;/em&gt; from &lt;em&gt;the other side&lt;/em&gt; aims at maximizing click rates, personalization and engagement. Incentive increases in creating a denser and faster feedback loop between users and &lt;em&gt;the other side&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;As time is finite, they’re using catchy titles that draw your attention in headlines, or impressive thumbnails : therefore, those methods of propagating information keep advancing. Considering hard competition between medias, manipulating flat lies and sensitive expressions to get your attention isn’t hard for us to imagine happening. For sure, there exist justice to deliver unmodified facts coming from journalism and science(as information sometimes can be more important than life, and some must to be reached to everyone), and well-intentioned information coming from altruistic behaviour.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The other side&lt;/em&gt; is an intellectual elite from all the prestige universities. The aim, drawing your attention and maximising engagement, could be accomplished at a fairly undetectable level to the users(I’ll quote an example from the book later).&lt;/p&gt;
+
+&lt;p&gt;This tree formed in this way – therefore beliefs, knowledge and preferences – seem like getting updated at an unprecedented rate.&lt;/p&gt;
+
+&lt;p&gt;If the internet is &lt;em&gt;irresistibly attractive&lt;/em&gt; and &lt;em&gt;impossible to control your attention&lt;/em&gt; to you, that can be said as a testament to state-of-the-art optimization.&lt;/p&gt;
+
+&lt;p&gt;Where this ends up is a filter-bubble(a world that keeps validating the content you’re consuming). Even if you search a same word in Google with someone else, of course you will see a different result to his. Algorithms providing recommendations creates more engagement in the digital-sphere provided where your interests and preferences are more predictable.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;To get just an inkling of the fire we’re playing with, consider how content-selection algorithms function on social media. They aren’t particularly intelligent, but they are in a position to affect the entire world because they directly influence billions of people. Typically, such algorithms are designed to maximize click-through, that is, the probability that the user clicks on presented items. The solution is simply to present items that the user likes to click on, right? Wrong. The solution is to change the user’s preferences so that they become more predictable. A more predictable user can be fed items that they are likely to click on, thereby generating more revenue. People with more extreme political views tend to be more predictable in which items they will click on. (Possibly there is a category of articles that die-hard centrists are likely to click on, but it’s not easy to imagine what this category consists of.) Like any rational entity, the algorithm learns how to modify the state of its environment—in this case, the user’s mind—in order to maximize its own reward. The consequences include the resurgence of fascism, the dissolution of the social contract that underpins democracies around the world, and potentially the end of the European Union and NATO. Not bad for a few lines of code, even if it had a helping hand from some humans.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Russell, Stuart. Human Compatible (pp. 8-9). Penguin Publishing Group. Kindle Edition.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I wonder; how same is the amount of information that can be within a range of measurement on the internet and the amount of information of the tree representing your intelligence? If I take a ratio in the two, then it may be the size of earth and an apple(very unlikely). The world is big. But this fact looks like a lie at a sight.&lt;/p&gt;
+
+&lt;p&gt;The world I view isn’t of a real shape as it is in the &lt;em&gt;true&lt;/em&gt; sense, but now is rather closer to a bubble snipped by &lt;em&gt;recommendations&lt;/em&gt;. When that becomes seriously ill, earth becomes flat and climate crisis disappears. Even if it’s not that extreme, for example, the interpretation of a word such as &lt;em&gt;abortion&lt;/em&gt; changes depending on an individual with a different belief.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, if you buy a physical book at a bookshop, they won’t change the display just for you alone based on your purchasing information.&lt;/p&gt;
+
+&lt;p&gt;Even if there’s a topic that induces mutually exclusive opinions, the fact that people with different preferences and opposing views to other’s living on this planet, is not strange. And the fact that there &lt;em&gt;are&lt;/em&gt; others is a testament to that there &lt;em&gt;are&lt;/em&gt; people who love &lt;em&gt;their&lt;/em&gt; trees as much as you do yours.&lt;/p&gt;
+
+&lt;p&gt;Each tree and its owner as an individual is deeply connected. Now including the difference of the trees and things that we’re born with, this dynamic &lt;em&gt;could&lt;/em&gt; be called as diversity. Regardless of where the bound between the tree and the person holds, both of them are mutually dependent on each other, and there’d be no one who wants to get rid of either of them.&lt;/p&gt;
+
+&lt;p&gt;Diversity is posed as good. Each tree gathers and forms a big forest as a whole. Or, each tree shares its stem and branches out differently. Both are beautiful: a forest interwoven with a various types of trees, and a tree stretching its roots to the deep ground and branches out to the high sky. Through seasons flower blooms; greenery thickens; autumn leaves dye; and they wither. Branches will be left alone, and leaves pile up on the ground, bringing a new life to the branches again. Over this circulation, forests and trees grow larger and larger.&lt;/p&gt;
+
+&lt;p&gt;To understand each other, it’s necessary to seek the shared stem, and to admit split branches and leaves from there on. As each reality branches out, it would take more time to trace the original root that started splitting and branching away from your own one. If succeeded, you would end up with understandings with each other even if liking or disliking feeling may arise because a different tree would be also rigidly structured, from its root to branches.&lt;/p&gt;
+
+&lt;p&gt;So when you communicate with other, many of “I don’t get it”, “I’m uncertain”, and “I don’t like it” will remain, and that is normal. Meanwhile, it’s possible to keep measurements over and over in the filter bubble. And the sea of information would not show its horizon, as if it seems entirely possible to keep measurements there forever.&lt;/p&gt;
+
+&lt;p&gt;To counter act against it, there must be some technical preparedness although they may not be perfect. Using another search engine(this comes from a competition standpoint and prevents monopoly of users from &lt;em&gt;the other side&lt;/em&gt;); using private browsing(not leaving footsteps of history and cookies, preventing a creation of &lt;em&gt;recommendation digital sphere&lt;/em&gt;) and occasionally leaving from SNS and news(avoiding information incentivised with speed alone); deliberate fact checking(using particular websites designed for this, as for fake news, e.g. &lt;a href=&quot;https://www.snopes.com/&quot;&gt;snope.com&lt;/a&gt;); adding more context(as for fake news); consuming media that shows political characteristic of their content(exposing yourself to opinions from the politically opposite side to yours, e.g.&lt;a href=&quot;https://www.allsides.com/unbiased-balanced-news&quot;&gt;alide.com&lt;/a&gt;), and so on.&lt;/p&gt;
+
+&lt;p&gt;At the same time, there would be conscious preparedness as well: having a meta-awareness such as “This world I’m viewing is what I created”; having an awareness that it’d be not possible to end up in mutual understanding without troublesome, contradicting, and patient communication, as their trees differ greater and greater; having an awareness of perspectives from the opposite side of spectrum; having accurate vocabulary; giving the benefit of the doubt; having an awareness of that negative information draws more attention than positive one, and so on.&lt;/p&gt;
+
+&lt;p&gt;And I’m sure, that there’s a lot more that can be done. It’s shame that I’m one of them not being aware of everything, either. Or perhaps it’s pretty normal not to being able to aware of everything. I don’t know.&lt;/p&gt;
+
+&lt;p&gt;Still as they say: as many heads, as many wits; and everything changes. It’s not strange to being different to each other. What’s good and bad may be fluid while respecting diversity. Era and environment change, and so do perspectives and ethics. Still given that; however, mutual understanding, and living together in peace is priceless, isn’t it?&lt;/p&gt;
+
+&lt;p&gt;Thank you for reading this all the way!&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Launch</title>
+			<link href="http://mdaisuke.net/en/2020/01/20/daisuke-site-launched.html"/>
+			<updated>2020-01-20T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/en/2020/01/20/daisuke-site-launched</id>
+			<content type="html">&lt;p&gt;In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.&lt;/p&gt;
+
+&lt;p&gt;Maybe there’d be some total nonsense, or some unhindered truth that remain untouched by mainstream. This sea wides open here and there, and is too vast and deep. It continues limitlessly and one may not be even able to see its horizon.&lt;/p&gt;
+
+&lt;p&gt;Hang on, take a moment and look away from the screen. Then I want to ask you; how the world at the front of you appears?&lt;/p&gt;
+
+&lt;p&gt;There must be some skin-stabbing winds, the familiar sound of a bus engine, and the humid scent of rain that spreads over. Unlike the world of musical with 0 and 1, you must feel the gravity bypassing your thighs, or experience the perspective from aggressive buildings or vast wild fields.&lt;/p&gt;
+
+&lt;p&gt;Amid of them, there’s a thing that you reach your hand to, unconsciously. The pocket small magic sits outside of your rationality and instinct, though it keeps optimizing itself to the owner in its very sleek manner. Well, it rather enhances your capability; in semi-eternally remembering scenes and memories through crisp pictures and videos ; in enabling you to contact with someone 5,000 miles away; or even in obscuring the owner of knowledge. Your encyclopedia is, in some case, no longer in your head but in the sea. Therefore, the owner over knowledge has a less clear boundary with his outside than before.&lt;/p&gt;
+
+&lt;p&gt;Originally, rationality and instinct co-exist each other inside of you. Perhaps there’s no one who wants to get rid of either of them. Now, there wouldn’t be anyone who wants to get rid of your magic, which has become like your limbs and arms.&lt;/p&gt;
+
+&lt;p&gt;And, there may be no going-back.&lt;/p&gt;
+
+&lt;p&gt;I find everyone as one that has become a wizard. Meanwhile, they also seem like discovering how to use the magic. Certainly, I’m also one of them. Did I sound strange in the beginning, or did I not?&lt;/p&gt;
+
+&lt;p&gt;So what now? Among this, I wonder “ what‘s priceless for us? “. Time to time, I get tempted to stop by and ponder it. Perhaps “this” is also something priceless for us.&lt;/p&gt;
+
+&lt;p&gt;Thank you for reading all the way!&lt;/p&gt;
+
+&lt;p&gt;Bonus:&lt;/p&gt;
+
+&lt;p&gt;If you personify this magic as your partner, then listening to this song from John legend, may make you wonder.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/PIh07c_P4hc&quot;&gt;Ordinary people&lt;/a&gt; by John legend.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>About me</title>
+			<link href="http://mdaisuke.net/en/1995/09/02/about.html"/>
+			<updated>1995-09-02T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/en/1995/09/02/about</id>
+			<content type="html">&lt;p&gt;Nice to meet you! I’m Daisuke and a freelance engineer based in Tokyo. My main job is backend development and engineering management of web applications.&lt;/p&gt;
+
+&lt;p&gt;I majored in physics when I was a student, and learned English as a second language while attending a Japanese university in Japan. Through cross-cultural exchanges, teaching English, and publishing a book on how to learn English, I have gained a wide range of perspectives.&lt;/p&gt;
+
+&lt;p&gt;In software development, I believe it is important not only to write clean code that is easy to maintain and modify, but also to cooperate with people from various backgrounds and work as a team to maximize the value we pursue.&lt;/p&gt;
+
+&lt;p&gt;Outside of my core business, I also create a wide range of hardware, from robots to bicycles to furniture for daily life. In short, I love making things, regardless of the boundaries between them! I believe it is important to cultivate multiple perspectives in order to create good products.&lt;/p&gt;
+
+&lt;p&gt;Please feel free to DM me to &lt;a href=&quot;mailto:contact@mdaisuke.net&quot;&gt;here&lt;/a&gt; for work requests.&lt;/p&gt;
+
+&lt;p&gt;This website is powered by &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, a powerful static website generator. When &lt;a href=&quot;/en/2020/01/20/daisuke-site-launched/&quot;&gt;launching this website&lt;/a&gt;, I decided to switch from Wordpress, and not using any 3000 pounds framework because I’ve been allergic to &lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;them&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can follow me on &lt;a href=&quot;https://twitter.com/aubozumom&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://github.com/DaisukeMiyazaki&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;, and &lt;a href=&quot;https://www.linkedin.com/in/daisuke-miyazaki/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>自己紹介</title>
+			<link href="http://mdaisuke.net/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B.html"/>
+			<updated>1995-09-02T00:00:00+09:00</updated>
+			<id>http://mdaisuke.net/jp/1995/09/02/自己紹介</id>
+			<content type="html">&lt;p&gt;はじめまして！フリーランスのエンジニアをやっています。WebアプリケーションのBackend開発、エンジニアリングマネージメントが本業です。&lt;/p&gt;
+
+&lt;p&gt;学生時代は日本の大学で物理学を専攻し、同時に一般的な留学を経験せずに、日本で英語を第二ヶ国語として習得。異文化交流や英語を教える経験、英語の本の上梓を通して幅広い視座を吸収しました。&lt;/p&gt;
+
+&lt;p&gt;ソフトウェア開発にあたって保守、改修のしやすい綺麗なコードを書くだけではなく、さまざまな背景を持つ人と協力し、追い求める価値を最大化するようチームとして働くことが大切だと考えます。&lt;/p&gt;
+
+&lt;p&gt;本業外では、ロボットから自転車、生活家具など幅広いハードウェアも作ります。詰まるところ、垣根をこえて、ものづくりを愛しています！良いものづくりには、多角的な視点を養うことが大切と考えています。&lt;/p&gt;
+
+&lt;p&gt;お仕事の依頼は、お気軽に&lt;a href=&quot;mailto:contact@mdaisuke.net&quot;&gt;こちらへ&lt;/a&gt;DMください。&lt;/p&gt;
+
+&lt;p&gt;このサイトは&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;という静的サイトジェネレーターで動いています。&lt;a href=&quot;/jp/2020/01/20/サイト始動/&quot;&gt;サイトを立ち上げる&lt;/a&gt;にあたって、Wordpressから移行しました。3000ポンドもあるようなフレームワークを使わないことにしたのは、&lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;そういうのが嫌い&lt;/a&gt;だからです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/aubozumom&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://github.com/DaisukeMiyazaki&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/daisuke-miyazaki/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;で発信しています。&lt;/p&gt;
+</content>
+		</entry>
+	
 
 </feed>
-
