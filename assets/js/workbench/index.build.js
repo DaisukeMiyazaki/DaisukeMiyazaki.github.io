@@ -1403,7 +1403,7 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useRef(initialValue);
           }
-          function useEffect(create, deps) {
+          function useEffect2(create, deps) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useEffect(create, deps);
           }
@@ -2368,7 +2368,7 @@
           exports.useContext = useContext;
           exports.useDebugValue = useDebugValue;
           exports.useDeferredValue = useDeferredValue;
-          exports.useEffect = useEffect;
+          exports.useEffect = useEffect2;
           exports.useId = useId;
           exports.useImperativeHandle = useImperativeHandle;
           exports.useInsertionEffect = useInsertionEffect;
@@ -18493,7 +18493,7 @@
                 mountHookTypesDev();
                 return _readContext(context);
               },
-              useEffect: function useEffect(create, deps) {
+              useEffect: function useEffect2(create, deps) {
                 currentHookNameInDev = "useEffect";
                 mountHookTypesDev();
                 checkDepsAreArrayDev(deps);
@@ -18621,7 +18621,7 @@
                 updateHookTypesDev();
                 return _readContext(context);
               },
-              useEffect: function useEffect(create, deps) {
+              useEffect: function useEffect2(create, deps) {
                 currentHookNameInDev = "useEffect";
                 updateHookTypesDev();
                 return mountEffect(create, deps);
@@ -18744,7 +18744,7 @@
                 updateHookTypesDev();
                 return _readContext(context);
               },
-              useEffect: function useEffect(create, deps) {
+              useEffect: function useEffect2(create, deps) {
                 currentHookNameInDev = "useEffect";
                 updateHookTypesDev();
                 return updateEffect(create, deps);
@@ -18863,7 +18863,7 @@
                 updateHookTypesDev();
                 return _readContext(context);
               },
-              useEffect: function useEffect(create, deps) {
+              useEffect: function useEffect2(create, deps) {
                 currentHookNameInDev = "useEffect";
                 updateHookTypesDev();
                 return updateEffect(create, deps);
@@ -18985,7 +18985,7 @@
                 mountHookTypesDev();
                 return _readContext(context);
               },
-              useEffect: function useEffect(create, deps) {
+              useEffect: function useEffect2(create, deps) {
                 currentHookNameInDev = "useEffect";
                 warnInvalidHookAccess();
                 mountHookTypesDev();
@@ -19125,7 +19125,7 @@
                 updateHookTypesDev();
                 return _readContext(context);
               },
-              useEffect: function useEffect(create, deps) {
+              useEffect: function useEffect2(create, deps) {
                 currentHookNameInDev = "useEffect";
                 warnInvalidHookAccess();
                 updateHookTypesDev();
@@ -19261,7 +19261,7 @@
                 updateHookTypesDev();
                 return _readContext(context);
               },
-              useEffect: function useEffect(create, deps) {
+              useEffect: function useEffect2(create, deps) {
                 currentHookNameInDev = "useEffect";
                 warnInvalidHookAccess();
                 updateHookTypesDev();
@@ -32173,112 +32173,55 @@
   var ImageGallery = ({ images }) => {
     const baseURL = (0, import_react.useRef)(window.location.origin);
     const imageRefs = (0, import_react.useRef)([]);
-    const [showSlider, setShowSlider] = (0, import_react.useState)(false);
-    const [sliderValue, setSliderValue] = (0, import_react.useState)(
-      images.length,
-    );
-    const handleSliderChange = (e) => {
-      const newValue = parseInt(e.target.value, 10);
-      setSliderValue(newValue);
-      const index = images.length - newValue;
-      if (index >= 0 && index < images.length) {
-        imageRefs.current[index]?.scrollIntoView({ behavior: "smooth" });
-      }
-    };
+    const [currentIndex, setCurrentIndex] = (0, import_react.useState)(0);
+    (0, import_react.useEffect)(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              const index = parseInt(
+                entry.target.getAttribute("data-index") || "0",
+                10,
+              );
+              setCurrentIndex(index);
+              break;
+            }
+          }
+        },
+        { threshold: 0.5 },
+      );
+      const currentImageRefs = imageRefs.current;
+      currentImageRefs.forEach((ref) => {
+        if (ref) observer.observe(ref);
+      });
+      return () => {
+        currentImageRefs.forEach((ref) => {
+          if (ref) observer.unobserve(ref);
+        });
+      };
+    }, [images]);
     return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
       import_jsx_runtime.Fragment,
       {
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
             className:
-              "fixed right-4 top-1/2 z-20 flex -translate-y-1/2 transform flex-col items-center space-y-2",
-            children: [
-              !showSlider &&
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-                  onClick: () =>
-                    window.scrollTo({ top: 0, behavior: "smooth" }),
-                  className:
-                    "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
-                  title:
-                    "\u30DA\u30FC\u30B8\u30C8\u30C3\u30D7\u306B\u623B\u308B",
-                  children: "\u2191",
-                }),
-              showSlider
-                ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-                    className: "relative",
-                    children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
-                        type: "range",
-                        min: "1",
-                        max: images.length.toString(),
-                        value: sliderValue,
-                        onChange: handleSliderChange,
-                        className: "accent-blue-500",
-                        style: { transform: "rotate(-90deg)", width: "150px" },
-                      }),
-                      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-                        onClick: () => setShowSlider(false),
-                        className:
-                          "mt-2 rounded bg-red-500 p-1 text-xs text-white",
-                        title: "\u9589\u3058\u308B",
-                        children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-                          "svg",
-                          {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            className: "h-4 w-4",
-                            fill: "none",
-                            viewBox: "0 0 24 24",
-                            stroke: "currentColor",
-                            children: /* @__PURE__ */ (0,
-                            import_jsx_runtime.jsx)("path", {
-                              strokeLinecap: "round",
-                              strokeLinejoin: "round",
-                              strokeWidth: 2,
-                              d: "M6 18L18 6M6 6l12 12",
-                            }),
-                          },
-                        ),
-                      }),
-                    ],
-                  })
-                : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-                    onClick: () => setShowSlider(true),
-                    className:
-                      "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
-                    title: "\u30DA\u30FC\u30B8\u79FB\u52D5",
-                    children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-                      "svg",
-                      {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        className: "h-6 w-6 text-gray-700",
-                        fill: "none",
-                        viewBox: "0 0 24 24",
-                        stroke: "currentColor",
-                        children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-                          "path",
-                          {
-                            strokeLinecap: "round",
-                            strokeLinejoin: "round",
-                            strokeWidth: 2,
-                            d: "M7 11l5-5 5 5M7 13l5 5 5-5",
-                          },
-                        ),
-                      },
-                    ),
-                  }),
-              !showSlider &&
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-                  onClick: () =>
-                    window.scrollTo({
-                      top: document.body.scrollHeight,
+              "fixed right-4 top-1/2 z-20 flex -translate-y-1/2 transform flex-col items-center space-y-3 opacity-80",
+            children: images.map((_, index) =>
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+                "button",
+                {
+                  onClick: () => {
+                    imageRefs.current[index]?.scrollIntoView({
                       behavior: "smooth",
-                    }),
-                  className:
-                    "rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100",
-                  title: "\u30DA\u30FC\u30B8\u4E0B\u306B\u79FB\u52D5",
-                  children: "\u2193",
-                }),
-            ],
+                    });
+                  },
+                  className: `rounded-full transition-all duration-300 ${currentIndex === index ? "h-1 w-5 bg-white" : "h-1 w-1 bg-white"}`,
+                  "aria-label": `Go to image ${index + 1}`,
+                },
+                index,
+              ),
+            ),
           }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
             className: "mx-auto w-fit",
@@ -32299,7 +32242,8 @@
                     }),
                     /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
                       className:
-                        "pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300",
+                        "pointer-events-none absolute bottom-4 right-4 whitespace-pre-wrap p-3 text-lg text-white",
+                      style: { textShadow: "0 1px 3px rgba(0, 0, 0, 0.7)" },
                       children: image.link
                         ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
                             href: `${baseURL.current}${image.link}`,
