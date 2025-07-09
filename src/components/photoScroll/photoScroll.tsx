@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 type ImageData = {
   id: number;
@@ -14,97 +14,52 @@ type ImageGalleryProps = {
 const ImageGallery = ({ images }: ImageGalleryProps) => {
   const baseURL = useRef(window.location.origin);
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [showSlider, setShowSlider] = useState(false);
-  const [sliderValue, setSliderValue] = useState(images.length);
-  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = parseInt(e.target.value, 10);
-    setSliderValue(newValue);
-    const index = images.length - newValue;
-    if (index >= 0 && index < images.length) {
-      imageRefs.current[index]?.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const index = parseInt(
+              entry.target.getAttribute("data-index") || "0",
+              10,
+            );
+            setCurrentIndex(index);
+            break;
+          }
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    const currentImageRefs = imageRefs.current;
+    currentImageRefs.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      currentImageRefs.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, [images]);
 
   return (
     <>
-      <div className="fixed right-4 top-1/2 z-20 flex -translate-y-1/2 transform flex-col items-center space-y-2">
-        {!showSlider && (
+      <div className="fixed right-4 top-1/2 z-20 flex -translate-y-1/2 transform flex-col items-center space-y-3 opacity-80">
+        {images.map((_, index) => (
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
-            title="ページトップに戻る"
-          >
-            ↑
-          </button>
-        )}
-        {showSlider ? (
-          <div className="relative">
-            <input
-              type="range"
-              min="1"
-              max={images.length.toString()}
-              value={sliderValue}
-              onChange={handleSliderChange}
-              className="accent-blue-500"
-              style={{ transform: "rotate(-90deg)", width: "150px" }}
-            />
-            <button
-              onClick={() => setShowSlider(false)}
-              className="mt-2 rounded bg-red-500 p-1 text-xs text-white"
-              title="閉じる"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-        ) : (
-          <button
-            onClick={() => setShowSlider(true)}
-            className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
-            title="ページ移動"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-gray-700"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M7 11l5-5 5 5M7 13l5 5 5-5"
-              />
-            </svg>
-          </button>
-        )}
-        {!showSlider && (
-          <button
-            onClick={() =>
-              window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: "smooth",
-              })
-            }
-            className="rounded-full bg-gray-200 p-2 text-gray-700 opacity-50 transition-opacity hover:opacity-100"
-            title="ページ下に移動"
-          >
-            ↓
-          </button>
-        )}
+            key={index}
+            onClick={() => {
+              imageRefs.current[index]?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className={`rounded-full transition-all duration-300 ${
+              currentIndex === index ? "h-1 w-5 bg-white" : "h-1 w-1 bg-white"
+            }`}
+            aria-label={`Go to image ${index + 1}`}
+          />
+        ))}
       </div>
       <div className="mx-auto w-fit">
         {images.map((image, index) => (
@@ -122,7 +77,10 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
               className="h-screen w-full object-cover"
             />
 
-            <div className="pointer-events-none absolute bottom-0 right-0 whitespace-pre-wrap rounded bg-black bg-opacity-70 p-3 text-lg text-white transition-opacity duration-300">
+            <div
+              className="pointer-events-none absolute bottom-4 right-4 whitespace-pre-wrap p-3 text-lg text-white"
+              style={{ textShadow: "0 1px 3px rgba(0, 0, 0, 0.7)" }}
+            >
               {image.link ? (
                 <a
                   href={`${baseURL.current}${image.link}`}
