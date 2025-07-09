@@ -30,17 +30,18 @@
             {{ site.data.translations['relatedPosts'][page.lang] }}
           </h2>
 
-          <ul class="mt-4 space-y-4">
+          <ul class="mx-auto max-w-4xl space-y-4 p-4">
             {% for post in related limit:3 %}
             <li>
-              <h3 class="text-xl">
-                <a href="{{ post.url }}" class="text-blue-600 hover:underline">
-                  {{ post.title }}
-                  <small class="block text-gray-500"
-                    >{{ post.date | date_to_string }}</small
-                  >
-                </a>
-              </h3>
+              <a
+                href="{{ post.url }}"
+                class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
+              >
+                {{ post.title }}
+                <small class="block text-gray-500 dark:text-gray-400"
+                  >{{ post.date | date_to_string }}</small
+                >
+              </a>
             </li>
             {% endfor %}
           </ul>
@@ -48,5 +49,6 @@
         {% endif %}
       </div>
     </div>
+    {% include footer.html %}
   </body>
 </html>
