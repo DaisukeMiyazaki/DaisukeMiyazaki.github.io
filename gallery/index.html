@@ -1,0 +1,1354 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link
+    rel="canonical"
+    href="https://mdaisuke.net/gallery/"
+  />
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Daisuke Miyazaki's Blog"
+    href="/feed.xml"
+  />
+
+  <title>
+      &middot; Daisuke Miyazaki's Blog 
+  </title>
+
+  <!--costom CSS-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+
+  <!-- seo -->
+  <meta name="author" content="Daisuke Miyazaki" />
+  <meta
+    name="description"
+    content="Daisuke is an engineer based in Tokyo. This is his personal website."
+  />
+
+  <!-- open graph -->
+  <meta property="og:title" content="Daisuke (Daisuke Miyazaki)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
+  <meta
+    property="og:description"
+    content="Daisuke is an engineer based in Tokyo. This is his personal website."
+  />
+  <meta property="og:url" content="https://mdaisuke.net" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Daisuke Miyazaki" />
+
+  
+    
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/07/02/we-must-not-delegate-understanding/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/07/02/understanding-delegation/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver4/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
+  />
+   
+</head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-LRV9J804ME"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-LRV9J804ME");
+</script>
+<script>
+  if (
+    localStorage.getItem("theme") === "dark" ||
+    (!localStorage.getItem("theme") &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
+
+    <style>
+      body {
+        background-color: #000 !important;
+        color: #fff !important;
+      }
+
+      /* レイアウト切り替えトグル */
+      .layout-toggle-container {
+        position: fixed;
+        top: 20px;
+        right: 80px;
+        z-index: 1000;
+        background: rgba(30, 30, 30, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 8px 16px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .layout-toggle-container:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .layout-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #9ca3af;
+        text-decoration: none;
+      }
+
+      .toggle-switch {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        background: #3b82f6;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .toggle-switch::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .toggle-switch:hover::after {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .layout-toggle-label {
+        font-weight: 500;
+        user-select: none;
+      }
+
+      @media (max-width: 768px) {
+        .layout-toggle-container {
+          top: 15px;
+          right: 60px;
+          padding: 6px 12px;
+        }
+
+        .layout-toggle {
+          font-size: 11px;
+          gap: 6px;
+        }
+
+        .toggle-switch {
+          width: 35px;
+          height: 18px;
+        }
+
+        .toggle-switch::after {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .gallery-container {
+        min-height: 100vh;
+        display: flex;
+        background-color: #000;
+      }
+
+      .sidebar {
+        width: 250px;
+        padding: 2rem;
+        background-color: #111;
+        height: 100vh;
+        position: fixed;
+        left: -250px;
+        top: 0;
+        overflow-y: auto;
+        z-index: 100;
+        transition: left 0.3s ease;
+        border-right: 1px solid #333;
+      }
+
+      .sidebar.open {
+        left: 0;
+      }
+
+      .main-content {
+        flex: 1;
+        margin-left: 0;
+        padding: 2rem;
+        background-color: #000;
+        width: 100%;
+        margin-top: 100px;
+      }
+
+      .menu-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 200;
+        background: #222;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .menu-toggle:hover {
+        background: #333;
+      }
+
+      .hamburger {
+        width: 24px;
+        height: 18px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        border-radius: 1px;
+        transition: all 0.3s ease;
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 50;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 0.5rem;
+        max-width: none;
+      }
+
+      .gallery-item {
+        position: relative;
+        aspect-ratio: 3/2;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        cursor: pointer;
+        background-color: #222;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+      }
+
+      .gallery-item-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover .gallery-item-image {
+        transform: scale(1.05);
+      }
+
+      .gallery-item-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.9),
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+        padding: 1rem;
+        color: white;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+        transform: translateY(100%);
+        transition: transform 0.6s ease;
+        opacity: 0;
+      }
+
+      .gallery-item.visible .gallery-item-overlay {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .gallery-item:hover .gallery-item-overlay {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .gallery-item-no-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .sidebar-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #fff;
+        text-align: center;
+      }
+
+      .filter-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .filter-btn {
+        padding: 12px 16px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        background: #222;
+        color: #ccc;
+        text-align: left;
+        width: 100%;
+      }
+
+      .filter-btn:hover {
+        background: #333;
+        color: #fff;
+      }
+
+      .filter-btn.active {
+        background: #3b82f6;
+        color: white;
+      }
+
+      .genre-実用 {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+      }
+      .genre-短編小説 {
+        background: linear-gradient(45deg, #f093fb, #f5576c);
+      }
+      .genre-エッセイ {
+        background: linear-gradient(45deg, #4facfe, #00f2fe);
+      }
+      .genre-work {
+        background: linear-gradient(45deg, #43e97b, #38f9d7);
+      }
+      .genre-practical {
+        background: linear-gradient(45deg, #fa709a, #fee140);
+      }
+      .genre-short-story {
+        background: linear-gradient(45deg, #a8edea, #fed6e3);
+      }
+      .genre-default {
+        background: linear-gradient(45deg, #d299c2, #fef9d7);
+      }
+
+      .gallery-item-meta {
+        font-size: 0.8rem;
+        opacity: 0.9;
+        margin-bottom: 0.5rem;
+      }
+
+      .gallery-item-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+        line-height: 1.2;
+      }
+
+      .gallery-item-excerpt {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          left: -100%;
+          width: 80%;
+          max-width: 300px;
+          padding: 1.5rem;
+        }
+
+        .sidebar.open {
+          left: 0;
+        }
+
+        .main-content {
+          padding: 1rem;
+        }
+
+        .menu-toggle {
+          top: 15px;
+          right: 15px;
+          padding: 10px;
+        }
+
+        .hamburger {
+          width: 20px;
+          height: 15px;
+        }
+
+        .filter-nav {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .filter-btn {
+          width: 100%;
+          text-align: left;
+          padding: 10px 12px;
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 0.3rem;
+        }
+
+        .gallery-item-title {
+          font-size: 0.9rem;
+        }
+
+        .gallery-item-excerpt {
+          font-size: 0.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: #000; color: #fff; margin: 0; padding: 0">
+    <!-- レイアウト切り替えトグル -->
+    <div class="layout-toggle-container">
+      <a
+        href="/"
+        class="layout-toggle"
+        id="layoutToggle"
+      >
+        <span class="layout-toggle-label"
+          >リスト表示</span
+        >
+        <div class="toggle-switch"></div>
+      </a>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="gallery-container">
+      <div class="sidebar" id="sidebar">
+        <div style="margin-bottom: 2rem; text-align: center">
+          <h2 style="color: #fff; font-size: 1.3rem; margin: 0">
+             カテゴリー 
+          </h2>
+        </div>
+
+        <div class="filter-nav">
+          <button class="filter-btn active" data-genre="all">すべて</button>
+          <button class="filter-btn" data-genre="実用">実用</button>
+          <button class="filter-btn" data-genre="短編小説">短編小説</button>
+          <button class="filter-btn" data-genre="エッセイ">エッセイ</button>
+          <button class="filter-btn" data-genre="work">work</button>
+          <button class="filter-btn" data-genre="practical">practical</button>
+          <button class="filter-btn" data-genre="short-story">
+            short-story
+          </button>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="gallery-grid" id="gallery-grid">
+                 
+
+          <a
+            href="/jp/2025/07/02/understanding-delegation/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2025-07-02T15:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/dont delegate understandings.jpeg"
+              alt="理解を委任してはいけない"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>02 Jul 2025</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">理解を委任してはいけない</h3>
+
+              <div class="gallery-item-excerpt">生成AIが巧みな嘘をつける時代だからこそ、自分の言葉で思考し、点と点をつなぐ作業を委任してはならない。日記やノートを通じて思考を深める重要性について。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"
+            class="gallery-item"
+            data-genre="エッセイ"
+            data-date="2025-06-16T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/2025-06-16 夏が始まった.jpeg"
+              alt="夏が始まった"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>16 Jun 2025</span>
+                <span class="ml-2">#エッセイ</span>
+              </div>
+
+              <h3 class="gallery-item-title">夏が始まった</h3>
+
+              <div class="gallery-item-excerpt">氷が揺れて器にあたる音</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2025-03-20T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/obsidian_logo.png"
+              alt="obsidianを使い始めて1年レビュー"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Mar 2025</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">obsidianを使い始めて1年レビュー</h3>
+
+              <div class="gallery-item-excerpt">ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっていたが課題があり、乗り換えてみてからもう早一年以上経つので、レビューしてみる。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2025-03-17T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/ipad.jpg"
+              alt="IPadを手放した"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>17 Mar 2025</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">IPadを手放した</h3>
+
+              <div class="gallery-item-excerpt">結局iPadですらジャケットのポケットには入らない。スマホの演算力やバッテリーの持ちは今や十分。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver4/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2025-01-20T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/indentation/IMG_4780.jpeg"
+              alt="例の凸凹ver4"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2025</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">例の凸凹ver4</h3>
+
+              <div class="gallery-item-excerpt">6畳部屋の要望を叶える家具を作り上げる大規模チャレンジ、いよいよ最終編。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2025-01-20T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/indentation/IMG_1792.JPG"
+              alt="例の凸凹ver3"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2025</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">例の凸凹ver3</h3>
+
+              <div class="gallery-item-excerpt">6畳部屋の要望を叶える家具を作り上げる大規模チャレンジ、照明と収納増量編。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2025-01-20T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/indentation/IMG_3664.jpg"
+              alt="例の凸凹ver2"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2025</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">例の凸凹ver2</h3>
+
+              <div class="gallery-item-excerpt">6畳部屋の要望を叶える家具を作り上げる大規模チャレンジ、基礎ができたら天板づくり</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver1/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2025-01-20T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/indentation/IMG_1857.jpg"
+              alt="例の凸凹 ver1"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2025</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">例の凸凹 ver1</h3>
+
+              <div class="gallery-item-excerpt">6畳の部屋は僕らの夢の工房。雑貨を作っていくにはその素材を収納するだけでなく、飾りとして、作業場として、そしてくつろぐ空間として使いたい。そんな要望を叶える家具を作り上げる大規模チャレンジ</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2025-01-13T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/workbench/front.jpeg"
+              alt="ワークベンチv2"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>13 Jan 2025</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">ワークベンチv2</h3>
+
+              <div class="gallery-item-excerpt">DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2023/09/02/%E9%9B%AB/"
+            class="gallery-item"
+            data-genre="短編小説"
+            data-date="2023-09-02T00:00:00+00:00"
+          >
+            
+            <img
+              src="https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png"
+              alt="雫"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>02 Sep 2023</span>
+                <span class="ml-2">#短編小説</span>
+              </div>
+
+              <h3 class="gallery-item-title">雫</h3>
+
+              <div class="gallery-item-excerpt">地球温暖化予想2050年シナリオは最悪のケースをたどったため、2047年中旬、国連総本部は迅速かつこれまでにない世界的な協力が必要と声明を表示した。日本はその一環として新しい年号を定め、2050年より年号を改める方針を打ち出し、世界中の共通年号として共有された。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2023/08/21/%E3%83%99%E3%83%B3%E3%83%81/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2023-08-21T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/workbench/front.jpeg"
+              alt="ワークベンチ"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>21 Aug 2023</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">ワークベンチ</h3>
+
+              <div class="gallery-item-excerpt">DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2022-12-09T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/me_bw.jpg"
+              alt="新しい一歩"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>09 Dec 2022</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">新しい一歩</h3>
+
+              <div class="gallery-item-excerpt">革命の新しい一歩を見たので、書き留めておく。新しい顔ができたのだ。計算機上世界の自己は周りから見られるものである。非計算機世界でも同じことが言える。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2022/08/08/%E7%B7%91%E5%8C%96%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2022-08-08T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/vegetable.JPG"
+              alt="緑化のススメ"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>08 Aug 2022</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">緑化のススメ</h3>
+
+              <div class="gallery-item-excerpt">2020 年の末から、ベランダ園芸に身が入っている。「もう定年？」なんてジョークを言われたこともあるくらいである。はじめたきっかけは2つある。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2022/05/06/%E3%82%AE%E3%83%A3%E3%83%83%E3%83%97%E3%82%A4%E3%83%A4%E3%83%BC/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2022-05-06T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/gapyear.jpg"
+              alt="Gapyear"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>06 May 2022</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">Gapyear</h3>
+
+              <div class="gallery-item-excerpt">まず何よりも、私が初心に戻って振り返るため。また、当時(そしてきっと今も)前例が日本では少なかったし、当時ギャップイヤーを選択した人は周りに1人もいなかったため、キャリアの相談をすることできませんでした。そのためこの記事が、誰かの参考になればと思った次第です。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2021/05/12/%E6%8C%81%E3%81%A1%E7%89%A9/"
+            class="gallery-item"
+            data-genre="エッセイ"
+            data-date="2021-05-12T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/belongings.jpg"
+              alt="Belongings"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>12 May 2021</span>
+                <span class="ml-2">#エッセイ</span>
+              </div>
+
+              <h3 class="gallery-item-title">Belongings</h3>
+
+              <div class="gallery-item-excerpt">旅にでかけるとき、人は何を想うのだろうか。目的の決まっていない旅では未知なる場所へ足を運び、食べたことのない食材を口にして、その土地の歴史や文化に触れ合う。新しい発見や、今までの自分の足跡を振り返ったりする貴重な時間を過ごすことができよう。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2020/11/23/%E6%9D%B1%E4%BA%AC/"
+            class="gallery-item"
+            data-genre="エッセイ"
+            data-date="2020-11-23T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/tokyo.jpeg"
+              alt="Tokyo"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>23 Nov 2020</span>
+                <span class="ml-2">#エッセイ</span>
+              </div>
+
+              <h3 class="gallery-item-title">Tokyo</h3>
+
+              <div class="gallery-item-excerpt">東京には色がない。冷凍都市と、名付けた人の声を聞いたことがある。黒や灰、白に囲まれている、そう、冷たく、色がないことに気づくのだ。目の前や足下をみてみれば、自分もその色気のなさに紛れているような気がしなくもない。近頃、レンズ越しの僕の日常は、黒や灰、白に囲まれていた。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2020/09/20/%E3%82%B5%E3%82%B9%E3%83%86%E3%83%8A%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3/"
+            class="gallery-item"
+            data-genre="エッセイ"
+            data-date="2020-09-20T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/sustainablity.jpeg"
+              alt="Sustainability"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Sep 2020</span>
+                <span class="ml-2">#エッセイ</span>
+              </div>
+
+              <h3 class="gallery-item-title">Sustainability</h3>
+
+              <div class="gallery-item-excerpt">サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2020/04/04/%E5%B3%A0%E9%81%93/"
+            class="gallery-item"
+            data-genre="エッセイ"
+            data-date="2020-04-04T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/riseandfall.jpeg"
+              alt="RiseAndFall"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>04 Apr 2020</span>
+                <span class="ml-2">#エッセイ</span>
+              </div>
+
+              <h3 class="gallery-item-title">RiseAndFall</h3>
+
+              <div class="gallery-item-excerpt">知とは、なんだろう。僕は、それを木に例えられると思う。人の知の木には、様々なものが混在している。宇宙の摂理を解き明かす科学のような、人間の嗜好の外側に佇む客観性が保証された事実、他人と互いに排他的になり得る意見や育った文化によって培われた常識など。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/"
+            class="gallery-item"
+            data-genre="エッセイ"
+            data-date="2020-01-20T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/ocean.jpeg"
+              alt="Launch"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2020</span>
+                <span class="ml-2">#エッセイ</span>
+              </div>
+
+              <h3 class="gallery-item-title">Launch</h3>
+
+              <div class="gallery-item-excerpt">私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/2018/08/30/%E6%8B%99%E6%9B%B8/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="2018-08-30T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/mybook.JPG"
+              alt="坊主がウェブに上手な英語の詩を書いた。"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>30 Aug 2018</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">坊主がウェブに上手な英語の詩を書いた。</h3>
+
+              <div class="gallery-item-excerpt">英語は今や、我々日本語話者にとっては特に、未知の世界を見ることのできる色眼鏡となりました。その言葉一つが、見えなかった、知らなかった様々な世界を視覚化してくれます。英語は実世界のみならず、インターネットの上でも世界共通語のようです。</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/"
+            class="gallery-item"
+            data-genre="実用"
+            data-date="1995-09-02T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/me_face.jpg"
+              alt="自己紹介"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>02 Sep 1995</span>
+                <span class="ml-2">#実用</span>
+              </div>
+
+              <h3 class="gallery-item-title">自己紹介</h3>
+
+              <div class="gallery-item-excerpt">はじめまして！</div>
+            </div>
+          </a>
+           
+          <a
+            href="https://www.source-maker.co.jp/"
+            class="gallery-item"
+            data-genre="work"
+            data-date="2021-09-01"
+            target="_blank"
+          >
+            <img
+              src=""
+              alt="HR Tech開発/運用"
+              class="gallery-item-image"
+            />
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>Sep 2021 ~ present</span>
+                <span class="ml-2">#work</span>
+              </div>
+
+              <h3 class="gallery-item-title">HR Tech開発/運用</h3>
+
+              <div class="gallery-item-excerpt">Django, React, AWSを使ったフルスタック開発, 運用. 外部APIとの連携など</div>
+            </div>
+          </a>
+          
+          <a
+            href="https://daisystoneart.vercel.app/"
+            class="gallery-item"
+            data-genre="work"
+            data-date="2022-10-01"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/daisystoneart.png"
+              alt="DaisyStoneArt"
+              class="gallery-item-image"
+            />
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>Oct 2022 ~ present</span>
+                <span class="ml-2">#work</span>
+              </div>
+
+              <h3 class="gallery-item-title">DaisyStoneArt</h3>
+
+              <div class="gallery-item-excerpt">ポートフォリオ</div>
+            </div>
+          </a>
+          
+          <a
+            href="/jp/site"
+            class="gallery-item"
+            data-genre="work"
+            data-date="2020-01-01"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/overkill.jpeg"
+              alt="Daisuke Miyazakiのサイト"
+              class="gallery-item-image"
+            />
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>Jan 2020 ~ present</span>
+                <span class="ml-2">#work</span>
+              </div>
+
+              <h3 class="gallery-item-title">Daisuke Miyazakiのサイト</h3>
+
+              <div class="gallery-item-excerpt">このサイト</div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const galleryGrid = document.getElementById("gallery-grid");
+        const galleryItems = Array.from(
+          document.querySelectorAll(".gallery-item"),
+        );
+        const menuToggle = document.getElementById("menu-toggle");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+
+        // Sort items by date
+        galleryItems.sort(
+          (a, b) => new Date(b.dataset.date) - new Date(a.dataset.date),
+        );
+
+        // Clear container and re-append sorted items
+        galleryGrid.innerHTML = "";
+        galleryItems.forEach((item) => galleryGrid.appendChild(item));
+
+        // Menu toggle functionality
+        function toggleMenu() {
+          menuToggle.classList.toggle("active");
+          sidebar.classList.toggle("open");
+          overlay.classList.toggle("active");
+        }
+
+        function closeMenu() {
+          menuToggle.classList.remove("active");
+          sidebar.classList.remove("open");
+          overlay.classList.remove("active");
+        }
+
+        menuToggle.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", closeMenu);
+
+        // Close menu when clicking on a filter button
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const genre = this.dataset.genre;
+
+            // Update active button
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            // Filter items
+            galleryItems.forEach((item) => {
+              const itemGenre = item.dataset.genre;
+              if (genre === "all" || itemGenre === genre) {
+                item.style.display = "block";
+                // Reset visibility for filtered items
+                item.classList.remove("visible");
+              } else {
+                item.style.display = "none";
+              }
+            });
+
+            // Close menu after selecting filter
+            closeMenu();
+
+            // Re-observe visible items after filter change
+            setTimeout(() => {
+              galleryItems.forEach((item) => {
+                if (item.style.display !== "none") {
+                  observer.observe(item);
+                }
+              });
+            }, 100);
+          });
+        });
+
+        // Close menu with Escape key
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            closeMenu();
+          }
+        });
+
+        // Intersection Observer for scroll-triggered excerpts
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px 0px -100px 0px", // Trigger when 100px into viewport
+          threshold: 0.2, // Trigger when 20% of item is visible
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              // Add visible class with staggered delay for smooth effect
+              const delay = index * 150; // 150ms delay between each item
+              setTimeout(() => {
+                entry.target.classList.add("visible");
+              }, delay);
+            }
+          });
+        }, observerOptions);
+
+        // Observe all gallery items
+        galleryItems.forEach((item) => {
+          observer.observe(item);
+        });
+      });
+    </script>
+  </body>
+</html>

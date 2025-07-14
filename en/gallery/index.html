@@ -1,0 +1,1142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link
+    rel="canonical"
+    href="https://mdaisuke.net/en/gallery/"
+  />
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Daisuke Miyazaki's Blog"
+    href="/feed.xml"
+  />
+
+  <title>
+      &middot; Daisuke Miyazaki's Blog 
+  </title>
+
+  <!--costom CSS-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+
+  <!-- seo -->
+  <meta name="author" content="Daisuke Miyazaki" />
+  <meta
+    name="description"
+    content="Daisuke is an engineer based in Tokyo. This is his personal website."
+  />
+
+  <!-- open graph -->
+  <meta property="og:title" content="Daisuke (Daisuke Miyazaki)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
+  <meta
+    property="og:description"
+    content="Daisuke is an engineer based in Tokyo. This is his personal website."
+  />
+  <meta property="og:url" content="https://mdaisuke.net" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Daisuke Miyazaki" />
+
+  
+    
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/07/02/we-must-not-delegate-understanding/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/07/02/understanding-delegation/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver4/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
+  />
+   
+</head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-LRV9J804ME"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-LRV9J804ME");
+</script>
+<script>
+  if (
+    localStorage.getItem("theme") === "dark" ||
+    (!localStorage.getItem("theme") &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
+
+    <style>
+      body {
+        background-color: #000 !important;
+        color: #fff !important;
+      }
+
+      /* レイアウト切り替えトグル */
+      .layout-toggle-container {
+        position: fixed;
+        top: 20px;
+        right: 80px;
+        z-index: 1000;
+        background: rgba(30, 30, 30, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 8px 16px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .layout-toggle-container:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .layout-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #9ca3af;
+        text-decoration: none;
+      }
+
+      .toggle-switch {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        background: #3b82f6;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .toggle-switch::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .toggle-switch:hover::after {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .layout-toggle-label {
+        font-weight: 500;
+        user-select: none;
+      }
+
+      @media (max-width: 768px) {
+        .layout-toggle-container {
+          top: 15px;
+          right: 60px;
+          padding: 6px 12px;
+        }
+
+        .layout-toggle {
+          font-size: 11px;
+          gap: 6px;
+        }
+
+        .toggle-switch {
+          width: 35px;
+          height: 18px;
+        }
+
+        .toggle-switch::after {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .gallery-container {
+        min-height: 100vh;
+        display: flex;
+        background-color: #000;
+      }
+
+      .sidebar {
+        width: 250px;
+        padding: 2rem;
+        background-color: #111;
+        height: 100vh;
+        position: fixed;
+        left: -250px;
+        top: 0;
+        overflow-y: auto;
+        z-index: 100;
+        transition: left 0.3s ease;
+        border-right: 1px solid #333;
+      }
+
+      .sidebar.open {
+        left: 0;
+      }
+
+      .main-content {
+        flex: 1;
+        margin-left: 0;
+        padding: 2rem;
+        background-color: #000;
+        width: 100%;
+        margin-top: 100px;
+      }
+
+      .menu-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 200;
+        background: #222;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .menu-toggle:hover {
+        background: #333;
+      }
+
+      .hamburger {
+        width: 24px;
+        height: 18px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        border-radius: 1px;
+        transition: all 0.3s ease;
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 50;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 0.5rem;
+        max-width: none;
+      }
+
+      .gallery-item {
+        position: relative;
+        aspect-ratio: 3/2;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        cursor: pointer;
+        background-color: #222;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+      }
+
+      .gallery-item-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover .gallery-item-image {
+        transform: scale(1.05);
+      }
+
+      .gallery-item-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.9),
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+        padding: 1rem;
+        color: white;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+        transform: translateY(100%);
+        transition: transform 0.6s ease;
+        opacity: 0;
+      }
+
+      .gallery-item.visible .gallery-item-overlay {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .gallery-item:hover .gallery-item-overlay {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .gallery-item-no-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .sidebar-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #fff;
+        text-align: center;
+      }
+
+      .filter-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .filter-btn {
+        padding: 12px 16px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        background: #222;
+        color: #ccc;
+        text-align: left;
+        width: 100%;
+      }
+
+      .filter-btn:hover {
+        background: #333;
+        color: #fff;
+      }
+
+      .filter-btn.active {
+        background: #3b82f6;
+        color: white;
+      }
+
+      .genre-実用 {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+      }
+      .genre-短編小説 {
+        background: linear-gradient(45deg, #f093fb, #f5576c);
+      }
+      .genre-エッセイ {
+        background: linear-gradient(45deg, #4facfe, #00f2fe);
+      }
+      .genre-work {
+        background: linear-gradient(45deg, #43e97b, #38f9d7);
+      }
+      .genre-practical {
+        background: linear-gradient(45deg, #fa709a, #fee140);
+      }
+      .genre-short-story {
+        background: linear-gradient(45deg, #a8edea, #fed6e3);
+      }
+      .genre-default {
+        background: linear-gradient(45deg, #d299c2, #fef9d7);
+      }
+
+      .gallery-item-meta {
+        font-size: 0.8rem;
+        opacity: 0.9;
+        margin-bottom: 0.5rem;
+      }
+
+      .gallery-item-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+        line-height: 1.2;
+      }
+
+      .gallery-item-excerpt {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          left: -100%;
+          width: 80%;
+          max-width: 300px;
+          padding: 1.5rem;
+        }
+
+        .sidebar.open {
+          left: 0;
+        }
+
+        .main-content {
+          padding: 1rem;
+        }
+
+        .menu-toggle {
+          top: 15px;
+          right: 15px;
+          padding: 10px;
+        }
+
+        .hamburger {
+          width: 20px;
+          height: 15px;
+        }
+
+        .filter-nav {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .filter-btn {
+          width: 100%;
+          text-align: left;
+          padding: 10px 12px;
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 0.3rem;
+        }
+
+        .gallery-item-title {
+          font-size: 0.9rem;
+        }
+
+        .gallery-item-excerpt {
+          font-size: 0.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: #000; color: #fff; margin: 0; padding: 0">
+    <!-- レイアウト切り替えトグル -->
+    <div class="layout-toggle-container">
+      <a
+        href="/en/"
+        class="layout-toggle"
+        id="layoutToggle"
+      >
+        <span class="layout-toggle-label"
+          >List</span
+        >
+        <div class="toggle-switch"></div>
+      </a>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="gallery-container">
+      <div class="sidebar" id="sidebar">
+        <div style="margin-bottom: 2rem; text-align: center">
+          <h2 style="color: #fff; font-size: 1.3rem; margin: 0">
+             Categories 
+          </h2>
+        </div>
+
+        <div class="filter-nav">
+          <button class="filter-btn active" data-genre="all">すべて</button>
+          <button class="filter-btn" data-genre="実用">実用</button>
+          <button class="filter-btn" data-genre="短編小説">短編小説</button>
+          <button class="filter-btn" data-genre="エッセイ">エッセイ</button>
+          <button class="filter-btn" data-genre="work">work</button>
+          <button class="filter-btn" data-genre="practical">practical</button>
+          <button class="filter-btn" data-genre="short-story">
+            short-story
+          </button>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="gallery-grid" id="gallery-grid">
+                 
+
+          <a
+            href="/en/2025/07/02/we-must-not-delegate-understanding/"
+            class="gallery-item"
+            data-genre="practical"
+            data-date="2025-07-02T15:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/dont delegate understandings.jpeg"
+              alt="We Must Not Delegate Understanding"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>02 Jul 2025</span>
+                <span class="ml-2">#practical</span>
+              </div>
+
+              <h3 class="gallery-item-title">We Must Not Delegate Understanding</h3>
+
+              <div class="gallery-item-excerpt">In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2025/01/20/The-Uneven-Project-ver3/"
+            class="gallery-item"
+            data-genre="Practical"
+            data-date="2025-01-20T00:00:00+00:00"
+          >
+            
+            <div class="gallery-item-no-image genre-Practical">
+              <div>
+                <h3 class="gallery-item-title">The indentation Project ver3</h3>
+                <p class="gallery-item-excerpt">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, lighting and storage expansion edition.</p>
+              </div>
+            </div>
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2025</span>
+                <span class="ml-2">#Practical</span>
+              </div>
+
+              <h3 class="gallery-item-title">The indentation Project ver3</h3>
+
+              <div class="gallery-item-excerpt">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, lighting and storage expansion edition.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2025/01/20/The-Uneven-Project-ver2/"
+            class="gallery-item"
+            data-genre="Practical"
+            data-date="2025-01-20T00:00:00+00:00"
+          >
+            
+            <div class="gallery-item-no-image genre-Practical">
+              <div>
+                <h3 class="gallery-item-title">The indentation Project ver2</h3>
+                <p class="gallery-item-excerpt">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, after the foundation is built, it's time to make the top plate.</p>
+              </div>
+            </div>
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2025</span>
+                <span class="ml-2">#Practical</span>
+              </div>
+
+              <h3 class="gallery-item-title">The indentation Project ver2</h3>
+
+              <div class="gallery-item-excerpt">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, after the foundation is built, it's time to make the top plate.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2025/01/20/The-Uneven-Project-ver1/"
+            class="gallery-item"
+            data-genre="Practical"
+            data-date="2025-01-20T00:00:00+00:00"
+          >
+            
+            <div class="gallery-item-no-image genre-Practical">
+              <div>
+                <h3 class="gallery-item-title">The indentation Project ver1</h3>
+                <p class="gallery-item-excerpt">Our 6-mat room is our dream workshop. To make miscellaneous goods, we want to use it not only for storing materials, but also as a display, a workspace, and a relaxing space. A large-scale challenge to create furniture that fulfills such requests.</p>
+              </div>
+            </div>
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2025</span>
+                <span class="ml-2">#Practical</span>
+              </div>
+
+              <h3 class="gallery-item-title">The indentation Project ver1</h3>
+
+              <div class="gallery-item-excerpt">Our 6-mat room is our dream workshop. To make miscellaneous goods, we want to use it not only for storing materials, but also as a display, a workspace, and a relaxing space. A large-scale challenge to create furniture that fulfills such requests.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2023/09/02/droplet/"
+            class="gallery-item"
+            data-genre="short-story"
+            data-date="2023-09-02T00:00:00+00:00"
+          >
+            
+            <img
+              src="https://storage.googleapis.com/daisukemiyazaki_website/story/droplet.png"
+              alt="The Droplet"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>02 Sep 2023</span>
+                <span class="ml-2">#short-story</span>
+              </div>
+
+              <h3 class="gallery-item-title">The Droplet</h3>
+
+              <div class="gallery-item-excerpt"> Due to the worst-case scenario of the global warming prediction for 2050, in mid-2047, the United Nations headquarters issued a statement that swift and unprecedented global cooperation was necessary. As part of this effort, Japan adopted a new era name after in 2050, which was shared with the rest of the world.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2023/08/21/workbench/"
+            class="gallery-item"
+            data-genre="practical"
+            data-date="2023-08-21T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/workbench/front.jpeg"
+              alt="Workbench"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>21 Aug 2023</span>
+                <span class="ml-2">#practical</span>
+              </div>
+
+              <h3 class="gallery-item-title">Workbench</h3>
+
+              <div class="gallery-item-excerpt">Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2022/12/09/Going-Meta-In-The-MetaVerse/"
+            class="gallery-item"
+            data-genre="practical"
+            data-date="2022-12-09T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/me_face.jpg"
+              alt="Going-Meta-In-The-MetaVerse"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>09 Dec 2022</span>
+                <span class="ml-2">#practical</span>
+              </div>
+
+              <h3 class="gallery-item-title">Going-Meta-In-The-MetaVerse</h3>
+
+              <div class="gallery-item-excerpt">I saw a new step in the revolution so I'm writing it down. I got a new face.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2021/05/12/belongings/"
+            class="gallery-item"
+            data-genre="essay"
+            data-date="2021-05-12T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/belongings.jpg"
+              alt="Belongings"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>12 May 2021</span>
+                <span class="ml-2">#essay</span>
+              </div>
+
+              <h3 class="gallery-item-title">Belongings</h3>
+
+              <div class="gallery-item-excerpt">When embarking on a journey, what do people think about? Visiting unknown places, eating cuisines that they have never tasted, and getting in touch with histories and cultures of the place. They may discover something new, or be able to reflect on their footsteps in their life.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2020/11/23/tokyo/"
+            class="gallery-item"
+            data-genre="essay"
+            data-date="2020-11-23T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/tokyo.jpeg"
+              alt="Tokyo"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>23 Nov 2020</span>
+                <span class="ml-2">#essay</span>
+              </div>
+
+              <h3 class="gallery-item-title">Tokyo</h3>
+
+              <div class="gallery-item-excerpt">Tokyo is colorless: A frozen city, said one that named after this city as I have heard of. Black, grey and white cover the city: yes, I’ve come to find it cold and colorless. Looking around the city and upon my foot, I have probably become part of the crowd as well. Recently my days over the lenses have been covered by black, grey and white.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2020/09/20/Sustainability/"
+            class="gallery-item"
+            data-genre="essay"
+            data-date="2020-09-20T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/sustainablity.jpeg"
+              alt="Sustainability"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Sep 2020</span>
+                <span class="ml-2">#essay</span>
+              </div>
+
+              <h3 class="gallery-item-title">Sustainability</h3>
+
+              <div class="gallery-item-excerpt">Sustainability, being light and fuzzy like feathers, is a shapeless object. I've been trying to catch it with my own hands with certain special feelings. At times it forms a tangible shape, leaving me spark-joy; other times it goes through my fingers deceptively.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2020/04/04/RiseAndFall/"
+            class="gallery-item"
+            data-genre="essay"
+            data-date="2020-04-04T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/riseandfall.jpeg"
+              alt="RiseAndFall"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>04 Apr 2020</span>
+                <span class="ml-2">#essay</span>
+              </div>
+
+              <h3 class="gallery-item-title">RiseAndFall</h3>
+
+              <div class="gallery-item-excerpt">What is intelligence? I believe it can be represented by a tree. In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one's cultural upbringing.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/2020/01/20/daisuke-site-launched/"
+            class="gallery-item"
+            data-genre="essay"
+            data-date="2020-01-20T00:00:00+00:00"
+          >
+            
+            <div class="gallery-item-no-image genre-essay">
+              <div>
+                <h3 class="gallery-item-title">Launch</h3>
+                <p class="gallery-item-excerpt">In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.</p>
+              </div>
+            </div>
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>20 Jan 2020</span>
+                <span class="ml-2">#essay</span>
+              </div>
+
+              <h3 class="gallery-item-title">Launch</h3>
+
+              <div class="gallery-item-excerpt">In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.</div>
+            </div>
+          </a>
+                
+
+          <a
+            href="/en/1995/09/02/about/"
+            class="gallery-item"
+            data-genre="practical"
+            data-date="1995-09-02T00:00:00+00:00"
+          >
+            
+            <img
+              src="/assets/images/me_face.jpg"
+              alt="About me"
+              class="gallery-item-image"
+            />
+            
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>02 Sep 1995</span>
+                <span class="ml-2">#practical</span>
+              </div>
+
+              <h3 class="gallery-item-title">About me</h3>
+
+              <div class="gallery-item-excerpt">Nice to meet you!</div>
+            </div>
+          </a>
+           
+          <a
+            href="https://www.source-maker.co.jp/"
+            class="gallery-item"
+            data-genre="work"
+            data-date="2021-09-01"
+            target="_blank"
+          >
+            <img
+              src=""
+              alt="HR Tech開発/運用"
+              class="gallery-item-image"
+            />
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>Sep 2021 ~ present</span>
+                <span class="ml-2">#work</span>
+              </div>
+
+              <h3 class="gallery-item-title">HR Tech開発/運用</h3>
+
+              <div class="gallery-item-excerpt">Django, React, AWSを使ったフルスタック開発, 運用. 外部APIとの連携など</div>
+            </div>
+          </a>
+          
+          <a
+            href="https://daisystoneart.vercel.app/"
+            class="gallery-item"
+            data-genre="work"
+            data-date="2022-10-01"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/daisystoneart.png"
+              alt="DaisyStoneArt"
+              class="gallery-item-image"
+            />
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>Oct 2022 ~ present</span>
+                <span class="ml-2">#work</span>
+              </div>
+
+              <h3 class="gallery-item-title">DaisyStoneArt</h3>
+
+              <div class="gallery-item-excerpt">ポートフォリオ</div>
+            </div>
+          </a>
+          
+          <a
+            href="/jp/site"
+            class="gallery-item"
+            data-genre="work"
+            data-date="2020-01-01"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/overkill.jpeg"
+              alt="Daisuke Miyazakiのサイト"
+              class="gallery-item-image"
+            />
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>Jan 2020 ~ present</span>
+                <span class="ml-2">#work</span>
+              </div>
+
+              <h3 class="gallery-item-title">Daisuke Miyazakiのサイト</h3>
+
+              <div class="gallery-item-excerpt">このサイト</div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const galleryGrid = document.getElementById("gallery-grid");
+        const galleryItems = Array.from(
+          document.querySelectorAll(".gallery-item"),
+        );
+        const menuToggle = document.getElementById("menu-toggle");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+
+        // Sort items by date
+        galleryItems.sort(
+          (a, b) => new Date(b.dataset.date) - new Date(a.dataset.date),
+        );
+
+        // Clear container and re-append sorted items
+        galleryGrid.innerHTML = "";
+        galleryItems.forEach((item) => galleryGrid.appendChild(item));
+
+        // Menu toggle functionality
+        function toggleMenu() {
+          menuToggle.classList.toggle("active");
+          sidebar.classList.toggle("open");
+          overlay.classList.toggle("active");
+        }
+
+        function closeMenu() {
+          menuToggle.classList.remove("active");
+          sidebar.classList.remove("open");
+          overlay.classList.remove("active");
+        }
+
+        menuToggle.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", closeMenu);
+
+        // Close menu when clicking on a filter button
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const genre = this.dataset.genre;
+
+            // Update active button
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            // Filter items
+            galleryItems.forEach((item) => {
+              const itemGenre = item.dataset.genre;
+              if (genre === "all" || itemGenre === genre) {
+                item.style.display = "block";
+                // Reset visibility for filtered items
+                item.classList.remove("visible");
+              } else {
+                item.style.display = "none";
+              }
+            });
+
+            // Close menu after selecting filter
+            closeMenu();
+
+            // Re-observe visible items after filter change
+            setTimeout(() => {
+              galleryItems.forEach((item) => {
+                if (item.style.display !== "none") {
+                  observer.observe(item);
+                }
+              });
+            }, 100);
+          });
+        });
+
+        // Close menu with Escape key
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            closeMenu();
+          }
+        });
+
+        // Intersection Observer for scroll-triggered excerpts
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px 0px -100px 0px", // Trigger when 100px into viewport
+          threshold: 0.2, // Trigger when 20% of item is visible
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              // Add visible class with staggered delay for smooth effect
+              const delay = index * 150; // 150ms delay between each item
+              setTimeout(() => {
+                entry.target.classList.add("visible");
+              }, delay);
+            }
+          });
+        }, observerOptions);
+
+        // Observe all gallery items
+        galleryItems.forEach((item) => {
+          observer.observe(item);
+        });
+      });
+    </script>
+  </body>
+</html>
