@@ -7,6 +7,7 @@ comments: true
 lang: en
 lang-ref: Sustainability
 genre: essay
+thumbnail: /assets/images/sustainablity.jpeg
 ---
 
 Sustainability, being light and fuzzy like feathers, is a shapeless object. I've been trying to catch it with my own hands with certain special feelings. At times it forms a tangible shape, leaving me spark-joy; other times it goes through my fingers deceptively.

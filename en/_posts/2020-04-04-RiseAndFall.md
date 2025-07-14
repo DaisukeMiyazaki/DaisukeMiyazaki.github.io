@@ -7,6 +7,7 @@ comments: true
 lang: en
 lang-ref: RiseAndFall
 genre: essay
+thumbnail: /assets/images/riseandfall.jpeg
 ---
 
 After reading [_Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart._](https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-ebook/dp/B07N5J5FTS)

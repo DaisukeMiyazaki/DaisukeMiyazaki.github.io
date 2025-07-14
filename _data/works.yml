@@ -1,14 +1,14 @@
 - id: 0
   jp:
     title: HR Tech開発/運用
-    short: Django, Template, Vue, AWSを使ったフルスタック開発, 運用. 外部APIとの連携など
+    short: Django, React, AWSを使ったフルスタック開発, 運用. 外部APIとの連携など
     detail:
     site_link: https://www.source-maker.co.jp/
     start_at: Sep 2021
     end_at: present
   en:
     title: HR Tech development/operation
-    short: Full-stack development and operation using Django, Template, Vue, AWS. Integration with external APIs, etc.
+    short: Full-stack development and operation using Django, React, AWS. Integration with external APIs, etc.
     detail:
     site_link: https://www.source-maker.co.jp/en/
     start_at: Sep 2021
@@ -22,6 +22,7 @@
     site_link: https://daisystoneart.vercel.app/
     start_at: Oct 2022
     end_at: present
+    thumbnail: /assets/images/daisystoneart.png
   en:
     title: DaisyStoneArt
     short: Portfolio
@@ -30,6 +31,7 @@
     site_link: https://daisystoneart.vercel.app/
     start_at: Oct 2022
     end_at: present
+    thumbnail: /assets/images/daisystoneart.png
 - id: 2
   jp:
     title: Daisuke Miyazakiのサイト
@@ -39,6 +41,7 @@
     site_link: "/jp/site"
     start_at: Jan 2020
     end_at: present
+    thumbnail: /assets/images/overkill.jpeg
   en:
     title: Daisuke Miyazaki's Site
     short: This site
@@ -47,3 +50,4 @@
     site_link: "/en/site"
     start_at: Jan 2020
     end_at: present
+    thumbnail: /assets/images/overkill.jpeg

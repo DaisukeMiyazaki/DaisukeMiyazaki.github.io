@@ -392,20 +392,11 @@
             data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}"
             target="_blank"
           >
-            {% if work.thumbnail %}
             <img
-              src="{{ work.thumbnail }}"
+              src="{{ work.jp.thumbnail }}"
               alt="{{ work.jp.title }}"
               class="gallery-item-image"
             />
-            {% else %}
-            <div class="gallery-item-no-image genre-work">
-              <div>
-                <h3 class="gallery-item-title">{{ work.jp.title }}</h3>
-                <p class="gallery-item-excerpt">{{ work.jp.short }}</p>
-              </div>
-            </div>
-            {% endif %}
 
             <div class="gallery-item-overlay">
               <div class="gallery-item-meta">

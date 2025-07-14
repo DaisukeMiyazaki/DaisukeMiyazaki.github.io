@@ -7,6 +7,7 @@ comments: true
 lang: en
 lang-ref: Going-Meta-In-The-MetaVerse
 genre: practical
+thumbnail: /assets/images/me_face.jpg
 ---
 
 Hello world!

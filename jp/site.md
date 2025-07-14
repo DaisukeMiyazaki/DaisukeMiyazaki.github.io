@@ -4,6 +4,7 @@ title: このサイトについて
 comments: false
 lang: jp
 lang-ref: site
+thumbnail:
 ---
 
 ※ ソースコードは[こちら](https://github.com/DaisukeMiyazaki/DaisukeMiyazaki.github.io)
