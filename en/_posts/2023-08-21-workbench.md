@@ -7,11 +7,12 @@ comments: true
 lang: en
 lang-ref: workbench
 genre: practical
+thumbnail: /assets/images/workbench/front.jpeg
 ---
 
 Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife
 
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
+<img src="/assets/images/workbench/front.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
 
 Hello, everyone! Last month, I took up the challenge of making a unique workbench that can't be found in stores, just for my art-enthusiast wife. I've written down the entire process for you here.
 
@@ -23,24 +24,24 @@ So, I thought that a workbench that allows her to enjoy art while standing could
 
 First, I decided the height of the tabletop. I happened to have a height-adjustable desk, so we checked what would be comfortable both when standing and sitting. By roughly observing the centerline of the body, we measured a height that seemed appropriate for when standing.
 
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/test0.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/test0.jpeg" class="image_in_post_sm">
 
 When sitting down, the line of sight tends to lower.
 
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/test1.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/test1.jpeg" class="image_in_post_sm">
 
 At this height, her face is still looking down and her neck would be in pain.
 
 <div class="image-container_double">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/test2.jpeg" class="image_in_post_sm">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/test2.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/test3.jpeg" class="image_in_post_sm">
 </div>
 
 At this height, it seems to be mostly straight. Even compared to when standing, you can see that it is mostly centered. I found out that a height of around 110 centimeters is good.
 
 ### Design
 
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/cad.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
+<img src="/assets/images/workbench/cad.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
 
 Next, I used 3D modeling for the design, considering overall balance, center of gravity, and gathering my wife's feedback. Key points included:
 
@@ -75,15 +76,15 @@ But then, I found out that at the hardware store, they offer same-day delivery s
 
 Once the wood arrives, all that's left is to build. I'll continue building it just as I imagined. Here's the progress so far...
 
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/inProgress.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/inProgress.jpeg" class="image_in_post_sm">
 
 Since the door did not turn out to be the size or model I had imagined, I had to retrofit it. I went back to the home center, Konan, for shopping, but it was too hot to carry the huge door on our bicycles. It would have been foolish to pay for shipping again...
 
 At that moment, we found out that Konan offers a free rental of a light truck. It was the first time I learned that I could drive it with a regular license and a handle. Thanks to that, I was able to transport it smoothly.
 
 <div class="image-container_double">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck.jpeg" class="image_in_post_sm">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/miniTruck2.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/miniTruck.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/miniTruck2.jpeg" class="image_in_post_sm">
 </div>
 
 ...
@@ -92,47 +93,47 @@ I started building again. When I attached the door, I had more trouble than I ex
 
 For the finishing touch, I applied a coat of varnish. I made sure to ventilate the room properly even in the hot weather. I wore double masks in the room where there is no air conditioner in the room during the summer....
 
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/hotMan.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/hotMan.jpeg" class="image_in_post_sm">
 
 For finishing, I need measures against falling. It's a big thing, so it's essential. I planned to strengthen the legs in the model, but it was too much work to process... After thinking about it, I found this one piece at the home center and it solved the problem.
 
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/legs.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/legs.jpeg" class="image_in_post_sm">
 
 Also, I added a back panel to eliminate lateral shaking.
 
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/seita.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/seita.jpeg" class="image_in_post_sm">
 
 ### Completion
 
 Finally, it's done!
 
 <div class="image-container_triple">
-  <img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/front.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
-  <img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/front2.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
-  <img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/front3.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
+  <img src="/assets/images/workbench/front.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
+  <img src="/assets/images/workbench/front2.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
+  <img src="/assets/images/workbench/front3.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
 </div>
 
 The foldable tabletop measures 180cm x 50cm, providing ample space.
 
 <div class="image-container_double">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/tableWidth.jpeg" class="image_in_post_sm">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/faceToCamera.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/tableWidth.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/faceToCamera.jpeg" class="image_in_post_sm">
 </div>
 
 The posture when standing is almost identical to our measurements, promising a comfortable art-making experience.
 
 <div class="image-container_double">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/positionCheck.jpeg" class="image_in_post_sm">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/test3.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/positionCheck.jpeg" class="image_in_post_sm">
+<img src="/assets/images/workbench/test3.jpeg" class="image_in_post_sm">
 </div>
 
 The tabletop also doubles as a door, hiding cables and providing a cleaner look.
 
 <!-- insert image from builds.yml -->
 <div class="image-container_triple">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/foldedTableTop.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/mount.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
-<img src="https://storage.googleapis.com/daisukemiyazaki_website/builds/codes.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
+<img src="/assets/images/workbench/foldedTableTop.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
+<img src="/assets/images/workbench/mount.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
+<img src="/assets/images/workbench/codes.jpeg" class="image_in_post_sm" onclick="openModalImage(this)">
 </div>
 
 So, what do you think? Why not use the resources and services around you to DIY something special as a gift?
