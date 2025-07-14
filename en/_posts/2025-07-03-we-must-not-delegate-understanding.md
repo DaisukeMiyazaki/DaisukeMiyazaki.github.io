@@ -7,6 +7,8 @@ genre: practical
 excerpt: In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.
 ---
 
+![dont delegate understandings](/assets/images/dont delegate understandings.jpeg)
+
 Generative AI has become capable of telling sophisticated lies indistinguishable from human ones.
 Precisely because of such an era we must not delegate "understanding" itself to AI.
 
