@@ -435,15 +435,18 @@
         </div>
 
         <div class="filter-nav">
+          {% if page.lang == 'jp' %}
           <button class="filter-btn active" data-genre="all">すべて</button>
           <button class="filter-btn" data-genre="実用">実用</button>
           <button class="filter-btn" data-genre="短編小説">短編小説</button>
           <button class="filter-btn" data-genre="エッセイ">エッセイ</button>
           <button class="filter-btn" data-genre="work">work</button>
+          {% else %}
           <button class="filter-btn" data-genre="practical">practical</button>
           <button class="filter-btn" data-genre="short-story">
             short-story
           </button>
+          {% endif %}
         </div>
       </div>
 
@@ -451,11 +454,9 @@
         <div class="gallery-grid" id="gallery-grid">
           {% assign posts = site.posts | where:"lang", page.lang %} {% for post
           in posts %} {% assign post_image = "" %} {% assign post_class =
-          "genre-default" %} {% comment %} Get thumbnail from post metadata {%
-          endcomment %} {% if post.thumbnail %} {% assign post_image =
-          post.thumbnail %} {% endif %} {% comment %} Set genre class {%
-          endcomment %} {% if post.genre %} {% assign post_class = post.genre |
-          prepend: "genre-" %} {% endif %}
+          "genre-default" %} {% if post.thumbnail %} {% assign post_image =
+          post.thumbnail %} {% endif %} {% if post.genre %} {% assign post_class
+          = post.genre | prepend: "genre-" %} {% endif %}
 
           <a
             href="{{ post.url }}"
