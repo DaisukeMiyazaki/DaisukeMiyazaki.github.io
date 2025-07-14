@@ -7,6 +7,7 @@ comments: true
 lang: en
 lang-ref: belongings
 genre: essay
+thumbnail: /assets/images/belongings.jpg
 ---
 
 After reading [The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing](https://konmari.jp/) from Marie Kondo.

@@ -4,334 +4,492 @@
     <meta charset="utf-8" />
     {% include head.html %}
     <style>
-      .post-slide {
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        scroll-snap-align: start;
+      body {
+        background-color: #000 !important;
+        color: #fff !important;
       }
-      
-      .post-overlay {
+
+      .gallery-container {
+        min-height: 100vh;
+        display: flex;
+        background-color: #000;
+      }
+
+      .sidebar {
+        width: 250px;
+        padding: 2rem;
+        background-color: #111;
+        height: 100vh;
+        position: fixed;
+        left: -250px;
+        top: 0;
+        overflow-y: auto;
+        z-index: 100;
+        transition: left 0.3s ease;
+        border-right: 1px solid #333;
+      }
+
+      .sidebar.open {
+        left: 0;
+      }
+
+      .main-content {
+        flex: 1;
+        margin-left: 0;
+        padding: 2rem;
+        background-color: #000;
+        width: 100%;
+        margin-top: 100px;
+      }
+
+      .menu-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 200;
+        background: #222;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .menu-toggle:hover {
+        background: #333;
+      }
+
+      .hamburger {
+        width: 24px;
+        height: 18px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        border-radius: 1px;
+        transition: all 0.3s ease;
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle.active .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 50;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 0.5rem;
+        max-width: none;
+      }
+
+      .gallery-item {
+        position: relative;
+        aspect-ratio: 3/2;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        cursor: pointer;
+        background-color: #222;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+      }
+
+      .gallery-item-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover .gallery-item-image {
+        transform: scale(1.05);
+      }
+
+      .gallery-item-overlay {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3), transparent);
-        padding: 4rem 2rem 2rem;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.9),
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+        padding: 1rem;
         color: white;
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
       }
-      
-      .scroll-container {
-        height: 100vh;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
+
+      .gallery-item:hover .gallery-item-overlay {
+        transform: translateY(0);
       }
-      
-      .filter-nav {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 100;
+
+      .gallery-item-no-image {
         display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        max-width: 300px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
       }
-      
+
+      .sidebar-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #fff;
+        text-align: center;
+      }
+
+      .filter-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
       .filter-btn {
-        padding: 8px 16px;
-        border-radius: 20px;
+        padding: 12px 16px;
+        border-radius: 8px;
         border: none;
         cursor: pointer;
         font-size: 14px;
         transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
-        background: rgba(255, 255, 255, 0.2);
-        color: white;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        background: #222;
+        color: #ccc;
+        text-align: left;
+        width: 100%;
       }
-      
+
+      .filter-btn:hover {
+        background: #333;
+        color: #fff;
+      }
+
       .filter-btn.active {
-        background: rgba(59, 130, 246, 0.8);
+        background: #3b82f6;
         color: white;
       }
-      
-      .genre-実用 { background: linear-gradient(45deg, #667eea, #764ba2); }
-      .genre-短編小説 { background: linear-gradient(45deg, #f093fb, #f5576c); }
-      .genre-エッセイ { background: linear-gradient(45deg, #4facfe, #00f2fe); }
-      .genre-work { background: linear-gradient(45deg, #43e97b, #38f9d7); }
-      .genre-practical { background: linear-gradient(45deg, #fa709a, #fee140); }
-      .genre-short-story { background: linear-gradient(45deg, #a8edea, #fed6e3); }
-      .genre-default { background: linear-gradient(45deg, #d299c2, #fef9d7); }
-      
-      .post-meta {
-        font-size: 0.9rem;
+
+      .genre-実用 {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+      }
+      .genre-短編小説 {
+        background: linear-gradient(45deg, #f093fb, #f5576c);
+      }
+      .genre-エッセイ {
+        background: linear-gradient(45deg, #4facfe, #00f2fe);
+      }
+      .genre-work {
+        background: linear-gradient(45deg, #43e97b, #38f9d7);
+      }
+      .genre-practical {
+        background: linear-gradient(45deg, #fa709a, #fee140);
+      }
+      .genre-short-story {
+        background: linear-gradient(45deg, #a8edea, #fed6e3);
+      }
+      .genre-default {
+        background: linear-gradient(45deg, #d299c2, #fef9d7);
+      }
+
+      .gallery-item-meta {
+        font-size: 0.8rem;
         opacity: 0.9;
         margin-bottom: 0.5rem;
       }
-      
-      .post-title {
-        font-size: 2.5rem;
+
+      .gallery-item-title {
+        font-size: 1.2rem;
         font-weight: bold;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
         line-height: 1.2;
       }
-      
-      .post-excerpt {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        max-width: 600px;
+
+      .gallery-item-excerpt {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
-      
-      .post-link {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 20px;
-        color: white;
-        text-decoration: none;
-        backdrop-filter: blur(10px);
-        transition: all 0.3s ease;
-      }
-      
-      .post-link:hover {
-        background: rgba(255, 255, 255, 0.3);
-        transform: translateY(-2px);
-      }
-      
-      .scroll-indicator {
-        position: fixed;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 50;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
-      
-      .scroll-dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.3);
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-      
-      .scroll-dot.active {
-        background: rgba(255, 255, 255, 0.8);
-        transform: scale(1.2);
-      }
-      
+
       @media (max-width: 768px) {
+        .sidebar {
+          left: -100%;
+          width: 80%;
+          max-width: 300px;
+          padding: 1.5rem;
+        }
+
+        .sidebar.open {
+          left: 0;
+        }
+
+        .main-content {
+          padding: 1rem;
+        }
+
+        .menu-toggle {
+          top: 15px;
+          right: 15px;
+          padding: 10px;
+        }
+
+        .hamburger {
+          width: 20px;
+          height: 15px;
+        }
+
         .filter-nav {
-          top: 10px;
-          right: 10px;
-          left: 10px;
-          max-width: none;
+          flex-direction: column;
+          gap: 0.5rem;
         }
-        
-        .post-title {
-          font-size: 2rem;
+
+        .filter-btn {
+          width: 100%;
+          text-align: left;
+          padding: 10px 12px;
         }
-        
-        .post-overlay {
-          padding: 2rem 1rem 1rem;
+
+        .gallery-grid {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 0.3rem;
+        }
+
+        .gallery-item-title {
+          font-size: 0.9rem;
+        }
+
+        .gallery-item-excerpt {
+          font-size: 0.7rem;
         }
       }
     </style>
   </head>
-  <body class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100">
-    <div class="filter-nav">
-      <button class="filter-btn active" data-genre="all">
-        すべて
-      </button>
-      <button class="filter-btn" data-genre="実用">
-        実用
-      </button>
-      <button class="filter-btn" data-genre="短編小説">
-        短編小説
-      </button>
-      <button class="filter-btn" data-genre="エッセイ">
-        エッセイ
-      </button>
-      <button class="filter-btn" data-genre="work">
-        work
-      </button>
-      <button class="filter-btn" data-genre="practical">
-        practical
-      </button>
-      <button class="filter-btn" data-genre="short-story">
-        short-story
-      </button>
-    </div>
-    
-    <div class="scroll-indicator" id="scroll-indicator">
-      <!-- Dots will be generated by JavaScript -->
-    </div>
-    
-    <div class="scroll-container" id="scroll-container">
-      {% assign posts = site.posts | where:"lang", page.lang %}
-      {% for post in posts %}
-        {% assign post_image = "" %}
-        {% assign post_class = "genre-default" %}
-        
-        {% comment %} Extract first image from post content {% endcomment %}
-        {% if post.content contains '<img' %}
-          {% assign img_start = post.content | split: '<img' | first %}
-          {% assign img_part = post.content | split: '<img' | last %}
-          {% assign src_part = img_part | split: 'src="' | last %}
-          {% assign post_image = src_part | split: '"' | first %}
-        {% endif %}
-        
-        {% comment %} Set genre class {% endcomment %}
-        {% if post.genre %}
-          {% assign post_class = post.genre | prepend: "genre-" %}
-        {% endif %}
-        
-        <div class="post-slide {{ post_class }}" 
-             data-genre="{{ post.genre }}"
-             data-date="{{ post.date | date_to_xmlschema }}"
-             {% if post_image != "" %}
-               style="background-image: url('{{ post_image }}');"
-             {% endif %}>
-          
-          <div class="post-overlay">
-            <div class="post-meta">
-              <span>{{ post.date | date_to_string }}</span>
-              <span class="ml-4">#{{ post.genre }}</span>
-            </div>
-            
-            <h1 class="post-title">{{ post.title }}</h1>
-            
-            <div class="post-excerpt">{{ post.excerpt }}</div>
-            
-            <a href="{{ post.url }}" class="post-link">
-              続きを読む →
-            </a>
-          </div>
+  <body style="background-color: #000; color: #fff; margin: 0; padding: 0">
+    <button class="menu-toggle" id="menu-toggle">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="gallery-container">
+      <div class="sidebar" id="sidebar">
+        <div style="margin-bottom: 2rem; text-align: center">
+          <h2 style="color: #fff; font-size: 1.3rem; margin: 0">
+            {% if page.lang == 'jp' %} カテゴリー {% else %} Categories {% endif
+            %}
+          </h2>
         </div>
-      {% endfor %}
-      
-      {% for work in site.data.works %}
-        <div class="post-slide genre-work" 
-             data-genre="work"
-             data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}">
-          
-          <div class="post-overlay">
-            <div class="post-meta">
-              <span>{{ work.jp.start_at }} ~ {{ work.jp.end_at }}</span>
-              <span class="ml-4">#work</span>
-            </div>
-            
-            <h1 class="post-title">{{ work.jp.title }}</h1>
-            
-            <div class="post-excerpt">{{ work.jp.short }}</div>
-            
-            <a href="{{ work.jp.site_link }}" class="post-link" target="_blank">
-              プロジェクトを見る →
-            </a>
-          </div>
+
+        <div class="filter-nav">
+          <button class="filter-btn active" data-genre="all">すべて</button>
+          <button class="filter-btn" data-genre="実用">実用</button>
+          <button class="filter-btn" data-genre="短編小説">短編小説</button>
+          <button class="filter-btn" data-genre="エッセイ">エッセイ</button>
+          <button class="filter-btn" data-genre="work">work</button>
+          <button class="filter-btn" data-genre="practical">practical</button>
+          <button class="filter-btn" data-genre="short-story">
+            short-story
+          </button>
         </div>
-      {% endfor %}
+      </div>
+
+      <div class="main-content">
+        <div class="gallery-grid" id="gallery-grid">
+          {% assign posts = site.posts | where:"lang", page.lang %} {% for post
+          in posts %} {% assign post_image = "" %} {% assign post_class =
+          "genre-default" %} {% comment %} Get thumbnail from post metadata {%
+          endcomment %} {% if post.thumbnail %} {% assign post_image =
+          post.thumbnail %} {% endif %} {% comment %} Set genre class {%
+          endcomment %} {% if post.genre %} {% assign post_class = post.genre |
+          prepend: "genre-" %} {% endif %}
+
+          <a
+            href="{{ post.url }}"
+            class="gallery-item"
+            data-genre="{{ post.genre }}"
+            data-date="{{ post.date | date_to_xmlschema }}"
+          >
+            {% if post_image != "" %}
+            <img
+              src="{{ post_image }}"
+              alt="{{ post.title }}"
+              class="gallery-item-image"
+            />
+            {% else %}
+            <div class="gallery-item-no-image {{ post_class }}">
+              <div>
+                <h3 class="gallery-item-title">{{ post.title }}</h3>
+                <p class="gallery-item-excerpt">{{ post.excerpt }}</p>
+              </div>
+            </div>
+            {% endif %}
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>{{ post.date | date_to_string }}</span>
+                <span class="ml-2">#{{ post.genre }}</span>
+              </div>
+
+              <h3 class="gallery-item-title">{{ post.title }}</h3>
+
+              <div class="gallery-item-excerpt">{{ post.excerpt }}</div>
+            </div>
+          </a>
+          {% endfor %} {% for work in site.data.works %}
+          <a
+            href="{{ work.jp.site_link }}"
+            class="gallery-item"
+            data-genre="work"
+            data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}"
+            target="_blank"
+          >
+            {% if work.thumbnail %}
+            <img
+              src="{{ work.thumbnail }}"
+              alt="{{ work.jp.title }}"
+              class="gallery-item-image"
+            />
+            {% else %}
+            <div class="gallery-item-no-image genre-work">
+              <div>
+                <h3 class="gallery-item-title">{{ work.jp.title }}</h3>
+                <p class="gallery-item-excerpt">{{ work.jp.short }}</p>
+              </div>
+            </div>
+            {% endif %}
+
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-meta">
+                <span>{{ work.jp.start_at }} ~ {{ work.jp.end_at }}</span>
+                <span class="ml-2">#work</span>
+              </div>
+
+              <h3 class="gallery-item-title">{{ work.jp.title }}</h3>
+
+              <div class="gallery-item-excerpt">{{ work.jp.short }}</div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
     </div>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const filterButtons = document.querySelectorAll(".filter-btn");
-        const scrollContainer = document.getElementById("scroll-container");
-        const scrollIndicator = document.getElementById("scroll-indicator");
-        const postSlides = Array.from(document.querySelectorAll(".post-slide"));
-        
-        // Sort slides by date
-        postSlides.sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date));
-        
-        // Clear container and re-append sorted slides
-        scrollContainer.innerHTML = "";
-        postSlides.forEach(slide => scrollContainer.appendChild(slide));
-        
-        // Generate scroll indicator dots
-        function generateScrollDots() {
-          scrollIndicator.innerHTML = "";
-          const visibleSlides = postSlides.filter(slide => slide.style.display !== "none");
-          
-          visibleSlides.forEach((slide, index) => {
-            const dot = document.createElement("div");
-            dot.className = "scroll-dot";
-            dot.addEventListener("click", () => {
-              slide.scrollIntoView({ behavior: "smooth" });
-            });
-            scrollIndicator.appendChild(dot);
-          });
+        const galleryGrid = document.getElementById("gallery-grid");
+        const galleryItems = Array.from(
+          document.querySelectorAll(".gallery-item"),
+        );
+        const menuToggle = document.getElementById("menu-toggle");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+
+        // Sort items by date
+        galleryItems.sort(
+          (a, b) => new Date(b.dataset.date) - new Date(a.dataset.date),
+        );
+
+        // Clear container and re-append sorted items
+        galleryGrid.innerHTML = "";
+        galleryItems.forEach((item) => galleryGrid.appendChild(item));
+
+        // Menu toggle functionality
+        function toggleMenu() {
+          menuToggle.classList.toggle("active");
+          sidebar.classList.toggle("open");
+          overlay.classList.toggle("active");
         }
-        
-        // Update active dot based on scroll position
-        function updateActiveDot() {
-          const dots = document.querySelectorAll(".scroll-dot");
-          const visibleSlides = postSlides.filter(slide => slide.style.display !== "none");
-          
-          let activeIndex = 0;
-          const scrollTop = scrollContainer.scrollTop;
-          const containerHeight = scrollContainer.clientHeight;
-          
-          for (let i = 0; i < visibleSlides.length; i++) {
-            const slide = visibleSlides[i];
-            const slideTop = slide.offsetTop;
-            const slideBottom = slideTop + slide.offsetHeight;
-            
-            if (scrollTop >= slideTop - containerHeight/2 && scrollTop < slideBottom - containerHeight/2) {
-              activeIndex = i;
-              break;
-            }
-          }
-          
-          dots.forEach((dot, index) => {
-            dot.classList.toggle("active", index === activeIndex);
-          });
+
+        function closeMenu() {
+          menuToggle.classList.remove("active");
+          sidebar.classList.remove("open");
+          overlay.classList.remove("active");
         }
-        
-        // Filter functionality
-        filterButtons.forEach(button => {
+
+        menuToggle.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", closeMenu);
+
+        // Close menu when clicking on a filter button
+        filterButtons.forEach((button) => {
           button.addEventListener("click", function () {
             const genre = this.dataset.genre;
-            
+
             // Update active button
-            filterButtons.forEach(btn => btn.classList.remove("active"));
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
             this.classList.add("active");
-            
-            // Filter slides
-            postSlides.forEach(slide => {
-              const slideGenre = slide.dataset.genre;
-              if (genre === "all" || slideGenre === genre) {
-                slide.style.display = "block";
+
+            // Filter items
+            galleryItems.forEach((item) => {
+              const itemGenre = item.dataset.genre;
+              if (genre === "all" || itemGenre === genre) {
+                item.style.display = "block";
               } else {
-                slide.style.display = "none";
+                item.style.display = "none";
               }
             });
-            
-            // Regenerate dots and scroll to top
-            generateScrollDots();
-            scrollContainer.scrollTop = 0;
+
+            // Close menu after selecting filter
+            closeMenu();
           });
         });
-        
-        // Scroll event listener
-        scrollContainer.addEventListener("scroll", updateActiveDot);
-        
-        // Initialize
-        generateScrollDots();
-        updateActiveDot();
+
+        // Close menu with Escape key
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            closeMenu();
+          }
+        });
       });
     </script>
   </body>
-</html> 
+</html>

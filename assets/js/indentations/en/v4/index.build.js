@@ -32164,7 +32164,7 @@
     },
   });
 
-  // src/workbench/index.build.tsx
+  // src/indentations/en/v4/index.build.tsx
   var import_client = __toESM(require_client());
 
   // src/components/photoScroll/photoScroll.tsx
@@ -32267,138 +32267,104 @@
   };
   var photoScroll_default = ImageGallery;
 
-  // src/workbench/workbench.ts
+  // src/indentations/en/v4/indentations.ts
   function data() {
     return [
       {
         id: 1,
-        src: "/assets/images/workbench/front.jpeg",
+        src: "/assets/images/indentation/IMG_4780.jpeg",
+        description: "The indentation Project ver4",
+      },
+      {
+        id: 1,
+        src: "/assets/images/indentation/IMG_4780.jpeg",
         description:
-          "\u3053\u3093\u306B\u3061\u306F\u3001\u7686\u3055\u3093\uFF01\u5148\u6708\u982D\u3001\u30A2\u30FC\u30C8\u611B\u597D\u8005\u306E\u59BB\u306E\u305F\u3081\u306B\u3001\u3069\u3053\u306B\u3082\u58F2\u3063\u3066\u3044\u306A\u3044\u7279\u5225\u306A\u30EF\u30FC\u30AF\u30D9\u30F3\u30C1\u3092\u4F5C\u308B\u6311\u6226\u3092\u3057\u3066\u307F\u307E\u3057\u305F\u3002\u59BB\u304C\u30A2\u30FC\u30C8\u3092\u697D\u3057\u3093\u3067\u3044\u308B\u69D8\u5B50\u3092\u898B\u308B\u306E\u306F\u7D20\u6674\u3089\u3057\u3044\u3053\u3068\u3002\u3067\u30825\u7573\u3082\u306A\u3044\u304A\u90E8\u5C4B\u3067\u6563\u3089\u304B\u308A\u5177\u5408...\u53CE\u7D0D\u304C\u8DB3\u308A\u306A\u3044\uFF01\u305D\u3057\u3066\u3001\u3069\u3046\u3057\u3066\u3082\u5EA7\u3063\u3066\u66F8\u3044\u3066\u3044\u308B\u3068\u59FF\u52E2\u304C...\u305D\u3053\u3067\u7ACB\u3063\u305F\u307E\u307E\u30A2\u30FC\u30C8\u3092\u697D\u3057\u3080\u3053\u3068\u304C\u3067\u304D\u308B\u30EF\u30FC\u30AF\u30D9\u30F3\u30C1\u304C\u3042\u308C\u3070\u3001\u3053\u3093\u306A\u60A9\u307F\u3082\u89E3\u6D88\u3055\u308C\u308B\u3093\u3058\u3083\u306A\u3044\u304B\u3068\u3002\u305D\u3046\u601D\u3063\u3066\u4F5C\u308A\u306F\u3058\u3081\u3066\u307F\u307E\u3057\u305F\u3002\u305D\u308C\u3067\u306F\u3001DIY\u306E\u958B\u59CB\u3067\u3059\uFF01",
+          "The large-scale challenge to create furniture that meets the demands of a 6-tatami room is finally in its final chapter. In ver3, we added drawers under the sofa and installed lighting, solving the storage and lighting issues. Now, all that's left is to add doors to the two remaining open spaces.",
       },
       {
         id: 2,
-        src: "/assets/images/workbench/test0.jpeg",
-        description:
-          "\u5EA7\u3063\u3066\u3044\u308B\u72B6\u614B\u3060\u3068\u3069\u3046\u3057\u3066\u3082\u76EE\u7DDA\u304C\u4E0B\u304C\u3063\u3066\u3057\u307E\u3044\u307E\u3059\u3002",
-      },
-      {
-        id: 3,
-        src: "/assets/images/workbench/test1.jpeg",
-        description:
-          "\u3053\u306E\u9AD8\u3055\u3060\u3068\u3001\u307E\u3060\u9854\u304C\u4E0B\u3092\u5411\u3044\u3066\u3044\u3066\u9996\u304C\u75B2\u308C\u3066\u3057\u307E\u3044\u305D\u3046\u3002",
+        src: "/assets/images/indentation/IMG_4022.jpeg",
+        description: "Here and here.",
       },
       {
         id: 4,
-        src: "/assets/images/workbench/test3.jpeg",
+        src: "/assets/images/indentation/IMG_4025.jpeg",
         description:
-          "\u3053\u306E\u9AD8\u3055\u306A\u3089\u3001\u5168\u4F53\u7684\u306B\u307E\u3063\u3059\u3050\u306B\u306A\u3063\u3066\u3044\u3066\u826F\u3055\u305D\u3046\u3002\u7ACB\u3063\u305F\u6642\u3068\u6BD4\u8F03\u3057\u3066\u3082\u3001\u5927\u4F53\u540C\u3058\u304F\u3089\u3044\u4E2D\u5FC3\u7DDA\u306B\u306A\u3063\u3066\u3044\u308B\u306E\u304C\u308F\u304B\u308A\u307E\u3059\u3002\u3053\u3061\u3089\u3067\u9AD8\u3055\u306F110\u30BB\u30F3\u30C1\u304F\u3089\u3044\u304C\u826F\u3055\u305D\u3046\u3060\u3068\u308F\u304B\u308A\u307E\u3057\u305F\u3002",
+          "These are the materials. It's not particularly special, but since it's the 'face', I chose a slightly better quality wood than the 2x4s and had it cut to size at the home center. Hinges are essential for doors. I also bought magnets to keep the doors closed.",
       },
       {
         id: 5,
-        src: "/assets/images/workbench/cad.jpeg",
+        src: "/assets/images/indentation/IMG_4026.jpeg",
         description:
-          "\u6B21\u306B3D\u30E2\u30C7\u30EA\u30F3\u30B0\u3067\u8A2D\u8A08\u3057\u307E\u3059\u3002\u5168\u4F53\u306E\u30D0\u30E9\u30F3\u30B9\u3084\u91CD\u5FC3\u306E\u8A08\u7B97\u3001\u30A4\u30E1\u30FC\u30B8\u306E\u3059\u308A\u5408\u308F\u305B\u306A\u3069\u3092\u59BB\u306E\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u3092\u5F97\u306A\u304C\u3089\u4F5C\u3063\u3066\u3044\u304D\u307E\u3059\u3002\u3053\u3060\u308F\u3063\u305F\u70B9\u306F...",
+          "Attach the hinges to the door first. It's a simple task of just screwing them in. The important thing here is to make sure the left and right are aligned.",
       },
       {
         id: 6,
-        src: "/assets/images/workbench/inProgress.jpeg",
+        src: "/assets/images/indentation/IMG_4032.jpeg",
         description:
-          "\u6728\u6750\u304C\u5C4A\u3044\u305F\u3089\u3001\u3042\u3068\u306F\u4F5C\u308B\u306E\u307F\u3002\u30A4\u30E1\u30FC\u30B8\u901A\u308A\u306B\u4F5C\u3063\u3066\u3044\u304D\u307E\u3059\u3002\u3053\u3061\u3089\u9014\u4E2D\u7D4C\u904E...",
+          "Next is the main body. Here, I need to carve out a space for the hinge to fit. There are special tools for this, but I don't have one, so I'll manage with a chisel. It might look a bit rough, but it's on the inside, so no one will see it. Since this is the final check, I also apply varnish at this stage.",
       },
       {
         id: 7,
-        src: "/assets/images/workbench/miniTruck.jpeg",
+        src: "/assets/images/indentation/IMG_4028.jpeg",
         description:
-          "\u6249\u306F\u5BF8\u6CD5\u3082\u30E2\u30C7\u30EB\u3067\u898B\u3066\u3044\u305F\u901A\u308A\u306B\u306A\u3089\u306A\u304B\u3063\u305F\u306E\u3067\u5F8C\u4ED8\u3051\u306B\u3057\u307E\u3057\u305F\u3002\u8CB7\u3044\u51FA\u3057\u306B\u518D\u5EA6\u30DB\u30FC\u30E0\u30BB\u30F3\u30BF\u30FC\u306E\u30B3\u30FC\u30CA\u30F3\u3078\u3001\u6691\u3044\u306E\u3067\u81EA\u8EE2\u8ECA\u3067\u3080\u304B\u3063\u305F\u3082\u306E\u306E\u5DE8\u5927\u3059\u304E\u308B\u30C9\u30A2\u3092\u3069\u3046\u3082\u904B\u3079\u305A\u3002\u518D\u5EA6\u914D\u9001\u6599\u3092\u6255\u3046\u306E\u3082\u30D0\u30AB\u30D0\u30AB\u3057\u3044\u3002\u3002\u3002",
+          "I'll also attach the magnet catch here. This also involves carving.",
       },
       {
         id: 8,
-        src: "/assets/images/workbench/miniTruck2.jpeg",
+        src: "/assets/images/indentation/IMG_4034.jpeg",
         description:
-          "\u305D\u3093\u306A\u3068\u304D\u306A\u3093\u3068\u3001\u30B3\u30FC\u30CA\u30F3\u3067\u306F\u8EFD\u30C8\u30E9\u3092\u7121\u6599\u3067\u501F\u308A\u308C\u308B\u3053\u3068\u304C\u5224\u660E\u3002\u30CF\u30F3\u30C9\u30EB\u3064\u304D\u3001\u666E\u901A\u514D\u8A31\u3067\u904B\u8EE2\u3067\u304D\u308B\u3053\u3068\u3082\u521D\u3081\u3066\u77E5\u308A\u307E\u3057\u305F\u3002\u304A\u304B\u3052\u69D8\u3067\u30B9\u30E0\u30FC\u30BA\u306B\u904B\u3076\u3053\u3068\u304C\u3067\u304D\u307E\u3057\u305F\u3002",
+          "It's a bit of a rough job, but this is what it looks like with the hinges on the main body. If I were to do this again, I would definitely buy the special tool... But for a one-off, this is fine.",
       },
       {
         id: 9,
-        src: "/assets/images/workbench/hotMan.jpeg",
+        src: "/assets/images/indentation/IMG_4037.jpeg",
         description:
-          "\u4ED5\u4E0A\u3052\u306B\u306F\u30CB\u30B9\u5857\u308A\u3082\u3057\u3063\u304B\u308A\u3068\u3002\u3042\u3063\u3064\u3044\u90E8\u5C4B\u3067\u3082\u3057\u3063\u304B\u308A\u3068\u63DB\u6C17\u3092\u3057\u3064\u3064\u3002\u771F\u590F\u306E\u30AF\u30FC\u30E9\u30FC\u306E\u52B9\u304B\u306A\u3044\u90E8\u5C4B\u3067\u4E8C\u91CD\u30DE\u30B9\u30AF\u3002",
+          "Once I've confirmed that the doors open and close smoothly, I attach the handles. I chose handles that are easy to grip. I installed them vertically. It's finally starting to look like proper furniture.",
       },
       {
         id: 10,
-        src: "/assets/images/workbench/legs.jpeg",
-        description:
-          "\u4ED5\u4E0A\u3052\u306B\u306F\u8EE2\u5012\u5BFE\u7B56\u3002\u5927\u304D\u306A\u3082\u306E\u306A\u306E\u3067\u3053\u3061\u3089\u3082\u5FC5\u9808\u3067\u3059\u3002\u30E2\u30C7\u30EB\u3067\u306F\u8DB3\u3092\u5F37\u56FA\u306B\u3059\u308B\u4E88\u5B9A\u3060\u3063\u305F\u3051\u308C\u3069\u52A0\u5DE5\u304C\u624B\u9593\u3067\u9762\u5012\u304F\u3055\u3044\u3002\u3002\u3002\u8272\u3005\u8003\u3048\u3066\u307F\u305F\u7D50\u679C\u3001\u30DB\u30FC\u30E0\u30BB\u30F3\u30BF\u30FC\u3067\u898B\u3064\u3051\u305F\u3053\u3044\u3064\u4E00\u679A\u3067\u89E3\u6C7A\u3002",
+        src: "/assets/images/indentation/IMG_4041.jpeg",
+        description: "A shot from a distance. It's looking good.",
       },
       {
         id: 11,
-        src: "/assets/images/workbench/seita.jpeg",
-        description:
-          "\u307E\u305F\u3001\u6A2A\u63FA\u308C\u3082\u3057\u305F\u306E\u3067\u80CC\u677F\u3092\u3064\u3051\u308B\u3053\u3068\u3067\u89E3\u6D88\u3057\u307E\u3057\u305F\u3002",
+        src: "/assets/images/indentation/IMG_4043.jpeg",
+        description: "I'll do the same for the other side.",
       },
       {
         id: 12,
-        src: "/assets/images/workbench/front.jpeg",
-        description: "\u3064\u3044\u306B\u5B8C\u6210\uFF01",
+        src: "/assets/images/indentation/IMG_4046 highlighted.jpeg",
+        description:
+          "And with that, it's complete. It took about half a year, but I've created a piece of furniture that I'm very happy with.",
       },
       {
         id: 13,
-        src: "/assets/images/workbench/front2.jpeg",
+        src: "/assets/images/indentation/IMG_4049.jpeg",
         description:
-          "\u5B8C\u6210\u3057\u305F\u30EF\u30FC\u30AF\u30D9\u30F3\u30C1",
+          "The lighting gives it a nice atmosphere. It has become my favorite spot.",
       },
       {
         id: 14,
-        src: "/assets/images/workbench/front3.jpeg",
+        src: "/assets/images/indentation/IMG_4051.jpeg",
         description:
-          "\u5B8C\u6210\u3057\u305F\u30EF\u30FC\u30AF\u30D9\u30F3\u30C1",
+          "From another angle. It's quite impressive. My wife is also very happy with it.",
       },
       {
         id: 15,
-        src: "/assets/images/workbench/tableWidth.jpeg",
-        description:
-          "\u6298\u308A\u305F\u305F\u307F\u5F0F\u306E\u5929\u677F\u3082180cm * 50cm\u3068\u5341\u5206\u306A\u5E83\u3055\u304C\u3042\u308A\u307E\u3059\u3002",
+        src: "/assets/images/indentation/IMG_4054.jpeg",
+        description: "It also serves as a great workspace.",
       },
       {
         id: 16,
-        src: "/assets/images/workbench/faceToCamera.jpeg",
+        src: "/assets/images/indentation/IMG_4055.jpeg",
         description:
-          "\u6298\u308A\u305F\u305F\u307F\u5F0F\u306E\u5929\u677F\u3082180cm * 50cm\u3068\u5341\u5206\u306A\u5E83\u3055\u304C\u3042\u308A\u307E\u3059\u3002",
-      },
-      {
-        id: 17,
-        src: "/assets/images/workbench/positionCheck.jpeg",
-        description:
-          "\u7ACB\u3063\u305F\u6642\u306E\u59FF\u52E2\u3082\u3001\u6E2C\u3063\u305F\u3068\u304D\u306E\u59FF\u52E2\u3068\u307B\u307C\u4E00\u81F4\u3057\u3066\u3044\u307E\u3059\u3002\u3053\u308C\u3067\u5FEB\u9069\u306B\u30A2\u30FC\u30C8\u306B\u53D6\u308A\u7D44\u3081\u308B\u306F\u305A\uFF01",
-      },
-      {
-        id: 18,
-        src: "/assets/images/workbench/foldedTableTop.jpeg",
-        description:
-          "\u5929\u677F\u304C\u6249\u306E\u5F79\u5272\u3082\u517C\u7528\u3057\u3001\u30B3\u30FC\u30C9\u306A\u3069\u3082\u96A0\u3057\u3066\u898B\u305F\u76EE\u3082\u3059\u3063\u304D\u308A\u3059\u308B\u3088\u3046\u306B\u3002",
-      },
-      {
-        id: 19,
-        src: "/assets/images/workbench/mount.jpeg",
-        description:
-          "\u5929\u677F\u304C\u6249\u306E\u5F79\u5272\u3082\u517C\u7528\u3057\u3001\u30B3\u30FC\u30C9\u306A\u3069\u3082\u96A0\u3057\u3066\u898B\u305F\u76EE\u3082\u3059\u3063\u304D\u308A\u3059\u308B\u3088\u3046\u306B\u3002",
-      },
-      {
-        id: 20,
-        src: "/assets/images/workbench/codes.jpeg",
-        description:
-          "\u5929\u677F\u304C\u6249\u306E\u5F79\u5272\u3082\u517C\u7528\u3057\u3001\u30B3\u30FC\u30C9\u306A\u3069\u3082\u96A0\u3057\u3066\u898B\u305F\u76EE\u3082\u3059\u3063\u304D\u308A\u3059\u308B\u3088\u3046\u306B\u3002",
-      },
-      {
-        id: 21,
-        src: "/assets/images/workbench/front.jpeg",
-        description:
-          "\u3044\u304B\u304C\u3067\u3057\u3087\u3046\u304B\uFF1F\u7686\u3055\u3093\u3082\u3001\u8EAB\u8FD1\u306A\u3082\u306E\u3084\u30B5\u30FC\u30D3\u30B9\u3092\u5229\u7528\u3057\u306A\u304C\u3089\u3001\u7279\u5225\u306A\u3082\u306E\u3092DIY\u3067\u4F5C\u3063\u3066\u8D08\u3063\u3066\u307F\u3066\u306F\u307F\u3066\u306F\u3044\u304B\u304C\u3067\u3057\u3087\u3046\u304B\uFF1F",
+          "Looking back, trying out joinery without dovetails or screws was an even greater challenge from the perspective of time and strength. On the other hand, the impression is that using a drill to make holes is fine with Kreg products because you buy a special tool, so it's not cheap, but the result is strong and looks good enough. I have no regrets, and the impression is that just screwing things down without much thought would have been a maintenance nightmare. It was my first time making such a large piece of furniture, but I was able to make full use of the room's layout.",
       },
     ];
   }
 
-  // src/workbench/index.build.tsx
+  // src/indentations/en/v4/index.build.tsx
   var import_jsx_runtime2 = __toESM(require_jsx_runtime());
   var container = document.getElementById("photo-scroll");
   var root = (0, import_client.createRoot)(container);

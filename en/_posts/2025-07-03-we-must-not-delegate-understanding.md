@@ -5,6 +5,7 @@ date: 2025-07-03 00:00:00 +0900
 lang: en
 genre: practical
 excerpt: In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.
+thumbnail: /assets/images/dont delegate understandings.jpeg
 ---
 
 ![dont delegate understandings](/assets/images/dont delegate understandings.jpeg)
