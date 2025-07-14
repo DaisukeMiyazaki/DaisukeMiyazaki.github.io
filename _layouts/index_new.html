@@ -9,6 +9,90 @@
         color: #fff !important;
       }
 
+      /* レイアウト切り替えトグル */
+      .layout-toggle-container {
+        position: fixed;
+        top: 20px;
+        right: 80px;
+        z-index: 1000;
+        background: rgba(30, 30, 30, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 8px 16px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .layout-toggle-container:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .layout-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #9ca3af;
+        text-decoration: none;
+      }
+
+      .toggle-switch {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        background: #3b82f6;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .toggle-switch::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .toggle-switch:hover::after {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .layout-toggle-label {
+        font-weight: 500;
+        user-select: none;
+      }
+
+      @media (max-width: 768px) {
+        .layout-toggle-container {
+          top: 15px;
+          right: 60px;
+          padding: 6px 12px;
+        }
+
+        .layout-toggle {
+          font-size: 11px;
+          gap: 6px;
+        }
+
+        .toggle-switch {
+          width: 35px;
+          height: 18px;
+        }
+
+        .toggle-switch::after {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
       .gallery-container {
         min-height: 100vh;
         display: flex;
@@ -310,6 +394,20 @@
     </style>
   </head>
   <body style="background-color: #000; color: #fff; margin: 0; padding: 0">
+    <!-- レイアウト切り替えトグル -->
+    <div class="layout-toggle-container">
+      <a
+        href="{% if page.lang == 'jp' %}/{% else %}/en/{% endif %}"
+        class="layout-toggle"
+        id="layoutToggle"
+      >
+        <span class="layout-toggle-label"
+          >{% if page.lang == 'jp' %}リスト表示{% else %}List{% endif %}</span
+        >
+        <div class="toggle-switch"></div>
+      </a>
+    </div>
+
     <button class="menu-toggle" id="menu-toggle">
       <div class="hamburger">
         <span></span>
