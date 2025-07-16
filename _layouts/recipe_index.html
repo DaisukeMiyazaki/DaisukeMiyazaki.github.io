@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="container mx-auto px-4">
+  <h1 class="my-8 text-center text-4xl font-bold">Recipes</h1>
+
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    {% for recipe in site.recipes %}
+    <div class="overflow-hidden rounded-lg bg-white shadow-md">
+      <a href="{{ recipe.url | relative_url }}">
+        <img
+          src="{{ recipe.image | relative_url }}"
+          alt="{{ recipe.title }}"
+          class="h-64 w-full object-cover"
+        />
+        <div class="p-6">
+          <h2 class="mb-2 text-2xl font-bold">{{ recipe.title }}</h2>
+          <p class="text-gray-700">{{ recipe.description }}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>

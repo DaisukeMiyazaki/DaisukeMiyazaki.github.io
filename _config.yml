@@ -18,3 +18,8 @@ title: Daisuke Miyazaki's Blog
 
 markdown: kramdown
 exclude: ["node_modules"]
+
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:path/
