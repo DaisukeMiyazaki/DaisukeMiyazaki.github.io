@@ -4,7 +4,7 @@ title: "The Art of Forgetting in this Information Society"
 date: 2025-08-18
 lang: en
 genre: practical
-excerpt: How to forget in this information society
+excerpt: An architecture of being able to forget matters in this information society.
 ---
 
 > "Humans are happy creatures because they can forget."
