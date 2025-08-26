@@ -92,6 +92,12 @@
           height: 14px;
         }
       }
+      /* タッチ端末ではトグルボタン非表示 */
+      @media (pointer: coarse) {
+        .layout-toggle-container {
+          display: none;
+        }
+      }
 
       .gallery-container {
         min-height: 100vh;
@@ -401,20 +407,6 @@
     </style>
   </head>
   <body style="background-color: #000; color: #fff; margin: 0; padding: 0">
-    <!-- レイアウト切り替えトグル -->
-    <div class="layout-toggle-container">
-      <a
-        href="{% if page.lang == 'jp' %}/{% else %}/en/{% endif %}"
-        class="layout-toggle"
-        id="layoutToggle"
-      >
-        <span class="layout-toggle-label"
-          >{% if page.lang == 'jp' %}リスト表示{% else %}List{% endif %}</span
-        >
-        <div class="toggle-switch"></div>
-      </a>
-    </div>
-
     <button class="menu-toggle" id="menu-toggle">
       <div class="hamburger">
         <span></span>
@@ -622,6 +614,39 @@
           observer.observe(item);
         });
       });
+
+      // ===============================
+      // 新規追加: 右スワイプでリストビューへ遷移
+      // ===============================
+      (function () {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const swipeThreshold = 80; // px
+
+        function handleGesture() {
+          // 右方向へスワイプ
+          if (touchEndX - touchStartX > swipeThreshold) {
+            window.location.href =
+              "{% if page.lang == 'jp' %}/{% else %}/en/{% endif %}";
+          }
+        }
+
+        document.addEventListener(
+          "touchstart",
+          (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+          },
+          { passive: true },
+        );
+        document.addEventListener(
+          "touchend",
+          (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleGesture();
+          },
+          { passive: true },
+        );
+      })();
     </script>
   </body>
 </html>
