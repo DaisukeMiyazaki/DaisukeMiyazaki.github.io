@@ -111,21 +111,6 @@
   <body
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
-    <!-- レイアウト切り替えトグル -->
-    <div class="layout-toggle-container">
-      <a
-        href="{% if page.lang == 'jp' %}/gallery{% else %}/en/gallery{% endif %}"
-        class="layout-toggle"
-        id="layoutToggle"
-      >
-        <span class="layout-toggle-label"
-          >{% if page.lang == 'jp' %}ギャラリー表示{% else %}Gallery{% endif
-          %}</span
-        >
-        <div class="toggle-switch"></div>
-      </a>
-    </div>
-
     {% include header.html %}
     <div class="container mx-auto max-w-3xl p-4">
       <div class="mt-8">
