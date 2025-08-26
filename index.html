@@ -264,25 +264,17 @@
           height: 14px;
         }
       }
+      /* 新: タッチ端末ではトグルボタンを隠す */
+      @media (pointer: coarse) {
+        .layout-toggle-container {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
-    <!-- レイアウト切り替えトグル -->
-    <div class="layout-toggle-container">
-      <a
-        href="/gallery"
-        class="layout-toggle"
-        id="layoutToggle"
-      >
-        <span class="layout-toggle-label"
-          >ギャラリー表示</span
-        >
-        <div class="toggle-switch"></div>
-      </a>
-    </div>
-
     <header class="primary-light px-4 py-4 dark:bg-primary-dark">
   <div
     class="container mx-auto flex max-w-3xl items-center justify-between p-4"
@@ -294,12 +286,7 @@
       <h1>Daisuke Miyazaki's Blog</h1>
     </a>
     <nav class="flex items-center">
-      <div class="flex space-x-4">
-        <a
-          href="/recipes"
-          class="text-gray-800 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
-          >Recipes</a
-        >
+      <div class="flex flex-col items-end space-y-2">
         <!-- 英語と日本語を出し分けるheader内のスイッチャー -->
 <div class="mx-4">
   
@@ -316,7 +303,12 @@
   >
   
 </div>
-         
+
+        <a
+          href="/recipes"
+          class="text-gray-800 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
+          >Recipes</a
+        >         
              
       </div>
       <!-- Dark Mode 切替ボタン -->
@@ -933,6 +925,39 @@
             });
           });
         });
+
+        // ===============================
+        // 新規追加: スワイプでギャラリー表示へ遷移
+        // ===============================
+        (function () {
+          let touchStartX = 0;
+          let touchEndX = 0;
+          const swipeThreshold = 80; // 最低移動距離(px)
+
+          function handleGesture() {
+            // 左方向へのスワイプを検知
+            if (touchStartX - touchEndX > swipeThreshold) {
+              window.location.href =
+                "/gallery";
+            }
+          }
+
+          document.addEventListener(
+            "touchstart",
+            (e) => {
+              touchStartX = e.changedTouches[0].screenX;
+            },
+            { passive: true },
+          );
+          document.addEventListener(
+            "touchend",
+            (e) => {
+              touchEndX = e.changedTouches[0].screenX;
+              handleGesture();
+            },
+            { passive: true },
+          );
+        })();
       </script>
     </div>
     <footer class="primary-light">
