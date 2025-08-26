@@ -100,6 +100,12 @@
           height: 14px;
         }
       }
+      /* 新: タッチ端末ではトグルボタンを隠す */
+      @media (pointer: coarse) {
+        .layout-toggle-container {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body
@@ -238,6 +244,39 @@
             });
           });
         });
+
+        // ===============================
+        // 新規追加: スワイプでギャラリー表示へ遷移
+        // ===============================
+        (function () {
+          let touchStartX = 0;
+          let touchEndX = 0;
+          const swipeThreshold = 80; // 最低移動距離(px)
+
+          function handleGesture() {
+            // 左方向へのスワイプを検知
+            if (touchStartX - touchEndX > swipeThreshold) {
+              window.location.href =
+                "{% if page.lang == 'jp' %}/gallery{% else %}/en/gallery{% endif %}";
+            }
+          }
+
+          document.addEventListener(
+            "touchstart",
+            (e) => {
+              touchStartX = e.changedTouches[0].screenX;
+            },
+            { passive: true },
+          );
+          document.addEventListener(
+            "touchend",
+            (e) => {
+              touchEndX = e.changedTouches[0].screenX;
+              handleGesture();
+            },
+            { passive: true },
+          );
+        })();
       </script>
     </div>
     {% include footer.html %}
