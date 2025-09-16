@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-08-26T00:22:07+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">The Art of Forgetting in this Information Society</title><link href="https://mdaisuke.net/en/2025/08/18/art-of-forgetting/" rel="alternate" type="text/html" title="The Art of Forgetting in this Information Society" /><published>2025-08-18T00:00:00+00:00</published><updated>2025-08-18T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/08/18/art-of-forgetting</id><content type="html" xml:base="https://mdaisuke.net/en/2025/08/18/art-of-forgetting/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-09-16T10:42:43+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか</title><link href="https://mdaisuke.net/jp/2025/09/16/sanpou-issue/" rel="alternate" type="text/html" title="運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか" /><published>2025-09-16T00:00:00+00:00</published><updated>2025-09-16T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/09/16/sanpou-issue</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/09/16/sanpou-issue/">&lt;h3 id=&quot;すべての始まりは運動不足だった&quot;&gt;すべての始まりは「運動不足」だった&lt;/h3&gt;
+
+&lt;p&gt;すべては、多くの現代人が抱えるであろう単純な悩み「運動不足」から始まりました。&lt;/p&gt;
+
+&lt;p&gt;パンデミックによる在宅勤務の定着は、私たちの働き方に柔軟性をもたらしましたが、同時に「一歩も外に出ない日」を生み出しました。このままではいけない。そう思い、僕はひとつの習慣を始めました。それは、ただ「歩く」ことです。&lt;/p&gt;
+
+&lt;p&gt;この習慣を一年ほど続けてみて、気づいたことがあります。&lt;/p&gt;
+
+&lt;p&gt;漫然と歩くだけでは、目標の歩数を稼ぐことは意外と難しい。歩数を稼ぐためには、「よし、歩こう」と意識的に机を離れ、外に出るという「積極的な行動」が必要だったのです。&lt;/p&gt;
+
+&lt;p&gt;この「机を離れる」という行為を習慣化するプロセス。それが、私にとっての「きっかけ作り」となり、そして新たな「悩み」と「問い」の始まりでもありました。&lt;/p&gt;
+
+&lt;h3 id=&quot;仮説アイデアは机以外で生まれる&quot;&gt;仮説：「アイデアは、机以外で生まれる」&lt;/h3&gt;
+
+&lt;p&gt;パンデミックを経て、働き方はオンラインとオフラインに分かれ、今また「オフィス回帰」のような揺り戻しも起きています。そんな環境の変化はさておき、私は自分自身に起きた「ある現象」と真っ向から向き合うことにしました。&lt;/p&gt;
+
+&lt;p&gt;それは、「散歩したり、机を離れたりすると、考えが整理される」という、エンジニアとしても昔からよく経験していた感覚です。&lt;/p&gt;
+
+&lt;p&gt;ここに、私は一つの仮説を立てました。
+&lt;strong&gt;「アイデアの『種』や思考の『整理』は、PCの前に座っている時ではなく、そこから離れた場所でこそ生まれるのではないか？」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;これが、私の中で「Sanpouのイシュー（散歩の課題）」と名付けたプロジェクトの始まりです。&lt;/p&gt;
+
+&lt;p&gt;この問いの先に、二つの疑問が続きます。
+「この感覚は、自分特有のものなのか？」
+「それとも、程度の差こそあれ、皆も同じ結論に行き着くものなのか？」&lt;/p&gt;
+
+&lt;p&gt;もし、この答えが出れば、このプロジェクトは一つの区切りを迎えます。&lt;/p&gt;
+
+&lt;h3 id=&quot;生成ai時代に問われる知的生産の本質&quot;&gt;生成AI時代に問われる「知的生産の本質」&lt;/h3&gt;
+
+&lt;p&gt;この「Sanpouのイシュー」を突き詰めていくと、知的生産の本質にぶつかります。&lt;/p&gt;
+
+&lt;p&gt;私にとっての知的生産の本質とは、&lt;strong&gt;「インプットした情報を、自分の言葉で噛み砕き、自分の中に落とし込む行為」&lt;/strong&gt;そのものです。&lt;/p&gt;
+
+&lt;p&gt;そして、生成AIが大衆化した今、この本質はさらに重要な意味を持ち始めました。AIが一瞬で「それらしい」文章を生成できる時代だからこそ、&lt;strong&gt;「自分自身のユニークな思考や発見を、いかに早く『書いた言葉（テキスト）』として固定化できるか」&lt;/strong&gt;が、個人の生産性に直結するのです。&lt;/p&gt;
+
+&lt;p&gt;AIはまだ、あなたが体験したことや、あなた独自の視点から生まれる「一次の気づき」を生み出すことはできません。その価値は、むしろ高まっています。&lt;/p&gt;
+
+&lt;h3 id=&quot;ぼーっとする時間と書き留める技術&quot;&gt;「ぼーっとする」時間と「書き留める」技術&lt;/h3&gt;
+
+&lt;p&gt;では、どうすればその「一次の気づき」は生まれやすくなるのか。&lt;/p&gt;
+
+&lt;p&gt;私の経験則では、それは「ぼーっとする」時間です。
+音楽やラジオ、もちろんSNSアプリも使わず、ただ自分の頭だけで考える。散歩は、そのための最適な「装置」でした。&lt;/p&gt;
+
+&lt;p&gt;しかし、ここで最大のジレンマが発生します。&lt;/p&gt;
+
+&lt;p&gt;せっかく浮かんだアイデアも、それを「使える形式」にまで持っていくには、&lt;strong&gt;即座に「書いた言葉」としてテキストに落とし込むことが不可欠&lt;/strong&gt;です。&lt;/p&gt;
+
+&lt;p&gt;紙のノートや手帳を持ち歩くのも一つの手ですが、デジタルの便利さに慣れた現代人にとって、それは不便でもあります。歩きながらペンとノートを取り出すのは、なかなかの重労働です。&lt;/p&gt;
+
+&lt;p&gt;かといって、普段使っている多機能なノートアプリを起動するのも、違います。
+アプリを開き、どのノートブックに入れるか考え、リッチテキストエディタが立ち上がるのを待つ…。その数秒の間に、せっかくのアイデアの「輝き」は失われてしまいます。&lt;/p&gt;
+
+&lt;h3 id=&quot;結論アイデアが生まれた瞬間に特化したux&quot;&gt;結論：アイデアが「生まれた瞬間」に特化したUX&lt;/h3&gt;
+
+&lt;p&gt;この時代、誰もが何かしらのノートアプリ（Notion, Evernote, メモ帳…）を使っています。私は、彼らに「今すぐそれをやめて、これに切り替えてくれ」と言いたいわけではありません。&lt;/p&gt;
+
+&lt;p&gt;最終的にノートを整理し、体系化するのは、これまで通りPCやスマホで、お気に入りのアプリでやってもらえばいいのです。&lt;/p&gt;
+
+&lt;p&gt;私が作りたかったのは、それら既存アプリの「ラッパー」として機能するものです。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;「アイデアが脳裏に浮かんだ、その瞬間。その勢いのまま、書き殴るところまで」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;これだけに特化したUX（ユーザー体験）を設計できないか。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;起動したら、即、入力画面。&lt;/li&gt;
+  &lt;li&gt;余計な機能は一切ない。&lt;/li&gt;
+  &lt;li&gt;書いたテキストは、後で簡単にメインのノートアプリに転送できる。&lt;/li&gt;
+  &lt;li&gt;そして何より、&lt;strong&gt;データは一切デバイスから外に出ない（ローカルファースト）&lt;/strong&gt;。自分の「思考の断片」という最もプライベートな情報を、誰にも渡さない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;おわりに&quot;&gt;おわりに&lt;/h3&gt;
+
+&lt;p&gt;運動不足を解消するために始めた散歩という習慣が、巡り巡って「知的生産の本質」と「現代における思考のキャプチャ方法」という問い、そして一つのアプリの構想にまで繋がりました。&lt;/p&gt;
+
+&lt;p&gt;机を離れて考える。
+そして、浮かんだ瞬間を逃さず書き留める。&lt;/p&gt;
+
+&lt;p&gt;このシンプルな行為こそが、AIと共存するこれからの時代を生き抜く、私たち人間の「武器」になるのではないか。&lt;/p&gt;
+
+&lt;p&gt;この「Sanpouのイシュー」という名の問いは、まだ終わりません。
+あなたも、歩きながら「考えて」いませんか？&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">運動不足解消のために始めた散歩が、巡り巡って「知的生産の本質」と「現代における思考のキャプチャ方法」という問い、そして一つのアプリの構想にまで繋がった経緯を綴ります。</summary></entry><entry xml:lang="en"><title type="html">The Art of Forgetting in this Information Society</title><link href="https://mdaisuke.net/en/2025/08/18/art-of-forgetting/" rel="alternate" type="text/html" title="The Art of Forgetting in this Information Society" /><published>2025-08-18T00:00:00+00:00</published><updated>2025-08-18T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/08/18/art-of-forgetting</id><content type="html" xml:base="https://mdaisuke.net/en/2025/08/18/art-of-forgetting/">&lt;blockquote&gt;
   &lt;p&gt;“Humans are happy creatures because they can forget.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -133,5 +217,4 @@ document.addEventListener(&apos;DOMContentLoaded&apos;, function() {
 
 &lt;p&gt;一枚のノートを軽く、小さく区切りながら細かくまとめるには、道具の準備もすぐできる方が良い。ポケットに忍ばせられるくらいの大きさであれば手軽だし、折りたたみキーボードは開いただけで接続されるものもあり手短だ。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">結局iPadですらジャケットのポケットには入らない。スマホの演算力やバッテリーの持ちは今や十分。</summary></entry><entry xml:lang="en"><title type="html">The indentation Project ver1</title><link href="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/" rel="alternate" type="text/html" title="The indentation Project ver1" /><published>2025-01-20T00:00:00+00:00</published><updated>2025-01-20T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1</id><content type="html" xml:base="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/en/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Our 6-mat room is our dream workshop. To make miscellaneous goods, we want to use it not only for storing materials, but also as a display, a workspace, and a relaxing space. A large-scale challenge to create furniture that fulfills such requests.</summary></entry><entry xml:lang="en"><title type="html">The indentation Project ver2</title><link href="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver2/" rel="alternate" type="text/html" title="The indentation Project ver2" /><published>2025-01-20T00:00:00+00:00</published><updated>2025-01-20T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver2</id><content type="html" xml:base="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver2/">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/en/v2/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, after the foundation is built, it&apos;s time to make the top plate.</summary></entry><entry xml:lang="en"><title type="html">The indentation Project ver3</title><link href="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver3/" rel="alternate" type="text/html" title="The indentation Project ver3" /><published>2025-01-20T00:00:00+00:00</published><updated>2025-01-20T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver3</id><content type="html" xml:base="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver3/">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/en/v3/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, lighting and storage expansion edition.</summary></entry></feed>
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/en/v2/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, after the foundation is built, it&apos;s time to make the top plate.</summary></entry></feed>
