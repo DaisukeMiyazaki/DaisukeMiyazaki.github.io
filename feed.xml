@@ -1,8 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-09-16T23:45:15+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか</title><link href="https://mdaisuke.net/jp/2025/09/16/sanpou-issue/" rel="alternate" type="text/html" title="運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか" /><published>2025-09-16T00:00:00+00:00</published><updated>2025-09-16T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/09/16/sanpou-issue</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/09/16/sanpou-issue/">&lt;h3 id=&quot;すべての始まりは運動不足だった&quot;&gt;すべての始まりは「運動不足」だった&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-09-17T13:03:45+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea</title><link href="https://mdaisuke.net/en/2025/09/17/sanpou-issue/" rel="alternate" type="text/html" title="How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea" /><published>2025-09-17T00:00:00+00:00</published><updated>2025-09-17T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/09/17/sanpou-issue</id><content type="html" xml:base="https://mdaisuke.net/en/2025/09/17/sanpou-issue/">&lt;h3 id=&quot;it-started-with-a-lack-of-exercise&quot;&gt;It Started with a Lack of Exercise&lt;/h3&gt;
+
+&lt;p&gt;It all began with a common problem: I wasn’t getting enough exercise.&lt;/p&gt;
+
+&lt;p&gt;Remote work became standard, which was flexible, but it also meant I had days where I didn’t leave the house at all. I knew I needed to change that, so I started a new habit: just walking.&lt;/p&gt;
+
+&lt;p&gt;After about a year of this, I noticed something.&lt;/p&gt;
+
+&lt;p&gt;You don’t really hit your step goals by just wandering aimlessly. To get a high step count, you need to be intentional. You have to consciously decide, “Okay, I’m leaving my desk,” and then go outside.&lt;/p&gt;
+
+&lt;p&gt;This regular habit of “leaving the desk” became a starting point for a new question and a new “problem” for me to solve.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-hypothesis-good-ideas-happen-away-from-the-desk&quot;&gt;The Hypothesis: “Good Ideas Happen Away from the Desk”&lt;/h3&gt;
+
+&lt;p&gt;We’re in a period of change, with some companies pushing for a “return to the office.” But setting those trends aside, I decided to seriously analyze a feeling I was having.&lt;/p&gt;
+
+&lt;p&gt;It was something I’d often felt as an engineer: “My thoughts seem to get more organized when I walk or step away from my computer.”&lt;/p&gt;
+
+&lt;p&gt;This led me to a hypothesis:&lt;/p&gt;
+
+&lt;p&gt;“Are new ideas and organized thoughts born not while sitting at the desk, but in the moments away from it?”&lt;/p&gt;
+
+&lt;p&gt;This is what I started to call my “Sanpou no Issue” (The “Walk” Issue).&lt;/p&gt;
+
+&lt;p&gt;This line of thinking led to two more questions:&lt;/p&gt;
+
+&lt;p&gt;“Is this just a personal quirk?”&lt;/p&gt;
+
+&lt;p&gt;“Or does everyone eventually reach this same conclusion?”&lt;/p&gt;
+
+&lt;p&gt;If I can find an answer, this “project” of mine will be complete.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-core-of-intellectual-production-in-the-age-of-genai&quot;&gt;The Core of Intellectual Production in the Age of GenAI&lt;/h3&gt;
+
+&lt;p&gt;Pursuing this “Sanpou Issue” led me to think about the essence of intellectual production.&lt;/p&gt;
+
+&lt;p&gt;For me, the core of this is &lt;strong&gt;“the process of breaking down information in my own words and truly internalizing it.”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;With the recent rise of Generative AI, this concept has become more important than ever. In an age where an AI can instantly create “plausible-sounding” text, &lt;strong&gt;“how quickly you can capture your own unique thoughts as written text”&lt;/strong&gt; directly affects your personal productivity.&lt;/p&gt;
+
+&lt;p&gt;An AI cannot yet generate the “original insights” that come from your specific experiences and perspective. In fact, the value of those original insights has only increased.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-problem-idle-time-vs-capture-time&quot;&gt;The Problem: “Idle” Time vs. “Capture” Time&lt;/h3&gt;
+
+&lt;p&gt;So, how do we generate more of these original insights?&lt;/p&gt;
+
+&lt;p&gt;In my experience, it’s during “idle” or “zoning out” (ぼーっとする) time.&lt;/p&gt;
+
+&lt;p&gt;This means no music, no podcasts, and no apps. Just thinking. Walking turned out to be the perfect environment for this.&lt;/p&gt;
+
+&lt;p&gt;But this creates a major problem.&lt;/p&gt;
+
+&lt;p&gt;An idea is useless if you can’t &lt;strong&gt;immediately write it down&lt;/strong&gt; in a usable format.&lt;/p&gt;
+
+&lt;p&gt;Carrying a paper notebook is one solution, but it’s often inconvenient. It’s a hassle to pull out a pen and notebook while you’re walking.&lt;/p&gt;
+
+&lt;p&gt;But using your standard, full-featured note app isn’t the right tool for this moment, either.&lt;/p&gt;
+
+&lt;p&gt;You open the app, decide which folder to use, wait for the editor to load… and in those few seconds, the initial momentum of the idea is lost.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-solution-a-ux-focused-only-on-the-moment-of-capture&quot;&gt;The Solution: A UX Focused Only on the “Moment of Capture”&lt;/h3&gt;
+
+&lt;p&gt;Everyone uses a note app these days, whether it’s Notion, Evernote, or just a basic memo pad. I’m not asking people to switch from their favorite tools.&lt;/p&gt;
+
+&lt;p&gt;The final organization and editing of notes can, and should, still be done in those main apps.&lt;/p&gt;
+
+&lt;p&gt;What I saw a need for was a “wrapper” for these existing apps.&lt;/p&gt;
+
+&lt;p&gt;I wanted to design a UX (User Experience) that is specialized for &lt;strong&gt;one thing only: “The exact moment an idea appears, allowing you to write it down immediately.”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It launches instantly to a blank text input.&lt;/li&gt;
+  &lt;li&gt;There are no extra features or formatting.&lt;/li&gt;
+  &lt;li&gt;The text can be easily sent to your main note app later.&lt;/li&gt;
+  &lt;li&gt;And most importantly: &lt;strong&gt;Data never leaves the device (local-first).&lt;/strong&gt; Your private “fragments of thought” are not uploaded to any server.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;in-closing&quot;&gt;In Closing&lt;/h3&gt;
+
+&lt;p&gt;A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app.&lt;/p&gt;
+
+&lt;p&gt;Thinking away from the desk.&lt;/p&gt;
+
+&lt;p&gt;And capturing the idea the moment it appears.&lt;/p&gt;
+
+&lt;p&gt;This simple process might be the key skill we need to work effectively in the new era of AI.&lt;/p&gt;
+
+&lt;p&gt;This question I call the “Sanpou no Issue” isn’t fully answered.&lt;/p&gt;
+
+&lt;p&gt;But don’t you also find yourself “thinking” while you walk?&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app.</summary></entry><entry xml:lang="jp"><title type="html">運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか</title><link href="https://mdaisuke.net/jp/2025/09/16/sanpou-issue/" rel="alternate" type="text/html" title="運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか" /><published>2025-09-16T00:00:00+00:00</published><updated>2025-09-16T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/09/16/sanpou-issue</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/09/16/sanpou-issue/">&lt;h3 id=&quot;すべての始まりは運動不足だった&quot;&gt;すべての始まりは「運動不足」だった&lt;/h3&gt;
 
 &lt;p&gt;すべては、多くの現代人が抱えるであろう単純な悩み「運動不足」から始まりました。&lt;/p&gt;
 
-&lt;p&gt;パンデミックによる在宅勤務の定着は、私たちの働き方に柔軟性をもたらしましたが、同時に「一歩も外に出ない日」を生み出しました。このままではいけない。そう思い、僕はひとつの習慣を始めました。それは、ただ「歩く」ことです。&lt;/p&gt;
+&lt;p&gt;パンデミックによる在宅勤務の定着は、私たちの働き方に柔軟性をもたらしましたが、同時に「一歩も外に出ない日」を生み出しました。このままではいけない。そう思い、私はひとつの習慣を始めました。それは、ただ「歩く」ことです。&lt;/p&gt;
 
 &lt;p&gt;この習慣を一年ほど続けてみて、気づいたことがあります。&lt;/p&gt;
 
@@ -216,5 +305,4 @@ document.addEventListener(&apos;DOMContentLoaded&apos;, function() {
 &lt;p&gt;また、スタンド等も必要。iphone自体を傾けないと姿勢が保てずに体験が悪化するので。&lt;/p&gt;
 
 &lt;p&gt;一枚のノートを軽く、小さく区切りながら細かくまとめるには、道具の準備もすぐできる方が良い。ポケットに忍ばせられるくらいの大きさであれば手軽だし、折りたたみキーボードは開いただけで接続されるものもあり手短だ。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">結局iPadですらジャケットのポケットには入らない。スマホの演算力やバッテリーの持ちは今や十分。</summary></entry><entry xml:lang="en"><title type="html">The indentation Project ver1</title><link href="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/" rel="alternate" type="text/html" title="The indentation Project ver1" /><published>2025-01-20T00:00:00+00:00</published><updated>2025-01-20T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1</id><content type="html" xml:base="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/en/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Our 6-mat room is our dream workshop. To make miscellaneous goods, we want to use it not only for storing materials, but also as a display, a workspace, and a relaxing space. A large-scale challenge to create furniture that fulfills such requests.</summary></entry><entry xml:lang="en"><title type="html">The indentation Project ver2</title><link href="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver2/" rel="alternate" type="text/html" title="The indentation Project ver2" /><published>2025-01-20T00:00:00+00:00</published><updated>2025-01-20T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver2</id><content type="html" xml:base="https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver2/">&lt;div id=&quot;photo-scroll&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/en/v2/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, after the foundation is built, it&apos;s time to make the top plate.</summary></entry></feed>
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/indentations/en/index.build.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Our 6-mat room is our dream workshop. To make miscellaneous goods, we want to use it not only for storing materials, but also as a display, a workspace, and a relaxing space. A large-scale challenge to create furniture that fulfills such requests.</summary></entry></feed>
