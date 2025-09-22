@@ -95,3 +95,5 @@ This simple process might be the key skill we need to work effectively in the ne
 This question I call the "Sanpou no Issue" isn't fully answered.
 
 But don't you also find yourself "thinking" while you walk?
+
+[link to the sanpou app](https://apps.apple.com/jp/app/sanpou/id6749672561?uo=2)
