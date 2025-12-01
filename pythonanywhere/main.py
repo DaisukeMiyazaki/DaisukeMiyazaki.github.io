@@ -14,9 +14,17 @@ def init_db():
     """データベースとテーブルの初期化"""
     with sqlite3.connect(DB_PATH) as conn:
         c = conn.cursor()
-        # いいねログ用テーブル: どのページが、いついいねされたか
+        # いいねログ用テーブル
         c.execute('''
             CREATE TABLE IF NOT EXISTS likes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                page_id TEXT NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        ''')
+        # PVログ用テーブル
+        c.execute('''
+            CREATE TABLE IF NOT EXISTS views (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 page_id TEXT NOT NULL,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -60,3 +68,22 @@ def add_like():
         count = c.fetchone()[0]
         
     return jsonify({'status': 'success', 'page_id': page_id, 'count': count})
+
+@app.route("/api/views", methods=['POST'])
+def add_view():
+    """PVを追加"""
+    data = request.get_json()
+    if not data or 'page_id' not in data:
+        return jsonify({'error': 'page_id is required'}), 400
+    
+    page_id = data['page_id']
+    
+    with sqlite3.connect(DB_PATH) as conn:
+        c = conn.cursor()
+        c.execute('INSERT INTO views (page_id) VALUES (?)', (page_id,))
+        conn.commit()
+        
+    return jsonify({'status': 'success'})
+
+if __name__ == '__main__':
+    app.run()

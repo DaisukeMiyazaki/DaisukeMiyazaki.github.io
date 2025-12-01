@@ -318,6 +318,27 @@
       }
     };
 
+    // PV記録用関数 (追加)
+    async function recordView() {
+      // ローカル開発環境や管理者アクセスを除外したい場合はここで判定
+      if (location.hostname === "localhost") return;
+
+      // セッションストレージを使って「1回のブラウザセッションで1回のみカウント」にする場合
+      // const viewKey = `viewed_${pageId}`;
+      // if (sessionStorage.getItem(viewKey)) return;
+
+      try {
+        await fetch(`${API_BASE}/api/views`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ page_id: pageId }),
+        });
+        // sessionStorage.setItem(viewKey, "true");
+      } catch (error) {
+        console.error("Failed to record view:", error);
+      }
+    }
+
     async function fetchLikes() {
       try {
         const res = await fetch(
@@ -357,6 +378,7 @@
         markAsLiked();
       }
       fetchLikes();
+      recordView();
     }
   })();
 </script>
