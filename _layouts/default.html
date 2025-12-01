@@ -8,11 +8,8 @@
   >
     {% include header_new.html %}
 
-    <!-- 修正箇所: max-w-2xl と px-6 を適用 -->
     <main class="container mx-auto max-w-2xl px-6 pb-20 pt-8">
-      <article class="prose prose-lg mx-auto dark:prose-invert">
-        {{ content }}
-      </article>
+      {{ content }}
     </main>
 
     {% include footer.html %}
