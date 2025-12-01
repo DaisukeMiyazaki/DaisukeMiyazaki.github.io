@@ -1,0 +1,172 @@
+<header
+  class="sticky top-0 z-50 bg-white/95 px-5 py-8 backdrop-blur-sm transition-colors duration-300 dark:bg-black/95"
+>
+  <div class="container mx-auto max-w-2xl">
+    <!-- 上段: タイトルとコントロール -->
+    <div class="flex items-start justify-between">
+      <!-- タイトル (左寄せ・スタック) -->
+      <a href="{{ site.baseurl }}/" class="group block">
+        <h1
+          class="text-[2.5rem] font-bold leading-[1.1] tracking-tight text-gray-900 transition-opacity group-hover:opacity-80 dark:text-white"
+        >
+          Daisuke<br />Miyazaki's<br />Blog
+        </h1>
+      </a>
+
+      <!-- 右側コントロール群 -->
+      <div class="flex items-center gap-6 pt-2">
+        <!-- 言語切り替え -->
+        <div class="flex flex-col items-center gap-1.5">
+          {% if page.lang == 'jp' %}
+          <a
+            href="/en/"
+            class="relative flex h-8 w-14 items-center rounded-full bg-[#8e8e93] p-1 transition-colors hover:opacity-90"
+            aria-label="Switch to English"
+          >
+            <div
+              class="flex h-6 w-6 translate-x-6 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
+            >
+              <div class="h-2.5 w-2.5 rounded-full bg-red-500"></div>
+            </div>
+            <span class="absolute left-2 text-[10px] font-bold text-white/90"
+              >🇬🇧</span
+            >
+          </a>
+          {% else %}
+          <a
+            href="/"
+            class="relative flex h-8 w-14 items-center rounded-full bg-[#8e8e93] p-1 transition-colors hover:opacity-90"
+            aria-label="Switch to Japanese"
+          >
+            <div
+              class="flex h-6 w-6 translate-x-0 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
+            >
+              <div class="h-2.5 w-2.5 rounded-full bg-blue-800"></div>
+            </div>
+            <span class="absolute right-2 text-[10px] font-bold text-white/90"
+              >🇯🇵</span
+            >
+          </a>
+          {% endif %}
+          <span class="text-xs font-medium text-gray-500 dark:text-gray-400"
+            >EN/JP</span
+          >
+        </div>
+
+        <!-- Recipes -->
+        <a href="/recipes" class="group flex flex-col items-center gap-1.5">
+          <div
+            class="flex h-8 w-8 items-center justify-center text-2xl text-[#8e8e93] transition-colors group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-7 w-7"
+            >
+              <path
+                d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"
+              />
+            </svg>
+          </div>
+          <span class="text-xs font-medium text-gray-900 dark:text-gray-300"
+            >Recipes</span
+          >
+        </a>
+
+        <!-- Night Mode -->
+        <button
+          id="theme-toggle"
+          class="group flex flex-col items-center gap-1.5 focus:outline-none"
+        >
+          <div
+            class="flex h-8 w-8 items-center justify-center text-2xl text-[#8e8e93] transition-colors group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="hidden h-6 w-6 dark:block"
+            >
+              <path
+                d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 9c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-6 w-6 dark:hidden"
+            >
+              <path
+                d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
+              />
+            </svg>
+          </div>
+          <span
+            class="text-center text-xs font-medium leading-tight text-gray-900 dark:text-gray-300"
+          >
+            Night<br />Mode
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- カテゴリフィルター (トップページのみ表示するオプション) -->
+    {% if include.show_filter %}
+    <div class="no-scrollbar mt-8 flex gap-2 overflow-x-auto pb-1">
+      <button
+        class="filter-btn active whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="all"
+      >
+        {% if page.lang == 'jp' %}すべて{% else %}All{% endif %}
+      </button>
+      {% if page.lang == 'jp' %}
+      <button
+        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="実用"
+      >
+        実用
+      </button>
+      <button
+        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="短編小説"
+      >
+        短編小説
+      </button>
+      <button
+        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="エッセイ"
+      >
+        エッセイ
+      </button>
+      <button
+        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="work"
+      >
+        work
+      </button>
+      {% else %}
+      <button
+        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="practical"
+      >
+        practical
+      </button>
+      <button
+        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="short-story"
+      >
+        short-story
+      </button>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</header>
