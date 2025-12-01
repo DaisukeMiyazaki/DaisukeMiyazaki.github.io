@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-from flask import Flask, redirect, request, url_for, jsonify
+from flask import Flask, request, jsonify
 from flask_cors import CORS
-import logging, io, base64, os, datetime, time
-from datetime import datetime
 import sqlite3
+import os
 
 app = Flask(__name__)
 # 本番ドメインとローカル開発環境の両方を許可
@@ -25,25 +24,8 @@ def init_db():
         ''')
         conn.commit()
 
-# アプリ起動時にDB初期化（簡易的な方法）
+# アプリ起動時にDB初期化
 init_db()
-
-@app.route("/signup", methods=['POST', 'GET'])
-def signup_page():
-    if request.method == 'POST':
-        email_param = request.form['email_address']
-        signup_page_param = request.form['signup_page']
-        url = "https://mdaisuke.net/" + signup_page_param
-        if email_param is not None and signup_page_param is not None:
-            st = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
-            # save to file and send thank you note
-            with open("email_repo.txt","a") as myfile:
-                myfile.write('Timestamp: ' + st + ' email:' + email_param + ' source:' + signup_page_param + '\n')
-        if "/en/" in signup_page_param:
-            return redirect(url_for('static', filename='thanks_en.html', to_url=url))
-    return redirect(url_for('static', filename='thanks.html', to_url=url))
-
-# --- 新しい いいね機能 ---
 
 @app.route("/api/likes", methods=['GET'])
 def get_likes():
@@ -62,7 +44,6 @@ def get_likes():
 @app.route("/api/likes", methods=['POST'])
 def add_like():
     """いいねを追加"""
-    # JSONデータとして受け取る想定
     data = request.get_json()
     if not data or 'page_id' not in data:
         return jsonify({'error': 'page_id is required'}), 400
