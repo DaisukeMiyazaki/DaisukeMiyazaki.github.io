@@ -1,652 +1,351 @@
 <!doctype html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang }}" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% include head.html %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"], // よりモダンなフォント指定があれば
+            },
+          },
+        },
+      };
+    </script>
     <style>
-      body {
-        background-color: #000 !important;
-        color: #fff !important;
+      /* スクロールバー非表示 */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
 
-      /* レイアウト切り替えトグル */
-      .layout-toggle-container {
-        position: fixed;
-        top: 20px;
-        right: 80px;
-        z-index: 1000;
-        background: rgba(30, 30, 30, 0.9);
-        backdrop-filter: blur(10px);
-        border-radius: 25px;
-        padding: 8px 16px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
-      }
-
-      .layout-toggle-container:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-      }
-
-      .layout-toggle {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 12px;
-        color: #9ca3af;
-        text-decoration: none;
-      }
-
-      .toggle-switch {
-        position: relative;
-        width: 40px;
-        height: 20px;
-        background: #3b82f6;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-
-      .toggle-switch::after {
-        content: "";
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        width: 16px;
-        height: 16px;
-        background: white;
-        border-radius: 50%;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      }
-
-      .toggle-switch:hover::after {
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-      }
-
-      .layout-toggle-label {
-        font-weight: 500;
-        user-select: none;
-      }
-
-      @media (max-width: 768px) {
-        .layout-toggle-container {
-          top: 15px;
-          right: 60px;
-          padding: 6px 12px;
-        }
-
-        .layout-toggle {
-          font-size: 11px;
-          gap: 6px;
-        }
-
-        .toggle-switch {
-          width: 35px;
-          height: 18px;
-        }
-
-        .toggle-switch::after {
-          width: 14px;
-          height: 14px;
-        }
-      }
-      /* タッチ端末ではトグルボタン非表示 */
-      @media (pointer: coarse) {
-        .layout-toggle-container {
-          display: none;
-        }
-      }
-
-      .gallery-container {
-        min-height: 100vh;
-        display: flex;
-        background-color: #000;
-      }
-
-      .sidebar {
-        width: 250px;
-        padding: 2rem;
-        background-color: #111;
-        height: 100vh;
-        position: fixed;
-        left: -250px;
-        top: 0;
-        overflow-y: auto;
-        z-index: 100;
-        transition: left 0.3s ease;
-        border-right: 1px solid #333;
-      }
-
-      .sidebar.open {
-        left: 0;
-      }
-
-      .main-content {
-        flex: 1;
-        margin-left: 0;
-        padding: 2rem;
-        background-color: #000;
-        width: 100%;
-        margin-top: 100px;
-      }
-
-      .menu-toggle {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 200;
-        background: #222;
-        border: none;
-        padding: 12px;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-
-      .menu-toggle:hover {
-        background: #333;
-      }
-
-      .hamburger {
-        width: 24px;
-        height: 18px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
-      .hamburger span {
-        display: block;
-        height: 2px;
-        width: 100%;
-        background: #fff;
-        border-radius: 1px;
-        transition: all 0.3s ease;
-      }
-
-      .menu-toggle.active .hamburger span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-      }
-
-      .menu-toggle.active .hamburger span:nth-child(2) {
-        opacity: 0;
-      }
-
-      .menu-toggle.active .hamburger span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-      }
-
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 50;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-      }
-
-      .overlay.active {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 0.5rem;
-        max-width: none;
-      }
-
-      .gallery-item {
-        position: relative;
-        aspect-ratio: 3/2;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-        cursor: pointer;
-        background-color: #222;
-      }
-
-      .gallery-item:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
-      }
-
-      .gallery-item-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-      }
-
-      .gallery-item:hover .gallery-item-image {
-        transform: scale(1.05);
-      }
-
-      .gallery-item-overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.9),
-          rgba(0, 0, 0, 0.5),
-          transparent
-        );
-        padding: 1rem;
-        color: white;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
-        transform: translateY(100%);
-        transition: transform 0.6s ease;
-        opacity: 0;
-      }
-
-      .gallery-item.visible .gallery-item-overlay {
-        transform: translateY(0);
-        opacity: 1;
-      }
-
-      .gallery-item:hover .gallery-item-overlay {
-        transform: translateY(0);
-        opacity: 1;
-      }
-
-      .gallery-item-no-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-        font-size: 0.9rem;
-      }
-
-      .sidebar-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 2rem;
-        color: #fff;
-        text-align: center;
-      }
-
-      .filter-nav {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      .filter-btn {
-        padding: 12px 16px;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        font-size: 14px;
-        transition: all 0.3s ease;
-        background: #222;
-        color: #ccc;
-        text-align: left;
-        width: 100%;
-      }
-
-      .filter-btn:hover {
-        background: #333;
-        color: #fff;
-      }
-
+      /* フィルターボタンのアクティブスタイル */
       .filter-btn.active {
-        background: #3b82f6;
+        background-color: #374151; /* dark-gray-700 */
         color: white;
       }
-
-      .genre-実用 {
-        background: linear-gradient(45deg, #667eea, #764ba2);
-      }
-      .genre-短編小説 {
-        background: linear-gradient(45deg, #f093fb, #f5576c);
-      }
-      .genre-エッセイ {
-        background: linear-gradient(45deg, #4facfe, #00f2fe);
-      }
-      .genre-work {
-        background: linear-gradient(45deg, #43e97b, #38f9d7);
-      }
-      .genre-practical {
-        background: linear-gradient(45deg, #fa709a, #fee140);
-      }
-      .genre-short-story {
-        background: linear-gradient(45deg, #a8edea, #fed6e3);
-      }
-      .genre-default {
-        background: linear-gradient(45deg, #d299c2, #fef9d7);
-      }
-
-      .gallery-item-meta {
-        font-size: 0.8rem;
-        opacity: 0.9;
-        margin-bottom: 0.5rem;
-      }
-
-      .gallery-item-title {
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin: 0.5rem 0;
-        line-height: 1.2;
-      }
-
-      .gallery-item-excerpt {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-      }
-
-      @media (max-width: 768px) {
-        .sidebar {
-          left: -100%;
-          width: 80%;
-          max-width: 300px;
-          padding: 1.5rem;
-        }
-
-        .sidebar.open {
-          left: 0;
-        }
-
-        .main-content {
-          padding: 1rem;
-        }
-
-        .menu-toggle {
-          top: 15px;
-          right: 15px;
-          padding: 10px;
-        }
-
-        .hamburger {
-          width: 20px;
-          height: 15px;
-        }
-
-        .filter-nav {
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-
-        .filter-btn {
-          width: 100%;
-          text-align: left;
-          padding: 10px 12px;
-        }
-
-        .gallery-grid {
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 0.3rem;
-        }
-
-        .gallery-item-title {
-          font-size: 0.9rem;
-        }
-
-        .gallery-item-excerpt {
-          font-size: 0.7rem;
-        }
+      .dark .filter-btn.active {
+        background-color: #e5e7eb; /* gray-200 */
+        color: black;
       }
     </style>
   </head>
-  <body style="background-color: #000; color: #fff; margin: 0; padding: 0">
-    <button class="menu-toggle" id="menu-toggle">
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </button>
+  <body
+    class="bg-white text-gray-900 antialiased transition-colors duration-300 dark:bg-black dark:text-white"
+  >
+    <!-- ヘッダーエリア -->
+    <header
+      class="sticky top-0 z-50 bg-white/95 px-5 py-8 backdrop-blur-sm transition-colors duration-300 dark:bg-black/95"
+    >
+      <div class="container mx-auto max-w-2xl">
+        <!-- 上段: タイトルとコントロール -->
+        <div class="mb-10 flex items-start justify-between">
+          <!-- タイトル (左寄せ・スタック) -->
+          <a href="{{ site.baseurl }}/" class="group block">
+            <h2
+              class="text-[2.5rem] font-bold leading-[1.1] tracking-tight text-gray-900 transition-opacity group-hover:opacity-80 dark:text-white"
+            >
+              Daisuke<br />Miyazaki's<br />Blog
+            </h2>
+          </a>
 
-    <div class="overlay" id="overlay"></div>
+          <!-- 右側コントロール群 -->
+          <div class="flex items-center gap-6 pt-2">
+            <!-- 言語切り替え (トグルスイッチ風) -->
+            <div class="flex flex-col items-center gap-1.5">
+              {% if page.lang == 'jp' %}
+              <a
+                href="/en/"
+                class="relative flex h-8 w-14 items-center rounded-full bg-[#8e8e93] p-1 transition-colors hover:opacity-90"
+                aria-label="Switch to English"
+              >
+                <!-- 白丸 (トグル) -->
+                <div
+                  class="flex h-6 w-6 translate-x-6 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
+                >
+                  <!-- 日本国旗風の赤丸 (簡易表現) -->
+                  <div class="h-2.5 w-2.5 rounded-full bg-red-500"></div>
+                </div>
+                <!-- 背景の国旗/文字 (画像再現はCSSで簡易に) -->
+                <span
+                  class="absolute left-2 text-[10px] font-bold text-white/90"
+                  >🇦🇺</span
+                >
+              </a>
+              {% else %}
+              <a
+                href="/"
+                class="relative flex h-8 w-14 items-center rounded-full bg-[#8e8e93] p-1 transition-colors hover:opacity-90"
+                aria-label="Switch to Japanese"
+              >
+                <!-- 白丸 (トグル) -->
+                <div
+                  class="flex h-6 w-6 translate-x-0 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
+                >
+                  <div class="h-2.5 w-2.5 rounded-full bg-blue-800"></div>
+                </div>
+                <span
+                  class="absolute right-2 text-[10px] font-bold text-white/90"
+                  >🇯🇵</span
+                >
+              </a>
+              {% endif %}
+              <span class="text-xs font-medium text-gray-500 dark:text-gray-400"
+                >EN/JP</span
+              >
+            </div>
 
-    <div class="gallery-container">
-      <div class="sidebar" id="sidebar">
-        <div style="margin-bottom: 2rem; text-align: center">
-          <h2 style="color: #fff; font-size: 1.3rem; margin: 0">
-            {% if page.lang == 'jp' %} カテゴリー {% else %} Categories {% endif
-            %}
-          </h2>
+            <!-- Recipes -->
+            <a href="/recipes" class="group flex flex-col items-center gap-1.5">
+              <div
+                class="flex h-8 w-8 items-center justify-center text-2xl text-[#8e8e93] transition-colors group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-white"
+              >
+                <!-- フォークとナイフのアイコン (文字で代用、あるいはSVG) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-7 w-7"
+                >
+                  <path
+                    d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"
+                  />
+                </svg>
+              </div>
+              <span class="text-xs font-medium text-gray-900 dark:text-gray-300"
+                >Recipes</span
+              >
+            </a>
+
+            <!-- Night Mode -->
+            <button
+              id="theme-toggle"
+              class="group flex flex-col items-center gap-1.5 focus:outline-none"
+            >
+              <div
+                class="flex h-8 w-8 items-center justify-center text-2xl text-[#8e8e93] transition-colors group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="hidden h-6 w-6 dark:block"
+                >
+                  <path
+                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 9c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+                <!-- 月アイコン (Solid) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6 dark:hidden"
+                >
+                  <path
+                    d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
+                  />
+                </svg>
+              </div>
+              <span
+                class="text-center text-xs font-medium leading-tight text-gray-900 dark:text-gray-300"
+              >
+                Night<br />Mode
+              </span>
+            </button>
+          </div>
         </div>
 
-        <div class="filter-nav">
+        <!-- 下段: カテゴリフィルター (ピル型・横スクロール) -->
+        <div class="no-scrollbar flex gap-2 overflow-x-auto pb-1">
+          <button
+            class="filter-btn active whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            data-genre="all"
+          >
+            {% if page.lang == 'jp' %}すべて{% else %}All{% endif %}
+          </button>
           {% if page.lang == 'jp' %}
-          <button class="filter-btn active" data-genre="all">すべて</button>
-          <button class="filter-btn" data-genre="実用">実用</button>
-          <button class="filter-btn" data-genre="短編小説">短編小説</button>
-          <button class="filter-btn" data-genre="エッセイ">エッセイ</button>
-          <button class="filter-btn" data-genre="work">work</button>
+          <button
+            class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            data-genre="実用"
+          >
+            実用
+          </button>
+          <button
+            class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            data-genre="短編小説"
+          >
+            短編小説
+          </button>
+          <button
+            class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            data-genre="エッセイ"
+          >
+            エッセイ
+          </button>
+          <button
+            class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            data-genre="work"
+          >
+            work
+          </button>
           {% else %}
-          <button class="filter-btn" data-genre="practical">practical</button>
-          <button class="filter-btn" data-genre="short-story">
+          <button
+            class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            data-genre="practical"
+          >
+            practical
+          </button>
+          <button
+            class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+            data-genre="short-story"
+          >
             short-story
           </button>
           {% endif %}
         </div>
       </div>
+    </header>
 
-      <div class="main-content">
-        <div class="gallery-grid" id="gallery-grid">
-          {% assign posts = site.posts | where:"lang", page.lang %} {% for post
-          in posts %} {% assign post_image = "" %} {% assign post_class =
-          "genre-default" %} {% if post.thumbnail %} {% assign post_image =
-          post.thumbnail %} {% endif %} {% if post.genre %} {% assign post_class
-          = post.genre | prepend: "genre-" %} {% endif %}
-
-          <a
-            href="{{ post.url }}"
-            class="gallery-item"
-            data-genre="{{ post.genre }}"
-            data-date="{{ post.date | date_to_xmlschema }}"
+    <!-- メインコンテンツ: シンプルなリスト表示 -->
+    <main class="container mx-auto min-h-screen max-w-2xl px-5 pb-24">
+      <div class="flex flex-col gap-12" id="gallery-grid">
+        {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
+        posts %}
+        <a
+          href="{{ post.url }}"
+          class="gallery-item group block cursor-pointer"
+          data-genre="{{ post.genre }}"
+          data-date="{{ post.date | date_to_xmlschema }}"
+        >
+          <!-- 日付とジャンルタグ -->
+          <div
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            {% if post_image != "" %}
-            <img
-              src="{{ post_image }}"
-              alt="{{ post.title }}"
-              class="gallery-item-image"
-            />
-            {% else %}
-            <div class="gallery-item-no-image {{ post_class }}">
-              <div>
-                <h3 class="gallery-item-title">{{ post.title }}</h3>
-                <p class="gallery-item-excerpt">{{ post.excerpt }}</p>
-              </div>
-            </div>
-            {% endif %}
+            <time>{{ post.date | date: "%d %b %Y" }}</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#{{ post.genre }}</span
+            >
+          </div>
 
-            <div class="gallery-item-overlay">
-              <div class="gallery-item-meta">
-                <span>{{ post.date | date_to_string }}</span>
-                <span class="ml-2">#{{ post.genre }}</span>
-              </div>
-
-              <h3 class="gallery-item-title">{{ post.title }}</h3>
-
-              <div class="gallery-item-excerpt">{{ post.excerpt }}</div>
-            </div>
-          </a>
-          {% endfor %} {% for work in site.data.works %}
-          <a
-            href="{{ work.jp.site_link }}"
-            class="gallery-item"
-            data-genre="work"
-            data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}"
-            target="_blank"
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
           >
-            <img
-              src="{{ work.jp.thumbnail }}"
-              alt="{{ work.jp.title }}"
-              class="gallery-item-image"
-            />
+            {{ post.title }}
+          </h2>
 
-            <div class="gallery-item-overlay">
-              <div class="gallery-item-meta">
-                <span>{{ work.jp.start_at }} ~ {{ work.jp.end_at }}</span>
-                <span class="ml-2">#work</span>
-              </div>
-
-              <h3 class="gallery-item-title">{{ work.jp.title }}</h3>
-
-              <div class="gallery-item-excerpt">{{ work.jp.short }}</div>
-            </div>
-          </a>
-          {% endfor %}
-        </div>
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            {{ post.excerpt | strip_html }}
+          </p>
+        </a>
+        {% endfor %} {% for work in site.data.works %}
+        <a
+          href="{{ work.jp.site_link }}"
+          class="gallery-item group block cursor-pointer"
+          data-genre="work"
+          data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}"
+          target="_blank"
+        >
+          <div
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
+          >
+            <time
+              >{{ work.jp.start_at | date: "%Y" }} - {{ work.jp.end_at | date:
+              "%Y" }}</time
+            >
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#work</span
+            >
+          </div>
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            {{ work.jp.title }}
+          </h2>
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            {{ work.jp.short }}
+          </p>
+        </a>
+        {% endfor %}
       </div>
-    </div>
+    </main>
 
     <script>
+      // 既存のJSロジック (変更なし)
       document.addEventListener("DOMContentLoaded", function () {
         const filterButtons = document.querySelectorAll(".filter-btn");
-        const galleryGrid = document.getElementById("gallery-grid");
         const galleryItems = Array.from(
           document.querySelectorAll(".gallery-item"),
         );
-        const menuToggle = document.getElementById("menu-toggle");
-        const sidebar = document.getElementById("sidebar");
-        const overlay = document.getElementById("overlay");
+        const galleryGrid = document.getElementById("gallery-grid");
+        const themeToggleBtn = document.getElementById("theme-toggle");
 
-        // Sort items by date
+        // 日付順ソート
         galleryItems.sort(
           (a, b) => new Date(b.dataset.date) - new Date(a.dataset.date),
         );
-
-        // Clear container and re-append sorted items
         galleryGrid.innerHTML = "";
         galleryItems.forEach((item) => galleryGrid.appendChild(item));
 
-        // Menu toggle functionality
-        function toggleMenu() {
-          menuToggle.classList.toggle("active");
-          sidebar.classList.toggle("open");
-          overlay.classList.toggle("active");
-        }
-
-        function closeMenu() {
-          menuToggle.classList.remove("active");
-          sidebar.classList.remove("open");
-          overlay.classList.remove("active");
-        }
-
-        menuToggle.addEventListener("click", toggleMenu);
-        overlay.addEventListener("click", closeMenu);
-
-        // Close menu when clicking on a filter button
+        // フィルター
         filterButtons.forEach((button) => {
           button.addEventListener("click", function () {
-            const genre = this.dataset.genre;
-
-            // Update active button
             filterButtons.forEach((btn) => btn.classList.remove("active"));
             this.classList.add("active");
-
-            // Filter items
+            const genre = this.dataset.genre;
             galleryItems.forEach((item) => {
-              const itemGenre = item.dataset.genre;
-              if (genre === "all" || itemGenre === genre) {
+              if (genre === "all" || item.dataset.genre === genre) {
                 item.style.display = "block";
-                // Reset visibility for filtered items
-                item.classList.remove("visible");
               } else {
                 item.style.display = "none";
               }
             });
-
-            // Close menu after selecting filter
-            closeMenu();
-
-            // Re-observe visible items after filter change
-            setTimeout(() => {
-              galleryItems.forEach((item) => {
-                if (item.style.display !== "none") {
-                  observer.observe(item);
-                }
-              });
-            }, 100);
           });
         });
 
-        // Close menu with Escape key
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape") {
-            closeMenu();
+        // ダークモード
+        if (
+          localStorage.getItem("theme") === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+        themeToggleBtn.addEventListener("click", function () {
+          if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+          } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
           }
-        });
-
-        // Intersection Observer for scroll-triggered excerpts
-        const observerOptions = {
-          root: null,
-          rootMargin: "0px 0px -100px 0px", // Trigger when 100px into viewport
-          threshold: 0.2, // Trigger when 20% of item is visible
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-              // Add visible class with staggered delay for smooth effect
-              const delay = index * 150; // 150ms delay between each item
-              setTimeout(() => {
-                entry.target.classList.add("visible");
-              }, delay);
-            }
-          });
-        }, observerOptions);
-
-        // Observe all gallery items
-        galleryItems.forEach((item) => {
-          observer.observe(item);
         });
       });
-
-      // ===============================
-      // 新規追加: 右スワイプでリストビューへ遷移
-      // ===============================
-      (function () {
-        let touchStartX = 0;
-        let touchEndX = 0;
-        const swipeThreshold = 80; // px
-
-        function handleGesture() {
-          // 右方向へスワイプ
-          if (touchEndX - touchStartX > swipeThreshold) {
-            window.location.href =
-              "{% if page.lang == 'jp' %}/{% else %}/en/{% endif %}";
-          }
-        }
-
-        document.addEventListener(
-          "touchstart",
-          (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-          },
-          { passive: true },
-        );
-        document.addEventListener(
-          "touchend",
-          (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleGesture();
-          },
-          { passive: true },
-        );
-      })();
     </script>
   </body>
 </html>

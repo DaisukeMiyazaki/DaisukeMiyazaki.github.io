@@ -1,6 +1,4 @@
 ---
-layout: index_en
+layout: index_new
 lang: en
 ---
-
-<!-- see /layout/index_en -->
