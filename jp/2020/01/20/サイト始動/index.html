@@ -208,6 +208,110 @@
 <p>どうも、最後まで読んでくれてありがとうございます。</p>
 </article>
 
+  <!-- いいねボタンエリア Start -->
+  <div class="my-12 flex justify-center">
+    <button
+      id="like-button"
+      class="group flex items-center gap-2 rounded-full border-2 border-gray-200 px-6 py-3 transition-all hover:border-pink-500 hover:bg-pink-50 dark:border-gray-700 dark:hover:border-pink-500 dark:hover:bg-pink-900/20"
+      onclick="handleLike()"
+    >
+      <span class="text-2xl transition-transform group-active:scale-125"
+        >👏</span
+      >
+      <span class="font-medium text-gray-600 dark:text-gray-300">
+        Like
+        <span
+          id="like-count"
+          class="ml-1 text-lg font-bold text-pink-500 opacity-0 transition-opacity duration-500"
+          >0</span
+        >
+      </span>
+    </button>
+  </div>
+
+  <script>
+    // APIのベースURL (本番用)
+    const API_BASE = "https://mdaisukenet.pythonanywhere.com";
+
+    // ページのユニークID (パスを利用)
+    // 末尾の /index.html 等の揺れを吸収するため、pathnameをそのままキーにするのが無難
+    const pageId = window.location.pathname;
+    const storageKey = `liked_${pageId}`;
+
+    const likeBtn = document.getElementById("like-button");
+    const countSpan = document.getElementById("like-count");
+
+    // 初期表示時にカウントを取得
+    async function fetchLikes() {
+      try {
+        const res = await fetch(
+          `${API_BASE}/api/likes?page_id=${encodeURIComponent(pageId)}`,
+        );
+        if (res.ok) {
+          const data = await res.json();
+          updateCountDisplay(data.count);
+        }
+      } catch (error) {
+        console.error("Failed to fetch likes:", error);
+      }
+    }
+
+    // いいね送信
+    async function handleLike() {
+      // 既にいいね済みなら、アニメーションだけして送信しない
+      if (localStorage.getItem(storageKey)) {
+        likeBtn.classList.add("animate-bounce");
+        setTimeout(() => likeBtn.classList.remove("animate-bounce"), 500);
+        return;
+      }
+
+      try {
+        const res = await fetch(`${API_BASE}/api/likes`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ page_id: pageId }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          updateCountDisplay(data.count);
+
+          // いいね済み状態を保存
+          localStorage.setItem(storageKey, "true");
+          markAsLiked();
+        }
+      } catch (error) {
+        console.error("Failed to send like:", error);
+      }
+    }
+
+    function updateCountDisplay(count) {
+      countSpan.innerText = count;
+      countSpan.classList.remove("opacity-0");
+    }
+
+    function markAsLiked() {
+      likeBtn.classList.add(
+        "border-pink-500",
+        "bg-pink-50",
+        "dark:bg-pink-900/20",
+      );
+      // アイコンをハートに変化させる
+      const iconSpan = likeBtn.querySelector("span:first-child");
+      if (iconSpan) iconSpan.innerText = "💖";
+    }
+
+    // 初期化
+    if (localStorage.getItem(storageKey)) {
+      markAsLiked();
+    }
+    // ページロード時に取得開始
+    fetchLikes();
+  </script>
+  <!-- いいねボタンエリア End -->
+
    
   <div class="mt-2">
     <h2 class="text-2xl font-semibold">
