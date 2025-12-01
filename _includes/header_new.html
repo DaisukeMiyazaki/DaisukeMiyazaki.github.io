@@ -168,3 +168,33 @@
     {% endif %}
   </div>
 </header>
+
+<script>
+  (function () {
+    const themeToggleBtn = document.getElementById("theme-toggle");
+
+    // 初期化ロジック（ページロード時に実行）
+    // ※ head.html などで既に実行されている場合もあるが、ボタンの状態同期のためにここでも確認
+    if (
+      localStorage.getItem("theme") === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener("click", function () {
+        if (document.documentElement.classList.contains("dark")) {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      });
+    }
+  })();
+</script>
