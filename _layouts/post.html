@@ -23,15 +23,17 @@ layout: default
       {{ site.data.translations['relatedPosts'][page.lang] }}
     </h2>
 
-    <ul class="space-y-4">
+    <!-- 修正: list-none を追加し、余白を調整 -->
+    <ul class="list-none space-y-6 pl-0">
       {% for post in related limit:3 %}
       <li>
-        <a
-          href="{{ post.url }}"
-          class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
-        >
-          <span class="block font-medium">{{ post.title }}</span>
-          <small class="block text-gray-500 dark:text-gray-400">
+        <a href="{{ post.url }}" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            {{ post.title }}
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
             {{ post.date | date_to_string }}
           </small>
         </a>
