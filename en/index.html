@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -179,549 +180,802 @@
   }
 </script>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"], // よりモダンなフォント指定があれば
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* スクロールバー非表示 */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* フィルターボタンのアクティブスタイル */
+      .filter-btn.active {
+        background-color: #374151; /* dark-gray-700 */
+        color: white;
+      }
+      .dark .filter-btn.active {
+        background-color: #e5e7eb; /* gray-200 */
+        color: black;
+      }
+    </style>
   </head>
   <body
-    class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
+    class="bg-white text-gray-900 antialiased transition-colors duration-300 dark:bg-primary-dark dark:text-white"
   >
-    <header class="primary-light px-4 py-4 dark:bg-primary-dark">
-  <div
-    class="container mx-auto flex max-w-3xl items-center justify-between p-4"
-  >
-    <a
-      class="text-2xl font-bold text-gray-800 dark:text-gray-100"
-      href="/"
-    >
-      <h1>Daisuke Miyazaki's Blog</h1>
-    </a>
-    <nav class="flex items-center">
-      <div class="flex flex-col items-end space-y-2">
-        <!-- 英語と日本語を出し分けるheader内のスイッチャー -->
-<div class="mx-4">
-  
-  <a
-    href="/en"
-    class="text-primary-link hover:text-primary-link dark:text-primary-link-dark"
-    >EN</a
-  >
-   
-  <a
-    href="/"
-    class="text-primary-link hover:text-primary-link dark:text-primary-link-dark"
-    >JP</a
-  >
-  
-</div>
+    <header
+  class="bg-white py-8 transition-colors duration-300 dark:bg-primary-dark"
+>
+  <div class="container mx-auto max-w-2xl px-6">
+    <!-- 上段: タイトルとコントロール -->
+    <div class="flex items-start justify-between">
+      <!-- タイトル (左寄せ・スタック) -->
+      <a href="/" class="group block">
+        <h1
+          class="text-[2.5rem] font-bold leading-[1.1] tracking-tight text-gray-900 transition-opacity group-hover:opacity-80 dark:text-white"
+        >
+          Daisuke<br />Miyazaki's<br />Blog
+        </h1>
+      </a>
 
-        <a
-          href="/recipes"
-          class="text-gray-800 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
-          >Recipes</a
-        >         
-             
+      <!-- 右側コントロール群 -->
+      <div class="flex items-center gap-6 pt-2">
+        <!-- 言語切り替え -->
+        <div class="flex flex-col items-center gap-1.5">
+          
+          <a
+            href="/"
+            class="relative flex h-8 w-14 items-center rounded-full bg-[#8e8e93] p-1 transition-colors hover:opacity-90"
+            aria-label="Switch to Japanese"
+          >
+            <div
+              class="flex h-6 w-6 translate-x-0 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
+            >
+              <div class="h-2.5 w-2.5 rounded-full bg-blue-800"></div>
+            </div>
+            <span class="absolute right-2 text-[10px] font-bold text-white/90"
+              >🇯🇵</span
+            >
+          </a>
+          
+          <span class="text-xs font-medium text-gray-500 dark:text-gray-400"
+            >EN/JP</span
+          >
+        </div>
+
+        <!-- Recipes -->
+        <a href="/recipes" class="group flex flex-col items-center gap-1.5">
+          <div
+            class="flex h-8 w-8 items-center justify-center text-2xl text-[#8e8e93] transition-colors group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-7 w-7"
+            >
+              <path
+                d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"
+              />
+            </svg>
+          </div>
+          <span class="text-xs font-medium text-gray-900 dark:text-gray-300"
+            >Recipes</span
+          >
+        </a>
+
+        <!-- Night Mode -->
+        <button
+          id="theme-toggle"
+          class="group flex flex-col items-center gap-1.5 focus:outline-none"
+        >
+          <div
+            class="flex h-8 w-8 items-center justify-center text-2xl text-[#8e8e93] transition-colors group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="hidden h-6 w-6 dark:block"
+            >
+              <path
+                d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 9c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-6 w-6 dark:hidden"
+            >
+              <path
+                d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
+              />
+            </svg>
+          </div>
+          <span
+            class="text-center text-xs font-medium leading-tight text-gray-900 dark:text-gray-300"
+          >
+            Night<br />Mode
+          </span>
+        </button>
       </div>
-      <!-- Dark Mode 切替ボタン -->
-      <button id="theme-toggle" class="ml-4 p-2 focus:outline-none">
-        <svg
-          id="theme-toggle-dark-icon"
-          class="hidden h-6 w-6"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <!-- 太陽アイコン (darkモード時は表示、light切替用) -->
-          <path
-            d="M12 4a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zm5.66 1.34a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm3.34 5.66a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-1.34 5.66a1 1 0 011.41 1.41l0 0a1 1 0 01-1.41-1.41zm-5.66 3.34a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1zm-5.66-1.34a1 1 0 010 2h0a1 1 0 010-2h0zm-3.34-5.66a1 1 0 011-1v0a1 1 0 110 2v0a1 1 0 01-1-1zm1.34-5.66a1 1 0 011.41-1.41h0a1 1 0 11-1.41 1.41zM12 8a4 4 0 100 8 4 4 0 000-8z"
-          />
-        </svg>
-        <svg
-          id="theme-toggle-light-icon"
-          class="h-6 w-6"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <!-- 月アイコン (lightモード時は表示、dark切替用) -->
-          <path d="M21 12.79A9 9 0 0112.21 3a7 7 0 100 14 9 9 0 008.79-4.21z" />
-        </svg>
+    </div>
+
+    <!-- カテゴリフィルター (トップページのみ表示するオプション) -->
+    
+    <div class="no-scrollbar mt-8 flex gap-2 overflow-x-auto pb-1">
+      <button
+        class="filter-btn active whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="all"
+      >
+        All
       </button>
-    </nav>
+      
+      <button
+        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="practical"
+      >
+        practical
+      </button>
+      <button
+        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+        data-genre="short-story"
+      >
+        short-story
+      </button>
+      
+    </div>
+    
   </div>
 </header>
+
 <script>
-  const themeToggleBtn = document.getElementById("theme-toggle");
-  const darkIcon = document.getElementById("theme-toggle-dark-icon");
-  const lightIcon = document.getElementById("theme-toggle-light-icon");
-  // ページ読み込み時、現在のテーマに応じてアイコンを切り替え
-  if (document.documentElement.classList.contains("dark")) {
-    darkIcon.classList.remove("hidden");
-    lightIcon.classList.add("hidden");
-  } else {
-    darkIcon.classList.add("hidden");
-    lightIcon.classList.remove("hidden");
-  }
-  themeToggleBtn.addEventListener("click", function () {
-    document.documentElement.classList.toggle("dark");
-    if (document.documentElement.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-      darkIcon.classList.remove("hidden");
-      lightIcon.classList.add("hidden");
+  (function () {
+    const themeToggleBtn = document.getElementById("theme-toggle");
+
+    // 初期化ロジック（ページロード時に実行）
+    // ※ head.html などで既に実行されている場合もあるが、ボタンの状態同期のためにここでも確認
+    if (
+      localStorage.getItem("theme") === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
     } else {
-      localStorage.setItem("theme", "light");
-      darkIcon.classList.add("hidden");
-      lightIcon.classList.remove("hidden");
+      document.documentElement.classList.remove("dark");
     }
-  });
+
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener("click", function () {
+        if (document.documentElement.classList.contains("dark")) {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      });
+    }
+  })();
 </script>
-<!-- End Dark Mode -->
 
-    <div class="container mx-auto max-w-3xl p-4">
-      <div class="mt-8">
-        <div class="mb-4">
-          <button
-            class="sort-btn rounded-full bg-blue-500 px-3 py-1 text-sm text-white"
-            data-genre="all"
-          >
-            All
-          </button>
-          <button
-            class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
-            data-genre="practical"
-          >
-            Practical
-          </button>
-          <button
-            class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
-            data-genre="short-story"
-          >
-            Short Story
-          </button>
-          <button
-            class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
-            data-genre="essay"
-          >
-            Essay
-          </button>
-          <button
-            class="sort-btn rounded-full bg-gray-300 px-3 py-1 text-sm text-gray-700"
-            data-genre="work"
-          >
-            Work
-          </button>
-        </div>
 
-        <div id="posts-container">
-           
+    <!-- メインコンテンツ: シンプルなリスト表示 -->
+    <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
+      <div class="flex flex-col gap-12" id="gallery-grid">
+         
+        <a
+          href="/en/2025/09/17/sanpou-issue/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="practical"
+          data-date="2025-09-17T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="practical"
-            data-date="2025-09-17T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >17 Sep 2025</span
-              >
-              <span class="text-blue-500"> #practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2025/09/17/sanpou-issue/" class="text-blue-500 hover:underline">
-                  How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app.</p>
-            </div>
+            <time>17 Sep 2025</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#practical</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2025/08/18/art-of-forgetting/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="practical"
+          data-date="2025-08-18T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="practical"
-            data-date="2025-08-18T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >18 Aug 2025</span
-              >
-              <span class="text-blue-500"> #practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2025/08/18/art-of-forgetting/" class="text-blue-500 hover:underline">
-                  The Art of Forgetting in this Information Society
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">An architecture of being able to forget matters in this information society.</p>
-            </div>
+            <time>18 Aug 2025</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#practical</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            The Art of Forgetting in this Information Society
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            An architecture of being able to forget matters in this information society.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2025/07/02/we-must-not-delegate-understanding/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="practical"
+          data-date="2025-07-02T15:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="practical"
-            data-date="2025-07-02T15:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >02 Jul 2025</span
-              >
-              <span class="text-blue-500"> #practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2025/07/02/we-must-not-delegate-understanding/" class="text-blue-500 hover:underline">
-                  We Must Not Delegate Understanding
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.</p>
-            </div>
+            <time>02 Jul 2025</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#practical</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            We Must Not Delegate Understanding
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2025/01/20/The-Uneven-Project-ver3/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="Practical"
+          data-date="2025-01-20T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="Practical"
-            data-date="2025-01-20T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >20 Jan 2025</span
-              >
-              <span class="text-blue-500"> #Practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2025/01/20/The-Uneven-Project-ver3/" class="text-blue-500 hover:underline">
-                  The indentation Project ver3
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, lighting and storage expansion edition.</p>
-            </div>
+            <time>20 Jan 2025</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#Practical</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            The indentation Project ver3
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, lighting and storage expansion edition.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2025/01/20/The-Uneven-Project-ver2/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="Practical"
+          data-date="2025-01-20T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="Practical"
-            data-date="2025-01-20T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >20 Jan 2025</span
-              >
-              <span class="text-blue-500"> #Practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2025/01/20/The-Uneven-Project-ver2/" class="text-blue-500 hover:underline">
-                  The indentation Project ver2
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, after the foundation is built, it's time to make the top plate.</p>
-            </div>
+            <time>20 Jan 2025</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#Practical</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            The indentation Project ver2
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, after the foundation is built, it's time to make the top plate.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2025/01/20/The-Uneven-Project-ver1/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="Practical"
+          data-date="2025-01-20T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="Practical"
-            data-date="2025-01-20T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >20 Jan 2025</span
-              >
-              <span class="text-blue-500"> #Practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2025/01/20/The-Uneven-Project-ver1/" class="text-blue-500 hover:underline">
-                  The indentation Project ver1
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">Our 6-mat room is our dream workshop. To make miscellaneous goods, we want to use it not only for storing materials, but also as a display, a workspace, and a relaxing space. A large-scale challenge to create furniture that fulfills such requests.</p>
-            </div>
+            <time>20 Jan 2025</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#Practical</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            The indentation Project ver1
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            Our 6-mat room is our dream workshop. To make miscellaneous goods, we want to use it not only for storing materials, but also as a display, a workspace, and a relaxing space. A large-scale challenge to create furniture that fulfills such requests.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2023/09/02/droplet/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="short-story"
+          data-date="2023-09-02T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="short-story"
-            data-date="2023-09-02T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >02 Sep 2023</span
-              >
-              <span class="text-blue-500"> #short-story </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2023/09/02/droplet/" class="text-blue-500 hover:underline">
-                  The Droplet
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300"> Due to the worst-case scenario of the global warming prediction for 2050, in mid-2047, the United Nations headquarters issued a statement that swift and unprecedented global cooperation was necessary. As part of this effort, Japan adopted a new era name after in 2050, which was shared with the rest of the world.</p>
-            </div>
+            <time>02 Sep 2023</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#short-story</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            The Droplet
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+             Due to the worst-case scenario of the global warming prediction for 2050, in mid-2047, the United Nations headquarters issued a statement that swift and unprecedented global cooperation was necessary. As part of this effort, Japan adopted a new era name after in 2050, which was shared with the rest of the world.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2023/08/21/workbench/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="practical"
+          data-date="2023-08-21T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="practical"
-            data-date="2023-08-21T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >21 Aug 2023</span
-              >
-              <span class="text-blue-500"> #practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2023/08/21/workbench/" class="text-blue-500 hover:underline">
-                  Workbench
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife</p>
-            </div>
+            <time>21 Aug 2023</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#practical</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            Workbench
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            Tried DIY! Gifting a Custom-Made Workbench to My Art-Loving Wife
+          </p>
+        </a>
+        
+        <a
+          href="/en/2022/12/09/Going-Meta-In-The-MetaVerse/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="practical"
+          data-date="2022-12-09T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="practical"
-            data-date="2022-12-09T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >09 Dec 2022</span
-              >
-              <span class="text-blue-500"> #practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2022/12/09/Going-Meta-In-The-MetaVerse/" class="text-blue-500 hover:underline">
-                  Going-Meta-In-The-MetaVerse
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">I saw a new step in the revolution so I'm writing it down. I got a new face.</p>
-            </div>
+            <time>09 Dec 2022</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#practical</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            Going-Meta-In-The-MetaVerse
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            I saw a new step in the revolution so I'm writing it down. I got a new face.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2021/05/12/belongings/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="essay"
+          data-date="2021-05-12T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="essay"
-            data-date="2021-05-12T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >12 May 2021</span
-              >
-              <span class="text-blue-500"> #essay </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2021/05/12/belongings/" class="text-blue-500 hover:underline">
-                  Belongings
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">When embarking on a journey, what do people think about? Visiting unknown places, eating cuisines that they have never tasted, and getting in touch with histories and cultures of the place. They may discover something new, or be able to reflect on their footsteps in their life.</p>
-            </div>
+            <time>12 May 2021</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#essay</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            Belongings
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            When embarking on a journey, what do people think about? Visiting unknown places, eating cuisines that they have never tasted, and getting in touch with histories and cultures of the place. They may discover something new, or be able to reflect on their footsteps in their life.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2020/11/23/tokyo/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="essay"
+          data-date="2020-11-23T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="essay"
-            data-date="2020-11-23T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >23 Nov 2020</span
-              >
-              <span class="text-blue-500"> #essay </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2020/11/23/tokyo/" class="text-blue-500 hover:underline">
-                  Tokyo
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">Tokyo is colorless: A frozen city, said one that named after this city as I have heard of. Black, grey and white cover the city: yes, I’ve come to find it cold and colorless. Looking around the city and upon my foot, I have probably become part of the crowd as well. Recently my days over the lenses have been covered by black, grey and white.</p>
-            </div>
+            <time>23 Nov 2020</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#essay</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            Tokyo
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            Tokyo is colorless: A frozen city, said one that named after this city as I have heard of. Black, grey and white cover the city: yes, I’ve come to find it cold and colorless. Looking around the city and upon my foot, I have probably become part of the crowd as well. Recently my days over the lenses have been covered by black, grey and white.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2020/09/20/Sustainability/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="essay"
+          data-date="2020-09-20T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="essay"
-            data-date="2020-09-20T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >20 Sep 2020</span
-              >
-              <span class="text-blue-500"> #essay </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2020/09/20/Sustainability/" class="text-blue-500 hover:underline">
-                  Sustainability
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">Sustainability, being light and fuzzy like feathers, is a shapeless object. I've been trying to catch it with my own hands with certain special feelings. At times it forms a tangible shape, leaving me spark-joy; other times it goes through my fingers deceptively.</p>
-            </div>
+            <time>20 Sep 2020</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#essay</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            Sustainability
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            Sustainability, being light and fuzzy like feathers, is a shapeless object. I've been trying to catch it with my own hands with certain special feelings. At times it forms a tangible shape, leaving me spark-joy; other times it goes through my fingers deceptively.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2020/04/04/RiseAndFall/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="essay"
+          data-date="2020-04-04T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="essay"
-            data-date="2020-04-04T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >04 Apr 2020</span
-              >
-              <span class="text-blue-500"> #essay </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2020/04/04/RiseAndFall/" class="text-blue-500 hover:underline">
-                  RiseAndFall
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">What is intelligence? I believe it can be represented by a tree. In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one's cultural upbringing.</p>
-            </div>
+            <time>04 Apr 2020</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#essay</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            RiseAndFall
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            What is intelligence? I believe it can be represented by a tree. In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one's cultural upbringing.
+          </p>
+        </a>
+        
+        <a
+          href="/en/2020/01/20/daisuke-site-launched/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="essay"
+          data-date="2020-01-20T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="essay"
-            data-date="2020-01-20T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >20 Jan 2020</span
-              >
-              <span class="text-blue-500"> #essay </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/2020/01/20/daisuke-site-launched/" class="text-blue-500 hover:underline">
-                  Launch
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.</p>
-            </div>
+            <time>20 Jan 2020</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#essay</span
+            >
           </div>
-          
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            Launch
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.
+          </p>
+        </a>
+        
+        <a
+          href="/en/1995/09/02/about/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="practical"
+          data-date="1995-09-02T00:00:00+00:00"
+        >
+          <!-- 日付とジャンルタグ -->
           <div
-            class="post-item mb-6"
-            data-genre="practical"
-            data-date="1995-09-02T00:00:00+00:00"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-300"
-                >02 Sep 1995</span
-              >
-              <span class="text-blue-500"> #practical </span>
-              <h2 class="text-xl font-bold dark:text-gray-300">
-                <a href="/en/1995/09/02/about/" class="text-blue-500 hover:underline">
-                  About me
-                </a>
-              </h2>
-              <p class="text-gray-700 dark:text-gray-300">Nice to meet you!</p>
-            </div>
+            <time>02 Sep 1995</time>
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#practical</span
+            >
           </div>
-           
+
+          <!-- タイトル -->
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            About me
+          </h2>
+
+          <!-- 抜粋 -->
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            Nice to meet you!
+          </p>
+        </a>
+         
+        <a
+          href="https://www.source-maker.co.jp/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="work"
+          data-date="2021-09-01"
+          target="_blank"
+        >
           <div
-            class="post-item mb-6"
-            data-genre="work"
-            data-date="2021-09-01"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="at-index dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-600"
-                >Sep 2021 ~ present</span
-              >
-              <span class="text-blue-500"> #work </span>
-              <h2 class="text-xl font-bold">
-                <a
-                  href="https://www.source-maker.co.jp/en/"
-                  class="text-blue-500 hover:underline"
-                  target="_blank"
-                >
-                  HR Tech development/operation
-                </a>
-              </h2>
-              <p class="dark:text-white">Full-stack development and operation using Django, React, AWS. Integration with external APIs, etc.</p>
-            </div>
+            <time
+              >2021 - present</time
+            >
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#work</span
+            >
           </div>
-          
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            HR Tech開発/運用
+          </h2>
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            Django, React, AWSを使ったフルスタック開発, 運用. 外部APIとの連携など
+          </p>
+        </a>
+        
+        <a
+          href="https://daisystoneart.vercel.app/"
+          class="gallery-item group block cursor-pointer"
+          data-genre="work"
+          data-date="2022-10-01"
+          target="_blank"
+        >
           <div
-            class="post-item mb-6"
-            data-genre="work"
-            data-date="2022-10-01"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="at-index dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-600"
-                >Oct 2022 ~ present</span
-              >
-              <span class="text-blue-500"> #work </span>
-              <h2 class="text-xl font-bold">
-                <a
-                  href="https://daisystoneart.vercel.app/"
-                  class="text-blue-500 hover:underline"
-                  target="_blank"
-                >
-                  DaisyStoneArt
-                </a>
-              </h2>
-              <p class="dark:text-white">Portfolio</p>
-            </div>
+            <time
+              >2022 - present</time
+            >
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#work</span
+            >
           </div>
-          
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            DaisyStoneArt
+          </h2>
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            ポートフォリオ
+          </p>
+        </a>
+        
+        <a
+          href="/jp/site"
+          class="gallery-item group block cursor-pointer"
+          data-genre="work"
+          data-date="2020-01-01"
+          target="_blank"
+        >
           <div
-            class="post-item mb-6"
-            data-genre="work"
-            data-date="2020-01-01"
+            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
           >
-            <div class="at-index dark:bg-primary-dark dark:text-white">
-              <span class="at-index text-gray-600"
-                >Jan 2020 ~ present</span
-              >
-              <span class="text-blue-500"> #work </span>
-              <h2 class="text-xl font-bold">
-                <a
-                  href="/en/site"
-                  class="text-blue-500 hover:underline"
-                  target="_blank"
-                >
-                  Daisuke Miyazaki's Site
-                </a>
-              </h2>
-              <p class="dark:text-white">This site</p>
-            </div>
+            <time
+              >2020 - present</time
+            >
+            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
+              >#work</span
+            >
           </div>
-          
-        </div>
+          <h2
+            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+          >
+            Daisuke Miyazakiのサイト
+          </h2>
+          <p
+            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+          >
+            このサイト
+          </p>
+        </a>
+        
       </div>
+    </main>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const sortButtons = document.querySelectorAll(".sort-btn");
-          const postsContainer = document.getElementById("posts-container");
-          const postItems = Array.from(postsContainer.children);
+    <script>
+      // 既存のJSロジック
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const galleryItems = Array.from(
+          document.querySelectorAll(".gallery-item"),
+        );
+        const galleryGrid = document.getElementById("gallery-grid");
+        // const themeToggleBtn = document.getElementById("theme-toggle"); // 削除
 
-          // Sort items by date
-          postItems.sort(
-            (a, b) => new Date(b.dataset.date) - new Date(a.dataset.date),
-          );
-          postsContainer.innerHTML = "";
-          postItems.forEach((item) => postsContainer.appendChild(item));
+        // 日付順ソート
+        galleryItems.sort(
+          (a, b) => new Date(b.dataset.date) - new Date(a.dataset.date),
+        );
+        galleryGrid.innerHTML = "";
+        galleryItems.forEach((item) => galleryGrid.appendChild(item));
 
-          sortButtons.forEach((button) => {
-            button.addEventListener("click", function () {
-              const genre = this.dataset.genre;
-
-              sortButtons.forEach((btn) => {
-                btn.classList.remove("bg-blue-500", "text-white");
-                btn.classList.add("bg-gray-300", "text-gray-700");
-              });
-              this.classList.add("bg-blue-500", "text-white");
-              this.classList.remove("bg-gray-300", "text-gray-700");
-
-              postItems.forEach((item) => {
-                if (genre === "all" || item.dataset.genre === genre) {
-                  item.style.display = "block";
-                } else {
-                  item.style.display = "none";
-                }
-              });
+        // フィルター
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+            const genre = this.dataset.genre;
+            galleryItems.forEach((item) => {
+              if (genre === "all" || item.dataset.genre === genre) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
             });
           });
         });
-      </script>
-    </div>
-    <footer class="primary-light">
-  <div
-    class="container mx-auto max-w-4xl p-4 pb-16 pt-4 dark:bg-primary-dark dark:text-gray-100"
-  >
-    <div class="flex justify-start">
-      <section class="mb-4 mt-4 md:mb-0">
-        <a
-          href="https://mdaisuke.net/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/"
-          target="_blank"
-        >
-          <img
-            id="profile"
-            src="/assets/images/me_face.jpg"
-            alt="A picture of me."
-            class="h-24 w-24 rounded-full"
-        /></a>
-      </section>
-    </div>
-  </div>
-</footer>
-
+      });
+    </script>
   </body>
 </html>
