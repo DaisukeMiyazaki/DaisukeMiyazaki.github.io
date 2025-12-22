@@ -7,7 +7,7 @@ genre: 実用
 excerpt: "Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、「移動予定」としてカレンダーに追加するGoogle Apps Script (GAS) ツールを作りました。"
 ---
 
-https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12
+<a href="https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12" target="_blank" rel="noopener">https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12</a>
 
 Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、**「移動予定（Travel to ...）」** としてカレンダーに追加するGoogle Apps Script (GAS) ツールです。
 Googleカレンダーで予定地を入れると自動で行き先/帰り道をカレンダーにセットしてくれます。
@@ -72,11 +72,9 @@ Google Maps機能を使用するため、以下の手順が必要な場合があ
 2.  数秒〜数十秒後、その予定の直前に「Travel to [予定名]」という新しい予定が自動的に追加されます。
 3.  追加された予定をクリックすると、詳細欄で「何時の電車に乗ればいいか」が確認できます。
 
-## 開発メモ
+## その他
 
-- **ロジック**:
-  - トリガー発火時に、今日から14日後までの予定をスキャン。
-  - 「場所」があり、かつ直前に「Travel to」がない予定を探して処理。
-  - ルート検索は `Maps.newDirectionFinder()` (Transit Mode) を使用。
-  - 行きは `.setArrive(start - 15min)`、帰りは `.setDepart(end)` で検索。
-- **ファイル**: `calendar_auto_route.js` (ソースコード)
+- トリガー発火時に、今日から14日後までの予定をスキャン。
+- 「場所」があり、かつ直前に「Travel to」がない予定を探して処理。
+- ルート検索は `Maps.newDirectionFinder()` (Transit Mode) を使用。
+- 行きは `.setArrive(start - 15min)`、帰りは `.setDepart(end)` で検索。

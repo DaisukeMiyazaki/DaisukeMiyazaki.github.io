@@ -71,11 +71,9 @@ To use Google Maps functions, the following steps may be required (currently, th
 2.  After a few seconds to tens of seconds, a new event called "Travel to [Event Name]" will be automatically added immediately before that event.
 3.  Click on the added event to check "what time to catch the train" in the details field.
 
-## Development Notes
+## Notes
 
-- **Logic**:
-  - When the trigger fires, scan events from today to 14 days later.
-  - Find events that have a "Location" and do not have "Travel to" immediately before them, and process them.
-  - Route search uses `Maps.newDirectionFinder()` (Transit Mode).
-  - Outbound search uses `.setArrive(start - 15min)`, return uses `.setDepart(end)`.
-- **File**: `calendar_auto_route.js` (Source Code)
+- When the trigger fires, scan events from today to 14 days later.
+- Find events that have a "Location" and do not have "Travel to" immediately before them, and process them.
+- Route search uses `Maps.newDirectionFinder()` (Transit Mode).
+- Outbound search uses `.setArrive(start - 15min)`, return uses `.setDepart(end)`.
