@@ -1,4 +1,211 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-12-01T12:35:55+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">夕暮れや</title><link href="https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/" rel="alternate" type="text/html" title="夕暮れや" /><published>2025-10-27T00:00:00+00:00</published><updated>2025-10-27T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/">&lt;p&gt;&lt;img src=&quot;/assets/images/poems/2025-10-27%20poem.jpg&quot; alt=&quot;夕暮れの空&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2025-12-22T02:41:06+00:00</updated><id>https://mdaisuke.net/feed.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar</title><link href="https://mdaisuke.net/en/2025/12/22/calendar-auto-route/" rel="alternate" type="text/html" title="Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar" /><published>2025-12-22T00:00:00+00:00</published><updated>2025-12-22T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/12/22/calendar-auto-route</id><content type="html" xml:base="https://mdaisuke.net/en/2025/12/22/calendar-auto-route/">&lt;p&gt;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&lt;/p&gt;
+
+&lt;p&gt;This is a Google Apps Script (GAS) tool that automatically calculates the travel route (train/walk) to an event when you add it to Google Calendar, and adds a &lt;strong&gt;“Travel to…“&lt;/strong&gt; event to your calendar.&lt;/p&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Automatic Route Calculation&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Reads the “Location” of the event and searches for a route using the Google Maps API.&lt;/li&gt;
+      &lt;li&gt;Automatically determines the starting point from “Home (default)” or “Location of the previous event (if events are back-to-back)”.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Arrive 15 Minutes Early&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Schedules travel time so that you arrive at the destination &lt;strong&gt;15 minutes before&lt;/strong&gt; the event starts.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Detailed Route Guidance&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Automatically adds the train time, line name, transfer station, and fare (if available) to the Description field of the calendar event.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Automatic Return Route&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Automatically creates a travel plan (Travel to Home) to return home after the last event of the day ends.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Duplicate Prevention&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Does not double-register if a travel plan has already been created.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;setup-instructions&quot;&gt;Setup Instructions&lt;/h2&gt;
+
+&lt;p&gt;This tool requires no server and runs on Google Apps Script.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-create-a-project&quot;&gt;1. Create a Project&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Access &lt;a href=&quot;https://script.google.com/&quot;&gt;Google Apps Script (script.google.com)&lt;/a&gt; in your browser.&lt;/li&gt;
+  &lt;li&gt;Create a “New Project”.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;2-install-the-code&quot;&gt;2. Install the Code&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Copy the contents of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calendar_auto_route.js&lt;/code&gt; from this repository.&lt;/li&gt;
+  &lt;li&gt;Paste everything into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code.gs&lt;/code&gt; in the GAS editor.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;3-change-settings&quot;&gt;3. Change Settings&lt;/h3&gt;
+
+&lt;p&gt;Rewrite the constants at the beginning of the code to match your environment.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CALENDAR_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;primary&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Leave as is if using your own calendar&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HOME_LOCATION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Ofuna Station, Kamakura&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Address of your home or nearest station&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-enable-service&quot;&gt;4. Enable Service&lt;/h3&gt;
+
+&lt;p&gt;To use Google Maps functions, the following steps may be required (currently, the standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps&lt;/code&gt; class is often used, so additional settings are often unnecessary, but just in case).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click the “+” button in “Services” on the left menu -&amp;gt; Add “Google Maps Service” if available (usually not required).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-trigger-settings-automation&quot;&gt;5. Trigger Settings (Automation)&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click the clock icon (Trigger) on the left menu.&lt;/li&gt;
+  &lt;li&gt;Click the “Add Trigger” button.&lt;/li&gt;
+  &lt;li&gt;Set as follows and save:
+    &lt;ul&gt;
+      &lt;li&gt;Function to run: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCalendarChange&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Event source: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;From calendar&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Event type: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Event updated&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You will be asked for permission to access your Google account when saving, so “Allow” it.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;If “This app is not verified by Google” appears, click “Advanced” -&amp;gt; “Go to (Project Name)” and allow it.&lt;/em&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add an event to Google Calendar. Be sure to fill in the &lt;strong&gt;“Location”&lt;/strong&gt; field.&lt;/li&gt;
+  &lt;li&gt;After a few seconds to tens of seconds, a new event called “Travel to [Event Name]” will be automatically added immediately before that event.&lt;/li&gt;
+  &lt;li&gt;Click on the added event to check “what time to catch the train” in the details field.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;When the trigger fires, scan events from today to 14 days later.&lt;/li&gt;
+  &lt;li&gt;Find events that have a “Location” and do not have “Travel to” immediately before them, and process them.&lt;/li&gt;
+  &lt;li&gt;Route search uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps.newDirectionFinder()&lt;/code&gt; (Transit Mode).&lt;/li&gt;
+  &lt;li&gt;Outbound search uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setArrive(start - 15min)&lt;/code&gt;, return uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setDepart(end)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">I created a Google Apps Script (GAS) tool that automatically calculates the route (train/walk) to your scheduled events and adds &quot;Travel to...&quot; blocks to your Google Calendar.</summary></entry><entry xml:lang="jp"><title type="html">Googleカレンダーに移動時間を自動追加するGASツール “Calendar Auto Route Calculator”</title><link href="https://mdaisuke.net/jp/2025/12/22/calendar-auto-route/" rel="alternate" type="text/html" title="Googleカレンダーに移動時間を自動追加するGASツール “Calendar Auto Route Calculator”" /><published>2025-12-22T00:00:00+00:00</published><updated>2025-12-22T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/12/22/calendar-auto-route</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/12/22/calendar-auto-route/">&lt;p&gt;&lt;a href=&quot;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、&lt;strong&gt;「移動予定（Travel to …）」&lt;/strong&gt; としてカレンダーに追加するGoogle Apps Script (GAS) ツールです。
+Googleカレンダーで予定地を入れると自動で行き先/帰り道をカレンダーにセットしてくれます。&lt;/p&gt;
+
+&lt;h2 id=&quot;機能&quot;&gt;機能&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;自動ルート計算&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;予定の「場所（Location）」を読み取り、Google Maps APIで経路を検索。&lt;/li&gt;
+      &lt;li&gt;出発地は「自宅（デフォルト）」または「直前の予定の場所（ハシゴの場合）」から自動判定。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;15分前行動&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;イベント開始時刻の &lt;strong&gt;15分前&lt;/strong&gt; に現地に到着するようなスケジュールで移動時間を確保します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;詳細な経路案内&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;カレンダーイベントの説明欄（Description）に、乗るべき電車の時間、路線名、乗り換え駅、運賃（可能な場合）を自動追記します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;帰宅ルートの自動追加&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;その日の最後の予定が終わった後、自宅へ帰るための移動予定（Travel to Home）も自動作成します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;重複防止&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;すでに移動予定が作成されている場合は二重登録しません。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;セットアップ手順&quot;&gt;セットアップ手順&lt;/h2&gt;
+
+&lt;p&gt;このツールはサーバー不要で、Google Apps Script上で動作します。&lt;/p&gt;
+
+&lt;h3 id=&quot;1-プロジェクト作成&quot;&gt;1. プロジェクト作成&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ブラウザで &lt;a href=&quot;https://script.google.com/&quot;&gt;Google Apps Script (script.google.com)&lt;/a&gt; にアクセス。&lt;/li&gt;
+  &lt;li&gt;「新しいプロジェクト」を作成。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;2-コードの導入&quot;&gt;2. コードの導入&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;このリポジトリの &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calendar_auto_route.js&lt;/code&gt; の内容をコピー。&lt;/li&gt;
+  &lt;li&gt;GASエディタの &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code.gs&lt;/code&gt; にすべて貼り付け。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;3-設定変更&quot;&gt;3. 設定変更&lt;/h3&gt;
+
+&lt;p&gt;コード先頭の定数を自分の環境に合わせて書き換えてください。&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CALENDAR_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;primary&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 自分のカレンダーならこのままでOK&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HOME_LOCATION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 自宅や最寄り駅の住所&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-サービスの有効化&quot;&gt;4. サービスの有効化&lt;/h3&gt;
+
+&lt;p&gt;Google Maps機能を使用するため、以下の手順が必要な場合があります（現在は標準機能の &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps&lt;/code&gt; クラスを使用しているため、追加設定なしで動くことが多いですが、念のため）。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;左メニュー「サービス」の「+」ボタン -&amp;gt; 「Google Maps Service」があれば追加（通常は不要）。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-トリガー設定自動化&quot;&gt;5. トリガー設定（自動化）&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;左メニューの時計アイコン（トリガー）をクリック。&lt;/li&gt;
+  &lt;li&gt;「トリガーを追加」ボタンをクリック。&lt;/li&gt;
+  &lt;li&gt;以下のように設定して保存：
+    &lt;ul&gt;
+      &lt;li&gt;実行する関数: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCalendarChange&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;イベントのソース: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;カレンダーから&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;イベントの種類: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;イベントの更新&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;保存時にGoogleアカウントへのアクセス権限を求められるので「許可」します。
+    &lt;ul&gt;
+      &lt;li&gt;※「このアプリはGoogleによって確認されていません」と出た場合は、「詳細」→「（プロジェクト名）に移動」をクリックして許可してください。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;使い方&quot;&gt;使い方&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Googleカレンダーに予定を入れます。&lt;strong&gt;「場所」&lt;/strong&gt;フィールドを必ず入力してください。&lt;/li&gt;
+  &lt;li&gt;数秒〜数十秒後、その予定の直前に「Travel to [予定名]」という新しい予定が自動的に追加されます。&lt;/li&gt;
+  &lt;li&gt;追加された予定をクリックすると、詳細欄で「何時の電車に乗ればいいか」が確認できます。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;その他&quot;&gt;その他&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;トリガー発火時に、今日から14日後までの予定をスキャン。&lt;/li&gt;
+  &lt;li&gt;「場所」があり、かつ直前に「Travel to」がない予定を探して処理。&lt;/li&gt;
+  &lt;li&gt;ルート検索は &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps.newDirectionFinder()&lt;/code&gt; (Transit Mode) を使用。&lt;/li&gt;
+  &lt;li&gt;行きは &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setArrive(start - 15min)&lt;/code&gt;、帰りは &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setDepart(end)&lt;/code&gt; で検索。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、「移動予定」としてカレンダーに追加するGoogle Apps Script (GAS) ツールを作りました。</summary></entry><entry xml:lang="jp"><title type="html">夕暮れや</title><link href="https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/" rel="alternate" type="text/html" title="夕暮れや" /><published>2025-10-27T00:00:00+00:00</published><updated>2025-10-27T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/">&lt;p&gt;&lt;img src=&quot;/assets/images/poems/2025-10-27%20poem.jpg&quot; alt=&quot;夕暮れの空&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;my-16 flex justify-center&quot;&gt;
   &lt;div class=&quot;font-serif text-lg tracking-[0.2em] leading-[3rem] text-gray-700 dark:text-gray-300 h-72&quot; style=&quot;writing-mode: vertical-rl;&quot;&gt;
@@ -288,34 +495,4 @@ document.addEventListener(&apos;DOMContentLoaded&apos;, function() {
     });
   }
 });
-&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">氷が揺れて器にあたる音</summary></entry><entry xml:lang="jp"><title type="html">obsidianを使い始めて1年レビュー</title><link href="https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/" rel="alternate" type="text/html" title="obsidianを使い始めて1年レビュー" /><published>2025-03-20T00:00:00+00:00</published><updated>2025-03-20T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/">&lt;p&gt;ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっており、乗り換えてみてからもう早一年以上経つので、レビューしてみる。&lt;/p&gt;
-
-&lt;p&gt;メモを増やしても自分の考え方が深まらない。どこか深まって整理がついても、ノートがうまくまとまらない。でもまとまる時間もない。他にも細かい課題があった。&lt;/p&gt;
-
-&lt;p&gt;このアプリを使い方を学び始めてからいろんな発見があった。1年以上経ち、もっと自由に考えられるようになったと思う。&lt;/p&gt;
-
-&lt;p&gt;考えることは、今を知れば未来がわかるような線形的な形でないこと。振り返りと書き直しを重ねて考えを広げたり深めたりできること。そして知識の探索の幅はどれだけ広くても良いこと。まさに点と点を繋ぐような体験こそ考えを深めることなんだと、ノートが洗練されるたびに感じた。ノートに向き合う時間が習慣になったと思う。&lt;/p&gt;
-
-&lt;p&gt;ここではとっつきやすく、Notesでも続けていた日記を例にあげてみる。日記は固有なノートの集まりとして使っている。obsidianの自由度が高さを活かして、自分にあった形に最適化できる。&lt;/p&gt;
-
-&lt;p&gt;いま日常のノートは以下のように組んでいる。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;朝/夜の気分&lt;/strong&gt;: 感覚で天気マークをつけている。幸せでいられているか。メタデータとして保存する。変化に気づくために、他のノートで一覧化したりできる。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;天気&lt;/strong&gt;: APIで自動で取得している、気分と強い相関があることも。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;タスク&lt;/strong&gt;: 保存庫中のノートでチェックボックスに変換+実施予定日をいれると、毎日ノートに表示される。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;固有ノート&lt;/strong&gt;: 日常を最も小さな単位で切り取った書き下ろし。素であり、RAWであり、まとまってないことがほとんど。書き下ろしてから、大体タイトルをつける。思いついたらとりあえず書く。ホットキーを設定して一コマンドで開けるようにするとなお便利。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;振り返り&lt;/strong&gt;: その日最後の固有ノート。あったこと、印象に残ったこと、仕事で寝かせたい考えの書き殴り、あった人などざっくばらんに書き留める。&lt;/p&gt;
-
-&lt;p&gt;Task、Templater、unique note creatorあたりのプラグインを使っている。&lt;/p&gt;
-
-&lt;p&gt;また活字を読んだら書き留める場所として、AIを使い倒すための書き溜める場所として、そしてプレゼンを作る場所として、、といろんな活用の方法があるが、これはまた次のポストで扱うとする。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっていたが課題があり、乗り換えてみてからもう早一年以上経つので、レビューしてみる。</summary></entry><entry xml:lang="jp"><title type="html">IPadを手放した</title><link href="https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/" rel="alternate" type="text/html" title="IPadを手放した" /><published>2025-03-17T00:00:00+00:00</published><updated>2025-03-17T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/">&lt;p&gt;iPadを手放した。出先でIPhoneをPCとして使う工夫をしている。結局ipadですらジャケットのポケットには入らない。端末自体の演算力やバッテリーの持ちは十分だ。&lt;/p&gt;
-
-&lt;p&gt;折りたたみキーボードがあれば手慣れた速度感でノートと向き合うことができる。ここではコーヒーを飲み切るくらいの時間を区切りの目安にするまとまれば成果物としても十分、まとまらないとそれは逆に煮詰まりすぎ、スコープが大きすぎる可能性がある。共有まで含めて、docmentでも大体のアプリがスマホ対応しているわけだし、web対応もしているので発信まで含めても終えられる。&lt;/p&gt;
-
-&lt;p&gt;また、スタンド等も必要。iphone自体を傾けないと姿勢が保てずに体験が悪化するので。&lt;/p&gt;
-
-&lt;p&gt;一枚のノートを軽く、小さく区切りながら細かくまとめるには、道具の準備もすぐできる方が良い。ポケットに忍ばせられるくらいの大きさであれば手軽だし、折りたたみキーボードは開いただけで接続されるものもあり手短だ。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">結局iPadですらジャケットのポケットには入らない。スマホの演算力やバッテリーの持ちは今や十分。</summary></entry></feed>
+&lt;/script&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">氷が揺れて器にあたる音</summary></entry></feed>

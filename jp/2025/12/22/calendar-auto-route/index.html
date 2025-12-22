@@ -7,7 +7,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link
     rel="canonical"
-    href="https://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
+    href="https://mdaisuke.net/jp/2025/12/22/calendar-auto-route/"
   />
 
   <link
@@ -18,7 +18,7 @@
   />
 
   <title>
-     ワークベンチv2 &middot; Daisuke Miyazaki's Blog 
+     Googleカレンダーに移動時間を自動追加するGASツール "Calendar Auto Route Calculator" &middot; Daisuke Miyazaki's Blog 
   </title>
 
   <!--costom CSS-->
@@ -30,7 +30,7 @@
   <meta name="author" content="Daisuke Miyazaki" />
   <meta
     name="description"
-    content="DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。"
+    content="Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、「移動予定」としてカレンダーに追加するGoogle Apps Script (GAS) ツールを作りました。"
   />
 
   <!-- open graph -->
@@ -39,7 +39,7 @@
   <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
   <meta
     property="og:description"
-    content="DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。"
+    content="Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、「移動予定」としてカレンダーに追加するGoogle Apps Script (GAS) ツールを作りました。"
   />
   <meta property="og:url" content="https://mdaisuke.net" />
   <meta property="og:locale" content="en_US" />
@@ -341,23 +341,128 @@
 </script>
 
 
-    <div class="container mx-auto py-4 dark:bg-primary-dark dark:text-gray-100">
-      <div class="mx-auto max-w-4xl">
-        <div class="mb-4 text-center">
-          <p class="mx-auto text-sm text-gray-600 dark:text-gray-400">
-            Jan 13, 2025
-          </p>
-          <h1 class="mx-auto text-3xl font-bold dark:text-white">
-            ワークベンチv2
-          </h1>
-        </div>
+    <main class="container mx-auto max-w-2xl px-6 pb-20 pt-8">
+      <div class="dark:text-gray-100">
+  <header class="mb-8">
+    <p class="meta text-sm text-gray-600 dark:text-gray-400">
+      Dec 22, 2025
+    </p>
+    <h1 class="title text-2xl font-bold dark:text-primary-light">
+      Googleカレンダーに移動時間を自動追加するGASツール "Calendar Auto Route Calculator"
+    </h1>
+  </header>
 
-        <div class="mx-auto mb-8"><div id="photo-scroll"></div>
-<script type="text/javascript" src="/assets/js/workbench/index.build.js" charset="utf-8"></script>
+  <div class="prose prose-lg w-full max-w-none dark:prose-invert">
+    <p><a href="https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12" target="_blank" rel="noopener">https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12</a></p>
 
-</div>
+<p>Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、<strong>「移動予定（Travel to …）」</strong> としてカレンダーに追加するGoogle Apps Script (GAS) ツールです。
+Googleカレンダーで予定地を入れると自動で行き先/帰り道をカレンダーにセットしてくれます。</p>
 
-        <!-- いいねボタンエリア Start -->
+<h2 id="機能">機能</h2>
+
+<ol>
+  <li><strong>自動ルート計算</strong>
+    <ul>
+      <li>予定の「場所（Location）」を読み取り、Google Maps APIで経路を検索。</li>
+      <li>出発地は「自宅（デフォルト）」または「直前の予定の場所（ハシゴの場合）」から自動判定。</li>
+    </ul>
+  </li>
+  <li><strong>15分前行動</strong>
+    <ul>
+      <li>イベント開始時刻の <strong>15分前</strong> に現地に到着するようなスケジュールで移動時間を確保します。</li>
+    </ul>
+  </li>
+  <li><strong>詳細な経路案内</strong>
+    <ul>
+      <li>カレンダーイベントの説明欄（Description）に、乗るべき電車の時間、路線名、乗り換え駅、運賃（可能な場合）を自動追記します。</li>
+    </ul>
+  </li>
+  <li><strong>帰宅ルートの自動追加</strong>
+    <ul>
+      <li>その日の最後の予定が終わった後、自宅へ帰るための移動予定（Travel to Home）も自動作成します。</li>
+    </ul>
+  </li>
+  <li><strong>重複防止</strong>
+    <ul>
+      <li>すでに移動予定が作成されている場合は二重登録しません。</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="セットアップ手順">セットアップ手順</h2>
+
+<p>このツールはサーバー不要で、Google Apps Script上で動作します。</p>
+
+<h3 id="1-プロジェクト作成">1. プロジェクト作成</h3>
+
+<ol>
+  <li>ブラウザで <a href="https://script.google.com/">Google Apps Script (script.google.com)</a> にアクセス。</li>
+  <li>「新しいプロジェクト」を作成。</li>
+</ol>
+
+<h3 id="2-コードの導入">2. コードの導入</h3>
+
+<ol>
+  <li>このリポジトリの <code class="language-plaintext highlighter-rouge">calendar_auto_route.js</code> の内容をコピー。</li>
+  <li>GASエディタの <code class="language-plaintext highlighter-rouge">Code.gs</code> にすべて貼り付け。</li>
+</ol>
+
+<h3 id="3-設定変更">3. 設定変更</h3>
+
+<p>コード先頭の定数を自分の環境に合わせて書き換えてください。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">CALENDAR_ID</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">primary</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// 自分のカレンダーならこのままでOK</span>
+<span class="kd">const</span> <span class="nx">HOME_LOCATION</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span> <span class="c1">// 自宅や最寄り駅の住所</span>
+</code></pre></div></div>
+
+<h3 id="4-サービスの有効化">4. サービスの有効化</h3>
+
+<p>Google Maps機能を使用するため、以下の手順が必要な場合があります（現在は標準機能の <code class="language-plaintext highlighter-rouge">Maps</code> クラスを使用しているため、追加設定なしで動くことが多いですが、念のため）。</p>
+
+<ul>
+  <li>左メニュー「サービス」の「+」ボタン -&gt; 「Google Maps Service」があれば追加（通常は不要）。</li>
+</ul>
+
+<h3 id="5-トリガー設定自動化">5. トリガー設定（自動化）</h3>
+
+<ol>
+  <li>左メニューの時計アイコン（トリガー）をクリック。</li>
+  <li>「トリガーを追加」ボタンをクリック。</li>
+  <li>以下のように設定して保存：
+    <ul>
+      <li>実行する関数: <code class="language-plaintext highlighter-rouge">onCalendarChange</code></li>
+      <li>イベントのソース: <code class="language-plaintext highlighter-rouge">カレンダーから</code></li>
+      <li>イベントの種類: <code class="language-plaintext highlighter-rouge">イベントの更新</code></li>
+    </ul>
+  </li>
+  <li>保存時にGoogleアカウントへのアクセス権限を求められるので「許可」します。
+    <ul>
+      <li>※「このアプリはGoogleによって確認されていません」と出た場合は、「詳細」→「（プロジェクト名）に移動」をクリックして許可してください。</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="使い方">使い方</h2>
+
+<ol>
+  <li>Googleカレンダーに予定を入れます。<strong>「場所」</strong>フィールドを必ず入力してください。</li>
+  <li>数秒〜数十秒後、その予定の直前に「Travel to [予定名]」という新しい予定が自動的に追加されます。</li>
+  <li>追加された予定をクリックすると、詳細欄で「何時の電車に乗ればいいか」が確認できます。</li>
+</ol>
+
+<h2 id="その他">その他</h2>
+
+<ul>
+  <li>トリガー発火時に、今日から14日後までの予定をスキャン。</li>
+  <li>「場所」があり、かつ直前に「Travel to」がない予定を探して処理。</li>
+  <li>ルート検索は <code class="language-plaintext highlighter-rouge">Maps.newDirectionFinder()</code> (Transit Mode) を使用。</li>
+  <li>行きは <code class="language-plaintext highlighter-rouge">.setArrive(start - 15min)</code>、帰りは <code class="language-plaintext highlighter-rouge">.setDepart(end)</code> で検索。</li>
+</ul>
+
+  </div>
+
+  <!-- いいねボタン、関連記事は prose の外 -->
+  <!-- いいねボタンエリア Start -->
 <div class="my-12 flex justify-center">
   <button
     id="like-button"
@@ -480,54 +585,59 @@
 </script>
 <!-- いいねボタンエリア End -->
   
-        <div class="mt-12">
-          <h2 class="text-2xl font-semibold">
-            
-          </h2>
+  <div class="mt-12 border-t pt-8 dark:border-gray-800">
+    <h2 class="mb-4 text-lg font-semibold">
+      
+    </h2>
 
-          <ul class="mx-auto max-w-4xl space-y-4 p-4">
-            
-            <li>
-              <a
-                href="/jp/2025/12/22/calendar-auto-route/"
-                class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
-              >
-                Googleカレンダーに移動時間を自動追加するGASツール "Calendar Auto Route Calculator"
-                <small class="block text-gray-500 dark:text-gray-400"
-                  >22 Dec 2025</small
-                >
-              </a>
-            </li>
-            
-            <li>
-              <a
-                href="/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/"
-                class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
-              >
-                夕暮れや
-                <small class="block text-gray-500 dark:text-gray-400"
-                  >27 Oct 2025</small
-                >
-              </a>
-            </li>
-            
-            <li>
-              <a
-                href="/jp/2025/09/16/sanpou-issue/"
-                class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
-              >
-                運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか
-                <small class="block text-gray-500 dark:text-gray-400"
-                  >16 Sep 2025</small
-                >
-              </a>
-            </li>
-            
-          </ul>
-        </div>
-        
-      </div>
-    </div>
+    <ul class="list-none space-y-6 pl-0">
+      
+      <li>
+        <a href="/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            夕暮れや
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            27 Oct 2025
+          </small>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/jp/2025/09/16/sanpou-issue/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            16 Sep 2025
+          </small>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/jp/2025/08/18/art-of-forgetting/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            忘れられる仕組み作り
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            18 Aug 2025
+          </small>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  
+</div>
+
+    </main>
+
     <footer class="primary-light dark:bg-primary-dark">
   <div class="container mx-auto max-w-2xl px-6 pb-16 pt-0 dark:text-gray-100">
     <div class="flex justify-start">

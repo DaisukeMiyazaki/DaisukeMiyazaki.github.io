@@ -1,13 +1,13 @@
 <!doctype html>
 <meta charset="utf-8" />
-<html lang="jp">
+<html lang="en">
   <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link
     rel="canonical"
-    href="https://mdaisuke.net/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
+    href="https://mdaisuke.net/en/2025/12/22/calendar-auto-route/"
   />
 
   <link
@@ -18,7 +18,7 @@
   />
 
   <title>
-     ワークベンチv2 &middot; Daisuke Miyazaki's Blog 
+     Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar &middot; Daisuke Miyazaki's Blog 
   </title>
 
   <!--costom CSS-->
@@ -30,7 +30,7 @@
   <meta name="author" content="Daisuke Miyazaki" />
   <meta
     name="description"
-    content="DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。"
+    content="I created a Google Apps Script (GAS) tool that automatically calculates the route (train/walk) to your scheduled events and adds "Travel to..." blocks to you..."
   />
 
   <!-- open graph -->
@@ -39,7 +39,7 @@
   <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
   <meta
     property="og:description"
-    content="DIY！アート愛好者の妻へ特製ワークベンチをプレゼント。どこにも売っていない特別なワークベンチを作る挑戦をしてみました。その一部始終を書き下ろしてみました。"
+    content="I created a Google Apps Script (GAS) tool that automatically calculates the route (train/walk) to your scheduled events and adds "Travel to..." blocks to you..."
   />
   <meta property="og:url" content="https://mdaisuke.net" />
   <meta property="og:locale" content="en_US" />
@@ -221,17 +221,17 @@
         <div class="flex flex-col items-center gap-1.5">
           
           <a
-            href="/en/"
+            href="/"
             class="relative flex h-8 w-14 items-center rounded-full bg-[#8e8e93] p-1 transition-colors hover:opacity-90"
-            aria-label="Switch to English"
+            aria-label="Switch to Japanese"
           >
             <div
-              class="flex h-6 w-6 translate-x-6 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
+              class="flex h-6 w-6 translate-x-0 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
             >
-              <div class="h-2.5 w-2.5 rounded-full bg-red-500"></div>
+              <div class="h-2.5 w-2.5 rounded-full bg-blue-800"></div>
             </div>
-            <span class="absolute left-2 text-[10px] font-bold text-white/90"
-              >🇬🇧</span
+            <span class="absolute right-2 text-[10px] font-bold text-white/90"
+              >🇯🇵</span
             >
           </a>
           
@@ -341,23 +341,127 @@
 </script>
 
 
-    <div class="container mx-auto py-4 dark:bg-primary-dark dark:text-gray-100">
-      <div class="mx-auto max-w-4xl">
-        <div class="mb-4 text-center">
-          <p class="mx-auto text-sm text-gray-600 dark:text-gray-400">
-            Jan 13, 2025
-          </p>
-          <h1 class="mx-auto text-3xl font-bold dark:text-white">
-            ワークベンチv2
-          </h1>
-        </div>
+    <main class="container mx-auto max-w-2xl px-6 pb-20 pt-8">
+      <div class="dark:text-gray-100">
+  <header class="mb-8">
+    <p class="meta text-sm text-gray-600 dark:text-gray-400">
+      Dec 22, 2025
+    </p>
+    <h1 class="title text-2xl font-bold dark:text-primary-light">
+      Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar
+    </h1>
+  </header>
 
-        <div class="mx-auto mb-8"><div id="photo-scroll"></div>
-<script type="text/javascript" src="/assets/js/workbench/index.build.js" charset="utf-8"></script>
+  <div class="prose prose-lg w-full max-w-none dark:prose-invert">
+    <p>https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12</p>
 
-</div>
+<p>This is a Google Apps Script (GAS) tool that automatically calculates the travel route (train/walk) to an event when you add it to Google Calendar, and adds a <strong>“Travel to…“</strong> event to your calendar.</p>
 
-        <!-- いいねボタンエリア Start -->
+<h2 id="features">Features</h2>
+
+<ol>
+  <li><strong>Automatic Route Calculation</strong>
+    <ul>
+      <li>Reads the “Location” of the event and searches for a route using the Google Maps API.</li>
+      <li>Automatically determines the starting point from “Home (default)” or “Location of the previous event (if events are back-to-back)”.</li>
+    </ul>
+  </li>
+  <li><strong>Arrive 15 Minutes Early</strong>
+    <ul>
+      <li>Schedules travel time so that you arrive at the destination <strong>15 minutes before</strong> the event starts.</li>
+    </ul>
+  </li>
+  <li><strong>Detailed Route Guidance</strong>
+    <ul>
+      <li>Automatically adds the train time, line name, transfer station, and fare (if available) to the Description field of the calendar event.</li>
+    </ul>
+  </li>
+  <li><strong>Automatic Return Route</strong>
+    <ul>
+      <li>Automatically creates a travel plan (Travel to Home) to return home after the last event of the day ends.</li>
+    </ul>
+  </li>
+  <li><strong>Duplicate Prevention</strong>
+    <ul>
+      <li>Does not double-register if a travel plan has already been created.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="setup-instructions">Setup Instructions</h2>
+
+<p>This tool requires no server and runs on Google Apps Script.</p>
+
+<h3 id="1-create-a-project">1. Create a Project</h3>
+
+<ol>
+  <li>Access <a href="https://script.google.com/">Google Apps Script (script.google.com)</a> in your browser.</li>
+  <li>Create a “New Project”.</li>
+</ol>
+
+<h3 id="2-install-the-code">2. Install the Code</h3>
+
+<ol>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">calendar_auto_route.js</code> from this repository.</li>
+  <li>Paste everything into <code class="language-plaintext highlighter-rouge">Code.gs</code> in the GAS editor.</li>
+</ol>
+
+<h3 id="3-change-settings">3. Change Settings</h3>
+
+<p>Rewrite the constants at the beginning of the code to match your environment.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">CALENDAR_ID</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">primary</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// Leave as is if using your own calendar</span>
+<span class="kd">const</span> <span class="nx">HOME_LOCATION</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Ofuna Station, Kamakura</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// Address of your home or nearest station</span>
+</code></pre></div></div>
+
+<h3 id="4-enable-service">4. Enable Service</h3>
+
+<p>To use Google Maps functions, the following steps may be required (currently, the standard <code class="language-plaintext highlighter-rouge">Maps</code> class is often used, so additional settings are often unnecessary, but just in case).</p>
+
+<ul>
+  <li>Click the “+” button in “Services” on the left menu -&gt; Add “Google Maps Service” if available (usually not required).</li>
+</ul>
+
+<h3 id="5-trigger-settings-automation">5. Trigger Settings (Automation)</h3>
+
+<ol>
+  <li>Click the clock icon (Trigger) on the left menu.</li>
+  <li>Click the “Add Trigger” button.</li>
+  <li>Set as follows and save:
+    <ul>
+      <li>Function to run: <code class="language-plaintext highlighter-rouge">onCalendarChange</code></li>
+      <li>Event source: <code class="language-plaintext highlighter-rouge">From calendar</code></li>
+      <li>Event type: <code class="language-plaintext highlighter-rouge">Event updated</code></li>
+    </ul>
+  </li>
+  <li>You will be asked for permission to access your Google account when saving, so “Allow” it.
+    <ul>
+      <li><em>If “This app is not verified by Google” appears, click “Advanced” -&gt; “Go to (Project Name)” and allow it.</em></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="usage">Usage</h2>
+
+<ol>
+  <li>Add an event to Google Calendar. Be sure to fill in the <strong>“Location”</strong> field.</li>
+  <li>After a few seconds to tens of seconds, a new event called “Travel to [Event Name]” will be automatically added immediately before that event.</li>
+  <li>Click on the added event to check “what time to catch the train” in the details field.</li>
+</ol>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>When the trigger fires, scan events from today to 14 days later.</li>
+  <li>Find events that have a “Location” and do not have “Travel to” immediately before them, and process them.</li>
+  <li>Route search uses <code class="language-plaintext highlighter-rouge">Maps.newDirectionFinder()</code> (Transit Mode).</li>
+  <li>Outbound search uses <code class="language-plaintext highlighter-rouge">.setArrive(start - 15min)</code>, return uses <code class="language-plaintext highlighter-rouge">.setDepart(end)</code>.</li>
+</ul>
+
+  </div>
+
+  <!-- いいねボタン、関連記事は prose の外 -->
+  <!-- いいねボタンエリア Start -->
 <div class="my-12 flex justify-center">
   <button
     id="like-button"
@@ -480,54 +584,59 @@
 </script>
 <!-- いいねボタンエリア End -->
   
-        <div class="mt-12">
-          <h2 class="text-2xl font-semibold">
-            
-          </h2>
+  <div class="mt-12 border-t pt-8 dark:border-gray-800">
+    <h2 class="mb-4 text-lg font-semibold">
+      
+    </h2>
 
-          <ul class="mx-auto max-w-4xl space-y-4 p-4">
-            
-            <li>
-              <a
-                href="/jp/2025/12/22/calendar-auto-route/"
-                class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
-              >
-                Googleカレンダーに移動時間を自動追加するGASツール "Calendar Auto Route Calculator"
-                <small class="block text-gray-500 dark:text-gray-400"
-                  >22 Dec 2025</small
-                >
-              </a>
-            </li>
-            
-            <li>
-              <a
-                href="/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/"
-                class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
-              >
-                夕暮れや
-                <small class="block text-gray-500 dark:text-gray-400"
-                  >27 Oct 2025</small
-                >
-              </a>
-            </li>
-            
-            <li>
-              <a
-                href="/jp/2025/09/16/sanpou-issue/"
-                class="text-primary-link hover:underline dark:text-primary-link-dark dark:hover:text-primary-link-dark"
-              >
-                運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか
-                <small class="block text-gray-500 dark:text-gray-400"
-                  >16 Sep 2025</small
-                >
-              </a>
-            </li>
-            
-          </ul>
-        </div>
-        
-      </div>
-    </div>
+    <ul class="list-none space-y-6 pl-0">
+      
+      <li>
+        <a href="/en/2025/09/17/sanpou-issue/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            17 Sep 2025
+          </small>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/en/2025/08/18/art-of-forgetting/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            The Art of Forgetting in this Information Society
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            18 Aug 2025
+          </small>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/en/2025/07/02/we-must-not-delegate-understanding/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            We Must Not Delegate Understanding
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            02 Jul 2025
+          </small>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  
+</div>
+
+    </main>
+
     <footer class="primary-light dark:bg-primary-dark">
   <div class="container mx-auto max-w-2xl px-6 pb-16 pt-0 dark:text-gray-100">
     <div class="flex justify-start">
