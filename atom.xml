@@ -1,322 +1,474 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-
-	<title>Daisuke Miyazaki's Blog</title>
-	<link href="http://mdaisuke.net/blog/atom.xml" rel="self"/>
-	<link href="http://mdaisuke.net/blog"/>
-	<updated>2025-07-07T00:00:00+09:00</updated>
-	<id>https://mdaisuke.net</id>
-	<author>
-		<name>Daisuke Miyazaki</name>
-		<email>daisuke.miyazaki012@gmail.com</email>
-	</author>
-
-	
-		<entry>
-			<title>We Must Not Delegate Understanding</title>
-			<link href="http://mdaisuke.net/en/2025/07/03/we-must-not-delegate-understanding.html"/>
-			<updated>2025-07-03T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/en/2025/07/03/we-must-not-delegate-understanding</id>
-			<content type="html">&lt;p&gt;Generative AI has become capable of telling sophisticated lies indistinguishable from human ones&lt;br /&gt;
-Precisely because of such an era we must not delegate “understanding” itself to AI&lt;/p&gt;
-
-&lt;p&gt;Gathering information interpreting it in our own way and putting it into words&lt;br /&gt;
-Then connecting disparate knowledge and experiences to form a single thread&lt;br /&gt;
-This act of “connecting the dots” is the essence of thought&lt;br /&gt;
-A domain that must never be delegated to others let alone AI&lt;/p&gt;
-
-&lt;p&gt;So what should we do&lt;/p&gt;
-
-&lt;p&gt;First keep a diary&lt;br /&gt;
-Record daily events and feelings in your own words as they are&lt;br /&gt;
-And instead of just writing and forgetting repeatedly look back at past notes&lt;br /&gt;
-Ideas and records written there may connect with memos from other notes at unexpected moments&lt;/p&gt;
-
-&lt;p&gt;By facing your notes and continuously updating them your thoughts will deepen&lt;/p&gt;
-
-&lt;p&gt;We must find time in our daily lives to continue these activities&lt;br /&gt;
-Otherwise we will fall into intellectual stagnation and be unable to move forward&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>理解を委任してはいけない</title>
-			<link href="http://mdaisuke.net/jp/2025/07/03/understanding-delegation.html"/>
-			<updated>2025-07-03T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/jp/2025/07/03/understanding-delegation</id>
-			<content type="html">&lt;p&gt;生成AIは、人間と見分けがつかないほど巧みな嘘をつけるようになった。&lt;br /&gt;
-そんな時代だからこそ僕たちは、「理解」そのものをAIに委任してはいけない。&lt;/p&gt;
-
-&lt;p&gt;情報を集め、自分なりに解釈し、言葉にする。&lt;br /&gt;
-そしてバラバラに見える知識や経験をつなぎ合わせ、一つの線にしていく&lt;br /&gt;
-この「点と点を繋ぐ」作業こそ思考の本質であり&lt;br /&gt;
-決して他者に、ましてやAIに委任してはならない領域だ。&lt;/p&gt;
-
-&lt;p&gt;ではどうすればいいのか。&lt;/p&gt;
-
-&lt;p&gt;簡単なことから始めるなら、まずは日記じゃないだろうか。&lt;br /&gt;
-日々の出来事や感じたことをありのまま自分の言葉で記録する。&lt;/p&gt;
-
-&lt;p&gt;次に、ただ書きっぱなしにするのではなく、何度も過去のノートを振り返ること。&lt;br /&gt;
-書かれたアイデアや記録が、別のノートのメモとふとした瞬間に結びつくことがある。&lt;/p&gt;
-
-&lt;p&gt;そうしてノートと向き合い更新し続けることで思考は深まっていく。&lt;/p&gt;
-
-&lt;p&gt;こうした営みを、日々のわずかな時間で見つけて続ける。&lt;br /&gt;
-そうでなければ僕たちは思考停止に陥り、前へ進むことはできないだろう。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>夏が始まった</title>
-			<link href="http://mdaisuke.net/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F.html"/>
-			<updated>2025-06-16T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/jp/2025/06/16/夏が始まった</id>
-			<content type="html">&lt;p&gt;&lt;!-- ここに写真追加 --&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2025-06-16%20%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F.jpeg&quot; alt=&quot;窓とソファの写真&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;暑い、晴れていて空梅雨。&lt;br /&gt;
-エアコンをつけているとどうしても機械音ばかり。&lt;br /&gt;
-耐えられなくはないくらいの温度なので全体的に窓を開けて風通りをよくしてみている。&lt;br /&gt;
-気持ちがいいくらい緑が窓から見える。&lt;/p&gt;
-
-&lt;p&gt;自分で作った机の上&lt;br /&gt;
-窓越しでちょうどいい高さにあってpcをおいて作業できる。&lt;br /&gt;
-自分の家の中で好きな場所があれば帰ってきたくなる。&lt;br /&gt;
-清澄亭で庭の横で作業していたことを思い出す。&lt;br /&gt;
-緑のカーテン。&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;play-audio-on-hover&quot; style=&quot;cursor:pointer; text-decoration:underline;&quot;&gt;氷が揺れて器にあたる音&lt;/span&gt;&lt;br /&gt;
-ひんやりとしたグラス。&lt;/p&gt;
-
-&lt;p&gt;夏が始まった。&lt;/p&gt;
-
-&lt;p&gt;&lt;audio id=&quot;hover-audio&quot; src=&quot;/assets/audio/2025-06-16%20%E5%A4%8F%E3%81%AE%E9%9F%B3.webm&quot;&gt;&lt;/audio&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;script&gt;
-document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const trigger = document.querySelector(&#39;.play-audio-on-hover&#39;);
-  const audio = document.getElementById(&#39;hover-audio&#39;);
-  if (trigger &amp;amp;&amp;amp; audio) {
-    trigger.addEventListener(&#39;mouseenter&#39;, () =&amp;gt; {
-      audio.currentTime = 0;
-      audio.play();
-    });
-    trigger.addEventListener(&#39;mouseleave&#39;, () =&amp;gt; {
-      audio.pause();
-      audio.currentTime = 0;
-    });
-  }
-});
-&lt;/script&gt;&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>新しい一歩</title>
-			<link href="http://mdaisuke.net/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9.html"/>
-			<updated>2022-12-09T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/jp/2022/12/09/新しい一歩</id>
-			<content type="html">&lt;p&gt;Hello world!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2026-01-04T09:26:01+00:00</updated><id>https://mdaisuke.net/atom.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">Leather Loose-Leaf Binder</title><link href="https://mdaisuke.net/en/2026/01/04/leather-looseleaf/" rel="alternate" type="text/html" title="Leather Loose-Leaf Binder" /><published>2026-01-04T00:00:00+00:00</published><updated>2026-01-04T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/01/04/leather-looseleaf</id><content type="html" xml:base="https://mdaisuke.net/en/2026/01/04/leather-looseleaf/">&lt;p&gt;&lt;img src=&quot;/assets/images/leather-binder.jpeg&quot; alt=&quot;leather binder&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;革命の新しい一歩を見たので、書き留めておく。&lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;新しい顔ができた&lt;/a&gt;のだ。&lt;/p&gt;
+&lt;p&gt;I made a binder to manage my loose-leaf paper using leathercraft.
+I wanted a tool that I would want to keep on my desk, something that would lift my spirits just a little.&lt;/p&gt;
 
-&lt;p&gt;計算機上世界の自己は周りから見られるものである、という観点は非計算機世界でも同じことが言える。しかし前者の世界では容姿を大きく創造することができる点が異なる。どのみちこの世界ではMLや計算機は非計算機世界と融合しており、「この世界で自分とは何か？」と在り方を見つめ直しても、それも融合状態にあることに変わりはない。新しい顔を創るのに使用したデータは非計算機世界の顔写真であるが、支配的だったのは集団叡智による視覚的芸術の賜物であったことを忘れないようにしたい。&lt;/p&gt;
+&lt;h3 id=&quot;designed-to-hold-100-sheets&quot;&gt;Designed to Hold 100 Sheets&lt;/h3&gt;
 
-&lt;p&gt;視覚的情報とは生物にとって生活の重要な一部である中で、この顔はそんな自分の在り方にうまくハマったと感じた。拡張世界においても個が紐づいていることの裏返しでもあるが、顔の創造にかかったのは&lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;僅か20分と数百円&lt;/a&gt;。&lt;a href=&quot;https://mdaisuke.net/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/&quot;&gt;高度に大衆化した革命&lt;/a&gt;の新しい一歩を記録した日と言えるだろう。&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Going-Meta-In-The-MetaVerse</title>
-			<link href="http://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse.html"/>
-			<updated>2022-12-09T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/en/2022/12/09/Going-Meta-In-The-MetaVerse</id>
-			<content type="html">&lt;p&gt;Hello world!&lt;/p&gt;
+&lt;p&gt;The design intention was simple: “to hold a brand new pack of 100 loose-leaf sheets as is.”
+I adjusted the thickness so that I could sandwich the entire bundle of 100 sheets straight from the package without leaving any behind.&lt;/p&gt;
 
-&lt;p&gt;I saw a new step in the revolution so I’m writing it down. &lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;I got a new face&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;simple-construction&quot;&gt;Simple Construction&lt;/h3&gt;
 
-&lt;p&gt;You’re what you are seen is the same perspective in the computational world and in the non-computational world. However, the difference is that in the former world we can go beyond of our appearance that is tied to the non-computational world. In reality, ML and traditional computation are merged with the non-computational world, and the definition of “What am I in this world? keeps changing. Rethinking how to be in this world, it is surely more of the state of fusion than ever. The data used to create the new face is the mugshots of the non-computational world, but let us not forget that it was predominantly the gift of the visual arts of collective wisdom.&lt;/p&gt;
+&lt;p&gt;I just cut out thick leather, punched holes, and fastened it with brass screws.&lt;/p&gt;
 
-&lt;p&gt;Visual information is an important part of life, and I felt that this face fits well into my way of being. It is the flip side of the fact that even in the computational world, the individual from non-computational world is still connected. But what’s surprising is that the creation of the face took &lt;a href=&quot;https://prisma-ai.com/lensa&quot;&gt;only 20 minutes and a few dollars&lt;/a&gt;. The level of fitness in this ever-changing dynamic of reality and its accessibility is truly astonishing and unprecedented, and today is a day that marked a new step in &lt;a href=&quot;https://mdaisuke.net/en/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/&quot;&gt;the revolution&lt;/a&gt;.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Sustainability</title>
-			<link href="http://mdaisuke.net/en/2020/09/20/Sustainability.html"/>
-			<updated>2020-09-20T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/en/2020/09/20/Sustainability</id>
-			<content type="html">&lt;p&gt;Sustainability, being light and fuzzy like feathers, is a shapeless object. I’ve been trying to catch it with my own hands with certain special feelings. At times it forms a tangible shape, leaving me spark-joy; other times it goes through my fingers deceptively.&lt;/p&gt;
+&lt;p&gt;There is no stitching, and the edge finishing is minimal.
+Since the leather material itself has sufficient strength and weight, it functions as a binder without any unnecessary processing.&lt;/p&gt;
 
-&lt;p&gt;As far as I can remember it, I couldn’t help but come to view it again and again. Because that is what something beautiful makes you want to do. I just cannot leave it and look for something else for a long time.&lt;/p&gt;
+&lt;p&gt;The excitement and freedom of facing a blank page. It goes without saying, but no charging is needed, and it won’t break if dropped. No apps to open, and I can return to a blank slate anytime just by tearing a page out.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Holds exactly 100 sheets of loose-leaf paper. No stitching, just leather and screws.</summary></entry><entry xml:lang="jp"><title type="html">革のルーズリーフバインダー</title><link href="https://mdaisuke.net/jp/2026/01/04/leather-looseleaf/" rel="alternate" type="text/html" title="革のルーズリーフバインダー" /><published>2026-01-04T00:00:00+00:00</published><updated>2026-01-04T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/01/04/leather-looseleaf</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/01/04/leather-looseleaf/">&lt;p&gt;&lt;img src=&quot;/assets/images/leather-binder.jpeg&quot; alt=&quot;leather binder&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Interestingly, I cannot define it as one particular thing. However, I can bring some successful examples which I was able to grab as something tangible. It’s when seeing an electric vehicle accelerating in the blink of an eye with its quiet three-phase alternative current, right next to a fierce petro one that cannot hold its fuel exploding inside. It’s when using a soft bamboo tooth-brush with its wood scent, instead of one with inorganic, artificial and colorful plastic. It’s when wrapping a gift with a &lt;em&gt;furoshiki&lt;/em&gt; that is reusable, robust and uniquely patterned, instead of disposable wrapping paper that cannot erase its own past wrinkles.&lt;/p&gt;
+&lt;p&gt;革細工でルーズリーフを管理するバインダーを作った。
+机の上に常に出しておきたくなるような、少しだけ気分の上がる道具が欲しかったからだ。&lt;/p&gt;
 
-&lt;p&gt;The feeling is as if a droplet of water shapes natural roundness when falling with gravity. Sometimes my heart even dances, whispering how beautiful it is.&lt;/p&gt;
+&lt;h3 id=&quot;100枚が収まる設計&quot;&gt;100枚が収まる設計&lt;/h3&gt;
 
-&lt;p&gt;On the other hand, this may be myself being obsessed with “it” excessively. That is, it can be viewed as a perspective after many observations, or as persistence that grew too much. A man in the eyesight, may have different feelings on the same thing.&lt;/p&gt;
+&lt;p&gt;設計の意図はシンプルで、「新品のルーズリーフ100枚入りがそのまま収まること」。
+パッケージから出した100枚の紙束を、余すことなく全て挟み込める厚みに調整した。&lt;/p&gt;
 
-&lt;p&gt;I think of this after seeing the history of people. People kept embodying beliefs with technology as stepping stones, and now with our civilization being cumulated over and over, we’ve received affluent wealth at our hands. Striving parallelly with an appetite for survival of our own civilization in this vast universe, passing us on with our love embodies sustainability in and of itself. And I’m sure, that not just a few people had a sense of attachment to or special feelings on the circulating lives.&lt;/p&gt;
+&lt;h3 id=&quot;シンプルな作り&quot;&gt;シンプルな作り&lt;/h3&gt;
 
-&lt;p&gt;Meanwhile, it’s indeed true that we keep undermining, destroying and stealing the environment, resources, and other lives. Here, it’s easy to find, even in the individual scale, a sense of arrogance and fierce trying to survive.&lt;/p&gt;
+&lt;p&gt;厚手の革を切り出し、穴を開け、真鍮のネジ（シカゴスクリュー）で留めただけ。&lt;/p&gt;
 
-&lt;p&gt;Yes, so these feelings upon sustainability is like a double-sided sword. And that’s why it sometimes may be necessary to discipline and remind ourselves that, while finding it beautiful, that is not absolute. If you realize this contradiction of it being right next to its fierceness, how can you gurantee its absolute sense of beauty?&lt;/p&gt;
+&lt;p&gt;縫製は一切せず、コバ（革の断面）の処理も最低限。
+革という素材自体に十分な強度と重みがあり、余計な加工をせずともバインダーとして機能する。&lt;/p&gt;
 
-&lt;p&gt;Nevertheless, I observe snipped scenes along my journey with my own preference. It’s beautiful: It’s wonderful: It’s mesmerizing. There’re times that I ponder with those feelings. I cannot help but feel the spark-joy that remains at heart, when shaping this shapeless object at hand. It’s as if I’m casting light on the shapeless object and leaving the shadow at the front of me, like mapping a vector to a 2 dimensional plane from a 3 dimensional space.&lt;/p&gt;
+&lt;p&gt;白紙に書き出すワクワク感や自由度。当たり前だけれど充電もいらないし、落としても壊れない。アプリも開かなくていいし、破るだけでいつでも白紙に戻せる。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ルーズリーフ100枚がちょうど収まる。縫製なし、革とネジだけ。</summary></entry><entry xml:lang="en"><title type="html">Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar</title><link href="https://mdaisuke.net/en/2025/12/22/calendar-auto-route/" rel="alternate" type="text/html" title="Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar" /><published>2025-12-22T00:00:00+00:00</published><updated>2025-12-22T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/12/22/calendar-auto-route</id><content type="html" xml:base="https://mdaisuke.net/en/2025/12/22/calendar-auto-route/">&lt;p&gt;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&lt;/p&gt;
 
-&lt;p&gt;And I believe that people like me contemplating the same may be out there too. Well rather, I’ve come to feel like this over times. Dropping the shadows, I certainly carve them on places that catch many eyes. “I want to carve ‘em!”, says my heart. Then I pose and wonder, over and over again.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>RiseAndFall</title>
-			<link href="http://mdaisuke.net/en/2020/04/04/RiseAndFall.html"/>
-			<updated>2020-04-04T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/en/2020/04/04/RiseAndFall</id>
-			<content type="html">&lt;p&gt;After reading &lt;a href=&quot;https://www.amazon.com/Human-Compatible-Artificial-Intelligence-Problem-ebook/dp/B07N5J5FTS&quot;&gt;&lt;em&gt;Human compatible: Artificial intelligence and the problem of control. from Russell, Stuart.&lt;/em&gt;&lt;/a&gt;
-.&lt;/p&gt;
+&lt;p&gt;This is a Google Apps Script (GAS) tool that automatically calculates the travel route (train/walk) to an event when you add it to Google Calendar, and adds a &lt;strong&gt;“Travel to…“&lt;/strong&gt; event to your calendar.&lt;/p&gt;
 
-&lt;p&gt;What is intelligence? I believe it can be represented by a tree.&lt;br /&gt;
-In the human tree, there are various elements: objectively guaranteed facts that exist outside human preferences, such as scientific truths; opinions that can be mutually exclusive and contradictory; and ingrained common sense from one’s cultural upbringing.&lt;/p&gt;
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
-&lt;p&gt;Physics and Bayes’ theorem in Mathematics both contain the notion of &lt;em&gt;measurement&lt;/em&gt;.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Automatic Route Calculation&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Reads the “Location” of the event and searches for a route using the Google Maps API.&lt;/li&gt;
+      &lt;li&gt;Automatically determines the starting point from “Home (default)” or “Location of the previous event (if events are back-to-back)”.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Arrive 15 Minutes Early&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Schedules travel time so that you arrive at the destination &lt;strong&gt;15 minutes before&lt;/strong&gt; the event starts.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Detailed Route Guidance&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Automatically adds the train time, line name, transfer station, and fare (if available) to the Description field of the calendar event.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Automatic Return Route&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Automatically creates a travel plan (Travel to Home) to return home after the last event of the day ends.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Duplicate Prevention&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Does not double-register if a travel plan has already been created.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;setup-instructions&quot;&gt;Setup Instructions&lt;/h2&gt;
+
+&lt;p&gt;This tool requires no server and runs on Google Apps Script.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-create-a-project&quot;&gt;1. Create a Project&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Access &lt;a href=&quot;https://script.google.com/&quot;&gt;Google Apps Script (script.google.com)&lt;/a&gt; in your browser.&lt;/li&gt;
+  &lt;li&gt;Create a “New Project”.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;2-install-the-code&quot;&gt;2. Install the Code&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Copy the contents of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calendar_auto_route.js&lt;/code&gt; from this repository.&lt;/li&gt;
+  &lt;li&gt;Paste everything into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code.gs&lt;/code&gt; in the GAS editor.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;3-change-settings&quot;&gt;3. Change Settings&lt;/h3&gt;
+
+&lt;p&gt;Rewrite the constants at the beginning of the code to match your environment.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CALENDAR_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;primary&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Leave as is if using your own calendar&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HOME_LOCATION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Ofuna Station, Kamakura&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Address of your home or nearest station&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-enable-service&quot;&gt;4. Enable Service&lt;/h3&gt;
+
+&lt;p&gt;To use Google Maps functions, the following steps may be required (currently, the standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps&lt;/code&gt; class is often used, so additional settings are often unnecessary, but just in case).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click the “+” button in “Services” on the left menu -&amp;gt; Add “Google Maps Service” if available (usually not required).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-trigger-settings-automation&quot;&gt;5. Trigger Settings (Automation)&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click the clock icon (Trigger) on the left menu.&lt;/li&gt;
+  &lt;li&gt;Click the “Add Trigger” button.&lt;/li&gt;
+  &lt;li&gt;Set as follows and save:
+    &lt;ul&gt;
+      &lt;li&gt;Function to run: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCalendarChange&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Event source: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;From calendar&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Event type: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Event updated&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You will be asked for permission to access your Google account when saving, so “Allow” it.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;If “This app is not verified by Google” appears, click “Advanced” -&amp;gt; “Go to (Project Name)” and allow it.&lt;/em&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add an event to Google Calendar. Be sure to fill in the &lt;strong&gt;“Location”&lt;/strong&gt; field.&lt;/li&gt;
+  &lt;li&gt;After a few seconds to tens of seconds, a new event called “Travel to [Event Name]” will be automatically added immediately before that event.&lt;/li&gt;
+  &lt;li&gt;Click on the added event to check “what time to catch the train” in the details field.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;When the trigger fires, scan events from today to 14 days later.&lt;/li&gt;
+  &lt;li&gt;Find events that have a “Location” and do not have “Travel to” immediately before them, and process them.&lt;/li&gt;
+  &lt;li&gt;Route search uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps.newDirectionFinder()&lt;/code&gt; (Transit Mode).&lt;/li&gt;
+  &lt;li&gt;Outbound search uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setArrive(start - 15min)&lt;/code&gt;, return uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setDepart(end)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">I created a Google Apps Script (GAS) tool that automatically calculates the route (train/walk) to your scheduled events and adds &quot;Travel to...&quot; blocks to your Google Calendar.</summary></entry><entry xml:lang="jp"><title type="html">Googleカレンダーに移動時間を自動追加するGASツール “Calendar Auto Route Calculator”</title><link href="https://mdaisuke.net/jp/2025/12/22/calendar-auto-route/" rel="alternate" type="text/html" title="Googleカレンダーに移動時間を自動追加するGASツール “Calendar Auto Route Calculator”" /><published>2025-12-22T00:00:00+00:00</published><updated>2025-12-22T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/12/22/calendar-auto-route</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/12/22/calendar-auto-route/">&lt;p&gt;&lt;a href=&quot;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、&lt;strong&gt;「移動予定（Travel to …）」&lt;/strong&gt; としてカレンダーに追加するGoogle Apps Script (GAS) ツールです。
+Googleカレンダーで予定地を入れると自動で行き先/帰り道をカレンダーにセットしてくれます。&lt;/p&gt;
+
+&lt;h2 id=&quot;機能&quot;&gt;機能&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;自動ルート計算&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;予定の「場所（Location）」を読み取り、Google Maps APIで経路を検索。&lt;/li&gt;
+      &lt;li&gt;出発地は「自宅（デフォルト）」または「直前の予定の場所（ハシゴの場合）」から自動判定。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;15分前行動&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;イベント開始時刻の &lt;strong&gt;15分前&lt;/strong&gt; に現地に到着するようなスケジュールで移動時間を確保します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;詳細な経路案内&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;カレンダーイベントの説明欄（Description）に、乗るべき電車の時間、路線名、乗り換え駅、運賃（可能な場合）を自動追記します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;帰宅ルートの自動追加&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;その日の最後の予定が終わった後、自宅へ帰るための移動予定（Travel to Home）も自動作成します。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;重複防止&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;すでに移動予定が作成されている場合は二重登録しません。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;セットアップ手順&quot;&gt;セットアップ手順&lt;/h2&gt;
+
+&lt;p&gt;このツールはサーバー不要で、Google Apps Script上で動作します。&lt;/p&gt;
+
+&lt;h3 id=&quot;1-プロジェクト作成&quot;&gt;1. プロジェクト作成&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ブラウザで &lt;a href=&quot;https://script.google.com/&quot;&gt;Google Apps Script (script.google.com)&lt;/a&gt; にアクセス。&lt;/li&gt;
+  &lt;li&gt;「新しいプロジェクト」を作成。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;2-コードの導入&quot;&gt;2. コードの導入&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;このリポジトリの &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calendar_auto_route.js&lt;/code&gt; の内容をコピー。&lt;/li&gt;
+  &lt;li&gt;GASエディタの &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code.gs&lt;/code&gt; にすべて貼り付け。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;3-設定変更&quot;&gt;3. 設定変更&lt;/h3&gt;
 
-&lt;p&gt;The former type of measurement is found in quantum physics. In &lt;a href=&quot;https://www.youtube.com/watch?v=vnJre6NzlOQ&quot;&gt;the double slit problem&lt;/a&gt; you prepare a wall with two slits and a screen behind it. When you shoot an electron at the slits, an interference pattern appears behind the slits. However, when you measure the electron right before it passes either of the slits, you see the shape of one slit; not the interference pattern. So, the state of an electron changes with measurement. This occurs in the micro world.&lt;/p&gt;
+&lt;p&gt;コード先頭の定数を自分の環境に合わせて書き換えてください。&lt;/p&gt;
 
-&lt;p&gt;The latter type of measurement is found as a form of &lt;em&gt;evidence&lt;/em&gt; for formalizing an update of &lt;em&gt;one’s belief&lt;/em&gt; in probability. This in a nutshell goes as follows; when an observer originally has a belief, measuring a new piece of evidence updates the belief. This occurs in the macro world. (&lt;a href=&quot;https://youtu.be/HZGCoVF3YvM&quot;&gt;This video&lt;/a&gt; explains this very clearly)&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CALENDAR_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;primary&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 自分のカレンダーならこのままでOK&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HOME_LOCATION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 自宅や最寄り駅の住所&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Measurement seems to have influence on the micro and macro world that we live in. Measurement may update one’s intelligence tree as well. This sounds obvious; however, I’m going to address this as a time axis that divises the growth of the tree into the section.&lt;/p&gt;
+&lt;h3 id=&quot;4-サービスの有効化&quot;&gt;4. サービスの有効化&lt;/h3&gt;
 
-&lt;p&gt;Going through learning, each individual forms the tree of intelligence of their own. The stem gradually thickens, branches out, leafs, and grows.&lt;/p&gt;
+&lt;p&gt;Google Maps機能を使用するため、以下の手順が必要な場合があります（現在は標準機能の &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps&lt;/code&gt; クラスを使用しているため、追加設定なしで動くことが多いですが、念のため）。&lt;/p&gt;
 
-&lt;p&gt;And now, you repeat a measurement of information without a physical bound, and your tree keeps updated at an unprecedented speed. Yes, the information is driven by the magic – namely the internet –, and extensively piles up at a place that holds an enormous number of users, such as social media or major search engines. And the rate at which measurement occurs online seems to be only increasing.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;左メニュー「サービス」の「+」ボタン -&amp;gt; 「Google Maps Service」があれば追加（通常は不要）。&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;As a smartphone or pc keep optimizing itself to its user, the user’s tree may have changed its address from its owner’s head. The data you stored, your footsteps(such as your browsing history), and the websites marked as ‘your favorite and like’ on platform, are all yours but they exist outside of your head. This means part of the tree is now getting stored in the optimized smartphone and pc. In this sense, you could even say that intelligence is now to knowing where information sits; not to exactly remembering it. When you lose your phone or pc, you may feel like you’re losing part of your body, and that is probably because of this.&lt;/p&gt;
+&lt;h3 id=&quot;5-トリガー設定自動化&quot;&gt;5. トリガー設定（自動化）&lt;/h3&gt;
 
-&lt;p&gt;Although, the tree is &lt;em&gt;not only&lt;/em&gt; yours. Consuming the web while leaving your footsteps(including browsing history, cache and cookies), &lt;em&gt;the other side&lt;/em&gt; – cybernetic collectives among humans and machines that seek to achieve their particular objectives –, who receive part of your tree and promptly shapes your digital-sphere with &lt;em&gt;recommendations&lt;/em&gt; and &lt;em&gt;relevance&lt;/em&gt;, providing content. The incentive seems to accelerate the speed at which the user accesses to &lt;em&gt;the web created by yourself&lt;/em&gt; in a sense.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;左メニューの時計アイコン（トリガー）をクリック。&lt;/li&gt;
+  &lt;li&gt;「トリガーを追加」ボタンをクリック。&lt;/li&gt;
+  &lt;li&gt;以下のように設定して保存：
+    &lt;ul&gt;
+      &lt;li&gt;実行する関数: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCalendarChange&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;イベントのソース: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;カレンダーから&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;イベントの種類: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;イベントの更新&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;保存時にGoogleアカウントへのアクセス権限を求められるので「許可」します。
+    &lt;ul&gt;
+      &lt;li&gt;※「このアプリはGoogleによって確認されていません」と出た場合は、「詳細」→「（プロジェクト名）に移動」をクリックして許可してください。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Including SNS, business models in media tend to run on advertisement income. User provides their own interest through one’s data and clicks at the expense of monetary free of charge. Based on this, &lt;em&gt;the other side&lt;/em&gt; shoots advertisement at you.&lt;/p&gt;
+&lt;h2 id=&quot;使い方&quot;&gt;使い方&lt;/h2&gt;
 
-&lt;p&gt;The more data &lt;em&gt;the other side&lt;/em&gt; can collect, the more accurate advertisement becomes. Therefore, incentive aligns with collecting more and more data. Rather than texts and pictures, videos contain more data. Uploading them therefore means providing more information. The capacity of photographing with better resolution means being able to provide more information. In the birth of more and stronger engagement between users and &lt;em&gt;the other side&lt;/em&gt;, incentive to uploading more or to maximizing click-rates increases even more. &lt;em&gt;To serve better&lt;/em&gt; from &lt;em&gt;the other side&lt;/em&gt; aims at maximizing click rates, personalization and engagement. Incentive increases in creating a denser and faster feedback loop between users and &lt;em&gt;the other side&lt;/em&gt;.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Googleカレンダーに予定を入れます。&lt;strong&gt;「場所」&lt;/strong&gt;フィールドを必ず入力してください。&lt;/li&gt;
+  &lt;li&gt;数秒〜数十秒後、その予定の直前に「Travel to [予定名]」という新しい予定が自動的に追加されます。&lt;/li&gt;
+  &lt;li&gt;追加された予定をクリックすると、詳細欄で「何時の電車に乗ればいいか」が確認できます。&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;As time is finite, they’re using catchy titles that draw your attention in headlines, or impressive thumbnails : therefore, those methods of propagating information keep advancing. Considering hard competition between medias, manipulating flat lies and sensitive expressions to get your attention isn’t hard for us to imagine happening. For sure, there exist justice to deliver unmodified facts coming from journalism and science(as information sometimes can be more important than life, and some must to be reached to everyone), and well-intentioned information coming from altruistic behaviour.&lt;/p&gt;
+&lt;h2 id=&quot;その他&quot;&gt;その他&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;The other side&lt;/em&gt; is an intellectual elite from all the prestige universities. The aim, drawing your attention and maximising engagement, could be accomplished at a fairly undetectable level to the users(I’ll quote an example from the book later).&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;トリガー発火時に、今日から14日後までの予定をスキャン。&lt;/li&gt;
+  &lt;li&gt;「場所」があり、かつ直前に「Travel to」がない予定を探して処理。&lt;/li&gt;
+  &lt;li&gt;ルート検索は &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps.newDirectionFinder()&lt;/code&gt; (Transit Mode) を使用。&lt;/li&gt;
+  &lt;li&gt;行きは &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setArrive(start - 15min)&lt;/code&gt;、帰りは &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setDepart(end)&lt;/code&gt; で検索。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、「移動予定」としてカレンダーに追加するGoogle Apps Script (GAS) ツールを作りました。</summary></entry><entry xml:lang="jp"><title type="html">夕暮れや</title><link href="https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/" rel="alternate" type="text/html" title="夕暮れや" /><published>2025-10-27T00:00:00+00:00</published><updated>2025-10-27T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/">&lt;p&gt;&lt;img src=&quot;/assets/images/poems/2025-10-27%20poem.jpg&quot; alt=&quot;夕暮れの空&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This tree formed in this way – therefore beliefs, knowledge and preferences – seem like getting updated at an unprecedented rate.&lt;/p&gt;
+&lt;div class=&quot;my-16 flex justify-center&quot;&gt;
+  &lt;div class=&quot;font-serif text-lg tracking-[0.2em] leading-[3rem] text-gray-700 dark:text-gray-300 h-72&quot; style=&quot;writing-mode: vertical-rl;&quot;&gt;
+    &lt;p&gt;夕暮れや&lt;/p&gt;
+    &lt;p&gt;青橙を&lt;/p&gt;
+    &lt;p&gt;裂かん雲&lt;/p&gt;
+    &lt;p&gt;波の向こうに&lt;/p&gt;
+    &lt;p&gt;地這い星かな&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">2025年霜降の一句</summary></entry><entry xml:lang="en"><title type="html">How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea</title><link href="https://mdaisuke.net/en/2025/09/17/sanpou-issue/" rel="alternate" type="text/html" title="How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea" /><published>2025-09-17T00:00:00+00:00</published><updated>2025-09-17T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/09/17/sanpou-issue</id><content type="html" xml:base="https://mdaisuke.net/en/2025/09/17/sanpou-issue/">&lt;h3 id=&quot;it-started-with-a-lack-of-exercise&quot;&gt;It Started with a Lack of Exercise&lt;/h3&gt;
 
-&lt;p&gt;If the internet is &lt;em&gt;irresistibly attractive&lt;/em&gt; and &lt;em&gt;impossible to control your attention&lt;/em&gt; to you, that can be said as a testament to state-of-the-art optimization.&lt;/p&gt;
+&lt;p&gt;It all began with a common problem: I wasn’t getting enough exercise.&lt;/p&gt;
 
-&lt;p&gt;Where this ends up is a filter-bubble(a world that keeps validating the content you’re consuming). Even if you search a same word in Google with someone else, of course you will see a different result to his. Algorithms providing recommendations creates more engagement in the digital-sphere provided where your interests and preferences are more predictable.&lt;/p&gt;
+&lt;p&gt;Remote work became standard, which was flexible, but it also meant I had days where I didn’t leave the house at all. I knew I needed to change that, so I started a new habit: just walking.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;To get just an inkling of the fire we’re playing with, consider how content-selection algorithms function on social media. They aren’t particularly intelligent, but they are in a position to affect the entire world because they directly influence billions of people. Typically, such algorithms are designed to maximize click-through, that is, the probability that the user clicks on presented items. The solution is simply to present items that the user likes to click on, right? Wrong. The solution is to change the user’s preferences so that they become more predictable. A more predictable user can be fed items that they are likely to click on, thereby generating more revenue. People with more extreme political views tend to be more predictable in which items they will click on. (Possibly there is a category of articles that die-hard centrists are likely to click on, but it’s not easy to imagine what this category consists of.) Like any rational entity, the algorithm learns how to modify the state of its environment—in this case, the user’s mind—in order to maximize its own reward. The consequences include the resurgence of fascism, the dissolution of the social contract that underpins democracies around the world, and potentially the end of the European Union and NATO. Not bad for a few lines of code, even if it had a helping hand from some humans.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After about a year of this, I noticed something.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Russell, Stuart. Human Compatible (pp. 8-9). Penguin Publishing Group. Kindle Edition.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You don’t really hit your step goals by just wandering aimlessly. To get a high step count, you need to be intentional. You have to consciously decide, “Okay, I’m leaving my desk,” and then go outside.&lt;/p&gt;
 
-&lt;p&gt;Then I wonder; how same is the amount of information that can be within a range of measurement on the internet and the amount of information of the tree representing your intelligence? If I take a ratio in the two, then it may be the size of earth and an apple(very unlikely). The world is big. But this fact looks like a lie at a sight.&lt;/p&gt;
+&lt;p&gt;This regular habit of “leaving the desk” became a starting point for a new question and a new “problem” for me to solve.&lt;/p&gt;
 
-&lt;p&gt;The world I view isn’t of a real shape as it is in the &lt;em&gt;true&lt;/em&gt; sense, but now is rather closer to a bubble snipped by &lt;em&gt;recommendations&lt;/em&gt;. When that becomes seriously ill, earth becomes flat and climate crisis disappears. Even if it’s not that extreme, for example, the interpretation of a word such as &lt;em&gt;abortion&lt;/em&gt; changes depending on an individual with a different belief.&lt;/p&gt;
+&lt;h3 id=&quot;the-hypothesis-good-ideas-happen-away-from-the-desk&quot;&gt;The Hypothesis: “Good Ideas Happen Away from the Desk”&lt;/h3&gt;
 
-&lt;p&gt;On the other hand, if you buy a physical book at a bookshop, they won’t change the display just for you alone based on your purchasing information.&lt;/p&gt;
+&lt;p&gt;We’re in a period of change, with some companies pushing for a “return to the office.” But setting those trends aside, I decided to seriously analyze a feeling I was having.&lt;/p&gt;
 
-&lt;p&gt;Even if there’s a topic that induces mutually exclusive opinions, the fact that people with different preferences and opposing views to other’s living on this planet, is not strange. And the fact that there &lt;em&gt;are&lt;/em&gt; others is a testament to that there &lt;em&gt;are&lt;/em&gt; people who love &lt;em&gt;their&lt;/em&gt; trees as much as you do yours.&lt;/p&gt;
+&lt;p&gt;It was something I’d often felt as an engineer: “My thoughts seem to get more organized when I walk or step away from my computer.”&lt;/p&gt;
 
-&lt;p&gt;Each tree and its owner as an individual is deeply connected. Now including the difference of the trees and things that we’re born with, this dynamic &lt;em&gt;could&lt;/em&gt; be called as diversity. Regardless of where the bound between the tree and the person holds, both of them are mutually dependent on each other, and there’d be no one who wants to get rid of either of them.&lt;/p&gt;
+&lt;p&gt;This led me to a hypothesis:&lt;/p&gt;
 
-&lt;p&gt;Diversity is posed as good. Each tree gathers and forms a big forest as a whole. Or, each tree shares its stem and branches out differently. Both are beautiful: a forest interwoven with a various types of trees, and a tree stretching its roots to the deep ground and branches out to the high sky. Through seasons flower blooms; greenery thickens; autumn leaves dye; and they wither. Branches will be left alone, and leaves pile up on the ground, bringing a new life to the branches again. Over this circulation, forests and trees grow larger and larger.&lt;/p&gt;
+&lt;p&gt;“Are new ideas and organized thoughts born not while sitting at the desk, but in the moments away from it?”&lt;/p&gt;
 
-&lt;p&gt;To understand each other, it’s necessary to seek the shared stem, and to admit split branches and leaves from there on. As each reality branches out, it would take more time to trace the original root that started splitting and branching away from your own one. If succeeded, you would end up with understandings with each other even if liking or disliking feeling may arise because a different tree would be also rigidly structured, from its root to branches.&lt;/p&gt;
+&lt;p&gt;This is what I started to call my “Sanpou no Issue” (The “Walk” Issue).&lt;/p&gt;
 
-&lt;p&gt;So when you communicate with other, many of “I don’t get it”, “I’m uncertain”, and “I don’t like it” will remain, and that is normal. Meanwhile, it’s possible to keep measurements over and over in the filter bubble. And the sea of information would not show its horizon, as if it seems entirely possible to keep measurements there forever.&lt;/p&gt;
+&lt;p&gt;This line of thinking led to two more questions:&lt;/p&gt;
 
-&lt;p&gt;To counter act against it, there must be some technical preparedness although they may not be perfect. Using another search engine(this comes from a competition standpoint and prevents monopoly of users from &lt;em&gt;the other side&lt;/em&gt;); using private browsing(not leaving footsteps of history and cookies, preventing a creation of &lt;em&gt;recommendation digital sphere&lt;/em&gt;) and occasionally leaving from SNS and news(avoiding information incentivised with speed alone); deliberate fact checking(using particular websites designed for this, as for fake news, e.g. &lt;a href=&quot;https://www.snopes.com/&quot;&gt;snope.com&lt;/a&gt;); adding more context(as for fake news); consuming media that shows political characteristic of their content(exposing yourself to opinions from the politically opposite side to yours, e.g.&lt;a href=&quot;https://www.allsides.com/unbiased-balanced-news&quot;&gt;alide.com&lt;/a&gt;), and so on.&lt;/p&gt;
+&lt;p&gt;“Is this just a personal quirk?”&lt;/p&gt;
 
-&lt;p&gt;At the same time, there would be conscious preparedness as well: having a meta-awareness such as “This world I’m viewing is what I created”; having an awareness that it’d be not possible to end up in mutual understanding without troublesome, contradicting, and patient communication, as their trees differ greater and greater; having an awareness of perspectives from the opposite side of spectrum; having accurate vocabulary; giving the benefit of the doubt; having an awareness of that negative information draws more attention than positive one, and so on.&lt;/p&gt;
+&lt;p&gt;“Or does everyone eventually reach this same conclusion?”&lt;/p&gt;
 
-&lt;p&gt;And I’m sure, that there’s a lot more that can be done. It’s shame that I’m one of them not being aware of everything, either. Or perhaps it’s pretty normal not to being able to aware of everything. I don’t know.&lt;/p&gt;
+&lt;p&gt;If I can find an answer, this “project” of mine will be complete.&lt;/p&gt;
 
-&lt;p&gt;Still as they say: as many heads, as many wits; and everything changes. It’s not strange to being different to each other. What’s good and bad may be fluid while respecting diversity. Era and environment change, and so do perspectives and ethics. Still given that; however, mutual understanding, and living together in peace is priceless, isn’t it?&lt;/p&gt;
+&lt;h3 id=&quot;the-core-of-intellectual-production-in-the-age-of-genai&quot;&gt;The Core of Intellectual Production in the Age of GenAI&lt;/h3&gt;
 
-&lt;p&gt;Thank you for reading this all the way!&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>Launch</title>
-			<link href="http://mdaisuke.net/en/2020/01/20/daisuke-site-launched.html"/>
-			<updated>2020-01-20T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/en/2020/01/20/daisuke-site-launched</id>
-			<content type="html">&lt;p&gt;In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.&lt;/p&gt;
+&lt;p&gt;Pursuing this “Sanpou Issue” led me to think about the essence of intellectual production.&lt;/p&gt;
 
-&lt;p&gt;Maybe there’d be some total nonsense, or some unhindered truth that remain untouched by mainstream. This sea wides open here and there, and is too vast and deep. It continues limitlessly and one may not be even able to see its horizon.&lt;/p&gt;
+&lt;p&gt;For me, the core of this is &lt;strong&gt;“the process of breaking down information in my own words and truly internalizing it.”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Hang on, take a moment and look away from the screen. Then I want to ask you; how the world at the front of you appears?&lt;/p&gt;
+&lt;p&gt;With the recent rise of Generative AI, this concept has become more important than ever. In an age where an AI can instantly create “plausible-sounding” text, &lt;strong&gt;“how quickly you can capture your own unique thoughts as written text”&lt;/strong&gt; directly affects your personal productivity.&lt;/p&gt;
 
-&lt;p&gt;There must be some skin-stabbing winds, the familiar sound of a bus engine, and the humid scent of rain that spreads over. Unlike the world of musical with 0 and 1, you must feel the gravity bypassing your thighs, or experience the perspective from aggressive buildings or vast wild fields.&lt;/p&gt;
+&lt;p&gt;An AI cannot yet generate the “original insights” that come from your specific experiences and perspective. In fact, the value of those original insights has only increased.&lt;/p&gt;
 
-&lt;p&gt;Amid of them, there’s a thing that you reach your hand to, unconsciously. The pocket small magic sits outside of your rationality and instinct, though it keeps optimizing itself to the owner in its very sleek manner. Well, it rather enhances your capability; in semi-eternally remembering scenes and memories through crisp pictures and videos ; in enabling you to contact with someone 5,000 miles away; or even in obscuring the owner of knowledge. Your encyclopedia is, in some case, no longer in your head but in the sea. Therefore, the owner over knowledge has a less clear boundary with his outside than before.&lt;/p&gt;
+&lt;h3 id=&quot;the-problem-idle-time-vs-capture-time&quot;&gt;The Problem: “Idle” Time vs. “Capture” Time&lt;/h3&gt;
 
-&lt;p&gt;Originally, rationality and instinct co-exist each other inside of you. Perhaps there’s no one who wants to get rid of either of them. Now, there wouldn’t be anyone who wants to get rid of your magic, which has become like your limbs and arms.&lt;/p&gt;
+&lt;p&gt;So, how do we generate more of these original insights?&lt;/p&gt;
 
-&lt;p&gt;And, there may be no going-back.&lt;/p&gt;
+&lt;p&gt;In my experience, it’s during “idle” or “zoning out” (ぼーっとする) time.&lt;/p&gt;
 
-&lt;p&gt;I find everyone as one that has become a wizard. Meanwhile, they also seem like discovering how to use the magic. Certainly, I’m also one of them. Did I sound strange in the beginning, or did I not?&lt;/p&gt;
+&lt;p&gt;This means no music, no podcasts, and no apps. Just thinking. Walking turned out to be the perfect environment for this.&lt;/p&gt;
 
-&lt;p&gt;So what now? Among this, I wonder “ what‘s priceless for us? “. Time to time, I get tempted to stop by and ponder it. Perhaps “this” is also something priceless for us.&lt;/p&gt;
+&lt;p&gt;But this creates a major problem.&lt;/p&gt;
 
-&lt;p&gt;Thank you for reading all the way!&lt;/p&gt;
+&lt;p&gt;An idea is useless if you can’t &lt;strong&gt;immediately write it down&lt;/strong&gt; in a usable format.&lt;/p&gt;
 
-&lt;p&gt;Bonus:&lt;/p&gt;
+&lt;p&gt;Carrying a paper notebook is one solution, but it’s often inconvenient. It’s a hassle to pull out a pen and notebook while you’re walking.&lt;/p&gt;
 
-&lt;p&gt;If you personify this magic as your partner, then listening to this song from John legend, may make you wonder.&lt;/p&gt;
+&lt;p&gt;But using your standard, full-featured note app isn’t the right tool for this moment, either.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/PIh07c_P4hc&quot;&gt;Ordinary people&lt;/a&gt; by John legend.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>About me</title>
-			<link href="http://mdaisuke.net/en/1995/09/02/about.html"/>
-			<updated>1995-09-02T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/en/1995/09/02/about</id>
-			<content type="html">&lt;p&gt;Nice to meet you! I’m Daisuke and a freelance engineer based in Tokyo. My main job is backend development and engineering management of web applications.&lt;/p&gt;
+&lt;p&gt;You open the app, decide which folder to use, wait for the editor to load… and in those few seconds, the initial momentum of the idea is lost.&lt;/p&gt;
 
-&lt;p&gt;I majored in physics when I was a student, and learned English as a second language while attending a Japanese university in Japan. Through cross-cultural exchanges, teaching English, and publishing a book on how to learn English, I have gained a wide range of perspectives.&lt;/p&gt;
+&lt;h3 id=&quot;the-solution-a-ux-focused-only-on-the-moment-of-capture&quot;&gt;The Solution: A UX Focused Only on the “Moment of Capture”&lt;/h3&gt;
 
-&lt;p&gt;In software development, I believe it is important not only to write clean code that is easy to maintain and modify, but also to cooperate with people from various backgrounds and work as a team to maximize the value we pursue.&lt;/p&gt;
+&lt;p&gt;Everyone uses a note app these days, whether it’s Notion, Evernote, or just a basic memo pad. I’m not asking people to switch from their favorite tools.&lt;/p&gt;
 
-&lt;p&gt;Outside of my core business, I also create a wide range of hardware, from robots to bicycles to furniture for daily life. In short, I love making things, regardless of the boundaries between them! I believe it is important to cultivate multiple perspectives in order to create good products.&lt;/p&gt;
+&lt;p&gt;The final organization and editing of notes can, and should, still be done in those main apps.&lt;/p&gt;
 
-&lt;p&gt;Please feel free to DM me to &lt;a href=&quot;mailto:contact@mdaisuke.net&quot;&gt;here&lt;/a&gt; for work requests.&lt;/p&gt;
+&lt;p&gt;What I saw a need for was a “wrapper” for these existing apps.&lt;/p&gt;
 
-&lt;p&gt;This website is powered by &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, a powerful static website generator. When &lt;a href=&quot;/en/2020/01/20/daisuke-site-launched/&quot;&gt;launching this website&lt;/a&gt;, I decided to switch from Wordpress, and not using any 3000 pounds framework because I’ve been allergic to &lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;them&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wanted to design a UX (User Experience) that is specialized for &lt;strong&gt;one thing only: “The exact moment an idea appears, allowing you to write it down immediately.”&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;You can follow me on &lt;a href=&quot;https://twitter.com/aubozumom&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://github.com/DaisukeMiyazaki&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;, and &lt;a href=&quot;https://www.linkedin.com/in/daisuke-miyazaki/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
-</content>
-		</entry>
-	
-		<entry>
-			<title>自己紹介</title>
-			<link href="http://mdaisuke.net/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B.html"/>
-			<updated>1995-09-02T00:00:00+09:00</updated>
-			<id>http://mdaisuke.net/jp/1995/09/02/自己紹介</id>
-			<content type="html">&lt;p&gt;はじめまして！フリーランスのエンジニアをやっています。WebアプリケーションのBackend開発、エンジニアリングマネージメントが本業です。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It launches instantly to a blank text input.&lt;/li&gt;
+  &lt;li&gt;There are no extra features or formatting.&lt;/li&gt;
+  &lt;li&gt;The text can be easily sent to your main note app later.&lt;/li&gt;
+  &lt;li&gt;And most importantly: &lt;strong&gt;Data never leaves the device (local-first).&lt;/strong&gt; Your private “fragments of thought” are not uploaded to any server.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;学生時代は日本の大学で物理学を専攻し、同時に一般的な留学を経験せずに、日本で英語を第二ヶ国語として習得。異文化交流や英語を教える経験、英語の本の上梓を通して幅広い視座を吸収しました。&lt;/p&gt;
+&lt;h3 id=&quot;in-closing&quot;&gt;In Closing&lt;/h3&gt;
 
-&lt;p&gt;ソフトウェア開発にあたって保守、改修のしやすい綺麗なコードを書くだけではなく、さまざまな背景を持つ人と協力し、追い求める価値を最大化するようチームとして働くことが大切だと考えます。&lt;/p&gt;
+&lt;p&gt;A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app.&lt;/p&gt;
 
-&lt;p&gt;本業外では、ロボットから自転車、生活家具など幅広いハードウェアも作ります。詰まるところ、垣根をこえて、ものづくりを愛しています！良いものづくりには、多角的な視点を養うことが大切と考えています。&lt;/p&gt;
+&lt;p&gt;Thinking away from the desk.&lt;/p&gt;
 
-&lt;p&gt;お仕事の依頼は、お気軽に&lt;a href=&quot;mailto:contact@mdaisuke.net&quot;&gt;こちらへ&lt;/a&gt;DMください。&lt;/p&gt;
+&lt;p&gt;And capturing the idea the moment it appears.&lt;/p&gt;
 
-&lt;p&gt;このサイトは&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;という静的サイトジェネレーターで動いています。&lt;a href=&quot;/jp/2020/01/20/サイト始動/&quot;&gt;サイトを立ち上げる&lt;/a&gt;にあたって、Wordpressから移行しました。3000ポンドもあるようなフレームワークを使わないことにしたのは、&lt;a href=&quot;https://motherfuckingwebsite.com&quot; target=&quot;_blank&quot;&gt;そういうのが嫌い&lt;/a&gt;だからです。&lt;/p&gt;
+&lt;p&gt;This simple process might be the key skill we need to work effectively in the new era of AI.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/aubozumom&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;https://github.com/DaisukeMiyazaki&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/daisuke-miyazaki/&quot; target=&quot;_blank&quot;&gt;LinkedIn&lt;/a&gt;で発信しています。&lt;/p&gt;
-</content>
-		</entry>
-	
+&lt;p&gt;This question I call the “Sanpou no Issue” isn’t fully answered.&lt;/p&gt;
 
-</feed>
+&lt;p&gt;But don’t you also find yourself “thinking” while you walk?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/jp/app/sanpou/id6749672561?uo=2&quot;&gt;link to the sanpou app&lt;/a&gt;&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app.</summary></entry><entry xml:lang="jp"><title type="html">運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか</title><link href="https://mdaisuke.net/jp/2025/09/16/sanpou-issue/" rel="alternate" type="text/html" title="運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか" /><published>2025-09-16T00:00:00+00:00</published><updated>2025-09-16T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/09/16/sanpou-issue</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/09/16/sanpou-issue/">&lt;h3 id=&quot;すべての始まりは運動不足だった&quot;&gt;すべての始まりは「運動不足」だった&lt;/h3&gt;
+
+&lt;p&gt;すべては、多くの現代人が抱えるであろう単純な悩み「運動不足」から始まりました。&lt;/p&gt;
+
+&lt;p&gt;パンデミックによる在宅勤務の定着は、私たちの働き方に柔軟性をもたらしましたが、同時に「一歩も外に出ない日」を生み出しました。このままではいけない。そう思い、私はひとつの習慣を始めました。それは、ただ「歩く」ことです。&lt;/p&gt;
+
+&lt;p&gt;この習慣を一年ほど続けてみて、気づいたことがあります。&lt;/p&gt;
+
+&lt;p&gt;漫然と歩くだけでは、目標の歩数を稼ぐことは意外と難しい。歩数を稼ぐためには、「よし、歩こう」と意識的に机を離れ、外に出るという「積極的な行動」が必要だったのです。&lt;/p&gt;
+
+&lt;p&gt;この「机を離れる」という行為を習慣化するプロセス。それが、私にとっての「きっかけ作り」となり、そして新たな「悩み」と「問い」の始まりでもありました。&lt;/p&gt;
+
+&lt;h3 id=&quot;仮説アイデアは机以外で生まれる&quot;&gt;仮説：「アイデアは、机以外で生まれる」&lt;/h3&gt;
+
+&lt;p&gt;パンデミックを経て、働き方はオンラインとオフラインに分かれ、今また「オフィス回帰」のような揺り戻しも起きています。そんな環境の変化はさておき、私は自分自身に起きた「ある現象」と真っ向から向き合うことにしました。&lt;/p&gt;
+
+&lt;p&gt;それは、「散歩したり、机を離れたりすると、考えが整理される」という、エンジニアとしても昔からよく経験していた感覚です。&lt;/p&gt;
+
+&lt;p&gt;ここに、私は一つの仮説を立てました。
+&lt;strong&gt;「アイデアの『種』や思考の『整理』は、PCの前に座っている時ではなく、そこから離れた場所でこそ生まれるのではないか？」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;これが、私の中で「Sanpouのイシュー（散歩の課題）」と名付けたプロジェクトの始まりです。&lt;/p&gt;
+
+&lt;p&gt;この問いの先に、二つの疑問が続きます。
+「この感覚は、自分特有のものなのか？」
+「それとも、程度の差こそあれ、皆も同じ結論に行き着くものなのか？」&lt;/p&gt;
+
+&lt;p&gt;もし、この答えが出れば、このプロジェクトは一つの区切りを迎えます。&lt;/p&gt;
+
+&lt;h3 id=&quot;生成ai時代に問われる知的生産の本質&quot;&gt;生成AI時代に問われる「知的生産の本質」&lt;/h3&gt;
+
+&lt;p&gt;この「Sanpouのイシュー」を突き詰めていくと、知的生産の本質にぶつかります。&lt;/p&gt;
+
+&lt;p&gt;私にとっての知的生産の本質とは、&lt;strong&gt;「インプットした情報を、自分の言葉で噛み砕き、自分の中に落とし込む行為」&lt;/strong&gt;そのものです。&lt;/p&gt;
+
+&lt;p&gt;そして、生成AIが大衆化した今、この本質はさらに重要な意味を持ち始めました。AIが一瞬で「それらしい」文章を生成できる時代だからこそ、&lt;strong&gt;「自分自身のユニークな思考や発見を、いかに早く『書いた言葉（テキスト）』として固定化できるか」&lt;/strong&gt;が、個人の生産性に直結するのです。&lt;/p&gt;
+
+&lt;p&gt;AIはまだ、あなたが体験したことや、あなた独自の視点から生まれる「一次の気づき」を生み出すことはできません。その価値は、むしろ高まっています。&lt;/p&gt;
+
+&lt;h3 id=&quot;ぼーっとする時間と書き留める技術&quot;&gt;「ぼーっとする」時間と「書き留める」技術&lt;/h3&gt;
+
+&lt;p&gt;では、どうすればその「一次の気づき」は生まれやすくなるのか。&lt;/p&gt;
+
+&lt;p&gt;私の経験則では、それは「ぼーっとする」時間です。
+音楽やラジオ、もちろんSNSアプリも使わず、ただ自分の頭だけで考える。散歩は、そのための最適な「装置」でした。&lt;/p&gt;
+
+&lt;p&gt;しかし、ここで最大のジレンマが発生します。&lt;/p&gt;
+
+&lt;p&gt;せっかく浮かんだアイデアも、それを「使える形式」にまで持っていくには、&lt;strong&gt;即座に「書いた言葉」としてテキストに落とし込むことが不可欠&lt;/strong&gt;です。&lt;/p&gt;
+
+&lt;p&gt;紙のノートや手帳を持ち歩くのも一つの手ですが、デジタルの便利さに慣れた現代人にとって、それは不便でもあります。歩きながらペンとノートを取り出すのは、なかなかの重労働です。&lt;/p&gt;
+
+&lt;p&gt;かといって、普段使っている多機能なノートアプリを起動するのも、違います。
+アプリを開き、どのノートブックに入れるか考え、リッチテキストエディタが立ち上がるのを待つ…。その数秒の間に、せっかくのアイデアの「輝き」は失われてしまいます。&lt;/p&gt;
+
+&lt;h3 id=&quot;結論アイデアが生まれた瞬間に特化したux&quot;&gt;結論：アイデアが「生まれた瞬間」に特化したUX&lt;/h3&gt;
+
+&lt;p&gt;この時代、誰もが何かしらのノートアプリ（Notion, Evernote, メモ帳…）を使っています。私は、彼らに「今すぐそれをやめて、これに切り替えてくれ」と言いたいわけではありません。&lt;/p&gt;
+
+&lt;p&gt;最終的にノートを整理し、体系化するのは、これまで通りPCやスマホで、お気に入りのアプリでやってもらえばいいのです。&lt;/p&gt;
+
+&lt;p&gt;私が作りたかったのは、それら既存アプリの「ラッパー」として機能するものです。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;「アイデアが脳裏に浮かんだ、その瞬間。その勢いのまま、書き殴るところまで」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;これだけに特化したUX（ユーザー体験）を設計できないか。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;起動したら、即、入力画面。&lt;/li&gt;
+  &lt;li&gt;余計な機能は一切ない。&lt;/li&gt;
+  &lt;li&gt;書いたテキストは、後で簡単にメインのノートアプリに転送できる。&lt;/li&gt;
+  &lt;li&gt;そして何より、&lt;strong&gt;データは一切デバイスから外に出ない（ローカルファースト）&lt;/strong&gt;。自分の「思考の断片」という最もプライベートな情報を、誰にも渡さない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;おわりに&quot;&gt;おわりに&lt;/h3&gt;
+
+&lt;p&gt;運動不足を解消するために始めた散歩という習慣が、巡り巡って「知的生産の本質」と「現代における思考のキャプチャ方法」という問い、そして一つのアプリの構想にまで繋がりました。&lt;/p&gt;
+
+&lt;p&gt;机を離れて考える。
+そして、浮かんだ瞬間を逃さず書き留める。&lt;/p&gt;
+
+&lt;p&gt;このシンプルな行為こそが、AIと共存するこれからの時代を生き抜く、私たち人間の「武器」になるのではないか。&lt;/p&gt;
+
+&lt;p&gt;この「Sanpouのイシュー」という名の問いは、まだ終わりません。
+あなたも、歩きながら「考えて」いませんか？&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://apps.apple.com/jp/app/sanpou/id6749672561?uo=2&quot;&gt;sanpouアプリのリンクはこちら&lt;/a&gt;&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">運動不足解消のために始めた散歩が、巡り巡って「知的生産の本質」と「現代における思考のキャプチャ方法」という問い、そして一つのアプリの構想にまで繋がった経緯を綴ります。</summary></entry><entry xml:lang="en"><title type="html">The Art of Forgetting in this Information Society</title><link href="https://mdaisuke.net/en/2025/08/18/art-of-forgetting/" rel="alternate" type="text/html" title="The Art of Forgetting in this Information Society" /><published>2025-08-18T00:00:00+00:00</published><updated>2025-08-18T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/08/18/art-of-forgetting</id><content type="html" xml:base="https://mdaisuke.net/en/2025/08/18/art-of-forgetting/">&lt;blockquote&gt;
+  &lt;p&gt;“Humans are happy creatures because they can forget.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a phrase my math teacher taught me when I was a student. At the time, I didn’t think much of it, but in today’s world, where information constantly floods us, I deeply feel the weight of these words. This isn’t just a philosophical question; it’s an extremely practical wisdom for maintaining mental and physical health and having the space to think in this information society.&lt;/p&gt;
+
+&lt;p&gt;Every day, we are exposed to an enormous amount of information: work tasks, news, social media and app notifications, personal notes. If we tried to remember everything, our brains would quickly become overwhelmed.&lt;/p&gt;
+
+&lt;p&gt;Here, “intentionally forgetting” can be seen as a skill that can be learned. To forget with peace of mind, there must be a trust that we can “recall it anytime.” “Forgetting” and “recalling when needed” are two sides of the same coin, and creating a “system” for this is essential.&lt;/p&gt;
+
+&lt;p&gt;The simplest and most powerful practical example of this is the act of writing a diary or a notebook.&lt;/p&gt;
+
+&lt;p&gt;Writing down thoughts and information from your mind. This act itself is a process of detaching information from the brain and consciously “forgetting” it. However, simply writing it down is not enough. If you need that information later, it’s meaningless if you can’t find it quickly.&lt;/p&gt;
+
+&lt;p&gt;That’s why searchability is also essential. The concept of Evergreen Notes is full of hints for this. “Being able to forget” is not a weakness; it should be a strong boost to living wisely and happily in this information society.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">An architecture of being able to forget matters in this information society.</summary></entry><entry xml:lang="jp"><title type="html">忘れられる仕組み作り</title><link href="https://mdaisuke.net/jp/2025/08/18/art-of-forgetting/" rel="alternate" type="text/html" title="忘れられる仕組み作り" /><published>2025-08-18T00:00:00+00:00</published><updated>2025-08-18T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/08/18/art-of-forgetting</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/08/18/art-of-forgetting/">&lt;blockquote&gt;
+  &lt;p&gt;「人間は忘れられるから幸せな生き物なのです」&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これは、学生時代の数学の先生が教えてくれた言葉です。当時は深く考えませんでしたが、情報が絶え間なく押し寄せる現代において、この言葉が持つ意味の重さを実感しています。これは単なる哲学的な問いではなく、情報社会で心身の健康を保ち、考えるゆとりを持つための、極めて実践的な知恵ではないでしょうか。&lt;/p&gt;
+
+&lt;p&gt;私たちは日々、膨大な情報に晒されています。仕事のタスク、ニュース、SNSやアプリの通知、個人的なメモ。すべてを覚えておこうとすれば、脳はすぐにパンクしてしまうでしょう。&lt;/p&gt;
+
+&lt;p&gt;ここで「意図的に忘れる」ことは技術であり、学ぶことができるのではないでしょうか。安心して忘れるためには、「いつでも思い出せる」という信頼がなければなりません。「忘れる」ことと、必要な時に「思い出せる」ことは表裏一体であり、そのための「仕組み」を作ることが不可欠です。&lt;/p&gt;
+
+&lt;p&gt;その最もシンプルで強力な実践例が、日記やノートを書くという行為です。&lt;/p&gt;
+
+&lt;p&gt;頭の中にある思考や情報を書き出す。この行為そのものが、脳から情報を切り離し、意識的に「忘れる」プロセスです。しかし、ただ書き出すだけでは不十分です。後からその情報が必要になった時、すぐに見つけ出せなければ意味がありません。&lt;/p&gt;
+
+&lt;p&gt;だからこそ、検索性を意識した工夫が求められます。Evergreen Noteの考え方にはそのヒントが詰まっています。「忘れられる」ことは弱さではなく、情報社会を賢く幸せに生き抜く後押しになるはずです。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">この情報社会で考えるゆとりを持つためのヒントは、忘れられる仕組みづくり。</summary></entry><entry xml:lang="en"><title type="html">We Must Not Delegate Understanding</title><link href="https://mdaisuke.net/en/2025/07/02/we-must-not-delegate-understanding/" rel="alternate" type="text/html" title="We Must Not Delegate Understanding" /><published>2025-07-02T15:00:00+00:00</published><updated>2025-07-02T15:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/07/02/we-must-not-delegate-understanding</id><content type="html" xml:base="https://mdaisuke.net/en/2025/07/02/we-must-not-delegate-understanding/">&lt;p&gt;&lt;img src=&quot;/assets/images/dont delegate understandings.jpeg&quot; alt=&quot;dont delegate understandings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Generative AI has become capable of telling sophisticated lies indistinguishable from human ones.
+Precisely because of such an era we must not delegate “understanding” itself to AI.&lt;/p&gt;
+
+&lt;p&gt;Gathering and interpreting information in our own way and putting it into your own words has become ever crucial. Because without it, connecting disparate knowledge and experiences to form a single thread, will be impossible.
+This act of “connecting the dots” is the essence of thought: a domain that must never be delegated to others let alone AI.&lt;/p&gt;
+
+&lt;p&gt;So what should we do?&lt;/p&gt;
+
+&lt;p&gt;One of the easies starting points would be keeping a diary.
+Record daily events and feelings in your own words as they are.
+And instead of just writing and forgetting, repeatedly look back at past notes, ideas and records. This would allow us to connect with memos from other notes at unexpected moments.&lt;/p&gt;
+
+&lt;p&gt;Your thoughts will make progress, by facing your notes and continuously updating them.&lt;/p&gt;
+
+&lt;p&gt;I believe we must find time in our daily lives to continue these activities.
+Otherwise we will fall into intellectual stagnation and its worst case, be unable to move forward.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.</summary></entry></feed>
