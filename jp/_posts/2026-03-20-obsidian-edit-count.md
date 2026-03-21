@@ -27,18 +27,25 @@ Obsidianを1年以上使い続けて、ノートは増えました。
 
 まず既存の解決策を探しました
 
-[Extended Graph](https://github.com/ElsaTam/obsidian-extended-graph)は、frontmatterの値でノードサイズを変えられる。これは「表示」側としてはまさに求めていたものでるが編集回数を自動で計測する機能はない。また、自分で毎回フロントマターをいじる体験は運用しづらそうと思った。
+[Extended Graph](https://github.com/ElsaTam/obsidian-extended-graph)は、frontmatterの値でノードサイズを変えられます。これは「表示」側としてはまさに求めていたものである一方、編集回数を自動で計測する機能はなさそうです。
+また、自分で毎回フロントマターをいじる体験は運用しづらそうと思いました。
 
-[Obsidian Git](https://github.com/Vinzent03/obsidian-git)はvaultをGit管理してくれる。`git log`でファイルごとの変更頻度は追えるが、自動コミットを有効にするとログが汚れる。バックアップが取られることは良いが、仮に既存のノートで重みづけをしたい場合はどうしたらいいかわからない。
+[Obsidian Git](https://github.com/Vinzent03/obsidian-git)はvaultをGit管理してくれます。
+`git log`でファイルごとの変更頻度は追えるが、自動コミットを有効にするとログが汚れます。
+バックアップが取られることは良いですが、仮に既存のノートで重みづけをしたい場合はどうしたらいいか。
 
-[Activity Heatmap](https://github.com/zakhij/obsidian-activity-heatmap)や[Sidebar Heatmap](https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528)もあったが、それぞれ「量の可視化」「日ごとの表示」であり、「累積的な編集回数で重みづけする」という目的にはフィットしなかった。
+[Activity Heatmap](https://github.com/zakhij/obsidian-activity-heatmap)や[Sidebar Heatmap](https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528)は
+それぞれ「量の可視化」「日ごとの表示」であり、「累積的な編集回数で重みづけする」にドンピシャではありません。
 
 
 ### 方針：文字数差分で「実質的な編集」を検出する
 
-編集回数を数えるといっても、保存するたびに+1では意味がない。typoの修正と、段落をまるごと書き直すのでは重みが違う。
+編集回数を数えるといっても、保存するたびに+1ではおかしいですね。
+typoの修正と、段落をまるごと書き直すのでは意味が違います。
 
-そこで**文字数差分の閾値判定**を採用した。ノートを開いた時点の文字数を記録しておき、ファイルを離れるか一定時間（デフォルト3分）入力がなかったタイミングで差分を計算する。差分が50文字以上ならfrontmatterの`edit_count`を+1する。ここはもちろん人によって大きく好みがわかれるだろうから、設定で自由に変えられるようにした。
+そこで**文字数差分の閾値判定**を採用しました。
+ノートを開いた時点の文字数を記録しておき、ファイルを離れるか一定時間（デフォルト3分）入力がなかったタイミングで差分を計算します。
+差分が50文字以上ならfrontmatterの`edit_count`を+1する。ここはもちろん人によって大きく好みがわかれるだろうから、設定で自由に変えられるようにしました。
 
 ```yaml
 ---
