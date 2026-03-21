@@ -1,13 +1,13 @@
 <!doctype html>
 <meta charset="utf-8" />
-<html lang="jp">
+<html lang="en">
   <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link
     rel="canonical"
-    href="https://mdaisuke.net/jp/2020/09/20/%E3%82%B5%E3%82%B9%E3%83%86%E3%83%8A%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3/"
+    href="https://mdaisuke.net/en/2026/03/20/obsidian-edit-count/"
   />
 
   <link
@@ -18,7 +18,7 @@
   />
 
   <title>
-     Sustainability &middot; Daisuke Miyazaki's Blog 
+     I Built an Obsidian Plugin to Surface My Most-Edited Notes &middot; Daisuke Miyazaki's Blog 
   </title>
 
   <!--costom CSS-->
@@ -30,7 +30,7 @@
   <meta name="author" content="Daisuke Miyazaki" />
   <meta
     name="description"
-    content="サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。"
+    content="An Obsidian plugin that automatically counts meaningful edits and helps you identify the notes you revisit most. Here's the thought process behind building it."
   />
 
   <!-- open graph -->
@@ -39,7 +39,7 @@
   <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
   <meta
     property="og:description"
-    content="サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。"
+    content="An Obsidian plugin that automatically counts meaningful edits and helps you identify the notes you revisit most. Here's the thought process behind building it."
   />
   <meta property="og:url" content="https://mdaisuke.net" />
   <meta property="og:locale" content="en_US" />
@@ -49,8 +49,146 @@
     
   <link
     rel="alternate"
+    hreflang="en"
+    href="/en/2026/03/20/obsidian-edit-count/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2026/01/04/leather-looseleaf/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/12/22/calendar-auto-route/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/09/17/sanpou-issue/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/08/18/art-of-forgetting/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/07/02/we-must-not-delegate-understanding/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver1/"
+  />
+  
+  <link
+    rel="alternate"
     hreflang="jp"
-    href="/jp/2020/09/20/%E3%82%B5%E3%82%B9%E3%83%86%E3%83%8A%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3/"
+    href="/jp/2026/03/20/obsidian-edit-count/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2026/01/04/leather-looseleaf/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/12/22/calendar-auto-route/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/09/16/sanpou-issue/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/08/18/art-of-forgetting/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/07/02/understanding-delegation/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver4/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
   />
    
 </head>
@@ -107,17 +245,17 @@
         <div class="flex flex-col items-center gap-1.5">
           
           <a
-            href="/en/"
+            href="/"
             class="relative flex h-8 w-14 items-center rounded-full bg-[#8e8e93] p-1 transition-colors hover:opacity-90"
-            aria-label="Switch to English"
+            aria-label="Switch to Japanese"
           >
             <div
-              class="flex h-6 w-6 translate-x-6 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
+              class="flex h-6 w-6 translate-x-0 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
             >
-              <div class="h-2.5 w-2.5 rounded-full bg-red-500"></div>
+              <div class="h-2.5 w-2.5 rounded-full bg-blue-800"></div>
             </div>
-            <span class="absolute left-2 text-[10px] font-bold text-white/90"
-              >🇬🇧</span
+            <span class="absolute right-2 text-[10px] font-bold text-white/90"
+              >🇯🇵</span
             >
           </a>
           
@@ -231,33 +369,68 @@
       <div class="dark:text-gray-100">
   <header class="mb-8">
     <p class="meta text-sm text-gray-600 dark:text-gray-400">
-      Sep 20, 2020
+      Mar 20, 2026
     </p>
     <h1 class="title text-2xl font-bold dark:text-primary-light">
-      Sustainability
+      I Built an Obsidian Plugin to Surface My Most-Edited Notes
     </h1>
   </header>
 
   <div class="prose prose-lg w-full max-w-none dark:prose-invert">
-    <p>　サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。</p>
+    <p>An Obsidian plugin that automatically counts meaningful edits and helps you keep track of the notes you revisit most. It’s been working well enough on my end, so I’m releasing it as a beta.</p>
 
-<p>　物心をついた時からずっと、何度も見返せずには居られなくなった。だって、美しいものは時折、眺めてみたくなるんだもの。ずっと放っておいて、どこか他の場所へ道草を食っていけなくなる。</p>
+<h3 id="starting-point-finding-the-heavy-notes">Starting Point: Finding the “Heavy” Notes</h3>
 
-<p>　不思議なことに、それが何だって、一つに定義することはできない。でも、掴み取ることのできた例をいくらか列挙できる。燃料の爆発を抑えんきれんばかりに走る、獰猛な内燃機関車の横で、静かな三相交流で加速し瞬く間に走り抜ける電気自動車を見た時。無機質で人工的な色を帯びたプラスチックの歯ブラシに代えて、木の香りと共に柔らかく歯肉を撫でる竹の歯ブラシを使った時。一度形作ると消えないしわを寄せる使い捨ての包装紙に代えて、何度も使える強さとユニークな顔を持ちあわせた風呂敷で贈り物を包む時。</p>
+<p>After using Obsidian for over 3 years, my notes had grown considerably.
+When I opened the graph view, every note appeared at roughly the same size. Link count does affect node size, but that reflects “how connected” a note is — not “how actively I’m thinking about it.”
+It became a chance to revisit what a valuable note really means to me. The answer: notes I keep opening, adding to, and rewriting. In other words, <strong>notes with a high edit count</strong>.</p>
 
-<p>　それはまるで水が重力で自然落下するとき、雫と成すような自然な丸みを帯びるような感じ。そのありように、美しいと心が囁くこともある。</p>
+<p>This was a good starting point.</p>
 
-<p>　一方で、きっとこう感じることはある意味で、行き過ぎているのだと思う。つまり観測を繰り返した後の感性と見るのか、それとも行き過ぎた執念と見るのか。斜向かいのあの人とは、同じものを観ても馳せる想いも違うのだろう。</p>
+<h3 id="starting-with-existing-plugins">Starting with Existing Plugins</h3>
 
-<p>　歴史を観て想う。技術を礎として人は信念を具現化し、積み重ねてきた文明のもとに今、僕たちは手元に有り余る「豊かさ」を享受した。広い宇宙の中での、生存という文明単位の欲求と平行線を辿るように、愛をもって他の人へ襷を渡すことは「回り回す」ことの具現化でもあると想う。そして決して少なくない数の人が、その命の回る有り様に特別な想いを馳せたに違いない。</p>
+<p>I began by looking for existing solutions.</p>
 
-<p>　しかしその一方で、環境や資源、他の命を虫喰いし、破壊し、強奪を繰り返すのもまた事実である。ここに、人1人単位で観てもすでに、存続を維持しようと働く傲慢さや野蛮さを見てとれる。</p>
+<p><a href="https://github.com/ElsaTam/obsidian-extended-graph">Extended Graph</a> can scale node sizes based on frontmatter values. On the display side, this was exactly what I wanted — but it doesn’t automatically measure edit count. And manually updating frontmatter every time didn’t seem practical.</p>
 
-<p>　そう、だからこの想いは表裏一体であるような気もする。だからこそ、美しさを覚えることの反面で、それは絶対的でないんだということを律し、戒めることも時に必要では無かろうか。この獰猛さと隣り合わせにある矛盾に気づけば、どうして絶対美を保障できよう。</p>
+<p><a href="https://github.com/Vinzent03/obsidian-git">Obsidian Git</a> manages your vault with Git. You could track per-file change frequency via <code class="language-plaintext highlighter-rouge">git log</code>, but enabling auto-commit pollutes the log. Backups are nice, but how would you weight existing notes?</p>
 
-<p>　これをもってもなお、ただ私1人だけの選り好みで、道のりの中でくり抜いた景色を観る。「美しい」「素敵」「綺麗」と想いを馳せる。この形の無いオブジェクトを目の前に写像したとき、たしかに残る「ときめき」を捉えずには居られないのだ。まるで、3次元空間内のベクトルを2次元平面へ写像するときのように、僕はこの形のないオブジェクトに光を当ててしまうのであり、その影を目の前に留めようとする感覚。</p>
+<p><a href="https://github.com/zakhij/obsidian-activity-heatmap">Activity Heatmap</a> and <a href="https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528">Sidebar Heatmap</a> visualize “volume of change” and “daily activity” respectively — neither was a direct fit for weighting notes by cumulative edit count.</p>
 
-<p>　そしてきっと、同じことを想う人もいると思える。思うようになってきたとも、肌感で言える。影をこぼしては、人の目に留まるように確かな場所に刻む。刻みたいと、心が言うのだ。そうやってまた、ふと見惚れてしまうことの繰り返し。</p>
+<h3 id="approach-detecting-meaningful-edits-via-character-diff">Approach: Detecting Meaningful Edits via Character Diff</h3>
+
+<p>Simply incrementing a counter on every save wouldn’t make sense. Fixing a typo and rewriting an entire paragraph are fundamentally different.</p>
+
+<p>So I went with <strong>character count diff with a threshold</strong>. The plugin snapshots the character count when you open a note, then evaluates the diff when you switch files or after a period of inactivity (default: 3 minutes).
+If the difference is 50 characters or more, it increments <code class="language-plaintext highlighter-rouge">edit_count</code> in the frontmatter.</p>
+
+<p>Since this is highly personal, the threshold is configurable.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">edit_count</span><span class="pi">:</span> <span class="m">5</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>The key here is that it’s entirely self-contained within Obsidian. No Git, no external tools — the only thing held in memory is the initial character count of the open file, so it’s lightweight.
+And since it just modifies frontmatter in the file, it aligns with the <a href="https://stephango.com/file-over-app">file over app</a> principle.</p>
+
+<h3 id="how-i-use-it-for-now">How I Use It (For Now)</h3>
+
+<p>On Obsidian 1.9.10+, you can use the core Bases feature to create a table sorted by <code class="language-plaintext highlighter-rouge">edit_count</code> — no third-party dependency like Dataview needed. “I’ve been working on this note a lot” or “my thinking is concentrated in this area” becomes visible at a glance, so I keep it pinned as a pane on screen.</p>
+
+<h3 id="still-in-beta">Still in Beta</h3>
+
+<p>The plugin is currently available as a beta release, installable via <a href="https://github.com/TfTHacker/obsidian42-brat">BRAT</a>.
+I’ve been using it daily in my own vault without any major issues, but it hasn’t been tested enough in other environments to warrant an official release.</p>
+
+<p>Feedback is welcome on <a href="https://github.com/DaisukeMiyazaki/obsidian-edit-count">GitHub</a>.</p>
+
+<h3 id="looking-back">Looking Back</h3>
+
+<p>I can now measure a note’s significance not just by its link count, but by how many times I’ve put my hands on it. 
+Neither metric is “right” — having a different viewpoints simply reveals things you wouldn’t otherwise notice.</p>
+
+<p>The trail of thinking lives not in how much you wrote, but in how many times you rewrote. This plugin turned that intuition into something backed by numbers.</p>
 
   </div>
 
@@ -393,24 +566,11 @@
     <ul class="list-none space-y-6 pl-0">
       
       <li>
-        <a href="/jp/2026/03/20/obsidian-edit-count/" class="group block no-underline">
+        <a href="/en/2026/01/04/leather-looseleaf/" class="group block no-underline">
           <span
             class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
           >
-            よく編集するノートが一目でわかるObsidianプラグインを作った
-          </span>
-          <small class="mt-1 block text-gray-500 dark:text-gray-400">
-            20 Mar 2026
-          </small>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/jp/2026/01/04/leather-looseleaf/" class="group block no-underline">
-          <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
-          >
-            革のルーズリーフバインダー
+            Leather Loose-Leaf Binder
           </span>
           <small class="mt-1 block text-gray-500 dark:text-gray-400">
             04 Jan 2026
@@ -419,14 +579,27 @@
       </li>
       
       <li>
-        <a href="/jp/2025/12/22/calendar-auto-route/" class="group block no-underline">
+        <a href="/en/2025/12/22/calendar-auto-route/" class="group block no-underline">
           <span
             class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
           >
-            Googleカレンダーに移動時間を自動追加するGASツール "Calendar Auto Route Calculator"
+            Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar
           </span>
           <small class="mt-1 block text-gray-500 dark:text-gray-400">
             22 Dec 2025
+          </small>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/en/2025/09/17/sanpou-issue/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            17 Sep 2025
           </small>
         </a>
       </li>

@@ -7,7 +7,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link
     rel="canonical"
-    href="https://mdaisuke.net/jp/2020/09/20/%E3%82%B5%E3%82%B9%E3%83%86%E3%83%8A%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3/"
+    href="https://mdaisuke.net/jp/2026/03/20/obsidian-edit-count/"
   />
 
   <link
@@ -18,7 +18,7 @@
   />
 
   <title>
-     Sustainability &middot; Daisuke Miyazaki's Blog 
+     よく編集するノートが一目でわかるObsidianプラグインを作った &middot; Daisuke Miyazaki's Blog 
   </title>
 
   <!--costom CSS-->
@@ -30,7 +30,7 @@
   <meta name="author" content="Daisuke Miyazaki" />
   <meta
     name="description"
-    content="サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。"
+    content="ノートの編集回数を自動で数えて、よく手を入れるノートをグラフ上で大きく表示する。そんなObsidianプラグインを作った思考の過程を書く。"
   />
 
   <!-- open graph -->
@@ -39,7 +39,7 @@
   <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
   <meta
     property="og:description"
-    content="サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。"
+    content="ノートの編集回数を自動で数えて、よく手を入れるノートをグラフ上で大きく表示する。そんなObsidianプラグインを作った思考の過程を書く。"
   />
   <meta property="og:url" content="https://mdaisuke.net" />
   <meta property="og:locale" content="en_US" />
@@ -49,8 +49,146 @@
     
   <link
     rel="alternate"
+    hreflang="en"
+    href="/en/2026/03/20/obsidian-edit-count/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2026/01/04/leather-looseleaf/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/12/22/calendar-auto-route/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/09/17/sanpou-issue/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/08/18/art-of-forgetting/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/07/02/we-must-not-delegate-understanding/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver1/"
+  />
+  
+  <link
+    rel="alternate"
     hreflang="jp"
-    href="/jp/2020/09/20/%E3%82%B5%E3%82%B9%E3%83%86%E3%83%8A%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3/"
+    href="/jp/2026/03/20/obsidian-edit-count/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2026/01/04/leather-looseleaf/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/12/22/calendar-auto-route/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/09/16/sanpou-issue/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/08/18/art-of-forgetting/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/07/02/understanding-delegation/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver4/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
   />
    
 </head>
@@ -231,33 +369,75 @@
       <div class="dark:text-gray-100">
   <header class="mb-8">
     <p class="meta text-sm text-gray-600 dark:text-gray-400">
-      Sep 20, 2020
+      Mar 20, 2026
     </p>
     <h1 class="title text-2xl font-bold dark:text-primary-light">
-      Sustainability
+      よく編集するノートが一目でわかるObsidianプラグインを作った
     </h1>
   </header>
 
   <div class="prose prose-lg w-full max-w-none dark:prose-invert">
-    <p>　サステイナビリティという、羽のように軽くてふわっとした、形のないオブジェクト。いく何時も特別な想いを馳せながら、これをあの手この手で掴み取ろうとしてきた。あるときは掴み取ることのできる形ある「ときめき」を覚えたり、はたまた欺く様に指先の間をすり抜けてしまうこともあった。</p>
+    <p>ノートの編集回数を自動で数えて、よく手を入れるノートを把握する。そんなObsidianプラグインを作りました。
+十分に手元では動いているのでベータ版として公開します。</p>
 
-<p>　物心をついた時からずっと、何度も見返せずには居られなくなった。だって、美しいものは時折、眺めてみたくなるんだもの。ずっと放っておいて、どこか他の場所へ道草を食っていけなくなる。</p>
+<h3 id="出発点重いノートを見つけたい">出発点：「重いノート」を見つけたい</h3>
 
-<p>　不思議なことに、それが何だって、一つに定義することはできない。でも、掴み取ることのできた例をいくらか列挙できる。燃料の爆発を抑えんきれんばかりに走る、獰猛な内燃機関車の横で、静かな三相交流で加速し瞬く間に走り抜ける電気自動車を見た時。無機質で人工的な色を帯びたプラスチックの歯ブラシに代えて、木の香りと共に柔らかく歯肉を撫でる竹の歯ブラシを使った時。一度形作ると消えないしわを寄せる使い捨ての包装紙に代えて、何度も使える強さとユニークな顔を持ちあわせた風呂敷で贈り物を包む時。</p>
+<p>Obsidianを1年以上使い続けて、ノートは増えました。</p>
 
-<p>　それはまるで水が重力で自然落下するとき、雫と成すような自然な丸みを帯びるような感じ。そのありように、美しいと心が囁くこともある。</p>
+<p>グラフビューを開いたとき、すべてのノートが同じ大きさで表示されます。
+それでリンクの数で大きさは変わるが、それは「つながりの多さ」であって「思考の活発さ」ではありませんでした。</p>
 
-<p>　一方で、きっとこう感じることはある意味で、行き過ぎているのだと思う。つまり観測を繰り返した後の感性と見るのか、それとも行き過ぎた執念と見るのか。斜向かいのあの人とは、同じものを観ても馳せる想いも違うのだろう。</p>
+<p>自分にとって価値のあるノートとは何かをもう一度問い直す機会になりました。
+そして何度も開いて、書き足して、書き直しているノート。つまり<strong>編集回数が多いノート</strong>。
+これを直感的に見分けられたら、ノートの全体像がもっと立体的になるのではないか？と考えました。</p>
 
-<p>　歴史を観て想う。技術を礎として人は信念を具現化し、積み重ねてきた文明のもとに今、僕たちは手元に有り余る「豊かさ」を享受した。広い宇宙の中での、生存という文明単位の欲求と平行線を辿るように、愛をもって他の人へ襷を渡すことは「回り回す」ことの具現化でもあると想う。そして決して少なくない数の人が、その命の回る有り様に特別な想いを馳せたに違いない。</p>
+<h3 id="既存プラグインを探すところから">既存プラグインを探すところから</h3>
 
-<p>　しかしその一方で、環境や資源、他の命を虫喰いし、破壊し、強奪を繰り返すのもまた事実である。ここに、人1人単位で観てもすでに、存続を維持しようと働く傲慢さや野蛮さを見てとれる。</p>
+<p>まず既存の解決策を探しました</p>
 
-<p>　そう、だからこの想いは表裏一体であるような気もする。だからこそ、美しさを覚えることの反面で、それは絶対的でないんだということを律し、戒めることも時に必要では無かろうか。この獰猛さと隣り合わせにある矛盾に気づけば、どうして絶対美を保障できよう。</p>
+<p><a href="https://github.com/ElsaTam/obsidian-extended-graph">Extended Graph</a>は、frontmatterの値でノードサイズを変えられます。これは「表示」側としてはまさに求めていたものである一方、編集回数を自動で計測する機能はなさそうです。
+また、自分で毎回フロントマターをいじる体験は運用しづらそうと思いました。</p>
 
-<p>　これをもってもなお、ただ私1人だけの選り好みで、道のりの中でくり抜いた景色を観る。「美しい」「素敵」「綺麗」と想いを馳せる。この形の無いオブジェクトを目の前に写像したとき、たしかに残る「ときめき」を捉えずには居られないのだ。まるで、3次元空間内のベクトルを2次元平面へ写像するときのように、僕はこの形のないオブジェクトに光を当ててしまうのであり、その影を目の前に留めようとする感覚。</p>
+<p><a href="https://github.com/Vinzent03/obsidian-git">Obsidian Git</a>はvaultをGit管理してくれます。
+<code class="language-plaintext highlighter-rouge">git log</code>でファイルごとの変更頻度は追えるが、自動コミットを有効にするとログが汚れます。
+バックアップが取られることは良いですが、仮に既存のノートで重みづけをしたい場合はどうしたらいいか。</p>
 
-<p>　そしてきっと、同じことを想う人もいると思える。思うようになってきたとも、肌感で言える。影をこぼしては、人の目に留まるように確かな場所に刻む。刻みたいと、心が言うのだ。そうやってまた、ふと見惚れてしまうことの繰り返し。</p>
+<p><a href="https://github.com/zakhij/obsidian-activity-heatmap">Activity Heatmap</a>や<a href="https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528">Sidebar Heatmap</a>は
+それぞれ「量の可視化」「日ごとの表示」であり、「累積的な編集回数で重みづけする」にドンピシャではありません。</p>
+
+<h3 id="方針文字数差分で実質的な編集を検出する">方針：文字数差分で「実質的な編集」を検出する</h3>
+
+<p>編集回数を数えるといっても、保存するたびに+1ではおかしいですね。
+typoの修正と、段落をまるごと書き直すのでは意味が違います。</p>
+
+<p>そこで<strong>文字数差分の閾値判定</strong>を採用しました。
+ノートを開いた時点の文字数を記録しておき、ファイルを離れるか一定時間（デフォルト3分）入力がなかったタイミングで差分を計算します。
+差分が50文字以上ならfrontmatterの<code class="language-plaintext highlighter-rouge">edit_count</code>を+1する。ここはもちろん人によって大きく好みがわかれるだろうから、設定で自由に変えられるようにしました。</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">edit_count</span><span class="pi">:</span> <span class="m">5</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>この方式の味噌はObsidian内で完結することです。Gitも外部ツールも不要で、メモリ上に保持するのは開いているファイルの初期文字数だけで軽量です。
+ファイルにあるフロントマターをいじればいいので<a href="https://stephango.com/file-over-app">アプリよりファイルの原則</a>にも沿うと考えました。</p>
+
+<h3 id="現時点の運用の仕方">(現時点の)運用の仕方</h3>
+
+<p>Obsidian 1.9.10以降であれば、コア機能のBasesを使って<code class="language-plaintext highlighter-rouge">edit_count</code>順のテーブルを作れます。
+Dataviewのようなサードパーティ依存もないため軽量です。「このノート、最近よく触ってるな」「このあたりに思考が集中してるな」と一目でわかるので、画面にpaneで常に表示してます。</p>
+
+<h3 id="まだベータ版">まだベータ版</h3>
+
+<p>現在このプラグインはベータ版として公開しています。<a href="https://github.com/TfTHacker/obsidian42-brat">BRAT</a>経由でインストールできます。</p>
+
+<p>自分のvaultで日常的に使っていて、目立った問題は出ていませんが、まだ他の人の環境で十分にテストできていないので、正式リリースにはしていません。
+フィードバックがあれば<a href="https://github.com/DaisukeMiyazaki/obsidian-edit-count">GitHub</a>で受け付けています。</p>
+
+<h3 id="振り返って">振り返って</h3>
+
+<p>ノートの価値を「リンクの数」だけでなく「手を動かした回数」で測れるようになりました。どちらが正しいということではなく、別の軸で見ることで気づくことがあります。
+思考の軌跡は、書いた量ではなく、書き直した回数に宿る。そんな感覚を、数字で裏付けてくれるツールになりました。</p>
 
   </div>
 
@@ -393,19 +573,6 @@
     <ul class="list-none space-y-6 pl-0">
       
       <li>
-        <a href="/jp/2026/03/20/obsidian-edit-count/" class="group block no-underline">
-          <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
-          >
-            よく編集するノートが一目でわかるObsidianプラグインを作った
-          </span>
-          <small class="mt-1 block text-gray-500 dark:text-gray-400">
-            20 Mar 2026
-          </small>
-        </a>
-      </li>
-      
-      <li>
         <a href="/jp/2026/01/04/leather-looseleaf/" class="group block no-underline">
           <span
             class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
@@ -427,6 +594,19 @@
           </span>
           <small class="mt-1 block text-gray-500 dark:text-gray-400">
             22 Dec 2025
+          </small>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            夕暮れや
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            27 Oct 2025
           </small>
         </a>
       </li>
