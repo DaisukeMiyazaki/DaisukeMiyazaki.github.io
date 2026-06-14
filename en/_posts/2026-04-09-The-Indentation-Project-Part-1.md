@@ -13,7 +13,7 @@ comments: true
 
 ## The problem: four uses, one 6-mat room
 
-I like making things — but think a build all the way through, start to finish, and you always hit the same problem: where does it go? A 6-tatami room (about 9.7㎡) has to hold craft materials, display the things you make, give you a surface to work on, and still seat you on a sofa at the end of the day. Pile four jobs onto one room and every off-the-shelf option falls short.
+I like making things, but the things you make always run into one problem: where do they go? A 6-tatami room (about 9.7㎡) has to hold craft materials, display the things you make, give you a surface to work on, and still seat you on a sofa at the end of the day. Pile four jobs onto one room and every off-the-shelf option falls short.
 
 Shelving from IKEA or Nitori eats floor area without ever reaching the ceiling, and units bought piecemeal never match in size or finish — the room reads as a patchwork. And off-the-shelf furniture can't pull the sofa into the structure in the first place. A sofa is a thing you *place*; a shelf is a thing you *stand up*. The moment they sit in the room as separate objects, even when everything technically fits, you're left with half-measures: no real work surface, and it looks wrong.
 
@@ -29,7 +29,7 @@ The frame is almost entirely 2x2. The one exception is the center beam under the
 
 The rule at the root of the design was **no glue on any frame joint — full disassembly**. Every joint had to break down into pieces small enough to carry out of a rental without marking the walls.
 
-![The Fusion 360 model of the full structure](https://mdaisuke.net/assets/images/indentation/indentation%20ver1.png)
+![The Fusion 360 model of the full structure](https://mdaisuke.net/assets/images/indentation/2024-03-17%2015.46の画像.jpg)
 
 ## Why Kreg pocket holes
 
