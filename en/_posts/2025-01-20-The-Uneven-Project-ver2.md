@@ -1,7 +1,7 @@
 ---
 layout: craft
 date: 2025-01-20
-title: The indentation Project ver2
+title: The Indentation Project Part 2 (Gallery)
 excerpt: "The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, after the foundation is built, it's time to make the top plate."
 comments: true
 lang: en

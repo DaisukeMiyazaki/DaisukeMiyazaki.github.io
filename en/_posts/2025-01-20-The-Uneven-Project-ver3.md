@@ -1,7 +1,7 @@
 ---
 layout: craft
 date: 2025-01-20
-title: The indentation Project ver3
+title: The Indentation Project Part 3 (Gallery)
 excerpt: "The large-scale challenge to create furniture to fulfill the requests of a 6-mat room, lighting and storage expansion edition."
 comments: true
 lang: en
