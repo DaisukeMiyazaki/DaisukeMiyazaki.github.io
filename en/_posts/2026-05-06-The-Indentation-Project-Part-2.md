@@ -10,7 +10,9 @@ genre: practical
 thumbnail: /assets/images/indentation/IMG_3664.jpg
 ---
 
-*This continues the Indentation Project series. The build itself happened a while ago; I'm writing it up now. [Part 1](/en/2026/04/09/The-Indentation-Project-Part-1/) covered the design and the wall-to-ceiling frame.*
+*The Indentation Project is a series. I built this a while ago and I'm writing it up now. [Part 1](https://mdaisuke.net/en/2026/04/09/The-Indentation-Project-Part-1/) covered the design and the wall-to-ceiling frame.*
+
+Build storage into a small room and you eventually hit two walls. **What do you put on top of a cantilevered shelf?** And **how much clearance do you leave around a drawer?** Get the first wrong and the shelf sags. Get the second wrong and you end up with a drawer that looks perfect and never opens once. I managed the second one.
 
 ## Where ver1 left things
 
@@ -32,6 +34,8 @@ I went with paulownia. It's the lightest commercially available wood I could buy
 
 The fix was a sub-frame: scraps of 2x2 left over from the ver1 build, screwed into a grid that matched each shelf's footprint, with the paulownia laid on top. The 2x2s carry the load; the paulownia provides the surface. Light, strong, cheap.
 
+[IMAGE — slot 2] `IMG_1683.jpg` — caption: "The sub-frame: leftover 2x2 from ver1 in a grid, with paulownia laid on top. The 2x2s carry the load; the paulownia is only the surface."
+
 No single paulownia board was long enough for any of the shelves, so each surface is multiple boards arranged side by side. The cuts at each corner had to wrap around the vertical 2x2s of the frame — I'd draw a line, cut with a saw, dry-fit, sand, dry-fit again, sand again. Iterative fitting. Once a board was right, I clamped it down with wood glue and a small amount of instant adhesive at the corners so it wouldn't shift while the glue set. About ten boards in total. Repetitive, but the rhythm was satisfying.
 
 ## Building the under-sofa drawer
@@ -39,6 +43,8 @@ No single paulownia board was long enough for any of the shelves, so each surfac
 With the surfaces in, the room could finally be used. But the sofa platform still hid a cavity that was just sitting there — the largest single piece of usable storage in the apartment, and at that point, completely empty.
 
 The drawer design was simple. A rectangular frame, slightly narrower than the cavity (about a centimeter of clearance), with a bottom panel of three boards, casters underneath, and a face board attached at the front.
+
+[IMAGE — slot 3] `IMG_4032.jpeg` — caption: "The drawer rolls on casters, so no lateral force ever reaches the frame — which is why the warped 2x4 didn't matter."
 
 Two material choices saved money. First, the drawer frame is built almost entirely from leftover 2x2 from ver1. When I'd designed the frame as "smallest reusable units," I'd been thinking about disassembly — but the same modular sizing meant the offcuts came out in lengths that matched the drawer's interior dimensions almost exactly. I didn't plan for this. It was a free win.
 
@@ -56,6 +62,8 @@ The obvious fix was a handle. I almost installed one — and then I sat on the s
 
 A handle on the inside of the face would solve both problems — no protrusion, nothing for feet to hit, and a finger-pull recessed enough to be invisible from a normal viewing angle. So I drilled a hole through the face. Not too large, not too small. Big enough for two fingers, small enough that it doesn't read as a hole when you look at the drawer head-on.
 
+[IMAGE — slot 4] `IMG_3664.jpg` — caption: "After varnishing, the drawer disappears into the platform. The only way you'd know it's there is the recessed finger hole."
+
 It works. After varnishing the whole assembly, the drawer disappears into the platform, and the only way you'd know it's there is if you crouch down and see the recessed grip.
 
 ## What I learned
@@ -64,10 +72,12 @@ It works. After varnishing the whole assembly, the drawer disappears into the pl
 
 **Reusing scrap closes a design loop.** The ver1 decision to build verticals as small modular units paid off twice. Once when I designed for disassembly. Again when the offcuts turned out to be sized exactly for ver2's drawer frame. I didn't plan the second payoff, but it wouldn't have happened with longer, less repetitive lumber. Modular design propagates downstream in ways the original design didn't intend.
 
-**A perfect fit can be a defect.** The drawer's body fit the cavity with the right tolerance. The drawer's face fit the frame with no tolerance at all — and that meant there was no way to grab it. Static fit and operational fit are two different things, and if you only design for the first, you ship furniture that works exactly once: when you put it together. Designing clearance *for use* — for the hand that grabs, the foot that kicks, the finger that pulls — is a separate pass. I'd skipped it.
+**A perfect fit can be a defect.** The drawer's body fit the cavity with the right tolerance. The drawer's face fit the frame with no tolerance at all — and that meant there was no way to grab it. Static fit and operational fit are two different things, and if you only design for the first, you ship furniture that works exactly once: when you put it together. Designing clearance *for use* — for the hand that grabs, the foot that kicks, the finger that pulls — is a separate pass, and I'd skipped it. The same trap shows up in code: tests can pass on the wrong function. A green check proves the thing assembles, not that anyone can use it.
+
+[IMAGE — slot 5] `IMG_1969.jpg` — caption: "ver2 done — every shelf has a surface, and objects finally have homes."
 
 After ver2, the frame finally felt like furniture. The shelves had surfaces. Books and objects had homes. The drawer held everything that used to live in plastic bins on the floor. The room still needed lighting — the ceiling fixture lit the whole apartment but didn't put any light where it was actually needed, on the desk surfaces and the sofa table — but that was a problem for ver3.
 
 ---
 
-*[Part 1](/en/2026/04/09/The-Indentation-Project-Part-1/) covers the design and frame construction. The full photo gallery for ver2 is available [here](/en/2025/01/20/The-indentation-Project-ver2/).*
+*[Part 1](https://mdaisuke.net/en/2026/04/09/The-Indentation-Project-Part-1/) covers the design and frame construction. The full photo gallery for ver2 is available [here](https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver2/).*
