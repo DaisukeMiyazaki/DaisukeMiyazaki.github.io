@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Indentation Project, Part 1: Designing a 6-Tatami-Mat Room That Has to Be For Four Usecases"
+title: "The Indentation Project, Part 1: Designing a 6-Tatami-Mat Room That Has to Serve Four Uses"
 date: 2026-04-09
 lang: en
 genre: Practical
@@ -13,9 +13,9 @@ comments: true
 
 ## The problem: four uses, one 6 tatami mat room
 
-Anyone who likes making things eventually runs into the same problem: where do the stuff you make actually go? A 6 tatami room (about 9.7㎡) has to hold craft materials, display the stuff you make, give you a surface to work on, and still seat you on a sofa at the end of the day. Pile four jobs onto one room and every off-the-shelf option fell short.
+Anyone who likes making things eventually runs into the same problem: where do the things you make actually go? A 6 tatami room (about 9.7㎡) has to hold craft materials, display the things you make, give you a surface to work on, and still seat you on a sofa at the end of the day. Pile four jobs onto one room and every off-the-shelf option falls short.
 
-Shelving from IKEA or Nitori eats floor area without ever reaching the ceiling, and units bought piecemeal never match in size or finish — the room reads as a patchwork. And off-the-shelf furniture can't pull the sofa into the structure in the first place. A sofa is a thing you place; a shelf is a thing you stand up. The moment they sit in the room as separate objects, even when everything technically fits, you're left with halfmeasures: no real work surface, and it looks wrong.
+Shelving from IKEA or Nitori eats floor area without ever reaching the ceiling, and units bought piecemeal never match in size or finish — the room reads as a patchwork. And off-the-shelf furniture can't pull the sofa into the structure in the first place. A sofa is a thing you place; a shelf is a thing you stand up. The moment they sit in the room as separate objects, even when everything technically fits, you're left with half-measures: no real work surface, and it looks wrong.
 
 The only way to solve all of it was to use the full height of the wall and pull the sofa into a single skeleton. But it's a rental — so having to take the whole thing back apart at move-out becomes the first constraint.
 
