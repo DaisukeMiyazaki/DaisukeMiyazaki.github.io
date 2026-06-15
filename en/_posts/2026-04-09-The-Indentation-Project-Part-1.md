@@ -13,11 +13,11 @@ comments: true
 
 ## The problem: four uses, one 6-mat room
 
-I like making things, but the things you make always run into one problem: where do they go? A 6-tatami room (about 9.7㎡) has to hold craft materials, display the things you make, give you a surface to work on, and still seat you on a sofa at the end of the day. Pile four jobs onto one room and every off-the-shelf option falls short.
+Anyone who likes making things eventually runs into the same problem: where do the things you make actually go? A 6-tatami room (about 9.7㎡) has to hold craft materials, display the things you make, give you a surface to work on, and still seat you on a sofa at the end of the day. Pile four jobs onto one room and every off-the-shelf option falls short.
 
 Shelving from IKEA or Nitori eats floor area without ever reaching the ceiling, and units bought piecemeal never match in size or finish — the room reads as a patchwork. And off-the-shelf furniture can't pull the sofa into the structure in the first place. A sofa is a thing you *place*; a shelf is a thing you *stand up*. The moment they sit in the room as separate objects, even when everything technically fits, you're left with half-measures: no real work surface, and it looks wrong.
 
-What the room needed was a single built-in skeleton that used the full height of the wall and pulled the sofa into the same structure. But it's a rental — so the whole thing having to come back apart at move-out, without marking the walls, is the first constraint bearing down on the design.
+The only way to solve all of it was to use the full height of the wall and pull the sofa into a single skeleton. But it's a rental — so having to take the whole thing back apart at move-out becomes the first constraint.
 
 ![The wall-to-ceiling frame with the sofa built into the same structure](https://mdaisuke.net/assets/images/indentation/IMG_1857.jpg)
 
@@ -53,15 +53,15 @@ And drilling the pocket holes scattered wood chips across the whole apartment. I
 
 ## What I'm taking forward
 
-You model first, but you can't avoid making small corrections once it's built. Fusion 360 meant almost no wasted material — yet there's always a partition: right on screen, in the way in the room. The model is a perfect tool for fixing the shopping list, but guaranteeing how the thing feels to use still takes hands on the wood.
+The model helps enormously, but a lot only becomes clear once you see the real thing. Fusion 360 meant almost no wasted material — yet, like that partition, there are always spots that are right on screen and just don't work in the room. The model is a perfect tool for nailing down the shopping list, but guaranteeing how it feels to use took the finishing work by hand.
 
-**Designing for disassembly from the start propagates downstream.** I sized the verticals as smallest-repeatable-units for the sake of move-out. That decision comes back in Part 2: when I build the under-sofa drawer, the leftover offcuts turn out to be sized almost exactly to its interior. Modular design pays out in places the original design never intended.
+To put the same trap in software terms: it's a bit like the gap between a build passing and the thing actually holding up in production.
 
-Put the same trap in code terms: a model that builds is not the same as a model that works.
+And designing for disassembly paid off all the way through. I sized the verticals as smallest-repeatable-units for the sake of move-out. That decision comes back in Part 2: when I build the under-sofa drawer, the leftover offcuts turn out to be sized almost exactly to its interior. The modular design paid off further than the original design ever intended.
 
 ![The frame assembled — the skeleton standing, before any surfaces or drawers](https://mdaisuke.net/assets/images/indentation/IMG_1986.jpg)
 
-The frame held the sofa and the skeleton stood. But the shelves still had no surfaces, the space under the sofa was a hollow cavity, and there was nowhere to set a single book down. Adding the top boards and a drawer — getting it to the point where the room is actually usable — is what I'll write up in ver2.
+The frame held the sofa and the skeleton stood. But the shelves still had no surfaces, the space under the sofa was a hollow cavity, and there was nowhere to set a single book down. In ver2: adding the top boards and a drawer, and getting it to the point where the room is actually usable.
 
 ---
 
