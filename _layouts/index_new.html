@@ -45,6 +45,25 @@
 
     <!-- メインコンテンツ: シンプルなリスト表示 -->
     <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
+      <!-- ファーストビュー: 一行の自己紹介と導線 -->
+      <p
+        class="mb-12 max-w-prose text-base leading-relaxed text-gray-500 dark:text-gray-400"
+      >
+        {% if page.lang == 'jp' %} ポケットの小さな魔法（テクノロジー）が僕らの生活をどう豊かにしていけるのか——その問いの足跡です。はじめての方は
+        <a
+          href="/jp/1995/09/02/自己紹介/"
+          class="font-medium text-blue-500 hover:underline dark:text-blue-400"
+          >About</a
+        >
+        からどうぞ。上のタグで記事を絞り込めます。 {% else %} How can the small magic in our
+        pockets — technology — enrich our everyday lives? This is a trail of that question. New here? Start with
+        <a
+          href="/en/1995/09/02/about/"
+          class="font-medium text-blue-500 hover:underline dark:text-blue-400"
+          >About</a
+        >. Filter posts with the tags above. {% endif %}
+      </p>
+
       <div class="flex flex-col gap-12" id="gallery-grid">
         {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
         posts %}
