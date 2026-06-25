@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2026-06-25
-title: "I Want to Listen to Papers First, Not Read Them — and the Auto-Podcast Wasn't Enough"
+title: "I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn't Enough"
 excerpt: "Auto-generated podcasts turn any text into natural-sounding audio, but they're thin on examples and ask no real questions. So I built a pipeline that digests a paper with concrete examples and an interviewer-grade questioner — as an on-ramp to the primary source, not a replacement for it."
 comments: true
 lang: en
@@ -16,7 +16,7 @@ I keep running into papers and long essays I'm genuinely curious about. The curi
 
 The time I *do* have is the passive kind — a commute, a walk, the few minutes I spend staring out a window. That time arrives whether I plan for it or not, and for this kind of material those moments are actually the best ones: listening slots into them in a way reading never will. So what I want isn't a summary to skim or a transcript. I want the thing broken down plainly enough that it comes in just by listening, hands free.
 
-## The auto-podcast almost solves this
+## NotebookLM and the auto-podcast almost solve this
 
 Google's existing tools already do most of this. NotebookLM's Audio Overview, and the audio in Deep Research, turn a pile of text into a natural, podcast-style conversation between two hosts. For a daily listen, for gathering information, for buying back the reading time I never have, it's genuinely good — the voices sound human and the tone lands.
 
