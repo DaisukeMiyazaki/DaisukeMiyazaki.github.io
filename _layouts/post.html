@@ -13,6 +13,22 @@ layout: default
     </h1>
   </header>
 
+  <!-- 要約(TL;DR): front matter の excerpt を冒頭に可視化。AI抽出器・読者双方に要点を提示 -->
+  {% if page.excerpt %}
+  <aside
+    class="mb-8 rounded-lg border-l-4 border-primary-link bg-gray-100 px-4 py-3 dark:border-primary-link-dark dark:bg-gray-800"
+  >
+    <p
+      class="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400"
+    >
+      {% if page.lang == "jp" %}要点{% else %}TL;DR{% endif %}
+    </p>
+    <p class="m-0 text-sm text-gray-700 dark:text-gray-300">
+      {{ page.excerpt | strip_html | strip_newlines }}
+    </p>
+  </aside>
+  {% endif %}
+
   <div class="prose prose-lg w-full max-w-none dark:prose-invert">
     {{ content }}
   </div>
