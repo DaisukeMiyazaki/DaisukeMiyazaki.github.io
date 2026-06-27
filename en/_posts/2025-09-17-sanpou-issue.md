@@ -4,6 +4,7 @@ title: "How Walking to Get More Exercise Led to an Insight About Intellectual Pr
 date: 2025-09-17
 lang: en
 genre: practical
+related: [papers-into-podcasts]
 excerpt: "A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app."
 ---
 

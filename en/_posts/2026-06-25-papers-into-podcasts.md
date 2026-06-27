@@ -6,6 +6,7 @@ excerpt: "Auto-generated podcasts turn any text into natural-sounding audio, but
 comments: true
 lang: en
 lang-ref: papers-into-podcasts
+related: [we-must-not-delegate-understanding, sanpou-issue]
 genre: practical
 thumbnail:
 ---
