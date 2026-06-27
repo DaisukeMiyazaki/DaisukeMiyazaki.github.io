@@ -53,6 +53,28 @@
     href="{{ site.base-url }}{{ post.url }}"
   />
   {% endfor %} {% endif %}
+
+  <!-- structured data: BlogPosting (helps AI/search surfaces parse articles) -->
+  {% if page.layout == "post" %}
+  {% capture _canonical %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+  {% assign _desc = page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 200 %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": {{ _canonical | jsonify }} },
+    "url": {{ _canonical | jsonify }},
+    "headline": {{ page.title | jsonify }},
+    "description": {{ _desc | jsonify }},
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    "dateModified": {{ page.date | date_to_xmlschema | jsonify }},
+    "inLanguage": {% if page.lang == "jp" %}"ja"{% else %}"en"{% endif %},
+    "author": { "@type": "Person", "name": "Daisuke Miyazaki", "url": {{ site.url | jsonify }} },
+    "publisher": { "@type": "Person", "name": "Daisuke Miyazaki", "url": {{ site.url | jsonify }} },
+    "image": {% if page.thumbnail %}{{ page.thumbnail | prepend: site.url | jsonify }}{% else %}"https://mdaisuke.net/pics/avatar.jpg"{% endif %}
+  }
+  </script>
+  {% endif %}
 </head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
