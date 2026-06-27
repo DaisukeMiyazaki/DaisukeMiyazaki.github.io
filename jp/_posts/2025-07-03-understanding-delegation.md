@@ -4,6 +4,7 @@ title: "理解を委任してはいけない"
 date: 2025-07-03 00:00:00 +0900
 lang: jp
 genre: 実用
+related: [papers-into-podcasts]
 excerpt: 生成AIが巧みな嘘をつける時代だからこそ、自分の言葉で思考し、点と点をつなぐ作業を委任してはならない。日記やノートを通じて思考を深める重要性について。
 thumbnail: /assets/images/dont delegate understandings.jpeg
 ---
