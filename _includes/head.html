@@ -32,16 +32,36 @@
   />
 
   <!-- open graph -->
-  <meta property="og:title" content="Daisuke (Daisuke Miyazaki)" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://mdaisuke.net/pics/avatar.jpg" />
+  {% capture og_url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+  <meta
+    property="og:title"
+    content="{% if page.title %}{{ page.title | escape }}{% else %}Daisuke (Daisuke Miyazaki){% endif %}"
+  />
+  <meta
+    property="og:type"
+    content="{% if page.layout == 'post' %}article{% else %}website{% endif %}"
+  />
+  <meta
+    property="og:image"
+    content="{% if page.thumbnail %}{{ page.thumbnail | prepend: site.url }}{% else %}https://mdaisuke.net/pics/avatar.jpg{% endif %}"
+  />
   <meta
     property="og:description"
     content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}Daisuke is an engineer based in Tokyo. This is his personal website.{% endif %}"
   />
-  <meta property="og:url" content="https://mdaisuke.net" />
-  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="{{ og_url }}" />
+  <meta
+    property="og:locale"
+    content="{% if page.lang == 'jp' %}ja_JP{% else %}en_US{% endif %}"
+  />
   <meta property="og:site_name" content="Daisuke Miyazaki" />
+  {% if page.layout == "post" %}
+  <meta
+    property="article:published_time"
+    content="{{ page.date | date_to_xmlschema }}"
+  />
+  <meta property="article:author" content="Daisuke Miyazaki" />
+  {% endif %}
 
   {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
   {% if posts.size == 0 %} {% assign posts=site.pages | where:"lang-ref",
