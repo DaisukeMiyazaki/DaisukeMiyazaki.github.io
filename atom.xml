@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2026-07-03T07:55:59+00:00</updated><id>https://mdaisuke.net/atom.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn’t Enough</title><link href="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/" rel="alternate" type="text/html" title="I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn’t Enough" /><published>2026-06-25T00:00:00+00:00</published><updated>2026-06-25T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/06/25/papers-into-podcasts</id><content type="html" xml:base="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/">&lt;h2 id=&quot;the-papers-im-curious-about-but-never-sit-down-to-read&quot;&gt;The papers I’m curious about but never sit down to read&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2026-07-03T09:30:52+00:00</updated><id>https://mdaisuke.net/atom.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">The Notes You Can No Longer Find, and Two Kinds of Work</title><link href="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/" rel="alternate" type="text/html" title="The Notes You Can No Longer Find, and Two Kinds of Work" /><published>2026-07-03T00:00:00+00:00</published><updated>2026-07-03T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/07/03/refactor-obsidian</id><content type="html" xml:base="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/">&lt;p&gt;Six years ago, in the very first piece I wrote here, I described the small magic in our pockets. The magic that stretches memory almost forever, and blurs the line around who owns knowledge. Since then my notes kept growing. The magic kept its promise and pushed my memory further and further outward.&lt;/p&gt;
+
+&lt;p&gt;And now I stand on its other side. Too many to find.&lt;/p&gt;
+
+&lt;h2 id=&quot;organizing-had-become-the-work&quot;&gt;Organizing had become the work&lt;/h2&gt;
+
+&lt;p&gt;If you use Obsidian, you probably know the feeling. Past a few hundred notes, you can no longer reach the one you know you wrote. All that remains is the déjà vu — “I’ve written this before” — while the note itself stays hidden.&lt;/p&gt;
+
+&lt;p&gt;So you organize. You recut the folders. You settle on a tag system. You relink. It works, at first. But as the pile grows you end up back in the same place. Before long you spend more time organizing than writing. Organizing itself had become the work.&lt;/p&gt;
+
+&lt;h2 id=&quot;recut-folders-added-tags-and-it-collapsed-again&quot;&gt;Recut folders, added tags, and it collapsed again&lt;/h2&gt;
+
+&lt;p&gt;Everything I tried was an attempt to solve it by place. First the folder hierarchy. Then tags. When that wasn’t enough, maps of content tied together by links. I even tried Bases. I wove ontology-style cross-links between notes too, of course — and still, things slipped through and went uncaught.&lt;/p&gt;
+
+&lt;p&gt;Each one feels good the moment you cut it — the shelves line up, the world seems legible. But half a year later the shelves overflow again. I can’t remember which drawer I put it in. The more places you add, the higher the cost of remembering those places. It was never a real fix.&lt;/p&gt;
+
+&lt;h2 id=&quot;there-were-two-kinds-of-organizing&quot;&gt;There were two kinds of organizing&lt;/h2&gt;
+
+&lt;p&gt;At some point I noticed that the single word “organizing” was really two piles of a different nature.&lt;/p&gt;
+
+&lt;p&gt;One is hunting for duplicates and relations by hand. Tracing memory, opening folder after folder, just to check “did I write this already?” This grows heavier in proportion to the pile. When a human does it, it only drains you and produces nothing. It is, by rights, the machine’s work.&lt;/p&gt;
+
+&lt;p&gt;The other is facing the text itself. Merging, splitting, renaming, deciding what to keep and what to throw away. In code we would call it refactoring. This is the body of intellectual work — the good kind, the kind I want more time for.&lt;/p&gt;
+
+&lt;p&gt;My mistake was not separating the two. The drain of the former eats the time of the latter. The good work gets pushed out by the bad.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-question-that-place-cannot-answer&quot;&gt;A question that place cannot answer&lt;/h2&gt;
+
+&lt;p&gt;The decisive moment came when I went looking for a note. What I wanted to recall was this:&lt;/p&gt;
+
+&lt;p&gt;“What became important in my career, and what I learned from failing at it.”&lt;/p&gt;
+
+&lt;p&gt;You cannot pull that with grep, or folders, or tags. There is no folder called “what became important.” You could never have tagged it in advance. People remember by meaning, not by where they filed it. The very premise of searching by place no longer fit.&lt;/p&gt;
+
+&lt;h2 id=&quot;discovery-you-may-hand-off-judgment-you-keep&quot;&gt;Discovery you may hand off. Judgment you keep.&lt;/h2&gt;
+
+&lt;p&gt;From here it stops being about which tool to use, and becomes about where to draw the line.&lt;/p&gt;
+
+&lt;p&gt;Discovery you may hand off — the work of finding duplicates and pulling the near-in-meaning ones toward you. In fact you should. The more you do it by hand, the more it drains you and loses to sheer volume.&lt;/p&gt;
+
+&lt;p&gt;But judgment you must not hand off. What is the same and what is different. What to keep and what to discard. That understanding stays on your side. It is the “understanding” side of a piece I once wrote, We Must Not Delegate Understanding. Understanding means connecting the dots yourself. The moment you hand that to something else, your own mind quietly goes shallow.&lt;/p&gt;
+
+&lt;p&gt;This has long been ordinary in software. No one hunts for duplicate code by eye. You leave it to the linter, to “find usages.” The human moves only on what comes after — the judgment of how to rewrite. Notes should have been the same.&lt;/p&gt;
+
+&lt;h2 id=&quot;after-that&quot;&gt;After that&lt;/h2&gt;
+
+&lt;p&gt;Once I made peace with this line, I began building a small mechanism to return the “discovery” side to the machine. Nothing is sent to someone else’s server; it stays at hand, and I hold the key.&lt;/p&gt;
+
+&lt;p&gt;I haven’t stopped facing my notes. I’m only letting go of the part a machine can do. The time it frees I return to facing the text — merging, splitting, throwing away, and writing again.&lt;/p&gt;
+
+&lt;p&gt;Next I want to write about how to keep doing that judgment. Because the assurance that a future me can surely find it again is what makes forgetting a happiness.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">The more notes you keep, the harder it is to reach the one you want. You recut folders, add tags, and it collapses again. Organizing itself had become the work. But organizing is two things: the kind you may hand off, and the kind you must not.</summary></entry><entry xml:lang="jp"><title type="html">増えすぎて探せないノートと二種類の仕事</title><link href="https://mdaisuke.net/jp/2026/07/03/refactor-obsidian/" rel="alternate" type="text/html" title="増えすぎて探せないノートと二種類の仕事" /><published>2026-07-03T00:00:00+00:00</published><updated>2026-07-03T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/07/03/refactor-obsidian</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/07/03/refactor-obsidian/">&lt;p&gt;六年前。この場所の最初の記事で、僕はポケットの中の小さな魔法について書いた。記憶を半永久に伸ばし、知識の所有者の境界をぼんやりさせる魔法だ。あれからノートは増え続けた。魔法は約束どおり僕の記憶を外へと押し広げてくれた。&lt;/p&gt;
+
+&lt;p&gt;そしていま、その裏面に立っている。増えすぎて探せない。&lt;/p&gt;
+
+&lt;h2 id=&quot;整理そのものが仕事になっていた&quot;&gt;整理そのものが仕事になっていた&lt;/h2&gt;
+
+&lt;p&gt;Obsidian を使う人なら、たぶん覚えのある感触だと思う。ノートが数百を超えたあたりから、書いたはずの一枚に辿り着けなくなる。「これ前にも書いたよな」という既視感だけが残って本体が出てこない。&lt;/p&gt;
+
+&lt;p&gt;だから整理する。フォルダを切り直す。タグの体系を決める。リンクで結び直す。最初はうまくいく。けれど母数が増えればまた同じ場所に戻ってくる。気づけば書くことより整理に時間を使っている。整理そのものが仕事になっていた。&lt;/p&gt;
+
+&lt;h2 id=&quot;フォルダを切りタグを足しまた崩れた&quot;&gt;フォルダを切りタグを足し、また崩れた&lt;/h2&gt;
+
+&lt;p&gt;僕が順に試したのは、どれも「場所」で解こうとする手だった。まずフォルダの階層。次にタグ。それでも足りずに地図のようなノートを作ってリンクで束ねる。Basesもやってみた。オントロジーによる相互リンクももちろん試したが、結局取りこぼしも発生して拾いきれていない。&lt;/p&gt;
+
+&lt;p&gt;どれも切った直後は気持ちが良く、棚が整い世界が見通せた気がする。けれど半年も経てばまた棚は溢れる。どの引き出しに入れたか自分でも思い出せない。場所を足すほど、その場所を覚えておくコストが増えてしまう。根本解決ではないのだ。&lt;/p&gt;
+
+&lt;h2 id=&quot;整理には二種類あった&quot;&gt;整理には二種類あった&lt;/h2&gt;
+
+&lt;p&gt;あるとき気づいた。「整理」と一括りにしていた仕事は性質の違う二つの塊だった。&lt;/p&gt;
+
+&lt;p&gt;ひとつは重複や関連を人力で探す作業。「前に書いたっけ」を確かめるために記憶をたどりフォルダを開いて回る。これは母数に比例して重くなる。人がやると消耗するだけで何も生まない。本来は機械の仕事だ。&lt;/p&gt;
+
+&lt;p&gt;もうひとつは文章そのものと向き合う作業。束ね、割り、名前を付け直し、何を残し何を捨てるかを決める。コードで言えばリファクタリングにあたる。これは知的生産の本体だ。むしろ時間を増やしたい好ましい仕事だ。&lt;/p&gt;
+
+&lt;p&gt;僕の失敗はこの二つを分けなかったことだった。前者の消耗が後者の時間を食う。良い仕事が悪い仕事に押し出されていく。&lt;/p&gt;
+
+&lt;h2 id=&quot;場所では引けない問い&quot;&gt;「場所」では引けない問い&lt;/h2&gt;
+
+&lt;p&gt;決定的だったのは、あるノートを探そうとしたときだ。僕が思い出したかったのは&lt;/p&gt;
+
+&lt;p&gt;「以前キャリアで大事になり、その失敗から学んだこと」。&lt;/p&gt;
+
+&lt;p&gt;これはgrep でもフォルダでもタグでも引けない。「大事になったこと」というフォルダは存在しない。そんなタグを前もって貼れるはずもない。人は保存した場所ではなく意味で思い出す。場所で探すという前提そのものが、もう合っていなかった。&lt;/p&gt;
+
+&lt;h2 id=&quot;発見は手放していい判断は手放さない&quot;&gt;発見は手放していい。判断は手放さない&lt;/h2&gt;
+
+&lt;p&gt;ここから先は道具の使い方の話ではなく線の引き方の話である。&lt;/p&gt;
+
+&lt;p&gt;発見は手放していい。重複を見つけ、意味の近いものを手繰り寄せる作業のことだ。というより手放すべきだ。人力でやるほど消耗し量に負ける。&lt;/p&gt;
+
+&lt;p&gt;けれど判断は手放してはいけない。何が同じで何が違うのか。どれを残しどれを捨てるのか。その理解だけは自分の側に置く。以前に別の記事で書いた「理解を委任してはいけない」の、その理解の側だ。理解とは点と点を自分で繋ぐ作業を指す。そこを何かに委ねた瞬間、自分の頭は静かに浅くなる。&lt;/p&gt;
+
+&lt;p&gt;これはソフトウェアの現場ではとっくに当たり前でもある。重複したコードを目で探す人はいない。リンタや「使用箇所を探す」に任せる。人が手を動かすのはその先だけだ。どう書き直すかという判断のところ。ノートも同じでいいはずだった。&lt;/p&gt;
+
+&lt;h2 id=&quot;それから&quot;&gt;それから&lt;/h2&gt;
+
+&lt;p&gt;この線引きに納得してから、僕は「発見」の側を機械に返す小さな仕組みを組み始めた。他所のサーバーに送らず、手元で完結して鍵は自分が持つ。&lt;/p&gt;
+
+&lt;p&gt;ノートに向き合うことはやめていないが、機械にできることを手放しつつある。空いた時間は文章と向き合う側に戻す。束ねて割り、捨ててまた書くのだ。&lt;/p&gt;
+
+&lt;p&gt;次はその「判断」を続けるための話を書きたい。未来の自分が確かに引けるとの安心感が、忘れる幸せを後押ししてくれるからだ。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ノートが増えるほど目当ての一枚に辿り着けなくなる。フォルダを切り直しタグを足し、また崩れる。整理そのものが仕事になっていた。けれど整理には手放していい仕事と、手放してはいけない仕事がある。</summary></entry><entry xml:lang="en"><title type="html">I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn’t Enough</title><link href="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/" rel="alternate" type="text/html" title="I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn’t Enough" /><published>2026-06-25T00:00:00+00:00</published><updated>2026-06-25T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/06/25/papers-into-podcasts</id><content type="html" xml:base="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/">&lt;h2 id=&quot;the-papers-im-curious-about-but-never-sit-down-to-read&quot;&gt;The papers I’m curious about but never sit down to read&lt;/h2&gt;
 
 &lt;p&gt;I keep running into papers and long essays I’m genuinely curious about. The curiosity is real; the focus to sit down and read them is not. Reading is active work, and I rarely find the slot for it.&lt;/p&gt;
 
@@ -345,211 +445,4 @@ Since the leather material itself has sufficient strength and weight, it functio
 &lt;p&gt;縫製は一切せず、コバ（革の断面）の処理も最低限。
 革という素材自体に十分な強度と重みがあり、余計な加工をせずともバインダーとして機能する。&lt;/p&gt;
 
-&lt;p&gt;白紙に書き出すワクワク感や自由度。当たり前だけれど充電もいらないし、落としても壊れない。アプリも開かなくていいし、破るだけでいつでも白紙に戻せる。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ルーズリーフ100枚がちょうど収まる。縫製なし、革とネジだけ。</summary></entry><entry xml:lang="en"><title type="html">Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar</title><link href="https://mdaisuke.net/en/2025/12/22/calendar-auto-route/" rel="alternate" type="text/html" title="Calendar Auto Route Calculator: Automatically Add Travel Time to Google Calendar" /><published>2025-12-22T00:00:00+00:00</published><updated>2025-12-22T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2025/12/22/calendar-auto-route</id><content type="html" xml:base="https://mdaisuke.net/en/2025/12/22/calendar-auto-route/">&lt;p&gt;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&lt;/p&gt;
-
-&lt;p&gt;This is a Google Apps Script (GAS) tool that automatically calculates the travel route (train/walk) to an event when you add it to Google Calendar, and adds a &lt;strong&gt;“Travel to…“&lt;/strong&gt; event to your calendar.&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Automatic Route Calculation&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Reads the “Location” of the event and searches for a route using the Google Maps API.&lt;/li&gt;
-      &lt;li&gt;Automatically determines the starting point from “Home (default)” or “Location of the previous event (if events are back-to-back)”.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Arrive 15 Minutes Early&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Schedules travel time so that you arrive at the destination &lt;strong&gt;15 minutes before&lt;/strong&gt; the event starts.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Detailed Route Guidance&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Automatically adds the train time, line name, transfer station, and fare (if available) to the Description field of the calendar event.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Automatic Return Route&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Automatically creates a travel plan (Travel to Home) to return home after the last event of the day ends.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Duplicate Prevention&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Does not double-register if a travel plan has already been created.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;setup-instructions&quot;&gt;Setup Instructions&lt;/h2&gt;
-
-&lt;p&gt;This tool requires no server and runs on Google Apps Script.&lt;/p&gt;
-
-&lt;h3 id=&quot;1-create-a-project&quot;&gt;1. Create a Project&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Access &lt;a href=&quot;https://script.google.com/&quot;&gt;Google Apps Script (script.google.com)&lt;/a&gt; in your browser.&lt;/li&gt;
-  &lt;li&gt;Create a “New Project”.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;2-install-the-code&quot;&gt;2. Install the Code&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Copy the contents of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calendar_auto_route.js&lt;/code&gt; from this repository.&lt;/li&gt;
-  &lt;li&gt;Paste everything into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code.gs&lt;/code&gt; in the GAS editor.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;3-change-settings&quot;&gt;3. Change Settings&lt;/h3&gt;
-
-&lt;p&gt;Rewrite the constants at the beginning of the code to match your environment.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CALENDAR_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;primary&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Leave as is if using your own calendar&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HOME_LOCATION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Ofuna Station, Kamakura&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Address of your home or nearest station&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;4-enable-service&quot;&gt;4. Enable Service&lt;/h3&gt;
-
-&lt;p&gt;To use Google Maps functions, the following steps may be required (currently, the standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps&lt;/code&gt; class is often used, so additional settings are often unnecessary, but just in case).&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Click the “+” button in “Services” on the left menu -&amp;gt; Add “Google Maps Service” if available (usually not required).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;5-trigger-settings-automation&quot;&gt;5. Trigger Settings (Automation)&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Click the clock icon (Trigger) on the left menu.&lt;/li&gt;
-  &lt;li&gt;Click the “Add Trigger” button.&lt;/li&gt;
-  &lt;li&gt;Set as follows and save:
-    &lt;ul&gt;
-      &lt;li&gt;Function to run: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCalendarChange&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;Event source: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;From calendar&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;Event type: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Event updated&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You will be asked for permission to access your Google account when saving, so “Allow” it.
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;If “This app is not verified by Google” appears, click “Advanced” -&amp;gt; “Go to (Project Name)” and allow it.&lt;/em&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Add an event to Google Calendar. Be sure to fill in the &lt;strong&gt;“Location”&lt;/strong&gt; field.&lt;/li&gt;
-  &lt;li&gt;After a few seconds to tens of seconds, a new event called “Travel to [Event Name]” will be automatically added immediately before that event.&lt;/li&gt;
-  &lt;li&gt;Click on the added event to check “what time to catch the train” in the details field.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;When the trigger fires, scan events from today to 14 days later.&lt;/li&gt;
-  &lt;li&gt;Find events that have a “Location” and do not have “Travel to” immediately before them, and process them.&lt;/li&gt;
-  &lt;li&gt;Route search uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps.newDirectionFinder()&lt;/code&gt; (Transit Mode).&lt;/li&gt;
-  &lt;li&gt;Outbound search uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setArrive(start - 15min)&lt;/code&gt;, return uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setDepart(end)&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">I created a Google Apps Script (GAS) tool that automatically calculates the route (train/walk) to your scheduled events and adds &quot;Travel to...&quot; blocks to your Google Calendar.</summary></entry><entry xml:lang="jp"><title type="html">Googleカレンダーに移動時間を自動追加するGASツール “Calendar Auto Route Calculator”</title><link href="https://mdaisuke.net/jp/2025/12/22/calendar-auto-route/" rel="alternate" type="text/html" title="Googleカレンダーに移動時間を自動追加するGASツール “Calendar Auto Route Calculator”" /><published>2025-12-22T00:00:00+00:00</published><updated>2025-12-22T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2025/12/22/calendar-auto-route</id><content type="html" xml:base="https://mdaisuke.net/jp/2025/12/22/calendar-auto-route/">&lt;p&gt;&lt;a href=&quot;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、&lt;strong&gt;「移動予定（Travel to …）」&lt;/strong&gt; としてカレンダーに追加するGoogle Apps Script (GAS) ツールです。
-Googleカレンダーで予定地を入れると自動で行き先/帰り道をカレンダーにセットしてくれます。&lt;/p&gt;
-
-&lt;h2 id=&quot;機能&quot;&gt;機能&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;自動ルート計算&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;予定の「場所（Location）」を読み取り、Google Maps APIで経路を検索。&lt;/li&gt;
-      &lt;li&gt;出発地は「自宅（デフォルト）」または「直前の予定の場所（ハシゴの場合）」から自動判定。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;15分前行動&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;イベント開始時刻の &lt;strong&gt;15分前&lt;/strong&gt; に現地に到着するようなスケジュールで移動時間を確保します。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;詳細な経路案内&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;カレンダーイベントの説明欄（Description）に、乗るべき電車の時間、路線名、乗り換え駅、運賃（可能な場合）を自動追記します。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;帰宅ルートの自動追加&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;その日の最後の予定が終わった後、自宅へ帰るための移動予定（Travel to Home）も自動作成します。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;重複防止&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;すでに移動予定が作成されている場合は二重登録しません。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;セットアップ手順&quot;&gt;セットアップ手順&lt;/h2&gt;
-
-&lt;p&gt;このツールはサーバー不要で、Google Apps Script上で動作します。&lt;/p&gt;
-
-&lt;h3 id=&quot;1-プロジェクト作成&quot;&gt;1. プロジェクト作成&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;ブラウザで &lt;a href=&quot;https://script.google.com/&quot;&gt;Google Apps Script (script.google.com)&lt;/a&gt; にアクセス。&lt;/li&gt;
-  &lt;li&gt;「新しいプロジェクト」を作成。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;2-コードの導入&quot;&gt;2. コードの導入&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;このリポジトリの &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;calendar_auto_route.js&lt;/code&gt; の内容をコピー。&lt;/li&gt;
-  &lt;li&gt;GASエディタの &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code.gs&lt;/code&gt; にすべて貼り付け。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;3-設定変更&quot;&gt;3. 設定変更&lt;/h3&gt;
-
-&lt;p&gt;コード先頭の定数を自分の環境に合わせて書き換えてください。&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CALENDAR_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;primary&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 自分のカレンダーならこのままでOK&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HOME_LOCATION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 自宅や最寄り駅の住所&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;4-サービスの有効化&quot;&gt;4. サービスの有効化&lt;/h3&gt;
-
-&lt;p&gt;Google Maps機能を使用するため、以下の手順が必要な場合があります（現在は標準機能の &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps&lt;/code&gt; クラスを使用しているため、追加設定なしで動くことが多いですが、念のため）。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;左メニュー「サービス」の「+」ボタン -&amp;gt; 「Google Maps Service」があれば追加（通常は不要）。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;5-トリガー設定自動化&quot;&gt;5. トリガー設定（自動化）&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;左メニューの時計アイコン（トリガー）をクリック。&lt;/li&gt;
-  &lt;li&gt;「トリガーを追加」ボタンをクリック。&lt;/li&gt;
-  &lt;li&gt;以下のように設定して保存：
-    &lt;ul&gt;
-      &lt;li&gt;実行する関数: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCalendarChange&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;イベントのソース: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;カレンダーから&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;イベントの種類: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;イベントの更新&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;保存時にGoogleアカウントへのアクセス権限を求められるので「許可」します。
-    &lt;ul&gt;
-      &lt;li&gt;※「このアプリはGoogleによって確認されていません」と出た場合は、「詳細」→「（プロジェクト名）に移動」をクリックして許可してください。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;使い方&quot;&gt;使い方&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Googleカレンダーに予定を入れます。&lt;strong&gt;「場所」&lt;/strong&gt;フィールドを必ず入力してください。&lt;/li&gt;
-  &lt;li&gt;数秒〜数十秒後、その予定の直前に「Travel to [予定名]」という新しい予定が自動的に追加されます。&lt;/li&gt;
-  &lt;li&gt;追加された予定をクリックすると、詳細欄で「何時の電車に乗ればいいか」が確認できます。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;その他&quot;&gt;その他&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;トリガー発火時に、今日から14日後までの予定をスキャン。&lt;/li&gt;
-  &lt;li&gt;「場所」があり、かつ直前に「Travel to」がない予定を探して処理。&lt;/li&gt;
-  &lt;li&gt;ルート検索は &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Maps.newDirectionFinder()&lt;/code&gt; (Transit Mode) を使用。&lt;/li&gt;
-  &lt;li&gt;行きは &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setArrive(start - 15min)&lt;/code&gt;、帰りは &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.setDepart(end)&lt;/code&gt; で検索。&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、「移動予定」としてカレンダーに追加するGoogle Apps Script (GAS) ツールを作りました。</summary></entry></feed>
+&lt;p&gt;白紙に書き出すワクワク感や自由度。当たり前だけれど充電もいらないし、落としても壊れない。アプリも開かなくていいし、破るだけでいつでも白紙に戻せる。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ルーズリーフ100枚がちょうど収まる。縫製なし、革とネジだけ。</summary></entry></feed>
