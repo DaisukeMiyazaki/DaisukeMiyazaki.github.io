@@ -23,7 +23,7 @@ So you organize. You recut the folders. You settle on a tag system. You relink. 
 
 ## Recut folders, added tags, and it collapsed again
 
-Everything I tried was an attempt to solve it by place. First the folder hierarchy. Then tags. When that wasn't enough, maps of content tied together by links. I even tried Bases.
+Everything I tried was an attempt to solve it by place. First the folder hierarchy. Then tags. When that wasn't enough, maps of content tied together by links. I even tried Bases. I wove ontology-style cross-links between notes too, of course — and still, things slipped through and went uncaught.
 
 Each one feels good the moment you cut it — the shelves line up, the world seems legible. But half a year later the shelves overflow again. I can't remember which drawer I put it in. The more places you add, the higher the cost of remembering those places. It was never a real fix.
 
