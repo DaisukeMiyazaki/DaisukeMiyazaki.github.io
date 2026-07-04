@@ -103,8 +103,8 @@
   function gtag() {
     dataLayer.push(arguments);
   }
-  if (location.hostname === "mdaisuke.net") {
-    var gaScript = document.createElement("script");
+  if (location.hostname === "{{ site.url | split: '://' | last }}") {
+    const gaScript = document.createElement("script");
     gaScript.async = true;
     gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-LRV9J804ME";
     document.head.appendChild(gaScript);
