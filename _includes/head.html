@@ -97,20 +97,20 @@
   {% endif %}
 </head>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- Google tag (gtag.js) -->
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-LRV9J804ME"
-></script>
+<!-- Google tag (gtag.js) — 本番ホストのみ計測（ローカルプレビューを GA から除外） -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
   }
-  gtag("js", new Date());
-
-  gtag("config", "G-LRV9J804ME");
+  if (location.hostname === "mdaisuke.net") {
+    var gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-LRV9J804ME";
+    document.head.appendChild(gaScript);
+    gtag("js", new Date());
+    gtag("config", "G-LRV9J804ME");
+  }
 </script>
 <script>
   if (
