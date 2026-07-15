@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2026-07-04T02:28:19+00:00</updated><id>https://mdaisuke.net/atom.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">The Notes You Can No Longer Find, and Two Kinds of Work</title><link href="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/" rel="alternate" type="text/html" title="The Notes You Can No Longer Find, and Two Kinds of Work" /><published>2026-07-03T00:00:00+00:00</published><updated>2026-07-03T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/07/03/refactor-obsidian</id><content type="html" xml:base="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/">&lt;p&gt;Six years ago, in the very first piece I wrote here, I described the small magic in our pockets. The magic that stretches memory almost forever, and blurs the line around who owns knowledge. Since then my notes kept growing. The magic kept its promise and pushed my memory further and further outward.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2026-07-15T01:18:24+00:00</updated><id>https://mdaisuke.net/atom.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust</title><link href="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/" rel="alternate" type="text/html" title="I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust" /><published>2026-07-13T00:00:00+00:00</published><updated>2026-07-13T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/07/13/obsidian-katazuke</id><content type="html" xml:base="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/">&lt;p&gt;I built an Obsidian plugin that finds and helps you tidy up the notes you once thought were important but that have quietly gathered dust. It’s out now as an official community plugin.&lt;/p&gt;
+
+&lt;h3 id=&quot;hard-to-spot-in-the-graph-view&quot;&gt;Hard to spot in the graph view&lt;/h3&gt;
+
+&lt;p&gt;As a vault grows, so do its notes and backlinks.
+When links pile up and cross-connect, the graph view turns a note into a catch-all that seems connected to everything. There’s plenty of information, but that abundance is exactly what keeps you from reaching the note you actually want.&lt;/p&gt;
+
+&lt;p&gt;A node with many lines stands out. But you can’t tell from its look whether it’s an index you meant to build or an unconscious pile-up.&lt;/p&gt;
+
+&lt;p&gt;And connections you organized a while ago can stop being appropriate as time passes. Whether they still hold today is not something the graph view shows you.&lt;/p&gt;
+
+&lt;h3 id=&quot;let-go-before-you-add&quot;&gt;Let go before you add&lt;/h3&gt;
+
+&lt;p&gt;When you grow a note, you naturally think only in terms of adding — drawing relations, adding links, deepening your thinking.&lt;/p&gt;
+
+&lt;p&gt;But there’s a step worth being aware of before that.
+Before adding connections, first reduce the ones you don’t need.
+It’s the subtractive mindset of discarding a note that has become too tangled.&lt;/p&gt;
+
+&lt;p&gt;What this does resembles tidying a room.
+Before you place something new, first let go of the old. Wanting to do the same with notes is what set this off — and it’s where the plugin’s name comes from. (&lt;em&gt;Katazuke&lt;/em&gt; means “tidying up” in Japanese.)&lt;/p&gt;
+
+&lt;p&gt;Earlier I built &lt;a href=&quot;/en/2026/03/20/obsidian-edit-count/&quot;&gt;a plugin that enlarges the notes I edit most&lt;/a&gt;. That one surfaces the notes I keep my hands on — like the favorite belongings in a room. Because you reach for them often, they never gather dust.&lt;/p&gt;
+
+&lt;p&gt;This time it’s about the things I thought were important but that ended up gathering dust anyway. Maybe it’s a similar feeling.&lt;/p&gt;
+
+&lt;h3 id=&quot;surfacing-old-over-connected-notes-in-one-command&quot;&gt;Surfacing old, over-connected notes in one command&lt;/h3&gt;
+
+&lt;p&gt;What matters in tidying is a question like: have I used this in the last month? Using that as a guide, I gave more weight to old notes and over-connected notes.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;score = number of a note&apos;s links × (1 + days untouched / 1 month)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Intentional notes are excluded. Some notes are important and allowed to gather dust — and as long as it’s intentional, that’s fine.&lt;/p&gt;
+
+&lt;p&gt;Links to attachments like images and videos aren’t counted. What I want to see is the connections between notes.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-quick-tidy-or-a-proper-one&quot;&gt;A quick tidy, or a proper one&lt;/h3&gt;
+
+&lt;p&gt;Tidying is a special event, almost a festival — something I learned from Marie Kondo’s book. So I prepared two modes: one as a small ritual, and one for when you settle in, closer to that festival in how it’s used. And so you can start right away, each is a single command straight from Obsidian’s command palette.&lt;/p&gt;
+
+&lt;p&gt;Face one note. It surfaces just the single top note. Good for a daily habit or a spare moment.&lt;/p&gt;
+
+&lt;p&gt;Or face a handful. It surfaces the top few. Marie Kondo’s style of tidying leans more this way.&lt;/p&gt;
+
+&lt;p&gt;It’s not about mechanically reordering everything and gazing at the result. You face them one at a time, by your own hand, starting from the top.&lt;/p&gt;
+
+&lt;h3 id=&quot;after-tidying-up&quot;&gt;After tidying up&lt;/h3&gt;
+
+&lt;p&gt;Being in a tidied room feels good. You’re surrounded by what you love, and whatever you need, you can pull it out right away, wherever it is.&lt;/p&gt;
+
+&lt;p&gt;Facing your notes is, by nature, also the work of locking many ideas away across many places — which makes it all the more important to forget well when the time comes.&lt;/p&gt;
+
+&lt;p&gt;The reason you can keep adding things, keep adding notes, is that you believe you’ll be able to pull them out later when you need them. Only when there’s a system that lets you forget with peace of mind can you truly stockpile in your own room.&lt;/p&gt;
+
+&lt;p&gt;If everything is neatly tidied, reaching the notes you treasure will be quicker. I hope Katazuke helps you face notes that matter more to you.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Notes I once thought were important, now quietly gathering dust. Before adding new connections, let go of the old ones. The story of an Obsidian plugin I built to help with that kind of tidying.</summary></entry><entry xml:lang="jp"><title type="html">大事と思ってたけれど気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った</title><link href="https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke/" rel="alternate" type="text/html" title="大事と思ってたけれど気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った" /><published>2026-07-13T00:00:00+00:00</published><updated>2026-07-13T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke/">&lt;p&gt;大事だと思っていたけれど気づいたら埃をかぶっていたノートを見つけて片付ける。そんな手助けをできるObsidianプラグインを作りました。公式のコミュニティプラグインとして公開しています。&lt;/p&gt;
+
+&lt;h3 id=&quot;グラフビューでは見つけにくい&quot;&gt;グラフビューでは見つけにくい&lt;/h3&gt;
+
+&lt;p&gt;保存庫が大きくなるとノートもバックリンクも増えます。
+リンクが多重に繋がっているとき、グラフビューではノートは何にでも繋がる寄せ集めに見えてしまう。こうなると情報は多いけれど、多いがゆえに目的のノートにすぐたどり着けなくなります。&lt;/p&gt;
+
+&lt;p&gt;線が多いノードは目立ちます。でもそれが意図した目次なのか無自覚な寄せ集めなのかは見た目で区別できません。&lt;/p&gt;
+
+&lt;p&gt;また前にまとめたノートのつながりは時間が経つにつれて妥当でなくなることもあります。それが今も妥当かはグラフビューに表示されません。&lt;/p&gt;
+
+&lt;h3 id=&quot;足す前に手放す&quot;&gt;足す前に、手放す&lt;/h3&gt;
+
+&lt;p&gt;ノートを育てるときはつい足す方向ばかり考えます。
+関連を張ってリンクを増やして思考を深めていく作業です。&lt;/p&gt;
+
+&lt;p&gt;でもその前に意識したい作業があります。
+つながりを足す前にまず要らないつながりを減らす。
+絡まりすぎたノートを捨てる引き算の発想です。&lt;/p&gt;
+
+&lt;p&gt;これでやっていることは部屋の片付けに似ています。
+新しい物を置く前にまず古い物を手放す。ノートでも同じことをしたいと思ったことがきっかけでした。プラグインの名前もここからとりました。&lt;/p&gt;
+
+&lt;p&gt;以前&lt;a href=&quot;/jp/2026/03/20/obsidian-edit-count/&quot;&gt;よく編集するノートを大きく表示するプラグイン&lt;/a&gt;を作りました。これは「よく手を入れるノート」を見せるものです。これはいわば部屋の中でお気に入りの持ち物に似ていると思います。よく手に取るから、埃がかぶっていることもないでしょう。&lt;/p&gt;
+
+&lt;p&gt;今回は自分が大事だと思っていたけれど、結局埃をかぶってしまったもの。そんな感覚に似ているのかもしれません。&lt;/p&gt;
+
+&lt;h3 id=&quot;古くて結合しすぎたノートを一コマンドで出す&quot;&gt;古くて結合しすぎたノートを一コマンドで出す&lt;/h3&gt;
+
+&lt;p&gt;片付けで大事なのは、たとえばここ1ヶ月で使っているかどうか？という観点です。
+これを参考に、古いノートと結合しすぎたノートに重みを置くようにしました。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;採点 = ノートのつながりの数 × (1 + 放置日数 / 1ヶ月)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;意図的なノートは除外します。大事で埃をかぶってもいいノートもあるでしょう。それに意図的であればいいんです。&lt;/p&gt;
+
+&lt;p&gt;画像や動画などの添付ファイルへのリンクは数えません。見たいのはノート同士の結合だからです。&lt;/p&gt;
+
+&lt;h3 id=&quot;少しだけ片付けるか腰を入れて片付けるか&quot;&gt;少しだけ片付けるか、腰を入れて片付けるか&lt;/h3&gt;
+
+&lt;p&gt;片付けは祭りであると、近藤麻理恵さんの書籍で習いました。
+一つであれば儀式に、腰をすえるのであれば使い方も祭りに近く2つ用意しました。
+すぐに始められるように、Obsidian標準のコマンドパレットを叩くだけで1コマンドでできます。&lt;/p&gt;
+
+&lt;p&gt;一件のノートと向き合う。首位の1件だけを出します。日課や隙間時間向けです。&lt;/p&gt;
+
+&lt;p&gt;あるいは数件と向き合うか。上位の数件を出します。近藤麻理恵さんの流儀の片付けはどちらかというとこちらです。&lt;/p&gt;
+
+&lt;p&gt;全体を機械的に並べ替えて眺めるのではありません。上位から1件ずつ自分の手で向き合います。&lt;/p&gt;
+
+&lt;h3 id=&quot;片付けたあとは&quot;&gt;片付けたあとは&lt;/h3&gt;
+
+&lt;p&gt;片付いた部屋にいることは気持ちがいいものです。好きなものに囲まれていますし、何がどこにあるのかすぐに取り出せる。&lt;/p&gt;
+
+&lt;p&gt;ノートと向き合うことは性質上いろんなアイデアを複数に閉じ込める作業ともいえますが、その分必要なときにうまく忘れることが大切です。&lt;/p&gt;
+
+&lt;p&gt;ものを、ノートを増やし続けられるのはあとで必要なときに引き出せると信じられるからです。安心して忘れられる仕組みがあって初めて自分の部屋に貯め込めます。&lt;/p&gt;
+
+&lt;p&gt;綺麗に片付いていれば、大切にしているノートに辿り着くことも早いでしょう。Katazukeを通して、あなたがもっと大切なノートと向き合えるようになったら嬉しいです。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">大事だと思っていたけれど気づいたら埃をかぶっていたノート。つながりを足す前に古いつながりを手放す。そんな片付けを手助けするObsidianプラグインを作った話。</summary></entry><entry xml:lang="en"><title type="html">The Notes You Can No Longer Find, and Two Kinds of Work</title><link href="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/" rel="alternate" type="text/html" title="The Notes You Can No Longer Find, and Two Kinds of Work" /><published>2026-07-03T00:00:00+00:00</published><updated>2026-07-03T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/07/03/refactor-obsidian</id><content type="html" xml:base="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/">&lt;p&gt;Six years ago, in the very first piece I wrote here, I described the small magic in our pockets. The magic that stretches memory almost forever, and blurs the line around who owns knowledge. Since then my notes kept growing. The magic kept its promise and pushed my memory further and further outward.&lt;/p&gt;
 
 &lt;p&gt;And now I stand on its other side. Too many to find.&lt;/p&gt;
 
@@ -411,38 +525,4 @@ Dataviewのようなサードパーティ依存もないため軽量です。「
 &lt;h3 id=&quot;振り返って&quot;&gt;振り返って&lt;/h3&gt;
 
 &lt;p&gt;ノートの価値を「リンクの数」だけでなく「手を動かした回数」で測れるようになりました。どちらが正しいということではなく、別の軸で見ることで気づくことがあります。
-思考の軌跡は、書いた量ではなく、書き直した回数に宿る。そんな感覚を、数字で裏付けてくれるツールになりました。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ノートの編集回数を自動で数えて、よく手を入れるノートをグラフ上で大きく表示する。そんなObsidianプラグインを作った思考の過程を書く。</summary></entry><entry xml:lang="en"><title type="html">Leather Loose-Leaf Binder</title><link href="https://mdaisuke.net/en/2026/01/04/leather-looseleaf/" rel="alternate" type="text/html" title="Leather Loose-Leaf Binder" /><published>2026-01-04T00:00:00+00:00</published><updated>2026-01-04T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/01/04/leather-looseleaf</id><content type="html" xml:base="https://mdaisuke.net/en/2026/01/04/leather-looseleaf/">&lt;p&gt;&lt;img src=&quot;/assets/images/leather-binder.jpeg&quot; alt=&quot;leather binder&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I made a binder to manage my loose-leaf paper using leathercraft.
-I wanted a tool that I would want to keep on my desk, something that would lift my spirits just a little.&lt;/p&gt;
-
-&lt;h3 id=&quot;designed-to-hold-100-sheets&quot;&gt;Designed to Hold 100 Sheets&lt;/h3&gt;
-
-&lt;p&gt;The design intention was simple: “to hold a brand new pack of 100 loose-leaf sheets as is.”
-I adjusted the thickness so that I could sandwich the entire bundle of 100 sheets straight from the package without leaving any behind.&lt;/p&gt;
-
-&lt;h3 id=&quot;simple-construction&quot;&gt;Simple Construction&lt;/h3&gt;
-
-&lt;p&gt;I just cut out thick leather, punched holes, and fastened it with brass screws.&lt;/p&gt;
-
-&lt;p&gt;There is no stitching, and the edge finishing is minimal.
-Since the leather material itself has sufficient strength and weight, it functions as a binder without any unnecessary processing.&lt;/p&gt;
-
-&lt;p&gt;The excitement and freedom of facing a blank page. It goes without saying, but no charging is needed, and it won’t break if dropped. No apps to open, and I can return to a blank slate anytime just by tearing a page out.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Holds exactly 100 sheets of loose-leaf paper. No stitching, just leather and screws.</summary></entry><entry xml:lang="jp"><title type="html">革のルーズリーフバインダー</title><link href="https://mdaisuke.net/jp/2026/01/04/leather-looseleaf/" rel="alternate" type="text/html" title="革のルーズリーフバインダー" /><published>2026-01-04T00:00:00+00:00</published><updated>2026-01-04T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/01/04/leather-looseleaf</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/01/04/leather-looseleaf/">&lt;p&gt;&lt;img src=&quot;/assets/images/leather-binder.jpeg&quot; alt=&quot;leather binder&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;革細工でルーズリーフを管理するバインダーを作った。
-机の上に常に出しておきたくなるような、少しだけ気分の上がる道具が欲しかったからだ。&lt;/p&gt;
-
-&lt;h3 id=&quot;100枚が収まる設計&quot;&gt;100枚が収まる設計&lt;/h3&gt;
-
-&lt;p&gt;設計の意図はシンプルで、「新品のルーズリーフ100枚入りがそのまま収まること」。
-パッケージから出した100枚の紙束を、余すことなく全て挟み込める厚みに調整した。&lt;/p&gt;
-
-&lt;h3 id=&quot;シンプルな作り&quot;&gt;シンプルな作り&lt;/h3&gt;
-
-&lt;p&gt;厚手の革を切り出し、穴を開け、真鍮のネジ（シカゴスクリュー）で留めただけ。&lt;/p&gt;
-
-&lt;p&gt;縫製は一切せず、コバ（革の断面）の処理も最低限。
-革という素材自体に十分な強度と重みがあり、余計な加工をせずともバインダーとして機能する。&lt;/p&gt;
-
-&lt;p&gt;白紙に書き出すワクワク感や自由度。当たり前だけれど充電もいらないし、落としても壊れない。アプリも開かなくていいし、破るだけでいつでも白紙に戻せる。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ルーズリーフ100枚がちょうど収まる。縫製なし、革とネジだけ。</summary></entry></feed>
+思考の軌跡は、書いた量ではなく、書き直した回数に宿る。そんな感覚を、数字で裏付けてくれるツールになりました。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ノートの編集回数を自動で数えて、よく手を入れるノートをグラフ上で大きく表示する。そんなObsidianプラグインを作った思考の過程を書く。</summary></entry></feed>
