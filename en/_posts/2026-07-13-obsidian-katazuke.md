@@ -65,4 +65,4 @@ Facing your notes is, by nature, also the work of locking many ideas away across
 
 The reason you can keep adding things, keep adding notes, is that you believe you'll be able to pull them out later when you need them. Only when there's a system that lets you forget with peace of mind can you truly stockpile in your own room.
 
-If everything is neatly tidied, reaching the notes you treasure will be quicker too. If Katazuke helps you face the notes that matter more to you, I'd be glad.
+If everything is neatly tidied, reaching the notes you treasure will be quicker. I hope Katazuke helps you face notes that matter more to you.
