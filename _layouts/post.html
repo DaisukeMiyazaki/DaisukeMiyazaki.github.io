@@ -43,14 +43,22 @@ layout: default
   {% include pkm_same_stage.html %}
 
   <!-- 関連記事: front matter `related:`（slug の配列）で明示指定。無ければ最近の記事にフォールバック -->
+  <!-- PKM記事 (page.stage あり) では、同じ段の一覧に出る記事は重複するため除外する -->
   {% if page.lang == "jp" %}{% assign related_heading = "関連記事" %}{% else %}{% assign related_heading = "Related posts" %}{% endif %}
   {% if page.related %}
+  {% assign related_posts = "" | split: "" %}
+  {% for slug in page.related %}
+    {% assign rp = site.posts | where: "slug", slug | where: "lang", page.lang | first %}
+    {% if rp %}
+      {% if page.stage and rp.stage == page.stage %}{% continue %}{% endif %}
+      {% assign related_posts = related_posts | push: rp %}
+    {% endif %}
+  {% endfor %}
+  {% if related_posts.size > 0 %}
   <div class="mt-12 border-t pt-8 dark:border-gray-800">
     <h2 class="mb-4 text-lg font-semibold">{{ related_heading }}</h2>
     <ul class="list-none space-y-6 pl-0">
-      {% for slug in page.related %}
-      {% assign rp = site.posts | where: "slug", slug | where: "lang", page.lang | first %}
-      {% if rp %}
+      {% for rp in related_posts %}
       <li>
         <a href="{{ rp.url }}" class="group block no-underline">
           <span
@@ -63,12 +71,15 @@ layout: default
           </small>
         </a>
       </li>
-      {% endif %}
       {% endfor %}
     </ul>
   </div>
+  {% endif %}
   {% else %}
   {% assign related = site.related_posts | where:"lang", page.lang %}
+  {% if page.stage %}
+    {% assign related = related | where_exp: "p", "p.stage != page.stage" %}
+  {% endif %}
   {% if related.size > 0 %}
   <div class="mt-12 border-t pt-8 dark:border-gray-800">
     <h2 class="mb-4 text-lg font-semibold">{{ related_heading }}</h2>
