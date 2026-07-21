@@ -7,6 +7,9 @@ genre: practical
 related: [papers-into-podcasts]
 excerpt: In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.
 thumbnail: /assets/images/dont delegate understandings.jpeg
+stage: 3
+read_minutes: 1
+stage_parent: true
 ---
 
 ![dont delegate understandings](/assets/images/dont delegate understandings.jpeg)

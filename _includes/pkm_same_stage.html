@@ -1,0 +1,36 @@
+{% comment %}
+PKM記事末尾: 同じ段の記事一覧。見出し「N. 段名」自体がハブの該当段へのリンク。
+page.stage を持つ記事でのみ表示。
+{% endcomment %}
+{% if page.stage %}
+{% if page.lang == 'jp' %}
+  {% assign pkm_stage_names = "収集|整理|向き合う|活用" | split: "|" %}
+  {% assign pkm_hub_url = "/jp/pkm/" %}
+{% else %}
+  {% assign pkm_stage_names = "Capture|Organize|Engage|Create" | split: "|" %}
+  {% assign pkm_hub_url = "/en/pkm/" %}
+{% endif %}
+{% assign pkm_stage_idx = page.stage | minus: 1 %}
+{% assign pkm_same = site.posts | where: "lang", page.lang | where: "stage", page.stage %}
+<div class="mt-12 border-t pt-8 dark:border-gray-800">
+  <h2 class="mb-4 text-lg font-semibold">
+    <a href="{{ pkm_hub_url }}#stage-{{ page.stage }}" class="no-underline hover:underline">
+      {{ page.stage }}. {{ pkm_stage_names[pkm_stage_idx] }}
+    </a>
+  </h2>
+  <ul class="list-none space-y-6 pl-0">
+    {% for rp in pkm_same %}
+    {% unless rp.url == page.url %}
+    <li>
+      <small class="block text-gray-500 dark:text-gray-400">{{ rp.date | date_to_string }}</small>
+      <a href="{{ rp.url }}" class="group block no-underline">
+        <span class="block font-medium text-primary-link no-underline dark:text-primary-link-dark">
+          {{ rp.title }}
+        </span>
+      </a>
+    </li>
+    {% endunless %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

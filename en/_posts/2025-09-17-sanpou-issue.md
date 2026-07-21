@@ -6,6 +6,9 @@ lang: en
 genre: practical
 related: [papers-into-podcasts]
 excerpt: "A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app."
+stage: 1
+read_minutes: 4
+stage_parent: true
 ---
 
 ### It Started with a Lack of Exercise

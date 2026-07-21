@@ -6,6 +6,9 @@ lang: jp
 genre: 実用
 related: [papers-into-podcasts]
 excerpt: "運動不足解消のために始めた散歩が、巡り巡って「知的生産の本質」と「現代における思考のキャプチャ方法」という問い、そして一つのアプリの構想にまで繋がった経緯を綴ります。"
+stage: 1
+read_minutes: 5
+stage_parent: true
 ---
 
 ### すべての始まりは「運動不足」だった

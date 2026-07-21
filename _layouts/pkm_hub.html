@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="{{ page.lang }}" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include head.html %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: { extend: { colors: { primary: "#3b82f6" } } },
+      };
+    </script>
+    <style>
+      /* ---- ライフサイクル地図 ----
+         通常時はカード、stickyで上端に張り付くと全幅スキンに変化し、
+         直下のグラデーション帯でリストの文字が余白に溶けて見えるようにする */
+      #pkm-map {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        margin-top: 30px;
+        background: #f3f4f6;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 16px 20px;
+        transition:
+          background 0.25s,
+          box-shadow 0.25s,
+          border-color 0.25s,
+          border-radius 0.25s,
+          margin 0.25s,
+          padding 0.25s;
+      }
+      .dark #pkm-map {
+        background: #262a33;
+        border-color: #374151;
+      }
+      #pkm-map.is-stuck {
+        background: #ffffff;
+        border-color: transparent;
+        border-bottom-color: #e5e7eb;
+        border-radius: 0;
+        margin-left: -24px;
+        margin-right: -24px;
+        padding: 12px 24px;
+        box-shadow: 0 8px 24px -18px rgba(15, 23, 42, 0.4);
+      }
+      .dark #pkm-map.is-stuck {
+        background: #1e2028;
+        border-bottom-color: #374151;
+        box-shadow: 0 8px 24px -18px rgba(0, 0, 0, 0.8);
+      }
+      .pkm-fade-top {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: 36px;
+        background: linear-gradient(#ffffff, transparent);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s;
+      }
+      .dark .pkm-fade-top {
+        background: linear-gradient(#1e2028, transparent);
+      }
+      #pkm-map.is-stuck .pkm-fade-top {
+        opacity: 1;
+      }
+      .pkm-fade-bottom {
+        position: sticky;
+        bottom: 0;
+        height: 36px;
+        margin-top: -36px;
+        background: linear-gradient(to top, #ffffff, transparent);
+        pointer-events: none;
+        z-index: 5;
+      }
+      .dark .pkm-fade-bottom {
+        background: linear-gradient(to top, #1e2028, transparent);
+      }
+
+      /* ---- 段（stage）のアクティブ表示: 地図が現在地表示を兼ねる ---- */
+      .stage-item {
+        opacity: 0.55;
+        transition: opacity 0.25s;
+        cursor: pointer;
+      }
+      .stage-item.is-active {
+        opacity: 1;
+      }
+      .stage-num {
+        background: #fff;
+        color: #6b7280;
+        border: 1px solid #e5e7eb;
+      }
+      .dark .stage-num {
+        background: #1f2937;
+        color: #9ca3af;
+        border-color: #374151;
+      }
+      .stage-item.is-active .stage-num {
+        background: #3b82f6;
+        color: #fff;
+        border-color: #3b82f6;
+      }
+      .stage-item img {
+        transition: box-shadow 0.2s;
+      }
+      .stage-item.is-active img {
+        box-shadow: 0 0 0 2px #3b82f6;
+      }
+
+      /* ---- 段別リスト: 見出しは置かず、非アクティブはフェード ---- */
+      .stage-sec {
+        opacity: 0.3;
+        transition: opacity 0.3s;
+      }
+      .stage-sec.is-active {
+        opacity: 1;
+      }
+      .pkm-clamp2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      /* ---- モバイル用 現在地バー: フル地図が画面外に出たら上部に固定表示 ---- */
+      #pkm-mini {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 30;
+        transform: translateY(-100%);
+        transition: transform 0.25s;
+        background: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+        box-shadow: 0 8px 24px -18px rgba(15, 23, 42, 0.4);
+      }
+      .dark #pkm-mini {
+        background: #1e2028;
+        border-bottom-color: #374151;
+      }
+      #pkm-mini.is-visible {
+        transform: none;
+      }
+      .mini-stage {
+        border: none;
+        background: none;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 0.2s;
+      }
+      .mini-stage.is-active {
+        opacity: 1;
+      }
+      .mini-stage img {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        object-fit: cover;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+      }
+      .dark .mini-stage img {
+        border-color: #374151;
+      }
+      .mini-stage.is-active img {
+        box-shadow: 0 0 0 2px #3b82f6;
+      }
+      .mini-label {
+        display: none;
+        font-size: 12.5px;
+        font-weight: 800;
+        color: #3b82f6;
+        white-space: nowrap;
+      }
+      .dark .mini-label {
+        color: #60a5fa;
+      }
+      .mini-stage.is-active .mini-label {
+        display: inline;
+      }
+      @media (min-width: 641px) {
+        #pkm-mini {
+          display: none;
+        }
+      }
+
+      /* モバイル: 地図はstickyにしない・フェード帯も出さない */
+      @media (max-width: 640px) {
+        #pkm-map {
+          position: static;
+        }
+        #pkm-map.is-stuck {
+          margin-left: 0;
+          margin-right: 0;
+          border-radius: 16px;
+          background: #f3f4f6;
+          border-color: #e5e7eb;
+          box-shadow: none;
+          padding: 16px 20px;
+        }
+        .dark #pkm-map.is-stuck {
+          background: #262a33;
+          border-color: #374151;
+        }
+        .pkm-fade-top,
+        .pkm-fade-bottom {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-white text-gray-900 antialiased transition-colors duration-300 dark:bg-primary-dark dark:text-white"
+  >
+    {% include header_new.html %}
+
+    {% assign pkm_posts = site.posts | where: "lang", page.lang %}
+    {% if page.lang == 'jp' %}
+      {% assign stage_names = "収集|整理|向き合う|活用" | split: "|" %}
+      {% assign stage_descs = "入ってくる口を知る|構造は自分で決める|読み返し、探し、つなぐ|書く・作る・話す" | split: "|" %}
+    {% else %}
+      {% assign stage_names = "Capture|Organize|Engage|Create" | split: "|" %}
+      {% assign stage_descs = "Know your inlets|You decide the structure|Reread, search, connect|Write, build, speak" | split: "|" %}
+    {% endif %}
+
+    <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
+      <!-- パンくず -->
+      <nav class="text-sm text-gray-500 dark:text-gray-400">
+        <a href="{% if page.lang == 'jp' %}/{% else %}/en/{% endif %}" class="text-blue-500 hover:underline dark:text-blue-400">Blog</a>
+        <span class="mx-1">/</span>
+        <span class="font-semibold text-gray-700 dark:text-gray-300">PKM</span>
+      </nav>
+
+      <h1 class="mt-4 text-3xl font-extrabold tracking-tight">
+        {% if page.lang == 'jp' %}個人のナレッジマネジメント{% else %}Personal Knowledge Management{% endif %}
+      </h1>
+      <p class="mt-3 max-w-prose text-base leading-loose text-gray-700 dark:text-gray-400">
+        {% if page.lang == 'jp' %}生成AIが巧みに嘘をつける時代だからこそ、理解を委任してはいけない。{% else %}In an age when AI can lie convincingly, we must not delegate understanding.{% endif %}
+      </p>
+
+      <!-- sticky検知用サンチネル -->
+      <div id="pkm-map-sentinel" aria-hidden="true"></div>
+
+      <!-- ライフサイクル地図 (sticky・現在地表示を兼ねる) -->
+      <div id="pkm-map">
+        <div class="pkm-fade-top" aria-hidden="true"></div>
+        <p class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
+          {% if page.lang == 'jp' %}情報のライフサイクル{% else %}The information lifecycle{% endif %}
+        </p>
+        <div class="mt-3 flex flex-col items-stretch gap-3 sm:flex-row sm:gap-2">
+          {% for i in (1..4) %}
+            {% assign idx = forloop.index0 %}
+            <div
+              class="stage-item flex flex-1 items-start gap-3 sm:block{% if forloop.first %} is-active{% endif %}"
+              data-stage="{{ i }}"
+            >
+              <img
+                src="/assets/images/pkm/actor_step{{ i }}.png"
+                alt="{{ stage_names[idx] }}"
+                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+                loading="lazy"
+              />
+              <div class="min-w-0 sm:mt-2">
+                <div class="flex items-center gap-1.5">
+                  <span
+                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                    >{{ i }}</span
+                  >
+                  <span class="text-sm font-extrabold sm:text-[15px]">{{ stage_names[idx] }}</span>
+                </div>
+                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
+                  {{ stage_descs[idx] }}
+                </p>
+              </div>
+            </div>
+            {% unless forloop.last %}
+            <div class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0">
+              <span class="sm:hidden">↓</span><span class="hidden sm:inline">→</span>
+            </div>
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- モバイル用 現在地バー（フル地図が画面外に出たら表示） -->
+      <div id="pkm-mini" aria-hidden="false">
+        <div class="mx-auto flex max-w-2xl items-center gap-3 px-6 py-2">
+          {% for i in (1..4) %}
+          <button type="button" class="mini-stage{% if forloop.first %} is-active{% endif %}" data-stage="{{ i }}">
+            <img src="/assets/images/pkm/actor_step{{ i }}.png" alt="{{ stage_names[forloop.index0] }}" loading="lazy" />
+            <span class="mini-label">{{ i }}. {{ stage_names[forloop.index0] }}</span>
+          </button>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- 段別記事一覧: 段見出しは置かない（地図が現在地表示） -->
+      <div class="mt-8 flex flex-col gap-7">
+        {% for i in (1..4) %}
+          {% assign stage_posts = pkm_posts | where: "stage", forloop.index | sort: "date" | reverse %}
+          <section
+            class="stage-sec{% if forloop.first %} is-active{% endif %}"
+            data-stage-sec="{{ i }}"
+            id="stage-{{ i }}"
+          >
+            {% if stage_posts.size > 0 %}
+            <ul class="list-none space-y-4 pl-0">
+              {% for post in stage_posts %}
+              <li class="flex items-baseline justify-between gap-4">
+                <div class="min-w-0">
+                  <a
+                    href="{{ post.url }}"
+                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                    >{{ post.title }}</a
+                  >
+                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
+                    {{ post.excerpt | strip_html | strip_newlines }}
+                  </p>
+                </div>
+                {% if post.read_minutes %}
+                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                  >{% if page.lang == 'jp' %}{{ post.read_minutes }}分{% else %}{{ post.read_minutes }} min{% endif %}</span
+                >
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <p class="text-[13px] text-gray-500 dark:text-gray-400">
+              {% if page.lang == 'jp' %}この段の記事はこれから。{% else %}Posts for this stage are coming.{% endif %}
+            </p>
+            {% endif %}
+          </section>
+          {% unless forloop.last %}
+          <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+
+      <!-- 下端: リストが余白に溶けるフェード帯 -->
+      <div class="pkm-fade-bottom" aria-hidden="true"></div>
+    </main>
+
+    {% include footer.html %}
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const map = document.getElementById("pkm-map");
+        const mini = document.getElementById("pkm-mini");
+        const sentinel = document.getElementById("pkm-map-sentinel");
+        const items = document.querySelectorAll(".stage-item");
+        const miniItems = document.querySelectorAll(".mini-stage");
+        const secs = Array.from(document.querySelectorAll(".stage-sec"));
+
+        // stuck検知: サンチネルが画面上端から消えたら全幅スキンに切替
+        new IntersectionObserver(
+          ([e]) => map.classList.toggle("is-stuck", !e.isIntersecting),
+          { threshold: 0 },
+        ).observe(sentinel);
+
+        // モバイル現在地バー: フル地図が画面外に出たら表示（CSSで≥641pxは非表示）
+        new IntersectionObserver(
+          ([e]) => mini.classList.toggle("is-visible", !e.isIntersecting),
+          { threshold: 0 },
+        ).observe(map);
+
+        function activate(stage) {
+          items.forEach((el) =>
+            el.classList.toggle("is-active", el.dataset.stage === String(stage)),
+          );
+          miniItems.forEach((el) =>
+            el.classList.toggle("is-active", el.dataset.stage === String(stage)),
+          );
+          secs.forEach((el) =>
+            el.classList.toggle(
+              "is-active",
+              el.dataset.stageSec === String(stage),
+            ),
+          );
+        }
+
+        // スクロール連動: 現在地の基準線は、デスクトップ=sticky地図の下端、
+        // モバイル=現在地バーの下端（地図が画面外のとき）
+        let ticking = false;
+        let pinnedUntil = 0; // クリック直後はスクロール連動を一時停止（クリック選択を優先）
+        function anchorY() {
+          const mapRect = map.getBoundingClientRect();
+          if (getComputedStyle(map).position === "sticky")
+            return mapRect.bottom + 40;
+          if (mini.classList.contains("is-visible"))
+            return mini.getBoundingClientRect().bottom + 40;
+          return Math.max(mapRect.bottom + 40, 120);
+        }
+        function onScroll() {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            ticking = false;
+            if (Date.now() < pinnedUntil) return;
+            const anchor = anchorY();
+            let active = "1";
+            secs.forEach((sec) => {
+              if (sec.getBoundingClientRect().top <= anchor)
+                active = sec.dataset.stageSec;
+            });
+            // ページ最下部: 下の段は基準線まで届かないため、見えている最深の段を現在地にする
+            const atBottom =
+              window.innerHeight + window.scrollY >=
+              document.documentElement.scrollHeight - 2;
+            if (atBottom) {
+              secs.forEach((sec) => {
+                if (sec.getBoundingClientRect().top < window.innerHeight - 80)
+                  active = sec.dataset.stageSec;
+              });
+            }
+            activate(active);
+          });
+        }
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+
+        // 段クリックで該当セクションへスクロール（届かない位置でも選択は維持）
+        function goStage(stage) {
+          activate(stage);
+          pinnedUntil = Date.now() + 900;
+          const sec = document.getElementById(`stage-${stage}`);
+          const sticky = getComputedStyle(map).position === "sticky";
+          const offset = sticky ? map.offsetHeight + 16 : mini.offsetHeight + 12;
+          window.scrollTo({
+            top: sec.getBoundingClientRect().top + window.scrollY - offset,
+            behavior: "smooth",
+          });
+        }
+        items.forEach((el) => {
+          el.addEventListener("click", (ev) => {
+            if (ev.target.closest("a")) return; // チップ内リンクは通常遷移
+            goStage(el.dataset.stage);
+          });
+        });
+        miniItems.forEach((el) => {
+          el.addEventListener("click", () => goStage(el.dataset.stage));
+        });
+      });
+    </script>
+  </body>
+</html>

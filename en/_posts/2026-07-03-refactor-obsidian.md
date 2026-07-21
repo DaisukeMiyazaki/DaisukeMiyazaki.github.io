@@ -9,6 +9,8 @@ lang-ref: refactor
 related: [we-must-not-delegate-understanding]
 genre: essay
 thumbnail:
+stage: 3
+read_minutes: 4
 ---
 
 Six years ago, in the very first piece I wrote here, I described the small magic in our pockets. The magic that stretches memory almost forever, and blurs the line around who owns knowledge. Since then my notes kept growing. The magic kept its promise and pushed my memory further and further outward.

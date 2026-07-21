@@ -7,6 +7,8 @@ comments: true
 lang: jp
 genre: 実用
 thumbnail: /assets/images/obsidian_logo.png
+stage: 3
+read_minutes: 4
 ---
 
 ノートの編集回数を自動で数えて、よく手を入れるノートを把握する。そんなObsidianプラグインを作りました。

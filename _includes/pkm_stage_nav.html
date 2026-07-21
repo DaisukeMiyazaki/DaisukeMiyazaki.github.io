@@ -1,0 +1,44 @@
+{% comment %}
+PKM記事の「現在地」表示。page.stage (1-4) を持つ記事でのみ表示される。
+compiled CSS に依存しないよう、必要な装飾はこの部品内の style で完結させる。
+{% endcomment %}
+{% if page.stage %}
+{% if page.lang == 'jp' %}
+  {% assign pkm_stage_names = "収集|整理|向き合う|活用" | split: "|" %}
+  {% assign pkm_hub_url = "/jp/pkm/" %}
+  {% assign pkm_pos_label = "現在地" %}
+{% else %}
+  {% assign pkm_stage_names = "Capture|Organize|Engage|Create" | split: "|" %}
+  {% assign pkm_hub_url = "/en/pkm/" %}
+  {% assign pkm_pos_label = "You are here" %}
+{% endif %}
+<style>
+  .pkm-strip { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 12px 0 0; }
+  .pkm-strip .pkm-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #6b7280; }
+  .pkm-strip ol { display: flex; align-items: center; gap: 7px; list-style: none; margin: 0; padding: 0; }
+  .pkm-strip li { display: inline-flex; align-items: center; gap: 5px; }
+  .pkm-strip li + li::before { content: ""; width: 14px; height: 1px; background: #e5e7eb; margin-right: 7px; }
+  .pkm-strip .pkm-dot { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 9999px; background: #fff; border: 1px solid #e5e7eb; font-size: 10px; font-weight: 800; color: #9ca3af; }
+  .pkm-strip .pkm-name { font-size: 12px; color: #9ca3af; }
+  .pkm-strip li.pkm-here .pkm-dot { width: 20px; height: 20px; background: #3b82f6; border-color: #3b82f6; color: #fff; box-shadow: 0 0 0 3px #eff6ff; font-size: 11px; }
+  .pkm-strip li.pkm-here .pkm-name { font-size: 12.5px; font-weight: 800; color: #3b82f6; }
+  .pkm-strip a { text-decoration: none; }
+  .dark .pkm-strip li + li::before { background: #374151; }
+  .dark .pkm-strip .pkm-dot { background: #1f2937; border-color: #374151; color: #9ca3af; }
+  .dark .pkm-strip li.pkm-here .pkm-dot { background: #60a5fa; border-color: #60a5fa; color: #111827; box-shadow: 0 0 0 3px #1e293b; }
+  .dark .pkm-strip li.pkm-here .pkm-name { color: #60a5fa; }
+</style>
+<nav class="pkm-strip" aria-label="{{ pkm_pos_label }}">
+  <span class="pkm-label">{{ pkm_pos_label }}</span>
+  <ol>
+    {% for i in (1..4) %}
+    <li{% if page.stage == i %} class="pkm-here"{% endif %}>
+      <a href="{{ pkm_hub_url }}#stage-{{ i }}">
+        <span class="pkm-dot">{{ i }}</span>
+      </a>
+      <span class="pkm-name">{{ pkm_stage_names[forloop.index0] }}</span>
+    </li>
+    {% endfor %}
+  </ol>
+</nav>
+{% endif %}
