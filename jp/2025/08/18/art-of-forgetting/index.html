@@ -301,7 +301,7 @@
         <h1
           class="text-[2.5rem] font-light leading-[1.1] tracking-tight text-gray-900 transition-opacity group-hover:opacity-80 dark:text-white"
         >
-          Daisuke<br /><span class="font-bold">Miyazaki's</span><br />Blog
+          Daisuke's<br /><span class="font-bold">Blog</span>
         </h1>
       </a>
 
@@ -438,11 +438,66 @@
       <div class="dark:text-gray-100">
   <header class="mb-8">
     <p class="meta text-sm text-gray-600 dark:text-gray-400">
-      Aug 18, 2025
+      Aug 18, 2025 • 約2分
     </p>
     <h1 class="title text-2xl font-bold dark:text-primary-light">
       忘れられる仕組み作り
     </h1>
+    
+
+
+<style>
+  .pkm-strip { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 12px 0 0; }
+  .pkm-strip .pkm-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #6b7280; }
+  .pkm-strip ol { display: flex; align-items: center; gap: 7px; list-style: none; margin: 0; padding: 0; }
+  .pkm-strip li { display: inline-flex; align-items: center; gap: 5px; }
+  .pkm-strip li + li::before { content: ""; width: 14px; height: 1px; background: #e5e7eb; margin-right: 7px; }
+  .pkm-strip .pkm-dot { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 9999px; background: #fff; border: 1px solid #e5e7eb; font-size: 10px; font-weight: 800; color: #9ca3af; }
+  .pkm-strip .pkm-name { font-size: 12px; color: #9ca3af; }
+  .pkm-strip li.pkm-here .pkm-dot { width: 20px; height: 20px; background: #3b82f6; border-color: #3b82f6; color: #fff; box-shadow: 0 0 0 3px #eff6ff; font-size: 11px; }
+  .pkm-strip li.pkm-here .pkm-name { font-size: 12.5px; font-weight: 800; color: #3b82f6; }
+  .pkm-strip a { text-decoration: none; }
+  .dark .pkm-strip li + li::before { background: #374151; }
+  .dark .pkm-strip .pkm-dot { background: #1f2937; border-color: #374151; color: #9ca3af; }
+  .dark .pkm-strip li.pkm-here .pkm-dot { background: #60a5fa; border-color: #60a5fa; color: #111827; box-shadow: 0 0 0 3px #1e293b; }
+  .dark .pkm-strip li.pkm-here .pkm-name { color: #60a5fa; }
+</style>
+<nav class="pkm-strip" aria-label="現在地">
+  <span class="pkm-label">現在地</span>
+  <ol>
+    
+    <li>
+      <a href="/jp/pkm/#stage-1">
+        <span class="pkm-dot">1</span>
+      </a>
+      <span class="pkm-name">収集</span>
+    </li>
+    
+    <li class="pkm-here">
+      <a href="/jp/pkm/#stage-2">
+        <span class="pkm-dot">2</span>
+      </a>
+      <span class="pkm-name">整理</span>
+    </li>
+    
+    <li>
+      <a href="/jp/pkm/#stage-3">
+        <span class="pkm-dot">3</span>
+      </a>
+      <span class="pkm-name">向き合う</span>
+    </li>
+    
+    <li>
+      <a href="/jp/pkm/#stage-4">
+        <span class="pkm-dot">4</span>
+      </a>
+      <span class="pkm-name">活用</span>
+    </li>
+    
+  </ol>
+</nav>
+
+
   </header>
 
   <!-- 要約(TL;DR): front matter の excerpt を冒頭に可視化。AI抽出器・読者双方に要点を提示 -->
@@ -605,7 +660,52 @@
 <!-- いいねボタンエリア End -->
 
 
+  <!-- PKM記事: 同じ段の記事一覧 -->
+  
+
+
+
+
+<div class="mt-12 border-t pt-8 dark:border-gray-800">
+  <h2 class="mb-4 text-lg font-semibold">
+    <a href="/jp/pkm/#stage-2" class="no-underline hover:underline">
+      2. 整理
+    </a>
+  </h2>
+  <ul class="list-none space-y-6 pl-0">
+    
+    
+    <li>
+      <small class="block text-gray-500 dark:text-gray-400">13 Jul 2026</small>
+      <a href="/jp/2026/07/13/obsidian-katazuke/" class="group block no-underline">
+        <span class="block font-medium text-primary-link no-underline dark:text-primary-link-dark">
+          大事と思ってたけれど気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った
+        </span>
+      </a>
+    </li>
+    
+    
+    
+    
+    
+    <li>
+      <small class="block text-gray-500 dark:text-gray-400">20 Mar 2025</small>
+      <a href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/" class="group block no-underline">
+        <span class="block font-medium text-primary-link no-underline dark:text-primary-link-dark">
+          obsidianを使い始めて1年レビュー
+        </span>
+      </a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+
+
   <!-- 関連記事: front matter `related:`（slug の配列）で明示指定。無ければ最近の記事にフォールバック -->
+  <!-- PKM記事 (page.stage あり) では、同じ段の一覧に出る記事は重複するため除外する -->
+  
   
   
   
@@ -613,19 +713,6 @@
   <div class="mt-12 border-t pt-8 dark:border-gray-800">
     <h2 class="mb-4 text-lg font-semibold">関連記事</h2>
     <ul class="list-none space-y-6 pl-0">
-      
-      <li>
-        <a href="/jp/2026/07/13/obsidian-katazuke/" class="group block no-underline">
-          <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
-          >
-            大事と思ってたけれど気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った
-          </span>
-          <small class="mt-1 block text-gray-500 dark:text-gray-400">
-            13 Jul 2026
-          </small>
-        </a>
-      </li>
       
       <li>
         <a href="/jp/2026/07/03/refactor-obsidian/" class="group block no-underline">
@@ -649,6 +736,19 @@
           </span>
           <small class="mt-1 block text-gray-500 dark:text-gray-400">
             25 Jun 2026
+          </small>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/jp/2026/04/09/The-Indentation-Project-Part-1/" class="group block no-underline">
+          <span
+            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            例の凸凹 Part 1：6畳を四つの部屋にする設計とフレーム
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            09 Apr 2026
           </small>
         </a>
       </li>

@@ -1,0 +1,4 @@
+tweepy
+python-frontmatter
+python-dotenv
+

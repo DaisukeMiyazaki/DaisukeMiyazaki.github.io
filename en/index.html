@@ -311,7 +311,7 @@
         <h1
           class="text-[2.5rem] font-light leading-[1.1] tracking-tight text-gray-900 transition-opacity group-hover:opacity-80 dark:text-white"
         >
-          Daisuke<br /><span class="font-bold">Miyazaki's</span><br />Blog
+          Daisuke's<br /><span class="font-bold">Blog</span>
         </h1>
       </a>
 
@@ -417,6 +417,12 @@
       >
         All
       </button>
+      <button
+        class="filter-btn whitespace-nowrap rounded-full border border-blue-300 bg-blue-50 px-5 py-2 text-sm font-bold text-blue-600 transition-colors hover:bg-blue-100 dark:border-blue-500 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700"
+        data-genre="PKM"
+      >
+        PKM
+      </button>
       
       <button
         class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
@@ -482,12 +488,64 @@
         >. Filter posts with the tags above. 
       </p>
 
+      <!-- PKMセクション入口バナー -->
+      <a href="/en/pkm/" class="mb-12 block">
+        <div
+          class="flex items-center gap-4 rounded-2xl border border-gray-200 bg-gray-100 px-6 py-5 transition-colors hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <div class="min-w-0 flex-1">
+            <p class="text-xs font-bold tracking-widest text-blue-500 dark:text-blue-400">PKM</p>
+            <h3 class="mt-1 text-lg font-extrabold text-gray-900 dark:text-gray-50">
+              Personal Knowledge Management
+            </h3>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+              AI is a tool; organizing is my job.
+            </p>
+          </div>
+          <div class="hidden shrink-0 items-center gap-1 sm:flex">
+            
+            <img
+              src="/assets/images/pkm/actor_step1.png"
+              alt=""
+              class="h-[52px] w-[52px] rounded-[10px] border border-gray-200 bg-white object-cover dark:border-gray-700"
+              loading="lazy"
+            />
+            
+            <img
+              src="/assets/images/pkm/actor_step2.png"
+              alt=""
+              class="h-[52px] w-[52px] rounded-[10px] border border-gray-200 bg-white object-cover dark:border-gray-700"
+              loading="lazy"
+            />
+            
+            <img
+              src="/assets/images/pkm/actor_step3.png"
+              alt=""
+              class="h-[52px] w-[52px] rounded-[10px] border border-gray-200 bg-white object-cover dark:border-gray-700"
+              loading="lazy"
+            />
+            
+            <img
+              src="/assets/images/pkm/actor_step4.png"
+              alt=""
+              class="h-[52px] w-[52px] rounded-[10px] border border-gray-200 bg-white object-cover dark:border-gray-700"
+              loading="lazy"
+            />
+            
+          </div>
+          <span class="whitespace-nowrap text-sm font-bold text-blue-500 dark:text-blue-400"
+            >Start →</span
+          >
+        </div>
+      </a>
+
       <div class="flex flex-col gap-12" id="gallery-grid">
          
         <a
           href="/en/2026/07/13/obsidian-katazuke/"
           class="gallery-item group block cursor-pointer"
           data-genre="Practical"
+          data-pkm="true"
           data-date="2026-07-13T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -519,6 +577,7 @@
           href="/en/2026/07/03/refactor-obsidian/"
           class="gallery-item group block cursor-pointer"
           data-genre="essay"
+          data-pkm="true"
           data-date="2026-07-03T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -550,6 +609,7 @@
           href="/en/2026/06/25/papers-into-podcasts/"
           class="gallery-item group block cursor-pointer"
           data-genre="practical"
+          data-pkm="true"
           data-date="2026-06-25T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -581,6 +641,7 @@
           href="/en/2026/04/09/The-Indentation-Project-Part-1/"
           class="gallery-item group block cursor-pointer"
           data-genre="Practical"
+          data-pkm=""
           data-date="2026-04-09T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -612,6 +673,7 @@
           href="/en/2026/03/20/obsidian-edit-count/"
           class="gallery-item group block cursor-pointer"
           data-genre="Practical"
+          data-pkm="true"
           data-date="2026-03-20T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -643,6 +705,7 @@
           href="/en/2026/01/04/leather-looseleaf/"
           class="gallery-item group block cursor-pointer"
           data-genre="Utility"
+          data-pkm=""
           data-date="2026-01-04T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -674,6 +737,7 @@
           href="/en/2025/12/22/calendar-auto-route/"
           class="gallery-item group block cursor-pointer"
           data-genre="practical"
+          data-pkm=""
           data-date="2025-12-22T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -705,6 +769,7 @@
           href="/en/2025/09/17/sanpou-issue/"
           class="gallery-item group block cursor-pointer"
           data-genre="practical"
+          data-pkm="true"
           data-date="2025-09-17T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -736,6 +801,7 @@
           href="/en/2025/08/18/art-of-forgetting/"
           class="gallery-item group block cursor-pointer"
           data-genre="practical"
+          data-pkm="true"
           data-date="2025-08-18T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -767,6 +833,7 @@
           href="/en/2025/07/02/we-must-not-delegate-understanding/"
           class="gallery-item group block cursor-pointer"
           data-genre="practical"
+          data-pkm="true"
           data-date="2025-07-02T15:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -798,6 +865,7 @@
           href="/en/2025/01/20/The-Uneven-Project-ver3/"
           class="gallery-item group block cursor-pointer"
           data-genre="Practical"
+          data-pkm=""
           data-date="2025-01-20T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -829,6 +897,7 @@
           href="/en/2025/01/20/The-Uneven-Project-ver2/"
           class="gallery-item group block cursor-pointer"
           data-genre="Practical"
+          data-pkm=""
           data-date="2025-01-20T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -860,6 +929,7 @@
           href="/en/2025/01/20/The-Uneven-Project-ver1/"
           class="gallery-item group block cursor-pointer"
           data-genre="Practical"
+          data-pkm=""
           data-date="2025-01-20T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -891,6 +961,7 @@
           href="/en/2023/09/02/droplet/"
           class="gallery-item group block cursor-pointer"
           data-genre="short-story"
+          data-pkm=""
           data-date="2023-09-02T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -922,6 +993,7 @@
           href="/en/2023/08/21/workbench/"
           class="gallery-item group block cursor-pointer"
           data-genre="practical"
+          data-pkm=""
           data-date="2023-08-21T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -953,6 +1025,7 @@
           href="/en/2022/12/09/Going-Meta-In-The-MetaVerse/"
           class="gallery-item group block cursor-pointer"
           data-genre="practical"
+          data-pkm=""
           data-date="2022-12-09T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -984,6 +1057,7 @@
           href="/en/2021/05/12/belongings/"
           class="gallery-item group block cursor-pointer"
           data-genre="essay"
+          data-pkm=""
           data-date="2021-05-12T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -1015,6 +1089,7 @@
           href="/en/2020/11/23/tokyo/"
           class="gallery-item group block cursor-pointer"
           data-genre="essay"
+          data-pkm=""
           data-date="2020-11-23T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -1046,6 +1121,7 @@
           href="/en/2020/09/20/Sustainability/"
           class="gallery-item group block cursor-pointer"
           data-genre="essay"
+          data-pkm=""
           data-date="2020-09-20T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -1077,6 +1153,7 @@
           href="/en/2020/04/04/RiseAndFall/"
           class="gallery-item group block cursor-pointer"
           data-genre="essay"
+          data-pkm=""
           data-date="2020-04-04T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -1108,6 +1185,7 @@
           href="/en/2020/01/20/daisuke-site-launched/"
           class="gallery-item group block cursor-pointer"
           data-genre="essay"
+          data-pkm=""
           data-date="2020-01-20T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -1139,6 +1217,7 @@
           href="/en/1995/09/02/about/"
           class="gallery-item group block cursor-pointer"
           data-genre="practical"
+          data-pkm=""
           data-date="1995-09-02T00:00:00+00:00"
         >
           <!-- 日付とジャンルタグ -->
@@ -1280,11 +1359,12 @@
             this.classList.add("active");
             const genre = this.dataset.genre;
             galleryItems.forEach((item) => {
-              if (genre === "all" || item.dataset.genre === genre) {
-                item.style.display = "block";
-              } else {
-                item.style.display = "none";
-              }
+              const match =
+                genre === "all" ||
+                (genre === "PKM"
+                  ? item.dataset.pkm === "true"
+                  : item.dataset.genre === genre);
+              item.style.display = match ? "block" : "none";
             });
           });
         });
