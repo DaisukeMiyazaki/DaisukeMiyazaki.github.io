@@ -9,6 +9,8 @@ lang-ref: papers-into-podcasts
 related: [we-must-not-delegate-understanding, sanpou-issue]
 genre: practical
 thumbnail:
+stage: 1
+read_minutes: 5
 ---
 
 ## The papers I'm curious about but never sit down to read

@@ -9,6 +9,8 @@ lang-ref: refactor
 related: [understanding-delegation]
 genre: エッセイ
 thumbnail:
+stage: 3
+read_minutes: 4
 ---
 
 六年前。この場所の最初の記事で、僕はポケットの中の小さな魔法について書いた。記憶を半永久に伸ばし、知識の所有者の境界をぼんやりさせる魔法だ。あれからノートは増え続けた。魔法は約束どおり僕の記憶を外へと押し広げてくれた。

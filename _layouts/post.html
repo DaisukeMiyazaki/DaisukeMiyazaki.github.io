@@ -6,11 +6,14 @@ layout: default
   <header class="mb-8">
     <p class="meta text-sm text-gray-600 dark:text-gray-400">
       {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author
-      }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+      }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if
+      page.read_minutes %} • {% if page.lang == 'jp' %}約{{ page.read_minutes
+      }}分{% else %}{{ page.read_minutes }} min read{% endif %}{% endif %}
     </p>
     <h1 class="title text-2xl font-bold dark:text-primary-light">
       {{ page.title }}
     </h1>
+    {% include pkm_stage_nav.html %}
   </header>
 
   <!-- 要約(TL;DR): front matter の excerpt を冒頭に可視化。AI抽出器・読者双方に要点を提示 -->
@@ -35,6 +38,9 @@ layout: default
 
   <!-- いいねボタン、関連記事は prose の外 -->
   {% include like_button.html %}
+
+  <!-- PKM記事: 同じ段の記事一覧 -->
+  {% include pkm_same_stage.html %}
 
   <!-- 関連記事: front matter `related:`（slug の配列）で明示指定。無ければ最近の記事にフォールバック -->
   {% if page.lang == "jp" %}{% assign related_heading = "関連記事" %}{% else %}{% assign related_heading = "Related posts" %}{% endif %}

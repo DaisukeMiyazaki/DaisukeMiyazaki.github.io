@@ -64,6 +64,36 @@
         >. Filter posts with the tags above. {% endif %}
       </p>
 
+      <!-- PKMセクション入口バナー -->
+      <a href="{% if page.lang == 'jp' %}/jp/pkm/{% else %}/en/pkm/{% endif %}" class="mb-12 block">
+        <div
+          class="flex items-center gap-4 rounded-2xl border border-gray-200 bg-gray-100 px-6 py-5 transition-colors hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+        >
+          <div class="min-w-0 flex-1">
+            <p class="text-xs font-bold tracking-widest text-blue-500 dark:text-blue-400">PKM</p>
+            <h3 class="mt-1 text-lg font-extrabold text-gray-900 dark:text-gray-50">
+              {% if page.lang == 'jp' %}個人のナレッジマネジメント{% else %}Personal Knowledge Management{% endif %}
+            </h3>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+              {% if page.lang == 'jp' %}AIは道具、整理するのは自分。{% else %}AI is a tool; organizing is my job.{% endif %}
+            </p>
+          </div>
+          <div class="hidden shrink-0 items-center gap-1 sm:flex">
+            {% for i in (1..4) %}
+            <img
+              src="/assets/images/pkm/actor_step{{ i }}.png"
+              alt=""
+              class="h-[52px] w-[52px] rounded-[10px] border border-gray-200 bg-white object-cover dark:border-gray-700"
+              loading="lazy"
+            />
+            {% endfor %}
+          </div>
+          <span class="whitespace-nowrap text-sm font-bold text-blue-500 dark:text-blue-400"
+            >{% if page.lang == 'jp' %}はじめる →{% else %}Start →{% endif %}</span
+          >
+        </div>
+      </a>
+
       <div class="flex flex-col gap-12" id="gallery-grid">
         {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
         posts %}
@@ -71,6 +101,7 @@
           href="{{ post.url }}"
           class="gallery-item group block cursor-pointer"
           data-genre="{{ post.genre }}"
+          data-pkm="{% if post.stage %}true{% endif %}"
           data-date="{{ post.date | date_to_xmlschema }}"
         >
           <!-- 日付とジャンルタグ -->
@@ -155,11 +186,12 @@
             this.classList.add("active");
             const genre = this.dataset.genre;
             galleryItems.forEach((item) => {
-              if (genre === "all" || item.dataset.genre === genre) {
-                item.style.display = "block";
-              } else {
-                item.style.display = "none";
-              }
+              const match =
+                genre === "all" ||
+                (genre === "PKM"
+                  ? item.dataset.pkm === "true"
+                  : item.dataset.genre === genre);
+              item.style.display = match ? "block" : "none";
             });
           });
         });

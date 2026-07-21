@@ -7,6 +7,9 @@ comments: true
 lang: en
 genre: Practical
 thumbnail: /assets/images/obsidian_logo.png
+stage: 2
+read_minutes: 3
+stage_parent: true
 ---
 
 I built an Obsidian plugin that finds and helps you tidy up the notes you once thought were important but that have quietly gathered dust. It's out now as an [official community plugin](https://community.obsidian.md/plugins/katazuke).

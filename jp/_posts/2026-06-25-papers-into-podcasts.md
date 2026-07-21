@@ -9,6 +9,8 @@ lang-ref: papers-into-podcasts
 related: [understanding-delegation, sanpou-issue]
 genre: 実用
 thumbnail:
+stage: 1
+read_minutes: 7
 ---
 
 ## 興味はあっても腰を据えて読めない論文たち

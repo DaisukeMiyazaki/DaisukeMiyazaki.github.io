@@ -33,3 +33,9 @@ nbproject
 vendor
 
 node_modules
+
+# Local bundler config
+.bundle/
+
+# Secrets
+tools/.env

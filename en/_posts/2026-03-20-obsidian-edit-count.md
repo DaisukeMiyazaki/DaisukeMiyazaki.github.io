@@ -7,6 +7,8 @@ comments: true
 lang: en
 genre: Practical
 thumbnail: /assets/images/obsidian_logo.png
+stage: 3
+read_minutes: 3
 ---
 
 An Obsidian plugin that automatically counts meaningful edits and helps you keep track of the notes you revisit most. It's been working well enough on my end, so I'm releasing it as a beta.

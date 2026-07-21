@@ -7,6 +7,9 @@ comments: true
 lang: jp
 genre: 実用
 thumbnail: /assets/images/obsidian_logo.png
+stage: 2
+read_minutes: 4
+stage_parent: true
 ---
 
 大事だと思っていたけれど気づいたら埃をかぶっていたノートを見つけて片付ける。そんな手助けをできるObsidianプラグインを作りました。[公式のコミュニティプラグイン](https://community.obsidian.md/plugins/katazuke)として公開しています。
