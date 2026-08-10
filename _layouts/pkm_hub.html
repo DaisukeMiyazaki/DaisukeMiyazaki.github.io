@@ -243,12 +243,12 @@
         <span class="font-semibold text-gray-700 dark:text-gray-300">PKM</span>
       </nav>
 
-      <h1 class="mt-4 text-3xl font-extrabold tracking-tight">
+      <h1 class="mt-4 text-base font-extrabold tracking-tight">
         {% if page.lang == 'jp' %}個人のナレッジマネジメント{% else %}Personal
         Knowledge Management{% endif %}
       </h1>
       <p
-        class="mt-3 max-w-prose text-base leading-loose text-gray-700 dark:text-gray-400"
+        class="mt-2 max-w-prose text-sm leading-loose text-gray-700 dark:text-gray-400"
       >
         {% if page.lang == 'jp'
         %}生成AIが巧みに嘘をつける時代だからこそ、理解を委任してはいけない。{%
@@ -263,7 +263,7 @@
       <div id="pkm-map">
         <div class="pkm-fade-top" aria-hidden="true"></div>
         <p
-          class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+          class="text-base font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400"
         >
           {% if page.lang == 'jp' %}情報のライフサイクル{% else %}The
           information lifecycle{% endif %}
@@ -288,25 +288,18 @@
                   class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
                   >{{ i }}</span
                 >
-                <span class="text-sm font-extrabold sm:text-[15px]"
+                <span class="text-base font-extrabold sm:text-[15px]"
                   >{{ stage_names[idx] }}</span
                 >
               </div>
               <p
-                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+                class="mt-0.5 text-sm leading-snug text-gray-600 dark:text-gray-400"
               >
                 {{ stage_descs[idx] }}
               </p>
             </div>
           </div>
-          {% unless forloop.last %}
-          <div
-            class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0"
-          >
-            <span class="sm:hidden">↓</span
-            ><span class="hidden sm:inline">→</span>
-          </div>
-          {% endunless %} {% endfor %}
+          {% unless forloop.last %} {% endunless %} {% endfor %}
         </div>
       </div>
 
