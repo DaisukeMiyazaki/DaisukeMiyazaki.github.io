@@ -1,5 +1,5 @@
 ---
-layout: index_new
+layout: index_v2
 lang: jp
 ---
 

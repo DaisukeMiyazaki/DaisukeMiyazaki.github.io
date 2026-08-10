@@ -222,30 +222,38 @@
   <body
     class="bg-white text-gray-900 antialiased transition-colors duration-300 dark:bg-primary-dark dark:text-white"
   >
-    {% include header_new.html %}
-
-    {% assign pkm_posts = site.posts | where: "lang", page.lang %}
-    {% if page.lang == 'jp' %}
-      {% assign stage_names = "収集|整理|向き合う|活用" | split: "|" %}
-      {% assign stage_descs = "入ってくる口を知る|構造は自分で決める|読み返し、探し、つなぐ|書く・作る・話す" | split: "|" %}
-    {% else %}
-      {% assign stage_names = "Capture|Organize|Engage|Create" | split: "|" %}
-      {% assign stage_descs = "Know your inlets|You decide the structure|Reread, search, connect|Write, build, speak" | split: "|" %}
-    {% endif %}
+    {% include header_v2.html %} {% assign pkm_posts = site.posts | where:
+    "lang", page.lang %} {% if page.lang == 'jp' %} {% assign stage_names =
+    "収集|整理|向き合う|活用" | split: "|" %} {% assign stage_descs =
+    "入ってくる口を知る|構造は自分で決める|読み返し、探し、つなぐ|書く・作る・話す"
+    | split: "|" %} {% else %} {% assign stage_names =
+    "Capture|Organize|Engage|Create" | split: "|" %} {% assign stage_descs =
+    "Know your inlets|You decide the structure|Reread, search, connect|Write,
+    build, speak" | split: "|" %} {% endif %}
 
     <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
       <!-- パンくず -->
       <nav class="text-sm text-gray-500 dark:text-gray-400">
-        <a href="{% if page.lang == 'jp' %}/{% else %}/en/{% endif %}" class="text-blue-500 hover:underline dark:text-blue-400">Blog</a>
+        <a
+          href="{% if page.lang == 'jp' %}/{% else %}/en/{% endif %}"
+          class="text-blue-500 hover:underline dark:text-blue-400"
+          >Blog</a
+        >
         <span class="mx-1">/</span>
         <span class="font-semibold text-gray-700 dark:text-gray-300">PKM</span>
       </nav>
 
       <h1 class="mt-4 text-3xl font-extrabold tracking-tight">
-        {% if page.lang == 'jp' %}個人のナレッジマネジメント{% else %}Personal Knowledge Management{% endif %}
+        {% if page.lang == 'jp' %}個人のナレッジマネジメント{% else %}Personal
+        Knowledge Management{% endif %}
       </h1>
-      <p class="mt-3 max-w-prose text-base leading-loose text-gray-700 dark:text-gray-400">
-        {% if page.lang == 'jp' %}生成AIが巧みに嘘をつける時代だからこそ、理解を委任してはいけない。{% else %}In an age when AI can lie convincingly, we must not delegate understanding.{% endif %}
+      <p
+        class="mt-3 max-w-prose text-base leading-loose text-gray-700 dark:text-gray-400"
+      >
+        {% if page.lang == 'jp'
+        %}生成AIが巧みに嘘をつける時代だからこそ、理解を委任してはいけない。{%
+        else %}In an age when AI can lie convincingly, we must not delegate
+        understanding.{% endif %}
       </p>
 
       <!-- sticky検知用サンチネル -->
@@ -254,41 +262,51 @@
       <!-- ライフサイクル地図 (sticky・現在地表示を兼ねる) -->
       <div id="pkm-map">
         <div class="pkm-fade-top" aria-hidden="true"></div>
-        <p class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
-          {% if page.lang == 'jp' %}情報のライフサイクル{% else %}The information lifecycle{% endif %}
+        <p
+          class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+        >
+          {% if page.lang == 'jp' %}情報のライフサイクル{% else %}The
+          information lifecycle{% endif %}
         </p>
-        <div class="mt-3 flex flex-col items-stretch gap-3 sm:flex-row sm:gap-2">
-          {% for i in (1..4) %}
-            {% assign idx = forloop.index0 %}
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block{% if forloop.first %} is-active{% endif %}"
-              data-stage="{{ i }}"
-            >
-              <img
-                src="/assets/images/pkm/actor_step{{ i }}.png"
-                alt="{{ stage_names[idx] }}"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >{{ i }}</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">{{ stage_names[idx] }}</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  {{ stage_descs[idx] }}
-                </p>
+        <div
+          class="mt-3 flex flex-col items-stretch gap-3 sm:flex-row sm:gap-2"
+        >
+          {% for i in (1..4) %} {% assign idx = forloop.index0 %}
+          <div
+            class="stage-item sm:block{% if forloop.first %} is-active{% endif %} flex flex-1 items-start gap-3"
+            data-stage="{{ i }}"
+          >
+            <img
+              src="/assets/images/pkm/actor_step{{ i }}.png"
+              alt="{{ stage_names[idx] }}"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >{{ i }}</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >{{ stage_names[idx] }}</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                {{ stage_descs[idx] }}
+              </p>
             </div>
-            {% unless forloop.last %}
-            <div class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0">
-              <span class="sm:hidden">↓</span><span class="hidden sm:inline">→</span>
-            </div>
-            {% endunless %}
-          {% endfor %}
+          </div>
+          {% unless forloop.last %}
+          <div
+            class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0"
+          >
+            <span class="sm:hidden">↓</span
+            ><span class="hidden sm:inline">→</span>
+          </div>
+          {% endunless %} {% endfor %}
         </div>
       </div>
 
@@ -296,9 +314,19 @@
       <div id="pkm-mini" aria-hidden="false">
         <div class="mx-auto flex max-w-2xl items-center gap-3 px-6 py-2">
           {% for i in (1..4) %}
-          <button type="button" class="mini-stage{% if forloop.first %} is-active{% endif %}" data-stage="{{ i }}">
-            <img src="/assets/images/pkm/actor_step{{ i }}.png" alt="{{ stage_names[forloop.index0] }}" loading="lazy" />
-            <span class="mini-label">{{ i }}. {{ stage_names[forloop.index0] }}</span>
+          <button
+            type="button"
+            class="mini-stage{% if forloop.first %} is-active{% endif %}"
+            data-stage="{{ i }}"
+          >
+            <img
+              src="/assets/images/pkm/actor_step{{ i }}.png"
+              alt="{{ stage_names[forloop.index0] }}"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >{{ i }}. {{ stage_names[forloop.index0] }}</span
+            >
           </button>
           {% endfor %}
         </div>
@@ -306,45 +334,49 @@
 
       <!-- 段別記事一覧: 段見出しは置かない（地図が現在地表示） -->
       <div class="mt-8 flex flex-col gap-7">
-        {% for i in (1..4) %}
-          {% assign stage_posts = pkm_posts | where: "stage", forloop.index | sort: "date" | reverse %}
-          <section
-            class="stage-sec{% if forloop.first %} is-active{% endif %}"
-            data-stage-sec="{{ i }}"
-            id="stage-{{ i }}"
-          >
-            {% if stage_posts.size > 0 %}
-            <ul class="list-none space-y-4 pl-0">
-              {% for post in stage_posts %}
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="{{ post.url }}"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >{{ post.title }}</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    {{ post.excerpt | strip_html | strip_newlines }}
-                  </p>
-                </div>
-                {% if post.read_minutes %}
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >{% if page.lang == 'jp' %}{{ post.read_minutes }}分{% else %}{{ post.read_minutes }} min{% endif %}</span
+        {% for i in (1..4) %} {% assign stage_posts = pkm_posts | where:
+        "stage", forloop.index | sort: "date" | reverse %}
+        <section
+          class="stage-sec{% if forloop.first %} is-active{% endif %}"
+          data-stage-sec="{{ i }}"
+          id="stage-{{ i }}"
+        >
+          {% if stage_posts.size > 0 %}
+          <ul class="list-none space-y-4 pl-0">
+            {% for post in stage_posts %}
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="{{ post.url }}"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >{{ post.title }}</a
                 >
-                {% endif %}
-              </li>
-              {% endfor %}
-            </ul>
-            {% else %}
-            <p class="text-[13px] text-gray-500 dark:text-gray-400">
-              {% if page.lang == 'jp' %}この段の記事はこれから。{% else %}Posts for this stage are coming.{% endif %}
-            </p>
-            {% endif %}
-          </section>
-          {% unless forloop.last %}
-          <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
-          {% endunless %}
-        {% endfor %}
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  {{ post.excerpt | strip_html | strip_newlines }}
+                </p>
+              </div>
+              {% if post.read_minutes %}
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >{% if page.lang == 'jp' %}{{ post.read_minutes }}分{% else %}{{
+                post.read_minutes }} min{% endif %}</span
+              >
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="text-[13px] text-gray-500 dark:text-gray-400">
+            {% if page.lang == 'jp' %}この段の記事はこれから。{% else %}Posts
+            for this stage are coming.{% endif %}
+          </p>
+          {% endif %}
+        </section>
+        {% unless forloop.last %}
+        <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
+        {% endunless %} {% endfor %}
       </div>
 
       <!-- 下端: リストが余白に溶けるフェード帯 -->
@@ -376,10 +408,16 @@
 
         function activate(stage) {
           items.forEach((el) =>
-            el.classList.toggle("is-active", el.dataset.stage === String(stage)),
+            el.classList.toggle(
+              "is-active",
+              el.dataset.stage === String(stage),
+            ),
           );
           miniItems.forEach((el) =>
-            el.classList.toggle("is-active", el.dataset.stage === String(stage)),
+            el.classList.toggle(
+              "is-active",
+              el.dataset.stage === String(stage),
+            ),
           );
           secs.forEach((el) =>
             el.classList.toggle(
@@ -435,7 +473,9 @@
           pinnedUntil = Date.now() + 900;
           const sec = document.getElementById(`stage-${stage}`);
           const sticky = getComputedStyle(map).position === "sticky";
-          const offset = sticky ? map.offsetHeight + 16 : mini.offsetHeight + 12;
+          const offset = sticky
+            ? map.offsetHeight + 16
+            : mini.offsetHeight + 12;
           window.scrollTo({
             top: sec.getBoundingClientRect().top + window.scrollY - offset,
             behavior: "smooth",
