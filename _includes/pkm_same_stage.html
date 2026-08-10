@@ -12,19 +12,19 @@ page.stage を持つ記事でのみ表示。
 {% endif %}
 {% assign pkm_stage_idx = page.stage | minus: 1 %}
 {% assign pkm_same = site.posts | where: "lang", page.lang | where: "stage", page.stage %}
-<div class="mt-12 border-t pt-8 dark:border-gray-800">
-  <h2 class="mb-4 text-lg font-semibold">
+<div class="mt-1 border-t pt-1 dark:border-gray-800">
+  <h2 class="mb-1 text-lg font-semibold">
     <a href="{{ pkm_hub_url }}#stage-{{ page.stage }}" class="no-underline hover:underline">
       {{ page.stage }}. {{ pkm_stage_names[pkm_stage_idx] }}
     </a>
   </h2>
-  <ul class="list-none space-y-6 pl-0">
+  <ul class="list-none space-y-1 pl-0">
     {% for rp in pkm_same %}
     {% unless rp.url == page.url %}
     <li>
       <small class="block text-gray-500 dark:text-gray-400">{{ rp.date | date_to_string }}</small>
       <a href="{{ rp.url }}" class="group block no-underline">
-        <span class="block font-medium text-primary-link no-underline dark:text-primary-link-dark">
+        <span class="block text-sm text-primary-link no-underline dark:text-primary-link-dark">
           {{ rp.title }}
         </span>
       </a>

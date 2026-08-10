@@ -6,11 +6,9 @@ compiled CSS に依存しないよう、必要な装飾はこの部品内の sty
 {% if page.lang == 'jp' %}
   {% assign pkm_stage_names = "収集|整理|向き合う|活用" | split: "|" %}
   {% assign pkm_hub_url = "/jp/pkm/" %}
-  {% assign pkm_pos_label = "現在地" %}
 {% else %}
   {% assign pkm_stage_names = "Capture|Organize|Engage|Create" | split: "|" %}
   {% assign pkm_hub_url = "/en/pkm/" %}
-  {% assign pkm_pos_label = "You are here" %}
 {% endif %}
 <style>
   .pkm-strip { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 12px 0 0; }

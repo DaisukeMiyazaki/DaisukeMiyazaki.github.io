@@ -38,4 +38,4 @@ node_modules
 .bundle/
 
 # Secrets
-tools/.env
+tools/.env staging/

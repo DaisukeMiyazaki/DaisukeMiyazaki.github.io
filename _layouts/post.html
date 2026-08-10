@@ -4,13 +4,13 @@ layout: default
 
 <div class="dark:text-gray-100">
   <header class="mb-8">
-    <p class="meta text-sm text-gray-600 dark:text-gray-400">
+    <p class="meta text-xs text-gray-600 dark:text-gray-400">
       {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author
       }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if
       page.read_minutes %} • {% if page.lang == 'jp' %}約{{ page.read_minutes
       }}分{% else %}{{ page.read_minutes }} min read{% endif %}{% endif %}
     </p>
-    <h1 class="title text-2xl font-bold dark:text-primary-light">
+    <h1 class="title text-base font-bold dark:text-primary-light">
       {{ page.title }}
     </h1>
     {% include pkm_stage_nav.html %}
@@ -19,7 +19,7 @@ layout: default
   <!-- 要約(TL;DR): front matter の excerpt を冒頭に可視化。AI抽出器・読者双方に要点を提示 -->
   {% if page.excerpt %}
   <aside
-    class="mb-8 rounded-lg bg-gray-100 px-4 py-3 dark:bg-gray-800"
+    class="mb-4 rounded-lg bg-gray-100 px-4 py-3 dark:bg-gray-800"
   >
     <p
       class="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400"
@@ -32,7 +32,7 @@ layout: default
   </aside>
   {% endif %}
 
-  <div class="prose prose-lg w-full max-w-none break-words dark:prose-invert">
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
     {{ content }}
   </div>
 
@@ -55,14 +55,14 @@ layout: default
     {% endif %}
   {% endfor %}
   {% if related_posts.size > 0 %}
-  <div class="mt-12 border-t pt-8 dark:border-gray-800">
-    <h2 class="mb-4 text-lg font-semibold">{{ related_heading }}</h2>
-    <ul class="list-none space-y-6 pl-0">
+  <div class="mt-1 border-t dark:border-gray-800">
+    <h2 class="font-semibold">{{ related_heading }}</h2>
+    <ul class="list-none pl-0">
       {% for rp in related_posts %}
       <li>
         <a href="{{ rp.url }}" class="group block no-underline">
           <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+            class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
           >
             {{ rp.title }}
           </span>
@@ -81,14 +81,14 @@ layout: default
     {% assign related = related | where_exp: "p", "p.stage != page.stage" %}
   {% endif %}
   {% if related.size > 0 %}
-  <div class="mt-12 border-t pt-8 dark:border-gray-800">
-    <h2 class="mb-4 text-lg font-semibold">{{ related_heading }}</h2>
-    <ul class="list-none space-y-6 pl-0">
+  <div class="mt-1 border-t dark:border-gray-800">
+    <h2 class="font-semibold">{{ related_heading }}</h2>
+    <ul class="list-none pl-0">
       {% for post in related limit:3 %}
       <li>
         <a href="{{ post.url }}" class="group block no-underline">
           <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+            class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
           >
             {{ post.title }}
           </span>

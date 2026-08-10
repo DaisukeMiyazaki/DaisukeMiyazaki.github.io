@@ -47,7 +47,7 @@
     <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
       <!-- ファーストビュー: 一行の自己紹介と導線 -->
       <p
-        class="mb-12 max-w-prose text-base leading-relaxed text-gray-500 dark:text-gray-400"
+        class="mb-2 max-w-prose text-sm leading-relaxed text-gray-500 dark:text-gray-400"
       >
         {% if page.lang == 'jp' %} ポケットの小さな魔法（テクノロジー）が僕らの生活をどう豊かにしていけるのか——その問いの足跡です。はじめての方は
         <a
@@ -65,13 +65,13 @@
       </p>
 
       <!-- PKMセクション入口バナー -->
-      <a href="{% if page.lang == 'jp' %}/jp/pkm/{% else %}/en/pkm/{% endif %}" class="mb-12 block">
+      <a href="{% if page.lang == 'jp' %}/jp/pkm/{% else %}/en/pkm/{% endif %}" class="mb-2 block">
         <div
           class="flex items-center gap-4 rounded-2xl border border-gray-200 bg-gray-100 px-6 py-5 transition-colors hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           <div class="min-w-0 flex-1">
             <p class="text-xs font-bold tracking-widest text-blue-500 dark:text-blue-400">PKM</p>
-            <h3 class="mt-1 text-lg font-extrabold text-gray-900 dark:text-gray-50">
+            <h3 class="mt-1 text-base font-extrabold text-gray-900 dark:text-gray-50">
               {% if page.lang == 'jp' %}個人のナレッジマネジメント{% else %}Personal Knowledge Management{% endif %}
             </h3>
             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
@@ -94,7 +94,7 @@
         </div>
       </a>
 
-      <div class="flex flex-col gap-12" id="gallery-grid">
+      <div class="flex flex-col gap-2" id="gallery-grid">
         {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
         posts %}
         <a
@@ -106,7 +106,7 @@
         >
           <!-- 日付とジャンルタグ -->
           <div
-            class="mb-2 flex items-center text-base text-gray-400 dark:text-gray-500"
+            class="mb-1 flex items-center text-xs text-gray-400 dark:text-gray-500"
           >
             <time>{{ post.date | date: "%d %b %Y" }}</time>
             <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
@@ -116,14 +116,14 @@
 
           <!-- タイトル -->
           <h2
-            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+            class="mb-1 text-base font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
           >
             {{ post.title }}
           </h2>
 
           <!-- 抜粋 -->
           <p
-            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+            class="line-clamp-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400"
           >
             {{ post.excerpt | strip_html }}
           </p>
@@ -148,12 +148,12 @@
             >
           </div>
           <h2
-            class="mb-3 text-2xl font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
+            class="mb-1 text-base font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
           >
             {{ work.jp.title }}
           </h2>
           <p
-            class="line-clamp-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+            class="line-clamp-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400"
           >
             {{ work.jp.short }}
           </p>
