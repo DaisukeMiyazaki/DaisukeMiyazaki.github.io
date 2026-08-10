@@ -266,7 +266,7 @@
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
     <header
-  class="bg-white py-8 transition-colors duration-300 dark:bg-primary-dark"
+  class="bg-white py-4 transition-colors duration-300 dark:bg-primary-dark"
 >
   <div class="container mx-auto max-w-2xl px-6">
     <!-- 上段: タイトルとコントロール -->
@@ -409,9 +409,11 @@
 </script>
 
 
-    <div class="container mx-auto py-4 dark:bg-primary-dark dark:text-gray-100">
-      <div class="mx-auto max-w-4xl">
-        <div class="mb-4 text-center">
+    <!-- 修正: default.htmlに合わせて max-w-2xl と px-6 を適用 -->
+    <div class="container mx-auto max-w-2xl px-6 py-8 dark:bg-primary-dark dark:text-gray-100">
+      <!-- 内側の max-w-4xl ラッパーは削除し、親コンテナに従わせる -->
+      <div class="mx-auto">
+        <div class="mb-8 text-center">
           <p class="mx-auto text-sm text-gray-600 dark:text-gray-400">
             Jan 20, 2025
           </p>
@@ -426,18 +428,18 @@
 </div>
 
         <!-- いいねボタンエリア Start -->
-<div class="my-12 flex justify-center">
+<div class="my-2 flex justify-center">
   <button
     id="like-button"
     class="group flex items-center gap-2 rounded-full border-2 border-gray-200 px-6 py-3 transition-all hover:border-pink-500 hover:bg-pink-50 dark:border-gray-700 dark:hover:border-pink-500 dark:hover:bg-pink-900/20"
     onclick="handleLike()"
   >
-    <span class="text-2xl transition-transform group-active:scale-125">👏</span>
+    <span class="text transition-transform group-active:scale-125">👏</span>
     <span class="font-medium text-gray-600 dark:text-gray-300">
       Like
       <span
         id="like-count"
-        class="ml-1 text-lg font-bold text-pink-500 opacity-0 transition-opacity duration-500"
+        class="ml-1 text font-bold text-pink-500 opacity-0 transition-opacity duration-500"
         >0</span
       >
     </span>
@@ -547,13 +549,16 @@
   })();
 </script>
 <!-- いいねボタンエリア End -->
-  
-        <div class="mt-12">
+ 
+        
+         
+        
+        <div class="mt-1">
           <h2 class="text-2xl font-semibold">
             
           </h2>
 
-          <ul class="mx-auto max-w-4xl space-y-4 p-4">
+          <ul class="space-y-4 pt-4">
             
             <li>
               <a

@@ -135,7 +135,7 @@
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
     <header
-  class="bg-white py-8 transition-colors duration-300 dark:bg-primary-dark"
+  class="bg-white py-4 transition-colors duration-300 dark:bg-primary-dark"
 >
   <div class="container mx-auto max-w-2xl px-6">
     <!-- 上段: タイトルとコントロール -->
@@ -278,13 +278,13 @@
 </script>
 
 
-    <main class="container mx-auto max-w-2xl px-6 pb-20 pt-8">
+    <main class="container mx-auto max-w-2xl px-6 pb-2 pt-2">
       <div class="dark:text-gray-100">
   <header class="mb-8">
-    <p class="meta text-sm text-gray-600 dark:text-gray-400">
+    <p class="meta text-xs text-gray-600 dark:text-gray-400">
       
     </p>
-    <h1 class="title text-2xl font-bold dark:text-primary-light">
+    <h1 class="title text-base font-bold dark:text-primary-light">
       このサイトについて
     </h1>
     
@@ -295,7 +295,7 @@
   <!-- 要約(TL;DR): front matter の excerpt を冒頭に可視化。AI抽出器・読者双方に要点を提示 -->
   
 
-  <div class="prose prose-lg w-full max-w-none break-words dark:prose-invert">
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
     <p>※ ソースコードは<a href="https://github.com/DaisukeMiyazaki/DaisukeMiyazaki.github.io">こちら</a></p>
 
 <p>このサイトはjekyllという静的ジェネレーターを使ってホストされています。</p>
@@ -321,18 +321,18 @@
 
   <!-- いいねボタン、関連記事は prose の外 -->
   <!-- いいねボタンエリア Start -->
-<div class="my-12 flex justify-center">
+<div class="my-2 flex justify-center">
   <button
     id="like-button"
     class="group flex items-center gap-2 rounded-full border-2 border-gray-200 px-6 py-3 transition-all hover:border-pink-500 hover:bg-pink-50 dark:border-gray-700 dark:hover:border-pink-500 dark:hover:bg-pink-900/20"
     onclick="handleLike()"
   >
-    <span class="text-2xl transition-transform group-active:scale-125">👏</span>
+    <span class="text transition-transform group-active:scale-125">👏</span>
     <span class="font-medium text-gray-600 dark:text-gray-300">
       Like
       <span
         id="like-count"
-        class="ml-1 text-lg font-bold text-pink-500 opacity-0 transition-opacity duration-500"
+        class="ml-1 text font-bold text-pink-500 opacity-0 transition-opacity duration-500"
         >0</span
       >
     </span>

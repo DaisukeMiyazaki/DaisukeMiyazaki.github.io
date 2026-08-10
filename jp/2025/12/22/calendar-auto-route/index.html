@@ -291,7 +291,7 @@
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
     <header
-  class="bg-white py-8 transition-colors duration-300 dark:bg-primary-dark"
+  class="bg-white py-4 transition-colors duration-300 dark:bg-primary-dark"
 >
   <div class="container mx-auto max-w-2xl px-6">
     <!-- 上段: タイトルとコントロール -->
@@ -434,13 +434,13 @@
 </script>
 
 
-    <main class="container mx-auto max-w-2xl px-6 pb-20 pt-8">
+    <main class="container mx-auto max-w-2xl px-6 pb-2 pt-2">
       <div class="dark:text-gray-100">
   <header class="mb-8">
-    <p class="meta text-sm text-gray-600 dark:text-gray-400">
+    <p class="meta text-xs text-gray-600 dark:text-gray-400">
       Dec 22, 2025
     </p>
-    <h1 class="title text-2xl font-bold dark:text-primary-light">
+    <h1 class="title text-base font-bold dark:text-primary-light">
       Googleカレンダーに移動時間を自動追加するGASツール "Calendar Auto Route Calculator"
     </h1>
     
@@ -451,7 +451,7 @@
   <!-- 要約(TL;DR): front matter の excerpt を冒頭に可視化。AI抽出器・読者双方に要点を提示 -->
   
   <aside
-    class="mb-8 rounded-lg bg-gray-100 px-4 py-3 dark:bg-gray-800"
+    class="mb-4 rounded-lg bg-gray-100 px-4 py-3 dark:bg-gray-800"
   >
     <p
       class="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400"
@@ -464,7 +464,7 @@
   </aside>
   
 
-  <div class="prose prose-lg w-full max-w-none break-words dark:prose-invert">
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
     <p><a href="https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12" target="_blank" rel="noopener">https://gist.github.com/DaisukeMiyazaki/4293e05627ecae17b23dd8b234a29a12</a></p>
 
 <p>Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、<strong>「移動予定（Travel to …）」</strong> としてカレンダーに追加するGoogle Apps Script (GAS) ツールです。
@@ -575,18 +575,18 @@ Googleカレンダーで予定地を入れると自動で行き先/帰り道を�
 
   <!-- いいねボタン、関連記事は prose の外 -->
   <!-- いいねボタンエリア Start -->
-<div class="my-12 flex justify-center">
+<div class="my-2 flex justify-center">
   <button
     id="like-button"
     class="group flex items-center gap-2 rounded-full border-2 border-gray-200 px-6 py-3 transition-all hover:border-pink-500 hover:bg-pink-50 dark:border-gray-700 dark:hover:border-pink-500 dark:hover:bg-pink-900/20"
     onclick="handleLike()"
   >
-    <span class="text-2xl transition-transform group-active:scale-125">👏</span>
+    <span class="text transition-transform group-active:scale-125">👏</span>
     <span class="font-medium text-gray-600 dark:text-gray-300">
       Like
       <span
         id="like-count"
-        class="ml-1 text-lg font-bold text-pink-500 opacity-0 transition-opacity duration-500"
+        class="ml-1 text font-bold text-pink-500 opacity-0 transition-opacity duration-500"
         >0</span
       >
     </span>
@@ -710,16 +710,16 @@ Googleカレンダーで予定地を入れると自動で行き先/帰り道を�
   
   
   
-  <div class="mt-12 border-t pt-8 dark:border-gray-800">
-    <h2 class="mb-4 text-lg font-semibold">関連記事</h2>
-    <ul class="list-none space-y-6 pl-0">
+  <div class="mt-1 border-t dark:border-gray-800">
+    <h2 class="font-semibold">関連記事</h2>
+    <ul class="list-none pl-0">
       
       <li>
         <a href="/jp/2026/07/13/obsidian-katazuke/" class="group block no-underline">
           <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+            class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
           >
-            大事と思ってたけれど気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った
+            大事でも気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った
           </span>
           <small class="mt-1 block text-gray-500 dark:text-gray-400">
             13 Jul 2026
@@ -730,7 +730,7 @@ Googleカレンダーで予定地を入れると自動で行き先/帰り道を�
       <li>
         <a href="/jp/2026/07/03/refactor-obsidian/" class="group block no-underline">
           <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+            class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
           >
             増えすぎて探せないノートと二種類の仕事
           </span>
@@ -743,7 +743,7 @@ Googleカレンダーで予定地を入れると自動で行き先/帰り道を�
       <li>
         <a href="/jp/2026/06/25/papers-into-podcasts/" class="group block no-underline">
           <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+            class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
           >
             積読の論文は読むよりまず聞きたいが、自動ポッドキャストでは物足りなかった
           </span>

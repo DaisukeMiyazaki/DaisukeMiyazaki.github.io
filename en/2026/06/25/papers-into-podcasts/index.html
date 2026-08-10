@@ -135,7 +135,7 @@
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
     <header
-  class="bg-white py-8 transition-colors duration-300 dark:bg-primary-dark"
+  class="bg-white py-4 transition-colors duration-300 dark:bg-primary-dark"
 >
   <div class="container mx-auto max-w-2xl px-6">
     <!-- 上段: タイトルとコントロール -->
@@ -278,13 +278,13 @@
 </script>
 
 
-    <main class="container mx-auto max-w-2xl px-6 pb-20 pt-8">
+    <main class="container mx-auto max-w-2xl px-6 pb-2 pt-2">
       <div class="dark:text-gray-100">
   <header class="mb-8">
-    <p class="meta text-sm text-gray-600 dark:text-gray-400">
+    <p class="meta text-xs text-gray-600 dark:text-gray-400">
       Jun 25, 2026 • 5 min read
     </p>
-    <h1 class="title text-2xl font-bold dark:text-primary-light">
+    <h1 class="title text-base font-bold dark:text-primary-light">
       I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn't Enough
     </h1>
     
@@ -306,8 +306,8 @@
   .dark .pkm-strip li.pkm-here .pkm-dot { background: #60a5fa; border-color: #60a5fa; color: #111827; box-shadow: 0 0 0 3px #1e293b; }
   .dark .pkm-strip li.pkm-here .pkm-name { color: #60a5fa; }
 </style>
-<nav class="pkm-strip" aria-label="You are here">
-  <span class="pkm-label">You are here</span>
+<nav class="pkm-strip" aria-label="">
+  <span class="pkm-label"></span>
   <ol>
     
     <li class="pkm-here">
@@ -347,7 +347,7 @@
   <!-- 要約(TL;DR): front matter の excerpt を冒頭に可視化。AI抽出器・読者双方に要点を提示 -->
   
   <aside
-    class="mb-8 rounded-lg bg-gray-100 px-4 py-3 dark:bg-gray-800"
+    class="mb-4 rounded-lg bg-gray-100 px-4 py-3 dark:bg-gray-800"
   >
     <p
       class="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400"
@@ -360,7 +360,7 @@
   </aside>
   
 
-  <div class="prose prose-lg w-full max-w-none break-words dark:prose-invert">
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
     <h2 id="the-papers-im-curious-about-but-never-sit-down-to-read">The papers I’m curious about but never sit down to read</h2>
 
 <p>I keep running into papers and long essays I’m genuinely curious about. The curiosity is real; the focus to sit down and read them is not. Reading is active work, and I rarely find the slot for it.</p>
@@ -411,18 +411,18 @@
 
   <!-- いいねボタン、関連記事は prose の外 -->
   <!-- いいねボタンエリア Start -->
-<div class="my-12 flex justify-center">
+<div class="my-2 flex justify-center">
   <button
     id="like-button"
     class="group flex items-center gap-2 rounded-full border-2 border-gray-200 px-6 py-3 transition-all hover:border-pink-500 hover:bg-pink-50 dark:border-gray-700 dark:hover:border-pink-500 dark:hover:bg-pink-900/20"
     onclick="handleLike()"
   >
-    <span class="text-2xl transition-transform group-active:scale-125">👏</span>
+    <span class="text transition-transform group-active:scale-125">👏</span>
     <span class="font-medium text-gray-600 dark:text-gray-300">
       Like
       <span
         id="like-count"
-        class="ml-1 text-lg font-bold text-pink-500 opacity-0 transition-opacity duration-500"
+        class="ml-1 text font-bold text-pink-500 opacity-0 transition-opacity duration-500"
         >0</span
       >
     </span>
@@ -540,13 +540,13 @@
 
 
 
-<div class="mt-12 border-t pt-8 dark:border-gray-800">
-  <h2 class="mb-4 text-lg font-semibold">
+<div class="mt-1 border-t pt-1 dark:border-gray-800">
+  <h2 class="mb-1 text-lg font-semibold">
     <a href="/en/pkm/#stage-1" class="no-underline hover:underline">
       1. Capture
     </a>
   </h2>
-  <ul class="list-none space-y-6 pl-0">
+  <ul class="list-none space-y-1 pl-0">
     
     
     
@@ -554,7 +554,7 @@
     <li>
       <small class="block text-gray-500 dark:text-gray-400">17 Sep 2025</small>
       <a href="/en/2025/09/17/sanpou-issue/" class="group block no-underline">
-        <span class="block font-medium text-primary-link no-underline dark:text-primary-link-dark">
+        <span class="block text-sm text-primary-link no-underline dark:text-primary-link-dark">
           How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea
         </span>
       </a>
@@ -582,14 +582,14 @@
     
       
   
-  <div class="mt-12 border-t pt-8 dark:border-gray-800">
-    <h2 class="mb-4 text-lg font-semibold">Related posts</h2>
-    <ul class="list-none space-y-6 pl-0">
+  <div class="mt-1 border-t dark:border-gray-800">
+    <h2 class="font-semibold">Related posts</h2>
+    <ul class="list-none pl-0">
       
       <li>
         <a href="/en/2025/07/02/we-must-not-delegate-understanding/" class="group block no-underline">
           <span
-            class="block font-medium text-primary-link no-underline dark:text-primary-link-dark"
+            class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
           >
             We Must Not Delegate Understanding
           </span>
