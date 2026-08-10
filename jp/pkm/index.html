@@ -623,15 +623,16 @@
     }
   })();
 </script>
-
-
-    
-    
+  
 
     <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
       <!-- パンくず -->
       <nav class="text-sm text-gray-500 dark:text-gray-400">
-        <a href="/" class="text-blue-500 hover:underline dark:text-blue-400">Blog</a>
+        <a
+          href="/"
+          class="text-blue-500 hover:underline dark:text-blue-400"
+          >Blog</a
+        >
         <span class="mx-1">/</span>
         <span class="font-semibold text-gray-700 dark:text-gray-300">PKM</span>
       </nav>
@@ -639,7 +640,9 @@
       <h1 class="mt-4 text-3xl font-extrabold tracking-tight">
         個人のナレッジマネジメント
       </h1>
-      <p class="mt-3 max-w-prose text-base leading-loose text-gray-700 dark:text-gray-400">
+      <p
+        class="mt-3 max-w-prose text-base leading-loose text-gray-700 dark:text-gray-400"
+      >
         生成AIが巧みに嘘をつける時代だからこそ、理解を委任してはいけない。
       </p>
 
@@ -649,127 +652,148 @@
       <!-- ライフサイクル地図 (sticky・現在地表示を兼ねる) -->
       <div id="pkm-map">
         <div class="pkm-fade-top" aria-hidden="true"></div>
-        <p class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
+        <p
+          class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+        >
           情報のライフサイクル
         </p>
-        <div class="mt-3 flex flex-col items-stretch gap-3 sm:flex-row sm:gap-2">
-          
-            
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block is-active"
-              data-stage="1"
-            >
-              <img
-                src="/assets/images/pkm/actor_step1.png"
-                alt="収集"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >1</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">収集</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  入ってくる口を知る
-                </p>
+        <div
+          class="mt-3 flex flex-col items-stretch gap-3 sm:flex-row sm:gap-2"
+        >
+           
+          <div
+            class="stage-item sm:block is-active flex flex-1 items-start gap-3"
+            data-stage="1"
+          >
+            <img
+              src="/assets/images/pkm/actor_step1.png"
+              alt="収集"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >1</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >収集</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                入ってくる口を知る
+              </p>
             </div>
-            
-            <div class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0">
-              <span class="sm:hidden">↓</span><span class="hidden sm:inline">→</span>
-            </div>
-            
+          </div>
           
+          <div
+            class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0"
+          >
+            <span class="sm:hidden">↓</span
+            ><span class="hidden sm:inline">→</span>
+          </div>
             
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block"
-              data-stage="2"
-            >
-              <img
-                src="/assets/images/pkm/actor_step2.png"
-                alt="整理"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >2</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">整理</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  構造は自分で決める
-                </p>
+          <div
+            class="stage-item sm:block flex flex-1 items-start gap-3"
+            data-stage="2"
+          >
+            <img
+              src="/assets/images/pkm/actor_step2.png"
+              alt="整理"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >2</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >整理</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                構造は自分で決める
+              </p>
             </div>
-            
-            <div class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0">
-              <span class="sm:hidden">↓</span><span class="hidden sm:inline">→</span>
-            </div>
-            
+          </div>
           
+          <div
+            class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0"
+          >
+            <span class="sm:hidden">↓</span
+            ><span class="hidden sm:inline">→</span>
+          </div>
             
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block"
-              data-stage="3"
-            >
-              <img
-                src="/assets/images/pkm/actor_step3.png"
-                alt="向き合う"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >3</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">向き合う</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  読み返し、探し、つなぐ
-                </p>
+          <div
+            class="stage-item sm:block flex flex-1 items-start gap-3"
+            data-stage="3"
+          >
+            <img
+              src="/assets/images/pkm/actor_step3.png"
+              alt="向き合う"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >3</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >向き合う</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                読み返し、探し、つなぐ
+              </p>
             </div>
-            
-            <div class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0">
-              <span class="sm:hidden">↓</span><span class="hidden sm:inline">→</span>
-            </div>
-            
+          </div>
           
+          <div
+            class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0"
+          >
+            <span class="sm:hidden">↓</span
+            ><span class="hidden sm:inline">→</span>
+          </div>
             
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block"
-              data-stage="4"
-            >
-              <img
-                src="/assets/images/pkm/actor_step4.png"
-                alt="活用"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >4</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">活用</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  書く・作る・話す
-                </p>
+          <div
+            class="stage-item sm:block flex flex-1 items-start gap-3"
+            data-stage="4"
+          >
+            <img
+              src="/assets/images/pkm/actor_step4.png"
+              alt="活用"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >4</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >活用</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                書く・作る・話す
+              </p>
             </div>
-            
-          
+          </div>
+           
         </div>
       </div>
 
@@ -777,24 +801,64 @@
       <div id="pkm-mini" aria-hidden="false">
         <div class="mx-auto flex max-w-2xl items-center gap-3 px-6 py-2">
           
-          <button type="button" class="mini-stage is-active" data-stage="1">
-            <img src="/assets/images/pkm/actor_step1.png" alt="収集" loading="lazy" />
-            <span class="mini-label">1. 収集</span>
+          <button
+            type="button"
+            class="mini-stage is-active"
+            data-stage="1"
+          >
+            <img
+              src="/assets/images/pkm/actor_step1.png"
+              alt="収集"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >1. 収集</span
+            >
           </button>
           
-          <button type="button" class="mini-stage" data-stage="2">
-            <img src="/assets/images/pkm/actor_step2.png" alt="整理" loading="lazy" />
-            <span class="mini-label">2. 整理</span>
+          <button
+            type="button"
+            class="mini-stage"
+            data-stage="2"
+          >
+            <img
+              src="/assets/images/pkm/actor_step2.png"
+              alt="整理"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >2. 整理</span
+            >
           </button>
           
-          <button type="button" class="mini-stage" data-stage="3">
-            <img src="/assets/images/pkm/actor_step3.png" alt="向き合う" loading="lazy" />
-            <span class="mini-label">3. 向き合う</span>
+          <button
+            type="button"
+            class="mini-stage"
+            data-stage="3"
+          >
+            <img
+              src="/assets/images/pkm/actor_step3.png"
+              alt="向き合う"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >3. 向き合う</span
+            >
           </button>
           
-          <button type="button" class="mini-stage" data-stage="4">
-            <img src="/assets/images/pkm/actor_step4.png" alt="活用" loading="lazy" />
-            <span class="mini-label">4. 活用</span>
+          <button
+            type="button"
+            class="mini-stage"
+            data-stage="4"
+          >
+            <img
+              src="/assets/images/pkm/actor_step4.png"
+              alt="活用"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >4. 活用</span
+            >
           </button>
           
         </div>
@@ -802,213 +866,229 @@
 
       <!-- 段別記事一覧: 段見出しは置かない（地図が現在地表示） -->
       <div class="mt-8 flex flex-col gap-7">
+         
+        <section
+          class="stage-sec is-active"
+          data-stage-sec="1"
+          id="stage-1"
+        >
+          
+          <ul class="list-none space-y-4 pl-0">
+            
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/jp/2026/06/25/papers-into-podcasts/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >積読の論文は読むよりまず聞きたいが、自動ポッドキャストでは物足りなかった</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  自動生成のポッドキャストはどんなテキストも自然な音声にしてくれます。でも具体例が薄く、まともな質問もありません。だから具体例を厚くし、一次情報への入口として、プロのインタビュアーの型で質問役を設計したパイプラインを作りました。
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >7分</span
+              >
+              
+            </li>
+            
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/jp/2025/09/16/sanpou-issue/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  運動不足解消のために始めた散歩が、巡り巡って「知的生産の本質」と「現代における思考のキャプチャ方法」という問い、そして一つのアプリの構想にまで繋がった経緯を綴ります。
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >5分</span
+              >
+              
+            </li>
+            
+          </ul>
+          
+        </section>
         
+        <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
           
-          <section
-            class="stage-sec is-active"
-            data-stage-sec="1"
-            id="stage-1"
-          >
+        <section
+          class="stage-sec"
+          data-stage-sec="2"
+          id="stage-2"
+        >
+          
+          <ul class="list-none space-y-4 pl-0">
             
-            <ul class="list-none space-y-4 pl-0">
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/jp/2026/06/25/papers-into-podcasts/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >積読の論文は読むよりまず聞きたいが、自動ポッドキャストでは物足りなかった</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    自動生成のポッドキャストはどんなテキストも自然な音声にしてくれます。でも具体例が薄く、まともな質問もありません。だから具体例を厚くし、一次情報への入口として、プロのインタビュアーの型で質問役を設計したパイプラインを作りました。
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >7分</span
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/jp/2026/07/13/obsidian-katazuke/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >大事でも気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った</a
                 >
-                
-              </li>
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/jp/2025/09/16/sanpou-issue/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >運動不足解消の「散歩」が、なぜ「知的生産」と「専用ノートアプリ」のアイデアに行き着いたか</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    運動不足解消のために始めた散歩が、巡り巡って「知的生産の本質」と「現代における思考のキャプチャ方法」という問い、そして一つのアプリの構想にまで繋がった経緯を綴ります。
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >5分</span
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
                 >
-                
-              </li>
+                  大事でも気づいたら埃をかぶっていたノート。つながりを足す前に古いつながりを手放す。そんな片付けを手助けするObsidianプラグインを作った話。
+                </p>
+              </div>
               
-            </ul>
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >4分</span
+              >
+              
+            </li>
             
-          </section>
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/jp/2025/08/18/art-of-forgetting/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >忘れられる仕組み作り</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  この情報社会で考えるゆとりを持つためのヒントは、忘れられる仕組みづくり。
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >2分</span
+              >
+              
+            </li>
+            
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >obsidianを使い始めて1年レビュー</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっていたが課題があり、乗り換えてみてからもう早一年以上経つので、レビューしてみる。
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >3分</span
+              >
+              
+            </li>
+            
+          </ul>
           
-          <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
-          
+        </section>
         
+        <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
           
-          <section
-            class="stage-sec"
-            data-stage-sec="2"
-            id="stage-2"
-          >
+        <section
+          class="stage-sec"
+          data-stage-sec="3"
+          id="stage-3"
+        >
+          
+          <ul class="list-none space-y-4 pl-0">
             
-            <ul class="list-none space-y-4 pl-0">
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/jp/2026/07/13/obsidian-katazuke/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >大事でも気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    大事でも気づいたら埃をかぶっていたノート。つながりを足す前に古いつながりを手放す。そんな片付けを手助けするObsidianプラグインを作った話。
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >4分</span
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/jp/2026/07/03/refactor-obsidian/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >増えすぎて探せないノートと二種類の仕事</a
                 >
-                
-              </li>
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/jp/2025/08/18/art-of-forgetting/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >忘れられる仕組み作り</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    この情報社会で考えるゆとりを持つためのヒントは、忘れられる仕組みづくり。
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >2分</span
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
                 >
-                
-              </li>
+                  ノートが増えるほど目当ての一枚に辿り着けなくなる。フォルダを切り直しタグを足し、また崩れる。整理そのものが仕事になっていた。けれど整理には手放していい仕事と、手放してはいけない仕事がある。
+                </p>
+              </div>
               
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >obsidianを使い始めて1年レビュー</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっていたが課題があり、乗り換えてみてからもう早一年以上経つので、レビューしてみる。
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >3分</span
-                >
-                
-              </li>
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >4分</span
+              >
               
-            </ul>
+            </li>
             
-          </section>
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/jp/2026/03/20/obsidian-edit-count/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >よく編集するノートが一目でわかるObsidianプラグインを作った</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  ノートの編集回数を自動で数えて、よく手を入れるノートをグラフ上で大きく表示する。そんなObsidianプラグインを作った思考の過程を書く。
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >4分</span
+              >
+              
+            </li>
+            
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/jp/2025/07/02/understanding-delegation/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >理解を委任してはいけない</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  生成AIが巧みな嘘をつける時代だからこそ、自分の言葉で思考し、点と点をつなぐ作業を委任してはならない。日記やノートを通じて思考を深める重要性について。
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >2分</span
+              >
+              
+            </li>
+            
+          </ul>
           
-          <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
-          
+        </section>
         
+        <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
           
-          <section
-            class="stage-sec"
-            data-stage-sec="3"
-            id="stage-3"
-          >
-            
-            <ul class="list-none space-y-4 pl-0">
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/jp/2026/07/03/refactor-obsidian/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >増えすぎて探せないノートと二種類の仕事</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    ノートが増えるほど目当ての一枚に辿り着けなくなる。フォルダを切り直しタグを足し、また崩れる。整理そのものが仕事になっていた。けれど整理には手放していい仕事と、手放してはいけない仕事がある。
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >4分</span
-                >
-                
-              </li>
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/jp/2026/03/20/obsidian-edit-count/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >よく編集するノートが一目でわかるObsidianプラグインを作った</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    ノートの編集回数を自動で数えて、よく手を入れるノートをグラフ上で大きく表示する。そんなObsidianプラグインを作った思考の過程を書く。
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >4分</span
-                >
-                
-              </li>
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/jp/2025/07/02/understanding-delegation/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >理解を委任してはいけない</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    生成AIが巧みな嘘をつける時代だからこそ、自分の言葉で思考し、点と点をつなぐ作業を委任してはならない。日記やノートを通じて思考を深める重要性について。
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >2分</span
-                >
-                
-              </li>
-              
-            </ul>
-            
-          </section>
+        <section
+          class="stage-sec"
+          data-stage-sec="4"
+          id="stage-4"
+        >
           
-          <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
+          <p class="text-[13px] text-gray-500 dark:text-gray-400">
+            この段の記事はこれから。
+          </p>
           
-        
-          
-          <section
-            class="stage-sec"
-            data-stage-sec="4"
-            id="stage-4"
-          >
-            
-            <p class="text-[13px] text-gray-500 dark:text-gray-400">
-              この段の記事はこれから。
-            </p>
-            
-          </section>
-          
-        
+        </section>
+         
       </div>
 
       <!-- 下端: リストが余白に溶けるフェード帯 -->
@@ -1058,10 +1138,16 @@
 
         function activate(stage) {
           items.forEach((el) =>
-            el.classList.toggle("is-active", el.dataset.stage === String(stage)),
+            el.classList.toggle(
+              "is-active",
+              el.dataset.stage === String(stage),
+            ),
           );
           miniItems.forEach((el) =>
-            el.classList.toggle("is-active", el.dataset.stage === String(stage)),
+            el.classList.toggle(
+              "is-active",
+              el.dataset.stage === String(stage),
+            ),
           );
           secs.forEach((el) =>
             el.classList.toggle(
@@ -1117,7 +1203,9 @@
           pinnedUntil = Date.now() + 900;
           const sec = document.getElementById(`stage-${stage}`);
           const sticky = getComputedStyle(map).position === "sticky";
-          const offset = sticky ? map.offsetHeight + 16 : mini.offsetHeight + 12;
+          const offset = sticky
+            ? map.offsetHeight + 16
+            : mini.offsetHeight + 12;
           window.scrollTo({
             top: sec.getBoundingClientRect().top + window.scrollY - offset,
             behavior: "smooth",

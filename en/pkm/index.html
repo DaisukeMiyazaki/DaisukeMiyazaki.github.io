@@ -623,24 +623,29 @@
     }
   })();
 </script>
-
-
-    
-    
+  
 
     <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
       <!-- パンくず -->
       <nav class="text-sm text-gray-500 dark:text-gray-400">
-        <a href="/en/" class="text-blue-500 hover:underline dark:text-blue-400">Blog</a>
+        <a
+          href="/en/"
+          class="text-blue-500 hover:underline dark:text-blue-400"
+          >Blog</a
+        >
         <span class="mx-1">/</span>
         <span class="font-semibold text-gray-700 dark:text-gray-300">PKM</span>
       </nav>
 
       <h1 class="mt-4 text-3xl font-extrabold tracking-tight">
-        Personal Knowledge Management
+        Personal
+        Knowledge Management
       </h1>
-      <p class="mt-3 max-w-prose text-base leading-loose text-gray-700 dark:text-gray-400">
-        In an age when AI can lie convincingly, we must not delegate understanding.
+      <p
+        class="mt-3 max-w-prose text-base leading-loose text-gray-700 dark:text-gray-400"
+      >
+        In an age when AI can lie convincingly, we must not delegate
+        understanding.
       </p>
 
       <!-- sticky検知用サンチネル -->
@@ -649,127 +654,150 @@
       <!-- ライフサイクル地図 (sticky・現在地表示を兼ねる) -->
       <div id="pkm-map">
         <div class="pkm-fade-top" aria-hidden="true"></div>
-        <p class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
-          The information lifecycle
+        <p
+          class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+        >
+          The
+          information lifecycle
         </p>
-        <div class="mt-3 flex flex-col items-stretch gap-3 sm:flex-row sm:gap-2">
-          
-            
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block is-active"
-              data-stage="1"
-            >
-              <img
-                src="/assets/images/pkm/actor_step1.png"
-                alt="Capture"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >1</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">Capture</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  Know your inlets
-                </p>
+        <div
+          class="mt-3 flex flex-col items-stretch gap-3 sm:flex-row sm:gap-2"
+        >
+           
+          <div
+            class="stage-item sm:block is-active flex flex-1 items-start gap-3"
+            data-stage="1"
+          >
+            <img
+              src="/assets/images/pkm/actor_step1.png"
+              alt="Capture"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >1</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >Capture</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                Know your inlets
+              </p>
             </div>
-            
-            <div class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0">
-              <span class="sm:hidden">↓</span><span class="hidden sm:inline">→</span>
-            </div>
-            
+          </div>
           
+          <div
+            class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0"
+          >
+            <span class="sm:hidden">↓</span
+            ><span class="hidden sm:inline">→</span>
+          </div>
             
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block"
-              data-stage="2"
-            >
-              <img
-                src="/assets/images/pkm/actor_step2.png"
-                alt="Organize"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >2</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">Organize</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  You decide the structure
-                </p>
+          <div
+            class="stage-item sm:block flex flex-1 items-start gap-3"
+            data-stage="2"
+          >
+            <img
+              src="/assets/images/pkm/actor_step2.png"
+              alt="Organize"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >2</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >Organize</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                You decide the structure
+              </p>
             </div>
-            
-            <div class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0">
-              <span class="sm:hidden">↓</span><span class="hidden sm:inline">→</span>
-            </div>
-            
+          </div>
           
+          <div
+            class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0"
+          >
+            <span class="sm:hidden">↓</span
+            ><span class="hidden sm:inline">→</span>
+          </div>
             
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block"
-              data-stage="3"
-            >
-              <img
-                src="/assets/images/pkm/actor_step3.png"
-                alt="Engage"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >3</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">Engage</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  Reread, search, connect
-                </p>
+          <div
+            class="stage-item sm:block flex flex-1 items-start gap-3"
+            data-stage="3"
+          >
+            <img
+              src="/assets/images/pkm/actor_step3.png"
+              alt="Engage"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >3</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >Engage</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                Reread, search, connect
+              </p>
             </div>
-            
-            <div class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0">
-              <span class="sm:hidden">↓</span><span class="hidden sm:inline">→</span>
-            </div>
-            
+          </div>
           
+          <div
+            class="self-start pl-10 text-gray-400 dark:text-gray-500 sm:self-center sm:pl-0"
+          >
+            <span class="sm:hidden">↓</span
+            ><span class="hidden sm:inline">→</span>
+          </div>
             
-            <div
-              class="stage-item flex flex-1 items-start gap-3 sm:block"
-              data-stage="4"
-            >
-              <img
-                src="/assets/images/pkm/actor_step4.png"
-                alt="Create"
-                class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
-                loading="lazy"
-              />
-              <div class="min-w-0 sm:mt-2">
-                <div class="flex items-center gap-1.5">
-                  <span
-                    class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
-                    >4</span
-                  >
-                  <span class="text-sm font-extrabold sm:text-[15px]">Create</span>
-                </div>
-                <p class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400">
-                  Write, build, speak
-                </p>
+          <div
+            class="stage-item sm:block flex flex-1 items-start gap-3"
+            data-stage="4"
+          >
+            <img
+              src="/assets/images/pkm/actor_step4.png"
+              alt="Create"
+              class="aspect-square w-24 shrink-0 rounded-xl border border-gray-200 bg-white object-cover dark:border-gray-700 sm:w-full"
+              loading="lazy"
+            />
+            <div class="min-w-0 sm:mt-2">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="stage-num inline-flex h-[22px] w-[22px] items-center justify-center rounded-full text-xs font-extrabold"
+                  >4</span
+                >
+                <span class="text-sm font-extrabold sm:text-[15px]"
+                  >Create</span
+                >
               </div>
+              <p
+                class="mt-0.5 text-xs leading-snug text-gray-600 dark:text-gray-400"
+              >
+                Write,
+    build, speak
+              </p>
             </div>
-            
-          
+          </div>
+           
         </div>
       </div>
 
@@ -777,24 +805,64 @@
       <div id="pkm-mini" aria-hidden="false">
         <div class="mx-auto flex max-w-2xl items-center gap-3 px-6 py-2">
           
-          <button type="button" class="mini-stage is-active" data-stage="1">
-            <img src="/assets/images/pkm/actor_step1.png" alt="Capture" loading="lazy" />
-            <span class="mini-label">1. Capture</span>
+          <button
+            type="button"
+            class="mini-stage is-active"
+            data-stage="1"
+          >
+            <img
+              src="/assets/images/pkm/actor_step1.png"
+              alt="Capture"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >1. Capture</span
+            >
           </button>
           
-          <button type="button" class="mini-stage" data-stage="2">
-            <img src="/assets/images/pkm/actor_step2.png" alt="Organize" loading="lazy" />
-            <span class="mini-label">2. Organize</span>
+          <button
+            type="button"
+            class="mini-stage"
+            data-stage="2"
+          >
+            <img
+              src="/assets/images/pkm/actor_step2.png"
+              alt="Organize"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >2. Organize</span
+            >
           </button>
           
-          <button type="button" class="mini-stage" data-stage="3">
-            <img src="/assets/images/pkm/actor_step3.png" alt="Engage" loading="lazy" />
-            <span class="mini-label">3. Engage</span>
+          <button
+            type="button"
+            class="mini-stage"
+            data-stage="3"
+          >
+            <img
+              src="/assets/images/pkm/actor_step3.png"
+              alt="Engage"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >3. Engage</span
+            >
           </button>
           
-          <button type="button" class="mini-stage" data-stage="4">
-            <img src="/assets/images/pkm/actor_step4.png" alt="Create" loading="lazy" />
-            <span class="mini-label">4. Create</span>
+          <button
+            type="button"
+            class="mini-stage"
+            data-stage="4"
+          >
+            <img
+              src="/assets/images/pkm/actor_step4.png"
+              alt="Create"
+              loading="lazy"
+            />
+            <span class="mini-label"
+              >4. Create</span
+            >
           </button>
           
         </div>
@@ -802,195 +870,209 @@
 
       <!-- 段別記事一覧: 段見出しは置かない（地図が現在地表示） -->
       <div class="mt-8 flex flex-col gap-7">
+         
+        <section
+          class="stage-sec is-active"
+          data-stage-sec="1"
+          id="stage-1"
+        >
+          
+          <ul class="list-none space-y-4 pl-0">
+            
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/en/2026/06/25/papers-into-podcasts/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn't Enough</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  Auto-generated podcasts turn any text into natural-sounding audio, but they're thin on examples and ask no real questions. So I built a pipeline that digests a paper with concrete examples and an interviewer-grade questioner — as an on-ramp to the primary source, not a replacement for it.
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >5 min</span
+              >
+              
+            </li>
+            
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/en/2025/09/17/sanpou-issue/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app.
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >4 min</span
+              >
+              
+            </li>
+            
+          </ul>
+          
+        </section>
         
+        <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
           
-          <section
-            class="stage-sec is-active"
-            data-stage-sec="1"
-            id="stage-1"
-          >
+        <section
+          class="stage-sec"
+          data-stage-sec="2"
+          id="stage-2"
+        >
+          
+          <ul class="list-none space-y-4 pl-0">
             
-            <ul class="list-none space-y-4 pl-0">
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/en/2026/06/25/papers-into-podcasts/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn't Enough</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    Auto-generated podcasts turn any text into natural-sounding audio, but they're thin on examples and ask no real questions. So I built a pipeline that digests a paper with concrete examples and an interviewer-grade questioner — as an on-ramp to the primary source, not a replacement for it.
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >5 min</span
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/en/2026/07/13/obsidian-katazuke/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust</a
                 >
-                
-              </li>
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/en/2025/09/17/sanpou-issue/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >How Walking to Get More Exercise Led to an Insight About Intellectual Productivity and an App Idea</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    A simple habit I started for exercise has, in a roundabout way, led me to think about intellectual production, the challenge of capturing thought, and a concept for an app.
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >4 min</span
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
                 >
-                
-              </li>
+                  Notes I once thought were important, now quietly gathering dust. Before adding new connections, let go of the old ones. The story of an Obsidian plugin I built to help with that kind of tidying.
+                </p>
+              </div>
               
-            </ul>
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >3 min</span
+              >
+              
+            </li>
             
-          </section>
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/en/2025/08/18/art-of-forgetting/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >The Art of Forgetting in this Information Society</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  An architecture of being able to forget matters in this information society.
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >2 min</span
+              >
+              
+            </li>
+            
+          </ul>
           
-          <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
-          
+        </section>
         
+        <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
           
-          <section
-            class="stage-sec"
-            data-stage-sec="2"
-            id="stage-2"
-          >
+        <section
+          class="stage-sec"
+          data-stage-sec="3"
+          id="stage-3"
+        >
+          
+          <ul class="list-none space-y-4 pl-0">
             
-            <ul class="list-none space-y-4 pl-0">
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/en/2026/07/13/obsidian-katazuke/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    Notes I once thought were important, now quietly gathering dust. Before adding new connections, let go of the old ones. The story of an Obsidian plugin I built to help with that kind of tidying.
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >3 min</span
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/en/2026/07/03/refactor-obsidian/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >The Notes You Can No Longer Find, and Two Kinds of Work</a
                 >
-                
-              </li>
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/en/2025/08/18/art-of-forgetting/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >The Art of Forgetting in this Information Society</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    An architecture of being able to forget matters in this information society.
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >2 min</span
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
                 >
-                
-              </li>
+                  The more notes you keep, the harder it is to reach the one you want. You recut folders, add tags, and it collapses again. Organizing itself had become the work. But organizing is two things: the kind you may hand off, and the kind you must not.
+                </p>
+              </div>
               
-            </ul>
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >4 min</span
+              >
+              
+            </li>
             
-          </section>
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/en/2026/03/20/obsidian-edit-count/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >I Built an Obsidian Plugin to Surface My Most-Edited Notes</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  An Obsidian plugin that automatically counts meaningful edits and helps you identify the notes you revisit most. Here's the thought process behind building it.
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >3 min</span
+              >
+              
+            </li>
+            
+            <li class="flex items-baseline justify-between gap-4">
+              <div class="min-w-0">
+                <a
+                  href="/en/2025/07/02/we-must-not-delegate-understanding/"
+                  class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
+                  >We Must Not Delegate Understanding</a
+                >
+                <p
+                  class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400"
+                >
+                  In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.
+                </p>
+              </div>
+              
+              <span
+                class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
+                >1 min</span
+              >
+              
+            </li>
+            
+          </ul>
           
-          <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
-          
+        </section>
         
+        <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
           
-          <section
-            class="stage-sec"
-            data-stage-sec="3"
-            id="stage-3"
-          >
-            
-            <ul class="list-none space-y-4 pl-0">
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/en/2026/07/03/refactor-obsidian/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >The Notes You Can No Longer Find, and Two Kinds of Work</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    The more notes you keep, the harder it is to reach the one you want. You recut folders, add tags, and it collapses again. Organizing itself had become the work. But organizing is two things: the kind you may hand off, and the kind you must not.
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >4 min</span
-                >
-                
-              </li>
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/en/2026/03/20/obsidian-edit-count/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >I Built an Obsidian Plugin to Surface My Most-Edited Notes</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    An Obsidian plugin that automatically counts meaningful edits and helps you identify the notes you revisit most. Here's the thought process behind building it.
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >3 min</span
-                >
-                
-              </li>
-              
-              <li class="flex items-baseline justify-between gap-4">
-                <div class="min-w-0">
-                  <a
-                    href="/en/2025/07/02/we-must-not-delegate-understanding/"
-                    class="block text-base font-semibold leading-snug text-blue-500 hover:underline dark:text-blue-400"
-                    >We Must Not Delegate Understanding</a
-                  >
-                  <p class="pkm-clamp2 mt-0.5 text-[13px] leading-relaxed text-gray-600 dark:text-gray-400">
-                    In an era where generative AI can tell sophisticated lies, we must not delegate the act of thinking and connecting dots in our own words.
-                  </p>
-                </div>
-                
-                <span class="shrink-0 whitespace-nowrap text-xs text-gray-400 dark:text-gray-500"
-                  >1 min</span
-                >
-                
-              </li>
-              
-            </ul>
-            
-          </section>
+        <section
+          class="stage-sec"
+          data-stage-sec="4"
+          id="stage-4"
+        >
           
-          <div class="h-px bg-gray-100 dark:bg-gray-800"></div>
+          <p class="text-[13px] text-gray-500 dark:text-gray-400">
+            Posts
+            for this stage are coming.
+          </p>
           
-        
-          
-          <section
-            class="stage-sec"
-            data-stage-sec="4"
-            id="stage-4"
-          >
-            
-            <p class="text-[13px] text-gray-500 dark:text-gray-400">
-              Posts for this stage are coming.
-            </p>
-            
-          </section>
-          
-        
+        </section>
+         
       </div>
 
       <!-- 下端: リストが余白に溶けるフェード帯 -->
@@ -1040,10 +1122,16 @@
 
         function activate(stage) {
           items.forEach((el) =>
-            el.classList.toggle("is-active", el.dataset.stage === String(stage)),
+            el.classList.toggle(
+              "is-active",
+              el.dataset.stage === String(stage),
+            ),
           );
           miniItems.forEach((el) =>
-            el.classList.toggle("is-active", el.dataset.stage === String(stage)),
+            el.classList.toggle(
+              "is-active",
+              el.dataset.stage === String(stage),
+            ),
           );
           secs.forEach((el) =>
             el.classList.toggle(
@@ -1099,7 +1187,9 @@
           pinnedUntil = Date.now() + 900;
           const sec = document.getElementById(`stage-${stage}`);
           const sticky = getComputedStyle(map).position === "sticky";
-          const offset = sticky ? map.offsetHeight + 16 : mini.offsetHeight + 12;
+          const offset = sticky
+            ? map.offsetHeight + 16
+            : mini.offsetHeight + 12;
           window.scrollTo({
             top: sec.getBoundingClientRect().top + window.scrollY - offset,
             behavior: "smooth",
