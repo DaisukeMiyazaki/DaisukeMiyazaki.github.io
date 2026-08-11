@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="dark:text-gray-100">
+  <header class="mb-2">
+    <p class="meta text-xs text-gray-600 dark:text-gray-400">
+      <time datetime="{{page.date | date_to_xmlschema}}"
+        >{{ page.date | date: "%b %-d, %Y"}}</time
+      >
+    </p>
+    <h1 class="title text-base font-bold dark:text-primary-light">
+      {{ page.title }}
+    </h1>
+  </header>
+
+  <div class="dakr:prose-invert prose prose-sm w-full max-w-none break-words">
+    {{content}}
+  </div>
+</article>
+
+<p class="mt-4 text-sm">
+  <a
+    href="{% if page.lang == 'jp' %}/jp/note/{% else %}/en/notes/{% endif %}"
+    class="text-blue-500 dark:text-blue-400"
+  >
+    {% if page.lang == 'jp' %} ノート一覧 {% else %} All notes{% endif %}
+  </a>
+</p>

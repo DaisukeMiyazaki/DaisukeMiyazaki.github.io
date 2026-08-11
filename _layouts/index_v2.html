@@ -109,9 +109,33 @@
         </div>
       </a>
 
+      <!-- 最近のノートをその場に展開 -->
+      {% assign recent_notes = site.notes | where: "lang", page.lang | sort:
+      "date" | reverse %} {% if recent_notes.size > 0 %}
+      <section class="mb-2 mt-2">
+        <div class="mb-1 flex items-baseline justify-between">
+          <h2
+            class="text-xs font-bold tracking-widest text-blue-500 dark:text-blue-400"
+          >
+            {% if page.lang == 'jp' %}最近のノート{% else %}Recent Notes{% endif
+            %}
+          </h2>
+          <a
+            href="{% if page.lang == 'jp' %}/jp/notes/{% else %}/en/notes/{% endif %}"
+            class="text-sm font-medium text-blue-500 hover:underline dark:text-blue-400"
+          >
+            {% if page.lang == 'jp' %}すべて見る{% else %}All Notes{% endif %}
+          </a>
+        </div>
+        {% for note in recent_notes limit:5 %} {% include note_item.html
+        note=note %}{% endfor %}
+      </section>
+      {% endif %}
+
       <div class="flex flex-col gap-2" id="gallery-grid">
         {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
         posts %}
+
         <a
           href="{{ post.url }}"
           class="gallery-item group block cursor-pointer"

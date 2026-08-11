@@ -8,12 +8,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 STAGING = ROOT / "staging"
-POSTS = ROOT / "jp" / "_posts"
+NOTES = ROOT / "_notes"
 PACKET_VERSION = 1
 
 def die(message):
     """stop without writing anything"""
-    print(f"{message}")
+    print(f"〆 {message}")
     sys.exit(1)
 
 def enc(name):
@@ -35,7 +35,7 @@ def list_packets():
         print(f"  {d.name}\t{meta['title']}\t(exported {meta['exportedAt'][:10]})")
     print("\n  python tools/blog_from_packet.py <slug>")
 
-def load_packet(slug):
+def load_packet(slug, lang):
     """read and validate the packet. Any violoation stops the run"""
     d = STAGING / slug
     if not d.exists():
@@ -50,15 +50,26 @@ def load_packet(slug):
     if meta["slug"] != slug:
         die(f"meta.json の slug ({meta['slug']}) がディレクトリ名と違います")
     for a in meta["attachments"]:
-        if not (d / "attachments" / a["file"].exists()):
+        if not (d / "attachments" / a["file"]).exists():
             die(f"添付が見つかりません: {a['file']}")
-    if any(re.sub(r"^\d{4}-\d{2}-\d{2}-", "", f.name) == f"{slug}.md" for f in POSTS.iterdir()):
-        die("同じslugの記事がすでにあります")
+    if (NOTES / lang / f"{slug}.md").exists():
+        die("同じslugの記事がすでにあります: _notes/{lang}/{slug}.md")
 
     return d, meta
 
 
-def transform(body, slug):
+def resolve_target(target, lang):
+    """build the URL for a blogref targert, or None if it is not published yet"""
+    if (NOTES/ lang / "f{target}.md").exists():
+        return f"/{lang}/notes/{target}/"
+    for f in (ROOT/ lang/ "_posts").iterdir():
+        m = re.match(rf"^(\d{{4}})-(\d{{2}})-(\d{{2}})-{re.escape(target)}\.md$", f.name)
+        if m:
+            return f"/{lang}/{m.group(1)}/{m.group(2)}/{m.group(3)}/{target}/"
+    return None
+
+
+def transform(body, slug, lang):
     """rewrite image paths, demote h1, and resolve blogref markers"""
     body = re.sub(
         r"\]\(attachments/([^)]+)\)",
@@ -68,19 +79,16 @@ def transform(body, slug):
     # the layout renders the title, so a body h1 would duplicate it
     body = re.sub(r"^# (?=\S)", "## ", body, flags=re.MULTILINE)
 
-    existing = [f.name for f in POSTS.iterdir() if f.suffix == ".md"]
     resolved, dropped = [], []
 
     def resolve(m):
         text, target = m.group(1), m.group(2)
-        found = next((n for n in existing if n == "f{target}.md" or n.endswith("f-{target}.md")), None)
-        date_part = re.match(r"^(\d{4})-(\d{2})-(\d{2})-", found or "")
-        if not date_part:
+        url = resolve_target(target, lang)
+        if url is None:
             dropped.append(target)
             return text
         resolved.append(target)
-        y, mo, d = date_part.groups()
-        return f"[{text}](/jp/{y}/{mo}/{d}/{target}/)"
+        return f"[{text}]({url})"
 
     body = re.sub(r"\[([^\]]*)\]\(blogref:([^)]+)\)", resolve, body)
     if "](blogref:" in body:
@@ -88,95 +96,81 @@ def transform(body, slug):
 
     return body, resolved, dropped
 
-def make_excerpt(body, limit=120):
-    """take first 120 characters of prose, skipping heading and quotes"""
-    lines = [
-        re.sub(r"^\s*[-*+]\s+", "", line)
-        for line in body.split("\n")
-        if line.strip() and not re.match(r"^\s*[#>|]", line)
-    ]
-    plain = "".join(lines)
-    plain = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", plain)
-    plain = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", plain)
-    plain = re.sub(r"[*`]", "", plain).strip()
-    return plain[:limit] + "…" if len(plain) > limit else plain
-
-
-def build_post(meta, date, body, slug):
+def build_note(meta, date, body, slug, lang):
     """Assemble the front matter and body"""
     attachments = meta["attachments"]
     thumbnail = f"/assets/images/{slug}/{enc(attachments[0]['file'])}" if attachments else ""
     return (
         "---\n"
-        "layout: post\n"
+        "layout: note\n"
         f"date: {date}\n"
         f"title: {yaml_str(meta['title'])}\n"
-        f"excerpt: {yaml_str(make_excerpt(body))}\n"
-        "comments: true\n"
-        "lang: jp\n"
-        f"lang-ref: {slug}\n"
-        "genre: 実用\n"
+        f"lang: {lang}\n"
+        f"permalink: /{lang}/notes/{slug}/\n"
         f"thumbnail: {thumbnail}\n"
         "---\n\n"
         f"{body.strip()}\n"
     )
 
 
-def publish(packet_dir, meta, slug, date, post):
-    """write the draft, move the images, and retire the packet"""
+def publish(packet_dir, meta, slug, lang, date, note):
+    """write the note, move the images, and retire the packet"""
     if meta["attachments"]:
         img_dir = ROOT / "assets" / "images" / slug
         img_dir.mkdir(parents=True, exist_ok=True)
         for a in meta["attachments"]:
             shutil.copy2(packet_dir / "attachments" / a["file"], img_dir / a["file"])
 
-    name = f"{date}-{slug}.md"
-    (POSTS/ name).write_text(post, encoding="utf-8")
+    out = NOTES / lang / f"{slug}.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(note, encoding="utf-8")
 
     # attachments live in assets/ so the reired packet does not keep them
     done_dir = STAGING / "done" / slug
     done_dir.mkdir(parents=True, exist_ok=True)
     meta["published"] = {
         "date": date,
-        "jp": f"jp/_posts/{name}",
+        "note": f"_notes/{lang}/{slug}.md",
+        "url": f"/{lang}/notes/{slug}/",
         "transcribedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
     }
     (done_dir / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     shutil.move(str(packet_dir/ "note.md"), str(done_dir / "note.md"))
     shutil.rmtree(packet_dir)
-    return name
+    return out
 
 def main():
-    parser = argparse.ArgumentParser(description="packetを jp/_postsの下書きに転写する")
+    parser = argparse.ArgumentParser(description="packetを_notesに転写する")
     parser.add_argument("slug", nargs="?", help="省略するとstagingの候補を並べる")
     parser.add_argument("--dry", action="store_true", help="書かずに出力を表示する")
+    parser.add_argument("--lang", default="jp", help="ノートの言語(default: jp)")
     args = parser.parse_args()
 
     if not args.slug:
         list_packets()
         return
 
-    packet_dir, meta = load_packet(args.slug)
+    packet_dir, meta = load_packet(args.slug, args.lang)
     date = datetime.fromisoformat(meta["exportedAt"].replace("Z", "+00:00")).astimezone().strftime("%Y-%m-%d")
 
     body = (packet_dir / "note.md").read_text(encoding="utf-8")
-    body, resolved, dropped = transform(body, args.slug)
+    body, resolved, dropped = transform(body, args.slug, args.lang)
     if len(resolved) + len(dropped) != sum(l["occurrences"] for l in meta["links"]):
         die("マーカーの件数がmeta.jsonのlinksと合いません")
 
-    post = build_post(meta, date, body, args.slug)
+    note = build_note(meta, date, body, args.slug, args.lang)
     if args.dry:
-        print(post)
+        print(note)
         return
 
-    name = publish(packet_dir, meta, args.slug, date, post)
-    print(f"✓  jp/_posts/{name}")
+    out = publish(packet_dir, meta, args.slug, args.lang, date, note)
+    print(f"✓  {out.relative_to(ROOT)}  →  /{args.lang}/notes/{args.slug}/")
     if meta["attachments"]:
         print(f"  画像 {len(meta['attachments'])} 枚 → assets/images/{args.slug}/")
     if resolved:
         print(f"  リンク解決 {len(resolved)} 件")
     if dropped:
-        print(f"  リンクを外した: {', '.join(sorted(set(dropped)))}（該当記事が未転写）")
+         print(f"  リンクを外した: {', '.join(sorted(set(dropped)))}（未公開）")
     print(f"  packet → staging/done/{args.slug}/")
 
 if __name__ == "__main__":

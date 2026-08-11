@@ -15,6 +15,9 @@ plugins:
 
 feed:
   path: atom.xml
+  collections:
+    notes:
+      path: notes.xml
 
 postcss:
   cache: false
@@ -27,3 +30,5 @@ collections:
   recipes:
     output: true
     permalink: /recipes/:path/
+  notes:
+    output: true
