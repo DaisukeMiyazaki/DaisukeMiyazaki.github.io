@@ -562,8 +562,84 @@
         </div>
       </a>
 
+      <!-- 最近のノートをその場に展開 -->
+       
+      <section class="mb-2 mt-2">
+        <div class="mb-1 flex items-baseline justify-between">
+          <h2
+            class="text-xs font-bold tracking-widest text-blue-500 dark:text-blue-400"
+          >
+            最近のノート
+          </h2>
+          <a
+            href="/jp/notes/"
+            class="text-sm font-medium text-blue-500 hover:underline dark:text-blue-400"
+          >
+            すべて見る
+          </a>
+        </div>
+         <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
+<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+  <p class="text-xs text-gray-500 dark:text-gray-400">
+    <time datetime="2026-08-11T00:00:00+00:00"
+      >Aug 11, 2026</time
+    >
+  </p>
+  <h2 class="mb-2 mt-1 text-base font-bold">
+    <a
+      href="/jp/notes/promt-for-protect-your-understanding/"
+      class="text-gray-900 no-underline hover:text-blue-600 dark:text-gray-50 dark:hover:text-blue-400"
+    >
+      理解を壊さないためのプロンプト
+    </a>
+  </h2>
+  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+    <p><a href="https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/">Ankur Sethi</a> から引用</p>
+
+<blockquote>
+  <p>I want to understand every line of code that goes into this project. Never create, edit, move, rename, or delete project files unless I explicitly ask you to do so. Instead, show me every proposed edit in the chat so I can type it in manually.</p>
+
+  <p>Do not run commands that modify project files, install dependencies, or change repository state unless I explicitly request that action. Instead, show me those commands in the chat so I can run them manually.</p>
+
+  <p>I’m an experienced developer. Do not explain syntax, APIs, programming concepts, or implementation details unless explicitly asked.</p>
+</blockquote>
+
+  </div>
+</article>
+ <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
+<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+  <p class="text-xs text-gray-500 dark:text-gray-400">
+    <time datetime="2026-08-10T00:00:00+00:00"
+      >Aug 10, 2026</time
+    >
+  </p>
+  <h2 class="mb-2 mt-1 text-base font-bold">
+    <a
+      href="/jp/notes/digital-wellbeing-01/"
+      class="text-gray-900 no-underline hover:text-blue-600 dark:text-gray-50 dark:hover:text-blue-400"
+    >
+      デジタルウェルビーイング
+    </a>
+  </h2>
+  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+    <p><a href="https://wellbeing.google/">Digital Wellbeing through technology</a></p>
+
+<blockquote>
+  <p>Find a balance with technology that feels right for you.
+As technology becomes more and more integral to everything we do, it can sometimes distract us from the things that matter most to us. We believe technology should improve life, not distract from it. We’re committed to giving everyone the tools they need to develop their own sense of digital wellbeing. So that life, not the technology in it, stays front and center.</p>
+</blockquote>
+
+<p>職業がソフトウェア開発であるからこそ1日にスクリーンを見ている時間は平均して10時間を超える。1日10時間もテクノロジーに触れている、と言ったら普通の人であれば誰もが「技術のしもべ」になっているというであろう。自分がしもべと思ってなくても、この塩梅や匙加減を覚えるには試行錯誤しないといけない</p>
+
+  </div>
+</article>
+
+      </section>
+      
+
       <div class="flex flex-col gap-2" id="gallery-grid">
          
+
         <a
           href="/jp/2026/07/13/obsidian-katazuke/"
           class="gallery-item group block cursor-pointer"
@@ -596,6 +672,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2026/07/03/refactor-obsidian/"
           class="gallery-item group block cursor-pointer"
@@ -628,6 +705,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2026/06/25/papers-into-podcasts/"
           class="gallery-item group block cursor-pointer"
@@ -660,6 +738,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2026/04/09/The-Indentation-Project-Part-1/"
           class="gallery-item group block cursor-pointer"
@@ -692,6 +771,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2026/03/20/obsidian-edit-count/"
           class="gallery-item group block cursor-pointer"
@@ -724,6 +804,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2026/01/04/leather-looseleaf/"
           class="gallery-item group block cursor-pointer"
@@ -756,6 +837,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/12/22/calendar-auto-route/"
           class="gallery-item group block cursor-pointer"
@@ -788,6 +870,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/"
           class="gallery-item group block cursor-pointer"
@@ -820,6 +903,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/09/16/sanpou-issue/"
           class="gallery-item group block cursor-pointer"
@@ -852,6 +936,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/08/18/art-of-forgetting/"
           class="gallery-item group block cursor-pointer"
@@ -884,6 +969,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/07/02/understanding-delegation/"
           class="gallery-item group block cursor-pointer"
@@ -916,6 +1002,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"
           class="gallery-item group block cursor-pointer"
@@ -948,6 +1035,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
           class="gallery-item group block cursor-pointer"
@@ -980,6 +1068,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"
           class="gallery-item group block cursor-pointer"
@@ -1012,6 +1101,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver4/"
           class="gallery-item group block cursor-pointer"
@@ -1044,6 +1134,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
           class="gallery-item group block cursor-pointer"
@@ -1076,6 +1167,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
           class="gallery-item group block cursor-pointer"
@@ -1108,6 +1200,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver1/"
           class="gallery-item group block cursor-pointer"
@@ -1140,6 +1233,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
           class="gallery-item group block cursor-pointer"
@@ -1172,6 +1266,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2023/09/02/%E9%9B%AB/"
           class="gallery-item group block cursor-pointer"
@@ -1204,6 +1299,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2023/08/21/%E3%83%99%E3%83%B3%E3%83%81/"
           class="gallery-item group block cursor-pointer"
@@ -1236,6 +1332,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9/"
           class="gallery-item group block cursor-pointer"
@@ -1268,6 +1365,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2022/08/08/%E7%B7%91%E5%8C%96%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1/"
           class="gallery-item group block cursor-pointer"
@@ -1300,6 +1398,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2022/05/06/%E3%82%AE%E3%83%A3%E3%83%83%E3%83%97%E3%82%A4%E3%83%A4%E3%83%BC/"
           class="gallery-item group block cursor-pointer"
@@ -1332,6 +1431,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2021/05/12/%E6%8C%81%E3%81%A1%E7%89%A9/"
           class="gallery-item group block cursor-pointer"
@@ -1364,6 +1464,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2020/11/23/%E6%9D%B1%E4%BA%AC/"
           class="gallery-item group block cursor-pointer"
@@ -1396,6 +1497,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2020/09/20/%E3%82%B5%E3%82%B9%E3%83%86%E3%83%8A%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3/"
           class="gallery-item group block cursor-pointer"
@@ -1428,6 +1530,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2020/04/04/%E5%B3%A0%E9%81%93/"
           class="gallery-item group block cursor-pointer"
@@ -1460,6 +1563,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/"
           class="gallery-item group block cursor-pointer"
@@ -1492,6 +1596,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/2018/08/30/%E6%8B%99%E6%9B%B8/"
           class="gallery-item group block cursor-pointer"
@@ -1524,6 +1629,7 @@
           </p>
         </a>
         
+
         <a
           href="/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/"
           class="gallery-item group block cursor-pointer"
