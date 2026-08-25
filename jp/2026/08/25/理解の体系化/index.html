@@ -7,7 +7,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link
     rel="canonical"
-    href="https://mdaisuke.net/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/"
+    href="https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/"
   />
 
   <link
@@ -18,7 +18,7 @@
   />
 
   <title>
-     Launch &middot; Daisuke Miyazaki's Blog 
+     ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？ &middot; Daisuke Miyazaki's Blog 
   </title>
 
   <!--costom CSS-->
@@ -30,14 +30,14 @@
   <meta name="author" content="Daisuke Miyazaki" />
   <meta
     name="description"
-    content="私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。"
+    content="「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？"
   />
 
   <!-- open graph -->
   
   <meta
     property="og:title"
-    content="Launch"
+    content="ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？"
   />
   <meta
     property="og:type"
@@ -45,13 +45,13 @@
   />
   <meta
     property="og:image"
-    content="https://mdaisuke.net/assets/images/ocean.jpeg"
+    content="https://mdaisuke.net/pics/avatar.jpg"
   />
   <meta
     property="og:description"
-    content="私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。"
+    content="「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？"
   />
-  <meta property="og:url" content="https://mdaisuke.net/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/" />
+  <meta property="og:url" content="https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/" />
   <meta
     property="og:locale"
     content="ja_JP"
@@ -60,7 +60,7 @@
   
   <meta
     property="article:published_time"
-    content="2020-01-20T00:00:00+00:00"
+    content="2026-08-25T00:00:00+00:00"
   />
   <meta property="article:author" content="Daisuke Miyazaki" />
   
@@ -69,8 +69,176 @@
     
   <link
     rel="alternate"
+    hreflang="en"
+    href="/en/2026/07/13/obsidian-katazuke/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2026/04/09/The-Indentation-Project-Part-1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2026/03/20/obsidian-edit-count/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2026/01/04/leather-looseleaf/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/12/22/calendar-auto-route/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/09/17/sanpou-issue/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/08/18/art-of-forgetting/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/07/02/we-must-not-delegate-understanding/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="/en/2025/01/20/The-Uneven-Project-ver1/"
+  />
+  
+  <link
+    rel="alternate"
     hreflang="jp"
-    href="/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/"
+    href="/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2026/07/13/obsidian-katazuke/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2026/04/09/The-Indentation-Project-Part-1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2026/03/20/obsidian-edit-count/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2026/01/04/leather-looseleaf/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/12/22/calendar-auto-route/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/10/27/%E5%A4%95%E6%9A%AE%E3%82%8C%E3%81%AE%E9%9D%92%E6%A9%99/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/09/16/sanpou-issue/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/08/18/art-of-forgetting/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/07/02/understanding-delegation/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/06/16/%E5%A4%8F%E3%81%8C%E5%A7%8B%E3%81%BE%E3%81%A3%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver4/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver3/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver2/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/20/%E4%BE%8B%E3%81%AE%E5%87%B8%E5%87%B9-ver1/"
+  />
+  
+  <link
+    rel="alternate"
+    hreflang="jp"
+    href="/jp/2025/01/13/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%99%E3%83%B3%E3%83%81/"
   />
    
 
@@ -82,16 +250,16 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://mdaisuke.net/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/" },
-    "url": "https://mdaisuke.net/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/",
-    "headline": "Launch",
-    "description": "私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。",
-    "datePublished": "2020-01-20T00:00:00+00:00",
-    "dateModified": "2020-01-20T00:00:00+00:00",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/" },
+    "url": "https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/",
+    "headline": "ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？",
+    "description": "「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？",
+    "datePublished": "2026-08-25T00:00:00+00:00",
+    "dateModified": "2026-08-25T00:00:00+00:00",
     "inLanguage": "ja",
     "author": { "@type": "Person", "name": "Daisuke Miyazaki", "url": "https://mdaisuke.net" },
     "publisher": { "@type": "Person", "name": "Daisuke Miyazaki", "url": "https://mdaisuke.net" },
-    "image": "https://mdaisuke.net/assets/images/ocean.jpeg"
+    "image": "https://mdaisuke.net/pics/avatar.jpg"
   }
   </script>
   
@@ -276,10 +444,10 @@
       <div class="dark:text-gray-100">
   <header class="mb-8">
     <p class="meta text-xs text-gray-600 dark:text-gray-400">
-      Jan 20, 2020
+      Aug 25, 2026 • 約4分
     </p>
     <h1 class="title text-base font-bold dark:text-primary-light">
-      Launch
+      ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？
     </h1>
     
 
@@ -295,31 +463,31 @@
       要点
     </p>
     <p class="m-0 text-sm text-gray-700 dark:text-gray-300">
-      私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。
+      「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？
     </p>
   </aside>
   
 
   <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
-    <p>　私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。</p>
+    <p><em>ソースコード</em> をagentが書く前提で、エンジニアはソースをどう体系化して管理すれば、十分に長続きする理解を委任しないままソフトウェアを運用できるか？</p>
 
-<p>　その海には嘘が隠れているかも知れないし、それと対照的に、包み隠さない真実も埋もれているかもしれない。その海はあまりに身近で、そして広く深く、際限なく続くのである。その果てを、１人として見切ることはできないのかもしれない。</p>
+<p>将棋棋士は必ずAIの評価値をみるだけでなく、新しい戦法の研究では棋譜を並べる。彼らは理解を委任しない。</p>
 
-<p>　さて、今すぐそのスクリーンから目を離して、すぐ目の前の世界はどう見えるだろうか。</p>
+<p>本質的な人間の認知資源には限りがある。その中で、使われていない分岐。ベルカーブの極端にいるユーザーのための機能。競合他社に追いつくためのとりあえずの機能。これらは人的で限りある資源を技術的、認知的負債の両面で消費する。</p>
 
-<p>　そこには肌に刺すような冷たい風や、慣れ親しんだバスのエンジンの音、湿った雨の匂いが広がるはず。0と1が踊る世界にない、階段を降りるときに足を伝う重力、乱立する建物や広大な土地の遠近感を、感じはしないか。</p>
+<p>ソフトウェアを動かすものは <em>実行可能なソースコード</em> である。しかしそれを <em>創出する</em> こと自体が安価になってしまった結果、乖離が発生している。これまで当たり前にあった「書き手の十分な理解」と出てくるソースコードの非対称性である。</p>
 
-<p>　そんな中でも、ふと気がつけば手を伸ばすもの。貴方のポケットに忍ぶ”小さな”魔法は、人の本能と理性を培う脳の外側に位置しながらも、その持ち主にひっそりと最適化し続けている。それはおろか、写真や動画によって半永久的に持ち主の記憶能力を拡張し、5,000マイル離れた場所にいる人との連絡を可能にし、はたまた知識の所有者を変えつつある。その百科事典はもう頭の中でなく、その海に存在するのだ。つまり、知識の所有者を隔てた境界線は、以前より遥かにぼんやりとしている。</p>
+<p>Agenticコーディング以前は適当な理解で仕立てたコードでは要求や非機能要件を満たすことが原理的にできなかった。当たり前だが非対称性を紐づけていたのは「十分に長続きする理解のための書き手の血肉」にあった。</p>
 
-<p>　人には元々、本能と理性も同時に共在する。このうちどちらかを取り除きたいと言う人は、おそらくいないだろう。今、自分の手足となった魔法を解きたいと思う人も、おそらくいないのだろう。</p>
+<p>シーケンスダイアグラムやER図、包括的なドキュメンテーション。コードベースの空間認識やある種の概念モデルへの紐づけ。これらはソースコードに <em>結果として</em> 閉じ込めた手前で、その過程で生まれてくるものである。畳み込まれ収束したソースコードの手前には、発散した大きなストーリーがあり試行錯誤がある。</p>
 
-<p>　そしてその逆戻りは、きっとないのだ。</p>
+<p>これはただ綺麗なソースコードだけを見るだけでは構造的に生まれず、ある種発散したカオスを文章化や図式化を通して収束させ生じるものである。発散から収束までの過程を辿るのが十分に長いこと理解するという行為そのものである。「要求を加味した仕様を咀嚼し機械語まで翻訳する」といえば、ソフトウェアの工程に具体化できよう。</p>
 
-<p>　僕は、世界中の皆んなが魔法使いになったと観ている。でもみんな、その魔法の使い道を探している最中、そんな風にも見える。僕だってその1人に違いない。これを革命以外の、何と呼ぶのであろうか。</p>
+<p>ソフトウェアは要求を最も荒い粒度として、実行可能で最も冗長な記述の塊である。冗長な規約文章は99%の人は読まず、ハイコンテキストな理解まで昇華させ不必要な所を意図的に忘却/無視する。十分な理解を抜きにこの昇華も忘却も行えないのだ。</p>
 
-<p>　その中で、私たちになくてはならないもの、それってなんだろう?そんな思いや考えにふけて、道草を食いたくなる。きっとこれも、なくてはならないものの1つだったりして。</p>
+<p>「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？デジタルなものづくりの実装者、そして組織づくりをする立場の人に問われていると思う。</p>
 
-<p>どうも、最後まで読んでくれてありがとうございます。</p>
+<p>この過程を名人芸として体系化することなく、この議論を抜きにして「コードを書いた人、マージした人が責任を持て」だったり「ソースコードを書く時間が圧倒的に短くなったから、大量の機能を同じ工数で実装しきれるはずである」と指示するのは中長期で間に合わなくなってくると思う。速度を取った10xではなく、質を取った2xを目指すべきでなかろうか。</p>
 
   </div>
 
@@ -460,19 +628,6 @@
     <ul class="list-none pl-0">
       
       <li>
-        <a href="/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/" class="group block no-underline">
-          <span
-            class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
-          >
-            ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？
-          </span>
-          <small class="mt-1 block text-gray-500 dark:text-gray-400">
-            25 Aug 2026
-          </small>
-        </a>
-      </li>
-      
-      <li>
         <a href="/jp/2026/07/13/obsidian-katazuke/" class="group block no-underline">
           <span
             class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
@@ -494,6 +649,19 @@
           </span>
           <small class="mt-1 block text-gray-500 dark:text-gray-400">
             03 Jul 2026
+          </small>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/jp/2026/06/25/papers-into-podcasts/" class="group block no-underline">
+          <span
+            class="block text-sm text-primary-link no-underline dark:text-primary-link-dark"
+          >
+            積読の論文は読むよりまず聞きたいが、自動ポッドキャストでは物足りなかった
+          </span>
+          <small class="mt-1 block text-gray-500 dark:text-gray-400">
+            25 Jun 2026
           </small>
         </a>
       </li>

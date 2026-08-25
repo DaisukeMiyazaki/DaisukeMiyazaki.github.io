@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2026-08-20T02:01:18+00:00</updated><id>https://mdaisuke.net/atom.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="en"><title type="html">I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust</title><link href="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/" rel="alternate" type="text/html" title="I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust" /><published>2026-07-13T00:00:00+00:00</published><updated>2026-07-13T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/07/13/obsidian-katazuke</id><content type="html" xml:base="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/">&lt;p&gt;I built an Obsidian plugin that finds and helps you tidy up the notes you once thought were important but that have quietly gathered dust. It’s out now as an &lt;a href=&quot;https://community.obsidian.md/plugins/katazuke&quot;&gt;official community plugin&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2026-08-25T10:51:51+00:00</updated><id>https://mdaisuke.net/atom.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？</title><link href="https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/" rel="alternate" type="text/html" title="ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？" /><published>2026-08-25T00:00:00+00:00</published><updated>2026-08-25T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/">&lt;p&gt;&lt;em&gt;ソースコード&lt;/em&gt; をagentが書く前提で、エンジニアはソースをどう体系化して管理すれば、十分に長続きする理解を委任しないままソフトウェアを運用できるか？&lt;/p&gt;
+
+&lt;p&gt;将棋棋士は必ずAIの評価値をみるだけでなく、新しい戦法の研究では棋譜を並べる。彼らは理解を委任しない。&lt;/p&gt;
+
+&lt;p&gt;本質的な人間の認知資源には限りがある。その中で、使われていない分岐。ベルカーブの極端にいるユーザーのための機能。競合他社に追いつくためのとりあえずの機能。これらは人的で限りある資源を技術的、認知的負債の両面で消費する。&lt;/p&gt;
+
+&lt;p&gt;ソフトウェアを動かすものは &lt;em&gt;実行可能なソースコード&lt;/em&gt; である。しかしそれを &lt;em&gt;創出する&lt;/em&gt; こと自体が安価になってしまった結果、乖離が発生している。これまで当たり前にあった「書き手の十分な理解」と出てくるソースコードの非対称性である。&lt;/p&gt;
+
+&lt;p&gt;Agenticコーディング以前は適当な理解で仕立てたコードでは要求や非機能要件を満たすことが原理的にできなかった。当たり前だが非対称性を紐づけていたのは「十分に長続きする理解のための書き手の血肉」にあった。&lt;/p&gt;
+
+&lt;p&gt;シーケンスダイアグラムやER図、包括的なドキュメンテーション。コードベースの空間認識やある種の概念モデルへの紐づけ。これらはソースコードに &lt;em&gt;結果として&lt;/em&gt; 閉じ込めた手前で、その過程で生まれてくるものである。畳み込まれ収束したソースコードの手前には、発散した大きなストーリーがあり試行錯誤がある。&lt;/p&gt;
+
+&lt;p&gt;これはただ綺麗なソースコードだけを見るだけでは構造的に生まれず、ある種発散したカオスを文章化や図式化を通して収束させ生じるものである。発散から収束までの過程を辿るのが十分に長いこと理解するという行為そのものである。「要求を加味した仕様を咀嚼し機械語まで翻訳する」といえば、ソフトウェアの工程に具体化できよう。&lt;/p&gt;
+
+&lt;p&gt;ソフトウェアは要求を最も荒い粒度として、実行可能で最も冗長な記述の塊である。冗長な規約文章は99%の人は読まず、ハイコンテキストな理解まで昇華させ不必要な所を意図的に忘却/無視する。十分な理解を抜きにこの昇華も忘却も行えないのだ。&lt;/p&gt;
+
+&lt;p&gt;「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？デジタルなものづくりの実装者、そして組織づくりをする立場の人に問われていると思う。&lt;/p&gt;
+
+&lt;p&gt;この過程を名人芸として体系化することなく、この議論を抜きにして「コードを書いた人、マージした人が責任を持て」だったり「ソースコードを書く時間が圧倒的に短くなったから、大量の機能を同じ工数で実装しきれるはずである」と指示するのは中長期で間に合わなくなってくると思う。速度を取った10xではなく、質を取った2xを目指すべきでなかろうか。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？</summary></entry><entry xml:lang="en"><title type="html">I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust</title><link href="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/" rel="alternate" type="text/html" title="I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust" /><published>2026-07-13T00:00:00+00:00</published><updated>2026-07-13T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/07/13/obsidian-katazuke</id><content type="html" xml:base="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/">&lt;p&gt;I built an Obsidian plugin that finds and helps you tidy up the notes you once thought were important but that have quietly gathered dust. It’s out now as an &lt;a href=&quot;https://community.obsidian.md/plugins/katazuke&quot;&gt;official community plugin&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;hard-to-spot-in-the-graph-view&quot;&gt;Hard to spot in the graph view&lt;/h3&gt;
 
@@ -465,64 +483,4 @@ I’ve been using it daily in my own vault without any major issues, but it hasn
 &lt;p&gt;I can now measure a note’s significance not just by its link count, but by how many times I’ve put my hands on it. 
 Neither metric is “right” — having a different viewpoints simply reveals things you wouldn’t otherwise notice.&lt;/p&gt;
 
-&lt;p&gt;The trail of thinking lives not in how much you wrote, but in how many times you rewrote. This plugin turned that intuition into something backed by numbers.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">An Obsidian plugin that automatically counts meaningful edits and helps you identify the notes you revisit most. Here&apos;s the thought process behind building it.</summary></entry><entry xml:lang="jp"><title type="html">よく編集するノートが一目でわかるObsidianプラグインを作った</title><link href="https://mdaisuke.net/jp/2026/03/20/obsidian-edit-count/" rel="alternate" type="text/html" title="よく編集するノートが一目でわかるObsidianプラグインを作った" /><published>2026-03-20T00:00:00+00:00</published><updated>2026-03-20T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/03/20/obsidian-edit-count</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/03/20/obsidian-edit-count/">&lt;p&gt;ノートの編集回数を自動で数えて、よく手を入れるノートを把握する。そんなObsidianプラグインを作りました。
-十分に手元では動いているのでベータ版として公開します。&lt;/p&gt;
-
-&lt;h3 id=&quot;出発点重いノートを見つけたい&quot;&gt;出発点：「重いノート」を見つけたい&lt;/h3&gt;
-
-&lt;p&gt;Obsidianを1年以上使い続けて、ノートは増えました。&lt;/p&gt;
-
-&lt;p&gt;グラフビューを開いたとき、すべてのノートが同じ大きさで表示されます。
-それでリンクの数で大きさは変わるが、それは「つながりの多さ」であって「思考の活発さ」ではありませんでした。&lt;/p&gt;
-
-&lt;p&gt;自分にとって価値のあるノートとは何かをもう一度問い直す機会になりました。
-そして何度も開いて、書き足して、書き直しているノート。つまり&lt;strong&gt;編集回数が多いノート&lt;/strong&gt;。
-これを直感的に見分けられたら、ノートの全体像がもっと立体的になるのではないか？と考えました。&lt;/p&gt;
-
-&lt;h3 id=&quot;既存プラグインを探すところから&quot;&gt;既存プラグインを探すところから&lt;/h3&gt;
-
-&lt;p&gt;まず既存の解決策を探しました&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ElsaTam/obsidian-extended-graph&quot;&gt;Extended Graph&lt;/a&gt;は、frontmatterの値でノードサイズを変えられます。これは「表示」側としてはまさに求めていたものである一方、編集回数を自動で計測する機能はなさそうです。
-また、自分で毎回フロントマターをいじる体験は運用しづらそうと思いました。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Vinzent03/obsidian-git&quot;&gt;Obsidian Git&lt;/a&gt;はvaultをGit管理してくれます。
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log&lt;/code&gt;でファイルごとの変更頻度は追えるが、自動コミットを有効にするとログが汚れます。
-バックアップが取られることは良いですが、仮に既存のノートで重みづけをしたい場合はどうしたらいいか。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/zakhij/obsidian-activity-heatmap&quot;&gt;Activity Heatmap&lt;/a&gt;や&lt;a href=&quot;https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528&quot;&gt;Sidebar Heatmap&lt;/a&gt;は
-それぞれ「量の可視化」「日ごとの表示」であり、「累積的な編集回数で重みづけする」にドンピシャではありません。&lt;/p&gt;
-
-&lt;h3 id=&quot;方針文字数差分で実質的な編集を検出する&quot;&gt;方針：文字数差分で「実質的な編集」を検出する&lt;/h3&gt;
-
-&lt;p&gt;編集回数を数えるといっても、保存するたびに+1ではおかしいですね。
-typoの修正と、段落をまるごと書き直すのでは意味が違います。&lt;/p&gt;
-
-&lt;p&gt;そこで&lt;strong&gt;文字数差分の閾値判定&lt;/strong&gt;を採用しました。
-ノートを開いた時点の文字数を記録しておき、ファイルを離れるか一定時間（デフォルト3分）入力がなかったタイミングで差分を計算します。
-差分が50文字以上ならfrontmatterの&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edit_count&lt;/code&gt;を+1する。ここはもちろん人によって大きく好みがわかれるだろうから、設定で自由に変えられるようにしました。&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;edit_count&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;この方式の味噌はObsidian内で完結することです。Gitも外部ツールも不要で、メモリ上に保持するのは開いているファイルの初期文字数だけで軽量です。
-ファイルにあるフロントマターをいじればいいので&lt;a href=&quot;https://stephango.com/file-over-app&quot;&gt;アプリよりファイルの原則&lt;/a&gt;にも沿うと考えました。&lt;/p&gt;
-
-&lt;h3 id=&quot;現時点の運用の仕方&quot;&gt;(現時点の)運用の仕方&lt;/h3&gt;
-
-&lt;p&gt;Obsidian 1.9.10以降であれば、コア機能のBasesを使って&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edit_count&lt;/code&gt;順のテーブルを作れます。
-Dataviewのようなサードパーティ依存もないため軽量です。「このノート、最近よく触ってるな」「このあたりに思考が集中してるな」と一目でわかるので、画面にpaneで常に表示してます。&lt;/p&gt;
-
-&lt;h3 id=&quot;まだベータ版&quot;&gt;まだベータ版&lt;/h3&gt;
-
-&lt;p&gt;現在このプラグインはベータ版として公開しています。&lt;a href=&quot;https://github.com/TfTHacker/obsidian42-brat&quot;&gt;BRAT&lt;/a&gt;経由でインストールできます。&lt;/p&gt;
-
-&lt;p&gt;自分のvaultで日常的に使っていて、目立った問題は出ていませんが、まだ他の人の環境で十分にテストできていないので、正式リリースにはしていません。
-フィードバックがあれば&lt;a href=&quot;https://github.com/DaisukeMiyazaki/obsidian-edit-count&quot;&gt;GitHub&lt;/a&gt;で受け付けています。&lt;/p&gt;
-
-&lt;h3 id=&quot;振り返って&quot;&gt;振り返って&lt;/h3&gt;
-
-&lt;p&gt;ノートの価値を「リンクの数」だけでなく「手を動かした回数」で測れるようになりました。どちらが正しいということではなく、別の軸で見ることで気づくことがあります。
-思考の軌跡は、書いた量ではなく、書き直した回数に宿る。そんな感覚を、数字で裏付けてくれるツールになりました。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ノートの編集回数を自動で数えて、よく手を入れるノートをグラフ上で大きく表示する。そんなObsidianプラグインを作った思考の過程を書く。</summary></entry></feed>
+&lt;p&gt;The trail of thinking lives not in how much you wrote, but in how many times you rewrote. This plugin turned that intuition into something backed by numbers.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">An Obsidian plugin that automatically counts meaningful edits and helps you identify the notes you revisit most. Here&apos;s the thought process behind building it.</summary></entry></feed>
