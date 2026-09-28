@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="dark:text-gray-100">
+  <!-- Now: 本文は各言語の now.md に書く -->
+  <h2 class="mb-3 font-semibold">Now</h2>
+  <div class="prose prose-sm max-w-none dark:prose-invert">{{ content }}</div>
+  <p class="mt-2 text-xs text-gray-500 dark:text-gray-400">
+    {% if page.lang == 'jp' %}更新日{% else %}Updated{% endif %} {{
+    page.updated | date: "%b %-d, %Y" }}
+  </p>
+
+  <!-- Previously: _data/timeline.yml を新しい順に表示 -->
+  <h2 class="mb-4 mt-10 font-semibold">Previously</h2>
+  <ol class="list-none pl-0">
+    {% for item in site.data.timeline %}
+    <li class="grid grid-cols-[5.5rem_1fr] gap-x-4">
+      <span class="pt-0.5 text-right text-sm text-gray-500 dark:text-gray-400"
+        >{{ item.period }}</span
+      >
+      <div
+        class="relative border-l border-gray-200 pb-8 pl-6 dark:border-gray-700"
+      >
+        <span
+          class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-gray-400 dark:bg-gray-500"
+        ></span>
+        <p class="font-semibold">
+          {% if item.url %}<a
+            href="{{ item.url }}"
+            class="underline underline-offset-4 hover:opacity-70"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ item[page.lang].org }}</a
+          >{% else %}{{ item[page.lang].org }}{% endif %}
+        </p>
+        {% if item[page.lang].desc %}
+        <p
+          class="mt-1 text-sm leading-relaxed text-gray-600 dark:text-gray-300 [&_a]:underline [&_a]:underline-offset-4"
+        >
+          {{ item[page.lang].desc | markdownify | remove: "<p>" | remove:
+          "</p>" }}
+        </p>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

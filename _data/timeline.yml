@@ -1,0 +1,38 @@
+# /now の Previously。新しい順に並べる
+- period: "2021 – 2026"
+  url: https://source-maker.co.jp/
+  jp:
+    org: 株式会社ソースメーカー
+    desc: HRテックの BtoB SaaS（採用・面接領域）の開発チームに常駐。新サービスをスクラッチから実装し、導入企業0社から数十社規模まで伸ばすフェーズを担った。2023年からはエンジニアリングマネージャーとして5名のチームを率い、スクラムやAIを日々の開発に取り入れた。
+  en:
+    org: Source Maker Inc.
+    desc: Embedded in the development team of a B2B HR-tech SaaS for hiring and interviews. Built a new service from scratch and helped grow it from zero to dozens of client companies. From 2023, led a team of five as engineering manager, bringing Scrum and AI into everyday development.
+- period: "2021"
+  jp:
+    org: アスタリスト株式会社
+    desc: Vue.js と Django による自社 Web アプリの仕様策定とプロトタイプ開発。コロナ禍をきっかけに暮らし方を見直しWeb 開発に移った。
+  en:
+    org: Asterist Inc.
+    desc: Specified and prototyped an in-house web app with Vue.js and Django. The pandemic made me rethink how I wanted to live, and I moved into web development.
+- period: "2019 – 2020"
+  url: https://persol-xtech.co.jp/company/profile/
+  jp:
+    org: パーソルR&D株式会社
+    desc: ジュニアソフトウェアエンジニアとして、自動運転技術の研究開発とデモ用ソフトウェアスタックの開発。在籍中に Udacity の Self-Driving Car Engineer と G検定を取得。
+  en:
+    org: PERSOL R&D Co., Ltd.
+    desc: As a junior software engineer, worked on autonomous driving R&D and developed a demo software stack. Earned Udacity's Self-Driving Car Engineer Nanodegree and the JDLA Deep Learning (G) certificate.
+- period: "2018 – 2019"
+  url: https://testea.net/
+  jp:
+    org: testea
+    desc: 小中学生に英語を教え、英語教育の電子書籍を [Kindle で出版](https://amzn.asia/d/01uKgGbl)。Python と Web 開発を学習。
+  en:
+    org: testea
+    desc: Taught English to elementary and junior high school students and published an [e-book on English education on Kindle](https://amzn.asia/d/01uKgGbl). Studied Python and web development.
+- period: "2018"
+  url: https://www.rikkyo.ac.jp/
+  jp:
+    org: 立教大学 理学部 物理学科 卒業
+  en:
+    org: Graduated from Rikkyo University, Department of Physics
