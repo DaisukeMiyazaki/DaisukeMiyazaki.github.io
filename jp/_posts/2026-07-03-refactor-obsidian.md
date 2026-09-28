@@ -8,6 +8,7 @@ lang: jp
 lang-ref: refactor
 related: [understanding-delegation]
 genre: エッセイ
+topics: [pkm, ai, software]
 thumbnail:
 stage: 3
 read_minutes: 4

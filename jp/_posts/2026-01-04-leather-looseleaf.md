@@ -6,6 +6,7 @@ excerpt: ルーズリーフ100枚がちょうど収まる。縫製なし、革�
 comments: true
 lang: jp
 genre: 実用
+topics: [diy, hardware]
 thumbnail: /assets/images/leather-binder.jpeg
 ---
 

@@ -5,6 +5,7 @@ title: "仮説とオントロジーとフォルダー階層"
 lang: jp
 permalink: /jp/notes/hypothesis-ontology-folder/
 thumbnail:
+topics: [big-questions, pkm]
 ---
 
 obsidianを使っていて仮説とその検証をどうやって管理しようか迷っていた。

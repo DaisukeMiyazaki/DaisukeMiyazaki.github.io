@@ -9,19 +9,12 @@ sass:
   style: nested
 
 plugins:
-  - jekyll-feed
   - jekyll-postcss
   - jekyll-sitemap
 
-feed:
-  path: atom.xml
-  collections:
-    notes:
-      path: notes.xml
-
 postcss:
   cache: false
-title: Daisuke Miyazaki's Blog
+title: Daisuke Miyazaki
 
 markdown: kramdown
 exclude: ["node_modules"]

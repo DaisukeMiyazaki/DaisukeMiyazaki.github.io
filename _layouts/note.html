@@ -14,14 +14,14 @@ layout: default
     </h1>
   </header>
 
-  <div class="dakr:prose-invert prose prose-sm w-full max-w-none break-words">
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
     {{content}}
   </div>
 </article>
 
 <p class="mt-4 text-sm">
   <a
-    href="{% if page.lang == 'jp' %}/jp/note/{% else %}/en/notes/{% endif %}"
+    href="{% if page.lang == 'jp' %}/jp/notes/{% else %}/en/notes/{% endif %}"
     class="text-blue-500 dark:text-blue-400"
   >
     {% if page.lang == 'jp' %} ノート一覧 {% else %} All notes{% endif %}

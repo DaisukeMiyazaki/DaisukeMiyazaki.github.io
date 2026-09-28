@@ -1,0 +1,38 @@
+<!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="{{ include.entry.date | date_to_xmlschema }}"
+>
+  <p class="text-xs text-gray-500 dark:text-gray-400">
+    <time datetime="{{ include.entry.date | date_to_xmlschema }}"
+      >{{ include.entry.date | date: "%b %-d, %Y" }}</time
+    >
+    {% for key in include.entry.topics %}
+    <a
+      href="/{{ include.entry.lang }}/topics/{{ key }}/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#{{ key }}</a
+    >
+    {% endfor %}
+  </p>
+  <h2 class="mb-2 mt-1 text-base font-bold">
+    <a
+      href="{{ include.entry.url | relative_url }}"
+      class="text-gray-900 no-underline hover:text-blue-600 dark:text-gray-50 dark:hover:text-blue-400"
+    >
+      {{ include.entry.title }}
+    </a>
+  </h2>
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
+    {{ include.entry.content }}
+  </div>
+  <a
+    href="{{ include.entry.url | relative_url }}"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    {% if include.entry.lang == 'jp' %}続きを読む →{% else %}Read more →{% endif
+    %}
+  </a>
+</article>

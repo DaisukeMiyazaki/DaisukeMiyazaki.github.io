@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div class="dark:text-gray-100">
+  <h1 class="mb-4 text-base font-bold">#{{ page.topic }}</h1>
+  {% for entry in page.entries %}{% include stream_item.html entry=entry %}{%
+  endfor %}
+</div>
+{% include stream_fold.html %}

@@ -6,6 +6,7 @@ excerpt: "大事でも気づいたら埃をかぶっていたノート。つな�
 comments: true
 lang: jp
 genre: 実用
+topics: [pkm, diy, less-is-more, ai, software]
 thumbnail: /assets/images/obsidian_logo.png
 stage: 2
 read_minutes: 4

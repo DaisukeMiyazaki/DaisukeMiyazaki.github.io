@@ -8,6 +8,7 @@ lang: jp
 lang-ref: papers-into-podcasts
 related: [understanding-delegation, sanpou-issue]
 genre: 実用
+topics: [pkm, diy, ai, software]
 thumbnail:
 stage: 1
 read_minutes: 7

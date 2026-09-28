@@ -7,6 +7,7 @@ comments: true
 lang: en
 lang-ref: daisuke-site-launched
 genre: essay
+topics: [technology, blogging]
 ---
 
 In the middle of the revolution, here we stand. What’s the best way of making the most of the internet? This question drove me to launch this website.

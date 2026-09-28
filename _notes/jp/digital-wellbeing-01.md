@@ -4,6 +4,7 @@ date: 2026-08-10
 title: "デジタルウェルビーイング"
 lang: jp
 permalink: /jp/notes/digital-wellbeing-01/
+topics: [well-being, pkm]
 ---
 
 [Digital Wellbeing through technology](https://wellbeing.google/)

@@ -8,6 +8,7 @@ lang: en
 lang-ref: papers-into-podcasts
 related: [we-must-not-delegate-understanding, sanpou-issue]
 genre: practical
+topics: [pkm, diy, ai, software]
 thumbnail:
 stage: 1
 read_minutes: 5
@@ -17,7 +18,7 @@ read_minutes: 5
 
 I keep running into papers and long essays I'm genuinely curious about. The curiosity is real; the focus to sit down and read them is not. Reading is active work, and I rarely find the slot for it.
 
-The time I *do* have is the passive kind — a commute, a walk, the few minutes I spend staring out a window. That time arrives whether I plan for it or not, and for this kind of material those moments are actually the best ones: listening slots into them in a way reading never will. So what I want isn't a summary to skim or a transcript. I want the thing broken down plainly enough that it comes in just by listening, hands free.
+The time I _do_ have is the passive kind — a commute, a walk, the few minutes I spend staring out a window. That time arrives whether I plan for it or not, and for this kind of material those moments are actually the best ones: listening slots into them in a way reading never will. So what I want isn't a summary to skim or a transcript. I want the thing broken down plainly enough that it comes in just by listening, hands free.
 
 ## NotebookLM and the auto-podcast almost solve this
 
@@ -33,19 +34,19 @@ Two things the generic version is weak on: examples and questions. Those are the
 
 **The questioner is the listener's proxy.** I studied a list of the "ten best podcast interviewers"[^interviewers] and read what each says about their craft, then deliberately pulled out only the hard skills that move comprehension forward: ask short questions, follow up on the thing just said, voice the exact place a listener gets stuck, push past breadth toward the crux, and demand an example. The soft skills — warmth, rapport, humor itself — I dropped on purpose, because in this context they add noise to the script, and when you're working with an agent they invite hallucination.
 
-The pipeline itself is plain: take a PDF, extract it, map its logic, digest it into plain language *with examples*, budget the length to 15–30 minutes, write the two-voice dialogue, and verify it against the source. Then [Gemini 3.1 Flash TTS](https://ai.google.dev/gemini-api/docs/speech-generation) gives it a natural voice — the one part the auto-podcast already nails, so I let the machine keep doing it.
+The pipeline itself is plain: take a PDF, extract it, map its logic, digest it into plain language _with examples_, budget the length to 15–30 minutes, write the two-voice dialogue, and verify it against the source. Then [Gemini 3.1 Flash TTS](https://ai.google.dev/gemini-api/docs/speech-generation) gives it a natural voice — the one part the auto-podcast already nails, so I let the machine keep doing it.
 
 The TTS step is just a small script — voices fixed, paced, and chunked to fit the model's limits: [gemini_tts.py](https://gist.github.com/DaisukeMiyazaki/5fb8e0333d7fe940aa9262b4d790eeb2).
 
 ## Where it went wrong
 
-Early on I used gemini-2.5, and the tempo was too fast — *tonton-byoushi*, the two voices volleying without a breath between them. It sounded efficient and felt exhausting. The fix was small: pauses between turns, a calmer delivery, a director's note telling the model not to rush. What it taught me wasn't small, though — it needs *ma*, room to breathe.
+Early on I used gemini-2.5, and the tempo was too fast — _tonton-byoushi_, the two voices volleying without a breath between them. It sounded efficient and felt exhausting. The fix was small: pauses between turns, a calmer delivery, a director's note telling the model not to rush. What it taught me wasn't small, though — it needs _ma_, room to breathe.
 
 What surprised me: Gemini 3.1 Flash TTS supplies those pauses and that speaking tone — the parts that look a lot like soft skills — on the model's side. Listening to 2.5 and 3.1 back to back, the difference was obvious.
 
 ## Wrapping up
 
-The job of this tool is to digest things down so I'll actually *touch the primary source* I'd otherwise never open. The audio is an on-ramp to the paper, not a substitute for it. For something I just want to be aware of, it gets me far further than reading a summary would. But for a paper that snags me, I don't stop at listening — I go to the source and digest it in my own words. That digestion is the part I have to do myself. As I wrote in [the walking piece](/en/2025/09/17/sanpou-issue/), the first-hand insight AI can't generate for you only comes from there.
+The job of this tool is to digest things down so I'll actually _touch the primary source_ I'd otherwise never open. The audio is an on-ramp to the paper, not a substitute for it. For something I just want to be aware of, it gets me far further than reading a summary would. But for a paper that snags me, I don't stop at listening — I go to the source and digest it in my own words. That digestion is the part I have to do myself. As I wrote in [the walking piece](/en/2025/09/17/sanpou-issue/), the first-hand insight AI can't generate for you only comes from there.
 
 This tool has its limits, too: even after it writes a script and I ask it for examples, some things still don't click. For those, I ask the agent in my own words — not from a template — keeping the paper itself in context, and in my case having it sketch a diagram when that helps. Then I write the resolution into Obsidian. It's slow, but clearing them one at a time is how a paper I only listened to slowly becomes my own. [We must not delegate understanding](/en/2025/07/03/we-must-not-delegate-understanding/).
 

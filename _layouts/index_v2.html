@@ -27,151 +27,31 @@
         scrollbar-width: none;
       }
 
-      /* フィルターボタンのアクティブスタイル */
-      .filter-btn.active {
-        background-color: #374151; /* dark-gray-700 */
-        color: white;
-      }
-      .dark .filter-btn.active {
-        background-color: #e5e7eb; /* gray-200 */
-        color: black;
+      /* 最後の項目の区切り線はフッターの線と重なるので消す */
+      #gallery-grid > :last-child {
+        border-bottom-width: 0;
       }
     </style>
   </head>
   <body
     class="bg-white text-gray-900 antialiased transition-colors duration-300 dark:bg-primary-dark dark:text-white"
   >
-    {% include header_v2.html show_filter=true %}
+    {% include header_v2.html %}
 
     <!-- メインコンテンツ: シンプルなリスト表示 -->
-    <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
-      <!-- ファーストビュー: 一行の自己紹介と導線 -->
-      <p
-        class="mb-2 max-w-prose text-sm leading-relaxed text-gray-500 dark:text-gray-400"
-      >
-        {% if page.lang == 'jp' %}
-        ポケットの小さな魔法（テクノロジー）が僕らの生活をどう豊かにしていけるのか——その問いの足跡です。はじめての方は
-        <a
-          href="/jp/1995/09/02/自己紹介/"
-          class="font-medium text-blue-500 hover:underline dark:text-blue-400"
-          >About</a
-        >
-        からどうぞ。上のタグで記事を絞り込めます。 {% else %} How can the small
-        magic in our pockets — technology — enrich our everyday lives? This is a
-        trail of that question. New here? Start with
-        <a
-          href="/en/1995/09/02/about/"
-          class="font-medium text-blue-500 hover:underline dark:text-blue-400"
-          >About</a
-        >. Filter posts with the tags above. {% endif %}
-      </p>
+    <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-2">
+      {% include topic_index.html %}
 
-      <!-- PKMセクション入口バナー -->
-      <a
-        href="{% if page.lang == 'jp' %}/jp/pkm/{% else %}/en/pkm/{% endif %}"
-        class="mb-2 block"
-      >
-        <div
-          class="flex items-center gap-4 rounded-2xl border border-gray-200 bg-gray-100 px-6 py-5 transition-colors hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-        >
-          <div class="min-w-0 flex-1">
-            <p
-              class="text-xs font-bold tracking-widest text-blue-500 dark:text-blue-400"
-            >
-              PKM
-            </p>
-            <h3
-              class="mt-1 text-base font-extrabold text-gray-900 dark:text-gray-50"
-            >
-              {% if page.lang == 'jp' %}個人のナレッジマネジメント{% else
-              %}Personal Knowledge Management{% endif %}
-            </h3>
-            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-              {% if page.lang == 'jp' %}AIは道具、整理するのは自分。{% else %}AI
-              is a tool; organizing is my job.{% endif %}
-            </p>
-          </div>
-          <div class="hidden shrink-0 items-center gap-1 sm:flex">
-            {% for i in (1..4) %}
-            <img
-              src="/assets/images/pkm/actor_step{{ i }}.png"
-              alt=""
-              class="h-[52px] w-[52px] rounded-[10px] border border-gray-200 bg-white object-cover dark:border-gray-700"
-              loading="lazy"
-            />
-            {% endfor %}
-          </div>
-          <span
-            class="whitespace-nowrap text-sm font-bold text-blue-500 dark:text-blue-400"
-            >{% if page.lang == 'jp' %}はじめる →{% else %}Start →{% endif
-            %}</span
-          >
-        </div>
-      </a>
-
-      <!-- 最近のノートをその場に展開 -->
-      {% assign recent_notes = site.notes | where: "lang", page.lang | sort:
-      "date" | reverse %} {% if recent_notes.size > 0 %}
-      <section class="mb-2 mt-2">
-        <div class="mb-1 flex items-baseline justify-between">
-          <h2
-            class="text-xs font-bold tracking-widest text-blue-500 dark:text-blue-400"
-          >
-            {% if page.lang == 'jp' %}最近のノート{% else %}Recent Notes{% endif
-            %}
-          </h2>
-          <a
-            href="{% if page.lang == 'jp' %}/jp/notes/{% else %}/en/notes/{% endif %}"
-            class="text-sm font-medium text-blue-500 hover:underline dark:text-blue-400"
-          >
-            {% if page.lang == 'jp' %}すべて見る{% else %}All Notes{% endif %}
-          </a>
-        </div>
-        {% for note in recent_notes limit:5 %} {% include note_item.html
-        note=note %}{% endfor %}
-      </section>
-      {% endif %}
-
-      <div class="flex flex-col gap-2" id="gallery-grid">
-        {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
-        posts %}
-
-        <a
-          href="{{ post.url }}"
-          class="gallery-item group block cursor-pointer"
-          data-genre="{{ post.genre }}"
-          data-pkm="{% if post.stage %}true{% endif %}"
-          data-date="{{ post.date | date_to_xmlschema }}"
-        >
-          <!-- 日付とジャンルタグ -->
-          <div
-            class="mb-1 flex items-center text-xs text-gray-400 dark:text-gray-500"
-          >
-            <time>{{ post.date | date: "%d %b %Y" }}</time>
-            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
-              >#{{ post.genre }}</span
-            >
-          </div>
-
-          <!-- タイトル -->
-          <h2
-            class="mb-1 text-base font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
-          >
-            {{ post.title }}
-          </h2>
-
-          <!-- 抜粋 -->
-          <p
-            class="line-clamp-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400"
-          >
-            {{ post.excerpt | strip_html }}
-          </p>
-        </a>
-        {% endfor %} {% for work in site.data.works %}
+      <!-- post と note を日付順の1本の流れで表示 -->
+      <div class="flex flex-col" id="gallery-grid">
+        {% assign posts = site.posts | where: "lang", page.lang %} {% assign
+        notes = site.notes | where: "lang", page.lang %} {% assign entries =
+        posts | concat: notes | sort: "date" | reverse %} {% for entry in
+        entries %}{% include stream_item.html entry=entry %}{% endfor %} {% for
+        work in site.data.works %}
         <a
           href="{{ work.jp.site_link }}"
-          class="gallery-item group block cursor-pointer"
-          data-genre="work"
+          class="gallery-item group block cursor-pointer border-b border-gray-200 py-4 dark:border-gray-800"
           data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}"
           target="_blank"
         >
@@ -181,9 +61,6 @@
             <time
               >{{ work.jp.start_at | date: "%Y" }} - {{ work.jp.end_at | date:
               "%Y" }}</time
-            >
-            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
-              >#work</span
             >
           </div>
           <h2
@@ -200,16 +77,14 @@
         {% endfor %}
       </div>
     </main>
+    {% include footer.html %}
 
     <script>
-      // 既存のJSロジック
       document.addEventListener("DOMContentLoaded", function () {
-        const filterButtons = document.querySelectorAll(".filter-btn");
         const galleryItems = Array.from(
           document.querySelectorAll(".gallery-item"),
         );
         const galleryGrid = document.getElementById("gallery-grid");
-        // const themeToggleBtn = document.getElementById("theme-toggle"); // 削除
 
         // 日付順ソート
         galleryItems.sort(
@@ -217,24 +92,8 @@
         );
         galleryGrid.innerHTML = "";
         galleryItems.forEach((item) => galleryGrid.appendChild(item));
-
-        // フィルター
-        filterButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            filterButtons.forEach((btn) => btn.classList.remove("active"));
-            this.classList.add("active");
-            const genre = this.dataset.genre;
-            galleryItems.forEach((item) => {
-              const match =
-                genre === "all" ||
-                (genre === "PKM"
-                  ? item.dataset.pkm === "true"
-                  : item.dataset.genre === genre);
-              item.style.display = match ? "block" : "none";
-            });
-          });
-        });
       });
     </script>
+    {% include stream_fold.html %}
   </body>
 </html>

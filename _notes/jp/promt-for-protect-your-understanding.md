@@ -5,6 +5,7 @@ title: "理解を壊さないためのプロンプト"
 lang: jp
 permalink: /jp/notes/promt-for-protect-your-understanding/
 thumbnail:
+topics: [ai, learning]
 ---
 
 [Ankur Sethi](https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/) から引用

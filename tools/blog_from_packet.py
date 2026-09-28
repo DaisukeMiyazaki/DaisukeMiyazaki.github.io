@@ -108,6 +108,7 @@ def build_note(meta, date, body, slug, lang):
         f"lang: {lang}\n"
         f"permalink: /{lang}/notes/{slug}/\n"
         f"thumbnail: {thumbnail}\n"
+        "topics: []\n"
         "---\n\n"
         f"{body.strip()}\n"
     )

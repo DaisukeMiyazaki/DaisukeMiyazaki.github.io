@@ -4,12 +4,13 @@ title: "The Indentation Project, Part 1: Designing a 6-Tatami-Mat Room That Has 
 date: 2026-04-09
 lang: en
 genre: Practical
+topics: [diy, hardware]
 excerpt: "A 6-tatami room (about 9.7㎡) has to be storage, display, workspace, and sofa all at once — and nothing off-the-shelf fits floor-to-ceiling or comes apart when the lease ends. So I modeled the whole frame in Fusion 360 and joined it with Kreg pocket holes."
 thumbnail: /assets/images/indentation/IMG_1857.jpg
 comments: true
 ---
 
-*The step-by-step build gallery is [here](https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/).*
+_The step-by-step build gallery is [here](https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/)._
 
 ## The problem: four uses, one 6 tatami mat room
 
@@ -65,4 +66,4 @@ The frame held the sofa and the skeleton stood. But the shelves still had no sur
 
 ---
 
-*The full ver1 build gallery is [here](https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/).*
+_The full ver1 build gallery is [here](https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/)._

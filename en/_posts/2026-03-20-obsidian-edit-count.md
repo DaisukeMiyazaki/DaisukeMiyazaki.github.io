@@ -6,6 +6,7 @@ excerpt: "An Obsidian plugin that automatically counts meaningful edits and help
 comments: true
 lang: en
 genre: Practical
+topics: [pkm, diy, sotfware]
 thumbnail: /assets/images/obsidian_logo.png
 stage: 3
 read_minutes: 3
@@ -56,13 +57,13 @@ On Obsidian 1.9.10+, you can use the core Bases feature to create a table sorted
 ### Still in Beta
 
 The plugin is currently available as a beta release, installable via [BRAT](https://github.com/TfTHacker/obsidian42-brat).
-I've been using it daily in my own vault without any major issues, but it hasn't been tested enough in other environments to warrant an official release. 
+I've been using it daily in my own vault without any major issues, but it hasn't been tested enough in other environments to warrant an official release.
 
 Feedback is welcome on [GitHub](https://github.com/DaisukeMiyazaki/obsidian-edit-count).
 
 ### Looking Back
 
-I can now measure a note's significance not just by its link count, but by how many times I've put my hands on it. 
-Neither metric is "right" — having a different viewpoints simply reveals things you wouldn't otherwise notice. 
+I can now measure a note's significance not just by its link count, but by how many times I've put my hands on it.
+Neither metric is "right" — having a different viewpoints simply reveals things you wouldn't otherwise notice.
 
 The trail of thinking lives not in how much you wrote, but in how many times you rewrote. This plugin turned that intuition into something backed by numbers.

@@ -5,6 +5,7 @@ title: "日記を書く時にはテーマを変えて気分転換する"
 lang: jp
 permalink: /jp/notes/change-theme-keep-mood-aligned/
 thumbnail:
+topics: [pkm, well-being]
 ---
 
 obsidianを用いて仕事していると、夜に自分の気が向くままに日記を書きたいときにどうしても仕事の延長線として頭が錯覚してしまうことがある。リモートワークをしていてずっとプライベートの時間でも同じ場所にいるときに覚える間隔と似ているのかもしれない。
