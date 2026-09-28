@@ -18,7 +18,7 @@ permalink: /atom.xml
     <id>{{ entry.id | absolute_url | xml_escape }}</id>
     <published>{{ entry.date | date_to_xmlschema }}</published>
     <updated>{{ entry.date | date_to_xmlschema }}</updated>
-    <content type="html" xml:base="{{ entry.url | absolute_url | xml_escape }}">{{ entry.content | xml_escape }}</content>
+    <content type="html" xml:base="{{ entry.url | absolute_url | xml_escape }}">{{ entry.content | strip_scripts | xml_escape }}</content>
   </entry>
   {% endfor %}
 </feed>
