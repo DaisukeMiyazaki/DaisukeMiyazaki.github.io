@@ -13,12 +13,12 @@
   <link
     rel="alternate"
     type="application/atom+xml"
-    title="Daisuke Miyazaki's Blog"
-    href="/feed.xml"
+    title="Daisuke Miyazaki"
+    href="/atom.xml"
   />
 
   <title>
-     ノート &middot; Daisuke Miyazaki's Blog 
+     ノート &middot; Daisuke Miyazaki 
   </title>
 
   <!--costom CSS-->
@@ -57,10 +57,7 @@
     content="ja_JP"
   />
   <meta property="og:site_name" content="Daisuke Miyazaki" />
-  
-
-  
-    
+      
   <link
     rel="alternate"
     hreflang="en"
@@ -272,121 +269,92 @@
     class="primary-light text-gray-900 dark:bg-primary-dark dark:text-gray-100"
   >
     <header
-  class="bg-white py-4 transition-colors duration-300 dark:bg-primary-dark"
+  class="bg-white py-6 transition-colors duration-300 dark:bg-primary-dark"
 >
-  <div class="container mx-auto max-w-2xl px-6">
-    <!-- 上段: タイトルとコントロール -->
-    <div class="flex items-start justify-between">
-      <!-- タイトル (左寄せ・スタック) -->
-      <a href="/" class="group block">
-        <h1
-          class="text-[2.5rem] font-light leading-[1.1] tracking-tight text-gray-900 transition-opacity group-hover:opacity-80 dark:text-white"
+  <nav class="container mx-auto flex max-w-2xl items-center px-6 text-base">
+    <!-- タイトル -->
+    <a
+      href="/"
+      class="flex-grow text-xl font-medium text-gray-900 no-underline hover:opacity-80 dark:text-white"
+    >
+      Daisuke Miyazaki
+    </a>
+
+    <!-- 言語切り替え・About -->
+    <span class="mr-8 flex gap-8">
+      
+      <a
+        href="/en/"
+        class="text-gray-500 no-underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        aria-label="Switch to English"
+        >EN</a
+      >
+      <a
+        href="/jp/now/"
+        class="text-gray-500 no-underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        >Now</a
+      >
+      <a
+        href="/jp/1995/09/02/自己紹介/"
+        class="text-gray-500 no-underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+        >About</a
+      >
+      
+    </span>
+
+    <!-- ダークモード切り替え -->
+    <button
+      id="theme-toggle"
+      type="button"
+      role="switch"
+      aria-label="Toggle dark mode"
+      class="group relative h-5 w-9 shrink-0 focus:outline-none"
+    >
+      <span
+        class="absolute inset-0 rounded-full border border-gray-300 dark:border-gray-600"
+      ></span>
+      <span
+        class="absolute left-px top-px h-[18px] w-[18px] text-gray-500 transition-[left] duration-100 group-hover:text-blue-500 dark:left-4 dark:text-gray-100"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="h-full w-full dark:hidden"
         >
-          Daisuke's<br /><span class="font-bold">Blog</span>
-        </h1>
-      </a>
-
-      <!-- 右側コントロール群 -->
-      <div class="flex items-center gap-6 pt-2">
-        <!-- 言語切り替え -->
-        <div class="flex flex-col items-center gap-1.5">
-          
-          <a
-            href="/en/"
-            class="relative flex h-8 w-14 items-center rounded-full bg-[#8e8e93] p-1 transition-colors hover:opacity-90"
-            aria-label="Switch to English"
-          >
-            <div
-              class="flex h-6 w-6 translate-x-6 items-center justify-center rounded-full bg-white shadow-sm transition-transform duration-300"
-            >
-              <div class="h-2.5 w-2.5 rounded-full bg-red-500"></div>
-            </div>
-            <span class="absolute left-2 text-[10px] font-bold text-white/90"
-              >🇬🇧</span
-            >
-          </a>
-          
-          <span class="text-xs font-medium text-gray-500 dark:text-gray-400"
-            >EN/JP</span
-          >
-        </div>
-
-        <!-- About -->
-        <a
-          href="/jp/1995/09/02/自己紹介/"
-          class="group flex flex-col items-center gap-1.5"
+          <path
+            fill-rule="evenodd"
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="hidden h-full w-full dark:block"
         >
-          <div
-            class="flex h-8 w-8 items-center justify-center text-[#8e8e93] transition-colors group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-7 w-7"
-            >
-              <path
-                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-              />
-            </svg>
-          </div>
-          <span class="text-xs font-medium text-gray-900 dark:text-gray-300"
-            >About</span
-          >
-        </a>
-
-        
-
-        <!-- Night Mode -->
-        <button
-          id="theme-toggle"
-          class="group flex flex-col items-center gap-1.5 focus:outline-none"
-        >
-          <div
-            class="flex h-8 w-8 items-center justify-center text-2xl text-[#8e8e93] transition-colors group-hover:text-gray-600 dark:text-gray-400 dark:group-hover:text-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="hidden h-6 w-6 dark:block"
-            >
-              <path
-                d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 9c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-6 w-6 dark:hidden"
-            >
-              <path
-                d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
-              />
-            </svg>
-          </div>
-          <span
-            class="text-center text-xs font-medium leading-tight text-gray-900 dark:text-gray-300"
-          >
-            Night<br />Mode
-          </span>
-        </button>
-      </div>
-    </div>
-
-    <!-- カテゴリフィルター (トップページのみ表示するオプション) -->
-    
-  </div>
+          <path
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+          />
+        </svg>
+      </span>
+    </button>
+  </nav>
 </header>
 
 <script>
   (function () {
     const themeToggleBtn = document.getElementById("theme-toggle");
+
+    function syncToggle() {
+      if (themeToggleBtn) {
+        themeToggleBtn.setAttribute(
+          "aria-checked",
+          document.documentElement.classList.contains("dark"),
+        );
+      }
+    }
 
     // 初期化ロジック（ページロード時に実行）
     // ※ head.html などで既に実行されている場合もあるが、ボタンの状態同期のためにここでも確認
@@ -399,6 +367,7 @@
     } else {
       document.documentElement.classList.remove("dark");
     }
+    syncToggle();
 
     if (themeToggleBtn) {
       themeToggleBtn.addEventListener("click", function () {
@@ -409,6 +378,7 @@
           document.documentElement.classList.add("dark");
           localStorage.setItem("theme", "dark");
         }
+        syncToggle();
       });
     }
   })();
@@ -422,12 +392,34 @@
      ノート一覧 
   </p>
 
-     <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+     <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-09-27T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-09-27T00:00:00+00:00"
       >Sep 27, 2026</time
     >
+    
+    <a
+      href="/jp/topics/learning/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#learning</a
+    >
+    
+    <a
+      href="/jp/topics/marketing/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#marketing</a
+    >
+    
+    <a
+      href="/jp/topics/blogging/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#blogging</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -437,20 +429,39 @@
       自分の関心とニーズが乖離している
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>自分の関心から生まれる文章、つまりこのようなブログとマーケティング的なニーズが乖離していることは十分にありえるし、むしろそうであることのほうが多いだろう。
 一般的に読まれたい、人の目にとまってほしい、との思いで書いた文章が読まれないことがほとんどだ。それは自分が世間のニーズを自分が認識できていないだけかもしれない。実際言葉よりもっと細かく最適化された形で提供されない限り、真の意味でニーズを満たすわけではない。</p>
 
 <p>とはいえ言葉が読まれることはもちろんのこと、そこからつながる広報的な関係の構築こそ最終的には対価につながる。つまり広報的な意味でのブログは人の縁をつなげるきっかけづくりに十分になりうるのではなかろうか。</p>
 
   </div>
+  <a
+    href="/jp/notes/intended-writing-and-needs-in-marketing-differ/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-09-22T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-09-22T00:00:00+00:00"
       >Sep 22, 2026</time
     >
+    
+    <a
+      href="/jp/topics/ai/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#ai</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -460,17 +471,36 @@
       LLMは行間が読めないが網羅性がある
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>LLMは行間が読めないが網羅性がある。人間が持っているすべての情報をコンテキストにいれることは難しいし、すべての情報を等価に扱い重み付けを優先的にすることもない。議事録の作成は網羅性が必要だから得意、しかし実際合意形成がなされたわけではないのに、話されただけでやると明記されることもある。</p>
 
   </div>
+  <a
+    href="/jp/notes/llm-is-meticulous-but-cant-read-lines/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-09-22T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-09-22T00:00:00+00:00"
       >Sep 22, 2026</time
     >
+    
+    <a
+      href="/jp/topics/ai/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#ai</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -480,17 +510,42 @@
       LLMの端的な出力はproviderの利益に反する
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>LLMの記述は常に冗長になりやすいが、冗長であればあるほど出力token数が増えるのでLLM providerにとって利益となる。逆に端的に短く出力することは利益になりずらい。どれだけプロンプトを改良しても、人間のように端的な出力にはならないのかもしれない。</p>
 
   </div>
+  <a
+    href="/jp/notes/2026-09-22-0820-llm-provider-generation-too-long/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-09-17T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-09-17T00:00:00+00:00"
       >Sep 17, 2026</time
     >
+    
+    <a
+      href="/jp/topics/software/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#software</a
+    >
+    
+    <a
+      href="/jp/topics/pkm/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#pkm</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -500,7 +555,9 @@
       Hide properties in notes in Canvas view
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p><a href="https://www.reddit.com/r/ObsidianMD/comments/1mugnn6/hide_properties_in_notes_in_canvas_view/?show=original">canvasだけでプロパティを消す方法を学んだ</a>。ノートを空間的に有効に使うにはどうしても邪魔になる一方で、個別のノートを開いているときには有効に活用できるプロパティ。メインの設定からプロパティを非表示にしてしまうと、canvasと個別ノートそれぞれに適用されてしまうのでこれで回避できる。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.markdown-embed .metadata-container,
@@ -510,13 +567,36 @@
 </code></pre></div></div>
 
   </div>
+  <a
+    href="/jp/notes/hide-properties-in-notes-in-canvas-view/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-09-15T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-09-15T00:00:00+00:00"
       >Sep 15, 2026</time
     >
+    
+    <a
+      href="/jp/topics/pkm/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#pkm</a
+    >
+    
+    <a
+      href="/jp/topics/design/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#design</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -526,7 +606,9 @@
       obsidianでノートを貯めても思考が深まらない悩み
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>箇条書きでobsidianを使っていても思考が深まらない悩みを書いておく。</p>
 
 <ul>
@@ -538,13 +620,36 @@
 </ul>
 
   </div>
+  <a
+    href="/jp/notes/obsidian-not-deepening-thought/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-09-15T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-09-15T00:00:00+00:00"
       >Sep 15, 2026</time
     >
+    
+    <a
+      href="/jp/topics/pkm/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#pkm</a
+    >
+    
+    <a
+      href="/jp/topics/well-being/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#well-being</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -554,19 +659,38 @@
       日記を書く時にはテーマを変えて気分転換する
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>obsidianを用いて仕事していると、夜に自分の気が向くままに日記を書きたいときにどうしても仕事の延長線として頭が錯覚してしまうことがある。リモートワークをしていてずっとプライベートの時間でも同じ場所にいるときに覚える間隔と似ているのかもしれない。</p>
 
 <p>テーマプラグインを変えることでUI全体の印象が変えることができる。</p>
 
   </div>
+  <a
+    href="/jp/notes/change-theme-keep-mood-aligned/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-09-03T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-09-03T00:00:00+00:00"
       >Sep 3, 2026</time
     >
+    
+    <a
+      href="/jp/topics/pkm/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#pkm</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -576,7 +700,9 @@
       自分のタスク管理
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>tasksプラグインを使ってdailynoteにためる。毎日デイリーノートを開けば並列されている。なるべく文脈が一目でわかるように入れたいので、「ノート記入」ではなく「この文脈をノートに記入」と書く。「この」はノートを辿ってわかる。</p>
 
 <p>そして朝になってTODOを眺めながら実際に空いているカレンダーに予定をいれてその日の過ごし方を設定する。テキストだけでは伝わらないこともある。今日じゃないと思ったらまた他の日にずらす。</p>
@@ -584,13 +710,36 @@
 <p>タスクの日付設定は思いついたときに。細かい時間設定は当日に。</p>
 
   </div>
+  <a
+    href="/jp/notes/my-task-management-v1/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-08-20T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-08-20T00:00:00+00:00"
       >Aug 20, 2026</time
     >
+    
+    <a
+      href="/jp/topics/big-questions/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#big-questions</a
+    >
+    
+    <a
+      href="/jp/topics/pkm/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#pkm</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -600,7 +749,9 @@
       仮説とオントロジーとフォルダー階層
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>obsidianを使っていて仮説とその検証をどうやって管理しようか迷っていた。
 仮説検証には大抵複数の領域を横断的に組み合わせることが必要となる。例えば家計と自分や家族との幸せの方針を決めるための仮説には、それぞれの価値観と会計的な領域を組み合わせる必要がある。</p>
 
@@ -609,13 +760,30 @@
 <p>一方でオントロジーによる組み合わせは何を概念の最小単位とするかで重点となる。そしてその最小単位そのものがタイトル名、つまりファイル名となる。仮説や仮説を支える子仮説、何故なぜはそれ以上切っても切れない最小単位となる。よってファイル名そのものだ。</p>
 
   </div>
+  <a
+    href="/jp/notes/hypothesis-ontology-folder/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-08-16T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-08-16T00:00:00+00:00"
       >Aug 16, 2026</time
     >
+    
+    <a
+      href="/jp/topics/design/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#design</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -625,17 +793,42 @@
       将来の自分に任せられる
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>良いプロダクトやPKMに忘れられるデザインがある。能動的に忘れられることは幸せなことである。ここで重点は、将来の自分に任せられるか。今安心して忘れるためにはあとで必ず自分が掘り起こせるだろうと確信がないといけない。</p>
 
   </div>
+  <a
+    href="/jp/notes/you-can-rely-on-future-version-of-yourself/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-08-13T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-08-13T00:00:00+00:00"
       >Aug 13, 2026</time
     >
+    
+    <a
+      href="/jp/topics/well-being/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#well-being</a
+    >
+    
+    <a
+      href="/jp/topics/pkm/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#pkm</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -645,7 +838,9 @@
       エビングハウスの忘却曲線、再学習時にどれだけ手間が節約できたかと睡眠による記憶の固定について
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>忘却曲線について少し学び直し。振り返って思い出すときにどれくらい負荷なく思い出すことができるか、睡眠によって固定化される記憶があるならば情報社会において大切。
 逆に眠れないとどれだけ詰め込んでも記憶が固定されなくなる。</p>
 
@@ -655,13 +850,36 @@
 <p><a href="https://gist.github.com/DaisukeMiyazaki/df9f67d2dc989192be788b8374b5467d">claudeによるエビングハウスの忘却曲線のリサーチ</a></p>
 
   </div>
+  <a
+    href="/jp/notes/on-forgetting-curve/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-08-11T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-08-11T00:00:00+00:00"
       >Aug 11, 2026</time
     >
+    
+    <a
+      href="/jp/topics/ai/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#ai</a
+    >
+    
+    <a
+      href="/jp/topics/learning/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#learning</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -671,7 +889,9 @@
       理解を壊さないためのプロンプト
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p><a href="https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/">Ankur Sethi</a> から引用</p>
 
 <blockquote>
@@ -683,13 +903,36 @@
 </blockquote>
 
   </div>
+  <a
+    href="/jp/notes/promt-for-protect-your-understanding/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-08-11T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-08-11T00:00:00+00:00"
       >Aug 11, 2026</time
     >
+    
+    <a
+      href="/jp/topics/learning/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#learning</a
+    >
+    
+    <a
+      href="/jp/topics/pkm/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#pkm</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -699,19 +942,44 @@
       コンテキストスイッチングが多いと没頭している時間が消える
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p>没頭していると頭の中の作業記憶が進化、整理されて長期記憶に変わる。短期記憶に詰め込むものが発散するとスイッチングが発生してしまう。没頭と思考の収束は比例関係にあり、思考の発散は逆比例関係があるのかもしれない。</p>
 
 <p><a href="https://mdaisuke.net/jp/2025/07/02/understanding-delegation/">理解を委任してはいけない</a></p>
 
   </div>
+  <a
+    href="/jp/notes/context-swtich-wont-help-buidling-flow/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
-  <!-- ノート1件。本文をその場に展開する。include.noteにdocumentを渡す -->
-<article class="border-b border-gray-200 py-3 dark:border-gray-800">
+
+   <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
+<article
+  class="gallery-item border-b border-gray-200 py-4 dark:border-gray-800"
+  data-date="2026-08-10T00:00:00+00:00"
+>
   <p class="text-xs text-gray-500 dark:text-gray-400">
     <time datetime="2026-08-10T00:00:00+00:00"
       >Aug 10, 2026</time
     >
+    
+    <a
+      href="/jp/topics/well-being/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#well-being</a
+    >
+    
+    <a
+      href="/jp/topics/pkm/"
+      class="ml-2 font-medium text-blue-400 no-underline hover:underline dark:text-blue-500"
+      >#pkm</a
+    >
+    
   </p>
   <h2 class="mb-2 mt-1 text-base font-bold">
     <a
@@ -721,7 +989,9 @@
       デジタルウェルビーイング
     </a>
   </h2>
-  <div class="dark:prose-inver prose prose-sm w-full max-w-none break-words">
+  <div
+    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
+  >
     <p><a href="https://wellbeing.google/">Digital Wellbeing through technology</a></p>
 
 <blockquote>
@@ -732,16 +1002,66 @@ As technology becomes more and more integral to everything we do, it can sometim
 <p>職業がソフトウェア開発であるからこそ1日にスクリーンを見ている時間は平均して10時間を超える。1日10時間もテクノロジーに触れている、と言ったら普通の人であれば誰もが「技術のしもべ」になっているというであろう。自分がしもべと思ってなくても、この塩梅や匙加減を覚えるには試行錯誤しないといけない</p>
 
   </div>
+  <a
+    href="/jp/notes/digital-wellbeing-01/"
+    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+  >
+    続きを読む →
+  </a>
 </article>
- 
+
+  
 </div>
+<script>
+  // 高さに収まる書き物は折りたたみを外し、「続きを読む」を隠す
+  window.addEventListener("load", function () {
+    document.querySelectorAll(".entry-body").forEach(function (body) {
+      if (body.scrollHeight <= body.clientHeight) {
+        body.classList.remove(
+          "max-h-96",
+          "[mask-image:linear-gradient(to_bottom,black_75%,transparent)]",
+        );
+        body.nextElementSibling.remove();
+      }
+    });
+  });
+</script>
+
 
     </main>
 
     <footer class="primary-light dark:bg-primary-dark">
   <div class="container mx-auto max-w-2xl px-6 pb-16 pt-0 dark:text-gray-100">
+    <section
+      class="mt-16 border-t border-gray-200 pt-6 text-sm dark:border-gray-800"
+    >
+      <p class="mt-2">
+        
+        <a
+          href="/atom.xml"
+          class="underline underline-offset-4 hover:opacity-70"
+          >RSS</a
+        >
+        /
+        <a
+          href="https://github.com/DaisukeMiyazaki"
+          class="underline underline-offset-4 hover:opacity-70"
+          target="_blank"
+          rel="me noopener noreferrer"
+          >GitHub</a
+        >
+        /
+        <a
+          href="https://x.com/aubozumom"
+          class="underline underline-offset-4 hover:opacity-70"
+          target="_blank"
+          rel="me noopener noreferrer"
+          >Twitter</a
+        >
+      </p>
+    </section>
     <div class="flex justify-start">
-      <section class="mb-4 mt-4 md:mb-0">
+      <section class="mb-4 mt-8 md:mb-0">
         <a
           href="https://mdaisuke.net/jp/1995/09/02/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/"
           target="_blank"

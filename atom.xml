@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" /><link href="https://mdaisuke.net/" rel="alternate" type="text/html" /><updated>2026-09-27T01:55:58+00:00</updated><id>https://mdaisuke.net/atom.xml</id><title type="html">Daisuke Miyazaki’s Blog</title><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><entry xml:lang="jp"><title type="html">ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？</title><link href="https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/" rel="alternate" type="text/html" title="ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？" /><published>2026-08-25T00:00:00+00:00</published><updated>2026-08-25T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/">&lt;p&gt;&lt;em&gt;ソースコード&lt;/em&gt; をagentが書く前提で、エンジニアはソースをどう体系化して管理すれば、十分に長続きする理解を委任しないままソフトウェアを運用できるか？&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Daisuke Miyazaki</title>
+  <link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://mdaisuke.net/" rel="alternate" type="text/html" />
+  <id>https://mdaisuke.net/atom.xml</id>
+  <updated>2026-09-28T14:10:13+00:00</updated>
+  <author><name>Daisuke Miyazaki</name></author>
+  
+  
+  <entry xml:lang="jp">
+    <title type="html">自分の関心とニーズが乖離している</title>
+    <link href="https://mdaisuke.net/jp/notes/intended-writing-and-needs-in-marketing-differ/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/intended-writing-and-needs-in-marketing-differ</id>
+    <published>2026-09-27T00:00:00+00:00</published>
+    <updated>2026-09-27T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/intended-writing-and-needs-in-marketing-differ/">&lt;p&gt;自分の関心から生まれる文章、つまりこのようなブログとマーケティング的なニーズが乖離していることは十分にありえるし、むしろそうであることのほうが多いだろう。
+一般的に読まれたい、人の目にとまってほしい、との思いで書いた文章が読まれないことがほとんどだ。それは自分が世間のニーズを自分が認識できていないだけかもしれない。実際言葉よりもっと細かく最適化された形で提供されない限り、真の意味でニーズを満たすわけではない。&lt;/p&gt;
+
+&lt;p&gt;とはいえ言葉が読まれることはもちろんのこと、そこからつながる広報的な関係の構築こそ最終的には対価につながる。つまり広報的な意味でのブログは人の縁をつなげるきっかけづくりに十分になりうるのではなかろうか。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">LLMは行間が読めないが網羅性がある</title>
+    <link href="https://mdaisuke.net/jp/notes/llm-is-meticulous-but-cant-read-lines/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/llm-is-meticulous-but-cant-read-lines</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/llm-is-meticulous-but-cant-read-lines/">&lt;p&gt;LLMは行間が読めないが網羅性がある。人間が持っているすべての情報をコンテキストにいれることは難しいし、すべての情報を等価に扱い重み付けを優先的にすることもない。議事録の作成は網羅性が必要だから得意、しかし実際合意形成がなされたわけではないのに、話されただけでやると明記されることもある。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">LLMの端的な出力はproviderの利益に反する</title>
+    <link href="https://mdaisuke.net/jp/notes/2026-09-22-0820-llm-provider-generation-too-long/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/0820-llm-provider-generation-too-long</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/2026-09-22-0820-llm-provider-generation-too-long/">&lt;p&gt;LLMの記述は常に冗長になりやすいが、冗長であればあるほど出力token数が増えるのでLLM providerにとって利益となる。逆に端的に短く出力することは利益になりずらい。どれだけプロンプトを改良しても、人間のように端的な出力にはならないのかもしれない。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">Hide properties in notes in Canvas view</title>
+    <link href="https://mdaisuke.net/jp/notes/hide-properties-in-notes-in-canvas-view/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/hide-properties-in-notes-in-canvas-view</id>
+    <published>2026-09-17T00:00:00+00:00</published>
+    <updated>2026-09-17T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/hide-properties-in-notes-in-canvas-view/">&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/ObsidianMD/comments/1mugnn6/hide_properties_in_notes_in_canvas_view/?show=original&quot;&gt;canvasだけでプロパティを消す方法を学んだ&lt;/a&gt;。ノートを空間的に有効に使うにはどうしても邪魔になる一方で、個別のノートを開いているときには有効に活用できるプロパティ。メインの設定からプロパティを非表示にしてしまうと、canvasと個別ノートそれぞれに適用されてしまうのでこれで回避できる。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.markdown-embed .metadata-container,
+ .markdown-embed-content .metadata-container {
+   display: none !important;
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">obsidianでノートを貯めても思考が深まらない悩み</title>
+    <link href="https://mdaisuke.net/jp/notes/obsidian-not-deepening-thought/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/obsidian-not-deepening-thought</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/obsidian-not-deepening-thought/">&lt;p&gt;箇条書きでobsidianを使っていても思考が深まらない悩みを書いておく。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;すべてバックリンクで表現しようとしても抜け漏れる。&lt;/li&gt;
+  &lt;li&gt;空間的側面がないのでメタ的な分類ができない。&lt;/li&gt;
+  &lt;li&gt;辿ろうとしてもノートのリンクが等価に見えてしまうため手がかりが無い。&lt;/li&gt;
+  &lt;li&gt;自分のノートは全体感を考えることなく自分で育てていくため常に動的に変化する。&lt;/li&gt;
+  &lt;li&gt;index的な側面を持つノートを手で更新するのはボトムアップで自由に記述をするスタイルと親和性が低い&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">日記を書く時にはテーマを変えて気分転換する</title>
+    <link href="https://mdaisuke.net/jp/notes/change-theme-keep-mood-aligned/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/change-theme-keep-mood-aligned</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/change-theme-keep-mood-aligned/">&lt;p&gt;obsidianを用いて仕事していると、夜に自分の気が向くままに日記を書きたいときにどうしても仕事の延長線として頭が錯覚してしまうことがある。リモートワークをしていてずっとプライベートの時間でも同じ場所にいるときに覚える間隔と似ているのかもしれない。&lt;/p&gt;
+
+&lt;p&gt;テーマプラグインを変えることでUI全体の印象が変えることができる。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">自分のタスク管理</title>
+    <link href="https://mdaisuke.net/jp/notes/my-task-management-v1/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/my-task-management-v1</id>
+    <published>2026-09-03T00:00:00+00:00</published>
+    <updated>2026-09-03T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/my-task-management-v1/">&lt;p&gt;tasksプラグインを使ってdailynoteにためる。毎日デイリーノートを開けば並列されている。なるべく文脈が一目でわかるように入れたいので、「ノート記入」ではなく「この文脈をノートに記入」と書く。「この」はノートを辿ってわかる。&lt;/p&gt;
+
+&lt;p&gt;そして朝になってTODOを眺めながら実際に空いているカレンダーに予定をいれてその日の過ごし方を設定する。テキストだけでは伝わらないこともある。今日じゃないと思ったらまた他の日にずらす。&lt;/p&gt;
+
+&lt;p&gt;タスクの日付設定は思いついたときに。細かい時間設定は当日に。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？</title>
+    <link href="https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/">&lt;p&gt;&lt;em&gt;ソースコード&lt;/em&gt; をagentが書く前提で、エンジニアはソースをどう体系化して管理すれば、十分に長続きする理解を委任しないままソフトウェアを運用できるか？&lt;/p&gt;
 
 &lt;p&gt;将棋棋士は必ずAIの評価値をみるだけでなく、新しい戦法の研究では棋譜を並べる。彼らは理解を委任しない。&lt;/p&gt;
 
@@ -16,7 +125,105 @@
 
 &lt;p&gt;「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？デジタルなものづくりの実装者、そして組織づくりをする立場の人に問われていると思う。&lt;/p&gt;
 
-&lt;p&gt;この過程を名人芸として体系化することなく、この議論を抜きにして「コードを書いた人、マージした人が責任を持て」だったり「ソースコードを書く時間が圧倒的に短くなったから、大量の機能を同じ工数で実装しきれるはずである」と指示するのは中長期で間に合わなくなってくると思う。速度を取った10xではなく、質を取った2xを目指すべきでなかろうか。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？</summary></entry><entry xml:lang="en"><title type="html">I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust</title><link href="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/" rel="alternate" type="text/html" title="I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust" /><published>2026-07-13T00:00:00+00:00</published><updated>2026-07-13T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/07/13/obsidian-katazuke</id><content type="html" xml:base="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/">&lt;p&gt;I built an Obsidian plugin that finds and helps you tidy up the notes you once thought were important but that have quietly gathered dust. It’s out now as an &lt;a href=&quot;https://community.obsidian.md/plugins/katazuke&quot;&gt;official community plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;この過程を名人芸として体系化することなく、この議論を抜きにして「コードを書いた人、マージした人が責任を持て」だったり「ソースコードを書く時間が圧倒的に短くなったから、大量の機能を同じ工数で実装しきれるはずである」と指示するのは中長期で間に合わなくなってくると思う。速度を取った10xではなく、質を取った2xを目指すべきでなかろうか。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">仮説とオントロジーとフォルダー階層</title>
+    <link href="https://mdaisuke.net/jp/notes/hypothesis-ontology-folder/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/hypothesis-ontology-folder</id>
+    <published>2026-08-20T00:00:00+00:00</published>
+    <updated>2026-08-20T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/hypothesis-ontology-folder/">&lt;p&gt;obsidianを使っていて仮説とその検証をどうやって管理しようか迷っていた。
+仮説検証には大抵複数の領域を横断的に組み合わせることが必要となる。例えば家計と自分や家族との幸せの方針を決めるための仮説には、それぞれの価値観と会計的な領域を組み合わせる必要がある。&lt;/p&gt;
+
+&lt;p&gt;フォルダー階層とオントロジーをハイブリットとして使い分ける前提で、仮説そのものをフォルダーの名前とする案はどうか。仮説には、仮説を支える子仮説や何故なぜの組みあわせが存在するが仮説を親として受け継ぐ従属関係がある。これにはフォルダー階層が親和性が高そうだ。&lt;/p&gt;
+
+&lt;p&gt;一方でオントロジーによる組み合わせは何を概念の最小単位とするかで重点となる。そしてその最小単位そのものがタイトル名、つまりファイル名となる。仮説や仮説を支える子仮説、何故なぜはそれ以上切っても切れない最小単位となる。よってファイル名そのものだ。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">将来の自分に任せられる</title>
+    <link href="https://mdaisuke.net/jp/notes/you-can-rely-on-future-version-of-yourself/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/you-can-rely-on-future-version-of-yourself</id>
+    <published>2026-08-16T00:00:00+00:00</published>
+    <updated>2026-08-16T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/you-can-rely-on-future-version-of-yourself/">&lt;p&gt;良いプロダクトやPKMに忘れられるデザインがある。能動的に忘れられることは幸せなことである。ここで重点は、将来の自分に任せられるか。今安心して忘れるためにはあとで必ず自分が掘り起こせるだろうと確信がないといけない。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">エビングハウスの忘却曲線、再学習時にどれだけ手間が節約できたかと睡眠による記憶の固定について</title>
+    <link href="https://mdaisuke.net/jp/notes/on-forgetting-curve/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/on-forgetting-curve</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/on-forgetting-curve/">&lt;p&gt;忘却曲線について少し学び直し。振り返って思い出すときにどれくらい負荷なく思い出すことができるか、睡眠によって固定化される記憶があるならば情報社会において大切。
+逆に眠れないとどれだけ詰め込んでも記憶が固定されなくなる。&lt;/p&gt;
+
+&lt;p&gt;当たり前だけど再認識したのは、覚えておきたいものでも使っていなければ思い出すことができなくなること。自分が考えていたことを文章にまとめてもずっと前まで振り返ることなく思い出さない限り、思い出すことが困難になる。
+たとえば言語のようにすぐに思い出さないと大変なものと、コーディングのようにリアルタイムでなくても「思い出す」までの時間が与えられているもので切り分けられる。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/DaisukeMiyazaki/df9f67d2dc989192be788b8374b5467d&quot;&gt;claudeによるエビングハウスの忘却曲線のリサーチ&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">理解を壊さないためのプロンプト</title>
+    <link href="https://mdaisuke.net/jp/notes/promt-for-protect-your-understanding/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/promt-for-protect-your-understanding</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/promt-for-protect-your-understanding/">&lt;p&gt;&lt;a href=&quot;https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/&quot;&gt;Ankur Sethi&lt;/a&gt; から引用&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I want to understand every line of code that goes into this project. Never create, edit, move, rename, or delete project files unless I explicitly ask you to do so. Instead, show me every proposed edit in the chat so I can type it in manually.&lt;/p&gt;
+
+  &lt;p&gt;Do not run commands that modify project files, install dependencies, or change repository state unless I explicitly request that action. Instead, show me those commands in the chat so I can run them manually.&lt;/p&gt;
+
+  &lt;p&gt;I’m an experienced developer. Do not explain syntax, APIs, programming concepts, or implementation details unless explicitly asked.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">コンテキストスイッチングが多いと没頭している時間が消える</title>
+    <link href="https://mdaisuke.net/jp/notes/context-swtich-wont-help-buidling-flow/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/context-swtich-wont-help-buidling-flow</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/context-swtich-wont-help-buidling-flow/">&lt;p&gt;没頭していると頭の中の作業記憶が進化、整理されて長期記憶に変わる。短期記憶に詰め込むものが発散するとスイッチングが発生してしまう。没頭と思考の収束は比例関係にあり、思考の発散は逆比例関係があるのかもしれない。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mdaisuke.net/jp/2025/07/02/understanding-delegation/&quot;&gt;理解を委任してはいけない&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">デジタルウェルビーイング</title>
+    <link href="https://mdaisuke.net/jp/notes/digital-wellbeing-01/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/digital-wellbeing-01</id>
+    <published>2026-08-10T00:00:00+00:00</published>
+    <updated>2026-08-10T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/digital-wellbeing-01/">&lt;p&gt;&lt;a href=&quot;https://wellbeing.google/&quot;&gt;Digital Wellbeing through technology&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Find a balance with technology that feels right for you.
+As technology becomes more and more integral to everything we do, it can sometimes distract us from the things that matter most to us. We believe technology should improve life, not distract from it. We’re committed to giving everyone the tools they need to develop their own sense of digital wellbeing. So that life, not the technology in it, stays front and center.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;職業がソフトウェア開発であるからこそ1日にスクリーンを見ている時間は平均して10時間を超える。1日10時間もテクノロジーに触れている、と言ったら普通の人であれば誰もが「技術のしもべ」になっているというであろう。自分がしもべと思ってなくても、この塩梅や匙加減を覚えるには試行錯誤しないといけない&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="en">
+    <title type="html">I Built an Obsidian Plugin to Tidy Up Notes That Once Mattered but Gathered Dust</title>
+    <link href="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/en/2026/07/13/obsidian-katazuke</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/en/2026/07/13/obsidian-katazuke/">&lt;p&gt;I built an Obsidian plugin that finds and helps you tidy up the notes you once thought were important but that have quietly gathered dust. It’s out now as an &lt;a href=&quot;https://community.obsidian.md/plugins/katazuke&quot;&gt;official community plugin&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;hard-to-spot-in-the-graph-view&quot;&gt;Hard to spot in the graph view&lt;/h3&gt;
 
@@ -71,7 +278,17 @@ Before you place something new, first let go of the old. Wanting to do the same 
 
 &lt;p&gt;The reason you can keep adding things, keep adding notes, is that you believe you’ll be able to pull them out later when you need them. Only when there’s a system that lets you forget with peace of mind can you truly stockpile in your own room.&lt;/p&gt;
 
-&lt;p&gt;If everything is neatly tidied, reaching the notes you treasure will be quicker. I hope Katazuke helps you face notes that matter more to you.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Notes I once thought were important, now quietly gathering dust. Before adding new connections, let go of the old ones. The story of an Obsidian plugin I built to help with that kind of tidying.</summary></entry><entry xml:lang="jp"><title type="html">大事でも気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った</title><link href="https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke/" rel="alternate" type="text/html" title="大事でも気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った" /><published>2026-07-13T00:00:00+00:00</published><updated>2026-07-13T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke/">&lt;p&gt;大事だと思っていたけれど気づいたら埃をかぶっていたノートを見つけて片付ける。そんな手助けをできるObsidianプラグインを作りました。&lt;a href=&quot;https://community.obsidian.md/plugins/katazuke&quot;&gt;公式のコミュニティプラグイン&lt;/a&gt;として公開しています。&lt;/p&gt;
+&lt;p&gt;If everything is neatly tidied, reaching the notes you treasure will be quicker. I hope Katazuke helps you face notes that matter more to you.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">大事でも気づいたら埃をかぶっていたノートを片付けるObsidianプラグインを作った</title>
+    <link href="https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/2026/07/13/obsidian-katazuke/">&lt;p&gt;大事だと思っていたけれど気づいたら埃をかぶっていたノートを見つけて片付ける。そんな手助けをできるObsidianプラグインを作りました。&lt;a href=&quot;https://community.obsidian.md/plugins/katazuke&quot;&gt;公式のコミュニティプラグイン&lt;/a&gt;として公開しています。&lt;/p&gt;
 
 &lt;h3 id=&quot;グラフビューでは見つけにくい&quot;&gt;グラフビューでは見つけにくい&lt;/h3&gt;
 
@@ -130,7 +347,17 @@ Before you place something new, first let go of the old. Wanting to do the same 
 
 &lt;p&gt;ものを、ノートを増やし続けられるのはあとで必要なときに引き出せると信じられるからです。安心して忘れられる仕組みがあって初めて自分の部屋に貯め込めます。&lt;/p&gt;
 
-&lt;p&gt;綺麗に片付いていれば、大切にしているノートに辿り着くことも早いでしょう。Katazukeを通して、あなたがもっと大切なノートと向き合えるようになったら嬉しいです。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">大事でも気づいたら埃をかぶっていたノート。つながりを足す前に古いつながりを手放す。そんな片付けを手助けするObsidianプラグインを作った話。</summary></entry><entry xml:lang="en"><title type="html">The Notes You Can No Longer Find, and Two Kinds of Work</title><link href="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/" rel="alternate" type="text/html" title="The Notes You Can No Longer Find, and Two Kinds of Work" /><published>2026-07-03T00:00:00+00:00</published><updated>2026-07-03T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/07/03/refactor-obsidian</id><content type="html" xml:base="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/">&lt;p&gt;Six years ago, in the very first piece I wrote here, I described the small magic in our pockets. The magic that stretches memory almost forever, and blurs the line around who owns knowledge. Since then my notes kept growing. The magic kept its promise and pushed my memory further and further outward.&lt;/p&gt;
+&lt;p&gt;綺麗に片付いていれば、大切にしているノートに辿り着くことも早いでしょう。Katazukeを通して、あなたがもっと大切なノートと向き合えるようになったら嬉しいです。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="en">
+    <title type="html">The Notes You Can No Longer Find, and Two Kinds of Work</title>
+    <link href="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/en/2026/07/03/refactor-obsidian</id>
+    <published>2026-07-03T00:00:00+00:00</published>
+    <updated>2026-07-03T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/en/2026/07/03/refactor-obsidian/">&lt;p&gt;Six years ago, in the very first piece I wrote here, I described the small magic in our pockets. The magic that stretches memory almost forever, and blurs the line around who owns knowledge. Since then my notes kept growing. The magic kept its promise and pushed my memory further and further outward.&lt;/p&gt;
 
 &lt;p&gt;And now I stand on its other side. Too many to find.&lt;/p&gt;
 
@@ -180,7 +407,17 @@ Before you place something new, first let go of the old. Wanting to do the same 
 
 &lt;p&gt;I haven’t stopped facing my notes. I’m only letting go of the part a machine can do. The time it frees I return to facing the text — merging, splitting, throwing away, and writing again.&lt;/p&gt;
 
-&lt;p&gt;Next I want to write about how to keep doing that judgment. Because the assurance that a future me can surely find it again is what makes forgetting a happiness.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">The more notes you keep, the harder it is to reach the one you want. You recut folders, add tags, and it collapses again. Organizing itself had become the work. But organizing is two things: the kind you may hand off, and the kind you must not.</summary></entry><entry xml:lang="jp"><title type="html">増えすぎて探せないノートと二種類の仕事</title><link href="https://mdaisuke.net/jp/2026/07/03/refactor-obsidian/" rel="alternate" type="text/html" title="増えすぎて探せないノートと二種類の仕事" /><published>2026-07-03T00:00:00+00:00</published><updated>2026-07-03T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/07/03/refactor-obsidian</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/07/03/refactor-obsidian/">&lt;p&gt;六年前。この場所の最初の記事で、僕はポケットの中の小さな魔法について書いた。記憶を半永久に伸ばし、知識の所有者の境界をぼんやりさせる魔法だ。あれからノートは増え続けた。魔法は約束どおり僕の記憶を外へと押し広げてくれた。&lt;/p&gt;
+&lt;p&gt;Next I want to write about how to keep doing that judgment. Because the assurance that a future me can surely find it again is what makes forgetting a happiness.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">増えすぎて探せないノートと二種類の仕事</title>
+    <link href="https://mdaisuke.net/jp/2026/07/03/refactor-obsidian/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/2026/07/03/refactor-obsidian</id>
+    <published>2026-07-03T00:00:00+00:00</published>
+    <updated>2026-07-03T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/2026/07/03/refactor-obsidian/">&lt;p&gt;六年前。この場所の最初の記事で、僕はポケットの中の小さな魔法について書いた。記憶を半永久に伸ばし、知識の所有者の境界をぼんやりさせる魔法だ。あれからノートは増え続けた。魔法は約束どおり僕の記憶を外へと押し広げてくれた。&lt;/p&gt;
 
 &lt;p&gt;そしていま、その裏面に立っている。増えすぎて探せない。&lt;/p&gt;
 
@@ -230,7 +467,17 @@ Before you place something new, first let go of the old. Wanting to do the same 
 
 &lt;p&gt;ノートに向き合うことはやめていないが、機械にできることを手放しつつある。空いた時間は文章と向き合う側に戻す。束ねて割り、捨ててまた書くのだ。&lt;/p&gt;
 
-&lt;p&gt;次はその「判断」を続けるための話を書きたい。未来の自分が確かに引けるとの安心感が、忘れる幸せを後押ししてくれるからだ。&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">ノートが増えるほど目当ての一枚に辿り着けなくなる。フォルダを切り直しタグを足し、また崩れる。整理そのものが仕事になっていた。けれど整理には手放していい仕事と、手放してはいけない仕事がある。</summary></entry><entry xml:lang="en"><title type="html">I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn’t Enough</title><link href="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/" rel="alternate" type="text/html" title="I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn’t Enough" /><published>2026-06-25T00:00:00+00:00</published><updated>2026-06-25T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/06/25/papers-into-podcasts</id><content type="html" xml:base="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/">&lt;h2 id=&quot;the-papers-im-curious-about-but-never-sit-down-to-read&quot;&gt;The papers I’m curious about but never sit down to read&lt;/h2&gt;
+&lt;p&gt;次はその「判断」を続けるための話を書きたい。未来の自分が確かに引けるとの安心感が、忘れる幸せを後押ししてくれるからだ。&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="en">
+    <title type="html">I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn&apos;t Enough</title>
+    <link href="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/en/2026/06/25/papers-into-podcasts</id>
+    <published>2026-06-25T00:00:00+00:00</published>
+    <updated>2026-06-25T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/">&lt;h2 id=&quot;the-papers-im-curious-about-but-never-sit-down-to-read&quot;&gt;The papers I’m curious about but never sit down to read&lt;/h2&gt;
 
 &lt;p&gt;I keep running into papers and long essays I’m genuinely curious about. The curiosity is real; the focus to sit down and read them is not. Reading is active work, and I rarely find the slot for it.&lt;/p&gt;
 
@@ -274,7 +521,17 @@ Before you place something new, first let go of the old. Wanting to do the same 
       &lt;p&gt;Source: Frank Racioppi, “&lt;a href=&quot;https://podalization.substack.com/p/the-ten-best-interviewers-in-podcasting&quot;&gt;The Ten Best Interviewers In Podcasting&lt;/a&gt;” (Ear Worthy / Pod-Alization, 2023). Starting from this article, I dug into each host’s own statements, blogs, and interviews. Primary sources, per host: &lt;a href=&quot;https://www.pressclubinstitute.org/2020/07/20/terry-gross-and-michael-barbaro-share-interview-tips-and-techniques/&quot;&gt;Michael Barbaro&lt;/a&gt;, &lt;a href=&quot;https://pogueman.substack.com/p/pogues-top-ten-interview-tips&quot;&gt;David Pogue&lt;/a&gt;, &lt;a href=&quot;https://www.cjr.org/special_report/qa-nprs-audie-cornish-on-the-intimacy-of-interviewing.php&quot;&gt;Audie Cornish&lt;/a&gt;, &lt;a href=&quot;https://soundjudgment.substack.com/p/interviews-are-the-foundation-of&quot;&gt;Elaine Appleton Grant&lt;/a&gt;, &lt;a href=&quot;https://vocal.media/interview/the-art-of-kindness-podcast-a332g0iko&quot;&gt;Robert Peterpaul&lt;/a&gt;, &lt;a href=&quot;https://www.somethingyoushouldknow.net/about/&quot;&gt;Mike Carruthers&lt;/a&gt;, &lt;a href=&quot;https://tinkmedia.co/interviews/evan-stern&quot;&gt;Evan Stern&lt;/a&gt;, &lt;a href=&quot;https://veritysangan.com/podcast-archive/ep-58-getting-curious-and-hosting-amazing-guest-interviews-with-matt-gilhooly/&quot;&gt;Matt Gilhooly&lt;/a&gt;, &lt;a href=&quot;https://www.podcastjunkies.com/jordan-harbinger-interview-2/&quot;&gt;Jordan Harbinger&lt;/a&gt;, &lt;a href=&quot;https://booktime584.wordpress.com/2023/04/04/preconceivedinterview/&quot;&gt;Zale Mednick&lt;/a&gt;. &lt;a href=&quot;#fnref:interviewers&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">Auto-generated podcasts turn any text into natural-sounding audio, but they&apos;re thin on examples and ask no real questions. So I built a pipeline that digests a paper with concrete examples and an interviewer-grade questioner — as an on-ramp to the primary source, not a replacement for it.</summary></entry><entry xml:lang="jp"><title type="html">積読の論文は読むよりまず聞きたいが、自動ポッドキャストでは物足りなかった</title><link href="https://mdaisuke.net/jp/2026/06/25/papers-into-podcasts/" rel="alternate" type="text/html" title="積読の論文は読むよりまず聞きたいが、自動ポッドキャストでは物足りなかった" /><published>2026-06-25T00:00:00+00:00</published><updated>2026-06-25T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/06/25/papers-into-podcasts</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/06/25/papers-into-podcasts/">&lt;h2 id=&quot;興味はあっても腰を据えて読めない論文たち&quot;&gt;興味はあっても腰を据えて読めない論文たち&lt;/h2&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  
+  <entry xml:lang="jp">
+    <title type="html">積読の論文は読むよりまず聞きたいが、自動ポッドキャストでは物足りなかった</title>
+    <link href="https://mdaisuke.net/jp/2026/06/25/papers-into-podcasts/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/2026/06/25/papers-into-podcasts</id>
+    <published>2026-06-25T00:00:00+00:00</published>
+    <updated>2026-06-25T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/2026/06/25/papers-into-podcasts/">&lt;h2 id=&quot;興味はあっても腰を据えて読めない論文たち&quot;&gt;興味はあっても腰を据えて読めない論文たち&lt;/h2&gt;
 
 &lt;p&gt;どこかで見かけて「興味はある」のに積まれたままの論文や長文記事があります。好奇心はあります。でも、腰を据えて読む集中の時間は、なかなか取れません。読むのは能動的な作業で、その枠を確保するのが難しいのです。&lt;/p&gt;
 
@@ -318,169 +575,8 @@ Before you place something new, first let go of the old. Wanting to do the same 
       &lt;p&gt;出典: Frank Racioppi「&lt;a href=&quot;https://podalization.substack.com/p/the-ten-best-interviewers-in-podcasting&quot;&gt;The Ten Best Interviewers In Podcasting&lt;/a&gt;」(Ear Worthy / Pod-Alization, 2023)。この記事を起点に、各ホスト本人の発言・ブログ・インタビューを調査して整理しました。各ホストの一次ソース: &lt;a href=&quot;https://www.pressclubinstitute.org/2020/07/20/terry-gross-and-michael-barbaro-share-interview-tips-and-techniques/&quot;&gt;Michael Barbaro&lt;/a&gt;、&lt;a href=&quot;https://pogueman.substack.com/p/pogues-top-ten-interview-tips&quot;&gt;David Pogue&lt;/a&gt;、&lt;a href=&quot;https://www.cjr.org/special_report/qa-nprs-audie-cornish-on-the-intimacy-of-interviewing.php&quot;&gt;Audie Cornish&lt;/a&gt;、&lt;a href=&quot;https://soundjudgment.substack.com/p/interviews-are-the-foundation-of&quot;&gt;Elaine Appleton Grant&lt;/a&gt;、&lt;a href=&quot;https://vocal.media/interview/the-art-of-kindness-podcast-a332g0iko&quot;&gt;Robert Peterpaul&lt;/a&gt;、&lt;a href=&quot;https://www.somethingyoushouldknow.net/about/&quot;&gt;Mike Carruthers&lt;/a&gt;、&lt;a href=&quot;https://tinkmedia.co/interviews/evan-stern&quot;&gt;Evan Stern&lt;/a&gt;、&lt;a href=&quot;https://veritysangan.com/podcast-archive/ep-58-getting-curious-and-hosting-amazing-guest-interviews-with-matt-gilhooly/&quot;&gt;Matt Gilhooly&lt;/a&gt;、&lt;a href=&quot;https://www.podcastjunkies.com/jordan-harbinger-interview-2/&quot;&gt;Jordan Harbinger&lt;/a&gt;、&lt;a href=&quot;https://booktime584.wordpress.com/2023/04/04/preconceivedinterview/&quot;&gt;Zale Mednick&lt;/a&gt;。 &lt;a href=&quot;#fnref:interviewers&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">自動生成のポッドキャストはどんなテキストも自然な音声にしてくれます。でも具体例が薄く、まともな質問もありません。だから具体例を厚くし、一次情報への入口として、プロのインタビュアーの型で質問役を設計したパイプラインを作りました。</summary></entry><entry xml:lang="en"><title type="html">The Indentation Project, Part 1: Designing a 6-Tatami-Mat Room That Has to Serve Four Uses</title><link href="https://mdaisuke.net/en/2026/04/09/The-Indentation-Project-Part-1/" rel="alternate" type="text/html" title="The Indentation Project, Part 1: Designing a 6-Tatami-Mat Room That Has to Serve Four Uses" /><published>2026-04-09T00:00:00+00:00</published><updated>2026-04-09T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/04/09/The-Indentation-Project-Part-1</id><content type="html" xml:base="https://mdaisuke.net/en/2026/04/09/The-Indentation-Project-Part-1/">&lt;p&gt;&lt;em&gt;The step-by-step build gallery is &lt;a href=&quot;https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-problem-four-uses-one-6-tatami-mat-room&quot;&gt;The problem: four uses, one 6 tatami mat room&lt;/h2&gt;
-
-&lt;p&gt;Anyone who likes making things eventually runs into the same problem: where do the things you make actually go? A 6 tatami room (about 9.7㎡) has to hold craft materials, display the things you make, give you a surface to work on, and still seat you on a sofa at the end of the day. Pile four jobs onto one room and every off-the-shelf option falls short.&lt;/p&gt;
-
-&lt;p&gt;Shelving from IKEA or Nitori eats floor area without ever reaching the ceiling, and units bought piecemeal never match in size or finish — the room reads as a patchwork. And off-the-shelf furniture can’t pull the sofa into the structure in the first place. A sofa is a thing you place; a shelf is a thing you stand up. The moment they sit in the room as separate objects, even when everything technically fits, you’re left with half-measures: no real work surface, and it looks wrong.&lt;/p&gt;
-
-&lt;p&gt;The only way to solve all of it was to use the full height of the wall and pull the sofa into a single skeleton. But it’s a rental — so having to take the whole thing back apart at move-out becomes the first constraint.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/IMG_1857.jpg&quot; alt=&quot;The wall-to-ceiling frame with the sofa built into the same structure&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;modeling-the-whole-thing-in-fusion-360-before-buying-a-single-board&quot;&gt;Modeling the whole thing in Fusion 360 before buying a single board&lt;/h2&gt;
-
-&lt;p&gt;I modeled the entire structure in Fusion 360 before buying any lumber: use the full height of the wall, add zero floor footprint, and lock every part’s dimensions before sourcing the wood.&lt;/p&gt;
-
-&lt;p&gt;The frame is almost entirely 2x2. The one exception is the center beam under the sofa platform, which carries a seated person’s weight, so that’s 2x4. Several shelves are cantilevered — supported on one or two sides only — to work the indentations in visually while keeping the sightline open and the space usable when you’re sitting on the sofa.&lt;/p&gt;
-
-&lt;p&gt;The rule at the root of the design was &lt;em&gt;no glue on any frame joint — full disassembly&lt;/em&gt;. Every joint had to break down into pieces small enough to carry out of a rental without marking the walls.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/2024-03-17%2015.46の画像.jpg&quot; alt=&quot;The Fusion 360 model of the full structure&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;why-kreg-pocket-holes&quot;&gt;Why Kreg pocket holes&lt;/h2&gt;
-
-&lt;p&gt;I joined the frame with Kreg pocket-hole joinery: two angled holes drilled into each board end, screwed from a hidden face. No visible hardware, and a strong joint.&lt;/p&gt;
-
-&lt;p&gt;Pocket holes scale. A structure like this needs hundreds of identical joints. Cutting a traditional joint hundreds of times isn’t realistic — but clamping a jig and drilling two holes is just the same motion repeated however many times, and assembly and disassembly both run on that.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/IMG_1747.jpg&quot; alt=&quot;Pocket holes drilled into the 2x2 ends — the indentations the project is named for&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;building-the-frame&quot;&gt;Building the frame&lt;/h2&gt;
-
-&lt;p&gt;Assembly went in three stages: the sofa base first, then the verticals, then the horizontal beams. You don’t stack bottom to top — you fix the load-bearing base, stand the verticals into it, and tie them together with the horizontals. From across the room, it already looked finished at this point.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-the-model-didnt-catch&quot;&gt;What the model didn’t catch&lt;/h2&gt;
-
-&lt;p&gt;The design had a middle partition in the upper-left shelf section. On screen it looked tidy, but once assembled, that one board cramped the space and kept anything tall from fitting. Right on the drawing, in the way in the room — so I took it out.&lt;/p&gt;
-
-&lt;p&gt;And drilling the pocket holes scattered wood chips across the whole apartment. I’d set up to contain them, but drill a few hundred holes and the sawdust travels well past wherever you thought the mess would stay.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/IMG_1646.jpg&quot; alt=&quot;The Kreg jig and drill, and the sawdust that went everywhere&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;what-im-taking-forward&quot;&gt;What I’m taking forward&lt;/h2&gt;
-
-&lt;p&gt;The model helped enormously, but a lot only becomes clear once you see the real thing. Fusion 360 meant almost no wasted material — yet, like that partition, there are always spots that are right on screen and just don’t work in the room. The model is a perfect tool for nailing down the shopping list, but guaranteeing how it feels to use took the finishing work by hand.&lt;/p&gt;
-
-&lt;p&gt;To put the same trap in software terms: it’s a bit like the gap between a build passing and the system actually holding up in production.&lt;/p&gt;
-
-&lt;p&gt;And designing for disassembly paid off all the way through. I sized the verticals as smallest-repeatable-units for the sake of move-out. That decision helped me in Part 2: when I build the under-sofa drawer, the leftover offcuts turn out to be sized almost exactly to its interior. The modular design paid off further than the original design intended.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/IMG_1986.jpg&quot; alt=&quot;The frame assembled — the skeleton standing, before any surfaces or drawers&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The frame held the sofa and the skeleton stood. But the shelves still had no surfaces, the space under the sofa was a hollow cavity, and there was nowhere to set a single book down. In ver2: adding the top boards and a drawer, and getting it to the point where the room is actually usable.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;The full ver1 build gallery is &lt;a href=&quot;https://mdaisuke.net/en/2025/01/20/The-Uneven-Project-ver1/&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">A 6-tatami room (about 9.7㎡) has to be storage, display, workspace, and sofa all at once — and nothing off-the-shelf fits floor-to-ceiling or comes apart when the lease ends. So I modeled the whole frame in Fusion 360 and joined it with Kreg pocket holes.</summary></entry><entry xml:lang="jp"><title type="html">例の凸凹 Part 1：6畳を四つの部屋にする設計とフレーム</title><link href="https://mdaisuke.net/jp/2026/04/09/The-Indentation-Project-Part-1/" rel="alternate" type="text/html" title="例の凸凹 Part 1：6畳を四つの部屋にする設計とフレーム" /><published>2026-04-09T00:00:00+00:00</published><updated>2026-04-09T00:00:00+00:00</updated><id>https://mdaisuke.net/jp/2026/04/09/The-Indentation-Project-Part-1</id><content type="html" xml:base="https://mdaisuke.net/jp/2026/04/09/The-Indentation-Project-Part-1/">&lt;p&gt;&lt;em&gt;組み立て順のギャラリーは&lt;a href=&quot;https://mdaisuke.net/jp/2025/01/20/例の凸凹-ver1/&quot;&gt;こちら&lt;/a&gt;。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;やりたいことを兼用したいが6畳しかない問題&quot;&gt;やりたいことを兼用したいが6畳しかない問題&lt;/h2&gt;
-
-&lt;p&gt;ものづくりが好きな人は、作ったものをどこに置くかという問題に必ず行き着く。6畳（約9.7㎡）の部屋に、収納・展示・作業・くつろぎを同時に詰め込まなければならない。雑貨を作る素材を仕舞い、作ったものを飾り、手を動かす台があり、そのうえで座ってくつろげる場所がいる。一部屋にそれだけの役割を背負わせると、既製品はどれも噛み合わない。&lt;/p&gt;
-
-&lt;p&gt;IKEA やニトリの棚は床面積を食う割に天井までの高さを使い切れず、別々に買い足すと寸法も色も揃わず継ぎ接ぎに見える。ソファはまず既製品では構造の中に取り込めない。ソファは「置くもの」で、棚は「立てるもの」。別物として部屋に並べた瞬間、納まったとしても中途半端となり、作業スペースは皆無となり、見栄えも悪くなってしまう。&lt;/p&gt;
-
-&lt;p&gt;全てを解決するには壁の高さを丸ごと使い、ソファまで一つの骨格に取り込むしかなかった。しかし賃貸なので、退去時には全部ばらせることが最初の制約となる。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/IMG_1857.jpg&quot; alt=&quot;6畳の部屋に壁一面で立ち上がったフレーム&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;fusion-360-で全部を設計してから買う&quot;&gt;Fusion 360 で全部を設計してから買う&lt;/h2&gt;
-
-&lt;p&gt;材料を一本も買う前に、構造を丸ごと Fusion 360 でモデリングした。壁の高さを使い切り、床の専有面積を一切増やさない。各部材の寸法を確定させてから木材を調達した。&lt;/p&gt;
-
-&lt;p&gt;骨格は基本的に 2x2 材。ソファ台の中央梁だけ、人が座る荷重を受けるので 2x4 にした。棚の何枚かは片持ち（一辺か二辺だけで支える）にして、凸凹を視覚的に組み込みつつ、ソファに座ったときの視線を広く残しつつ空間を確保する。&lt;/p&gt;
-
-&lt;p&gt;そして「接着剤を使わず、完全に分解できる」ことを設計の根とした。フレームのジョイントは一切接着しない。賃貸の退去時に、壁を傷めずに搬出できる単位までばらせることを意識した。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/2024-03-17%2015.46の画像.jpg&quot; alt=&quot;Fusion 360 上で組んだフレーム全体のモデル&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;なぜ-kreg-のポケットホールを選んだか&quot;&gt;なぜ Kreg のポケットホールを選んだか&lt;/h2&gt;
-
-&lt;p&gt;ジョイントは Kreg のポケットホール（pocket-hole joinery）で組んだ。端ごとに斜めの穴を二つ開け、隠れた位置からビスで締める。表に金具が出ず、強度が高い。&lt;/p&gt;
-
-&lt;p&gt;ポケットホールはスケールできる。この構造には同じ形のジョイントが何百と要る。一つひとつ仕口を切るのは現実的でないが、ジグを当てて穴を開けるだけなら、同じ動作を何百回でも繰り返すだけで済む。組み立ても分解も同じ。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/IMG_1747.jpg&quot; alt=&quot;2x2材の端に並んだポケットホール。「凸凹」の名前の由来&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;フレームを組む&quot;&gt;フレームを組む&lt;/h2&gt;
-
-&lt;p&gt;組み立ては三段階。まずソファ台、次に垂直材、最後に水平梁。下から積み上げるのではなく、荷重を受ける土台を先に決め、そこに縦を立て、横で繋ぐ。部屋の向こうから見ると、この時点でもう完成して見えた。&lt;/p&gt;
-
-&lt;h2 id=&quot;モデルしても想定外だったこと&quot;&gt;モデルしても想定外だったこと&lt;/h2&gt;
-
-&lt;p&gt;設計では左上の棚に中仕切りを入れていた。画面の中では収まりが良かったが実際に組んでみると、その一枚が空間を窮屈にし、背の高い物が入らなくなってしまった。図面では正しく、現物では邪魔だったので外した。&lt;/p&gt;
-
-&lt;p&gt;そしてポケットホールの穴あけで、木屑が部屋中に散った。養生はしたつもりだったけれど何百もの穴を開ければ、おがくずは想定した範囲の外まで飛んでしまった。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/IMG_1646.jpg&quot; alt=&quot;Kreg ジグとドリル、黒いテーブルに散ったおがくず&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;これからの学び&quot;&gt;これからの学び&lt;/h2&gt;
-
-&lt;p&gt;モデルは大いに助かるが、実物をみて気づくことは多い。Fusion 360 のおかげで材料の無駄はほぼ無かったが、それでも中仕切りのように、画面では正しくても現物でイケていない箇所は出うる。モデルは買い物リストを確定させる道具としては完璧、しかし使い心地を保証するためには仕上げの作業は欠かせなかった。&lt;/p&gt;
-
-&lt;p&gt;同じ罠をソフトウェアで例えて言えば、ビルドが通ることと本番で使えることには差分があるのと似ているかもしれない。&lt;/p&gt;
-
-&lt;p&gt;そして分解前提の設計は最後まで効いた。 縦材を「最小の反復単位」で設計したのは退去時の分解のためだった。ところがこの判断は、Part 2 で引き出しを作るとき、余った端材がちょうど引き出しの内寸に一致するという形でもう一度返ってくる。最初の設計が意図していなかった所まで、モジュール化の恩恵が受けられた。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mdaisuke.net/assets/images/indentation/IMG_1986.jpg&quot; alt=&quot;三段に組み上がった骨格。まだ天板は無い&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;フレームはソファを支え、部屋の骨格は立った。けれど棚にはまだ天板が無く、ソファ下は空洞のまま、本一冊置く面が無い。次のver2では、天板と引き出しを足し、実際に使えるようになるところまで。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;em&gt;ver1 の組み立て写真は&lt;a href=&quot;https://mdaisuke.net/jp/2025/01/20/例の凸凹-ver1/&quot;&gt;こちらのギャラリー&lt;/a&gt;。&lt;/em&gt;&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="jp" /><summary type="html">6畳（約9.7㎡）は、収納・展示・作業・くつろぎを一部屋で兼ねさせられる。既製品は天井までの高さを使い切れず、リース終了時に分解もできない。Fusion 360 で壁一面のフレームを設計し、Kreg のポケットホールで組んだ記録。</summary></entry><entry xml:lang="en"><title type="html">I Built an Obsidian Plugin to Surface My Most-Edited Notes</title><link href="https://mdaisuke.net/en/2026/03/20/obsidian-edit-count/" rel="alternate" type="text/html" title="I Built an Obsidian Plugin to Surface My Most-Edited Notes" /><published>2026-03-20T00:00:00+00:00</published><updated>2026-03-20T00:00:00+00:00</updated><id>https://mdaisuke.net/en/2026/03/20/obsidian-edit-count</id><content type="html" xml:base="https://mdaisuke.net/en/2026/03/20/obsidian-edit-count/">&lt;p&gt;An Obsidian plugin that automatically counts meaningful edits and helps you keep track of the notes you revisit most. It’s been working well enough on my end, so I’m releasing it as a beta.&lt;/p&gt;
-
-&lt;h3 id=&quot;starting-point-finding-the-heavy-notes&quot;&gt;Starting Point: Finding the “Heavy” Notes&lt;/h3&gt;
-
-&lt;p&gt;After using Obsidian for over 3 years, my notes had grown considerably.
-When I opened the graph view, every note appeared at roughly the same size. Link count does affect node size, but that reflects “how connected” a note is — not “how actively I’m thinking about it.”
-It became a chance to revisit what a valuable note really means to me. The answer: notes I keep opening, adding to, and rewriting. In other words, &lt;strong&gt;notes with a high edit count&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;This was a good starting point.&lt;/p&gt;
-
-&lt;h3 id=&quot;starting-with-existing-plugins&quot;&gt;Starting with Existing Plugins&lt;/h3&gt;
-
-&lt;p&gt;I began by looking for existing solutions.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ElsaTam/obsidian-extended-graph&quot;&gt;Extended Graph&lt;/a&gt; can scale node sizes based on frontmatter values. On the display side, this was exactly what I wanted — but it doesn’t automatically measure edit count. And manually updating frontmatter every time didn’t seem practical.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Vinzent03/obsidian-git&quot;&gt;Obsidian Git&lt;/a&gt; manages your vault with Git. You could track per-file change frequency via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log&lt;/code&gt;, but enabling auto-commit pollutes the log. Backups are nice, but how would you weight existing notes?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/zakhij/obsidian-activity-heatmap&quot;&gt;Activity Heatmap&lt;/a&gt; and &lt;a href=&quot;https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528&quot;&gt;Sidebar Heatmap&lt;/a&gt; visualize “volume of change” and “daily activity” respectively — neither was a direct fit for weighting notes by cumulative edit count.&lt;/p&gt;
-
-&lt;h3 id=&quot;approach-detecting-meaningful-edits-via-character-diff&quot;&gt;Approach: Detecting Meaningful Edits via Character Diff&lt;/h3&gt;
-
-&lt;p&gt;Simply incrementing a counter on every save wouldn’t make sense. Fixing a typo and rewriting an entire paragraph are fundamentally different.&lt;/p&gt;
-
-&lt;p&gt;So I went with &lt;strong&gt;character count diff with a threshold&lt;/strong&gt;. The plugin snapshots the character count when you open a note, then evaluates the diff when you switch files or after a period of inactivity (default: 3 minutes).
-If the difference is 50 characters or more, it increments &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edit_count&lt;/code&gt; in the frontmatter.&lt;/p&gt;
-
-&lt;p&gt;Since this is highly personal, the threshold is configurable.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;edit_count&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The key here is that it’s entirely self-contained within Obsidian. No Git, no external tools — the only thing held in memory is the initial character count of the open file, so it’s lightweight.
-And since it just modifies frontmatter in the file, it aligns with the &lt;a href=&quot;https://stephango.com/file-over-app&quot;&gt;file over app&lt;/a&gt; principle.&lt;/p&gt;
-
-&lt;h3 id=&quot;how-i-use-it-for-now&quot;&gt;How I Use It (For Now)&lt;/h3&gt;
-
-&lt;p&gt;On Obsidian 1.9.10+, you can use the core Bases feature to create a table sorted by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edit_count&lt;/code&gt; — no third-party dependency like Dataview needed. “I’ve been working on this note a lot” or “my thinking is concentrated in this area” becomes visible at a glance, so I keep it pinned as a pane on screen.&lt;/p&gt;
-
-&lt;h3 id=&quot;still-in-beta&quot;&gt;Still in Beta&lt;/h3&gt;
-
-&lt;p&gt;The plugin is currently available as a beta release, installable via &lt;a href=&quot;https://github.com/TfTHacker/obsidian42-brat&quot;&gt;BRAT&lt;/a&gt;.
-I’ve been using it daily in my own vault without any major issues, but it hasn’t been tested enough in other environments to warrant an official release.&lt;/p&gt;
-
-&lt;p&gt;Feedback is welcome on &lt;a href=&quot;https://github.com/DaisukeMiyazaki/obsidian-edit-count&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;looking-back&quot;&gt;Looking Back&lt;/h3&gt;
-
-&lt;p&gt;I can now measure a note’s significance not just by its link count, but by how many times I’ve put my hands on it. 
-Neither metric is “right” — having a different viewpoints simply reveals things you wouldn’t otherwise notice.&lt;/p&gt;
-
-&lt;p&gt;The trail of thinking lives not in how much you wrote, but in how many times you rewrote. This plugin turned that intuition into something backed by numbers.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Daisuke Miyazaki&quot;}, {&quot;email&quot;=&gt;&quot;daisuke.miyazaki012@gmail.com&quot;}]</name></author><category term="en" /><summary type="html">An Obsidian plugin that automatically counts meaningful edits and helps you identify the notes you revisit most. Here&apos;s the thought process behind building it.</summary></entry></feed>
+&lt;/div&gt;
+</content>
+  </entry>
+  
+</feed>
