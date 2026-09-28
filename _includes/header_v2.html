@@ -144,26 +144,6 @@
         </button>
       </div>
     </div>
-
-    <!-- カテゴリフィルター (トップページのみ表示するオプション) -->
-    {% if include.show_filter %}
-    <div class="no-scrollbar mt-4 flex gap-1 overflow-x-auto pb-1">
-      <button
-        class="filter-btn active whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-topic="all"
-      >
-        {% if page.lang == 'jp' %}すべて{% else %}All{% endif %}
-      </button>
-      {% for t in site.data.topics %}
-      <button
-        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-topic="{{ t.key }}"
-      >
-        {% if page.lang == 'jp' %}{{ t.jp }}{% else %}{{ t.en }}{% endif %}
-      </button>
-      {% endfor %}
-    </div>
-    {% endif %}
   </div>
 </header>
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: '例の凸凹 Part 1：6畳を四つの部屋にする設計とフレーム'
+title: "例の凸凹 Part 1：6畳を四つの部屋にする設計とフレーム"
 date: 2026-04-09
 lang: jp
 genre: 実用
-topics: [diy]
+topics: [diy, hardware]
 excerpt: "6畳（約9.7㎡）は、収納・展示・作業・くつろぎを一部屋で兼ねさせられる。既製品は天井までの高さを使い切れず、リース終了時に分解もできない。Fusion 360 で壁一面のフレームを設計し、Kreg のポケットホールで組んだ記録。"
 thumbnail: /assets/images/indentation/IMG_1857.jpg
 comments: true
 ---
 
-*組み立て順のギャラリーは[こちら](https://mdaisuke.net/jp/2025/01/20/例の凸凹-ver1/)。*
+_組み立て順のギャラリーは[こちら](https://mdaisuke.net/jp/2025/01/20/例の凸凹-ver1/)。_
 
 ## やりたいことを兼用したいが6畳しかない問題
 
@@ -66,4 +66,4 @@ IKEA やニトリの棚は床面積を食う割に天井までの高さを使い
 
 ---
 
-*ver1 の組み立て写真は[こちらのギャラリー](https://mdaisuke.net/jp/2025/01/20/例の凸凹-ver1/)。*
+_ver1 の組み立て写真は[こちらのギャラリー](https://mdaisuke.net/jp/2025/01/20/例の凸凹-ver1/)。_

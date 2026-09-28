@@ -4,7 +4,7 @@ title: 'Googleカレンダーに移動時間を自動追加するGASツール "C
 date: 2025-12-22
 lang: jp
 genre: 実用
-topics: [diy]
+topics: [diy, software]
 excerpt: "Googleカレンダーに予定を入れると、そこまでの移動ルート（電車・徒歩）を自動計算し、「移動予定」としてカレンダーに追加するGoogle Apps Script (GAS) ツールを作りました。"
 ---
 

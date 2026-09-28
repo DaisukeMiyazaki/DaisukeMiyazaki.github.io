@@ -14,7 +14,6 @@
     start_at: Sep 2021
     end_at: present
 - id: 1
-  topics: [diy]
   jp:
     title: DaisyStoneArt
     short: ポートフォリオ
@@ -34,7 +33,6 @@
     end_at: present
     thumbnail: /assets/images/daisystoneart.png
 - id: 2
-  topics: [diy]
   jp:
     title: Daisuke Miyazakiのサイト
     short: このサイト

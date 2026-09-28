@@ -6,7 +6,7 @@ excerpt: "ノートの編集回数を自動で数えて、よく手を入れる�
 comments: true
 lang: jp
 genre: 実用
-topics: [pkm, diy]
+topics: [pkm, diy, sotfware]
 thumbnail: /assets/images/obsidian_logo.png
 stage: 3
 read_minutes: 4
@@ -39,7 +39,6 @@ Obsidianを1年以上使い続けて、ノートは増えました。
 
 [Activity Heatmap](https://github.com/zakhij/obsidian-activity-heatmap)や[Sidebar Heatmap](https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528)は
 それぞれ「量の可視化」「日ごとの表示」であり、「累積的な編集回数で重みづけする」にドンピシャではありません。
-
 
 ### 方針：文字数差分で「実質的な編集」を検出する
 

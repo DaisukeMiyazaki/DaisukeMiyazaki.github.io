@@ -1,0 +1,12 @@
+{% assign keys = site.data.topics_by_lang[page.lang] %} {% if keys %}
+<section class="my-6">
+  <h2 class="mb-3 text-sm text-gray-500 dark:text-gray-400">Topics</h2>
+  <p class="text-base leading-loose text-gray-400 dark:text-gray-500">
+    {% for key in keys %}<a
+      href="/{{ page.lang }}/topics/{{ key }}/"
+      class="text-gray-900 underline underline-offset-4 hover:opacity-70 dark:text-white"
+      >{{ key }}</a
+    >{% unless forloop.last %}, {% endunless %}{% endfor %}
+  </p>
+</section>
+{% endif %}
