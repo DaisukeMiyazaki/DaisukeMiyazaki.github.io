@@ -26,7 +26,9 @@
   <div
     class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
   >
-    {{ include.entry.content }}
+    {% if include.entry.layout == "craft" %}
+    <p>{{ include.entry.excerpt | strip_html }}</p>
+    {% else %} {{ include.entry.content | strip_scripts }} {% endif %}
   </div>
   <a
     href="{{ include.entry.url | relative_url }}"
