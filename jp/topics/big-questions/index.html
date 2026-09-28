@@ -421,41 +421,20 @@
       仮説とオントロジーとフォルダー階層
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>obsidianを使っていて仮説とその検証をどうやって管理しようか迷っていた。
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>obsidianを使っていて仮説とその検証をどうやって管理しようか迷っていた。
 仮説検証には大抵複数の領域を横断的に組み合わせることが必要となる。例えば家計と自分や家族との幸せの方針を決めるための仮説には、それぞれの価値観と会計的な領域を組み合わせる必要がある。</p>
 
 <p>フォルダー階層とオントロジーをハイブリットとして使い分ける前提で、仮説そのものをフォルダーの名前とする案はどうか。仮説には、仮説を支える子仮説や何故なぜの組みあわせが存在するが仮説を親として受け継ぐ従属関係がある。これにはフォルダー階層が親和性が高そうだ。</p>
 
 <p>一方でオントロジーによる組み合わせは何を概念の最小単位とするかで重点となる。そしてその最小単位そのものがタイトル名、つまりファイル名となる。仮説や仮説を支える子仮説、何故なぜはそれ以上切っても切れない最小単位となる。よってファイル名そのものだ。</p>
- 
+
   </div>
-  <a
-    href="/jp/notes/hypothesis-ontology-folder/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
-  >
-    続きを読む →
-  </a>
+  
 </article>
 
 </div>
-<script>
-  // 高さに収まる書き物は折りたたみを外し、「続きを読む」を隠す
-  window.addEventListener("load", function () {
-    document.querySelectorAll(".entry-body").forEach(function (body) {
-      if (body.scrollHeight <= body.clientHeight) {
-        body.classList.remove(
-          "max-h-96",
-          "[mask-image:linear-gradient(to_bottom,black_75%,transparent)]",
-        );
-        body.nextElementSibling.remove();
-      }
-    });
-  });
-</script>
-
 
     </main>
 

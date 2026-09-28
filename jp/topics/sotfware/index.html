@@ -427,96 +427,26 @@
       よく編集するノートが一目でわかるObsidianプラグインを作った
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>ノートの編集回数を自動で数えて、よく手を入れるノートを把握する。そんなObsidianプラグインを作りました。
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>ノートの編集回数を自動で数えて、よく手を入れるノートを把握する。そんなObsidianプラグインを作りました。
 十分に手元では動いているのでベータ版として公開します。</p>
 
 <h3 id="出発点重いノートを見つけたい">出発点：「重いノート」を見つけたい</h3>
 
 <p>Obsidianを1年以上使い続けて、ノートは増えました。</p>
-
-<p>グラフビューを開いたとき、すべてのノートが同じ大きさで表示されます。
-それでリンクの数で大きさは変わるが、それは「つながりの多さ」であって「思考の活発さ」ではありませんでした。</p>
-
-<p>自分にとって価値のあるノートとは何かをもう一度問い直す機会になりました。
-そして何度も開いて、書き足して、書き直しているノート。つまり<strong>編集回数が多いノート</strong>。
-これを直感的に見分けられたら、ノートの全体像がもっと立体的になるのではないか？と考えました。</p>
-
-<h3 id="既存プラグインを探すところから">既存プラグインを探すところから</h3>
-
-<p>まず既存の解決策を探しました</p>
-
-<p><a href="https://github.com/ElsaTam/obsidian-extended-graph">Extended Graph</a>は、frontmatterの値でノードサイズを変えられます。これは「表示」側としてはまさに求めていたものである一方、編集回数を自動で計測する機能はなさそうです。
-また、自分で毎回フロントマターをいじる体験は運用しづらそうと思いました。</p>
-
-<p><a href="https://github.com/Vinzent03/obsidian-git">Obsidian Git</a>はvaultをGit管理してくれます。
-<code class="language-plaintext highlighter-rouge">git log</code>でファイルごとの変更頻度は追えるが、自動コミットを有効にするとログが汚れます。
-バックアップが取られることは良いですが、仮に既存のノートで重みづけをしたい場合はどうしたらいいか。</p>
-
-<p><a href="https://github.com/zakhij/obsidian-activity-heatmap">Activity Heatmap</a>や<a href="https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528">Sidebar Heatmap</a>は
-それぞれ「量の可視化」「日ごとの表示」であり、「累積的な編集回数で重みづけする」にドンピシャではありません。</p>
-
-<h3 id="方針文字数差分で実質的な編集を検出する">方針：文字数差分で「実質的な編集」を検出する</h3>
-
-<p>編集回数を数えるといっても、保存するたびに+1ではおかしいですね。
-typoの修正と、段落をまるごと書き直すのでは意味が違います。</p>
-
-<p>そこで<strong>文字数差分の閾値判定</strong>を採用しました。
-ノートを開いた時点の文字数を記録しておき、ファイルを離れるか一定時間（デフォルト3分）入力がなかったタイミングで差分を計算します。
-差分が50文字以上ならfrontmatterの<code class="language-plaintext highlighter-rouge">edit_count</code>を+1する。ここはもちろん人によって大きく好みがわかれるだろうから、設定で自由に変えられるようにしました。</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="na">edit_count</span><span class="pi">:</span> <span class="m">5</span>
-<span class="nn">---</span>
-</code></pre></div></div>
-
-<p>この方式の味噌はObsidian内で完結することです。Gitも外部ツールも不要で、メモリ上に保持するのは開いているファイルの初期文字数だけで軽量です。
-ファイルにあるフロントマターをいじればいいので<a href="https://stephango.com/file-over-app">アプリよりファイルの原則</a>にも沿うと考えました。</p>
-
-<h3 id="現時点の運用の仕方">(現時点の)運用の仕方</h3>
-
-<p>Obsidian 1.9.10以降であれば、コア機能のBasesを使って<code class="language-plaintext highlighter-rouge">edit_count</code>順のテーブルを作れます。
-Dataviewのようなサードパーティ依存もないため軽量です。「このノート、最近よく触ってるな」「このあたりに思考が集中してるな」と一目でわかるので、画面にpaneで常に表示してます。</p>
-
-<h3 id="まだベータ版">まだベータ版</h3>
-
-<p>現在このプラグインはベータ版として公開しています。<a href="https://github.com/TfTHacker/obsidian42-brat">BRAT</a>経由でインストールできます。</p>
-
-<p>自分のvaultで日常的に使っていて、目立った問題は出ていませんが、まだ他の人の環境で十分にテストできていないので、正式リリースにはしていません。
-フィードバックがあれば<a href="https://github.com/DaisukeMiyazaki/obsidian-edit-count">GitHub</a>で受け付けています。</p>
-
-<h3 id="振り返って">振り返って</h3>
-
-<p>ノートの価値を「リンクの数」だけでなく「手を動かした回数」で測れるようになりました。どちらが正しいということではなく、別の軸で見ることで気づくことがあります。
-思考の軌跡は、書いた量ではなく、書き直した回数に宿る。そんな感覚を、数字で裏付けてくれるツールになりました。</p>
- 
   </div>
+  
   <a
     href="/jp/2026/03/20/obsidian-edit-count/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     続きを読む →
   </a>
+  
 </article>
 
 </div>
-<script>
-  // 高さに収まる書き物は折りたたみを外し、「続きを読む」を隠す
-  window.addEventListener("load", function () {
-    document.querySelectorAll(".entry-body").forEach(function (body) {
-      if (body.scrollHeight <= body.clientHeight) {
-        body.classList.remove(
-          "max-h-96",
-          "[mask-image:linear-gradient(to_bottom,black_75%,transparent)]",
-        );
-        body.nextElementSibling.remove();
-      }
-    });
-  });
-</script>
-
 
     </main>
 

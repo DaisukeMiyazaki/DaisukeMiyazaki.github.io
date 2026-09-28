@@ -427,36 +427,22 @@
       ソースコードをagentが書く前提で、エンジニアはソースをどう体系化して管理すれば十分に長続きする理解を委任しないままソフトウェアを運用できるか？
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p><em>ソースコード</em> をagentが書く前提で、エンジニアはソースをどう体系化して管理すれば、十分に長続きする理解を委任しないままソフトウェアを運用できるか？</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p><em>ソースコード</em> をagentが書く前提で、エンジニアはソースをどう体系化して管理すれば、十分に長続きする理解を委任しないままソフトウェアを運用できるか？</p>
 
 <p>将棋棋士は必ずAIの評価値をみるだけでなく、新しい戦法の研究では棋譜を並べる。彼らは理解を委任しない。</p>
 
 <p>本質的な人間の認知資源には限りがある。その中で、使われていない分岐。ベルカーブの極端にいるユーザーのための機能。競合他社に追いつくためのとりあえずの機能。これらは人的で限りある資源を技術的、認知的負債の両面で消費する。</p>
-
-<p>ソフトウェアを動かすものは <em>実行可能なソースコード</em> である。しかしそれを <em>創出する</em> こと自体が安価になってしまった結果、乖離が発生している。これまで当たり前にあった「書き手の十分な理解」と出てくるソースコードの非対称性である。</p>
-
-<p>Agenticコーディング以前は適当な理解で仕立てたコードでは要求や非機能要件を満たすことが原理的にできなかった。当たり前だが非対称性を紐づけていたのは「十分に長続きする理解のための書き手の血肉」にあった。</p>
-
-<p>シーケンスダイアグラムやER図、包括的なドキュメンテーション。コードベースの空間認識やある種の概念モデルへの紐づけ。これらはソースコードに <em>結果として</em> 閉じ込めた手前で、その過程で生まれてくるものである。畳み込まれ収束したソースコードの手前には、発散した大きなストーリーがあり試行錯誤がある。</p>
-
-<p>これはただ綺麗なソースコードだけを見るだけでは構造的に生まれず、ある種発散したカオスを文章化や図式化を通して収束させ生じるものである。発散から収束までの過程を辿るのが十分に長いこと理解するという行為そのものである。「要求を加味した仕様を咀嚼し機械語まで翻訳する」といえば、ソフトウェアの工程に具体化できよう。</p>
-
-<p>ソフトウェアは要求を最も荒い粒度として、実行可能で最も冗長な記述の塊である。冗長な規約文章は99%の人は読まず、ハイコンテキストな理解まで昇華させ不必要な所を意図的に忘却/無視する。十分な理解を抜きにこの昇華も忘却も行えないのだ。</p>
-
-<p>「十分に長続きする理解を持った実装者はトークンの浪費を回避し、かつ責任説明を担保できる」という経済性やSLAメリットを持つのにもかかわらず、その理解に達するのは名人芸として十分に話されていないと思われる。これを体系化して仕組み化するにはどうすべきか？デジタルなものづくりの実装者、そして組織づくりをする立場の人に問われていると思う。</p>
-
-<p>この過程を名人芸として体系化することなく、この議論を抜きにして「コードを書いた人、マージした人が責任を持て」だったり「ソースコードを書く時間が圧倒的に短くなったから、大量の機能を同じ工数で実装しきれるはずである」と指示するのは中長期で間に合わなくなってくると思う。速度を取った10xではなく、質を取った2xを目指すべきでなかろうか。</p>
- 
   </div>
+  
   <a
     href="/jp/2026/08/25/%E7%90%86%E8%A7%A3%E3%81%AE%E4%BD%93%E7%B3%BB%E5%8C%96/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     続きを読む →
   </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -495,10 +481,9 @@
       理解を委任してはいけない
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p><img src="/assets/images/dont delegate understandings.jpeg" alt="dont delegate understandings" /></p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p><img loading="lazy" decoding="async" src="/assets/images/dont delegate understandings.jpeg" alt="dont delegate understandings" /></p>
 
 <p>生成AIは、人間と見分けがつかないほど巧みな嘘をつけるようになった。
 そんな時代だからこそ僕たちは、「理解」そのものをAIに委任してはいけない。</p>
@@ -507,27 +492,15 @@
 そしてバラバラに見える知識や経験をつなぎ合わせ、一つの線にしていく
 この「点と点を繋ぐ」作業こそ思考の本質であり
 決して他者に、ましてやAIに委任してはならない領域だ。</p>
-
-<p>ではどうすればいいのか。</p>
-
-<p>簡単なことから始めるなら、まずは日記じゃないだろうか。
-日々の出来事や感じたことをありのまま自分の言葉で記録する。</p>
-
-<p>次に、ただ書きっぱなしにするのではなく、何度も過去のノートを振り返ること。
-書かれたアイデアや記録が、別のノートのメモとふとした瞬間に結びつくことがある。</p>
-
-<p>そうしてノートと向き合い更新し続けることで思考は深まっていく。</p>
-
-<p>こうした営みを、日々のわずかな時間で見つけて続ける。
-そうでなければ僕たちは思考停止に陥り、前へ進むことはできないだろう。</p>
- 
   </div>
+  
   <a
     href="/jp/2025/07/02/understanding-delegation/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     続きを読む →
   </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -560,42 +533,22 @@
       obsidianを使い始めて1年レビュー
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっており、乗り換えてみてからもう早一年以上経つので、レビューしてみる。</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>ObsidianはEvergreen notesの原則にのっとってできたノートアプリ。これまでのPKM(personal knowledge manegement)にはAppleのNotesをつかっており、乗り換えてみてからもう早一年以上経つので、レビューしてみる。</p>
 
 <p>メモを増やしても自分の考え方が深まらない。どこか深まって整理がついても、ノートがうまくまとまらない。でもまとまる時間もない。他にも細かい課題があった。</p>
 
 <p>このアプリを使い方を学び始めてからいろんな発見があった。1年以上経ち、もっと自由に考えられるようになったと思う。</p>
-
-<p>考えることは、今を知れば未来がわかるような線形的な形でないこと。振り返りと書き直しを重ねて考えを広げたり深めたりできること。そして知識の探索の幅はどれだけ広くても良いこと。まさに点と点を繋ぐような体験こそ考えを深めることなんだと、ノートが洗練されるたびに感じた。ノートに向き合う時間が習慣になったと思う。</p>
-
-<p>ここではとっつきやすく、Notesでも続けていた日記を例にあげてみる。日記は固有なノートの集まりとして使っている。obsidianの自由度が高さを活かして、自分にあった形に最適化できる。</p>
-
-<p>いま日常のノートは以下のように組んでいる。</p>
-
-<p><strong>朝/夜の気分</strong>: 感覚で天気マークをつけている。幸せでいられているか。メタデータとして保存する。変化に気づくために、他のノートで一覧化したりできる。</p>
-
-<p><strong>天気</strong>: APIで自動で取得している、気分と強い相関があることも。</p>
-
-<p><strong>タスク</strong>: 保存庫中のノートでチェックボックスに変換+実施予定日をいれると、毎日ノートに表示される。</p>
-
-<p><strong>固有ノート</strong>: 日常を最も小さな単位で切り取った書き下ろし。素であり、RAWであり、まとまってないことがほとんど。書き下ろしてから、大体タイトルをつける。思いついたらとりあえず書く。ホットキーを設定して一コマンドで開けるようにするとなお便利。</p>
-
-<p><strong>振り返り</strong>: その日最後の固有ノート。あったこと、印象に残ったこと、仕事で寝かせたい考えの書き殴り、あった人などざっくばらんに書き留める。</p>
-
-<p>Task、Templater、unique note creatorあたりのプラグインを使っている。</p>
-
-<p>また活字を読んだら書き留める場所として、AIを使い倒すための書き溜める場所として、そしてプレゼンを作る場所として、、といろんな活用の方法があるが、これはまた次のポストで扱うとする。</p>
- 
   </div>
+  
   <a
     href="/jp/2025/03/20/obsidian%E3%82%92%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%A61%E5%B9%B4%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     続きを読む →
   </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -634,24 +587,22 @@
       IPadを手放した
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>iPadを手放した。出先でIPhoneをPCとして使う工夫をしている。結局ipadですらジャケットのポケットには入らない。端末自体の演算力やバッテリーの持ちは十分だ。</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>iPadを手放した。出先でIPhoneをPCとして使う工夫をしている。結局ipadですらジャケットのポケットには入らない。端末自体の演算力やバッテリーの持ちは十分だ。</p>
 
 <p>折りたたみキーボードがあれば手慣れた速度感でノートと向き合うことができる。ここではコーヒーを飲み切るくらいの時間を区切りの目安にするまとまれば成果物としても十分、まとまらないとそれは逆に煮詰まりすぎ、スコープが大きすぎる可能性がある。共有まで含めて、docmentでも大体のアプリがスマホ対応しているわけだし、web対応もしているので発信まで含めても終えられる。</p>
 
 <p>また、スタンド等も必要。iphone自体を傾けないと姿勢が保てずに体験が悪化するので。</p>
-
-<p>一枚のノートを軽く、小さく区切りながら細かくまとめるには、道具の準備もすぐできる方が良い。ポケットに忍ばせられるくらいの大きさであれば手軽だし、折りたたみキーボードは開いただけで接続されるものもあり手短だ。</p>
- 
   </div>
+  
   <a
     href="/jp/2025/03/17/ipad%E3%82%92%E6%89%8B%E6%94%BE%E3%81%97%E3%81%9F/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     続きを読む →
   </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -684,24 +635,22 @@
       新しい一歩
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>Hello world!</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>Hello world!</p>
 
 <p>革命の新しい一歩を見たので、書き留めておく。<a href="https://prisma-ai.com/lensa">新しい顔ができた</a>のだ。</p>
 
 <p>計算機上世界の自己は周りから見られるものである、という観点は非計算機世界でも同じことが言える。しかし前者の世界では容姿を大きく創造することができる点が異なる。どのみちこの世界ではMLや計算機は非計算機世界と融合しており、「この世界で自分とは何か？」と在り方を見つめ直しても、それも融合状態にあることに変わりはない。新しい顔を創るのに使用したデータは非計算機世界の顔写真であるが、支配的だったのは集団叡智による視覚的芸術の賜物であったことを忘れないようにしたい。</p>
-
-<p>視覚的情報とは生物にとって生活の重要な一部である中で、この顔はそんな自分の在り方にうまくハマったと感じた。拡張世界においても個が紐づいていることの裏返しでもあるが、顔の創造にかかったのは<a href="https://prisma-ai.com/lensa">僅か20分と数百円</a>。<a href="https://mdaisuke.net/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/">高度に大衆化した革命</a>の新しい一歩を記録した日と言えるだろう。</p>
- 
   </div>
+  
   <a
     href="/jp/2022/12/09/%E6%96%B0%E3%81%97%E3%81%84%E4%B8%80%E6%AD%A9/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     続きを読む →
   </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -734,71 +683,22 @@
       Tokyo
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>　東京には色がない。冷凍都市と、名付けた人の声を聞いたことがある。黒や灰、白に囲まれている、そう、冷たく、色がないことに気づくのだ。目の前や足下をみてみれば、自分もその色気のなさに紛れているような気がしなくもない。近頃、<a href="https://mdaisuke.net/blog/2020/09/20/Sustainability">レンズ越し</a>の僕の日常は、黒や灰、白に囲まれていた。</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>　東京には色がない。冷凍都市と、名付けた人の声を聞いたことがある。黒や灰、白に囲まれている、そう、冷たく、色がないことに気づくのだ。目の前や足下をみてみれば、自分もその色気のなさに紛れているような気がしなくもない。近頃、<a href="https://mdaisuke.net/blog/2020/09/20/Sustainability">レンズ越し</a>の僕の日常は、黒や灰、白に囲まれていた。</p>
 
 <p>　しかし少し距離をとってみて気づいた。地図を少し高いところからみてみれば、どれだけの緑や青がこの町を囲んでいるかに。ひとまず夕焼け雲を見上げれば、どれだけ空が暖色に包まれているのかに。</p>
 
 <p>　そして彩色豊かな食文化。現物、原材料は小さな形に姿を変えて、遥か向こうの島から旅をしてきた。ここは美食の街でもある。</p>
-
-<p>　訪れる四季は、これらの源になっているような気がする。街の至るところに色を散りばめ、緑を養っては色付け、人を纏う丈や色を変える。季節が呼吸するとき、街と人は一緒に呼吸するのだ。</p>
-
-<p>　多様性があり、賑やかで、心躍るようなイベントの数々を作り出す。十人十色の息吹は、吹き止むことを知らない。</p>
-
-<p>.
-.
-.</p>
-
-<p>　さあ、夜がきた。月が朧げに雲に隠れ、赤く光る高層ビルの先端が脈を打つ。昼夜と時が変わった時、至る所に散りばめられた色は静かに姿を消す。押し返す、黒い人の波。</p>
-
-<p>　ひっそりとした静けさと、景色が変わる有り様は四季や太陽にだけ支えられているのではない。<a href="https://mdaisuke.net/blog/2020/04/04/RiseAndFall">集団叡智と歴史の最新技術の集まったサイバーコネクティブ</a>は、日々の業務に勤しんでいる。1千万を超える人による労力の結晶が、今ある東京の姿を映し出すのだ。</p>
-
-<p>　乱立する大きな建物に宿る光は何でできている？あかりを灯している源は、何なのか？はたして遠くに見える綺麗な光は、宿で一息をつく柔らかな光なのか。はたまた、明朝まで終わりのこないため息に混じった、途方もない苦労の光か。</p>
-
-<p>　目の前の静けさはその、数えきれない人の動きによって生み出された見せかけの静けさなのかもしれない。つまり平衡状態である。水の入ったグラスは、液相の表面で小さな水分子が表面から飛び出しては気体に変わり、気体の水分子は液体へと変わる。それでいて、僕たちには液体は静かに止まって見える、そうこれも、分子の状態が平衡しているからだ。</p>
-
-<p>　一人一人は、この分子のように動き回り、時に激しく摩耗し尽くす。そして一人が一度脚を止めても、全体の様子は変わるわけではない。</p>
-
-<p>　しかしもしも一人ではなく多くが脚を止めても、全体の平衡は変わらないのだろうか。いやきっと変わるに違いないのだ、そう今年、パンデミックを経験した街はその一片を垣間見たことを、僕たちはよく知ってる。</p>
-
-<p>.
-.
-.</p>
-
-<p>　僕はそんな中で、ひとと暮らしが重なる場所にきた。少し前までしていた1人暮らしは、今の僕には向かなかった。ここでは、もはや今では古典的となってしまった付き合いー隣人との交友ーがある。一つ屋根の下、同じ窯の飯を食う。暮らしは人との中にある。人がいてはじめて、暮らしは何倍にもその色の濃さを増すことに気付く。</p>
-
-<p>　小さな画面に目を向ける人の有り様は、もう当たり前の光景になった。<a href="https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched">革命を迎えた世界</a>に住む僕たちの新しい日常。ビッグバンから今までの137億年の歴史を1年間に収めたら、この暮らしは12月31日23時59分59.9秒後の世界でしかないのにもかかわらず。</p>
-
-<p>　御時世的に、家で画面を見つめ仕事に励む人もよく見る。魔法の世界に住む代償に、いつのまにか画面の中にある世界を見過ぎるようになった。自国の国政よりも気づけば海の向こうで分断の進む有り様を、万人がこぞってしきりに注目する世の中になった。</p>
-
-<p>　しかし僕は越してきて、画面の世界よりも、ありのままの目の前の日常に目を向けることが増えたような気がする。</p>
-
-<p>.
-.
-.</p>
-
-<p>　ある夜、住人と星を見ることになった。<a href="https://mdaisuke.net/blog/2020/01/20/daisuke-site-launched">魔法使い</a>の1人が言ったのだ、今夜は獅子座流星が見えると。寒い中で屋外で横に並び、みなで夜空を見つめはじめた。静寂と共に目が慣れてくると、大きな漆黒の中に無数の点が現れた。</p>
-
-<p>　流れ星が、僕たちの視界を横切った。瞬く間に。高揚が皆を包んだ。一体となって見る流れ星には、人をつなげる特別な力があると感じた。一度流れ星を見つけるとそのまま、「もう一度！もう一度見たい！」と言わんばかりに、僕たちは星空から目を離さなかった。その時初めてスクリーン以外の何かを、心を込めてじっと見つめたような気がした。</p>
-
-<p>　ふと思った。もしビルの天井も電車の天井も何もかも透明なら、都市の人は皆、空を見上げるのだろうか？魔法の世界や平衡の世界に踊らされるのではなく、その一瞬を共有したい、そんな気持ちになるのだろうか？</p>
-
-<p>.
-.
-.</p>
-
-<p>　公園から聞こえる子供の声で、眠りが覚めた。またこの街に、朝がやってきた。今日は今日の風が吹く。
-こんな僕たちも、ただ静かな平衡の中にあるだけ。そう、ただそんな暮らしがあるだけだ。でもここには、そんな暮らしがある。</p>
- 
   </div>
+  
   <a
     href="/jp/2020/11/23/%E6%9D%B1%E4%BA%AC/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     続きを読む →
   </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -831,54 +731,25 @@
       Launch
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>　私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>　私たちは革命の最中に立っている。インターネット、その良さを存分に活かしていける方法はないか、そう思ってこのブログを立ち上げた。</p>
 
 <p>　その海には嘘が隠れているかも知れないし、それと対照的に、包み隠さない真実も埋もれているかもしれない。その海はあまりに身近で、そして広く深く、際限なく続くのである。その果てを、１人として見切ることはできないのかもしれない。</p>
 
 <p>　さて、今すぐそのスクリーンから目を離して、すぐ目の前の世界はどう見えるだろうか。</p>
-
-<p>　そこには肌に刺すような冷たい風や、慣れ親しんだバスのエンジンの音、湿った雨の匂いが広がるはず。0と1が踊る世界にない、階段を降りるときに足を伝う重力、乱立する建物や広大な土地の遠近感を、感じはしないか。</p>
-
-<p>　そんな中でも、ふと気がつけば手を伸ばすもの。貴方のポケットに忍ぶ”小さな”魔法は、人の本能と理性を培う脳の外側に位置しながらも、その持ち主にひっそりと最適化し続けている。それはおろか、写真や動画によって半永久的に持ち主の記憶能力を拡張し、5,000マイル離れた場所にいる人との連絡を可能にし、はたまた知識の所有者を変えつつある。その百科事典はもう頭の中でなく、その海に存在するのだ。つまり、知識の所有者を隔てた境界線は、以前より遥かにぼんやりとしている。</p>
-
-<p>　人には元々、本能と理性も同時に共在する。このうちどちらかを取り除きたいと言う人は、おそらくいないだろう。今、自分の手足となった魔法を解きたいと思う人も、おそらくいないのだろう。</p>
-
-<p>　そしてその逆戻りは、きっとないのだ。</p>
-
-<p>　僕は、世界中の皆んなが魔法使いになったと観ている。でもみんな、その魔法の使い道を探している最中、そんな風にも見える。僕だってその1人に違いない。これを革命以外の、何と呼ぶのであろうか。</p>
-
-<p>　その中で、私たちになくてはならないもの、それってなんだろう?そんな思いや考えにふけて、道草を食いたくなる。きっとこれも、なくてはならないものの1つだったりして。</p>
-
-<p>どうも、最後まで読んでくれてありがとうございます。</p>
- 
   </div>
+  
   <a
     href="/jp/2020/01/20/%E3%82%B5%E3%82%A4%E3%83%88%E5%A7%8B%E5%8B%95/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     続きを読む →
   </a>
+  
 </article>
 
 </div>
-<script>
-  // 高さに収まる書き物は折りたたみを外し、「続きを読む」を隠す
-  window.addEventListener("load", function () {
-    document.querySelectorAll(".entry-body").forEach(function (body) {
-      if (body.scrollHeight <= body.clientHeight) {
-        body.classList.remove(
-          "max-h-96",
-          "[mask-image:linear-gradient(to_bottom,black_75%,transparent)]",
-        );
-        body.nextElementSibling.remove();
-      }
-    });
-  });
-</script>
-
 
     </main>
 

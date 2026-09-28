@@ -427,21 +427,15 @@
       自分の関心とニーズが乖離している
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>自分の関心から生まれる文章、つまりこのようなブログとマーケティング的なニーズが乖離していることは十分にありえるし、むしろそうであることのほうが多いだろう。
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>自分の関心から生まれる文章、つまりこのようなブログとマーケティング的なニーズが乖離していることは十分にありえるし、むしろそうであることのほうが多いだろう。
 一般的に読まれたい、人の目にとまってほしい、との思いで書いた文章が読まれないことがほとんどだ。それは自分が世間のニーズを自分が認識できていないだけかもしれない。実際言葉よりもっと細かく最適化された形で提供されない限り、真の意味でニーズを満たすわけではない。</p>
 
 <p>とはいえ言葉が読まれることはもちろんのこと、そこからつながる広報的な関係の構築こそ最終的には対価につながる。つまり広報的な意味でのブログは人の縁をつなげるきっかけづくりに十分になりうるのではなかろうか。</p>
- 
+
   </div>
-  <a
-    href="/jp/notes/intended-writing-and-needs-in-marketing-differ/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
-  >
-    続きを読む →
-  </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -474,10 +468,9 @@
       理解を壊さないためのプロンプト
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p><a href="https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/">Ankur Sethi</a> から引用</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p><a href="https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/">Ankur Sethi</a> から引用</p>
 
 <blockquote>
   <p>I want to understand every line of code that goes into this project. Never create, edit, move, rename, or delete project files unless I explicitly ask you to do so. Instead, show me every proposed edit in the chat so I can type it in manually.</p>
@@ -486,14 +479,9 @@
 
   <p>I’m an experienced developer. Do not explain syntax, APIs, programming concepts, or implementation details unless explicitly asked.</p>
 </blockquote>
- 
+
   </div>
-  <a
-    href="/jp/notes/promt-for-protect-your-understanding/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
-  >
-    続きを読む →
-  </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -526,38 +514,17 @@
       コンテキストスイッチングが多いと没頭している時間が消える
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>没頭していると頭の中の作業記憶が進化、整理されて長期記憶に変わる。短期記憶に詰め込むものが発散するとスイッチングが発生してしまう。没頭と思考の収束は比例関係にあり、思考の発散は逆比例関係があるのかもしれない。</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>没頭していると頭の中の作業記憶が進化、整理されて長期記憶に変わる。短期記憶に詰め込むものが発散するとスイッチングが発生してしまう。没頭と思考の収束は比例関係にあり、思考の発散は逆比例関係があるのかもしれない。</p>
 
 <p><a href="https://mdaisuke.net/jp/2025/07/02/understanding-delegation/">理解を委任してはいけない</a></p>
- 
+
   </div>
-  <a
-    href="/jp/notes/context-swtich-wont-help-buidling-flow/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
-  >
-    続きを読む →
-  </a>
+  
 </article>
 
 </div>
-<script>
-  // 高さに収まる書き物は折りたたみを外し、「続きを読む」を隠す
-  window.addEventListener("load", function () {
-    document.querySelectorAll(".entry-body").forEach(function (body) {
-      if (body.scrollHeight <= body.clientHeight) {
-        body.classList.remove(
-          "max-h-96",
-          "[mask-image:linear-gradient(to_bottom,black_75%,transparent)]",
-        );
-        body.nextElementSibling.remove();
-      }
-    });
-  });
-</script>
-
 
     </main>
 

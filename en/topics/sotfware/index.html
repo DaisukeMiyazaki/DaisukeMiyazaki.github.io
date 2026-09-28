@@ -427,89 +427,27 @@
       I Built an Obsidian Plugin to Surface My Most-Edited Notes
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>An Obsidian plugin that automatically counts meaningful edits and helps you keep track of the notes you revisit most. It’s been working well enough on my end, so I’m releasing it as a beta.</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>An Obsidian plugin that automatically counts meaningful edits and helps you keep track of the notes you revisit most. It’s been working well enough on my end, so I’m releasing it as a beta.</p>
 
 <h3 id="starting-point-finding-the-heavy-notes">Starting Point: Finding the “Heavy” Notes</h3>
 
 <p>After using Obsidian for over 3 years, my notes had grown considerably.
 When I opened the graph view, every note appeared at roughly the same size. Link count does affect node size, but that reflects “how connected” a note is — not “how actively I’m thinking about it.”
 It became a chance to revisit what a valuable note really means to me. The answer: notes I keep opening, adding to, and rewriting. In other words, <strong>notes with a high edit count</strong>.</p>
-
-<p>This was a good starting point.</p>
-
-<h3 id="starting-with-existing-plugins">Starting with Existing Plugins</h3>
-
-<p>I began by looking for existing solutions.</p>
-
-<p><a href="https://github.com/ElsaTam/obsidian-extended-graph">Extended Graph</a> can scale node sizes based on frontmatter values. On the display side, this was exactly what I wanted — but it doesn’t automatically measure edit count. And manually updating frontmatter every time didn’t seem practical.</p>
-
-<p><a href="https://github.com/Vinzent03/obsidian-git">Obsidian Git</a> manages your vault with Git. You could track per-file change frequency via <code class="language-plaintext highlighter-rouge">git log</code>, but enabling auto-commit pollutes the log. Backups are nice, but how would you weight existing notes?</p>
-
-<p><a href="https://github.com/zakhij/obsidian-activity-heatmap">Activity Heatmap</a> and <a href="https://forum.obsidian.md/t/new-plugin-sidebar-heatmap/98528">Sidebar Heatmap</a> visualize “volume of change” and “daily activity” respectively — neither was a direct fit for weighting notes by cumulative edit count.</p>
-
-<h3 id="approach-detecting-meaningful-edits-via-character-diff">Approach: Detecting Meaningful Edits via Character Diff</h3>
-
-<p>Simply incrementing a counter on every save wouldn’t make sense. Fixing a typo and rewriting an entire paragraph are fundamentally different.</p>
-
-<p>So I went with <strong>character count diff with a threshold</strong>. The plugin snapshots the character count when you open a note, then evaluates the diff when you switch files or after a period of inactivity (default: 3 minutes).
-If the difference is 50 characters or more, it increments <code class="language-plaintext highlighter-rouge">edit_count</code> in the frontmatter.</p>
-
-<p>Since this is highly personal, the threshold is configurable.</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="na">edit_count</span><span class="pi">:</span> <span class="m">5</span>
-<span class="nn">---</span>
-</code></pre></div></div>
-
-<p>The key here is that it’s entirely self-contained within Obsidian. No Git, no external tools — the only thing held in memory is the initial character count of the open file, so it’s lightweight.
-And since it just modifies frontmatter in the file, it aligns with the <a href="https://stephango.com/file-over-app">file over app</a> principle.</p>
-
-<h3 id="how-i-use-it-for-now">How I Use It (For Now)</h3>
-
-<p>On Obsidian 1.9.10+, you can use the core Bases feature to create a table sorted by <code class="language-plaintext highlighter-rouge">edit_count</code> — no third-party dependency like Dataview needed. “I’ve been working on this note a lot” or “my thinking is concentrated in this area” becomes visible at a glance, so I keep it pinned as a pane on screen.</p>
-
-<h3 id="still-in-beta">Still in Beta</h3>
-
-<p>The plugin is currently available as a beta release, installable via <a href="https://github.com/TfTHacker/obsidian42-brat">BRAT</a>.
-I’ve been using it daily in my own vault without any major issues, but it hasn’t been tested enough in other environments to warrant an official release.</p>
-
-<p>Feedback is welcome on <a href="https://github.com/DaisukeMiyazaki/obsidian-edit-count">GitHub</a>.</p>
-
-<h3 id="looking-back">Looking Back</h3>
-
-<p>I can now measure a note’s significance not just by its link count, but by how many times I’ve put my hands on it.
-Neither metric is “right” — having a different viewpoints simply reveals things you wouldn’t otherwise notice.</p>
-
-<p>The trail of thinking lives not in how much you wrote, but in how many times you rewrote. This plugin turned that intuition into something backed by numbers.</p>
- 
   </div>
+  
   <a
     href="/en/2026/03/20/obsidian-edit-count/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
+    class="mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
   >
     Read more →
   </a>
+  
 </article>
 
 </div>
-<script>
-  // 高さに収まる書き物は折りたたみを外し、「続きを読む」を隠す
-  window.addEventListener("load", function () {
-    document.querySelectorAll(".entry-body").forEach(function (body) {
-      if (body.scrollHeight <= body.clientHeight) {
-        body.classList.remove(
-          "max-h-96",
-          "[mask-image:linear-gradient(to_bottom,black_75%,transparent)]",
-        );
-        body.nextElementSibling.remove();
-      }
-    });
-  });
-</script>
-
 
     </main>
 

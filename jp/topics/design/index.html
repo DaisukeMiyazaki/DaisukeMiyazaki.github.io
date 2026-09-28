@@ -421,10 +421,9 @@
       obsidianでノートを貯めても思考が深まらない悩み
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>箇条書きでobsidianを使っていても思考が深まらない悩みを書いておく。</p>
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>箇条書きでobsidianを使っていても思考が深まらない悩みを書いておく。</p>
 
 <ul>
   <li>すべてバックリンクで表現しようとしても抜け漏れる。</li>
@@ -433,14 +432,9 @@
   <li>自分のノートは全体感を考えることなく自分で育てていくため常に動的に変化する。</li>
   <li>index的な側面を持つノートを手で更新するのはボトムアップで自由に記述をするスタイルと親和性が低い</li>
 </ul>
- 
+
   </div>
-  <a
-    href="/jp/notes/obsidian-not-deepening-thought/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
-  >
-    続きを読む →
-  </a>
+  
 </article>
 <!-- 書き物1件（post / note 共通）。長いものは折りたたみ、詳細ページへ誘導する。include.entry に document を渡す -->
 <article
@@ -467,36 +461,15 @@
       将来の自分に任せられる
     </a>
   </h2>
-  <div
-    class="entry-body prose prose-sm max-h-96 w-full max-w-none overflow-hidden break-words [mask-image:linear-gradient(to_bottom,black_75%,transparent)] dark:prose-invert"
-  >
-     <p>良いプロダクトやPKMに忘れられるデザインがある。能動的に忘れられることは幸せなことである。ここで重点は、将来の自分に任せられるか。今安心して忘れるためにはあとで必ず自分が掘り起こせるだろうと確信がないといけない。</p>
- 
+  
+  <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
+    <p>良いプロダクトやPKMに忘れられるデザインがある。能動的に忘れられることは幸せなことである。ここで重点は、将来の自分に任せられるか。今安心して忘れるためにはあとで必ず自分が掘り起こせるだろうと確信がないといけない。</p>
+
   </div>
-  <a
-    href="/jp/notes/you-can-rely-on-future-version-of-yourself/"
-    class="entry-more mt-2 inline-block text-sm text-blue-500 no-underline hover:underline dark:text-blue-400"
-  >
-    続きを読む →
-  </a>
+  
 </article>
 
 </div>
-<script>
-  // 高さに収まる書き物は折りたたみを外し、「続きを読む」を隠す
-  window.addEventListener("load", function () {
-    document.querySelectorAll(".entry-body").forEach(function (body) {
-      if (body.scrollHeight <= body.clientHeight) {
-        body.classList.remove(
-          "max-h-96",
-          "[mask-image:linear-gradient(to_bottom,black_75%,transparent)]",
-        );
-        body.nextElementSibling.remove();
-      }
-    });
-  });
-</script>
-
 
     </main>
 
