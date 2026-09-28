@@ -4,12 +4,15 @@ layout: default
 
 <div class="dark:text-gray-100">
   <!-- Now: 本文は各言語の now.md に書く -->
-  <h2 class="mb-3 font-semibold">Now</h2>
+  <h2 class="mb-3 flex items-baseline gap-3 font-semibold">
+    Now
+    <time
+      datetime="{{ page.updated | date_to_xmlschema }}"
+      class="text-xs font-normal text-gray-500 dark:text-gray-400"
+      >{{ page.updated | date: "%b %-d, %Y" }}</time
+    >
+  </h2>
   <div class="prose prose-sm max-w-none dark:prose-invert">{{ content }}</div>
-  <p class="mt-2 text-xs text-gray-500 dark:text-gray-400">
-    {% if page.lang == 'jp' %}更新日{% else %}Updated{% endif %} {{
-    page.updated | date: "%b %-d, %Y" }}
-  </p>
 
   <!-- Previously: _data/timeline.yml を新しい順に表示 -->
   <h2 class="mb-4 mt-10 font-semibold">Previously</h2>
