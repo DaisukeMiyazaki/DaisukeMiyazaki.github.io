@@ -5,7 +5,7 @@ module TopicPages
       data["layout"] = "topic"
       data["lang"] = lang
       data["topic"] = topic
-      data["title"] = "##{topic}"
+      data["title"] = topic
       data["posts"] = posts
     end
   end
