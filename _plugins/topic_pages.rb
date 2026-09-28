@@ -1,12 +1,12 @@
 module TopicPages
   class TopicPage < Jekyll::PageWithoutAFile
-    def initialize(site, lang, topic, posts)
+    def initialize(site, lang, topic, entries)
       super(site, site.source, File.join(lang, "topics", topic), "index.html")
       data["layout"] = "topic"
       data["lang"] = lang
       data["topic"] = topic
       data["title"] = topic
-      data["posts"] = posts
+      data["entries"] = entries
     end
   end
 
@@ -16,16 +16,17 @@ module TopicPages
     def generate(site)
       site.data["topics_by_lang"] = {}
 
-      site.posts.docs.group_by { |doc| doc.data["lang"] }.each do |lang, docs|
+      docs = site.posts.docs + site.collections["notes"].docs
+      docs.group_by { |doc| doc.data["lang"] }.each do |lang, lang_docs|
         next if lang.nil?
 
-        keys = docs.flat_map { |doc| Array(doc.data["topics"]) }.uniq.sort
+        keys = lang_docs.flat_map { |doc| Array(doc.data["topics"]) }.uniq.sort
         site.data["topics_by_lang"][lang] = keys
 
         keys.each do |topic|
-          posts = docs.select { |doc| Array(doc.data["topics"]).include?(topic) }
-                      .sort_by(&:date).reverse
-          site.pages << TopicPage.new(site, lang, topic, posts)
+          entries = lang_docs.select { |doc| Array(doc.data["topics"]).include?(topic) }
+                             .sort_by(&:date).reverse
+          site.pages << TopicPage.new(site, lang, topic, entries)
         end
       end
     end

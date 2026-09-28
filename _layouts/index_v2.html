@@ -37,54 +37,16 @@
     <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
       {% include topic_index.html %}
 
-      <!-- 最近のノートをその場に展開 -->
-      {% assign recent_notes = site.notes | where: "lang", page.lang | sort:
-      "date" | reverse %} {% if recent_notes.size > 0 %}
-      <section class="mb-2 mt-2">
-        {% for note in recent_notes limit:5 %} {% include note_item.html
-        note=note %}{% endfor %}
-      </section>
-      {% endif %}
-
-      <div class="flex flex-col gap-2" id="gallery-grid">
-        {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
-        posts %}
-
-        <a
-          href="{{ post.url }}"
-          class="gallery-item group block cursor-pointer"
-          data-date="{{ post.date | date_to_xmlschema }}"
-        >
-          <!-- 日付とジャンルタグ -->
-          <div
-            class="mb-1 flex items-center text-xs text-gray-400 dark:text-gray-500"
-          >
-            <time>{{ post.date | date: "%d %b %Y" }}</time>
-            {% for key in post.topics %}
-            <span class="ml-2 font-medium text-blue-400 dark:text-blue-500"
-              >#{{ key }}</span
-            >
-            {% endfor %}
-          </div>
-
-          <!-- タイトル -->
-          <h2
-            class="mb-1 text-base font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
-          >
-            {{ post.title }}
-          </h2>
-
-          <!-- 抜粋 -->
-          <p
-            class="line-clamp-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400"
-          >
-            {{ post.excerpt | strip_html }}
-          </p>
-        </a>
-        {% endfor %} {% for work in site.data.works %}
+      <!-- post と note を日付順の1本の流れで表示 -->
+      <div class="flex flex-col" id="gallery-grid">
+        {% assign posts = site.posts | where: "lang", page.lang %} {% assign
+        notes = site.notes | where: "lang", page.lang %} {% assign entries =
+        posts | concat: notes | sort: "date" | reverse %} {% for entry in
+        entries %}{% include stream_item.html entry=entry %}{% endfor %} {% for
+        work in site.data.works %}
         <a
           href="{{ work.jp.site_link }}"
-          class="gallery-item group block cursor-pointer"
+          class="gallery-item group block cursor-pointer border-b border-gray-200 py-4 dark:border-gray-800"
           data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}"
           target="_blank"
         >
@@ -126,5 +88,6 @@
         galleryItems.forEach((item) => galleryGrid.appendChild(item));
       });
     </script>
+    {% include stream_fold.html %}
   </body>
 </html>
