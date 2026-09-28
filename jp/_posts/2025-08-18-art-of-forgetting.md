@@ -4,6 +4,7 @@ title: "忘れられる仕組み作り"
 date: 2025-08-18
 lang: jp
 genre: 実用
+topics: [pkm]
 excerpt: この情報社会で考えるゆとりを持つためのヒントは、忘れられる仕組みづくり。
 stage: 2
 read_minutes: 2

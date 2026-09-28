@@ -6,6 +6,7 @@ excerpt: Holds exactly 100 sheets of loose-leaf paper. No stitching, just leathe
 comments: true
 lang: en
 genre: Utility
+topics: [diy]
 thumbnail: /assets/images/leather-binder.jpeg
 ---
 

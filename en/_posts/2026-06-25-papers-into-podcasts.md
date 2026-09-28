@@ -8,6 +8,7 @@ lang: en
 lang-ref: papers-into-podcasts
 related: [we-must-not-delegate-understanding, sanpou-issue]
 genre: practical
+topics: [pkm, diy]
 thumbnail:
 stage: 1
 read_minutes: 5

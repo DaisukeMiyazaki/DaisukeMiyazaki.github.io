@@ -7,6 +7,7 @@ comments: true
 lang: en
 lang-ref: RiseAndFall
 genre: essay
+topics: [pkm]
 thumbnail: /assets/images/riseandfall.jpeg
 ---
 

@@ -6,6 +6,7 @@ excerpt: "An Obsidian plugin that automatically counts meaningful edits and help
 comments: true
 lang: en
 genre: Practical
+topics: [pkm, diy]
 thumbnail: /assets/images/obsidian_logo.png
 stage: 3
 read_minutes: 3

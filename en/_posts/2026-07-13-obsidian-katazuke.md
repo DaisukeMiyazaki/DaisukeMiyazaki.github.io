@@ -6,6 +6,7 @@ excerpt: "Notes I once thought were important, now quietly gathering dust. Befor
 comments: true
 lang: en
 genre: Practical
+topics: [pkm, diy]
 thumbnail: /assets/images/obsidian_logo.png
 stage: 2
 read_minutes: 3

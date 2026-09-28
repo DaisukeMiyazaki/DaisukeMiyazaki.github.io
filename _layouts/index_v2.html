@@ -139,8 +139,7 @@
         <a
           href="{{ post.url }}"
           class="gallery-item group block cursor-pointer"
-          data-genre="{{ post.genre }}"
-          data-pkm="{% if post.stage %}true{% endif %}"
+          data-topics="{{ post.topics | join: ' ' }}"
           data-date="{{ post.date | date_to_xmlschema }}"
         >
           <!-- 日付とジャンルタグ -->
@@ -148,9 +147,11 @@
             class="mb-1 flex items-center text-xs text-gray-400 dark:text-gray-500"
           >
             <time>{{ post.date | date: "%d %b %Y" }}</time>
-            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
-              >#{{ post.genre }}</span
+            {% for key in post.topics %}{% assign t = site.data.topics | where: "key", key | first %}
+            <span class="ml-2 font-medium text-blue-400 dark:text-blue-500"
+              >#{% if page.lang == 'jp' %}{{ t.jp }}{% else %}{{ t.en }}{% endif %}</span
             >
+            {% endfor %}
           </div>
 
           <!-- タイトル -->
@@ -171,7 +172,7 @@
         <a
           href="{{ work.jp.site_link }}"
           class="gallery-item group block cursor-pointer"
-          data-genre="work"
+          data-topics="{{ work.topics | join: ' ' }}"
           data-date="{{ work.jp.start_at | date: '%Y-%m-%d' }}"
           target="_blank"
         >
@@ -182,9 +183,11 @@
               >{{ work.jp.start_at | date: "%Y" }} - {{ work.jp.end_at | date:
               "%Y" }}</time
             >
-            <span class="mx-2 font-medium text-blue-400 dark:text-blue-500"
-              >#work</span
+            {% for key in work.topics %}{% assign t = site.data.topics | where: "key", key | first %}
+            <span class="ml-2 font-medium text-blue-400 dark:text-blue-500"
+              >#{% if page.lang == 'jp' %}{{ t.jp }}{% else %}{{ t.en }}{% endif %}</span
             >
+            {% endfor %}
           </div>
           <h2
             class="mb-1 text-base font-bold leading-snug text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-50 dark:group-hover:text-blue-400"
@@ -223,13 +226,11 @@
           button.addEventListener("click", function () {
             filterButtons.forEach((btn) => btn.classList.remove("active"));
             this.classList.add("active");
-            const genre = this.dataset.genre;
+            const topic = this.dataset.topic;
             galleryItems.forEach((item) => {
               const match =
-                genre === "all" ||
-                (genre === "PKM"
-                  ? item.dataset.pkm === "true"
-                  : item.dataset.genre === genre);
+                topic === "all" ||
+                item.dataset.topics.split(" ").includes(topic);
               item.style.display = match ? "block" : "none";
             });
           });

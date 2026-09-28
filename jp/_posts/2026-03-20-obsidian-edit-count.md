@@ -6,6 +6,7 @@ excerpt: "ノートの編集回数を自動で数えて、よく手を入れる�
 comments: true
 lang: jp
 genre: 実用
+topics: [pkm, diy]
 thumbnail: /assets/images/obsidian_logo.png
 stage: 3
 read_minutes: 4

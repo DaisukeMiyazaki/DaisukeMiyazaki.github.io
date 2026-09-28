@@ -8,6 +8,7 @@ lang: en
 lang-ref: refactor
 related: [we-must-not-delegate-understanding]
 genre: essay
+topics: [pkm]
 thumbnail:
 stage: 3
 read_minutes: 4

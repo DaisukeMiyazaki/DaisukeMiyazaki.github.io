@@ -150,55 +150,18 @@
     <div class="no-scrollbar mt-4 flex gap-1 overflow-x-auto pb-1">
       <button
         class="filter-btn active whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-genre="all"
+        data-topic="all"
       >
         {% if page.lang == 'jp' %}すべて{% else %}All{% endif %}
       </button>
-      <button
-        class="filter-btn whitespace-nowrap rounded-full border border-blue-300 bg-blue-50 px-5 py-2 text-sm font-bold text-blue-600 transition-colors hover:bg-blue-100 dark:border-blue-500 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700"
-        data-genre="PKM"
-      >
-        PKM
-      </button>
-      {% if page.lang == 'jp' %}
+      {% for t in site.data.topics %}
       <button
         class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-genre="実用"
+        data-topic="{{ t.key }}"
       >
-        実用
+        {% if page.lang == 'jp' %}{{ t.jp }}{% else %}{{ t.en }}{% endif %}
       </button>
-      <button
-        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-genre="短編小説"
-      >
-        短編小説
-      </button>
-      <button
-        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-genre="エッセイ"
-      >
-        エッセイ
-      </button>
-      <button
-        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-genre="work"
-      >
-        work
-      </button>
-      {% else %}
-      <button
-        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-genre="practical"
-      >
-        practical
-      </button>
-      <button
-        class="filter-btn whitespace-nowrap rounded-full bg-gray-100 px-5 py-2 text-sm font-bold text-gray-500 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
-        data-genre="short-story"
-      >
-        short-story
-      </button>
-      {% endif %}
+      {% endfor %}
     </div>
     {% endif %}
   </div>

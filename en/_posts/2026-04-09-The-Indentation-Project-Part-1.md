@@ -4,6 +4,7 @@ title: "The Indentation Project, Part 1: Designing a 6-Tatami-Mat Room That Has 
 date: 2026-04-09
 lang: en
 genre: Practical
+topics: [diy]
 excerpt: "A 6-tatami room (about 9.7㎡) has to be storage, display, workspace, and sofa all at once — and nothing off-the-shelf fits floor-to-ceiling or comes apart when the lease ends. So I modeled the whole frame in Fusion 360 and joined it with Kreg pocket holes."
 thumbnail: /assets/images/indentation/IMG_1857.jpg
 comments: true

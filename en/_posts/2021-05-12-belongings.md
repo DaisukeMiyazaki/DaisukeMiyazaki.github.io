@@ -7,6 +7,7 @@ comments: true
 lang: en
 lang-ref: belongings
 genre: essay
+topics: [essay]
 thumbnail: /assets/images/belongings.jpg
 ---
 

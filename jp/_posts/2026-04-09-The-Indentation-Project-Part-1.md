@@ -4,6 +4,7 @@ title: '例の凸凹 Part 1：6畳を四つの部屋にする設計とフレー�
 date: 2026-04-09
 lang: jp
 genre: 実用
+topics: [diy]
 excerpt: "6畳（約9.7㎡）は、収納・展示・作業・くつろぎを一部屋で兼ねさせられる。既製品は天井までの高さを使い切れず、リース終了時に分解もできない。Fusion 360 で壁一面のフレームを設計し、Kreg のポケットホールで組んだ記録。"
 thumbnail: /assets/images/indentation/IMG_1857.jpg
 comments: true
