@@ -6,7 +6,7 @@ excerpt: Holds exactly 100 sheets of loose-leaf paper. No stitching, just leathe
 comments: true
 lang: en
 genre: Utility
-topics: [diy]
+topics: [diy, hardware]
 thumbnail: /assets/images/leather-binder.jpeg
 ---
 
@@ -25,6 +25,6 @@ I adjusted the thickness so that I could sandwich the entire bundle of 100 sheet
 I just cut out thick leather, punched holes, and fastened it with brass screws.
 
 There is no stitching, and the edge finishing is minimal.
-Since the leather material itself has sufficient strength and weight, it functions as a binder without any unnecessary processing. 
+Since the leather material itself has sufficient strength and weight, it functions as a binder without any unnecessary processing.
 
 The excitement and freedom of facing a blank page. It goes without saying, but no charging is needed, and it won't break if dropped. No apps to open, and I can return to a blank slate anytime just by tearing a page out.

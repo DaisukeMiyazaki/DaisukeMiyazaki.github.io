@@ -6,7 +6,7 @@ excerpt: "Our 6-mat room is our dream workshop. To make miscellaneous goods, we 
 comments: true
 lang: en
 genre: Practical
-topics: [diy]
+topics: [diy, hardware]
 ---
 
 <div id="photo-scroll"></div>

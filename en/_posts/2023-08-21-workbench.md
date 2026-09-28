@@ -7,7 +7,7 @@ comments: true
 lang: en
 lang-ref: workbench
 genre: practical
-topics: [diy]
+topics: [diy, hardware]
 thumbnail: /assets/images/workbench/front.jpeg
 ---
 

@@ -4,7 +4,7 @@ title: "Calendar Auto Route Calculator: Automatically Add Travel Time to Google 
 date: 2025-12-22
 lang: en
 genre: practical
-topics: [diy]
+topics: [diy, software]
 excerpt: 'I created a Google Apps Script (GAS) tool that automatically calculates the route (train/walk) to your scheduled events and adds "Travel to..." blocks to your Google Calendar.'
 ---
 

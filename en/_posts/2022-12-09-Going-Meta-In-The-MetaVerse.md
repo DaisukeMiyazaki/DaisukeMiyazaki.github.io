@@ -7,7 +7,7 @@ comments: true
 lang: en
 lang-ref: Going-Meta-In-The-MetaVerse
 genre: practical
-topics: [society]
+topics: [technology, ai]
 thumbnail: /assets/images/me_face.jpg
 ---
 

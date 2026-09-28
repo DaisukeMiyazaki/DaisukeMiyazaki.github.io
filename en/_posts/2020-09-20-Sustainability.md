@@ -7,7 +7,7 @@ comments: true
 lang: en
 lang-ref: Sustainability
 genre: essay
-topics: [society]
+topics: [essay]
 thumbnail: /assets/images/sustainablity.jpeg
 ---
 

@@ -4,7 +4,7 @@ title: "The Art of Forgetting in this Information Society"
 date: 2025-08-18
 lang: en
 genre: practical
-topics: [pkm]
+topics: [pkm, well-being]
 excerpt: An architecture of being able to forget matters in this information society.
 stage: 2
 read_minutes: 2

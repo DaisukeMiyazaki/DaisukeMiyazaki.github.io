@@ -6,7 +6,7 @@ excerpt: "Notes I once thought were important, now quietly gathering dust. Befor
 comments: true
 lang: en
 genre: Practical
-topics: [pkm, diy]
+topics: [pkm, diy, less-is-more, ai, software]
 thumbnail: /assets/images/obsidian_logo.png
 stage: 2
 read_minutes: 3
@@ -33,7 +33,7 @@ Before adding connections, first reduce the ones you don't need.
 It's the subtractive mindset of discarding a note that has become too tangled.
 
 What this does resembles tidying a room.
-Before you place something new, first let go of the old. Wanting to do the same with notes is what set this off — and it's where the plugin's name comes from. (*Katazuke* means "tidying up" in Japanese.)
+Before you place something new, first let go of the old. Wanting to do the same with notes is what set this off — and it's where the plugin's name comes from. (_Katazuke_ means "tidying up" in Japanese.)
 
 Earlier I built [a plugin that enlarges the notes I edit most](/en/2026/03/20/obsidian-edit-count/). That one surfaces the notes I keep my hands on — like the favorite belongings in a room. Because you reach for them often, they never gather dust.
 

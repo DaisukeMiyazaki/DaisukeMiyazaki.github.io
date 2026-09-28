@@ -6,7 +6,7 @@ excerpt: "The large-scale challenge to create furniture to fulfill the requests 
 comments: true
 lang: en
 genre: Practical
-topics: [diy]
+topics: [diy, hardware]
 ---
 
 <div id="photo-scroll"></div>

@@ -7,7 +7,7 @@ comments: true
 lang: en
 lang-ref: belongings
 genre: essay
-topics: [essay]
+topics: [trip, less-is-more]
 thumbnail: /assets/images/belongings.jpg
 ---
 
