@@ -23,16 +23,9 @@
       {{ include.entry.title }}
     </a>
   </h2>
-  {% if include.entry.layout == "craft" %} {% assign preview =
-  include.entry.excerpt | strip_html | prepend: "
-  <p>" | append: "</p>
-  " %} {% assign more = true %} {% else %} {% assign body =
-  include.entry.content | strip_scripts %} {% assign preview = body |
-  first_blocks: 3 | lazy_images %} {% assign blocks = body | block_count %} {%
-  if blocks > 3 %}{% assign more = true %}{% else %}{% assign more = false %}{%
-  endif %} {% endif %}
+  {% assign more = include.entry | stream_has_more %}
   <div class="prose prose-sm w-full max-w-none break-words dark:prose-invert">
-    {{ preview }}
+    {{ include.entry | stream_preview }}
   </div>
   {% if more %}
   <a

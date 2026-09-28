@@ -2,6 +2,19 @@
 module StreamFilters
   VOID_ELEMENTS = %w[area base br col embed hr img input link meta source track wbr].freeze
   TAG = %r{<(/?)([a-zA-Z][\w-]*)\b[^>]*?(/?)>}
+  PREVIEW_BLOCKS = 3
+
+  # 流れに出す冒頭部分。ギャラリー（craft）は本体が JS なので excerpt を出す
+  def stream_preview(entry)
+    return "<p>#{entry['excerpt'].to_s.gsub(/<[^>]*>/, '').strip}</p>" if gallery?(entry)
+
+    lazy_images(first_blocks(strip_scripts(entry["content"]), PREVIEW_BLOCKS))
+  end
+
+  # 詳細ページに続きがあるか
+  def stream_has_more(entry)
+    gallery?(entry) || block_count(strip_scripts(entry["content"])) > PREVIEW_BLOCKS
+  end
 
   def strip_scripts(html)
     html.to_s.gsub(%r{<script\b.*?</script>}m, "")
@@ -24,6 +37,10 @@ module StreamFilters
   end
 
   private
+
+  def gallery?(entry)
+    entry["layout"] == "craft"
+  end
 
   def strip_comments(html)
     html.to_s.gsub(/<!--.*?-->/m, "")
