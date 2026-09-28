@@ -9,15 +9,8 @@ sass:
   style: nested
 
 plugins:
-  - jekyll-feed
   - jekyll-postcss
   - jekyll-sitemap
-
-feed:
-  path: atom.xml
-  collections:
-    notes:
-      path: notes.xml
 
 postcss:
   cache: false

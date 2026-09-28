@@ -11,7 +11,7 @@
     rel="alternate"
     type="application/atom+xml"
     title="{{ site.title }}"
-    href="/feed.xml"
+    href="/atom.xml"
   />
 
   <title>
@@ -32,7 +32,8 @@
   />
 
   <!-- open graph -->
-  {% capture og_url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+  {% capture og_url %}{{ page.url | replace:'index.html','' | prepend:
+  site.baseurl | prepend: site.url }}{% endcapture %}
   <meta
     property="og:title"
     content="{% if page.title %}{{ page.title | escape }}{% else %}Daisuke (Daisuke Miyazaki){% endif %}"
@@ -61,12 +62,10 @@
     content="{{ page.date | date_to_xmlschema }}"
   />
   <meta property="article:author" content="Daisuke Miyazaki" />
-  {% endif %}
-
-  {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-  {% if posts.size == 0 %} {% assign posts=site.pages | where:"lang-ref",
-  page.lang-ref | sort: 'lang' %} {% endif %} {% if posts.size > 0 %} {% for
-  post in posts %}
+  {% endif %} {% assign posts=site.posts | where:"lang-ref", page.lang-ref |
+  sort: 'lang' %} {% if posts.size == 0 %} {% assign posts=site.pages |
+  where:"lang-ref", page.lang-ref | sort: 'lang' %} {% endif %} {% if posts.size
+  > 0 %} {% for post in posts %}
   <link
     rel="alternate"
     hreflang="{{post.lang}}"
@@ -75,24 +74,25 @@
   {% endfor %} {% endif %}
 
   <!-- structured data: BlogPosting (helps AI/search surfaces parse articles) -->
-  {% if page.layout == "post" %}
-  {% capture _canonical %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
-  {% assign _desc = page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 200 %}
+  {% if page.layout == "post" %} {% capture _canonical %}{{ page.url |
+  replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{%
+  endcapture %} {% assign _desc = page.description | default: page.excerpt |
+  strip_html | strip_newlines | truncate: 200 %}
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": {{ _canonical | jsonify }} },
-    "url": {{ _canonical | jsonify }},
-    "headline": {{ page.title | jsonify }},
-    "description": {{ _desc | jsonify }},
-    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
-    "dateModified": {{ page.date | date_to_xmlschema | jsonify }},
-    "inLanguage": {% if page.lang == "jp" %}"ja"{% else %}"en"{% endif %},
-    "author": { "@type": "Person", "name": "Daisuke Miyazaki", "url": {{ site.url | jsonify }} },
-    "publisher": { "@type": "Person", "name": "Daisuke Miyazaki", "url": {{ site.url | jsonify }} },
-    "image": {% if page.thumbnail %}{{ page.thumbnail | prepend: site.url | jsonify }}{% else %}"https://mdaisuke.net/pics/avatar.jpg"{% endif %}
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": {{ _canonical | jsonify }} },
+      "url": {{ _canonical | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "description": {{ _desc | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.date | date_to_xmlschema | jsonify }},
+      "inLanguage": {% if page.lang == "jp" %}"ja"{% else %}"en"{% endif %},
+      "author": { "@type": "Person", "name": "Daisuke Miyazaki", "url": {{ site.url | jsonify }} },
+      "publisher": { "@type": "Person", "name": "Daisuke Miyazaki", "url": {{ site.url | jsonify }} },
+      "image": {% if page.thumbnail %}{{ page.thumbnail | prepend: site.url | jsonify }}{% else %}"https://mdaisuke.net/pics/avatar.jpg"{% endif %}
+    }
   </script>
   {% endif %}
 </head>

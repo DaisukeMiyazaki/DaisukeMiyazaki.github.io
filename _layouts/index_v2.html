@@ -26,6 +26,11 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
+
+      /* 最後の項目の区切り線はフッターの線と重なるので消す */
+      #gallery-grid > :last-child {
+        border-bottom-width: 0;
+      }
     </style>
   </head>
   <body
@@ -34,7 +39,7 @@
     {% include header_v2.html %}
 
     <!-- メインコンテンツ: シンプルなリスト表示 -->
-    <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-24">
+    <main class="container mx-auto min-h-screen max-w-2xl px-6 pb-2">
       {% include topic_index.html %}
 
       <!-- post と note を日付順の1本の流れで表示 -->
@@ -72,6 +77,7 @@
         {% endfor %}
       </div>
     </main>
+    {% include footer.html %}
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
