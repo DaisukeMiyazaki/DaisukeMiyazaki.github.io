@@ -5,6 +5,7 @@ title: "obsidianでノートを貯めても思考が深まらない悩み"
 lang: jp
 permalink: /jp/notes/obsidian-not-deepening-thought/
 thumbnail:
+topics: [pkm, design]
 ---
 
 箇条書きでobsidianを使っていても思考が深まらない悩みを書いておく。

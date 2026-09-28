@@ -5,6 +5,7 @@ title: "自分のタスク管理"
 lang: jp
 permalink: /jp/notes/my-task-management-v1/
 thumbnail:
+topics: [pkm]
 ---
 
 tasksプラグインを使ってdailynoteにためる。毎日デイリーノートを開けば並列されている。なるべく文脈が一目でわかるように入れたいので、「ノート記入」ではなく「この文脈をノートに記入」と書く。「この」はノートを辿ってわかる。

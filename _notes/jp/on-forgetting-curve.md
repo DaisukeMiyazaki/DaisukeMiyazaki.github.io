@@ -5,6 +5,7 @@ title: "エビングハウスの忘却曲線、再学習時にどれだけ手間
 lang: jp
 permalink: /jp/notes/on-forgetting-curve/
 thumbnail:
+topics: [well-being, pkm]
 ---
 
 忘却曲線について少し学び直し。振り返って思い出すときにどれくらい負荷なく思い出すことができるか、睡眠によって固定化される記憶があるならば情報社会において大切。

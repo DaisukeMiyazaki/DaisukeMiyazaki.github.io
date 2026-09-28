@@ -5,6 +5,7 @@ title: "自分の関心とニーズが乖離している"
 lang: jp
 permalink: /jp/notes/intended-writing-and-needs-in-marketing-differ/
 thumbnail:
+topics: [learning, marketing, blogging]
 ---
 
 自分の関心から生まれる文章、つまりこのようなブログとマーケティング的なニーズが乖離していることは十分にありえるし、むしろそうであることのほうが多いだろう。
