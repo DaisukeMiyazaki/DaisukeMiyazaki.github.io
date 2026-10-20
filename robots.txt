@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mdaisuke.net/sitemap.xml
+Sitemap: https://mdaisuke.net/sanpou-site/sitemap-index.xml
