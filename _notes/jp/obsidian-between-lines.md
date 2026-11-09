@@ -5,7 +5,7 @@ title: "obsidianとレポジトリと行間"
 lang: jp
 permalink: /jp/notes/obsidian-between-lines/
 thumbnail: 
-topics: []
+topics: [pkm]
 ---
 
 仕事でdeadlineをチームで管理するなら例えばProjectのようなUI, UXが最適である。
