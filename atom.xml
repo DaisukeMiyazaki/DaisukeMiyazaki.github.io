@@ -4,9 +4,24 @@
   <link href="https://mdaisuke.net/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://mdaisuke.net/" rel="alternate" type="text/html" />
   <id>https://mdaisuke.net/atom.xml</id>
-  <updated>2026-10-12T08:45:19+00:00</updated>
+  <updated>2026-11-09T08:52:01+00:00</updated>
   <author><name>Daisuke Miyazaki</name></author>
   
+  
+  <entry xml:lang="jp">
+    <title type="html">obsidianとレポジトリと行間</title>
+    <link href="https://mdaisuke.net/jp/notes/obsidian-between-lines/" rel="alternate" type="text/html" />
+    <id>https://mdaisuke.net/jp/notes/obsidian-between-lines</id>
+    <published>2026-11-09T00:00:00+00:00</published>
+    <updated>2026-11-09T00:00:00+00:00</updated>
+    <content type="html" xml:base="https://mdaisuke.net/jp/notes/obsidian-between-lines/">&lt;p&gt;仕事でdeadlineをチームで管理するなら例えばProjectのようなUI, UXが最適である。
+写真などメディアであればアルバムが最適である。
+イベントの時間管理であればカレンダーが最適である。
+meetingのノートをとるならフォルダー構造 + AIが活用できるものが最適である。&lt;/p&gt;
+
+&lt;p&gt;ただ個人的な備忘録だったり、行間にあるとりあえず吐き出す場所だったり、仕事と個人のできごとの行間にはobsidianが使いやすいかもしれない。&lt;/p&gt;
+</content>
+  </entry>
   
   <entry xml:lang="jp">
     <title type="html">便利さは快楽とつながるが、幸福とはつながらない。そのため世の中に便利さが増えればそれだけ落ち着きが失われ、人々は幸福から遠ざかる</title>
@@ -479,60 +494,6 @@ Before you place something new, first let go of the old. Wanting to do the same 
 &lt;p&gt;ノートに向き合うことはやめていないが、機械にできることを手放しつつある。空いた時間は文章と向き合う側に戻す。束ねて割り、捨ててまた書くのだ。&lt;/p&gt;
 
 &lt;p&gt;次はその「判断」を続けるための話を書きたい。未来の自分が確かに引けるとの安心感が、忘れる幸せを後押ししてくれるからだ。&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry xml:lang="en">
-    <title type="html">I Want to Listen to My Unread Papers, Not Read Them — and the Auto-Podcast Wasn&apos;t Enough</title>
-    <link href="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/" rel="alternate" type="text/html" />
-    <id>https://mdaisuke.net/en/2026/06/25/papers-into-podcasts</id>
-    <published>2026-06-25T00:00:00+00:00</published>
-    <updated>2026-06-25T00:00:00+00:00</updated>
-    <content type="html" xml:base="https://mdaisuke.net/en/2026/06/25/papers-into-podcasts/">&lt;h2 id=&quot;the-papers-im-curious-about-but-never-sit-down-to-read&quot;&gt;The papers I’m curious about but never sit down to read&lt;/h2&gt;
-
-&lt;p&gt;I keep running into papers and long essays I’m genuinely curious about. The curiosity is real; the focus to sit down and read them is not. Reading is active work, and I rarely find the slot for it.&lt;/p&gt;
-
-&lt;p&gt;The time I &lt;em&gt;do&lt;/em&gt; have is the passive kind — a commute, a walk, the few minutes I spend staring out a window. That time arrives whether I plan for it or not, and for this kind of material those moments are actually the best ones: listening slots into them in a way reading never will. So what I want isn’t a summary to skim or a transcript. I want the thing broken down plainly enough that it comes in just by listening, hands free.&lt;/p&gt;
-
-&lt;h2 id=&quot;notebooklm-and-the-auto-podcast-almost-solve-this&quot;&gt;NotebookLM and the auto-podcast almost solve this&lt;/h2&gt;
-
-&lt;p&gt;Google’s existing tools already do most of this. NotebookLM’s Audio Overview, and the audio in Deep Research, turn a pile of text into a natural, podcast-style conversation between two hosts. For a daily listen, for gathering information, for buying back the reading time I never have, it’s genuinely good — the voices sound human and the tone lands.&lt;/p&gt;
-
-&lt;p&gt;After a while, though, the limit shows. The examples are thin, and I can’t control the length. It explains, but it doesn’t make the thing click, and it isn’t always comprehensive. Next to a real podcast — where a good host pulls a vivid, specific example out of a guest — the auto version feels flat. It tells you what the paper says without ever making it land.&lt;/p&gt;
-
-&lt;h2 id=&quot;so-i-built-the-part-the-auto-podcast-skips&quot;&gt;So I built the part the auto-podcast skips&lt;/h2&gt;
-
-&lt;p&gt;Two things the generic version is weak on: examples and questions. Those are the parts I built up. The script is split into two roles.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The explainer’s real job is to translate.&lt;/strong&gt; Every abstract claim has to come with a concrete example or an analogy. If a term shows up, it gets unpacked on the spot. No bare jargon survives.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The questioner is the listener’s proxy.&lt;/strong&gt; I studied a list of the “ten best podcast interviewers”&lt;sup id=&quot;fnref:interviewers&quot;&gt;&lt;a href=&quot;#fn:interviewers&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and read what each says about their craft, then deliberately pulled out only the hard skills that move comprehension forward: ask short questions, follow up on the thing just said, voice the exact place a listener gets stuck, push past breadth toward the crux, and demand an example. The soft skills — warmth, rapport, humor itself — I dropped on purpose, because in this context they add noise to the script, and when you’re working with an agent they invite hallucination.&lt;/p&gt;
-
-&lt;p&gt;The pipeline itself is plain: take a PDF, extract it, map its logic, digest it into plain language &lt;em&gt;with examples&lt;/em&gt;, budget the length to 15–30 minutes, write the two-voice dialogue, and verify it against the source. Then &lt;a href=&quot;https://ai.google.dev/gemini-api/docs/speech-generation&quot;&gt;Gemini 3.1 Flash TTS&lt;/a&gt; gives it a natural voice — the one part the auto-podcast already nails, so I let the machine keep doing it.&lt;/p&gt;
-
-&lt;p&gt;The TTS step is just a small script — voices fixed, paced, and chunked to fit the model’s limits: &lt;a href=&quot;https://gist.github.com/DaisukeMiyazaki/5fb8e0333d7fe940aa9262b4d790eeb2&quot;&gt;gemini_tts.py&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;where-it-went-wrong&quot;&gt;Where it went wrong&lt;/h2&gt;
-
-&lt;p&gt;Early on I used gemini-2.5, and the tempo was too fast — &lt;em&gt;tonton-byoushi&lt;/em&gt;, the two voices volleying without a breath between them. It sounded efficient and felt exhausting. The fix was small: pauses between turns, a calmer delivery, a director’s note telling the model not to rush. What it taught me wasn’t small, though — it needs &lt;em&gt;ma&lt;/em&gt;, room to breathe.&lt;/p&gt;
-
-&lt;p&gt;What surprised me: Gemini 3.1 Flash TTS supplies those pauses and that speaking tone — the parts that look a lot like soft skills — on the model’s side. Listening to 2.5 and 3.1 back to back, the difference was obvious.&lt;/p&gt;
-
-&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping up&lt;/h2&gt;
-
-&lt;p&gt;The job of this tool is to digest things down so I’ll actually &lt;em&gt;touch the primary source&lt;/em&gt; I’d otherwise never open. The audio is an on-ramp to the paper, not a substitute for it. For something I just want to be aware of, it gets me far further than reading a summary would. But for a paper that snags me, I don’t stop at listening — I go to the source and digest it in my own words. That digestion is the part I have to do myself. As I wrote in &lt;a href=&quot;/en/2025/09/17/sanpou-issue/&quot;&gt;the walking piece&lt;/a&gt;, the first-hand insight AI can’t generate for you only comes from there.&lt;/p&gt;
-
-&lt;p&gt;This tool has its limits, too: even after it writes a script and I ask it for examples, some things still don’t click. For those, I ask the agent in my own words — not from a template — keeping the paper itself in context, and in my case having it sketch a diagram when that helps. Then I write the resolution into Obsidian. It’s slow, but clearing them one at a time is how a paper I only listened to slowly becomes my own. &lt;a href=&quot;/en/2025/07/03/we-must-not-delegate-understanding/&quot;&gt;We must not delegate understanding&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A note on rights: I’m not publishing the generated audio — or the script it’s read from — here. The audio is just the script spoken aloud, so both are the same derivative work. I’d rather not distribute a derivative of someone else’s paper without the rightsholder’s permission, so I keep it to my own personal use — and if you run the same setup, please keep it to material you’ve legitimately obtained, for your own use.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:interviewers&quot;&gt;
-      &lt;p&gt;Source: Frank Racioppi, “&lt;a href=&quot;https://podalization.substack.com/p/the-ten-best-interviewers-in-podcasting&quot;&gt;The Ten Best Interviewers In Podcasting&lt;/a&gt;” (Ear Worthy / Pod-Alization, 2023). Starting from this article, I dug into each host’s own statements, blogs, and interviews. Primary sources, per host: &lt;a href=&quot;https://www.pressclubinstitute.org/2020/07/20/terry-gross-and-michael-barbaro-share-interview-tips-and-techniques/&quot;&gt;Michael Barbaro&lt;/a&gt;, &lt;a href=&quot;https://pogueman.substack.com/p/pogues-top-ten-interview-tips&quot;&gt;David Pogue&lt;/a&gt;, &lt;a href=&quot;https://www.cjr.org/special_report/qa-nprs-audie-cornish-on-the-intimacy-of-interviewing.php&quot;&gt;Audie Cornish&lt;/a&gt;, &lt;a href=&quot;https://soundjudgment.substack.com/p/interviews-are-the-foundation-of&quot;&gt;Elaine Appleton Grant&lt;/a&gt;, &lt;a href=&quot;https://vocal.media/interview/the-art-of-kindness-podcast-a332g0iko&quot;&gt;Robert Peterpaul&lt;/a&gt;, &lt;a href=&quot;https://www.somethingyoushouldknow.net/about/&quot;&gt;Mike Carruthers&lt;/a&gt;, &lt;a href=&quot;https://tinkmedia.co/interviews/evan-stern&quot;&gt;Evan Stern&lt;/a&gt;, &lt;a href=&quot;https://veritysangan.com/podcast-archive/ep-58-getting-curious-and-hosting-amazing-guest-interviews-with-matt-gilhooly/&quot;&gt;Matt Gilhooly&lt;/a&gt;, &lt;a href=&quot;https://www.podcastjunkies.com/jordan-harbinger-interview-2/&quot;&gt;Jordan Harbinger&lt;/a&gt;, &lt;a href=&quot;https://booktime584.wordpress.com/2023/04/04/preconceivedinterview/&quot;&gt;Zale Mednick&lt;/a&gt;. &lt;a href=&quot;#fnref:interviewers&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
 </content>
   </entry>
   
